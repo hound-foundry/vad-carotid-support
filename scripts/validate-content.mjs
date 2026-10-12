@@ -69,7 +69,16 @@ for (const url of [
   "https://ico.org.uk/for-organisations/data-protection-fee/",
   "https://www.legislation.gov.uk/ukpga/1988/48/contents",
   "https://www.gov.uk/guidance/999-and-112-the-uks-national-emergency-numbers",
+  "https://www.legislation.gov.uk/eur/2016/679/article/30",
+  "https://ico.org.uk/for-organisations/uk-gdpr-guidance-and-resources/accountability-and-governance/guide-to-accountability-and-governance/documentation",
+  "https://www.legislation.gov.uk/mwa/2011/1/contents",
+  "https://www.legislation.gov.uk/ukpga/2018/12/contents",
+  "https://www.gov.uk/setting-up-charity",
+  "https://www.gov.uk/charities-and-tax/overview",
+  "https://developer.apple.com/app-store/review/guidelines/",
+  "https://support.google.com/googleplay/android-developer/answer/16679511?hl=en-GB",
 ]) assert.ok(ukRecord.officialSources.some((source) => source.url === url && source.status === "source-lead-only"), `UK source lead missing or misclassified: ${url}`);
+assert.ok(ukRecord.officialSources.filter((source) => source.sourceType === "platform-policy").length >= 2, "Store policies must be recorded separately from legislation");
 assert.deepEqual(ukRecord.subnationalAreas.map((area) => area.name), ["England", "Wales", "Scotland", "Northern Ireland"], "UK subnational areas must remain in the release-screening queue");
 assert.ok(ukRecord.subnationalAreas.every((area) => area.status === "not-assessed"), "No UK nation may appear cleared by source discovery alone");
 assert.equal(community.candidates.length, 3, "All three user-provided community candidates must be tracked");
