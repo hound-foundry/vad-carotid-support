@@ -50,6 +50,13 @@ for (const guide of guides) {
 
 assert.equal(resources.globalRelease, "blocked", "International release must stay blocked until jurisdiction screening is complete");
 assert.ok(resources.countryRecords.length >= 240, "Country/area release queue must be comprehensive");
+assert.equal(resources.countryRecords.length, 248, "Country/area inventory must match the currently recorded M49 discovery set");
+assert.equal(resources.isoCodeCrosswalk?.source, "https://unstats.un.org/unsd/methodology/m49/overview/", "ISO identifier crosswalk source must be recorded");
+assert.match(resources.isoCodeCrosswalk?.checkedOn ?? "", /^\d{4}-\d{2}-\d{2}$/, "ISO identifier crosswalk needs a check date");
+assert.equal(resources.isoCodeCrosswalk?.matchedRecords, resources.countryRecords.length, "Every inventory record must be covered by the identifier crosswalk");
+assert.equal(resources.isoCodeCrosswalk?.status, "identifier-reconciliation-only", "Identifier reconciliation must not imply legal review");
+assert.ok(resources.countryRecords.every((country) => /^[A-Z]{2}$/.test(country.isoAlpha2 ?? "")), "Every country/area record needs a valid ISO alpha-2 identifier");
+assert.equal(new Set(resources.countryRecords.map((country) => country.isoAlpha2)).size, resources.countryRecords.length, "ISO alpha-2 identifiers must be unique in the inventory");
 assert.ok(resources.countryRecords.every((country) => country.legalReview.status === "not-assessed" && country.release === "blocked"), "Unreviewed jurisdictions must remain blocked");
 assert.ok(resources.countryRecords.every((country) => country.reviewAreas.length >= 14 && country.reviewAreas.every((area) => area.status === "not-assessed")), "All required legal review areas must remain explicit and unassessed until screened");
 const ukRecord = resources.countryRecords.find((country) => country.alpha3 === "GBR");
@@ -57,6 +64,12 @@ assert.ok(ukRecord && ukRecord.legalReview.status === "not-assessed" && ukRecord
 assert.equal(ukRecord.isoAlpha2, "GB", "UK ISO alpha-2 identifier must match the recorded ISO source");
 assert.ok(ukRecord.sourceDiscoveryCheckedOn && ukRecord.officialSources.length > 0 && ukRecord.officialSources.every((source) => ["source-lead-only", "identifier-checked"].includes(source.status) && source.checkedOn), "UK sources need dates and must not imply legal clearance");
 assert.ok(ukRecord.officialSources.some((source) => source.sourceType === "code-list" && source.status === "identifier-checked"), "UK ISO code needs a dated code-list source");
+for (const url of [
+  "https://ico.org.uk/for-organisations/uk-gdpr-guidance-and-resources/international-transfers/a-guide-to-international-transfers/",
+  "https://ico.org.uk/for-organisations/data-protection-fee/",
+  "https://www.legislation.gov.uk/ukpga/1988/48/contents",
+  "https://www.gov.uk/guidance/999-and-112-the-uks-national-emergency-numbers",
+]) assert.ok(ukRecord.officialSources.some((source) => source.url === url && source.status === "source-lead-only"), `UK source lead missing or misclassified: ${url}`);
 assert.deepEqual(ukRecord.subnationalAreas.map((area) => area.name), ["England", "Wales", "Scotland", "Northern Ireland"], "UK subnational areas must remain in the release-screening queue");
 assert.ok(ukRecord.subnationalAreas.every((area) => area.status === "not-assessed"), "No UK nation may appear cleared by source discovery alone");
 assert.equal(community.candidates.length, 3, "All three user-provided community candidates must be tracked");
