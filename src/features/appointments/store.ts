@@ -38,7 +38,7 @@ export async function exportAppointmentSheet(sheet: AppointmentSheet): Promise<v
     anchor.href = url;
     anchor.download = "appointment-question-sheet.txt";
     anchor.click();
-    URL.revokeObjectURL(url);
+    window.setTimeout(() => URL.revokeObjectURL(url), 1000);
     return;
   }
   await Share.share({ title: "Appointment question sheet", message: text });

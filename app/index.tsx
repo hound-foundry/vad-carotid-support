@@ -36,6 +36,7 @@ export default function HomeScreen() {
 
     <View style={[styles.tools, desktop && styles.toolsDesktop]}>
       <ActionCard href="/appointments" label="BEFORE YOUR NEXT APPOINTMENT" title="Make room for your questions" detail="Choose prompts, add private notes, and decide whether to save or export." action="Build an appointment sheet" />
+      <ActionCard href="/support-preferences" label="FOR THE PEOPLE AROUND YOU" title="Tell people what helps" detail="Choose support preferences and review a shareable sheet before exporting." action="Make a support sheet" />
       <ActionCard href="/resources" label="TRUSTED LINKS" title="Explore helpful resources" detail="Find patient, carer and professional reading from external publishers." action="Browse the directory" />
     </View>
 
@@ -47,7 +48,7 @@ export default function HomeScreen() {
   </AppPage>;
 }
 
-function ActionCard({ href, label, title, detail, action }: { href: "/appointments" | "/resources"; label: string; title: string; detail: string; action: string }) {
+function ActionCard({ href, label, title, detail, action }: { href: "/appointments" | "/support-preferences" | "/resources"; label: string; title: string; detail: string; action: string }) {
   return <Link href={href} asChild><Pressable accessibilityRole="link" style={styles.actionLink}><View style={styles.actionCard}>
     <Text style={styles.actionLabel}>{label}</Text><Text style={styles.actionTitle}>{title}</Text><Text style={styles.actionDetail}>{detail}</Text><View style={styles.actionBottom}><Text style={styles.actionText}>{action}</Text><Text style={styles.actionArrow}>→</Text></View>
   </View></Pressable></Link>;

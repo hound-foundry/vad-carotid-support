@@ -16,7 +16,7 @@ Items are proposals, not promised dates. Safety review is a release gate.
 - [ ] A short start-here route for people with no stroke, with stroke, family/carers and general learning.
 - [ ] Sourced plain-language guide to VAD/CAD and investigations.
 - [ ] Appointment question sheet with optional local-only export.
-- [ ] “How to support me” sheet with selection and sharing preview.
+- [x] “How I prefer to be supported” sheet with selection, optional note and sharing preview.
 - [ ] Private notes and saved links, with delete/export and no account.
 - [ ] Curated links with evidence type, date, language, review and rights status.
 - [ ] English-reviewed content; add translated interface and short guides after language and clinical review.
@@ -27,6 +27,7 @@ Items are proposals, not promised dates. Safety review is a release gate.
 - [ ] Finish country-by-country privacy, consumer, accessibility, content and store screening for each launch market.
 - [ ] Confirm operator identity and public contact route.
 - [ ] Check accessibility with assistive technology and people with relevant lived experience.
+- [ ] Review support-preference choices and note guidance with patients and carers.
 - [ ] Complete content, translation, privacy, security and local emergency review.
 - [ ] Verify Apple and Google declarations, privacy details, store screenshots and package identifiers.
 - [ ] Produce evidence-backed release notes; keep missing review visible.

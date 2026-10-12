@@ -5,13 +5,14 @@ import { palette } from "./AppPage";
 const links = [
   { href: "/learn" as const, label: "Guides", mobileLabel: "Guides", area: "guides" },
   { href: "/appointments" as const, label: "Appointment sheet", mobileLabel: "Appointments", area: "appointments" },
+  { href: "/support-preferences" as const, label: "Support sheet", mobileLabel: "Support", area: "support" },
   { href: "/resources" as const, label: "Resources", mobileLabel: "Resources", area: "resources" },
 ];
 
 export function SiteHeader() {
   const pathname = usePathname();
   const compact = useWindowDimensions().width < 760;
-  const activeArea = pathname === "/appointments" ? "appointments" : pathname === "/resources" ? "resources" : pathname === "/" || pathname === "/about" || pathname === "/urgent-help" ? null : "guides";
+  const activeArea = pathname === "/appointments" ? "appointments" : pathname === "/support-preferences" ? "support" : pathname === "/resources" ? "resources" : pathname === "/" || pathname === "/about" || pathname === "/urgent-help" ? null : "guides";
 
   return <View style={styles.shell}><View style={[styles.inner, compact ? styles.innerCompact : styles.innerWide]}>
     <Link href="/" asChild><Pressable accessibilityRole="link" accessibilityLabel="VAD and Carotid Support home" accessibilityState={{ selected: pathname === "/" }} style={styles.brandRow}>

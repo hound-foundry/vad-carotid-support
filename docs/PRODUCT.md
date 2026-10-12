@@ -17,7 +17,7 @@ These are navigation choices, not a diagnostic or eligibility questionnaire. Som
 
 ## V1 implementation status
 
-The current web-first preview is for adults and carers. It includes seven original, source-linked English drafts; separate navigation for dissection without a diagnosed stroke, dissection with stroke, carers and general learning; an appointment question sheet with selectable prompts, optional notes, preview, explicit local save, export and delete; a public external-resource directory; and a persistent urgent-help link. All clinical guides remain visibly marked as drafts and are not approved for patient use.
+The current web-first preview is for adults and carers. It includes seven original, source-linked English drafts; separate navigation for dissection without a diagnosed stroke, dissection with stroke, carers and general learning; an appointment question sheet; a “How I prefer to be supported” sheet with optional choices and note, preview, explicit local save, export and delete; a public external-resource directory; and a persistent urgent-help link. All clinical guides remain visibly marked as drafts and are not approved for patient use.
 
 The 2017 survivor book is linked by bibliographic record only. Three suggested Facebook groups remain hidden in a verification queue because their current group details and access conditions have not been verified. No individual profile or group-member post is included. No user stories, health tracking, case registry, account, sync, analytics, backend, advertising or donations are part of V1.
 
@@ -30,7 +30,7 @@ The app is an international English development preview, not a cleared global re
 - Short explanations of the arteries, what “dissection” means, common investigations and unfamiliar clinical words.
 - Clearly labelled evidence links and dated updates; explain uncertainty and differences between studies.
 - Separate resources for dissection without stroke, stroke-related care and recovery, and everyday questions relevant to either group.
-- Appointment preparation: editable prompts and notes, a preview, and user-controlled save, export and delete. A separate shareable “How to support me” sheet remains future work.
+- Appointment preparation and support communication: editable prompts or preferences, optional notes, a preview, and user-controlled save, export and delete.
 - Carer guidance for listening, practical support, appointments, communication difficulties and fatigue.
 - Space for emotional wellbeing, uncertainty, persistent symptoms and recovery that is not visible to other people.
 - Curated links identifying publisher, audience, language, evidence type, publication date and last checked date.
@@ -43,7 +43,7 @@ New, sudden symptoms potentially consistent with stroke require urgent local eme
 
 ## Privacy and languages
 
-No accounts, adverts, donations, analytics, behavioural tracking or network sync. The appointment sheet is saved only after the user presses Save. The web build uses browser local storage; the native builds use Expo SecureStore. Neither provides a blanket privacy guarantee. Explain device/browser access and backup behavior, and provide explicit export and deletion controls. Never silently upload notes, include them in analytics/crash reports, or place sensitive data in URLs.
+No accounts, adverts, donations, analytics, behavioural tracking or network sync. The appointment and support-preferences sheets are saved only after the user presses Save. The web build uses browser local storage; the native builds use Expo SecureStore. Neither provides a blanket privacy guarantee. Explain device/browser access and backup behavior, and provide explicit export and deletion controls. Never silently upload notes, include them in analytics/crash reports, or place sensitive data in URLs.
 
 Language choice is independent of country. Planned languages: English, Russian, Ukrainian, Lithuanian, Latvian, Estonian, Spanish, French, Japanese, Simplified Chinese and Traditional Chinese. Translate original short guides and interface strings only. Link to outside articles in their source language; do not claim an external article is translated. Review each translation, with special review for emergency and clinical information.
 
