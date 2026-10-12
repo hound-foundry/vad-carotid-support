@@ -19,8 +19,8 @@ export function SiteHeader() {
       <View><Text style={styles.brand}>VAD & Carotid Support</Text><Text style={styles.brandNote}>Information made with care</Text></View>
     </Pressable></Link>
     <View role="navigation" aria-label="Main navigation" style={[styles.nav, compact ? styles.navCompact : styles.navWide]}>
-      {links.map((item) => { const selected = activeArea === item.area; return <Link key={item.href} href={item.href} asChild><Pressable accessibilityRole="link" accessibilityState={{ selected }} style={({ pressed }) => [styles.navLink, compact && styles.navLinkCompact, selected && styles.navLinkSelected, pressed && styles.pressed]}>
-        <Text style={[styles.navText, compact && styles.navTextCompact, selected && styles.navTextSelected]}>{compact ? item.mobileLabel : item.label}</Text>
+      {links.map((item) => { const selected = activeArea === item.area; return <Link key={item.href} href={item.href} asChild><Pressable accessibilityRole="link" aria-current={selected ? "page" : undefined}>
+        <View style={[styles.navLink, compact && styles.navLinkCompact, selected && styles.navLinkSelected]}><Text style={[styles.navText, compact && styles.navTextCompact, selected && styles.navTextSelected]}>{compact ? item.mobileLabel : item.label}</Text></View>
       </Pressable></Link>; })}
     </View>
   </View></View>;
@@ -40,10 +40,9 @@ const styles = StyleSheet.create({
   navWide: { flexDirection: "row", gap: 5 },
   navCompact: { width: "100%", flexDirection: "row", justifyContent: "space-between", gap: 3 },
   navLink: { display: "flex", minHeight: 42, justifyContent: "center", paddingHorizontal: 11, borderRadius: 9 },
-  navLinkCompact: { flex: 1, minWidth: 0, alignItems: "center", paddingHorizontal: 5 },
+  navLinkCompact: { minWidth: 0, alignItems: "center", paddingHorizontal: 5 },
   navLinkSelected: { backgroundColor: palette.mint },
   navText: { color: palette.tealDark, fontSize: 13, fontWeight: "700" },
   navTextCompact: { fontSize: 12 },
   navTextSelected: { color: palette.ink },
-  pressed: { opacity: 0.72 },
 });
