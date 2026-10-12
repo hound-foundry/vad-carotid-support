@@ -3,6 +3,7 @@ import { StatusBar } from "expo-status-bar";
 import { Pressable, StyleSheet, Text, View } from "react-native";
 import { SafeAreaProvider, SafeAreaView } from "react-native-safe-area-context";
 import { palette } from "../src/components/AppPage";
+import { SiteHeader } from "../src/components/SiteHeader";
 
 export default function RootLayout() {
   return (
@@ -17,6 +18,7 @@ export default function RootLayout() {
             </Pressable>
           </Link>
         </SafeAreaView>
+        <SiteHeader />
         <Stack screenOptions={{ headerShown: false, contentStyle: { backgroundColor: palette.paper } }} />
       </View>
     </SafeAreaProvider>

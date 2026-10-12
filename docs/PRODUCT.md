@@ -49,7 +49,7 @@ Language choice is independent of country. Planned languages: English, Russian, 
 
 ## Accessibility and human-centred design
 
-Design for people who may be tired, distressed, have vision or balance symptoms, use assistive technology, have cognitive or communication effects after stroke, or read in a second language. Keep navigation predictable, pages short, focus visible, tap targets large, text resizable, contrast strong and motion optional. Provide clear headings, plain language, screen-reader names and exportable text. Test with people with lived experience before release; do not ask them to disclose a diagnosis or medical records.
+Design for people who may be tired, distressed, have vision or balance symptoms, use assistive technology, have cognitive or communication effects after stroke, or read in a second language. Keep the same primary navigation on every route, with a compact two-row layout at narrow widths; keep urgent help visibly separate from routine navigation. Keep pages short, focus visible, tap targets large, text resizable, contrast strong and motion optional. Provide clear headings, plain language, screen-reader names and exportable text. Test with people with lived experience before release; do not ask them to disclose a diagnosis or medical records.
 
 ## Success criteria
 

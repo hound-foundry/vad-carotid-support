@@ -13,15 +13,6 @@ export default function HomeScreen() {
   const { width } = useWindowDimensions();
   const desktop = width >= 880;
   return <AppPage wide>
-    <View style={styles.header}>
-      <Link href="/" asChild><Pressable accessibilityRole="link" accessibilityLabel="VAD and Carotid Support home" style={styles.brandRow}><View style={styles.brandMark}><View style={styles.brandMarkInner} /></View><View><Text style={styles.brand}>VAD & Carotid Support</Text><Text style={styles.brandNote}>Information made with care</Text></View></Pressable></Link>
-      {width >= 720 ? <View style={styles.nav}>
-        <NavLink href="/learn" label="Guides" />
-        <NavLink href="/appointments" label="Appointment sheet" />
-        <NavLink href="/resources" label="Resources" />
-      </View> : <Link href="/appointments" asChild><Pressable accessibilityRole="link" style={styles.mobileAction}><Text style={styles.mobileActionText}>Prepare</Text><Text style={styles.mobileActionArrow}>→</Text></Pressable></Link>}
-    </View>
-
     <View style={[styles.hero, desktop && styles.heroDesktop]}>
       <View style={[styles.heroCopy, desktop && styles.heroCopyDesktop]}>
         <View style={styles.kickerRow}><View style={styles.kickerDot} /><Text style={styles.kicker}>A SUPPORTIVE PLACE TO BEGIN</Text></View>
@@ -56,10 +47,6 @@ export default function HomeScreen() {
   </AppPage>;
 }
 
-function NavLink({ href, label }: { href: "/learn" | "/appointments" | "/resources"; label: string }) {
-  return <Link href={href} asChild><Pressable accessibilityRole="link" style={({ pressed }) => [styles.navLink, pressed && styles.pressed]}><Text style={styles.navText}>{label}</Text></Pressable></Link>;
-}
-
 function ActionCard({ href, label, title, detail, action }: { href: "/appointments" | "/resources"; label: string; title: string; detail: string; action: string }) {
   return <Link href={href} asChild><Pressable accessibilityRole="link" style={styles.actionLink}><View style={styles.actionCard}>
     <Text style={styles.actionLabel}>{label}</Text><Text style={styles.actionTitle}>{title}</Text><Text style={styles.actionDetail}>{detail}</Text><View style={styles.actionBottom}><Text style={styles.actionText}>{action}</Text><Text style={styles.actionArrow}>→</Text></View>
@@ -67,13 +54,6 @@ function ActionCard({ href, label, title, detail, action }: { href: "/appointmen
 }
 
 const styles = StyleSheet.create({
-  header: { minHeight: 82, flexDirection: "row", alignItems: "center", justifyContent: "space-between", gap: 20, borderBottomWidth: 1, borderBottomColor: palette.line },
-  brandRow: { display: "flex", minHeight: 64, flexDirection: "row", alignItems: "center", gap: 11 },
-  brandMark: { width: 38, height: 38, borderRadius: 20, backgroundColor: palette.mint, alignItems: "center", justifyContent: "center" },
-  brandMarkInner: { width: 14, height: 14, borderRadius: 8, borderWidth: 2, borderColor: palette.teal, transform: [{ rotate: "35deg" }] },
-  brand: { color: palette.ink, fontSize: 15, fontWeight: "800" }, brandNote: { marginTop: 2, color: palette.muted, fontSize: 11, letterSpacing: 0.15 },
-  nav: { flexDirection: "row", alignItems: "center", gap: 5 }, navLink: { display: "flex", minHeight: 44, paddingHorizontal: 11, justifyContent: "center", borderRadius: 9 }, navText: { color: palette.tealDark, fontSize: 13, fontWeight: "700" },
-  mobileAction: { display: "flex", minHeight: 42, paddingHorizontal: 10, flexDirection: "row", alignItems: "center", gap: 5, borderRadius: 10, backgroundColor: palette.mint }, mobileActionText: { color: palette.tealDark, fontSize: 12, fontWeight: "800" }, mobileActionArrow: { color: palette.teal, fontSize: 15 },
   hero: { marginTop: 28, gap: 22 }, heroDesktop: { flexDirection: "row", alignItems: "stretch", gap: 28 },
   heroCopy: { padding: 22, borderRadius: 21, backgroundColor: palette.mint, borderWidth: 1, borderColor: "#D0E2DD" }, heroCopyDesktop: { flex: 0.92, justifyContent: "center", paddingHorizontal: 31, paddingVertical: 34 },
   kickerRow: { flexDirection: "row", alignItems: "center", gap: 8 }, kicker: { color: palette.tealDark, fontSize: 10, letterSpacing: 1.45, fontWeight: "800" }, kickerDot: { width: 7, height: 7, borderRadius: 4, backgroundColor: palette.teal },
