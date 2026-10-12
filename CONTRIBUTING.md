@@ -7,7 +7,7 @@ Thank you for helping make clear, respectful support easier to find. This is a p
 - Search existing issues before opening one. Describe the product behaviour, not anyone’s diagnosis or care history.
 - Use fictional or synthetic examples only. Never attach a patient record, scan, screenshot of care, unpublished clinical document, private message or account identifier.
 - Do not use an issue to ask for or provide personal medical advice. We cannot answer clinical emergencies.
-- For a content suggestion, link the exact public source and say which audience and claim it affects. A citation is a lead for review, not proof a claim is supported.
+- For a content suggestion, link the exact public source and say which audience and claim it affects. A citation is a lead for review, not proof a claim is supported. See the [patient and carer content review guide](docs/USABILITY_REVIEW.md) before arranging usability feedback; do not request private health details or post sensitive feedback publicly.
 - For a suspected vulnerability, use private vulnerability reporting rather than a public issue.
 
 ## Pull requests
