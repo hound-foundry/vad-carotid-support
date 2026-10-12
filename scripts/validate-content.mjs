@@ -140,6 +140,44 @@ const estoniaSourceUrls = [
 ];
 assert.equal(estoniaRecord.officialSources.length, estoniaSourceUrls.length, "Estonian national source leads must be enumerated");
 for (const url of estoniaSourceUrls) assert.ok(estoniaRecord.officialSources.some((source) => source.url === url && source.status === "source-lead-only" && source.checkedOn === "2026-10-12"), `Estonian source lead missing, undated or misclassified: ${url}`);
+const latviaRecord = resources.countryRecords.find((country) => country.isoAlpha2 === "LV");
+assert.ok(latviaRecord && latviaRecord.alpha3 === "LVA" && latviaRecord.m49 === "428", "Latvia must remain mapped to the recorded ISO and M49 identifiers");
+assert.equal(latviaRecord.legalReview.status, "not-assessed", "Latvian source discovery must not imply a completed legal screen");
+assert.equal(latviaRecord.subnationalReview.status, "not-assessed", "Latvian source discovery must not imply a completed subnational screen");
+assert.equal(latviaRecord.release, "blocked", "Latvia must remain blocked pending qualified review");
+assert.equal(latviaRecord.sourceDiscoveryCheckedOn, "2026-10-12", "Latvian source discovery needs its own dated record");
+assert.equal(latviaRecord.reviewAreas.length, 14, "Every Latvian review topic must remain explicit");
+assert.ok(latviaRecord.reviewAreas.every((area) => area.status === "not-assessed"), "Latvian source leads must not change any legal topic to assessed");
+const latviaSourceUrls = [
+  "https://likumi.lv/ta/en/en/id/300099-personal-data-processing-law",
+  "https://likumi.lv/ta/id/300099-fizisko-personu-datu-apstrades-likums",
+  "https://www.dvi.gov.lv/en/areas-activity",
+  "https://likumi.lv/ta/id/334345-elektronisko-sakaru-likums",
+  "https://likumi.lv/ta/en/id/96619-law-on-information-society-services",
+  "https://likumi.lv/ta/id/96619-informacijas-sabiedribas-pakalpojumu-likums",
+  "https://likumi.lv/ta/en/id/44108-medical-treatment-law",
+  "https://likumi.lv/ta/id/44108-arstniecibas-likums",
+  "https://likumi.lv/ta/en/en/id/344674-regulations-regarding-medical-devices",
+  "https://likumi.lv/ta/id/344674-medicinisko-iericu-noteikumi",
+  "https://likumi.lv/ta/en/id/23309-consumer-rights-protection-law",
+  "https://likumi.lv/ta/id/23309-pateretaju-tiesibu-aizsardzibas-likums",
+  "https://likumi.lv/ta/en/id/167759-unfair-commercial-%E2%80%8Bpractices-prohibition-law",
+  "https://likumi.lv/ta/id/167759-negodigas-komercprakses-aizlieguma-likums",
+  "https://likumi.lv/ta/en/en/id/340554",
+  "https://likumi.lv/ta/en/id/14740-official-language-law",
+  "https://likumi.lv/ta/id/14740-valsts-valodas-likums",
+  "https://likumi.lv/ta/en/en/id/353390-national-cybersecurity-law",
+  "https://likumi.lv/ta/en/id/5138-copyright-law",
+  "https://likumi.lv/ta/id/5138-autortiesibu-likums",
+  "https://likumi.lv/ta/en/en/id/49096-law-on-the-protection-of-the-childrens-rights",
+  "https://likumi.lv/ta/id/49096-bernu-tiesibu-aizsardzibas-likums",
+  "https://likumi.lv/ta/id/353390-nacionalas-kiberdrosibas-likums",
+  "https://likumi.lv/ta/en/id/90822-public-benefit-organisation-law",
+  "https://likumi.lv/ta/id/90822-sabiedriska-labuma-organizaciju-likums",
+  "https://www.vugd.gov.lv/en/emergency-response-centre",
+];
+assert.equal(latviaRecord.officialSources.length, latviaSourceUrls.length, "Latvian national source leads must be enumerated");
+for (const url of latviaSourceUrls) assert.ok(latviaRecord.officialSources.some((source) => source.url === url && source.status === "source-lead-only" && source.checkedOn === "2026-10-12"), `Latvian source lead missing, undated or misclassified: ${url}`);
 assert.equal(community.candidates.length, 3, "All three user-provided community candidates must be tracked");
 assert.ok(community.candidates.every((candidate) => candidate.status === "pending-verification" && /^\d{4}-\d{2}-\d{2}$/.test(candidate.lastChecked) && candidate.verificationNote?.trim()), "Unverified community candidates must remain hidden with a dated verification record");
 assert.ok(community.candidates.every((candidate) => /^https:\/\/www\.facebook\.com\/groups\/[0-9]+$/.test(candidate.url)), "The community verification queue may contain group links only");

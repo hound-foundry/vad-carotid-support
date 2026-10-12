@@ -35,6 +35,7 @@ The glossary and print controls are implemented, but their presence does not cou
 ## Before distribution
 
 - [x] Record an initial dated Estonia official-source bundle; national and subnational applicability review remains open.
+- [x] Record an initial dated Latvia official-source bundle, including translation warnings; national and subnational applicability review remains open.
 - [ ] Resolve the remaining dependency alerts or record a reviewed mitigation and explicit release decision; see [dependency security review](DEPENDENCY_SECURITY.md).
 - [ ] Review intended purpose and medical-software status by target market.
 - [ ] Finish country-by-country privacy, consumer, accessibility, content and store screening for each launch market.

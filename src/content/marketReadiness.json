@@ -16871,7 +16871,217 @@
       "isoAlpha2": "LV",
       "reviewOwner": null,
       "lastChecked": null,
-      "officialSources": [],
+      "sourceDiscoveryCheckedOn": "2026-10-12",
+      "officialSources": [
+        {
+          "title": "Personal Data Processing Law (English translation)",
+          "url": "https://likumi.lv/ta/en/en/id/300099-personal-data-processing-law",
+          "authority": "Likumi.lv / Saeima; English translation by State Language Centre",
+          "sourceType": "legislation-translation",
+          "checkedOn": "2026-10-12",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Personal Data Processing Law (Latvian text)",
+          "url": "https://likumi.lv/ta/id/300099-fizisko-personu-datu-apstrades-likums",
+          "authority": "Likumi.lv / Saeima",
+          "sourceType": "legislation",
+          "checkedOn": "2026-10-12",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Data State Inspectorate: areas of activity",
+          "url": "https://www.dvi.gov.lv/en/areas-activity",
+          "authority": "Latvian Data State Inspectorate",
+          "sourceType": "regulator-guidance",
+          "checkedOn": "2026-10-12",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Electronic Communications Law (Latvian text)",
+          "url": "https://likumi.lv/ta/id/334345-elektronisko-sakaru-likums",
+          "authority": "Likumi.lv / Saeima",
+          "sourceType": "legislation",
+          "checkedOn": "2026-10-12",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Law on Information Society Services",
+          "url": "https://likumi.lv/ta/en/id/96619-law-on-information-society-services",
+          "authority": "Likumi.lv / Saeima; English translation by State Language Centre",
+          "sourceType": "legislation-translation",
+          "checkedOn": "2026-10-12",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Law on Information Society Services (Latvian text)",
+          "url": "https://likumi.lv/ta/id/96619-informacijas-sabiedribas-pakalpojumu-likums",
+          "authority": "Likumi.lv / Saeima",
+          "sourceType": "legislation",
+          "checkedOn": "2026-10-12",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Medical Treatment Law",
+          "url": "https://likumi.lv/ta/en/id/44108-medical-treatment-law",
+          "authority": "Likumi.lv / Saeima; English translation by State Language Centre",
+          "sourceType": "legislation-translation",
+          "checkedOn": "2026-10-12",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Medical Treatment Law (Latvian text)",
+          "url": "https://likumi.lv/ta/id/44108-arstniecibas-likums",
+          "authority": "Likumi.lv / Saeima",
+          "sourceType": "legislation",
+          "checkedOn": "2026-10-12",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Regulations Regarding Medical Devices (English translation)",
+          "url": "https://likumi.lv/ta/en/en/id/344674-regulations-regarding-medical-devices",
+          "authority": "Likumi.lv / Cabinet of Ministers; English translation by State Language Centre",
+          "sourceType": "legislation-translation",
+          "checkedOn": "2026-10-12",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Regulations Regarding Medical Devices (Latvian text)",
+          "url": "https://likumi.lv/ta/id/344674-medicinisko-iericu-noteikumi",
+          "authority": "Likumi.lv / Cabinet of Ministers",
+          "sourceType": "legislation",
+          "checkedOn": "2026-10-12",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Consumer Rights Protection Law",
+          "url": "https://likumi.lv/ta/en/id/23309-consumer-rights-protection-law",
+          "authority": "Likumi.lv / Saeima; English translation by State Language Centre",
+          "sourceType": "legislation-translation",
+          "checkedOn": "2026-10-12",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Consumer Rights Protection Law (Latvian text)",
+          "url": "https://likumi.lv/ta/id/23309-pateretaju-tiesibu-aizsardzibas-likums",
+          "authority": "Likumi.lv / Saeima",
+          "sourceType": "legislation",
+          "checkedOn": "2026-10-12",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Unfair Commercial Practices Prohibition Law",
+          "url": "https://likumi.lv/ta/en/id/167759-unfair-commercial-%E2%80%8Bpractices-prohibition-law",
+          "authority": "Likumi.lv / Saeima; English translation by State Language Centre",
+          "sourceType": "legislation-translation",
+          "checkedOn": "2026-10-12",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Unfair Commercial Practices Prohibition Law (Latvian text)",
+          "url": "https://likumi.lv/ta/id/167759-negodigas-komercprakses-aizlieguma-likums",
+          "authority": "Likumi.lv / Saeima",
+          "sourceType": "legislation",
+          "checkedOn": "2026-10-12",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Law on Accessibility of Goods and Services (official Latvian text)",
+          "url": "https://likumi.lv/ta/en/en/id/340554",
+          "authority": "Likumi.lv / Saeima",
+          "sourceType": "legislation",
+          "checkedOn": "2026-10-12",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Official Language Law (English translation)",
+          "url": "https://likumi.lv/ta/en/id/14740-official-language-law",
+          "authority": "Likumi.lv / Saeima; English translation for information only",
+          "sourceType": "legislation-translation",
+          "checkedOn": "2026-10-12",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Official Language Law (Latvian text)",
+          "url": "https://likumi.lv/ta/id/14740-valsts-valodas-likums",
+          "authority": "Likumi.lv / Saeima",
+          "sourceType": "legislation",
+          "checkedOn": "2026-10-12",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "National Cybersecurity Law",
+          "url": "https://likumi.lv/ta/en/en/id/353390-national-cybersecurity-law",
+          "authority": "Likumi.lv / Saeima; English translation by State Language Centre",
+          "sourceType": "legislation-translation",
+          "checkedOn": "2026-10-12",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Copyright Law",
+          "url": "https://likumi.lv/ta/en/id/5138-copyright-law",
+          "authority": "Likumi.lv / Saeima; English translation by State Language Centre",
+          "sourceType": "legislation-translation",
+          "checkedOn": "2026-10-12",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Copyright Law (Latvian text)",
+          "url": "https://likumi.lv/ta/id/5138-autortiesibu-likums",
+          "authority": "Likumi.lv / Saeima",
+          "sourceType": "legislation",
+          "checkedOn": "2026-10-12",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Law on the Protection of the Children's Rights (English translation)",
+          "url": "https://likumi.lv/ta/en/en/id/49096-law-on-the-protection-of-the-childrens-rights",
+          "authority": "Likumi.lv / Saeima; English translation by State Language Centre",
+          "sourceType": "legislation-translation",
+          "checkedOn": "2026-10-12",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Law on the Protection of the Children's Rights (Latvian text)",
+          "url": "https://likumi.lv/ta/id/49096-bernu-tiesibu-aizsardzibas-likums",
+          "authority": "Likumi.lv / Saeima",
+          "sourceType": "legislation",
+          "checkedOn": "2026-10-12",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "National Cybersecurity Law (Latvian text)",
+          "url": "https://likumi.lv/ta/id/353390-nacionalas-kiberdrosibas-likums",
+          "authority": "Likumi.lv / Saeima",
+          "sourceType": "legislation",
+          "checkedOn": "2026-10-12",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Public Benefit Organisation Law (English translation)",
+          "url": "https://likumi.lv/ta/en/id/90822-public-benefit-organisation-law",
+          "authority": "Likumi.lv / Saeima; English translation by State Language Centre",
+          "sourceType": "legislation-translation",
+          "checkedOn": "2026-10-12",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Public Benefit Organisation Law (Latvian text)",
+          "url": "https://likumi.lv/ta/id/90822-sabiedriska-labuma-organizaciju-likums",
+          "authority": "Likumi.lv / Saeima",
+          "sourceType": "legislation",
+          "checkedOn": "2026-10-12",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Emergency Response Centre and emergency number 112",
+          "url": "https://www.vugd.gov.lv/en/emergency-response-centre",
+          "authority": "State Fire and Rescue Service of Latvia",
+          "sourceType": "emergency-service-guidance",
+          "checkedOn": "2026-10-12",
+          "status": "source-lead-only"
+        }
+      ],
       "reviewAreas": [
         {
           "area": "privacy-and-health-data",
