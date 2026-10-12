@@ -17,7 +17,7 @@ These are navigation choices, not a diagnostic or eligibility questionnaire. Som
 
 ## V1 implementation status
 
-The current web-first preview is for adults and carers. It includes seven original, source-linked English drafts; separate navigation for dissection without a diagnosed stroke, dissection with stroke, carers and general learning; an appointment question sheet; a “How I prefer to be supported” sheet with optional choices and note, preview, explicit local save, export and delete; a public external-resource directory; and a persistent urgent-help link. All clinical guides remain visibly marked as drafts and are not approved for patient use.
+The current web-first preview is for adults and carers. It includes seven original, source-linked English drafts; separate navigation for dissection without a diagnosed stroke, dissection with stroke, carers and general learning; an appointment question sheet; a “How I prefer to be supported” sheet with optional choices and note, preview, explicit local save, export and delete; a device-only saved-guide list with explicit export and delete controls; a public external-resource directory; and a persistent urgent-help link. All clinical guides remain visibly marked as drafts and are not approved for patient use.
 
 The 2017 survivor book is linked by bibliographic record only. Three suggested Facebook groups remain hidden in a verification queue because their current group details and access conditions have not been verified. No individual profile or group-member post is included. No user stories, health tracking, case registry, account, sync, analytics, backend, advertising or donations are part of V1.
 

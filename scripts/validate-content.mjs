@@ -55,9 +55,21 @@ assert.ok(resources.countryRecords.every((country) => country.reviewAreas.length
 assert.equal(community.candidates.length, 3, "All three user-provided community candidates must be tracked");
 assert.ok(community.candidates.every((candidate) => candidate.status === "pending-verification" && /^\d{4}-\d{2}-\d{2}$/.test(candidate.lastChecked) && candidate.verificationNote?.trim()), "Unverified community candidates must remain hidden with a dated verification record");
 assert.ok(community.candidates.every((candidate) => /^https:\/\/www\.facebook\.com\/groups\/[0-9]+$/.test(candidate.url)), "The community verification queue may contain group links only");
-const appointmentUi = await readFile(new URL("../app/appointments.tsx", import.meta.url), "utf8");
-const appointmentStore = await readFile(new URL("../src/features/appointments/store.ts", import.meta.url), "utf8");
-assert.doesNotMatch(appointmentUi, /console\.|\bfetch\s*\(|XMLHttpRequest|sendBeacon/, "Appointment notes must not be logged or sent over the network");
-assert.doesNotMatch(appointmentUi, /href\s*=\s*\{[^}]*\bnote\b/s, "Appointment notes must not enter route URLs");
-assert.doesNotMatch(appointmentStore, /console\.|\bfetch\s*\(|XMLHttpRequest|sendBeacon/, "Appointment storage must not log or transmit note data");
+const privateDataFiles = [
+  "../app/appointments.tsx",
+  "../app/support-preferences.tsx",
+  "../app/saved-guides.tsx",
+  "../src/features/appointments/store.ts",
+  "../src/features/support-preferences/store.ts",
+  "../src/features/saved-guides/store.ts",
+  "../src/features/saved-guides/SaveGuideButton.tsx",
+];
+for (const path of privateDataFiles) {
+  const source = await readFile(new URL(path, import.meta.url), "utf8");
+  assert.doesNotMatch(source, /console\.|\bfetch\s*\(|XMLHttpRequest|sendBeacon/, `${path} must not log private sheet data or send it over the network`);
+}
+for (const path of ["../app/appointments.tsx", "../app/support-preferences.tsx"]) {
+  const source = await readFile(new URL(path, import.meta.url), "utf8");
+  assert.doesNotMatch(source, /href\s*=\s*\{[^}]*\bnote\b/s, `${path} must not put note text in route URLs`);
+}
 console.log(`Validated ${guides.length} source-linked guide drafts, ${resources.countryRecords.length} blocked jurisdiction records, and ${community.candidates.length} hidden community candidates.`);
