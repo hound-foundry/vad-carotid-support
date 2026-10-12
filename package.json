@@ -9,11 +9,14 @@
     "android": "expo start --android",
     "ios": "expo start --ios",
     "typecheck": "tsc --noEmit",
-    "build:web": "expo export --platform web"
+    "test": "node --test test/*.test.mjs && node scripts/validate-content.mjs",
+    "build:web": "expo export --platform web",
+    "release:web": "npm test && node scripts/assert-market-ready.mjs && expo export --platform web"
   },
   "dependencies": {
     "expo": "~57.0.27",
     "expo-router": "~57.0.25",
+    "expo-secure-store": "~57.0.4",
     "expo-status-bar": "~57.0.1",
     "react": "19.2.3",
     "react-dom": "19.2.3",

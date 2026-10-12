@@ -1,20 +1,20 @@
 # Regulatory screening register
 
-**Status: not a legal clearance and not a completed country-by-country assessment. Do not describe the app as legally compliant worldwide.** This dated register provides a method for screening every country and territory considered for access, website targeting, hosting or store distribution. Confirmed local legal advice is needed before launch where applicability is uncertain.
+**Status: not legal clearance and not a completed country-by-country assessment. Do not describe the app as legally compliant worldwide.** `src/content/marketReadiness.json` currently contains 248 UN M49 country-or-area discovery records. Every record is `not-assessed` and blocked. The dataset has no country-specific legal findings yet, must be reconciled against current ISO 3166-1, and must be expanded to relevant subnational jurisdictions. A place in the inventory is not a finding that a law applies or does not apply.
 
 ## Project assumptions to reassess
 
 - The operator is UK-based; the exact legal person, responsible controller and contact details have not been established.
-- The product is free, educational and patient-support oriented. No ads, accounts, subscriptions, clinical decision tools or backend health-data store are planned.
-- People can save notes on their own device. This design target has not yet been implemented or assessed. Website hosting logs, browser backups, external destinations, app-store disclosures and exports still create relevant data flows.
+- The product is free, educational and patient-support oriented. No ads, accounts, subscriptions, clinical decision tools or backend health-data store are in V1.
+- People can save appointment notes on their own device after pressing Save. The web build uses browser local storage and the native builds use Expo SecureStore. Website hosting logs, browser/device backup behavior, external destinations, app-store disclosures and exports still create relevant data flows.
 - The app points people to their own clinician and urgent services. The exact wording, features, claims and intended purpose still require medical-device classification review in each launch jurisdiction. A disclaimer is not a substitute for that review.
-- The app may include adults and children unless its audience is formally limited. Assess child-access rules before deciding.
+- The app is intended for adults and carers and is not designed or marketed to children. Assess local child-access rules and practical exposure before distribution.
 
 ## Required screen for every launch territory
 
-Record the jurisdiction, relevant subnational regions, official legal text and regulator guidance, source/last checked date, effective date, territorial trigger, applicability rationale and confidence. Screen privacy and health data; cookies/device storage; security and breach reporting; cross-border transfers and local hosting; representative, registration or regulator fees; medical-software classification and vigilance; consumer and advertising rules; accessibility; children’s protections; copyright/database rights and translation; app-store requirements; tax/charity implications if funding changes; language/record-keeping requirements; enforcement and operational response.
+For every record, add the jurisdiction and applicable subnational regions; official law and regulator source; source and last-checked dates; effective date; territorial trigger; applicability rationale and confidence; reviewer and local counsel status; and disposition for each topic. Screen privacy and health data; cookies/device storage; security and breach reporting; cross-border transfers and local hosting; representative, registration or regulator fees; medical-software classification and vigilance; consumer and advertising rules; accessibility; children’s protections; copyright/database rights and translation; app-store requirements; tax/charity implications if funding changes; language/record-keeping requirements; emergency-service wording; enforcement and operational response.
 
-For each topic, status must be screened, not applicable with reason, needs local counsel or not assessed. Each jurisdiction needs an owner and review date before release. App-store policy and voluntary good practice are recorded separately from law. Recheck current amendments at release and on a scheduled basis.
+For each topic, status must be screened, not applicable with reason, needs local counsel or not assessed. Each jurisdiction needs an owner, primary sources and a dated review before release. App-store policy and voluntary good practice are recorded separately from law. Recheck current amendments at release and on a scheduled basis. The build register currently has only blocked placeholder statuses: it has not completed this work. Do not remove the global release block based on this inventory.
 
 ## Initial source leads, not findings of compliance
 

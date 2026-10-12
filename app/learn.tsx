@@ -1,6 +1,7 @@
-import { Link } from "expo-router";
-import { Pressable, StyleSheet, Text, View } from "react-native";
-import { SafeAreaView } from "react-native-safe-area-context";
-export default function LearnScreen(){return <Page title="Clear explanations, with their sources." body="The learning library is being prepared. Each guide will show where its information comes from, when it was checked and what the evidence cannot tell us."/>}
-function Page({title,body}:{title:string;body:string}){return <SafeAreaView style={s.safe}><View style={s.page}><Link href="/" asChild><Pressable accessibilityRole="link"><Text style={s.back}>‹  Home</Text></Pressable></Link><Text style={s.label}>IN DEVELOPMENT</Text><Text style={s.title}>{title}</Text><Text style={s.body}>{body}</Text><Text style={s.note}>This starter content has not yet received clinical review. Your own care team can answer questions about your diagnosis and treatment.</Text></View></SafeAreaView>}
-const s=StyleSheet.create({safe:{flex:1,backgroundColor:"#F7F8F5"},page:{width:"100%",maxWidth:760,alignSelf:"center",padding:26},back:{color:"#537670",fontSize:14,paddingVertical:18},label:{marginTop:25,color:"#567873",fontSize:11,fontWeight:"700",letterSpacing:1.5},title:{marginTop:12,color:"#263D3A",fontSize:30,lineHeight:38,fontWeight:"600"},body:{marginTop:14,color:"#576762",fontSize:16,lineHeight:25},note:{marginTop:26,color:"#7B8781",fontSize:13,lineHeight:21}});
+import { Text } from "react-native";
+import { AppPage, BackHome, Card, DraftNotice, PageHeading } from "../src/components/AppPage";
+import { GuideList } from "../src/components/GuideList";
+
+export default function LearnScreen() {
+  return <AppPage><BackHome /><PageHeading eyebrow="Guide library" title="Clear explanations, with sources and limits." summary="Short English drafts for adults, families, carers and interested readers." /><DraftNotice /><Card title="Start with what you need"><GuideList /></Card><Card title="How to read this library"><Text style={{ color: "#576762", fontSize: 15, lineHeight: 24 }}>Each guide links its source material and records its audience, language, jurisdiction, rights basis and review state. All current guides remain drafts until clinical and lived-experience reviews are recorded.</Text></Card></AppPage>;
+}

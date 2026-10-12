@@ -18,3 +18,5 @@ A source’s publication year matters: current clinical claims need checking aga
 6. Add local stroke emergency information only after country-specific review.
 
 Sources were collected on 12 October 2026. Recheck every source before writing or publishing clinical advice.
+
+For adjacent products and positioning, see the dated [product comparison](PRODUCT_COMPARISON.md). The search was not exhaustive and absence from that short scan is not evidence that no other patient app exists.

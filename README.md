@@ -8,7 +8,7 @@ The project begins with lived experience and a simple aim: make trustworthy info
 
 ## What we are building
 
-One accessible product for the web, iOS and Android, with a calm, human feel. Planned features include clear, sourced explanations; support for dissection with and without stroke; appointment questions; a private space for notes and saved resources; and a shareable “How to support me” sheet people choose what to share.
+The shared Expo project is web-first and remains structured for later iOS and Android builds. The current preview includes seven short, sourced English guide drafts, separate with-stroke and without-stroke paths, carer information, a local appointment question sheet, an external-resource directory and urgent-help access from every route. Each guide is clearly marked as unapproved pending clinical and patient/carer review.
 
 The app will point people back to their own care team. It will not diagnose, score symptoms, choose medicines, promise recovery or tell a person when to return to an activity. Country and language settings will be separate. External articles will remain on their publishers’ sites.
 
@@ -16,14 +16,19 @@ The first language set is English, Russian, Ukrainian, Lithuanian, Latvian, Esto
 
 ## Project readiness
 
-This is a starter repository, not a finished app. Clinical and legal review, local emergency contacts, reviewed translations, privacy assessment, app-store declarations and country-by-country release decisions are open work. See the [product brief](docs/PRODUCT.md), [clinical content standards](docs/CLINICAL_CONTENT.md), [literature seed list](docs/RESEARCH.md) and [regulatory screening register](docs/REGULATORY_SCREENING.md).
+This is an early development preview, not a finished or globally cleared app. The release register contains 248 UN M49 country-or-area records, all blocked and unassessed; it still needs ISO reconciliation and qualified country/subnational review. Clinical review, reviewed translations, privacy assessment, app-store declarations and local emergency contacts remain release gates. See the [product brief](docs/PRODUCT.md), [clinical content standards](docs/CLINICAL_CONTENT.md), [literature seed list](docs/RESEARCH.md) and [regulatory screening register](docs/REGULATORY_SCREENING.md).
 
 ## Run the starter app
 
 Requires Node.js 24 and npm. From the project directory:
 
     npm ci
+    npm test
+    npm run typecheck
+    npm run build:web
     npm run web
+
+`npm run build:web` creates a local static preview. `npm run release:web` is the release build and intentionally stops until every jurisdiction record and legal review area is completed and approved.
 
 Then open the local Expo address in a browser. To run the native development server, use npm start. iOS device builds and store submissions may require Apple accounts and build credentials; none are included here.
 

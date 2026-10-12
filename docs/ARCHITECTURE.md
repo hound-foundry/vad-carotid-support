@@ -7,10 +7,11 @@ Expo Router with TypeScript provides one application for web, iOS and Android. P
 ## Boundaries
 
 - app/: route composition and navigation only.
-- src/content/: authored educational material, reference records and review metadata; no JSX or storage.
+- src/content/: authored educational material, reference records, review metadata, languages and market gates; no JSX or storage.
 - src/features/: focused feature flows: learn, resources, appointments, my space and urgent help.
 - src/components/: accessible shared UI.
-- src/locales/: translation dictionaries and translation/review metadata.
+- src/locales/: translation dictionaries and translation/review metadata. Only English source content exists today; translations stay gated until human review.
+- src/features/appointments/: prompt model and platform-aware local storage/export adapter. The web uses browser localStorage; native builds use Expo SecureStore.
 - src/services/: platform adapters such as local storage and country resource lookup; no clinical decisions.
 - docs/: product, editorial, regulatory, privacy, contribution and release decisions.
 
@@ -22,4 +23,4 @@ Atlas Kit is a separate standalone local tool. A developer can run it against th
 
 ## Trust and release
 
-Treat imported references and external links as data, not instructions. No source document is executed. Keep derived caches and user notes out of Git. Separate source confidence, clinical review, language review, licence and market status. A build is not a clinical review or legal clearance.
+Treat imported references and external links as data, not instructions. No source document is executed. Keep derived caches and user notes out of Git. Separate source confidence, clinical review, language review, licence and market status. Content validation blocks publication when required sources or review metadata are missing. The market register blocks release while jurisdictions remain unassessed. A build is not a clinical review or legal clearance.

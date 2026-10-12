@@ -1,177 +1,90 @@
 import { Link } from "expo-router";
-import { Pressable, ScrollView, StyleSheet, Text, View } from "react-native";
-import { SafeAreaView } from "react-native-safe-area-context";
+import { Pressable, StyleSheet, Text, View, useWindowDimensions } from "react-native";
+import { AppPage, palette } from "../src/components/AppPage";
 
-const paths = [
-  {
-    href: "/without-stroke" as const,
-    title: "I have a dissection",
-    detail: "A place to start, with or without a stroke",
-    mark: "01",
-    color: "#E8F1EF",
-  },
-  {
-    href: "/with-stroke" as const,
-    title: "I had a stroke",
-    detail: "Information for the next part of recovery",
-    mark: "02",
-    color: "#ECEBFA",
-  },
-  {
-    href: "/supporting-someone" as const,
-    title: "I’m here for someone",
-    detail: "Ways to listen, help and understand",
-    mark: "03",
-    color: "#F7EDE6",
-  },
-  {
-    href: "/learn" as const,
-    title: "I want to understand",
-    detail: "Clear explanations and carefully chosen sources",
-    mark: "04",
-    color: "#EAF0F7",
-  },
+const routes = [
+  { href: "/guide/understanding-dissection" as const, title: "Understand the diagnosis", detail: "Start with clear language about carotid and vertebral artery dissection." },
+  { href: "/with-stroke" as const, title: "Living with dissection and stroke", detail: "Find questions about recovery, communication and daily life." },
+  { href: "/without-stroke" as const, title: "Dissection without diagnosed stroke", detail: "Explore follow-up and questions about what comes next." },
+  { href: "/supporting-someone" as const, title: "Supporting someone", detail: "Practical, patient-led ways to help family and friends." },
 ];
 
 export default function HomeScreen() {
-  return (
-    <SafeAreaView style={styles.safe} edges={["top"]}>
-      <ScrollView contentContainerStyle={styles.page}>
-        <View style={styles.header}>
-          <View style={styles.brandMark}><View style={styles.brandMarkInner} /></View>
-          <Text style={styles.brand}>VAD & Carotid Support</Text>
-          <Text style={styles.headerNote}>A project built with care</Text>
-        </View>
+  const { width } = useWindowDimensions();
+  const desktop = width >= 880;
+  return <AppPage wide>
+    <View style={styles.header}>
+      <Link href="/" asChild><Pressable accessibilityRole="link" accessibilityLabel="VAD and Carotid Support home" style={styles.brandRow}><View style={styles.brandMark}><View style={styles.brandMarkInner} /></View><View><Text style={styles.brand}>VAD & Carotid Support</Text><Text style={styles.brandNote}>Information made with care</Text></View></Pressable></Link>
+      {width >= 720 ? <View style={styles.nav}>
+        <NavLink href="/learn" label="Guides" />
+        <NavLink href="/appointments" label="Appointment sheet" />
+        <NavLink href="/resources" label="Resources" />
+      </View> : <Link href="/appointments" asChild><Pressable accessibilityRole="link" style={styles.mobileAction}><Text style={styles.mobileActionText}>Prepare</Text><Text style={styles.mobileActionArrow}>→</Text></Pressable></Link>}
+    </View>
 
-        <Link href="/urgent-help" asChild>
-          <Pressable
-            accessibilityRole="link"
-            style={({ pressed }) => [styles.urgent, pressed && styles.pressed]}
-          >
-            <View style={styles.urgentDot} />
-            <Text style={styles.urgentText}>New, sudden stroke symptoms? Get emergency help now.</Text>
-            <Text style={styles.urgentArrow}>›</Text>
-          </Pressable>
-        </Link>
-
-        <View style={styles.hero}>
-          <View style={styles.heroArt} accessibilityElementsHidden importantForAccessibility="no-hide-descendants">
-            <View style={styles.orbitOne} />
-            <View style={styles.orbitTwo} />
-            <View style={styles.orbitThree} />
-            <View style={styles.orbitCenter}><View style={styles.orbitCore} /></View>
-          </View>
-          <Text style={styles.eyebrow}>A QUIETER PLACE TO BEGIN</Text>
-          <Text style={styles.title}>You don’t have to figure it all out today.</Text>
-          <Text style={styles.intro}>
-            Clear information and thoughtful support for life after a carotid or vertebral artery dissection.
-          </Text>
-          <Text style={styles.personal}>
-            Your questions are welcome here. Your own care team is the right place for advice about your diagnosis and treatment.
-          </Text>
+    <View style={[styles.hero, desktop && styles.heroDesktop]}>
+      <View style={[styles.heroCopy, desktop && styles.heroCopyDesktop]}>
+        <View style={styles.kickerRow}><View style={styles.kickerDot} /><Text style={styles.kicker}>A SUPPORTIVE PLACE TO BEGIN</Text></View>
+        <Text accessibilityRole="header" style={styles.heroTitle}>Start with the question you have today.</Text>
+        <Text style={styles.heroBody}>Free, open-source information and appointment preparation for adults affected by vertebral or carotid artery dissection, and the people beside them.</Text>
+        <Text style={styles.heroFoot}>Take one step. Come back when you’re ready for another.</Text>
+      </View>
+      <View style={styles.routeCard}>
+        <View style={styles.routeCardHead}><Text style={styles.routeTitle}>Pick up where you are</Text><Text style={styles.routeCaption}>Choose a starting point</Text></View>
+        <View style={styles.routeList}>
+          <View pointerEvents="none" style={styles.routeSpine} />
+          {routes.map((route) => <Link key={route.href} href={route.href} asChild><Pressable accessibilityRole="link" style={styles.routeLink}>
+            <View style={styles.routeItem}><View style={styles.branch}><View style={styles.routeDot} /></View>
+              <View style={styles.routeCopy}><Text style={styles.routeItemTitle}>{route.title}</Text><Text style={styles.routeDetail}>{route.detail}</Text></View>
+              <Text accessibilityElementsHidden importantForAccessibility="no-hide-descendants" style={styles.routeArrow}>→</Text>
+            </View>
+          </Pressable></Link>)}
         </View>
+      </View>
+    </View>
 
-        <View style={styles.sectionHeading}>
-          <Text style={styles.sectionTitle}>What brings you here?</Text>
-          <Text style={styles.sectionNote}>Choose what feels closest. You can change direction any time.</Text>
-        </View>
+    <View style={[styles.tools, desktop && styles.toolsDesktop]}>
+      <ActionCard href="/appointments" label="BEFORE YOUR NEXT APPOINTMENT" title="Make room for your questions" detail="Choose prompts, add private notes, and decide whether to save or export." action="Build an appointment sheet" />
+      <ActionCard href="/resources" label="TRUSTED LINKS" title="Explore helpful resources" detail="Find patient, carer and professional reading from external publishers." action="Browse the directory" />
+    </View>
 
-        <View style={styles.pathList}>
-          {paths.map((path) => (
-            <Link key={path.href} href={path.href} asChild>
-              <Pressable
-                accessibilityRole="link"
-                style={({ pressed }) => [styles.pathCard, pressed && styles.pressed]}
-              >
-                <View style={[styles.pathMark, { backgroundColor: path.color }]}>
-                  <Text style={styles.pathMarkText}>{path.mark}</Text>
-                </View>
-                <View style={styles.pathCopy}>
-                  <Text style={styles.pathTitle}>{path.title}</Text>
-                  <Text style={styles.pathDetail}>{path.detail}</Text>
-                </View>
-                <Text style={styles.chevron}>›</Text>
-              </Pressable>
-            </Link>
-          ))}
-        </View>
+    <View style={styles.footer}>
+      <View style={styles.footerRule} />
+      <Text style={styles.footerText}>A development preview. Guides have not yet received clinical or patient/carer review. This site does not replace a person’s doctor.</Text>
+      <Link href="/about" asChild><Pressable accessibilityRole="link" style={styles.aboutLink}><Text style={styles.aboutText}>About, privacy and review process</Text><Text style={styles.aboutArrow}>→</Text></Pressable></Link>
+    </View>
+  </AppPage>;
+}
 
-        <View style={styles.featureCard}>
-          <Text style={styles.featureEyebrow}>FOR THE NEXT CONVERSATION</Text>
-          <Text style={styles.featureTitle}>A little more ready for your appointment.</Text>
-          <Text style={styles.featureText}>
-            Collect the questions you want to ask and choose what you’d like to bring with you.
-          </Text>
-          <Link href="/appointments" asChild>
-            <Pressable style={styles.featureAction} accessibilityRole="link">
-              <Text style={styles.featureActionText}>Explore appointment support</Text>
-              <Text style={styles.featureArrow}>→</Text>
-            </Pressable>
-          </Link>
-        </View>
+function NavLink({ href, label }: { href: "/learn" | "/appointments" | "/resources"; label: string }) {
+  return <Link href={href} asChild><Pressable accessibilityRole="link" style={({ pressed }) => [styles.navLink, pressed && styles.pressed]}><Text style={styles.navText}>{label}</Text></Pressable></Link>;
+}
 
-        <View style={styles.footer}>
-          <Text style={styles.footerTitle}>Made with patients and the people beside them.</Text>
-          <Text style={styles.footerText}>
-            Free, independent and open source. This project is being developed; its health information has not yet been clinically reviewed.
-          </Text>
-          <Link href="/about" asChild>
-            <Pressable accessibilityRole="link" style={styles.aboutLink}>
-              <Text style={styles.aboutLinkText}>About the project and its sources</Text>
-              <Text style={styles.chevron}>›</Text>
-            </Pressable>
-          </Link>
-        </View>
-      </ScrollView>
-    </SafeAreaView>
-  );
+function ActionCard({ href, label, title, detail, action }: { href: "/appointments" | "/resources"; label: string; title: string; detail: string; action: string }) {
+  return <Link href={href} asChild><Pressable accessibilityRole="link" style={styles.actionLink}><View style={styles.actionCard}>
+    <Text style={styles.actionLabel}>{label}</Text><Text style={styles.actionTitle}>{title}</Text><Text style={styles.actionDetail}>{detail}</Text><View style={styles.actionBottom}><Text style={styles.actionText}>{action}</Text><Text style={styles.actionArrow}>→</Text></View>
+  </View></Pressable></Link>;
 }
 
 const styles = StyleSheet.create({
-  safe: { flex: 1, backgroundColor: "#F7F8F5" },
-  page: { width: "100%", maxWidth: 900, alignSelf: "center", paddingHorizontal: 26, paddingBottom: 54 },
-  header: { minHeight: 84, flexDirection: "row", alignItems: "center", gap: 12 },
-  brandMark: { width: 31, height: 31, borderRadius: 16, backgroundColor: "#DDEBE8", alignItems: "center", justifyContent: "center" },
-  brandMarkInner: { width: 13, height: 13, borderRadius: 7, borderWidth: 2, borderColor: "#3F7773", transform: [{ rotate: "35deg" }] },
-  brand: { color: "#1D3535", fontSize: 15, fontWeight: "700", letterSpacing: 0.1 },
-  headerNote: { marginLeft: "auto", color: "#71807C", fontSize: 12 },
-  urgent: { minHeight: 54, paddingHorizontal: 16, flexDirection: "row", alignItems: "center", backgroundColor: "#FFF2E9", borderColor: "#E9C4A9", borderWidth: 1, borderRadius: 13, gap: 11 },
-  urgentDot: { width: 9, height: 9, borderRadius: 5, backgroundColor: "#B64F31" },
-  urgentText: { flex: 1, color: "#682F22", fontSize: 13, lineHeight: 19, fontWeight: "600" },
-  urgentArrow: { color: "#8F4432", fontSize: 23 },
-  hero: { position: "relative", overflow: "hidden", marginTop: 29, marginBottom: 35, paddingTop: 32, paddingBottom: 29, paddingHorizontal: 27, borderRadius: 23, backgroundColor: "#EAF2EF" },
-  heroArt: { position: "absolute", right: -12, top: -41, width: 200, height: 200, opacity: 0.82 },
-  orbitOne: { position: "absolute", width: 170, height: 170, top: 15, left: 18, borderRadius: 86, borderWidth: 1, borderColor: "#BCD3CE" },
-  orbitTwo: { position: "absolute", width: 126, height: 126, top: 37, left: 40, borderRadius: 64, borderWidth: 1, borderColor: "#B7CBC7", transform: [{ rotate: "36deg" }, { scaleX: 0.7 }] },
-  orbitThree: { position: "absolute", width: 126, height: 126, top: 37, left: 40, borderRadius: 64, borderWidth: 1, borderColor: "#CAD8D5", transform: [{ rotate: "-36deg" }, { scaleX: 0.7 }] },
-  orbitCenter: { position: "absolute", width: 60, height: 60, top: 70, left: 73, borderRadius: 30, backgroundColor: "#D8E7E2", alignItems: "center", justifyContent: "center" },
-  orbitCore: { width: 22, height: 22, borderRadius: 12, backgroundColor: "#7FA39D" },
-  eyebrow: { color: "#567873", fontSize: 10, fontWeight: "700", letterSpacing: 1.7 },
-  title: { maxWidth: 520, marginTop: 14, color: "#203B3A", fontSize: 34, lineHeight: 41, fontWeight: "600", letterSpacing: -0.7 },
-  intro: { maxWidth: 520, marginTop: 12, color: "#516560", fontSize: 16, lineHeight: 25 },
-  personal: { maxWidth: 520, marginTop: 17, color: "#647772", fontSize: 13, lineHeight: 21 },
-  sectionHeading: { marginBottom: 16 },
-  sectionTitle: { color: "#263D3A", fontSize: 21, fontWeight: "600" },
-  sectionNote: { marginTop: 6, color: "#78847F", fontSize: 13, lineHeight: 20 },
-  pathList: { gap: 10 },
-  pathCard: { minHeight: 78, flexDirection: "row", alignItems: "center", gap: 15, paddingHorizontal: 14, paddingVertical: 12, borderRadius: 15, backgroundColor: "#FFFFFF", borderWidth: 1, borderColor: "#E7EAE5" },
-  pathMark: { width: 44, height: 44, borderRadius: 13, alignItems: "center", justifyContent: "center" },
-  pathMarkText: { color: "#42635F", fontSize: 12, fontWeight: "700", letterSpacing: 0.4 },
-  pathCopy: { flex: 1 },
-  pathTitle: { color: "#293D3A", fontSize: 15, fontWeight: "600" },
-  pathDetail: { marginTop: 4, color: "#78837F", fontSize: 12, lineHeight: 18 },
-  chevron: { color: "#82918B", fontSize: 23, paddingHorizontal: 5 },
-  pressed: { opacity: 0.8 },
-  featureCard: { marginTop: 25, padding: 21, borderRadius: 17, backgroundColor: "#EEEFF8", borderColor: "#E2E3F0", borderWidth: 1 },
-  featureEyebrow: { color: "#676D91", fontSize: 9, fontWeight: "700", letterSpacing: 1.4 },
-  featureTitle: { maxWidth: 500, marginTop: 11, color: "#383C61", fontSize: 21, lineHeight: 28, fontWeight: "600" },
-  featureText: { maxWidth: 520, marginTop: 8, color: "#686D89", fontSize: 13, lineHeight: 20 },
-  featureAction: { flexDirection: "row", alignItems: "center", alignSelf: "flex-start", gap: 9, marginTop: 15, paddingVertical: 8 },
-  featureActionText: { color: "#4E587F", fontSize: 13, fontWeight: "600" },
-  featureArrow: { color: "#4E587F", fontSize: 16 },
-  footer: { marginTop: 36, paddingTop: 19, borderTopWidth: 1, borderTopColor: "#E5E9E4" },
-  footerTitle: { color: "#435750", fontSize: 13, fontWeight: "600" },
-  footerText: { maxWidth: 620, marginTop: 7, color: "#7B8781", fontSize: 12, lineHeight: 19 },
-  aboutLink: { flexDirection: "row", alignItems: "center", alignSelf: "flex-start", marginTop: 10, gap: 12 },
-  aboutLinkText: { color: "#537670", fontSize: 12, fontWeight: "600" },
+  header: { minHeight: 82, flexDirection: "row", alignItems: "center", justifyContent: "space-between", gap: 20, borderBottomWidth: 1, borderBottomColor: palette.line },
+  brandRow: { display: "flex", minHeight: 64, flexDirection: "row", alignItems: "center", gap: 11 },
+  brandMark: { width: 38, height: 38, borderRadius: 20, backgroundColor: palette.mint, alignItems: "center", justifyContent: "center" },
+  brandMarkInner: { width: 14, height: 14, borderRadius: 8, borderWidth: 2, borderColor: palette.teal, transform: [{ rotate: "35deg" }] },
+  brand: { color: palette.ink, fontSize: 15, fontWeight: "800" }, brandNote: { marginTop: 2, color: palette.muted, fontSize: 11, letterSpacing: 0.15 },
+  nav: { flexDirection: "row", alignItems: "center", gap: 5 }, navLink: { display: "flex", minHeight: 44, paddingHorizontal: 11, justifyContent: "center", borderRadius: 9 }, navText: { color: palette.tealDark, fontSize: 13, fontWeight: "700" },
+  mobileAction: { display: "flex", minHeight: 42, paddingHorizontal: 10, flexDirection: "row", alignItems: "center", gap: 5, borderRadius: 10, backgroundColor: palette.mint }, mobileActionText: { color: palette.tealDark, fontSize: 12, fontWeight: "800" }, mobileActionArrow: { color: palette.teal, fontSize: 15 },
+  hero: { marginTop: 28, gap: 22 }, heroDesktop: { flexDirection: "row", alignItems: "stretch", gap: 28 },
+  heroCopy: { padding: 22, borderRadius: 21, backgroundColor: palette.mint, borderWidth: 1, borderColor: "#D0E2DD" }, heroCopyDesktop: { flex: 0.92, justifyContent: "center", paddingHorizontal: 31, paddingVertical: 34 },
+  kickerRow: { flexDirection: "row", alignItems: "center", gap: 8 }, kicker: { color: palette.tealDark, fontSize: 10, letterSpacing: 1.45, fontWeight: "800" }, kickerDot: { width: 7, height: 7, borderRadius: 4, backgroundColor: palette.teal },
+  heroTitle: { maxWidth: 540, marginTop: 16, color: palette.ink, fontFamily: "Georgia", fontSize: 37, lineHeight: 45, fontWeight: "600" }, heroBody: { maxWidth: 520, marginTop: 14, color: palette.text, fontSize: 16, lineHeight: 26 }, heroFoot: { marginTop: 20, color: palette.tealDark, fontSize: 13, lineHeight: 19, fontWeight: "700" },
+  routeCard: { flex: 1, minWidth: 0, paddingHorizontal: 21, paddingTop: 20, paddingBottom: 12, borderRadius: 21, borderWidth: 1, borderColor: palette.line, backgroundColor: palette.white }, routeCardHead: { paddingBottom: 9 }, routeTitle: { color: palette.ink, fontSize: 17, lineHeight: 23, fontWeight: "800" }, routeCaption: { marginTop: 3, color: palette.muted, fontSize: 12, lineHeight: 18 },
+  routeList: { position: "relative" }, routeSpine: { position: "absolute", top: 14, bottom: 30, left: 8, width: 2, backgroundColor: "#B8D4CE" },
+  routeLink: { display: "flex" }, routeItem: { display: "flex", position: "relative", minHeight: 76, flexDirection: "row", alignItems: "center", paddingVertical: 11, paddingLeft: 37, paddingRight: 3, borderTopWidth: 1, borderTopColor: "#EDF2F0", gap: 9 },
+  branch: { position: "absolute", left: 0, top: 0, bottom: 0, width: 25, justifyContent: "center" }, routeDot: { width: 12, height: 12, marginLeft: 3, borderRadius: 6, backgroundColor: palette.white, borderColor: palette.teal, borderWidth: 2 },
+  routeCopy: { flex: 1 }, routeItemTitle: { color: palette.ink, fontSize: 14, lineHeight: 19, fontWeight: "800" }, routeDetail: { marginTop: 3, color: palette.muted, fontSize: 12, lineHeight: 17 }, routeArrow: { color: palette.teal, fontSize: 16, paddingHorizontal: 4 },
+  tools: { marginTop: 20, gap: 13 }, toolsDesktop: { flexDirection: "row" },
+  actionLink: { display: "flex", flex: 1 }, actionCard: { display: "flex", flex: 1, padding: 20, borderWidth: 1, borderColor: palette.line, borderRadius: 16, backgroundColor: palette.white }, actionLabel: { color: palette.gold, fontSize: 10, letterSpacing: 1.15, lineHeight: 15, fontWeight: "800" }, actionTitle: { marginTop: 8, color: palette.ink, fontSize: 17, lineHeight: 23, fontWeight: "800" }, actionDetail: { minHeight: 44, marginTop: 6, color: palette.text, fontSize: 13, lineHeight: 20 }, actionBottom: { display: "flex", minHeight: 32, flexDirection: "row", alignItems: "center", gap: 9, marginTop: 8 }, actionText: { color: palette.tealDark, fontSize: 13, fontWeight: "800" }, actionArrow: { color: palette.teal, fontSize: 17 },
+  footer: { marginTop: 27 }, footerRule: { height: 1, backgroundColor: palette.line }, footerText: { marginTop: 14, color: palette.muted, fontSize: 12, lineHeight: 19 }, aboutLink: { display: "flex", minHeight: 44, flexDirection: "row", alignItems: "center", gap: 8, alignSelf: "flex-start" }, aboutText: { color: palette.tealDark, fontSize: 13, fontWeight: "700" }, aboutArrow: { color: palette.teal, fontSize: 16 },
+  pressed: { opacity: 0.75 },
 });

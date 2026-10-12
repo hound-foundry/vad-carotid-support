@@ -1,6 +1,6 @@
-import { Link } from "expo-router";
-import { Pressable, StyleSheet, Text, View } from "react-native";
-import { SafeAreaView } from "react-native-safe-area-context";
-export default function WithoutStroke(){return <Page title="Your experience counts, with or without a stroke." body="People can have very different experiences after a dissection. This pathway is being shaped to include people with local symptoms or no diagnosed stroke."/>}
-function Page({title,body}:{title:string;body:string}){return <SafeAreaView style={s.safe}><View style={s.page}><Link href="/" asChild><Pressable accessibilityRole="link"><Text style={s.back}>‹  Home</Text></Pressable></Link><Text style={s.label}>IN DEVELOPMENT</Text><Text style={s.title}>{title}</Text><Text style={s.body}>{body}</Text><Text style={s.note}>The content here is a product draft, not medical guidance. Ask your treating clinician about your own situation.</Text></View></SafeAreaView>}
-const s=StyleSheet.create({safe:{flex:1,backgroundColor:"#F7F8F5"},page:{width:"100%",maxWidth:760,alignSelf:"center",padding:26},back:{color:"#537670",fontSize:14,paddingVertical:18},label:{marginTop:25,color:"#567873",fontSize:11,fontWeight:"700",letterSpacing:1.5},title:{marginTop:12,color:"#263D3A",fontSize:30,lineHeight:38,fontWeight:"600"},body:{marginTop:14,color:"#576762",fontSize:16,lineHeight:25},note:{marginTop:26,color:"#7B8781",fontSize:13,lineHeight:21}});
+import { AppPage, BackHome, Card, DraftNotice, PageHeading } from "../src/components/AppPage";
+import { GuideList } from "../src/components/GuideList";
+
+export default function WithoutStroke() {
+  return <AppPage><BackHome /><PageHeading eyebrow="Dissection without a diagnosed stroke" title="Your experience still counts." summary="A pathway for people whose dissection was not accompanied by a diagnosed stroke, including questions about follow-up and life after diagnosis." /><DraftNotice /><Card title="Guides for this pathway"><GuideList slugs={["understanding-dissection", "tests-and-terms", "without-stroke", "recovery-and-quality-of-life", "follow-up-questions"]} /></Card></AppPage>;
+}
