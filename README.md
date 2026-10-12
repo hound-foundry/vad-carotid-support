@@ -8,7 +8,7 @@ The project begins with lived experience and a simple aim: make trustworthy info
 
 ## What we are building
 
-The shared Expo project is web-first and remains structured for later iOS and Android builds. The current preview includes seven short, sourced English guide drafts, separate with-stroke and without-stroke paths, carer information, a local appointment question sheet, a local “How I prefer to be supported” sheet, a device-only saved-guide list, an external-resource directory and urgent-help access from every route. Each guide is clearly marked as unapproved pending clinical and patient/carer review.
+The shared Expo project is web-first and remains structured for later iOS and Android builds. The current preview includes seven short, sourced English guide drafts, a source-linked plain-language glossary, separate with-stroke and without-stroke paths, carer information, a local appointment question sheet with browser print, a local “How I prefer to be supported” sheet, a device-only saved-guide list, an external-resource directory and urgent-help access from every route. Each guide and glossary definition is clearly marked as unapproved pending clinical and patient/carer review.
 
 The app will point people back to their own care team. It will not diagnose, score symptoms, choose medicines, promise recovery or tell a person when to return to an activity. Country and language settings will be separate. External articles will remain on their publishers’ sites.
 

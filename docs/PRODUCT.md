@@ -17,7 +17,7 @@ These are navigation choices, not a diagnostic or eligibility questionnaire. Som
 
 ## V1 implementation status
 
-The current web-first preview is for adults and carers. It includes seven original, source-linked English drafts; separate navigation for dissection without a diagnosed stroke, dissection with stroke, carers and general learning; an appointment question sheet; a “How I prefer to be supported” sheet with optional choices and note, preview, explicit local save, export and delete; a device-only saved-guide list with explicit export and delete controls; a public external-resource directory; and a persistent urgent-help link. All clinical guides remain visibly marked as drafts and are not approved for patient use.
+The current web-first preview is for adults and carers. It includes seven original, source-linked English drafts and a source-linked plain-language glossary; separate navigation for dissection without a diagnosed stroke, dissection with stroke, carers and general learning; an appointment question sheet with preview, local save, export, delete and browser print; a “How I prefer to be supported” sheet with optional choices and note, preview, explicit local save, export and delete; a device-only saved-guide list with explicit export and delete controls; a public external-resource directory; and a persistent urgent-help link. All clinical guides and glossary definitions remain visibly marked as drafts and are not approved for patient use.
 
 The 2017 survivor book is linked by bibliographic record only. Three suggested Facebook groups remain hidden in a verification queue because their current group details and access conditions have not been verified. No individual profile or group-member post is included. No user stories, health tracking, case registry, account, sync, analytics, backend, advertising or donations are part of V1.
 
@@ -34,6 +34,8 @@ The app is an international English development preview, not a cleared global re
 - Carer guidance for listening, practical support, appointments, communication difficulties and fatigue.
 - Space for emotional wellbeing, uncertainty, persistent symptoms and recovery that is not visible to other people.
 - Curated links identifying publisher, audience, language, evidence type, publication date and last checked date; users can save guide links on their device for later.
+
+The appointment sheet can be printed from its preview in a web browser. The print action includes only the previewed questions and optional note; browser print settings and any printer or destination are outside the app's control.
 
 ## Clinical boundaries
 

@@ -11,8 +11,11 @@ Items are proposals, not promised dates. Safety review is a release gate.
 - [x] Appointment question sheet with grouped prompts and optional local-only export.
 - [x] Appointment prompts ordered around before, during and leaving the appointment, including participation needs and a clear route for pending results.
 - [x] Optional one-section-at-a-time appointment view for people who prefer a smaller set of prompts on screen.
+- [x] Source-linked plain-language glossary for common terms used in the guide drafts; every definition includes a limit and remains marked as unapproved.
+- [x] Browser print action for the user-reviewed appointment-sheet preview.
 - [x] Patient/carer usability review prompts and safe feedback-handling guidance.
 - [ ] Patient and carer review of navigation and language.
+- [ ] Clinician review of glossary definitions and appointment prompts before any patient-facing release.
 - [ ] Clinically reviewed emergency wording and country-specific resources.
 - [ ] Initial UK operator, privacy and device-purpose assessment.
 
@@ -25,6 +28,8 @@ Items are proposals, not promised dates. Safety review is a release gate.
 - [x] Save guide links locally with explicit export/delete controls and a device privacy notice.
 - [x] Listed resource cards show evidence type, check date, language, editorial/clinical review status and rights basis; community candidates remain hidden pending verification.
 - [ ] English-reviewed content; add translated interface and short guides after language and clinical review.
+
+The glossary and print controls are implemented, but their presence does not count as clinical or usability approval. Review tasks stay open until appropriately qualified people have completed and documented them.
 
 ## Before distribution
 

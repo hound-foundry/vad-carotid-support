@@ -6,6 +6,9 @@ import ts from "typescript";
 const guideSource = await readFile(new URL("../src/content/guides.ts", import.meta.url), "utf8");
 const guideModule = ts.transpileModule(guideSource, { compilerOptions: { module: ts.ModuleKind.ESNext, target: ts.ScriptTarget.ES2022 } }).outputText;
 const { guides } = await import(`data:text/javascript;base64,${Buffer.from(guideModule).toString("base64")}`);
+const glossarySource = await readFile(new URL("../src/content/glossary.ts", import.meta.url), "utf8");
+const glossaryModule = ts.transpileModule(glossarySource, { compilerOptions: { module: ts.ModuleKind.ESNext, target: ts.ScriptTarget.ES2022 } }).outputText;
+const { glossary } = await import(`data:text/javascript;base64,${Buffer.from(glossaryModule).toString("base64")}`);
 
 const require = createRequire(import.meta.url);
 const references = require("../content/references.json");
@@ -46,6 +49,13 @@ for (const guide of guides) {
     }
     assert.ok(guide.reviewedOn, `${guide.slug} needs a review date before publication`);
   }
+}
+
+assert.ok(glossary.length > 0, "The plain-language glossary must contain entries");
+assert.equal(new Set(glossary.map((entry) => entry.term)).size, glossary.length, "Glossary terms must be unique");
+for (const entry of glossary) {
+  assert.ok(entry.term.trim() && entry.definition.trim() && entry.limit.trim(), "Every glossary entry needs a term, definition and limitation");
+  assert.ok(sources.has(entry.sourceId), `Glossary term ${entry.term} has unknown source ${entry.sourceId}`);
 }
 
 assert.equal(resources.globalRelease, "blocked", "International release must stay blocked until jurisdiction screening is complete");
