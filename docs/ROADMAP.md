@@ -1,0 +1,32 @@
+# Roadmap
+
+Items are proposals, not promised dates. Safety review is a release gate.
+
+## Foundation
+
+- [x] Open-source project purpose and licence records.
+- [x] Starter literature catalogue with explicit candidate/review status.
+- [x] Expo and TypeScript skeleton for web, iOS and Android.
+- [ ] Patient and carer review of navigation and language.
+- [ ] Clinically reviewed emergency wording and country-specific resources.
+- [ ] Initial UK operator, privacy and device-purpose assessment.
+
+## First useful release
+
+- [ ] A short start-here route for people with no stroke, with stroke, family/carers and general learning.
+- [ ] Sourced plain-language guide to VAD/CAD and investigations.
+- [ ] Appointment question sheet with optional local-only export.
+- [ ] “How to support me” sheet with selection and sharing preview.
+- [ ] Private notes and saved links, with delete/export and no account.
+- [ ] Curated links with evidence type, date, language, review and rights status.
+- [ ] English-reviewed content; add translated interface and short guides after language and clinical review.
+
+## Before distribution
+
+- [ ] Review intended purpose and medical-software status by target market.
+- [ ] Finish country-by-country privacy, consumer, accessibility, content and store screening for each launch market.
+- [ ] Confirm operator identity and public contact route.
+- [ ] Check accessibility with assistive technology and people with relevant lived experience.
+- [ ] Complete content, translation, privacy, security and local emergency review.
+- [ ] Verify Apple and Google declarations, privacy details, store screenshots and package identifiers.
+- [ ] Produce evidence-backed release notes; keep missing review visible.

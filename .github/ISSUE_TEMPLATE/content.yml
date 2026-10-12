@@ -1,0 +1,28 @@
+name: Suggest a resource or content change
+description: Suggest a source or improvement; this is not a request for personal medical advice.
+labels: [content]
+body:
+  - type: markdown
+    attributes:
+      value: "Do not share personal medical information, records or private correspondence. The project cannot provide care or diagnose symptoms."
+  - type: input
+    id: source
+    attributes:
+      label: Public source URL or DOI
+      description: Link to a public guideline, research record or patient resource. Do not upload copyrighted content.
+    validations:
+      required: true
+  - type: textarea
+    id: suggestion
+    attributes:
+      label: What should we review?
+      description: Describe the general topic and intended audience, not an individual health question.
+    validations:
+      required: true
+  - type: checkboxes
+    id: privacy
+    attributes:
+      label: Before submitting
+      options:
+        - label: I have not included personal health information or material I do not have rights to share.
+          required: true

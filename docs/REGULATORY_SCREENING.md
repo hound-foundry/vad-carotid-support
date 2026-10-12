@@ -1,0 +1,35 @@
+# Regulatory screening register
+
+**Status: not a legal clearance and not a completed country-by-country assessment. Do not describe the app as legally compliant worldwide.** This dated register provides a method for screening every country and territory considered for access, website targeting, hosting or store distribution. Confirmed local legal advice is needed before launch where applicability is uncertain.
+
+## Project assumptions to reassess
+
+- The operator is UK-based; the exact legal person, responsible controller and contact details have not been established.
+- The product is free, educational and patient-support oriented. No ads, accounts, subscriptions, clinical decision tools or backend health-data store are planned.
+- People can save notes on their own device. This design target has not yet been implemented or assessed. Website hosting logs, browser backups, external destinations, app-store disclosures and exports still create relevant data flows.
+- The app points people to their own clinician and urgent services. The exact wording, features, claims and intended purpose still require medical-device classification review in each launch jurisdiction. A disclaimer is not a substitute for that review.
+- The app may include adults and children unless its audience is formally limited. Assess child-access rules before deciding.
+
+## Required screen for every launch territory
+
+Record the jurisdiction, relevant subnational regions, official legal text and regulator guidance, source/last checked date, effective date, territorial trigger, applicability rationale and confidence. Screen privacy and health data; cookies/device storage; security and breach reporting; cross-border transfers and local hosting; representative, registration or regulator fees; medical-software classification and vigilance; consumer and advertising rules; accessibility; children’s protections; copyright/database rights and translation; app-store requirements; tax/charity implications if funding changes; language/record-keeping requirements; enforcement and operational response.
+
+For each topic, status must be screened, not applicable with reason, needs local counsel or not assessed. Each jurisdiction needs an owner and review date before release. App-store policy and voluntary good practice are recorded separately from law. Recheck current amendments at release and on a scheduled basis.
+
+## Initial source leads, not findings of compliance
+
+| Area | Official source lead | What remains to check |
+|---|---|---|
+| United Kingdom privacy and device storage | [ICO UK storage/access technology guidance](https://ico.org.uk/for-organisations/direct-marketing-and-privacy-and-electronic-communications/guidance-on-the-use-of-storage-and-access-technologies/) (updated 29 April 2026) | UK GDPR scope and special-category condition, DUAA/PECR changes, hosting and local storage purposes, controller identity, breach duties, ICO fee and children’s-code applicability. |
+| EU/EEA privacy | [EDPB territorial-scope guideline](https://www.edpb.europa.eu/documents/guideline/guidelines-32018-on-the-territorial-scope-of-the-gdpr-article-3-version-adopted_en) | GDPR territorial reach by processing activity, Article 9, representative, transfers, national ePrivacy implementation and country-specific accessibility/consumer rules. |
+| EU medical software/accessibility | [MDCG 2019-11 rev.1 (2025)](https://health.ec.europa.eu/latest-updates/update-mdcg-2019-11-rev1-qualification-and-classification-software-regulation-eu-2017745-and-2025-06-17_en), [European Accessibility Act](https://commission.europa.eu/strategy-and-policy/policies/justice-and-fundamental-rights/disability/european-accessibility-act-eaa_en) | Intended-purpose classification and class, national enforcement/transposition, accessibility scope and any micro-enterprise exception. |
+| United States privacy | [FTC health-app guidance](https://www.ftc.gov/business-guidance/resources/mobile-health-apps-interactive-tool) | FTC Act and breach-rule applicability; HIPAA role by actual relationships; each state’s consumer-health/privacy/breach law, including Washington’s My Health My Data Act; FDA software classification. |
+| United States device software | [FDA software examples](https://www.fda.gov/medical-devices/device-software-functions-including-mobile-medical-applications/examples-software-functions-are-not-medical-devices) | Confirm actual claims/features fit relevant guidance; assess state laws and updated FDA rules separately. |
+| Canada | [Privacy Commissioner: PIPEDA](https://www.priv.gc.ca/en/privacy-topics/privacy-laws-in-canada/the-personal-information-protection-and-electronic-documents-act-pipeda/pipeda_brief/) | Commercial-activity trigger for a free project, provincial private-sector/privacy/health-information laws, cross-border flows and device definition. |
+| Australia | [OAIC health-service provider scope](https://www.oaic.gov.au/privacy/your-privacy-rights/health-information/what-is-a-health-service-provider) | Privacy Act coverage and small-business exceptions, state/territory rules, therapeutic-goods software and consumer law. |
+| Mainland China | [MIIT app filing notice](https://www.miit.gov.cn/jgsj/xgj/wjfb/art/2023/art_dd783a581c9644a4aee10afa582811db.html) | App and ICP filing/hosting, PIPL reach and sensitive health information, cross-border transfer, cybersecurity/content rules, store access and local counsel. |
+| Japan | [Personal Information Protection Commission](https://www.ppc.go.jp/en/) | APPI extraterritorial reach, medical-history handling, transfer notice, device classification and current Japanese text. |
+| Ukraine, Russia, Lithuania, Latvia, Estonia, France, Spain | National legislation, privacy authority, device authority, consumer and accessibility rules | Each country requires a separate dated entry; common language or EU membership is not an applicability determination. Russia requires dedicated sanctions, store access, data-localisation and operational assessment. |
+| Other countries and territories | [UNCTAD Global Cyberlaw Tracker](https://unctad.org/page/data-protection-and-privacy-legislation-worldwide?from=HN) as discovery index | Expand using the current official ISO 3166 country/territory list; verify regulator and primary legislation per jurisdiction. The tracker itself is not legal clearance. |
+
+The external book/article links, store forms, public GitHub repository and volunteer identity also need review before launch. No jurisdiction is marked cleared by this starter register.

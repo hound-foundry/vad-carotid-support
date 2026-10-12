@@ -1,0 +1,27 @@
+name: Something is not working
+description: Report a technical problem without sharing medical information.
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: "Do not include names, diagnoses, records, screenshots of care, private messages or other personal health information. Use synthetic examples only. This form is not monitored for emergencies or clinical advice."
+  - type: textarea
+    id: problem
+    attributes:
+      label: What happened?
+      description: Describe the screen or action and expected result. Do not include health information.
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: App version or commit
+    validations:
+      required: false
+  - type: dropdown
+    id: platform
+    attributes:
+      label: Platform
+      options: [Web, iOS, Android, Other]
+    validations:
+      required: true

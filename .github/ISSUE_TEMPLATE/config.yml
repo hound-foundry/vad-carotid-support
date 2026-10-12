@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Report a security vulnerability privately
+    url: https://github.com/hound-foundry/vad-carotid-support/security/advisories/new
+    about: Please do not post exploitable details in a public issue.
+  - name: Medical advice or emergencies
+    url: https://www.nhs.uk/conditions/stroke/
+    about: This project cannot give individual medical advice. Contact your clinician or local emergency services.
