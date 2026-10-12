@@ -178,6 +178,16 @@ const latviaSourceUrls = [
 ];
 assert.equal(latviaRecord.officialSources.length, latviaSourceUrls.length, "Latvian national source leads must be enumerated");
 for (const url of latviaSourceUrls) assert.ok(latviaRecord.officialSources.some((source) => source.url === url && source.status === "source-lead-only" && source.checkedOn === "2026-10-12"), `Latvian source lead missing, undated or misclassified: ${url}`);
+const ukraineRecord = resources.countryRecords.find((country) => country.isoAlpha2 === "UA");
+assert.ok(ukraineRecord && ukraineRecord.legalReview.status === "not-assessed" && ukraineRecord.subnationalReview.status === "not-assessed" && ukraineRecord.release === "blocked", "Ukraine source discovery must not be mistaken for legal clearance");
+assert.equal(ukraineRecord.sourceDiscoveryCheckedOn, "2026-10-13", "Ukraine source discovery needs its own dated record");
+assert.equal(ukraineRecord.officialSources.length, 22, "Ukraine source leads should include the current national and platform-policy inventory");
+assert.ok(ukraineRecord.officialSources.every((source) => source.status === "source-lead-only" && source.checkedOn === "2026-10-13"), "Ukraine sources must remain dated source leads only");
+assert.equal(ukraineRecord.reviewAreas.length, 14, "Every Ukraine legal review topic must remain explicit");
+assert.ok(ukraineRecord.reviewAreas.every((area) => area.status === "not-assessed"), "Ukraine source discovery must not change a legal review area to assessed");
+assert.ok(ukraineRecord.officialSources.some((source) => source.url === "https://zakon.rada.gov.ua/laws/show/3153-IX" && source.sourceType === "legislation-not-yet-in-force"), "Ukraine's consumer-law transition lead must remain visible");
+assert.deepEqual(ukraineRecord.subnationalAreas.map((area) => area.name), ["Autonomous Republic of Crimea", "Vinnytsia Oblast", "Volyn Oblast", "Dnipropetrovsk Oblast", "Donetsk Oblast", "Zhytomyr Oblast", "Zakarpattia Oblast", "Zaporizhzhia Oblast", "Ivano-Frankivsk Oblast", "Kyiv Oblast", "Kirovohrad Oblast", "Luhansk Oblast", "Lviv Oblast", "Mykolaiv Oblast", "Odesa Oblast", "Poltava Oblast", "Rivne Oblast", "Sumy Oblast", "Ternopil Oblast", "Kharkiv Oblast", "Kherson Oblast", "Khmelnytskyi Oblast", "Cherkasy Oblast", "Chernivtsi Oblast", "Chernihiv Oblast", "City of Kyiv", "City of Sevastopol"], "Ukraine must retain the full Constitution Article 133 top-level screening queue");
+assert.ok(ukraineRecord.subnationalAreas.every((area) => area.status === "not-assessed" && area.checkedOn === "2026-10-13" && area.reviewer === null), "Ukraine subnational source discovery must not be mistaken for local clearance");
 assert.equal(community.candidates.length, 3, "All three user-provided community candidates must be tracked");
 assert.ok(community.candidates.every((candidate) => candidate.status === "pending-verification" && /^\d{4}-\d{2}-\d{2}$/.test(candidate.lastChecked) && candidate.verificationNote?.trim()), "Unverified community candidates must remain hidden with a dated verification record");
 assert.ok(community.candidates.every((candidate) => /^https:\/\/www\.facebook\.com\/groups\/[0-9]+$/.test(candidate.url)), "The community verification queue may contain group links only");

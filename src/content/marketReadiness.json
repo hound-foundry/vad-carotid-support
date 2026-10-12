@@ -31526,7 +31526,184 @@
       "isoAlpha2": "UA",
       "reviewOwner": null,
       "lastChecked": null,
-      "officialSources": [],
+      "officialSources": [
+        {
+          "title": "Law of Ukraine on Protection of Personal Data (2297-VI)",
+          "url": "https://zakon.rada.gov.ua/laws/show/2297-17",
+          "authority": "Verkhovna Rada of Ukraine / Legislation of Ukraine",
+          "sourceType": "legislation",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Law of Ukraine on Electronic Communications (1089-IX)",
+          "url": "https://zakon.rada.gov.ua/laws/show/1089-20",
+          "authority": "Verkhovna Rada of Ukraine / Legislation of Ukraine",
+          "sourceType": "legislation",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Law on Protection of Information in Information and Communication Systems (80/94-VR)",
+          "url": "https://zakon.rada.gov.ua/laws/show/80/94-%D0%B2%D1%80",
+          "authority": "Verkhovna Rada of Ukraine / Legislation of Ukraine",
+          "sourceType": "legislation",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Law on Basic Principles of Ensuring Cybersecurity of Ukraine (2163-VIII)",
+          "url": "https://zakon.rada.gov.ua/laws/show/2163-19",
+          "authority": "Verkhovna Rada of Ukraine / Legislation of Ukraine",
+          "sourceType": "legislation",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Technical Regulation on Medical Devices, Cabinet Resolution 753",
+          "url": "https://zakon.rada.gov.ua/laws/show/753-2013-%D0%BF",
+          "authority": "Verkhovna Rada of Ukraine / Legislation of Ukraine",
+          "sourceType": "technical-regulation",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Consumer Protection Law (1023-XII)",
+          "url": "https://zakon.rada.gov.ua/laws/show/1023-12",
+          "authority": "Verkhovna Rada of Ukraine / Legislation of Ukraine",
+          "sourceType": "legislation",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Consumer Protection Law (3153-IX; official record says it has not yet entered into force)",
+          "url": "https://zakon.rada.gov.ua/laws/show/3153-IX",
+          "authority": "Verkhovna Rada of Ukraine / Legislation of Ukraine",
+          "sourceType": "legislation-not-yet-in-force",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Law on Electronic Commerce (675-VIII)",
+          "url": "https://zakon.rada.gov.ua/laws/show/675-19",
+          "authority": "Verkhovna Rada of Ukraine / Legislation of Ukraine",
+          "sourceType": "legislation",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Law of Ukraine on Advertising (270/96-VR)",
+          "url": "https://zakon.rada.gov.ua/laws/show/270/96-%D0%B2%D1%80",
+          "authority": "Verkhovna Rada of Ukraine / Legislation of Ukraine",
+          "sourceType": "legislation",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Cabinet Resolution 757: accessibility of information and communication systems and electronic documents",
+          "url": "https://zakon.rada.gov.ua/laws/show/757-2023-%D0%BF",
+          "authority": "Verkhovna Rada of Ukraine / Legislation of Ukraine",
+          "sourceType": "regulation",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Law on Fundamentals of Social Protection of Persons with Disabilities in Ukraine (875-XII)",
+          "url": "https://zakon.rada.gov.ua/laws/show/875-12",
+          "authority": "Verkhovna Rada of Ukraine / Legislation of Ukraine",
+          "sourceType": "legislation",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Law on Protection of Childhood (2402-III)",
+          "url": "https://zakon.rada.gov.ua/laws/show/2402-14",
+          "authority": "Verkhovna Rada of Ukraine / Legislation of Ukraine",
+          "sourceType": "legislation",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Law on Copyright and Related Rights (2811-IX)",
+          "url": "https://zakon.rada.gov.ua/laws/show/2811-20",
+          "authority": "Verkhovna Rada of Ukraine / Legislation of Ukraine",
+          "sourceType": "legislation",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Law on the Public Emergency Aid Service at the Single Telephone Number 112 (4499-VI)",
+          "url": "https://zakon.rada.gov.ua/laws/show/4499-17",
+          "authority": "Verkhovna Rada of Ukraine / Legislation of Ukraine",
+          "sourceType": "legislation",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "State Emergency Service: emergency service contacts",
+          "url": "https://bezpeka.dsns.gov.ua/contacts",
+          "authority": "State Emergency Service of Ukraine",
+          "sourceType": "official-service-information",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Law on Charitable Activities and Charitable Organizations (5073-VI)",
+          "url": "https://zakon.rada.gov.ua/laws/show/5073-17",
+          "authority": "Verkhovna Rada of Ukraine / Legislation of Ukraine",
+          "sourceType": "legislation",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Tax Code of Ukraine (2755-VI)",
+          "url": "https://zakon.rada.gov.ua/laws/show/2755-17",
+          "authority": "Verkhovna Rada of Ukraine / Legislation of Ukraine",
+          "sourceType": "legislation",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Law on Ensuring the Functioning of Ukrainian as the State Language (2704-VIII)",
+          "url": "https://zakon.rada.gov.ua/laws/show/2704-19",
+          "authority": "Verkhovna Rada of Ukraine / Legislation of Ukraine",
+          "sourceType": "legislation",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Constitution of Ukraine, Article 133 (administrative-territorial structure)",
+          "url": "https://zakon.rada.gov.ua/laws/show/254%D0%BA/96-%D0%B2%D1%80",
+          "authority": "Verkhovna Rada of Ukraine / Legislation of Ukraine",
+          "sourceType": "constitution",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Apple App Review Guidelines (platform policy, not legislation)",
+          "url": "https://developer.apple.com/app-store/review/guidelines/",
+          "authority": "Apple",
+          "sourceType": "platform-policy",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Google Play Health Content and Services policy (platform policy, not legislation)",
+          "url": "https://support.google.com/googleplay/android-developer/answer/16679511?hl=en-GB",
+          "authority": "Google Play",
+          "sourceType": "platform-policy",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Cabinet Resolution 1748 on local self-government and territorial organization during martial law and EU-accession preparation",
+          "url": "https://zakon.rada.gov.ua/laws/show/1748-2025-%D0%BF",
+          "authority": "Cabinet of Ministers of Ukraine / Legislation of Ukraine",
+          "sourceType": "government-strategy",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        }
+      ],
       "reviewAreas": [
         {
           "area": "privacy-and-health-data",
@@ -31641,7 +31818,226 @@
           "reviewer": null
         }
       ],
-      "subnationalAreas": []
+      "subnationalAreas": [
+        {
+          "name": "Autonomous Republic of Crimea",
+          "status": "not-assessed",
+          "reason": "Constitutional top-level screening target only; no distinct subnational-law review performed. Districts, hromadas, wartime/occupied-territory issues and any applicable local rules remain to be identified.",
+          "source": "https://zakon.rada.gov.ua/laws/show/254%D0%BA/96-%D0%B2%D1%80",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Vinnytsia Oblast",
+          "status": "not-assessed",
+          "reason": "Constitutional top-level screening target only; no distinct subnational-law review performed. Districts, hromadas, wartime/occupied-territory issues and any applicable local rules remain to be identified.",
+          "source": "https://zakon.rada.gov.ua/laws/show/254%D0%BA/96-%D0%B2%D1%80",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Volyn Oblast",
+          "status": "not-assessed",
+          "reason": "Constitutional top-level screening target only; no distinct subnational-law review performed. Districts, hromadas, wartime/occupied-territory issues and any applicable local rules remain to be identified.",
+          "source": "https://zakon.rada.gov.ua/laws/show/254%D0%BA/96-%D0%B2%D1%80",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Dnipropetrovsk Oblast",
+          "status": "not-assessed",
+          "reason": "Constitutional top-level screening target only; no distinct subnational-law review performed. Districts, hromadas, wartime/occupied-territory issues and any applicable local rules remain to be identified.",
+          "source": "https://zakon.rada.gov.ua/laws/show/254%D0%BA/96-%D0%B2%D1%80",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Donetsk Oblast",
+          "status": "not-assessed",
+          "reason": "Constitutional top-level screening target only; no distinct subnational-law review performed. Districts, hromadas, wartime/occupied-territory issues and any applicable local rules remain to be identified.",
+          "source": "https://zakon.rada.gov.ua/laws/show/254%D0%BA/96-%D0%B2%D1%80",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Zhytomyr Oblast",
+          "status": "not-assessed",
+          "reason": "Constitutional top-level screening target only; no distinct subnational-law review performed. Districts, hromadas, wartime/occupied-territory issues and any applicable local rules remain to be identified.",
+          "source": "https://zakon.rada.gov.ua/laws/show/254%D0%BA/96-%D0%B2%D1%80",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Zakarpattia Oblast",
+          "status": "not-assessed",
+          "reason": "Constitutional top-level screening target only; no distinct subnational-law review performed. Districts, hromadas, wartime/occupied-territory issues and any applicable local rules remain to be identified.",
+          "source": "https://zakon.rada.gov.ua/laws/show/254%D0%BA/96-%D0%B2%D1%80",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Zaporizhzhia Oblast",
+          "status": "not-assessed",
+          "reason": "Constitutional top-level screening target only; no distinct subnational-law review performed. Districts, hromadas, wartime/occupied-territory issues and any applicable local rules remain to be identified.",
+          "source": "https://zakon.rada.gov.ua/laws/show/254%D0%BA/96-%D0%B2%D1%80",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Ivano-Frankivsk Oblast",
+          "status": "not-assessed",
+          "reason": "Constitutional top-level screening target only; no distinct subnational-law review performed. Districts, hromadas, wartime/occupied-territory issues and any applicable local rules remain to be identified.",
+          "source": "https://zakon.rada.gov.ua/laws/show/254%D0%BA/96-%D0%B2%D1%80",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Kyiv Oblast",
+          "status": "not-assessed",
+          "reason": "Constitutional top-level screening target only; no distinct subnational-law review performed. Districts, hromadas, wartime/occupied-territory issues and any applicable local rules remain to be identified.",
+          "source": "https://zakon.rada.gov.ua/laws/show/254%D0%BA/96-%D0%B2%D1%80",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Kirovohrad Oblast",
+          "status": "not-assessed",
+          "reason": "Constitutional top-level screening target only; no distinct subnational-law review performed. Districts, hromadas, wartime/occupied-territory issues and any applicable local rules remain to be identified.",
+          "source": "https://zakon.rada.gov.ua/laws/show/254%D0%BA/96-%D0%B2%D1%80",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Luhansk Oblast",
+          "status": "not-assessed",
+          "reason": "Constitutional top-level screening target only; no distinct subnational-law review performed. Districts, hromadas, wartime/occupied-territory issues and any applicable local rules remain to be identified.",
+          "source": "https://zakon.rada.gov.ua/laws/show/254%D0%BA/96-%D0%B2%D1%80",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Lviv Oblast",
+          "status": "not-assessed",
+          "reason": "Constitutional top-level screening target only; no distinct subnational-law review performed. Districts, hromadas, wartime/occupied-territory issues and any applicable local rules remain to be identified.",
+          "source": "https://zakon.rada.gov.ua/laws/show/254%D0%BA/96-%D0%B2%D1%80",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Mykolaiv Oblast",
+          "status": "not-assessed",
+          "reason": "Constitutional top-level screening target only; no distinct subnational-law review performed. Districts, hromadas, wartime/occupied-territory issues and any applicable local rules remain to be identified.",
+          "source": "https://zakon.rada.gov.ua/laws/show/254%D0%BA/96-%D0%B2%D1%80",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Odesa Oblast",
+          "status": "not-assessed",
+          "reason": "Constitutional top-level screening target only; no distinct subnational-law review performed. Districts, hromadas, wartime/occupied-territory issues and any applicable local rules remain to be identified.",
+          "source": "https://zakon.rada.gov.ua/laws/show/254%D0%BA/96-%D0%B2%D1%80",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Poltava Oblast",
+          "status": "not-assessed",
+          "reason": "Constitutional top-level screening target only; no distinct subnational-law review performed. Districts, hromadas, wartime/occupied-territory issues and any applicable local rules remain to be identified.",
+          "source": "https://zakon.rada.gov.ua/laws/show/254%D0%BA/96-%D0%B2%D1%80",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Rivne Oblast",
+          "status": "not-assessed",
+          "reason": "Constitutional top-level screening target only; no distinct subnational-law review performed. Districts, hromadas, wartime/occupied-territory issues and any applicable local rules remain to be identified.",
+          "source": "https://zakon.rada.gov.ua/laws/show/254%D0%BA/96-%D0%B2%D1%80",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Sumy Oblast",
+          "status": "not-assessed",
+          "reason": "Constitutional top-level screening target only; no distinct subnational-law review performed. Districts, hromadas, wartime/occupied-territory issues and any applicable local rules remain to be identified.",
+          "source": "https://zakon.rada.gov.ua/laws/show/254%D0%BA/96-%D0%B2%D1%80",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Ternopil Oblast",
+          "status": "not-assessed",
+          "reason": "Constitutional top-level screening target only; no distinct subnational-law review performed. Districts, hromadas, wartime/occupied-territory issues and any applicable local rules remain to be identified.",
+          "source": "https://zakon.rada.gov.ua/laws/show/254%D0%BA/96-%D0%B2%D1%80",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Kharkiv Oblast",
+          "status": "not-assessed",
+          "reason": "Constitutional top-level screening target only; no distinct subnational-law review performed. Districts, hromadas, wartime/occupied-territory issues and any applicable local rules remain to be identified.",
+          "source": "https://zakon.rada.gov.ua/laws/show/254%D0%BA/96-%D0%B2%D1%80",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Kherson Oblast",
+          "status": "not-assessed",
+          "reason": "Constitutional top-level screening target only; no distinct subnational-law review performed. Districts, hromadas, wartime/occupied-territory issues and any applicable local rules remain to be identified.",
+          "source": "https://zakon.rada.gov.ua/laws/show/254%D0%BA/96-%D0%B2%D1%80",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Khmelnytskyi Oblast",
+          "status": "not-assessed",
+          "reason": "Constitutional top-level screening target only; no distinct subnational-law review performed. Districts, hromadas, wartime/occupied-territory issues and any applicable local rules remain to be identified.",
+          "source": "https://zakon.rada.gov.ua/laws/show/254%D0%BA/96-%D0%B2%D1%80",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Cherkasy Oblast",
+          "status": "not-assessed",
+          "reason": "Constitutional top-level screening target only; no distinct subnational-law review performed. Districts, hromadas, wartime/occupied-territory issues and any applicable local rules remain to be identified.",
+          "source": "https://zakon.rada.gov.ua/laws/show/254%D0%BA/96-%D0%B2%D1%80",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Chernivtsi Oblast",
+          "status": "not-assessed",
+          "reason": "Constitutional top-level screening target only; no distinct subnational-law review performed. Districts, hromadas, wartime/occupied-territory issues and any applicable local rules remain to be identified.",
+          "source": "https://zakon.rada.gov.ua/laws/show/254%D0%BA/96-%D0%B2%D1%80",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Chernihiv Oblast",
+          "status": "not-assessed",
+          "reason": "Constitutional top-level screening target only; no distinct subnational-law review performed. Districts, hromadas, wartime/occupied-territory issues and any applicable local rules remain to be identified.",
+          "source": "https://zakon.rada.gov.ua/laws/show/254%D0%BA/96-%D0%B2%D1%80",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "City of Kyiv",
+          "status": "not-assessed",
+          "reason": "Constitutional top-level screening target only; no distinct subnational-law review performed. Districts, hromadas, wartime/occupied-territory issues and any applicable local rules remain to be identified.",
+          "source": "https://zakon.rada.gov.ua/laws/show/254%D0%BA/96-%D0%B2%D1%80",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "City of Sevastopol",
+          "status": "not-assessed",
+          "reason": "Constitutional top-level screening target only; no distinct subnational-law review performed. Districts, hromadas, wartime/occupied-territory issues and any applicable local rules remain to be identified.",
+          "source": "https://zakon.rada.gov.ua/laws/show/254%D0%BA/96-%D0%B2%D1%80",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        }
+      ],
+      "sourceDiscoveryCheckedOn": "2026-10-13",
+      "sourceDiscoveryNote": "Primary-source discovery only. No law was assessed for territorial reach or application to this app. The 2023 Consumer Protection Law record currently says it has not yet entered into force; confirm the operative law and transition date at release. Medical-device status, data processing and transfers, online/device storage, breach duties, private-service accessibility, children, language, emergency wording, charitable/tax treatment, platform policies and enforcement need qualified review."
     },
     {
       "name": "United Arab Emirates",
