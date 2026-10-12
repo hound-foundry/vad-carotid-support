@@ -10931,7 +10931,216 @@
       "isoAlpha2": "FR",
       "reviewOwner": null,
       "lastChecked": null,
-      "officialSources": [],
+      "officialSources": [
+        {
+          "title": "Law on Data Processing, Data Files and Individual Liberties (78-17; current version)",
+          "url": "https://www.legifrance.gouv.fr/codes/id/JORFTEXT000000886460/",
+          "authority": "Légifrance",
+          "sourceType": "legislation",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "General Data Protection Regulation (EU) 2016/679",
+          "url": "https://eur-lex.europa.eu/eli/reg/2016/679/oj/eng",
+          "authority": "European Union / EUR-Lex",
+          "sourceType": "eu-regulation",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "CNIL guidance on health-data processing formalities",
+          "url": "https://www.cnil.fr/fr/quelles-formalites-pour-les-traitements-de-donnees-de-sante",
+          "authority": "Commission nationale de l’informatique et des libertés (CNIL)",
+          "sourceType": "regulator-guidance",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Public Health Code, Article L1111-8: health-data hosting",
+          "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000033862549",
+          "authority": "Légifrance",
+          "sourceType": "legislation",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Directive 2002/58/EC on privacy and electronic communications",
+          "url": "https://eur-lex.europa.eu/eli/dir/2002/58/oj/eng",
+          "authority": "European Union / EUR-Lex",
+          "sourceType": "eu-directive",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Law for Confidence in the Digital Economy (LCEN), current official text",
+          "url": "https://www.legifrance.gouv.fr/loda/id/JORFTEXT000000801164/",
+          "authority": "Légifrance",
+          "sourceType": "legislation",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Digital Services Act (EU) 2022/2065",
+          "url": "https://eur-lex.europa.eu/eli/reg/2022/2065/oj/eng",
+          "authority": "European Union / EUR-Lex",
+          "sourceType": "eu-regulation",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Medical Devices Regulation (EU) 2017/745, current consolidated text",
+          "url": "https://eur-lex.europa.eu/eli/reg/2017/745/oj/eng",
+          "authority": "European Union / EUR-Lex",
+          "sourceType": "eu-regulation",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "ANSM guidance on cybersecurity of medical devices integrating software",
+          "url": "https://ansm.sante.fr/uploads/2020/10/16/20201016-pi-190719-cybersecurite-recommandations-eng.pdf",
+          "authority": "Agence nationale de sécurité du médicament et des produits de santé (ANSM)",
+          "sourceType": "regulator-guidance",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "French competent authority: ANSM medical devices",
+          "url": "https://ansm.sante.fr/uploads/2024/10/10/ra-2021-au-300922.pdf",
+          "authority": "ANSM",
+          "sourceType": "regulator-guidance",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Consumer Code, current text",
+          "url": "https://www.legifrance.gouv.fr/codes/id/LEGITEXT000006069565/",
+          "authority": "Légifrance",
+          "sourceType": "legislation",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Directive (EU) 2019/882 on accessibility requirements for products and services",
+          "url": "https://eur-lex.europa.eu/eli/dir/2019/882/oj/eng",
+          "authority": "European Union / EUR-Lex",
+          "sourceType": "eu-directive",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "French web-accessibility scope and RGAA reference",
+          "url": "https://accessibilite.numerique.gouv.fr/obligations/champ-application/",
+          "authority": "Interministerial Digital Directorate (DINUM)",
+          "sourceType": "government-guidance",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "French disability law accessibility provisions (Code of Construction and Housing, Title IV)",
+          "url": "https://www.legifrance.gouv.fr/codes/id/LEGISCTA000006103171",
+          "authority": "Légifrance",
+          "sourceType": "legislation",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Artificial Intelligence Act (EU) 2024/1689, current consolidated text",
+          "url": "https://eur-lex.europa.eu/eli/reg/2024/1689/oj/eng",
+          "authority": "European Union / EUR-Lex",
+          "sourceType": "eu-regulation",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Intellectual Property Code, current text",
+          "url": "https://www.legifrance.gouv.fr/codes/id/LEGITEXT000006069414/",
+          "authority": "Légifrance",
+          "sourceType": "legislation",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Law No. 94-665 on the use of the French language (Toubon Law)",
+          "url": "https://www.legifrance.gouv.fr/loda/id/LEGITEXT000005616341",
+          "authority": "Légifrance",
+          "sourceType": "legislation",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Emergency numbers in France, including 112 and 114 accessibility route",
+          "url": "https://www.service-public.gouv.fr/particuliers/vosdroits/F33954",
+          "authority": "Service-Public.fr / Directorate for Legal and Administrative Information",
+          "sourceType": "government-guidance",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Public Health Code provisions on advertising medicinal products",
+          "url": "https://www.legifrance.gouv.fr/codes/id/LEGIARTI000006689947/2026-06-05",
+          "authority": "Légifrance",
+          "sourceType": "legislation",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Law of 1 July 1901 on the contract of association",
+          "url": "https://www.legifrance.gouv.fr/loda/id/LEGITEXT000006069570/",
+          "authority": "Légifrance",
+          "sourceType": "legislation",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Official guidance on donations to associations",
+          "url": "https://www.service-public.gouv.fr/particuliers/vosdroits/F2722",
+          "authority": "Service-Public.fr / Directorate for Legal and Administrative Information",
+          "sourceType": "government-guidance",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "France territorial scope: 18 regions and 101 departments",
+          "url": "https://www.insee.fr/fr/metadonnees/definition/c1696",
+          "authority": "National Institute of Statistics and Economic Studies (INSEE)",
+          "sourceType": "official-territorial-register",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Official Geographic Code (COG), 2026 files for communes, departments, regions and territories",
+          "url": "https://www.insee.fr/fr/information/2560452",
+          "authority": "INSEE",
+          "sourceType": "official-territorial-register",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Digital Services Act enforcement framework, Law No. 2024-449",
+          "url": "https://www.legifrance.gouv.fr/jorf/id/JORFSCTA000049563455",
+          "authority": "Légifrance",
+          "sourceType": "legislation",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Apple App Review Guidelines",
+          "url": "https://developer.apple.com/app-store/review/guidelines/",
+          "authority": "Apple",
+          "sourceType": "platform-policy",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Google Play Health Content and Services policy",
+          "url": "https://support.google.com/googleplay/android-developer/answer/16679511?hl=en-GB",
+          "authority": "Google Play",
+          "sourceType": "platform-policy",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        }
+      ],
       "reviewAreas": [
         {
           "area": "privacy-and-health-data",
@@ -11046,7 +11255,154 @@
           "reviewer": null
         }
       ],
-      "subnationalAreas": []
+      "subnationalAreas": [
+        {
+          "name": "Auvergne-Rhône-Alpes",
+          "status": "not-assessed",
+          "reason": "Regional screening target only. No separate local-law or applicability review performed; departments, overseas collectivities and commune-level rules remain to be screened.",
+          "source": "https://www.insee.fr/fr/metadonnees/definition/c1696",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Bourgogne-Franche-Comté",
+          "status": "not-assessed",
+          "reason": "Regional screening target only. No separate local-law or applicability review performed; departments, overseas collectivities and commune-level rules remain to be screened.",
+          "source": "https://www.insee.fr/fr/metadonnees/definition/c1696",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Bretagne",
+          "status": "not-assessed",
+          "reason": "Regional screening target only. No separate local-law or applicability review performed; departments, overseas collectivities and commune-level rules remain to be screened.",
+          "source": "https://www.insee.fr/fr/metadonnees/definition/c1696",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Centre-Val de Loire",
+          "status": "not-assessed",
+          "reason": "Regional screening target only. No separate local-law or applicability review performed; departments, overseas collectivities and commune-level rules remain to be screened.",
+          "source": "https://www.insee.fr/fr/metadonnees/definition/c1696",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Corse",
+          "status": "not-assessed",
+          "reason": "Regional screening target only. No separate local-law or applicability review performed; departments, overseas collectivities and commune-level rules remain to be screened.",
+          "source": "https://www.insee.fr/fr/metadonnees/definition/c1696",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Grand Est",
+          "status": "not-assessed",
+          "reason": "Regional screening target only. No separate local-law or applicability review performed; departments, overseas collectivities and commune-level rules remain to be screened.",
+          "source": "https://www.insee.fr/fr/metadonnees/definition/c1696",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Hauts-de-France",
+          "status": "not-assessed",
+          "reason": "Regional screening target only. No separate local-law or applicability review performed; departments, overseas collectivities and commune-level rules remain to be screened.",
+          "source": "https://www.insee.fr/fr/metadonnees/definition/c1696",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Île-de-France",
+          "status": "not-assessed",
+          "reason": "Regional screening target only. No separate local-law or applicability review performed; departments, overseas collectivities and commune-level rules remain to be screened.",
+          "source": "https://www.insee.fr/fr/metadonnees/definition/c1696",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Normandie",
+          "status": "not-assessed",
+          "reason": "Regional screening target only. No separate local-law or applicability review performed; departments, overseas collectivities and commune-level rules remain to be screened.",
+          "source": "https://www.insee.fr/fr/metadonnees/definition/c1696",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Nouvelle-Aquitaine",
+          "status": "not-assessed",
+          "reason": "Regional screening target only. No separate local-law or applicability review performed; departments, overseas collectivities and commune-level rules remain to be screened.",
+          "source": "https://www.insee.fr/fr/metadonnees/definition/c1696",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Occitanie",
+          "status": "not-assessed",
+          "reason": "Regional screening target only. No separate local-law or applicability review performed; departments, overseas collectivities and commune-level rules remain to be screened.",
+          "source": "https://www.insee.fr/fr/metadonnees/definition/c1696",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Pays de la Loire",
+          "status": "not-assessed",
+          "reason": "Regional screening target only. No separate local-law or applicability review performed; departments, overseas collectivities and commune-level rules remain to be screened.",
+          "source": "https://www.insee.fr/fr/metadonnees/definition/c1696",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Provence-Alpes-Côte d’Azur",
+          "status": "not-assessed",
+          "reason": "Regional screening target only. No separate local-law or applicability review performed; departments, overseas collectivities and commune-level rules remain to be screened.",
+          "source": "https://www.insee.fr/fr/metadonnees/definition/c1696",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Guadeloupe",
+          "status": "not-assessed",
+          "reason": "Regional screening target only. No separate local-law or applicability review performed; departments, overseas collectivities and commune-level rules remain to be screened.",
+          "source": "https://www.insee.fr/fr/metadonnees/definition/c1696",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Martinique",
+          "status": "not-assessed",
+          "reason": "Regional screening target only. No separate local-law or applicability review performed; departments, overseas collectivities and commune-level rules remain to be screened.",
+          "source": "https://www.insee.fr/fr/metadonnees/definition/c1696",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Guyane",
+          "status": "not-assessed",
+          "reason": "Regional screening target only. No separate local-law or applicability review performed; departments, overseas collectivities and commune-level rules remain to be screened.",
+          "source": "https://www.insee.fr/fr/metadonnees/definition/c1696",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "La Réunion",
+          "status": "not-assessed",
+          "reason": "Regional screening target only. No separate local-law or applicability review performed; departments, overseas collectivities and commune-level rules remain to be screened.",
+          "source": "https://www.insee.fr/fr/metadonnees/definition/c1696",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Mayotte",
+          "status": "not-assessed",
+          "reason": "Regional screening target only. No separate local-law or applicability review performed; departments, overseas collectivities and commune-level rules remain to be screened.",
+          "source": "https://www.insee.fr/fr/metadonnees/definition/c1696",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        }
+      ],
+      "sourceDiscoveryCheckedOn": "2026-10-13",
+      "sourceDiscoveryNote": "Initial official-source discovery for France. The 18 regional units are an initial screening queue, not legal clearance; the 101 departments, overseas collectivities and commune-level rules remain to be enumerated and assessed. Official geographic sources describe scope, but not which local rules apply to this app. Review the actual operator, hosting and service design with France-qualified legal, privacy and device reviewers. All leads are source-lead-only."
     },
     {
       "name": "French Guiana",

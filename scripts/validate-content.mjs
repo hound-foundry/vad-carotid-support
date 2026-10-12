@@ -199,6 +199,16 @@ assert.equal(lithuaniaRecord.subnationalAreas.length, 70, "Lithuania must retain
 assert.equal(new Set(lithuaniaRecord.subnationalAreas.map((area) => area.name)).size, 70, "Lithuanian county and municipality screening targets must be unique");
 assert.ok(lithuaniaRecord.subnationalAreas.every((area) => area.status === "not-assessed" && area.checkedOn === "2026-10-13" && area.reviewer === null), "Lithuania subnational source discovery must not be mistaken for local clearance");
 assert.ok(lithuaniaRecord.officialSources.some((source) => source.sourceType === "legislative-proposal" && source.status === "source-lead-only"), "Pending Lithuanian accessibility amendments must remain a proposal, not enacted law");
+const franceRecord = resources.countryRecords.find((country) => country.isoAlpha2 === "FR");
+assert.ok(franceRecord && franceRecord.legalReview.status === "not-assessed" && franceRecord.subnationalReview.status === "not-assessed" && franceRecord.release === "blocked", "France source discovery must not be mistaken for legal clearance");
+assert.equal(franceRecord.sourceDiscoveryCheckedOn, "2026-10-13", "France source discovery needs its own dated record");
+assert.equal(franceRecord.officialSources.length, 26, "France source leads should retain national, EU and platform-policy inventory");
+assert.ok(franceRecord.officialSources.every((source) => source.status === "source-lead-only" && source.checkedOn === "2026-10-13"), "France sources must remain dated source leads only");
+assert.equal(franceRecord.reviewAreas.length, 14, "Every France legal review topic must remain explicit");
+assert.ok(franceRecord.reviewAreas.every((area) => area.status === "not-assessed"), "France source discovery must not change a legal review area to assessed");
+assert.deepEqual(franceRecord.subnationalAreas.map((area) => area.name), ["Auvergne-Rhône-Alpes", "Bourgogne-Franche-Comté", "Bretagne", "Centre-Val de Loire", "Corse", "Grand Est", "Hauts-de-France", "Île-de-France", "Normandie", "Nouvelle-Aquitaine", "Occitanie", "Pays de la Loire", "Provence-Alpes-Côte d’Azur", "Guadeloupe", "Martinique", "Guyane", "La Réunion", "Mayotte"], "France must retain its 18-region screening queue, including overseas regions");
+assert.ok(franceRecord.subnationalAreas.every((area) => area.status === "not-assessed" && area.checkedOn === "2026-10-13" && area.reviewer === null), "France subnational source discovery must not be mistaken for local clearance");
+assert.ok(franceRecord.officialSources.some((source) => source.url === "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000033862549"), "France health-data hosting lead must remain visible");
 assert.equal(community.candidates.length, 3, "All three user-provided community candidates must be tracked");
 assert.ok(community.candidates.every((candidate) => candidate.status === "pending-verification" && /^\d{4}-\d{2}-\d{2}$/.test(candidate.lastChecked) && candidate.verificationNote?.trim()), "Unverified community candidates must remain hidden with a dated verification record");
 assert.ok(community.candidates.every((candidate) => /^https:\/\/www\.facebook\.com\/groups\/[0-9]+$/.test(candidate.url)), "The community verification queue may contain group links only");
