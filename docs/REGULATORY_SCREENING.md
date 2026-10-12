@@ -6,7 +6,7 @@
 
 - The operator is UK-based; the exact legal person, responsible controller and contact details have not been established.
 - The product is free, educational and patient-support oriented. No ads, accounts, subscriptions, clinical decision tools or backend health-data store are in V1.
-- People can save appointment notes on their own device after pressing Save. The web build uses browser local storage and the native builds use Expo SecureStore. Website hosting logs, browser/device backup behavior, external destinations, app-store disclosures and exports still create relevant data flows.
+- People can save appointment notes and guide links on their own device after explicit action. The web build uses browser local storage and the native builds use Expo SecureStore. Saved guide links can reveal interests even though they contain no notes. Website hosting logs, browser/device backup behavior, external destinations, app-store disclosures and exports still create relevant data flows.
 - The app points people to their own clinician and urgent services. The exact wording, features, claims and intended purpose still require medical-device classification review in each launch jurisdiction. A disclaimer is not a substitute for that review.
 - The app is intended for adults and carers and is not designed or marketed to children. Assess local child-access rules and practical exposure before distribution.
 

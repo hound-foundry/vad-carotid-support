@@ -11,7 +11,7 @@ Expo Router with TypeScript provides one application for web, iOS and Android. P
 - src/features/: focused feature flows: learn, resources, appointments, support preferences, my space and urgent help.
 - src/components/: accessible shared UI.
 - src/locales/: translation dictionaries and translation/review metadata. Only English source content exists today; translations stay gated until human review.
-- src/features/appointments/ and src/features/support-preferences/: prompt/preference models and platform-aware local storage/export adapters. The web uses browser localStorage; native builds use Expo SecureStore.
+- src/features/appointments/, src/features/support-preferences/ and src/features/saved-guides/: data models and platform-aware local storage/export adapters. The web uses browser localStorage; native builds use Expo SecureStore.
 - src/services/: platform adapters such as local storage and country resource lookup; no clinical decisions.
 - docs/: product, editorial, regulatory, privacy, contribution and release decisions.
 

@@ -20,7 +20,8 @@ Items are proposals, not promised dates. Safety review is a release gate.
 - [x] Home start points for people with no diagnosed stroke, stroke, family/carers and general learning.
 - [ ] Patient and carer review of guide usefulness, language and support-sheet preferences.
 - [x] “How I prefer to be supported” sheet with selection, optional note and sharing preview.
-- [ ] Private notes and saved links, with delete/export and no account.
+- [ ] Private notes with delete/export and no account.
+- [x] Save guide links locally with explicit export/delete controls and a device privacy notice.
 - [x] Listed resource cards show evidence type, check date, language, editorial/clinical review status and rights basis; community candidates remain hidden pending verification.
 - [ ] English-reviewed content; add translated interface and short guides after language and clinical review.
 

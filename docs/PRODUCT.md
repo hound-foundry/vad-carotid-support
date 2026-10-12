@@ -33,7 +33,7 @@ The app is an international English development preview, not a cleared global re
 - Appointment preparation and support communication: editable prompts or preferences, optional notes, a preview, and user-controlled save, export and delete.
 - Carer guidance for listening, practical support, appointments, communication difficulties and fatigue.
 - Space for emotional wellbeing, uncertainty, persistent symptoms and recovery that is not visible to other people.
-- Curated links identifying publisher, audience, language, evidence type, publication date and last checked date.
+- Curated links identifying publisher, audience, language, evidence type, publication date and last checked date; users can save guide links on their device for later.
 
 ## Clinical boundaries
 
@@ -43,7 +43,7 @@ New, sudden symptoms potentially consistent with stroke require urgent local eme
 
 ## Privacy and languages
 
-No accounts, adverts, donations, analytics, behavioural tracking or network sync. The appointment and support-preferences sheets are saved only after the user presses Save. The web build uses browser local storage; the native builds use Expo SecureStore. Neither provides a blanket privacy guarantee. Explain device/browser access and backup behavior, and provide explicit export and deletion controls. Never silently upload notes, include them in analytics/crash reports, or place sensitive data in URLs.
+No accounts, adverts, donations, analytics, behavioural tracking or network sync. The appointment and support-preferences sheets are saved only after the user presses Save; guide links are saved only after the user presses Save on that guide. The web build uses browser local storage; the native builds use Expo SecureStore. Neither provides a blanket privacy guarantee. Explain device/browser access and backup behavior, and provide explicit export and deletion controls. Never silently upload notes, include them in analytics/crash reports, or place sensitive data in URLs.
 
 Language choice is independent of country. Planned languages: English, Russian, Ukrainian, Lithuanian, Latvian, Estonian, Spanish, French, Japanese, Simplified Chinese and Traditional Chinese. Translate original short guides and interface strings only. Link to outside articles in their source language; do not claim an external article is translated. Review each translation, with special review for emergency and clinical information.
 

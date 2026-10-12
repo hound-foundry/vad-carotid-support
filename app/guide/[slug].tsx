@@ -4,6 +4,7 @@ import { Linking, Pressable, StyleSheet, Text, View } from "react-native";
 import references from "../../content/references.json";
 import { AppPage, BackHome, Body, Card, DraftNotice, PageHeading } from "../../src/components/AppPage";
 import { getGuide, guides } from "../../src/content/guides";
+import { SaveGuideButton } from "../../src/features/saved-guides/SaveGuideButton";
 
 export function generateStaticParams() { return guides.map((guide) => ({ slug: guide.slug })); }
 
@@ -20,6 +21,7 @@ export default function GuideScreen() {
     <BackHome />
     <PageHeading eyebrow="English guide · general information" title={guide.title} summary={guide.summary} />
     <DraftNotice />
+    <SaveGuideButton slug={guide.slug} />
     {guide.sections.length > 1 ? <Card title="Choose your reading pace">
       <Pressable accessibilityRole="checkbox" accessibilityLabel="Read one section at a time" accessibilityState={{ checked: oneAtATime }} onPress={() => { setSectionIndex(0); setOneAtATime((current) => !current); }} style={styles.paceOption}>
         <View style={[styles.checkbox, oneAtATime && styles.checked]}>{oneAtATime ? <Text style={styles.check}>✓</Text> : null}</View>

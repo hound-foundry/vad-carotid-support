@@ -24,7 +24,7 @@ Show one short page at a time, then ask:
 
 For carer-facing pages, also ask whether the wording respects the person's choices and privacy, whether it gives carers practical help without asking them to take over, and whether it acknowledges the carer's own support needs.
 
-For the appointment and support-preferences sheets, check whether the choices make sense, whether any important choice is missing, whether the preview matches the person's selections, and whether save, export, and delete behavior is understandable. Use synthetic entries only during software testing.
+For the appointment and support-preferences sheets, check whether the choices make sense, whether any important choice is missing, whether the preview matches the person's selections, and whether save, export, and delete behavior is understandable. For saved guides, check whether people understand that topics are stored on the current device, can reveal interests to others with device access, and can be exported or deleted. Use synthetic entries only during software testing.
 
 ## Record and resolve feedback
 
