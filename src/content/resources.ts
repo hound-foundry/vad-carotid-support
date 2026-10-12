@@ -9,6 +9,10 @@ export type DirectoryResource = {
   kind: string;
   checkedOn: string;
   note: string;
+  language: string;
+  editorialStatus: string;
+  clinicalReviewStatus: string;
+  rights: string;
   verifiedForDirectory: boolean;
 };
 
@@ -20,7 +24,16 @@ export const publicResources: DirectoryResource[] = [
   { id: "nice-ng236", title: "Stroke rehabilitation in adults — NICE guideline", url: "https://www.nice.org.uk/guidance/ng236/chapter/Recommendations", audience: ["patients", "carers", "professionals"], kind: "clinical guideline", checkedOn: "2026-10-12", note: "UK guideline; service recommendations may not apply in other countries.", verifiedForDirectory: true },
 ].map((resource) => {
   const source = references.sources.find((item) => item.id === resource.id);
-  return { ...resource, title: source?.title ?? resource.title, url: source?.url ?? resource.url, kind: source?.kind ?? resource.kind };
+  return {
+    ...resource,
+    title: source?.title ?? resource.title,
+    url: source?.url ?? resource.url,
+    kind: source?.kind ?? resource.kind,
+    language: source?.language ?? "en",
+    editorialStatus: source?.editorial_status ?? "not recorded",
+    clinicalReviewStatus: source?.clinical_review?.status ?? "not recorded",
+    rights: source?.rights ?? "Rights information has not been recorded.",
+  };
 });
 
 // Candidates are deliberately not displayed until access and current group details can be verified.

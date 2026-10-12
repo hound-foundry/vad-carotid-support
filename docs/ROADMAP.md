@@ -20,7 +20,7 @@ Items are proposals, not promised dates. Safety review is a release gate.
 - [ ] Patient and carer review of guide usefulness, language and support-sheet preferences.
 - [x] “How I prefer to be supported” sheet with selection, optional note and sharing preview.
 - [ ] Private notes and saved links, with delete/export and no account.
-- [ ] Curated links with evidence type, date, language, review and rights status.
+- [x] Listed resource cards show evidence type, check date, language, editorial/clinical review status and rights basis; community candidates remain hidden pending verification.
 - [ ] English-reviewed content; add translated interface and short guides after language and clinical review.
 
 ## Before distribution
