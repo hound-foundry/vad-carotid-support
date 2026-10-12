@@ -7,6 +7,7 @@ const routes = [
   { href: "/with-stroke" as const, title: "Living with dissection and stroke", detail: "Find questions about recovery, communication and daily life." },
   { href: "/without-stroke" as const, title: "Dissection without diagnosed stroke", detail: "Explore follow-up and questions about what comes next." },
   { href: "/supporting-someone" as const, title: "Supporting someone", detail: "Practical, patient-led ways to help family and friends." },
+  { href: "/learn" as const, title: "I’m here to learn", detail: "Browse short guides, unfamiliar terms and helpful resources." },
 ];
 
 export default function HomeScreen() {
