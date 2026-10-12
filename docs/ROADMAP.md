@@ -22,6 +22,7 @@ Items are proposals, not promised dates. Safety review is a release gate.
 ## First useful release
 
 - [x] Home start points for people with no diagnosed stroke, stroke, family/carers and general learning.
+- [x] Short-on-time home links to a glossary term, a single appointment question and carer guidance.
 - [ ] Patient and carer review of guide usefulness, language and support-sheet preferences.
 - [x] “How I prefer to be supported” sheet with selection, optional note and sharing preview.
 - [ ] Private notes with delete/export and no account.

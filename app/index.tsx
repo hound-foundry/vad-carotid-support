@@ -35,6 +35,16 @@ export default function HomeScreen() {
       </View>
     </View>
 
+    <View style={styles.quickStart}>
+      <Text accessibilityRole="header" aria-level={2} style={styles.quickTitle}>Short on time or energy?</Text>
+      <Text style={styles.quickIntro}>Choose one small next step. You can come back to the rest later.</Text>
+      <View style={styles.quickLinks}>
+        <QuickLink href="/glossary" title="Look up a term" />
+        <QuickLink href="/appointments" title="Choose an appointment question" />
+        <QuickLink href="/supporting-someone" title="Find carer guidance" />
+      </View>
+    </View>
+
     <View style={[styles.tools, desktop && styles.toolsDesktop]}>
       <ActionCard href="/appointments" label="BEFORE YOUR NEXT APPOINTMENT" title="Make room for your questions" detail="Choose prompts, add private notes, and decide whether to save or export." action="Build an appointment sheet" />
       <ActionCard href="/support-preferences" label="FOR THE PEOPLE AROUND YOU" title="Tell people what helps" detail="Choose support preferences and review a shareable sheet before exporting." action="Make a support sheet" />
@@ -55,6 +65,10 @@ function ActionCard({ href, label, title, detail, action }: { href: "/appointmen
   </View></Pressable></Link>;
 }
 
+function QuickLink({ href, title }: { href: "/glossary" | "/appointments" | "/supporting-someone"; title: string }) {
+  return <Link href={href} asChild><Pressable accessibilityRole="link" style={({ pressed }) => [styles.quickLink, pressed && styles.quickPressed]}><Text style={styles.quickLinkText}>{title} <Text accessibilityElementsHidden>→</Text></Text></Pressable></Link>;
+}
+
 const styles = StyleSheet.create({
   hero: { marginTop: 28, gap: 22 }, heroDesktop: { flexDirection: "row", alignItems: "stretch", gap: 28 },
   heroCopy: { padding: 22, borderRadius: 21, backgroundColor: palette.mint, borderWidth: 1, borderColor: "#D0E2DD" }, heroCopyDesktop: { flex: 0.92, justifyContent: "center", paddingHorizontal: 31, paddingVertical: 34 },
@@ -66,6 +80,7 @@ const styles = StyleSheet.create({
   branch: { position: "absolute", left: 0, top: 0, bottom: 0, width: 25, justifyContent: "center" }, routeDot: { width: 12, height: 12, marginLeft: 3, borderRadius: 6, backgroundColor: palette.white, borderColor: palette.teal, borderWidth: 2 },
   routeCopy: { flex: 1 }, routeItemTitle: { color: palette.ink, fontSize: 14, lineHeight: 19, fontWeight: "800" }, routeDetail: { marginTop: 3, color: palette.muted, fontSize: 12, lineHeight: 17 }, routeArrow: { color: palette.teal, fontSize: 16, paddingHorizontal: 4 },
   tools: { marginTop: 20, gap: 13 }, toolsDesktop: { flexDirection: "row" },
+  quickStart: { marginTop: 18, padding: 18, borderRadius: 15, backgroundColor: palette.white, borderColor: palette.line, borderWidth: 1 }, quickTitle: { color: palette.ink, fontSize: 16, lineHeight: 23, fontWeight: "800" }, quickIntro: { marginTop: 3, color: palette.muted, fontSize: 13, lineHeight: 20 }, quickLinks: { flexDirection: "row", flexWrap: "wrap", gap: 8, marginTop: 11 }, quickLink: { minHeight: 44, justifyContent: "center", paddingVertical: 8, paddingHorizontal: 12, borderWidth: 1, borderColor: "#CAD8D1", borderRadius: 9, backgroundColor: "#FFFFFF" }, quickLinkText: { color: palette.tealDark, fontSize: 13, lineHeight: 20, fontWeight: "700" }, quickPressed: { opacity: 0.72, backgroundColor: palette.mint },
   actionLink: { display: "flex", flex: 1 }, actionCard: { display: "flex", flex: 1, padding: 20, borderWidth: 1, borderColor: palette.line, borderRadius: 16, backgroundColor: palette.white }, actionLabel: { color: palette.gold, fontSize: 10, letterSpacing: 1.15, lineHeight: 15, fontWeight: "800" }, actionTitle: { marginTop: 8, color: palette.ink, fontSize: 17, lineHeight: 23, fontWeight: "800" }, actionDetail: { minHeight: 44, marginTop: 6, color: palette.text, fontSize: 13, lineHeight: 20 }, actionBottom: { display: "flex", minHeight: 32, flexDirection: "row", alignItems: "center", gap: 9, marginTop: 8 }, actionText: { color: palette.tealDark, fontSize: 13, fontWeight: "800" }, actionArrow: { color: palette.teal, fontSize: 17 },
   footer: { marginTop: 27 }, footerRule: { height: 1, backgroundColor: palette.line }, footerText: { marginTop: 14, color: palette.muted, fontSize: 12, lineHeight: 19 }, aboutLink: { display: "flex", minHeight: 44, flexDirection: "row", alignItems: "center", gap: 8, alignSelf: "flex-start" }, aboutText: { color: palette.tealDark, fontSize: 13, fontWeight: "700" }, aboutArrow: { color: palette.teal, fontSize: 16 },
   pressed: { opacity: 0.75 },
