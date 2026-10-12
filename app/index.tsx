@@ -3,10 +3,10 @@ import { Pressable, StyleSheet, Text, View, useWindowDimensions } from "react-na
 import { AppPage, palette } from "../src/components/AppPage";
 
 const routes = [
-  { href: "/guide/understanding-dissection" as const, title: "Understand the diagnosis", detail: "Start with clear language about carotid and vertebral artery dissection." },
-  { href: "/with-stroke" as const, title: "Living with dissection and stroke", detail: "Find questions about recovery, communication and daily life." },
-  { href: "/without-stroke" as const, title: "Dissection without diagnosed stroke", detail: "Explore follow-up and questions about what comes next." },
-  { href: "/supporting-someone" as const, title: "Supporting someone", detail: "Practical, patient-led ways to help family and friends." },
+  { href: "/guide/understanding-dissection" as const, title: "I’m new to this or want the basics", detail: "Start with a plain-language introduction to carotid and vertebral artery dissection." },
+  { href: "/with-stroke" as const, title: "A dissection happened alongside a stroke", detail: "Explore draft guides about recovery, communication and daily life." },
+  { href: "/without-stroke" as const, title: "I have a dissection without a diagnosed stroke", detail: "Explore draft guides about follow-up and questions about what comes next." },
+  { href: "/supporting-someone" as const, title: "I’m supporting someone", detail: "Find patient-led ideas for family, friends and carers." },
   { href: "/learn" as const, title: "I’m here to learn", detail: "Browse short guides, unfamiliar terms and helpful resources." },
 ];
 

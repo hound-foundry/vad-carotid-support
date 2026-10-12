@@ -2,6 +2,46 @@
 
 This guide supports patient and carer review of the project’s draft pages and tools. It is a product-usability activity, not clinical research, medical advice, or a substitute for qualified clinical review. No review is recorded as complete by creating this guide.
 
+## First review session
+
+Use this as a 20–30 minute, one-to-one review with an adult patient or carer. Invite people with different experiences over time: dissection without a diagnosed stroke, dissection alongside stroke, and supporting someone. Do not ask a participant to identify which experience applies to them; they can choose a task or skip it. Offer a break, a shorter session, text instead of speech, and any communication or access format they request. Participation should be voluntary, and the person can stop without explaining why.
+
+Before inviting anyone, decide on a private way to receive feedback, who can access it, and when it will be deleted. Explain those details in the invitation. Do not use public GitHub issues, a Facebook group thread, or a general-purpose form that may collect account details for sensitive feedback. Do not begin collecting feedback until this handling route is in place. Do not record audio or video by default.
+
+Tell the reviewer: “This is an early development preview. The guides are drafts and have not had clinical approval or patient/carer review. We are testing whether the pages and tools are understandable, not asking you for medical advice or your personal health story. Please use an imagined situation, skip anything you do not want to do, and stop whenever you like.”
+
+### Tasks
+
+Ask the reviewer to think aloud if comfortable. Do not explain the interface until they have had a chance to try it.
+
+1. From the home page, find a starting point for someone who wants to understand the condition or prepare for a conversation with their care team.
+2. Find a plain-language explanation of one unfamiliar term, then return to where you started.
+3. Choose one appointment question, find the preview, and explain what Save, Export and Delete do. Do not enter real personal information or save it during a review.
+4. Find guidance for a family member or carer and identify one idea that respects the patient’s choices.
+5. Find urgent-help information. Confirm it is visually distinct from routine appointment guidance; do not simulate an emergency or ask the reviewer to judge clinical wording.
+
+If a task feels tiring or confusing, stop that task and ask what would make it easier. A reviewer does not need to complete every task for their feedback to be useful.
+
+### Record only product feedback
+
+For each issue, record the page or task, what made it hard to use, whether a hint was needed, and a possible product change. If useful, record an anonymous reviewer code and broad review perspective (patient, carer, or prefers not to say), chosen by the reviewer. Do not record diagnosis details, treatment, age, location, hospital, clinician, dates, names, contact information, personal stories, or quotations. Summarize themes in your own words. If sensitive details are offered accidentally, do not copy them into the notes; explain that they are not needed and remove them from any temporary working notes.
+
+| Page or task | Clear / difficult / skipped | What caused friction? | Change to consider | Follow-up needed |
+|---|---|---|---|---|
+| Home starting point |  |  |  |  |
+| Guide or glossary |  |  |  |  |
+| Appointment sheet |  |  |  |  |
+| Carer guidance |  |  |  |  |
+| Urgent-help link |  |  |  |  |
+
+At the end, ask: “What is the one thing you would change first?” and “Was anything worrying, tiring, hard to understand, or unclear about what to do next?” Do not ask whether the clinical content is correct; clinical accuracy has a separate review process.
+
+## Review coverage
+
+Track which perspectives and access needs have been offered a chance to review, without collecting health histories. Include both patient pathways and carers, and invite feedback from people who use keyboard navigation, screen readers, text enlargement, alternative communication, or a language other than English when practical. One session cannot represent a whole group. Record gaps and continue review rather than treating one person’s approval as universal.
+
+Feedback can improve navigation and wording but cannot approve a clinical claim, emergency instruction, translation, privacy practice, or legal position. Keep each review status separate and update the relevant content metadata only when a real review has been completed and documented.
+
 ## Invite and review safely
 
 - Invite adults to review a named page or tool. Participation is voluntary; a reviewer can skip any prompt or stop at any time.

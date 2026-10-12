@@ -38,11 +38,12 @@ export default function AppointmentsScreen() {
   const visibleGroups = oneGroupAtATime ? promptGroups.slice(groupIndex, groupIndex + 1) : promptGroups;
   return <AppPage><BackHome /><PageHeading eyebrow="Appointment preparation" title="Make space for your questions." summary="Choose what matters most today. You can start with one question, add a reminder, and review the sheet before deciding to save or export it." />
     <Card title="Choose your pace">
+      <Text style={styles.helper}>You do not need to choose everything. One question is a useful start, and you can change your choices at any time.</Text>
       <Pressable accessibilityRole="checkbox" accessibilityLabel="Show one appointment section at a time" accessibilityState={{ checked: oneGroupAtATime }} onPress={() => setOneGroupAtATime((current) => !current)} style={styles.paceOption}>
         <View style={[styles.checkbox, oneGroupAtATime && styles.checked]}>{oneGroupAtATime ? <Text style={styles.check}>✓</Text> : null}</View>
         <Text style={styles.optionText}>Show one section at a time</Text>
       </Pressable>
-      <Text style={styles.helper}>Your choices stay on this screen as you move between sections. You can change this view at any time.</Text>
+      <Text style={styles.helper}>Your selected questions stay on this screen as you move between sections. You can change this view at any time.</Text>
       {oneGroupAtATime ? <View style={styles.stepper}>
         <Text accessibilityLiveRegion="polite" style={styles.stepProgress}>Section {groupIndex + 1} of {promptGroups.length}: {promptGroups[groupIndex]}</Text>
         <View style={styles.stepButtons}>
