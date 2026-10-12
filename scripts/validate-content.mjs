@@ -53,7 +53,7 @@ assert.ok(resources.countryRecords.length >= 240, "Country/area release queue mu
 assert.ok(resources.countryRecords.every((country) => country.legalReview.status === "not-assessed" && country.release === "blocked"), "Unreviewed jurisdictions must remain blocked");
 assert.ok(resources.countryRecords.every((country) => country.reviewAreas.length >= 14 && country.reviewAreas.every((area) => area.status === "not-assessed")), "All required legal review areas must remain explicit and unassessed until screened");
 assert.equal(community.candidates.length, 3, "All three user-provided community candidates must be tracked");
-assert.ok(community.candidates.every((candidate) => candidate.status === "pending-verification" && candidate.lastChecked === null), "Unverified community candidates must remain hidden");
+assert.ok(community.candidates.every((candidate) => candidate.status === "pending-verification" && /^\d{4}-\d{2}-\d{2}$/.test(candidate.lastChecked) && candidate.verificationNote?.trim()), "Unverified community candidates must remain hidden with a dated verification record");
 assert.ok(community.candidates.every((candidate) => /^https:\/\/www\.facebook\.com\/groups\/[0-9]+$/.test(candidate.url)), "The community verification queue may contain group links only");
 const appointmentUi = await readFile(new URL("../app/appointments.tsx", import.meta.url), "utf8");
 const appointmentStore = await readFile(new URL("../src/features/appointments/store.ts", import.meta.url), "utf8");

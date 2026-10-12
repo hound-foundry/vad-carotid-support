@@ -1,9 +1,27 @@
 {
   "schemaVersion": 1,
-  "purpose": "Editorial verification queue; these links are intentionally omitted from the public directory until the current group name, purpose, language, access requirements, destination behavior and last-checked date are verified.",
+  "purpose": "Editorial verification queue; these links are intentionally omitted from the public directory until the current group name, purpose, language, access requirements, destination behavior and verification date are confirmed.",
   "candidates": [
-    { "id": "facebook-group-94854960694", "url": "https://www.facebook.com/groups/94854960694", "status": "pending-verification", "lastChecked": null },
-    { "id": "facebook-group-606107169461087", "url": "https://www.facebook.com/groups/606107169461087", "status": "pending-verification", "lastChecked": null },
-    { "id": "facebook-group-1580182695569300", "url": "https://www.facebook.com/groups/1580182695569300", "status": "pending-verification", "lastChecked": null }
+    {
+      "id": "facebook-group-94854960694",
+      "url": "https://www.facebook.com/groups/94854960694",
+      "status": "pending-verification",
+      "lastChecked": "2026-10-12",
+      "verificationNote": "Public search by exact group ID returned no current group details; an unauthenticated direct fetch was throttled. Current name, purpose, language, visibility, access requirements and destination behavior remain unverified. No member posts or profiles were viewed."
+    },
+    {
+      "id": "facebook-group-606107169461087",
+      "url": "https://www.facebook.com/groups/606107169461087",
+      "status": "pending-verification",
+      "lastChecked": "2026-10-12",
+      "verificationNote": "Public search by exact group ID returned no current group details; an unauthenticated direct fetch was throttled. Current name, purpose, language, visibility, access requirements and destination behavior remain unverified. No member posts or profiles were viewed."
+    },
+    {
+      "id": "facebook-group-1580182695569300",
+      "url": "https://www.facebook.com/groups/1580182695569300",
+      "status": "pending-verification",
+      "lastChecked": "2026-10-12",
+      "verificationNote": "Public search by exact group ID returned no current group details; an unauthenticated direct fetch was throttled. Current name, purpose, language, visibility, access requirements and destination behavior remain unverified. No member posts or profiles were viewed."
+    }
   ]
 }
