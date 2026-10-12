@@ -17891,7 +17891,216 @@
       "isoAlpha2": "LT",
       "reviewOwner": null,
       "lastChecked": null,
-      "officialSources": [],
+      "officialSources": [
+        {
+          "title": "Law on Legal Protection of Personal Data (I-1374; consolidated record)",
+          "url": "https://e-seimas.lrs.lt/rs/legalact/TAD/3e1ba58238c711edbf47f0036855e731/",
+          "authority": "Seimas / Register of Legal Acts",
+          "sourceType": "legislation-translation",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "General Data Protection Regulation (EU) 2016/679",
+          "url": "https://eur-lex.europa.eu/eli/reg/2016/679/oj/eng",
+          "authority": "European Union / EUR-Lex",
+          "sourceType": "eu-regulation",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "State Data Protection Inspectorate (VDAI), including breach and transfer services",
+          "url": "https://vdai.lrv.lt/en/services/",
+          "authority": "State Data Protection Inspectorate",
+          "sourceType": "regulator-guidance",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Law on Electronic Communications (IX-2135; current consolidated record)",
+          "url": "https://e-seimas.lrs.lt/rs/actualedition/TAIS.232036/yKSdaMhNHE/",
+          "authority": "Seimas / Register of Legal Acts",
+          "sourceType": "legislation",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Directive 2002/58/EC on privacy and electronic communications",
+          "url": "https://eur-lex.europa.eu/eli/dir/2002/58/oj/eng",
+          "authority": "European Union / EUR-Lex",
+          "sourceType": "eu-directive",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Regulation (EU) 2017/745 on medical devices, current consolidated text",
+          "url": "https://eur-lex.europa.eu/eli/reg/2017/745/oj/eng",
+          "authority": "European Union / EUR-Lex",
+          "sourceType": "eu-regulation",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Lithuanian Health System Law, including medical-device supervision provisions",
+          "url": "https://www.e-tar.lt/portal/de/legalActPrint?actualEditionId=ttuecfsElg&documentId=TAR.E2B2957B9182",
+          "authority": "Ministry of Health / Register of Legal Acts",
+          "sourceType": "legislation",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Medical-device market surveillance authority (VASPVT)",
+          "url": "https://vaspvt.lrv.lt/lt/administracine-informacija/medicinos-priemoniu-rinkos-subjektu-prieziura/",
+          "authority": "State Health Care Accreditation Agency (VASPVT)",
+          "sourceType": "regulator-guidance",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Law on Consumer Protection (I-657; English official translation lead)",
+          "url": "https://e-seimas.lrs.lt/rs/legalact/TAD/19fcb003747c11ecb2fe9975f8a9e52e/",
+          "authority": "Seimas / Register of Legal Acts",
+          "sourceType": "legislation-translation",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Law on Protection of the Rights of Consumers, official consolidated record",
+          "url": "https://e-seimas.lrs.lt/portal/legalActPrint/lt?category=TAD&documentId=e86e8310231911e6acbed8d454428fb7",
+          "authority": "Seimas / Register of Legal Acts",
+          "sourceType": "legislation",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Directive (EU) 2019/882 on accessibility requirements for products and services",
+          "url": "https://eur-lex.europa.eu/eli/dir/2019/882/oj/eng",
+          "authority": "European Union / EUR-Lex",
+          "sourceType": "eu-directive",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Law on Accessibility Requirements for Products and Services (XIV-1633; effective 28 June 2025)",
+          "url": "https://e-seimas.lrs.lt/portal/legalAct/lt/TAD/41fe50327d1e11edbdcebd68a7a0df7e",
+          "authority": "Seimas / Register of Legal Acts",
+          "sourceType": "legislation",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Draft amendments to accessibility legislation (proposal, not enacted text)",
+          "url": "https://e-seimas.lrs.lt/rs/legalact/TAK/d5a5b5a0bfb811f088ded46d8ae099d5",
+          "authority": "Seimas / Register of Legal Acts",
+          "sourceType": "legislative-proposal",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Law on Protection of Minors against Detrimental Effect of Public Information (IX-1067)",
+          "url": "https://e-seimas.lrs.lt/rs/legalact/TAD/TAIS.183129/",
+          "authority": "Seimas / Register of Legal Acts",
+          "sourceType": "legislation",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Law on Copyright and Related Rights (VIII-1185; current consolidated record)",
+          "url": "https://e-seimas.lrs.lt/rs/actualedition/TAIS.81676/gLQlbEkxnP/",
+          "authority": "Seimas / Register of Legal Acts",
+          "sourceType": "legislation",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Law on the State Language (VIII-779)",
+          "url": "https://e-seimas.lrs.lt/portal/legalActPrint/lt?category=TAD&documentId=TAIS.275246&jfwid=-15mved0ydl",
+          "authority": "Seimas / Register of Legal Acts",
+          "sourceType": "legislation",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Lithuanian emergency number 112: official guidance",
+          "url": "https://112.lt/en/about-number-112/",
+          "authority": "Emergency Response Centre",
+          "sourceType": "emergency-authority-guidance",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Law on Advertising (VIII-1871; current consolidated record)",
+          "url": "https://e-seimas.lrs.lt/portal/legalAct/lt/TAD/TAIS.106104?jfwid=-fxdp8xbo",
+          "authority": "Seimas / Register of Legal Acts",
+          "sourceType": "legislation",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Law on Charity and Sponsorship (I-172; translation lead)",
+          "url": "https://e-seimasx.lrs.lt/rs/legalact/TAD/TAIS.281044/",
+          "authority": "Seimas / Register of Legal Acts",
+          "sourceType": "legislation-translation",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Digital Services Act (EU) 2022/2065",
+          "url": "https://eur-lex.europa.eu/eli/reg/2022/2065/oj/eng",
+          "authority": "European Union / EUR-Lex",
+          "sourceType": "eu-regulation",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Artificial Intelligence Act (EU) 2024/1689, current consolidated text",
+          "url": "https://eur-lex.europa.eu/eli/reg/2024/1689/oj/eng",
+          "authority": "European Union / EUR-Lex",
+          "sourceType": "eu-regulation",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Lithuania administrative territorial division (10 counties, 60 municipalities)",
+          "url": "https://osp.stat.gov.lt/en/regionine-statistika-pagal-statistikos-sritis",
+          "authority": "Official Statistics Portal of Lithuania",
+          "sourceType": "official-territorial-register",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Apple App Review Guidelines",
+          "url": "https://developer.apple.com/app-store/review/guidelines/",
+          "authority": "Apple",
+          "sourceType": "platform-policy",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Google Play Health Content and Services policy",
+          "url": "https://support.google.com/googleplay/android-developer/answer/16679511?hl=en-GB",
+          "authority": "Google Play",
+          "sourceType": "platform-policy",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Law on Information Society Services (X-614; consolidated 30 June 2026)",
+          "url": "https://e-seimas.lrs.lt/rs/actualedition/TAIS.277491/MebLZBOlkR/",
+          "authority": "Seimas / Register of Legal Acts",
+          "sourceType": "legislation",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Law on Corporate Income Tax (IX-675; English translation lead)",
+          "url": "https://e-seimas.lrs.lt/rs/legalact/TAD/TAIS.273770/format/ISO_PDF/",
+          "authority": "Seimas / Register of Legal Acts",
+          "sourceType": "legislation-translation",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        }
+      ],
       "reviewAreas": [
         {
           "area": "privacy-and-health-data",
@@ -18006,7 +18215,570 @@
           "reviewer": null
         }
       ],
-      "subnationalAreas": []
+      "subnationalAreas": [
+        {
+          "name": "Alytus County",
+          "status": "not-assessed",
+          "reason": "Registry screening target only. No separate local-law or jurisdictional applicability review performed; country review remains open.",
+          "source": "https://osp.stat.gov.lt/en/regionine-statistika-pagal-statistikos-sritis",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Kaunas County",
+          "status": "not-assessed",
+          "reason": "Registry screening target only. No separate local-law or jurisdictional applicability review performed; country review remains open.",
+          "source": "https://osp.stat.gov.lt/en/regionine-statistika-pagal-statistikos-sritis",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Klaipėda County",
+          "status": "not-assessed",
+          "reason": "Registry screening target only. No separate local-law or jurisdictional applicability review performed; country review remains open.",
+          "source": "https://osp.stat.gov.lt/en/regionine-statistika-pagal-statistikos-sritis",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Marijampolė County",
+          "status": "not-assessed",
+          "reason": "Registry screening target only. No separate local-law or jurisdictional applicability review performed; country review remains open.",
+          "source": "https://osp.stat.gov.lt/en/regionine-statistika-pagal-statistikos-sritis",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Panevėžys County",
+          "status": "not-assessed",
+          "reason": "Registry screening target only. No separate local-law or jurisdictional applicability review performed; country review remains open.",
+          "source": "https://osp.stat.gov.lt/en/regionine-statistika-pagal-statistikos-sritis",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Šiauliai County",
+          "status": "not-assessed",
+          "reason": "Registry screening target only. No separate local-law or jurisdictional applicability review performed; country review remains open.",
+          "source": "https://osp.stat.gov.lt/en/regionine-statistika-pagal-statistikos-sritis",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Tauragė County",
+          "status": "not-assessed",
+          "reason": "Registry screening target only. No separate local-law or jurisdictional applicability review performed; country review remains open.",
+          "source": "https://osp.stat.gov.lt/en/regionine-statistika-pagal-statistikos-sritis",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Telšiai County",
+          "status": "not-assessed",
+          "reason": "Registry screening target only. No separate local-law or jurisdictional applicability review performed; country review remains open.",
+          "source": "https://osp.stat.gov.lt/en/regionine-statistika-pagal-statistikos-sritis",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Utena County",
+          "status": "not-assessed",
+          "reason": "Registry screening target only. No separate local-law or jurisdictional applicability review performed; country review remains open.",
+          "source": "https://osp.stat.gov.lt/en/regionine-statistika-pagal-statistikos-sritis",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Vilnius County",
+          "status": "not-assessed",
+          "reason": "Registry screening target only. No separate local-law or jurisdictional applicability review performed; country review remains open.",
+          "source": "https://osp.stat.gov.lt/en/regionine-statistika-pagal-statistikos-sritis",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Akmenė District Municipality",
+          "status": "not-assessed",
+          "reason": "Registry screening target only. No separate local-law or jurisdictional applicability review performed; country review remains open.",
+          "source": "https://osp.stat.gov.lt/en/regionine-statistika-pagal-statistikos-sritis",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Alytus City Municipality",
+          "status": "not-assessed",
+          "reason": "Registry screening target only. No separate local-law or jurisdictional applicability review performed; country review remains open.",
+          "source": "https://osp.stat.gov.lt/en/regionine-statistika-pagal-statistikos-sritis",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Alytus District Municipality",
+          "status": "not-assessed",
+          "reason": "Registry screening target only. No separate local-law or jurisdictional applicability review performed; country review remains open.",
+          "source": "https://osp.stat.gov.lt/en/regionine-statistika-pagal-statistikos-sritis",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Anykščiai District Municipality",
+          "status": "not-assessed",
+          "reason": "Registry screening target only. No separate local-law or jurisdictional applicability review performed; country review remains open.",
+          "source": "https://osp.stat.gov.lt/en/regionine-statistika-pagal-statistikos-sritis",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Birštonas Municipality",
+          "status": "not-assessed",
+          "reason": "Registry screening target only. No separate local-law or jurisdictional applicability review performed; country review remains open.",
+          "source": "https://osp.stat.gov.lt/en/regionine-statistika-pagal-statistikos-sritis",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Biržai District Municipality",
+          "status": "not-assessed",
+          "reason": "Registry screening target only. No separate local-law or jurisdictional applicability review performed; country review remains open.",
+          "source": "https://osp.stat.gov.lt/en/regionine-statistika-pagal-statistikos-sritis",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Druskininkai Municipality",
+          "status": "not-assessed",
+          "reason": "Registry screening target only. No separate local-law or jurisdictional applicability review performed; country review remains open.",
+          "source": "https://osp.stat.gov.lt/en/regionine-statistika-pagal-statistikos-sritis",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Elektrėnai Municipality",
+          "status": "not-assessed",
+          "reason": "Registry screening target only. No separate local-law or jurisdictional applicability review performed; country review remains open.",
+          "source": "https://osp.stat.gov.lt/en/regionine-statistika-pagal-statistikos-sritis",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Ignalina District Municipality",
+          "status": "not-assessed",
+          "reason": "Registry screening target only. No separate local-law or jurisdictional applicability review performed; country review remains open.",
+          "source": "https://osp.stat.gov.lt/en/regionine-statistika-pagal-statistikos-sritis",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Jonava District Municipality",
+          "status": "not-assessed",
+          "reason": "Registry screening target only. No separate local-law or jurisdictional applicability review performed; country review remains open.",
+          "source": "https://osp.stat.gov.lt/en/regionine-statistika-pagal-statistikos-sritis",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Joniškis District Municipality",
+          "status": "not-assessed",
+          "reason": "Registry screening target only. No separate local-law or jurisdictional applicability review performed; country review remains open.",
+          "source": "https://osp.stat.gov.lt/en/regionine-statistika-pagal-statistikos-sritis",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Jurbarkas District Municipality",
+          "status": "not-assessed",
+          "reason": "Registry screening target only. No separate local-law or jurisdictional applicability review performed; country review remains open.",
+          "source": "https://osp.stat.gov.lt/en/regionine-statistika-pagal-statistikos-sritis",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Kaišiadorys District Municipality",
+          "status": "not-assessed",
+          "reason": "Registry screening target only. No separate local-law or jurisdictional applicability review performed; country review remains open.",
+          "source": "https://osp.stat.gov.lt/en/regionine-statistika-pagal-statistikos-sritis",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Kalvarija Municipality",
+          "status": "not-assessed",
+          "reason": "Registry screening target only. No separate local-law or jurisdictional applicability review performed; country review remains open.",
+          "source": "https://osp.stat.gov.lt/en/regionine-statistika-pagal-statistikos-sritis",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Kaunas City Municipality",
+          "status": "not-assessed",
+          "reason": "Registry screening target only. No separate local-law or jurisdictional applicability review performed; country review remains open.",
+          "source": "https://osp.stat.gov.lt/en/regionine-statistika-pagal-statistikos-sritis",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Kaunas District Municipality",
+          "status": "not-assessed",
+          "reason": "Registry screening target only. No separate local-law or jurisdictional applicability review performed; country review remains open.",
+          "source": "https://osp.stat.gov.lt/en/regionine-statistika-pagal-statistikos-sritis",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Kazlų Rūda Municipality",
+          "status": "not-assessed",
+          "reason": "Registry screening target only. No separate local-law or jurisdictional applicability review performed; country review remains open.",
+          "source": "https://osp.stat.gov.lt/en/regionine-statistika-pagal-statistikos-sritis",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Kėdainiai District Municipality",
+          "status": "not-assessed",
+          "reason": "Registry screening target only. No separate local-law or jurisdictional applicability review performed; country review remains open.",
+          "source": "https://osp.stat.gov.lt/en/regionine-statistika-pagal-statistikos-sritis",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Kelmė District Municipality",
+          "status": "not-assessed",
+          "reason": "Registry screening target only. No separate local-law or jurisdictional applicability review performed; country review remains open.",
+          "source": "https://osp.stat.gov.lt/en/regionine-statistika-pagal-statistikos-sritis",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Klaipėda City Municipality",
+          "status": "not-assessed",
+          "reason": "Registry screening target only. No separate local-law or jurisdictional applicability review performed; country review remains open.",
+          "source": "https://osp.stat.gov.lt/en/regionine-statistika-pagal-statistikos-sritis",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Klaipėda District Municipality",
+          "status": "not-assessed",
+          "reason": "Registry screening target only. No separate local-law or jurisdictional applicability review performed; country review remains open.",
+          "source": "https://osp.stat.gov.lt/en/regionine-statistika-pagal-statistikos-sritis",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Kretinga District Municipality",
+          "status": "not-assessed",
+          "reason": "Registry screening target only. No separate local-law or jurisdictional applicability review performed; country review remains open.",
+          "source": "https://osp.stat.gov.lt/en/regionine-statistika-pagal-statistikos-sritis",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Kupiškis District Municipality",
+          "status": "not-assessed",
+          "reason": "Registry screening target only. No separate local-law or jurisdictional applicability review performed; country review remains open.",
+          "source": "https://osp.stat.gov.lt/en/regionine-statistika-pagal-statistikos-sritis",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Lazdijai District Municipality",
+          "status": "not-assessed",
+          "reason": "Registry screening target only. No separate local-law or jurisdictional applicability review performed; country review remains open.",
+          "source": "https://osp.stat.gov.lt/en/regionine-statistika-pagal-statistikos-sritis",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Marijampolė Municipality",
+          "status": "not-assessed",
+          "reason": "Registry screening target only. No separate local-law or jurisdictional applicability review performed; country review remains open.",
+          "source": "https://osp.stat.gov.lt/en/regionine-statistika-pagal-statistikos-sritis",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Mažeikiai District Municipality",
+          "status": "not-assessed",
+          "reason": "Registry screening target only. No separate local-law or jurisdictional applicability review performed; country review remains open.",
+          "source": "https://osp.stat.gov.lt/en/regionine-statistika-pagal-statistikos-sritis",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Molėtai District Municipality",
+          "status": "not-assessed",
+          "reason": "Registry screening target only. No separate local-law or jurisdictional applicability review performed; country review remains open.",
+          "source": "https://osp.stat.gov.lt/en/regionine-statistika-pagal-statistikos-sritis",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Neringa Municipality",
+          "status": "not-assessed",
+          "reason": "Registry screening target only. No separate local-law or jurisdictional applicability review performed; country review remains open.",
+          "source": "https://osp.stat.gov.lt/en/regionine-statistika-pagal-statistikos-sritis",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Pagėgiai Municipality",
+          "status": "not-assessed",
+          "reason": "Registry screening target only. No separate local-law or jurisdictional applicability review performed; country review remains open.",
+          "source": "https://osp.stat.gov.lt/en/regionine-statistika-pagal-statistikos-sritis",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Pakruojis District Municipality",
+          "status": "not-assessed",
+          "reason": "Registry screening target only. No separate local-law or jurisdictional applicability review performed; country review remains open.",
+          "source": "https://osp.stat.gov.lt/en/regionine-statistika-pagal-statistikos-sritis",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Palanga City Municipality",
+          "status": "not-assessed",
+          "reason": "Registry screening target only. No separate local-law or jurisdictional applicability review performed; country review remains open.",
+          "source": "https://osp.stat.gov.lt/en/regionine-statistika-pagal-statistikos-sritis",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Panevėžys City Municipality",
+          "status": "not-assessed",
+          "reason": "Registry screening target only. No separate local-law or jurisdictional applicability review performed; country review remains open.",
+          "source": "https://osp.stat.gov.lt/en/regionine-statistika-pagal-statistikos-sritis",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Panevėžys District Municipality",
+          "status": "not-assessed",
+          "reason": "Registry screening target only. No separate local-law or jurisdictional applicability review performed; country review remains open.",
+          "source": "https://osp.stat.gov.lt/en/regionine-statistika-pagal-statistikos-sritis",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Pasvalys District Municipality",
+          "status": "not-assessed",
+          "reason": "Registry screening target only. No separate local-law or jurisdictional applicability review performed; country review remains open.",
+          "source": "https://osp.stat.gov.lt/en/regionine-statistika-pagal-statistikos-sritis",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Plungė District Municipality",
+          "status": "not-assessed",
+          "reason": "Registry screening target only. No separate local-law or jurisdictional applicability review performed; country review remains open.",
+          "source": "https://osp.stat.gov.lt/en/regionine-statistika-pagal-statistikos-sritis",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Prienai District Municipality",
+          "status": "not-assessed",
+          "reason": "Registry screening target only. No separate local-law or jurisdictional applicability review performed; country review remains open.",
+          "source": "https://osp.stat.gov.lt/en/regionine-statistika-pagal-statistikos-sritis",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Radviliškis District Municipality",
+          "status": "not-assessed",
+          "reason": "Registry screening target only. No separate local-law or jurisdictional applicability review performed; country review remains open.",
+          "source": "https://osp.stat.gov.lt/en/regionine-statistika-pagal-statistikos-sritis",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Raseiniai District Municipality",
+          "status": "not-assessed",
+          "reason": "Registry screening target only. No separate local-law or jurisdictional applicability review performed; country review remains open.",
+          "source": "https://osp.stat.gov.lt/en/regionine-statistika-pagal-statistikos-sritis",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Rietavas Municipality",
+          "status": "not-assessed",
+          "reason": "Registry screening target only. No separate local-law or jurisdictional applicability review performed; country review remains open.",
+          "source": "https://osp.stat.gov.lt/en/regionine-statistika-pagal-statistikos-sritis",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Rokiškis District Municipality",
+          "status": "not-assessed",
+          "reason": "Registry screening target only. No separate local-law or jurisdictional applicability review performed; country review remains open.",
+          "source": "https://osp.stat.gov.lt/en/regionine-statistika-pagal-statistikos-sritis",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Šakiai District Municipality",
+          "status": "not-assessed",
+          "reason": "Registry screening target only. No separate local-law or jurisdictional applicability review performed; country review remains open.",
+          "source": "https://osp.stat.gov.lt/en/regionine-statistika-pagal-statistikos-sritis",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Šalčininkai District Municipality",
+          "status": "not-assessed",
+          "reason": "Registry screening target only. No separate local-law or jurisdictional applicability review performed; country review remains open.",
+          "source": "https://osp.stat.gov.lt/en/regionine-statistika-pagal-statistikos-sritis",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Šiauliai City Municipality",
+          "status": "not-assessed",
+          "reason": "Registry screening target only. No separate local-law or jurisdictional applicability review performed; country review remains open.",
+          "source": "https://osp.stat.gov.lt/en/regionine-statistika-pagal-statistikos-sritis",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Šiauliai District Municipality",
+          "status": "not-assessed",
+          "reason": "Registry screening target only. No separate local-law or jurisdictional applicability review performed; country review remains open.",
+          "source": "https://osp.stat.gov.lt/en/regionine-statistika-pagal-statistikos-sritis",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Šilalė District Municipality",
+          "status": "not-assessed",
+          "reason": "Registry screening target only. No separate local-law or jurisdictional applicability review performed; country review remains open.",
+          "source": "https://osp.stat.gov.lt/en/regionine-statistika-pagal-statistikos-sritis",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Šilutė District Municipality",
+          "status": "not-assessed",
+          "reason": "Registry screening target only. No separate local-law or jurisdictional applicability review performed; country review remains open.",
+          "source": "https://osp.stat.gov.lt/en/regionine-statistika-pagal-statistikos-sritis",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Širvintos District Municipality",
+          "status": "not-assessed",
+          "reason": "Registry screening target only. No separate local-law or jurisdictional applicability review performed; country review remains open.",
+          "source": "https://osp.stat.gov.lt/en/regionine-statistika-pagal-statistikos-sritis",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Skuodas District Municipality",
+          "status": "not-assessed",
+          "reason": "Registry screening target only. No separate local-law or jurisdictional applicability review performed; country review remains open.",
+          "source": "https://osp.stat.gov.lt/en/regionine-statistika-pagal-statistikos-sritis",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Švenčionys District Municipality",
+          "status": "not-assessed",
+          "reason": "Registry screening target only. No separate local-law or jurisdictional applicability review performed; country review remains open.",
+          "source": "https://osp.stat.gov.lt/en/regionine-statistika-pagal-statistikos-sritis",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Tauragė District Municipality",
+          "status": "not-assessed",
+          "reason": "Registry screening target only. No separate local-law or jurisdictional applicability review performed; country review remains open.",
+          "source": "https://osp.stat.gov.lt/en/regionine-statistika-pagal-statistikos-sritis",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Telšiai District Municipality",
+          "status": "not-assessed",
+          "reason": "Registry screening target only. No separate local-law or jurisdictional applicability review performed; country review remains open.",
+          "source": "https://osp.stat.gov.lt/en/regionine-statistika-pagal-statistikos-sritis",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Trakai District Municipality",
+          "status": "not-assessed",
+          "reason": "Registry screening target only. No separate local-law or jurisdictional applicability review performed; country review remains open.",
+          "source": "https://osp.stat.gov.lt/en/regionine-statistika-pagal-statistikos-sritis",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Ukmergė District Municipality",
+          "status": "not-assessed",
+          "reason": "Registry screening target only. No separate local-law or jurisdictional applicability review performed; country review remains open.",
+          "source": "https://osp.stat.gov.lt/en/regionine-statistika-pagal-statistikos-sritis",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Utena District Municipality",
+          "status": "not-assessed",
+          "reason": "Registry screening target only. No separate local-law or jurisdictional applicability review performed; country review remains open.",
+          "source": "https://osp.stat.gov.lt/en/regionine-statistika-pagal-statistikos-sritis",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Varėna District Municipality",
+          "status": "not-assessed",
+          "reason": "Registry screening target only. No separate local-law or jurisdictional applicability review performed; country review remains open.",
+          "source": "https://osp.stat.gov.lt/en/regionine-statistika-pagal-statistikos-sritis",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Vilkaviškis District Municipality",
+          "status": "not-assessed",
+          "reason": "Registry screening target only. No separate local-law or jurisdictional applicability review performed; country review remains open.",
+          "source": "https://osp.stat.gov.lt/en/regionine-statistika-pagal-statistikos-sritis",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Vilnius City Municipality",
+          "status": "not-assessed",
+          "reason": "Registry screening target only. No separate local-law or jurisdictional applicability review performed; country review remains open.",
+          "source": "https://osp.stat.gov.lt/en/regionine-statistika-pagal-statistikos-sritis",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Vilnius District Municipality",
+          "status": "not-assessed",
+          "reason": "Registry screening target only. No separate local-law or jurisdictional applicability review performed; country review remains open.",
+          "source": "https://osp.stat.gov.lt/en/regionine-statistika-pagal-statistikos-sritis",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Visaginas Municipality",
+          "status": "not-assessed",
+          "reason": "Registry screening target only. No separate local-law or jurisdictional applicability review performed; country review remains open.",
+          "source": "https://osp.stat.gov.lt/en/regionine-statistika-pagal-statistikos-sritis",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Zarasai District Municipality",
+          "status": "not-assessed",
+          "reason": "Registry screening target only. No separate local-law or jurisdictional applicability review performed; country review remains open.",
+          "source": "https://osp.stat.gov.lt/en/regionine-statistika-pagal-statistikos-sritis",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        }
+      ],
+      "sourceDiscoveryCheckedOn": "2026-10-13",
+      "sourceDiscoveryNote": "Initial official-source discovery for Lithuania. These leads are not legal advice or a finding of applicability, compliance or market clearance. The 10-county/60-municipality structure is recorded as an unassessed screening queue; confirm exact current administrative units and any relevant local rules. Several English translations are informational only or may not be current; authentic Lithuanian text and qualified local review control."
     },
     {
       "name": "Luxembourg",

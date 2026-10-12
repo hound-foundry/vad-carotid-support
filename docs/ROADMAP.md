@@ -37,6 +37,7 @@ The glossary and print controls are implemented, but their presence does not cou
 
 - [x] Record an initial dated Estonia official-source bundle; national and subnational applicability review remains open.
 - [x] Record an initial dated Latvia official-source bundle, including translation warnings; national and subnational applicability review remains open.
+- [x] Record dated Lithuania official-source leads and a 10-county/60-municipality screening queue; all national, local and release reviews remain unassessed.
 - [x] Record initial dated Ukraine source leads and constitutional top-level screening queue; all national, local and release reviews remain unassessed.
 - [ ] Resolve the remaining dependency alerts or record a reviewed mitigation and explicit release decision; see [dependency security review](DEPENDENCY_SECURITY.md).
 - [x] Configure weekly Dependabot update PRs for npm packages and GitHub Actions; each update still requires review and CI.
