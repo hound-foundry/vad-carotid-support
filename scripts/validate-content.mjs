@@ -115,6 +115,31 @@ for (const url of [
 assert.ok(ukRecord.officialSources.filter((source) => source.sourceType === "platform-policy").length >= 2, "Store policies must be recorded separately from legislation");
 assert.deepEqual(ukRecord.subnationalAreas.map((area) => area.name), ["England", "Wales", "Scotland", "Northern Ireland"], "UK subnational areas must remain in the release-screening queue");
 assert.ok(ukRecord.subnationalAreas.every((area) => area.status === "not-assessed"), "No UK nation may appear cleared by source discovery alone");
+const estoniaRecord = resources.countryRecords.find((country) => country.isoAlpha2 === "EE");
+assert.ok(estoniaRecord && estoniaRecord.alpha3 === "EST" && estoniaRecord.m49 === "233", "Estonia must remain mapped to the recorded ISO and M49 identifiers");
+assert.equal(estoniaRecord.legalReview.status, "not-assessed", "Estonian source discovery must not imply a completed legal screen");
+assert.equal(estoniaRecord.subnationalReview.status, "not-assessed", "Estonian source discovery must not imply a completed subnational screen");
+assert.equal(estoniaRecord.release, "blocked", "Estonia must remain blocked pending qualified review");
+assert.equal(estoniaRecord.sourceDiscoveryCheckedOn, "2026-10-12", "Estonian source discovery needs its own dated record");
+assert.equal(estoniaRecord.reviewAreas.length, 14, "Every Estonian review topic must remain explicit");
+assert.ok(estoniaRecord.reviewAreas.every((area) => area.status === "not-assessed"), "Estonian source leads must not change any legal topic to assessed");
+const estoniaSourceUrls = [
+  "https://www.riigiteataja.ee/en/eli/507112023002/consolide",
+  "https://www.aki.ee/en/guidelines-legislation/legislation",
+  "https://www.riigiteataja.ee/en/akt/515052025001",
+  "https://www.riigiteataja.ee/en/akt/530062021010",
+  "https://www.riigiteataja.ee/en/eli/509012015001/consolide",
+  "https://www.riigiteataja.ee/en/tolge/pdf/524082022008",
+  "https://www.riigiteataja.ee/akt/115062022001.pdf",
+  "https://www.riigiteataja.ee/public-api/api/v1/akt/103072026029/blob-html",
+  "https://ttja.ee/en/business-client/entrepreneurship/consumer-protection-requirements/consumer-protection-requirements",
+  "https://www.riigiteataja.ee/en/akt/511082026005",
+  "https://www.riigiteataja.ee/en/eli/ee/520102025003/consolide/current",
+  "https://www.riigiteataja.ee/en/eli/ee/503042014003/consolide/current",
+  "https://www.112.ee/en/emergency-phone-number-112",
+];
+assert.equal(estoniaRecord.officialSources.length, estoniaSourceUrls.length, "Estonian national source leads must be enumerated");
+for (const url of estoniaSourceUrls) assert.ok(estoniaRecord.officialSources.some((source) => source.url === url && source.status === "source-lead-only" && source.checkedOn === "2026-10-12"), `Estonian source lead missing, undated or misclassified: ${url}`);
 assert.equal(community.candidates.length, 3, "All three user-provided community candidates must be tracked");
 assert.ok(community.candidates.every((candidate) => candidate.status === "pending-verification" && /^\d{4}-\d{2}-\d{2}$/.test(candidate.lastChecked) && candidate.verificationNote?.trim()), "Unverified community candidates must remain hidden with a dated verification record");
 assert.ok(community.candidates.every((candidate) => /^https:\/\/www\.facebook\.com\/groups\/[0-9]+$/.test(candidate.url)), "The community verification queue may contain group links only");

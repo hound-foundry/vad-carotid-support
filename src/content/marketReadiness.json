@@ -9880,7 +9880,113 @@
       "isoAlpha2": "EE",
       "reviewOwner": null,
       "lastChecked": null,
-      "officialSources": [],
+      "sourceDiscoveryCheckedOn": "2026-10-12",
+      "officialSources": [
+        {
+          "title": "Personal Data Protection Act",
+          "url": "https://www.riigiteataja.ee/en/eli/507112023002/consolide",
+          "authority": "Riigi Teataja / Riigikogu",
+          "sourceType": "legislation",
+          "checkedOn": "2026-10-12",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Data Protection Inspectorate: legislation",
+          "url": "https://www.aki.ee/en/guidelines-legislation/legislation",
+          "authority": "Estonian Data Protection Inspectorate",
+          "sourceType": "regulator-guidance",
+          "checkedOn": "2026-10-12",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Electronic Communications Act",
+          "url": "https://www.riigiteataja.ee/en/akt/515052025001",
+          "authority": "Riigi Teataja / Riigikogu",
+          "sourceType": "legislation",
+          "checkedOn": "2026-10-12",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Information Society Services Act",
+          "url": "https://www.riigiteataja.ee/en/akt/530062021010",
+          "authority": "Riigi Teataja / Riigikogu",
+          "sourceType": "legislation",
+          "checkedOn": "2026-10-12",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Medical Devices Act",
+          "url": "https://www.riigiteataja.ee/en/eli/509012015001/consolide",
+          "authority": "Riigi Teataja / Riigikogu",
+          "sourceType": "legislation",
+          "checkedOn": "2026-10-12",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Products and Services Accessibility Act (English translation)",
+          "url": "https://www.riigiteataja.ee/en/tolge/pdf/524082022008",
+          "authority": "Riigi Teataja / Riigikogu",
+          "sourceType": "legislation-translation",
+          "checkedOn": "2026-10-12",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Products and Services Accessibility Act (official Estonian text)",
+          "url": "https://www.riigiteataja.ee/akt/115062022001.pdf",
+          "authority": "Riigi Teataja / Riigikogu",
+          "sourceType": "legislation",
+          "checkedOn": "2026-10-12",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Consumer Protection Act, current official text (Estonian)",
+          "url": "https://www.riigiteataja.ee/public-api/api/v1/akt/103072026029/blob-html",
+          "authority": "Riigi Teataja / Riigikogu",
+          "sourceType": "legislation",
+          "checkedOn": "2026-10-12",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Consumer Protection and Technical Regulatory Authority: consumer protection requirements",
+          "url": "https://ttja.ee/en/business-client/entrepreneurship/consumer-protection-requirements/consumer-protection-requirements",
+          "authority": "Consumer Protection and Technical Regulatory Authority",
+          "sourceType": "regulator-guidance",
+          "checkedOn": "2026-10-12",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Language Act",
+          "url": "https://www.riigiteataja.ee/en/akt/511082026005",
+          "authority": "Riigi Teataja / Riigikogu",
+          "sourceType": "legislation",
+          "checkedOn": "2026-10-12",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Copyright Act",
+          "url": "https://www.riigiteataja.ee/en/eli/ee/520102025003/consolide/current",
+          "authority": "Riigi Teataja / Riigikogu",
+          "sourceType": "legislation",
+          "checkedOn": "2026-10-12",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Equal Treatment Act",
+          "url": "https://www.riigiteataja.ee/en/eli/ee/503042014003/consolide/current",
+          "authority": "Riigi Teataja / Riigikogu",
+          "sourceType": "legislation",
+          "checkedOn": "2026-10-12",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Emergency phone number 112",
+          "url": "https://www.112.ee/en/emergency-phone-number-112",
+          "authority": "Estonian Emergency Response Centre",
+          "sourceType": "emergency-service-guidance",
+          "checkedOn": "2026-10-12",
+          "status": "source-lead-only"
+        }
+      ],
       "reviewAreas": [
         {
           "area": "privacy-and-health-data",
