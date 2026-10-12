@@ -14,6 +14,7 @@ Items are proposals, not promised dates. Safety review is a release gate.
 - [x] Source-linked plain-language glossary for common terms used in the guide drafts; every definition includes a limit and remains marked as unapproved.
 - [x] Browser print action for the user-reviewed appointment-sheet preview.
 - [x] Patient/carer usability review prompts and safe feedback-handling guidance.
+- [x] Prepare a clinical review packet mapping each draft to its review questions; reviewer and approval remain outstanding.
 - [ ] Patient and carer review of navigation and language.
 - [ ] Clinician review of glossary definitions and appointment prompts before any patient-facing release.
 - [ ] Clinically reviewed emergency wording and country-specific resources.
