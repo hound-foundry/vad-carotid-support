@@ -29684,7 +29684,232 @@
       "isoAlpha2": "ES",
       "reviewOwner": null,
       "lastChecked": null,
-      "officialSources": [],
+      "officialSources": [
+        {
+          "title": "Organic Law 3/2018 on Personal Data Protection and Digital Rights",
+          "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2018-16673",
+          "authority": "Boletín Oficial del Estado (BOE)",
+          "sourceType": "legislation",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "General Data Protection Regulation (EU) 2016/679",
+          "url": "https://eur-lex.europa.eu/eli/reg/2016/679/oj/eng",
+          "authority": "European Union / EUR-Lex",
+          "sourceType": "eu-regulation",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Spanish Data Protection Agency (AEPD): applicable data-protection legislation",
+          "url": "https://www.aepd.es/informes-y-resoluciones/normativa",
+          "authority": "Agencia Española de Protección de Datos (AEPD)",
+          "sourceType": "regulator-guidance",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Directive 2002/58/EC on privacy and electronic communications",
+          "url": "https://eur-lex.europa.eu/eli/dir/2002/58/oj/eng",
+          "authority": "European Union / EUR-Lex",
+          "sourceType": "eu-directive",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Law 34/2002 on Information Society Services and Electronic Commerce",
+          "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2002-13758",
+          "authority": "BOE",
+          "sourceType": "legislation",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "General Telecommunications Law 11/2022",
+          "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2022-10757",
+          "authority": "BOE",
+          "sourceType": "legislation",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Digital Services Act (EU) 2022/2065",
+          "url": "https://eur-lex.europa.eu/eli/reg/2022/2065/oj/eng",
+          "authority": "European Union / EUR-Lex",
+          "sourceType": "eu-regulation",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Artificial Intelligence Act (EU) 2024/1689, current consolidated text",
+          "url": "https://eur-lex.europa.eu/eli/reg/2024/1689/oj/eng",
+          "authority": "European Union / EUR-Lex",
+          "sourceType": "eu-regulation",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Medical Devices Regulation (EU) 2017/745, current consolidated text",
+          "url": "https://eur-lex.europa.eu/eli/reg/2017/745/oj/eng",
+          "authority": "European Union / EUR-Lex",
+          "sourceType": "eu-regulation",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Royal Decree 192/2023 regulating medical devices",
+          "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2023-7416",
+          "authority": "BOE",
+          "sourceType": "legislation",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "AEMPS: medical-device responsibilities and guidance",
+          "url": "https://www.aemps.gob.es/productos-sanitarios/productos-sanitarios/",
+          "authority": "Agencia Española de Medicamentos y Productos Sanitarios (AEMPS)",
+          "sourceType": "regulator-guidance",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Royal Legislative Decree 1/2007, General Law for the Defence of Consumers and Users",
+          "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2007-20555",
+          "authority": "BOE",
+          "sourceType": "legislation",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "General Advertising Law 34/1988",
+          "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1988-26156",
+          "authority": "BOE",
+          "sourceType": "legislation",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Accessibility Law 11/2023 (products and services; transposes European Accessibility Act)",
+          "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2023-11022",
+          "authority": "BOE",
+          "sourceType": "legislation",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Royal Decree 1112/2018 on accessibility of public-sector websites and apps",
+          "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2018-12699",
+          "authority": "BOE",
+          "sourceType": "legislation",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Directive (EU) 2019/882 on accessibility requirements for products and services",
+          "url": "https://eur-lex.europa.eu/eli/dir/2019/882/oj/eng",
+          "authority": "European Union / EUR-Lex",
+          "sourceType": "eu-directive",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Royal Legislative Decree 1/1996, Intellectual Property Law",
+          "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1996-8930",
+          "authority": "BOE",
+          "sourceType": "legislation",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Organic Law 8/2021 on comprehensive protection of children and adolescents against violence",
+          "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2021-9347",
+          "authority": "BOE",
+          "sourceType": "legislation",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Organic Law 1/1996 on the Legal Protection of Minors",
+          "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1996-1069",
+          "authority": "BOE",
+          "sourceType": "legislation",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Spanish Constitution, Article 3 (official language and co-official-language framework)",
+          "url": "https://www.boe.es/legislacion/documentos/ConstitucionCASTELLANO.pdf",
+          "authority": "BOE",
+          "sourceType": "constitutional-source",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "National emergency number 112 and regional service delivery",
+          "url": "https://administracion.gob.es/tu-espacio-europeo/derechos-obligaciones/ciudadanos/asistencia-sanitaria/numeros-urgencia",
+          "authority": "General State Administration / Ministry of Interior",
+          "sourceType": "emergency-authority-guidance",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Organic Law 1/2002 regulating the Right of Association",
+          "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2002-5852",
+          "authority": "BOE",
+          "sourceType": "legislation",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Law 49/2002 on tax regime for non-profit entities and patronage",
+          "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2002-25039",
+          "authority": "BOE",
+          "sourceType": "legislation",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "INE classification of provinces, autonomous communities and autonomous cities",
+          "url": "https://www.ine.es/en/daco/daco42/codmun/cod_ccaa_provincia_en.htm",
+          "authority": "National Statistics Institute (INE)",
+          "sourceType": "official-territorial-register",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Organic Law 7/2021 on personal data processed for criminal-law enforcement purposes",
+          "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2021-8806",
+          "authority": "BOE",
+          "sourceType": "legislation",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "EU e-Commerce Directive 2000/31/EC",
+          "url": "https://eur-lex.europa.eu/eli/dir/2000/31/oj/eng",
+          "authority": "European Union / EUR-Lex",
+          "sourceType": "eu-directive",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Apple App Review Guidelines",
+          "url": "https://developer.apple.com/app-store/review/guidelines/",
+          "authority": "Apple",
+          "sourceType": "platform-policy",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Google Play Health Content and Services policy",
+          "url": "https://support.google.com/googleplay/android-developer/answer/16679511?hl=en-GB",
+          "authority": "Google Play",
+          "sourceType": "platform-policy",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        }
+      ],
       "reviewAreas": [
         {
           "area": "privacy-and-health-data",
@@ -29799,7 +30024,162 @@
           "reviewer": null
         }
       ],
-      "subnationalAreas": []
+      "subnationalAreas": [
+        {
+          "name": "Andalucía",
+          "status": "not-assessed",
+          "reason": "Autonomous-community/city screening target only. No separate regional, provincial, municipal or jurisdictional applicability review performed.",
+          "source": "https://www.ine.es/en/daco/daco42/codmun/cod_ccaa_provincia_en.htm",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Aragón",
+          "status": "not-assessed",
+          "reason": "Autonomous-community/city screening target only. No separate regional, provincial, municipal or jurisdictional applicability review performed.",
+          "source": "https://www.ine.es/en/daco/daco42/codmun/cod_ccaa_provincia_en.htm",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Principado de Asturias",
+          "status": "not-assessed",
+          "reason": "Autonomous-community/city screening target only. No separate regional, provincial, municipal or jurisdictional applicability review performed.",
+          "source": "https://www.ine.es/en/daco/daco42/codmun/cod_ccaa_provincia_en.htm",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Illes Balears",
+          "status": "not-assessed",
+          "reason": "Autonomous-community/city screening target only. No separate regional, provincial, municipal or jurisdictional applicability review performed.",
+          "source": "https://www.ine.es/en/daco/daco42/codmun/cod_ccaa_provincia_en.htm",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Canarias",
+          "status": "not-assessed",
+          "reason": "Autonomous-community/city screening target only. No separate regional, provincial, municipal or jurisdictional applicability review performed.",
+          "source": "https://www.ine.es/en/daco/daco42/codmun/cod_ccaa_provincia_en.htm",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Cantabria",
+          "status": "not-assessed",
+          "reason": "Autonomous-community/city screening target only. No separate regional, provincial, municipal or jurisdictional applicability review performed.",
+          "source": "https://www.ine.es/en/daco/daco42/codmun/cod_ccaa_provincia_en.htm",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Castilla y León",
+          "status": "not-assessed",
+          "reason": "Autonomous-community/city screening target only. No separate regional, provincial, municipal or jurisdictional applicability review performed.",
+          "source": "https://www.ine.es/en/daco/daco42/codmun/cod_ccaa_provincia_en.htm",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Castilla-La Mancha",
+          "status": "not-assessed",
+          "reason": "Autonomous-community/city screening target only. No separate regional, provincial, municipal or jurisdictional applicability review performed.",
+          "source": "https://www.ine.es/en/daco/daco42/codmun/cod_ccaa_provincia_en.htm",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Cataluña",
+          "status": "not-assessed",
+          "reason": "Autonomous-community/city screening target only. No separate regional, provincial, municipal or jurisdictional applicability review performed.",
+          "source": "https://www.ine.es/en/daco/daco42/codmun/cod_ccaa_provincia_en.htm",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Comunitat Valenciana",
+          "status": "not-assessed",
+          "reason": "Autonomous-community/city screening target only. No separate regional, provincial, municipal or jurisdictional applicability review performed.",
+          "source": "https://www.ine.es/en/daco/daco42/codmun/cod_ccaa_provincia_en.htm",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Extremadura",
+          "status": "not-assessed",
+          "reason": "Autonomous-community/city screening target only. No separate regional, provincial, municipal or jurisdictional applicability review performed.",
+          "source": "https://www.ine.es/en/daco/daco42/codmun/cod_ccaa_provincia_en.htm",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Galicia",
+          "status": "not-assessed",
+          "reason": "Autonomous-community/city screening target only. No separate regional, provincial, municipal or jurisdictional applicability review performed.",
+          "source": "https://www.ine.es/en/daco/daco42/codmun/cod_ccaa_provincia_en.htm",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Comunidad de Madrid",
+          "status": "not-assessed",
+          "reason": "Autonomous-community/city screening target only. No separate regional, provincial, municipal or jurisdictional applicability review performed.",
+          "source": "https://www.ine.es/en/daco/daco42/codmun/cod_ccaa_provincia_en.htm",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Región de Murcia",
+          "status": "not-assessed",
+          "reason": "Autonomous-community/city screening target only. No separate regional, provincial, municipal or jurisdictional applicability review performed.",
+          "source": "https://www.ine.es/en/daco/daco42/codmun/cod_ccaa_provincia_en.htm",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Comunidad Foral de Navarra",
+          "status": "not-assessed",
+          "reason": "Autonomous-community/city screening target only. No separate regional, provincial, municipal or jurisdictional applicability review performed.",
+          "source": "https://www.ine.es/en/daco/daco42/codmun/cod_ccaa_provincia_en.htm",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "País Vasco",
+          "status": "not-assessed",
+          "reason": "Autonomous-community/city screening target only. No separate regional, provincial, municipal or jurisdictional applicability review performed.",
+          "source": "https://www.ine.es/en/daco/daco42/codmun/cod_ccaa_provincia_en.htm",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "La Rioja",
+          "status": "not-assessed",
+          "reason": "Autonomous-community/city screening target only. No separate regional, provincial, municipal or jurisdictional applicability review performed.",
+          "source": "https://www.ine.es/en/daco/daco42/codmun/cod_ccaa_provincia_en.htm",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Ceuta",
+          "status": "not-assessed",
+          "reason": "Autonomous-community/city screening target only. No separate regional, provincial, municipal or jurisdictional applicability review performed.",
+          "source": "https://www.ine.es/en/daco/daco42/codmun/cod_ccaa_provincia_en.htm",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Melilla",
+          "status": "not-assessed",
+          "reason": "Autonomous-community/city screening target only. No separate regional, provincial, municipal or jurisdictional applicability review performed.",
+          "source": "https://www.ine.es/en/daco/daco42/codmun/cod_ccaa_provincia_en.htm",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        }
+      ],
+      "sourceDiscoveryCheckedOn": "2026-10-13",
+      "sourceDiscoveryNote": "Initial source discovery for Spain, not legal advice or a market screen. Spain has 17 autonomous communities and two autonomous cities; all 19 are queued as unassessed screening targets. Provinces, municipalities, autonomous-community rules, co-official-language requirements, and distinct emergency-service protocols remain to be reviewed. The source inventory does not establish applicability, compliance or release readiness."
     },
     {
       "name": "Sri Lanka",
