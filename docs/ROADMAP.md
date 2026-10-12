@@ -25,6 +25,7 @@ Items are proposals, not promised dates. Safety review is a release gate.
 
 ## Before distribution
 
+- [ ] Resolve the remaining dependency alerts or record a reviewed mitigation and explicit release decision; see [dependency security review](DEPENDENCY_SECURITY.md).
 - [ ] Review intended purpose and medical-software status by target market.
 - [ ] Finish country-by-country privacy, consumer, accessibility, content and store screening for each launch market.
 - [ ] Confirm operator identity and public contact route.
