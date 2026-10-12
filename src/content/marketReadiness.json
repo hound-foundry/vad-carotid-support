@@ -31477,10 +31477,107 @@
         "date": null
       },
       "release": "blocked",
-      "isoAlpha2": null,
+      "isoAlpha2": "GB",
       "reviewOwner": null,
       "lastChecked": null,
-      "officialSources": [],
+      "officialSources": [
+        {
+          "title": "What is special category data?",
+          "url": "https://ico.org.uk/for-organisations/uk-gdpr-guidance-and-resources/lawful-basis/special-category-data/what-is-special-category-data/",
+          "authority": "Information Commissioner's Office",
+          "sourceType": "regulator-guidance",
+          "checkedOn": "2026-10-12",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "ISO 3166 country codes",
+          "url": "https://www.iso.org/iso-3166-country-codes.html",
+          "authority": "International Organization for Standardization",
+          "sourceType": "code-list",
+          "checkedOn": "2026-10-12",
+          "status": "identifier-checked"
+        },
+        {
+          "title": "Guidance on the use of storage and access technologies",
+          "url": "https://ico.org.uk/for-organisations/direct-marketing-and-privacy-and-electronic-communications/guidance-on-the-use-of-storage-and-access-technologies/",
+          "authority": "Information Commissioner's Office",
+          "sourceType": "regulator-guidance",
+          "checkedOn": "2026-10-12",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Personal data breaches: a guide",
+          "url": "https://ico.org.uk/for-organisations/report-a-breach/personal-data-breach/personal-data-breaches-a-guide/",
+          "authority": "Information Commissioner's Office",
+          "sourceType": "regulator-guidance",
+          "checkedOn": "2026-10-12",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Medical devices: software applications",
+          "url": "https://www.gov.uk/government/publications/medical-devices-software-applications-apps",
+          "authority": "Medicines and Healthcare products Regulatory Agency",
+          "sourceType": "regulator-guidance",
+          "checkedOn": "2026-10-12",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Crafting an intended purpose for Software as a Medical Device",
+          "url": "https://www.gov.uk/government/publications/crafting-an-intended-purpose-in-the-context-of-software-as-a-medical-device-samd/crafting-an-intended-purpose-in-the-context-of-software-as-a-medical-device-samd",
+          "authority": "Medicines and Healthcare products Regulatory Agency",
+          "sourceType": "regulator-guidance",
+          "checkedOn": "2026-10-12",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "The Medical Devices Regulations 2002",
+          "url": "https://www.legislation.gov.uk/uksi/2002/618/contents",
+          "authority": "UK legislation",
+          "sourceType": "legislation",
+          "checkedOn": "2026-10-12",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Equality Act 2010, section 29: provision of services",
+          "url": "https://www.legislation.gov.uk/ukpga/2010/15/section/29",
+          "authority": "UK legislation",
+          "sourceType": "legislation",
+          "checkedOn": "2026-10-12",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Public Sector Bodies Accessibility Regulations 2018",
+          "url": "https://www.legislation.gov.uk/uksi/2018/952",
+          "authority": "UK legislation",
+          "sourceType": "legislation",
+          "checkedOn": "2026-10-12",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "The Children's code: services covered",
+          "url": "https://ico.org.uk/for-organisations/uk-gdpr-guidance-and-resources/childrens-information/childrens-code-guidance-and-resources/age-appropriate-design-a-code-of-practice-for-online-services/services-covered-by-this-code/",
+          "authority": "Information Commissioner's Office",
+          "sourceType": "regulator-guidance",
+          "checkedOn": "2026-10-12",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Digital Markets, Competition and Consumers Act 2024",
+          "url": "https://www.legislation.gov.uk/ukpga/2024/13/contents",
+          "authority": "UK legislation",
+          "sourceType": "legislation",
+          "checkedOn": "2026-10-12",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Online Safety Act 2023, section 3: user-to-user service definition",
+          "url": "https://www.legislation.gov.uk/ukpga/2023/50/section/3",
+          "authority": "UK legislation",
+          "sourceType": "legislation",
+          "checkedOn": "2026-10-12",
+          "status": "source-lead-only"
+        }
+      ],
       "reviewAreas": [
         {
           "area": "privacy-and-health-data",
@@ -31595,7 +31692,41 @@
           "reviewer": null
         }
       ],
-      "subnationalAreas": []
+      "subnationalAreas": [
+        {
+          "name": "England",
+          "status": "not-assessed",
+          "reason": "Subnational screening queue only; no legal assessment performed.",
+          "source": null,
+          "checkedOn": null,
+          "reviewer": null
+        },
+        {
+          "name": "Wales",
+          "status": "not-assessed",
+          "reason": "Subnational screening queue only; no legal assessment performed.",
+          "source": null,
+          "checkedOn": null,
+          "reviewer": null
+        },
+        {
+          "name": "Scotland",
+          "status": "not-assessed",
+          "reason": "Subnational screening queue only; no legal assessment performed.",
+          "source": null,
+          "checkedOn": null,
+          "reviewer": null
+        },
+        {
+          "name": "Northern Ireland",
+          "status": "not-assessed",
+          "reason": "Subnational screening queue only; no legal assessment performed.",
+          "source": null,
+          "checkedOn": null,
+          "reviewer": null
+        }
+      ],
+      "sourceDiscoveryCheckedOn": "2026-10-12"
     },
     {
       "name": "United Republic of Tanzania",

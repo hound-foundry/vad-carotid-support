@@ -52,6 +52,13 @@ assert.equal(resources.globalRelease, "blocked", "International release must sta
 assert.ok(resources.countryRecords.length >= 240, "Country/area release queue must be comprehensive");
 assert.ok(resources.countryRecords.every((country) => country.legalReview.status === "not-assessed" && country.release === "blocked"), "Unreviewed jurisdictions must remain blocked");
 assert.ok(resources.countryRecords.every((country) => country.reviewAreas.length >= 14 && country.reviewAreas.every((area) => area.status === "not-assessed")), "All required legal review areas must remain explicit and unassessed until screened");
+const ukRecord = resources.countryRecords.find((country) => country.alpha3 === "GBR");
+assert.ok(ukRecord && ukRecord.legalReview.status === "not-assessed" && ukRecord.subnationalReview.status === "not-assessed" && ukRecord.release === "blocked", "UK source discovery must not be mistaken for legal clearance");
+assert.equal(ukRecord.isoAlpha2, "GB", "UK ISO alpha-2 identifier must match the recorded ISO source");
+assert.ok(ukRecord.sourceDiscoveryCheckedOn && ukRecord.officialSources.length > 0 && ukRecord.officialSources.every((source) => ["source-lead-only", "identifier-checked"].includes(source.status) && source.checkedOn), "UK sources need dates and must not imply legal clearance");
+assert.ok(ukRecord.officialSources.some((source) => source.sourceType === "code-list" && source.status === "identifier-checked"), "UK ISO code needs a dated code-list source");
+assert.deepEqual(ukRecord.subnationalAreas.map((area) => area.name), ["England", "Wales", "Scotland", "Northern Ireland"], "UK subnational areas must remain in the release-screening queue");
+assert.ok(ukRecord.subnationalAreas.every((area) => area.status === "not-assessed"), "No UK nation may appear cleared by source discovery alone");
 assert.equal(community.candidates.length, 3, "All three user-provided community candidates must be tracked");
 assert.ok(community.candidates.every((candidate) => candidate.status === "pending-verification" && /^\d{4}-\d{2}-\d{2}$/.test(candidate.lastChecked) && candidate.verificationNote?.trim()), "Unverified community candidates must remain hidden with a dated verification record");
 assert.ok(community.candidates.every((candidate) => /^https:\/\/www\.facebook\.com\/groups\/[0-9]+$/.test(candidate.url)), "The community verification queue may contain group links only");
