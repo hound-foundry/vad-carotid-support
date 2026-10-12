@@ -59,6 +59,30 @@ assert.ok(resources.countryRecords.every((country) => /^[A-Z]{2}$/.test(country.
 assert.equal(new Set(resources.countryRecords.map((country) => country.isoAlpha2)).size, resources.countryRecords.length, "ISO alpha-2 identifiers must be unique in the inventory");
 assert.ok(resources.countryRecords.every((country) => country.legalReview.status === "not-assessed" && country.release === "blocked"), "Unreviewed jurisdictions must remain blocked");
 assert.ok(resources.countryRecords.every((country) => country.reviewAreas.length >= 14 && country.reviewAreas.every((area) => area.status === "not-assessed")), "All required legal review areas must remain explicit and unassessed until screened");
+const euGroup = resources.regionalSourceGroups?.find((group) => group.id === "eu-member-states");
+assert.equal(euGroup?.status, "membership-scope-source-checked-only", "EU grouping must not imply law applicability");
+assert.equal(euGroup?.membershipSource, "https://european-union.europa.eu/principles-countries-history/eu-countries_en?page=1", "EU membership list source must be recorded");
+assert.match(euGroup?.checkedOn ?? "", /^\d{4}-\d{2}-\d{2}$/, "EU member-state list needs a check date");
+assert.equal(euGroup?.memberAlpha2?.length, 27, "EU member-state source group must contain the 27 checked members");
+assert.equal(new Set(euGroup.memberAlpha2).size, 27, "EU member-state source group must not duplicate identifiers");
+const euSourceUrls = [
+  "https://eur-lex.europa.eu/eli/reg/2016/679/oj/eng/",
+  "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32002L0058",
+  "https://eur-lex.europa.eu/eli/reg/2017/745/oj/eng",
+  "https://health.ec.europa.eu/latest-updates/update-mdcg-2019-11-rev1-qualification-and-classification-software-regulation-eu-2017745-and-2025-06-17_en",
+  "https://eur-lex.europa.eu/eli/dir/2019/882/oj/eng",
+  "https://eur-lex.europa.eu/legal-content/EN/ALL/?uri=celex%3A32005L0029",
+  "https://eur-lex.europa.eu/eli/dir/2001/29/2017-10-10/eng",
+  "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32011L0083",
+  "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32019L2161",
+  "https://eur-lex.europa.eu/eli/dir/2019/790/oj/eng",
+];
+assert.equal(euGroup.sources?.length, euSourceUrls.length, "EU common source leads must be stored once in the regional source bundle");
+for (const url of euSourceUrls) assert.ok(euGroup.sources.some((source) => source.url === url && source.status === "source-lead-only" && source.checkedOn), `EU source bundle missing or misclassifies ${url}`);
+for (const alpha2 of euGroup.memberAlpha2) {
+  const country = resources.countryRecords.find((record) => record.isoAlpha2 === alpha2);
+  assert.ok(country && country.legalReview.status === "not-assessed" && country.release === "blocked", `EU source-group member ${alpha2} must remain legally unassessed and blocked`);
+}
 const ukRecord = resources.countryRecords.find((country) => country.alpha3 === "GBR");
 assert.ok(ukRecord && ukRecord.legalReview.status === "not-assessed" && ukRecord.subnationalReview.status === "not-assessed" && ukRecord.release === "blocked", "UK source discovery must not be mistaken for legal clearance");
 assert.equal(ukRecord.isoAlpha2, "GB", "UK ISO alpha-2 identifier must match the recorded ISO source");

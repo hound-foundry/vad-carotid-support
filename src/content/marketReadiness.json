@@ -33729,5 +33729,126 @@
     "matchedRecords": 248,
     "status": "identifier-reconciliation-only",
     "limit": "Country/area identifiers only. No legal applicability, country-name scope, subnational law, or release status was assessed."
-  }
+  },
+  "regionalSourceGroups": [
+    {
+      "id": "eu-member-states",
+      "name": "European Union member states",
+      "membershipSource": "https://european-union.europa.eu/principles-countries-history/eu-countries_en?page=1",
+      "checkedOn": "2026-10-12",
+      "memberAlpha2": [
+        "AT",
+        "BE",
+        "BG",
+        "HR",
+        "CY",
+        "CZ",
+        "DK",
+        "EE",
+        "FI",
+        "FR",
+        "DE",
+        "GR",
+        "HU",
+        "IE",
+        "IT",
+        "LV",
+        "LT",
+        "LU",
+        "MT",
+        "NL",
+        "PL",
+        "PT",
+        "RO",
+        "SK",
+        "SI",
+        "ES",
+        "SE"
+      ],
+      "status": "membership-scope-source-checked-only",
+      "limit": "Membership grouping for source discovery only; not a legal applicability finding. National transposition, territorial scope, exceptions and subnational requirements remain unassessed.",
+      "sources": [
+        {
+          "title": "Regulation (EU) 2016/679 — General Data Protection Regulation",
+          "url": "https://eur-lex.europa.eu/eli/reg/2016/679/oj/eng/",
+          "authority": "European Union",
+          "sourceType": "legislation",
+          "checkedOn": "2026-10-12",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Directive 2002/58/EC — privacy and electronic communications",
+          "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32002L0058",
+          "authority": "European Union",
+          "sourceType": "legislation",
+          "checkedOn": "2026-10-12",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Regulation (EU) 2017/745 — Medical Devices Regulation",
+          "url": "https://eur-lex.europa.eu/eli/reg/2017/745/oj/eng",
+          "authority": "European Union",
+          "sourceType": "legislation",
+          "checkedOn": "2026-10-12",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "MDCG guidance on qualification and classification of medical device software",
+          "url": "https://health.ec.europa.eu/latest-updates/update-mdcg-2019-11-rev1-qualification-and-classification-software-regulation-eu-2017745-and-2025-06-17_en",
+          "authority": "European Commission Medical Device Coordination Group",
+          "sourceType": "regulator-guidance",
+          "checkedOn": "2026-10-12",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Directive (EU) 2019/882 — European Accessibility Act",
+          "url": "https://eur-lex.europa.eu/eli/dir/2019/882/oj/eng",
+          "authority": "European Union",
+          "sourceType": "legislation",
+          "checkedOn": "2026-10-12",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Directive 2005/29/EC — unfair commercial practices",
+          "url": "https://eur-lex.europa.eu/legal-content/EN/ALL/?uri=celex%3A32005L0029",
+          "authority": "European Union",
+          "sourceType": "legislation",
+          "checkedOn": "2026-10-12",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Directive 2001/29/EC — copyright in the information society",
+          "url": "https://eur-lex.europa.eu/eli/dir/2001/29/2017-10-10/eng",
+          "authority": "European Union",
+          "sourceType": "legislation",
+          "checkedOn": "2026-10-12",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Directive 2011/83/EU — consumer rights",
+          "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32011L0083",
+          "authority": "European Union",
+          "sourceType": "legislation",
+          "checkedOn": "2026-10-12",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Directive (EU) 2019/2161 — consumer protection enforcement and modernisation",
+          "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32019L2161",
+          "authority": "European Union",
+          "sourceType": "legislation",
+          "checkedOn": "2026-10-12",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Directive (EU) 2019/790 — copyright and related rights in the Digital Single Market",
+          "url": "https://eur-lex.europa.eu/eli/dir/2019/790/oj/eng",
+          "authority": "European Union",
+          "sourceType": "legislation",
+          "checkedOn": "2026-10-12",
+          "status": "source-lead-only"
+        }
+      ]
+    }
+  ]
 }

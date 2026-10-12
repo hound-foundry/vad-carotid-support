@@ -49,6 +49,21 @@ The initial UK subnational checklist now names England, Wales, Scotland and Nort
 
 These are store policies, not laws. Their presence in this register does not constitute store approval or a completed submission.
 
+## EU member-state source discovery — 12 October 2026
+
+The European Union’s [official member-state list](https://european-union.europa.eu/principles-countries-history/eu-countries_en?page=1) lists 27 member states. Shared source leads are recorded once in the regional source bundle and mapped to those country records by ISO alpha-2 code. This groups common EU-level instruments for follow-up; it does not determine territorial reach, national transposition, exemptions, enforcement, or whether a provision applies to this app. EU directives and member-state options require separate country-by-country checks. The 27 country records remain blocked and unassessed.
+
+| Area | EU source lead | What remains to check in each member state |
+|---|---|---|
+| Privacy, health data and transfers | [General Data Protection Regulation (EU) 2016/679](https://eur-lex.europa.eu/eli/reg/2016/679/oj/eng/) | Territorial scope, health-data conditions, national specifications (including children’s age thresholds), supervisory authority, representative requirements, transfers, fee/registration duties and enforcement. |
+| Browser storage | [ePrivacy Directive 2002/58/EC](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32002L0058) | Current national implementing law, regulator guidance and whether the app’s storage/access behavior falls within a rule or exception. |
+| Medical software | [Medical Devices Regulation (EU) 2017/745](https://eur-lex.europa.eu/eli/reg/2017/745/oj/eng) and [MDCG software qualification/classification guidance](https://health.ec.europa.eu/latest-updates/update-mdcg-2019-11-rev1-qualification-and-classification-software-regulation-eu-2017745-and-2025-06-17_en) | Intended purpose and classification against the final app; national competent authority, language, registration, vigilance and enforcement requirements. |
+| Accessibility | [European Accessibility Act (EU) 2019/882](https://eur-lex.europa.eu/eli/dir/2019/882/oj/eng) | National transposition, service scope, operator and micro-enterprise exceptions, enforcement and effective requirements. |
+| Consumer claims | [Unfair Commercial Practices Directive 2005/29/EC](https://eur-lex.europa.eu/legal-content/EN/ALL/?uri=celex%3A32005L0029), [Consumer Rights Directive 2011/83/EU](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32011L0083), and [amending Directive (EU) 2019/2161](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32019L2161) | National implementation and current amendments; operator, funding, sponsorship and claims about cost, evidence or outcomes. |
+| Copyright and translation | [Information Society Directive 2001/29/EC](https://eur-lex.europa.eu/eli/dir/2001/29/2017-10-10/eng) and [Digital Single Market Copyright Directive (EU) 2019/790](https://eur-lex.europa.eu/eli/dir/2019/790/oj/eng) | National implementation, database and translation rights, asset-by-asset permissions, and the separate rules applicable to the user-provided book. |
+
+These instruments are research leads only. EEA EFTA states, candidate countries and other European territories are not included in this 27-state bundle and need their own scope and law checks.
+
 ## Initial source leads, not findings of compliance
 
 | Area | Official source lead | What remains to check |
