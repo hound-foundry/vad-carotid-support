@@ -4,14 +4,17 @@ export const STORAGE_KEY = "vad-carotid-support.appointment-sheet.v1";
 export const MAX_NOTE_LENGTH = 500;
 
 export const appointmentPrompts = [
-  { id: "diagnosis", group: "Understanding tests and results", text: "Could you explain the diagnosis and which artery is involved?" },
-  { id: "tests", group: "Understanding tests and results", text: "What do my test results mean, what remains uncertain, and is anything still pending?" },
-  { id: "follow-up-imaging", group: "Understanding tests and results", text: "Is any follow-up imaging planned for me? If so, what is its purpose?" },
-  { id: "follow-up", group: "Follow-up and next steps", text: "What follow-up is planned, and who should I contact with questions?" },
-  { id: "next-steps", group: "Follow-up and next steps", text: "Could we write down the next steps and who is responsible for each one?" },
-  { id: "between-appointments", group: "Follow-up and next steps", text: "Who can I contact with a non-emergency question between appointments?" },
-  { id: "daily-life", group: "Daily life and support", text: "Which day-to-day concerns, such as energy or concentration, should I raise with my care team?" },
-  { id: "support", group: "Daily life and support", text: "What support is available for me and the people helping me?" },
+  { id: "priority", group: "Before the appointment", text: "What is the one thing I most want help understanding or discussing today?" },
+  { id: "appointment-support", group: "Before the appointment", text: "Would I like someone to come with me, and what would I like them to do?" },
+  { id: "access-needs", group: "Before the appointment", text: "Would a written summary, communication aid, interpreter, or more time help me take part?" },
+  { id: "diagnosis", group: "During the appointment", text: "Could you explain the diagnosis and which artery is involved?" },
+  { id: "tests", group: "During the appointment", text: "Could you explain what my test results show, what remains uncertain, and whether anything is still pending?" },
+  { id: "follow-up-imaging", group: "During the appointment", text: "Is any follow-up imaging planned for me? If so, what is its purpose?" },
+  { id: "daily-life", group: "During the appointment", text: "Which day-to-day concerns, such as energy or concentration, would be useful to discuss?" },
+  { id: "support", group: "During the appointment", text: "What support is available for me and the people helping me?" },
+  { id: "next-steps", group: "Before I leave", text: "Could we write down the next steps and who is responsible for each one?" },
+  { id: "pending-results", group: "Before I leave", text: "Who will contact me about any pending results, and how can I follow up if I do not hear back?" },
+  { id: "between-appointments", group: "Before I leave", text: "Who can I contact with a non-emergency question between appointments?" },
 ];
 
 /** @returns {{ selectedIds: string[], note: string }} */

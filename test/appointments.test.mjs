@@ -10,9 +10,9 @@ test("new sheet is empty and contains no personal identifiers", () => {
 });
 
 test("saved data round-trips only known prompts and bounds notes", () => {
-  const serialized = serializeAppointmentSheet({ selectedIds: ["follow-up", "unknown", "follow-up"], note: "x".repeat(MAX_NOTE_LENGTH + 40) });
+  const serialized = serializeAppointmentSheet({ selectedIds: ["next-steps", "unknown", "next-steps"], note: "x".repeat(MAX_NOTE_LENGTH + 40) });
   const loaded = parseAppointmentSheet(serialized);
-  assert.deepEqual(loaded.selectedIds, ["follow-up"]);
+  assert.deepEqual(loaded.selectedIds, ["next-steps"]);
   assert.equal(loaded.note.length, MAX_NOTE_LENGTH);
 });
 
@@ -23,11 +23,14 @@ test("malformed, oversized, and unsupported storage values fail closed", () => {
 });
 
 test("export includes only explicitly selected prompts and the user-entered note", () => {
-  const sheet = { selectedIds: ["diagnosis", "follow-up-imaging"], note: "Ask about follow-up" };
+  const sheet = { selectedIds: ["priority", "diagnosis", "pending-results"], note: "Ask about follow-up" };
   const exported = formatAppointmentExport(sheet);
+  assert.ok(exported.includes("Before the appointment"));
+  assert.ok(exported.includes(appointmentPrompts.find((item) => item.id === "priority").text));
   assert.ok(exported.includes(appointmentPrompts.find((item) => item.id === "diagnosis").text));
-  assert.ok(exported.includes("Understanding tests and results"));
-  assert.ok(exported.includes(appointmentPrompts.find((item) => item.id === "follow-up-imaging").text));
+  assert.ok(exported.includes("During the appointment"));
+  assert.ok(exported.includes("Before I leave"));
+  assert.ok(exported.includes(appointmentPrompts.find((item) => item.id === "pending-results").text));
   assert.ok(exported.includes("Ask about follow-up"));
   assert.ok(!exported.includes(appointmentPrompts.find((item) => item.id === "tests").text));
   assert.ok(!exported.includes("http"));
