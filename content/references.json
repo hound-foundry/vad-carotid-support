@@ -533,6 +533,23 @@
       "rights": "Link and original short paraphrase only; source content is not relicensed."
     },
     {
+      "id": "spoon-theory-oxford",
+      "title": "From Fatigue to Energy: Information for patients",
+      "year": null,
+      "kind": "patient-information",
+      "url": "https://www.ouh.nhs.uk/media/fxpgprol/45345pfatigue.pdf",
+      "audience": ["patient", "carer", "editor"],
+      "topics": ["fatigue", "lived-experience", "spoon-theory"],
+      "inspection": "Oxford University Hospitals patient information PDF inspected; page 8 describes spoon theory and attributes it to Christine Miserandino. The leaflet is about neuromyelitis optica, not cervical artery dissection or stroke.",
+      "use": "Contextual link for an optional metaphor that some people use to talk about limited energy.",
+      "limits": "This metaphor is not a clinical measure or evidence about fatigue after cervical artery dissection or stroke; the source leaflet addresses another condition and its medical guidance must not be generalized.",
+      "language": "en",
+      "checked_on": "2026-10-13",
+      "editorial_status": "candidate",
+      "clinical_review": {"status": "not-reviewed", "reviewer": null, "date": null},
+      "rights": "Link and original brief paraphrase only; no text or translations from the source leaflet are reproduced."
+    },
+    {
       "id": "ncbi-pseudoaneurysm",
       "title": "Pseudoaneurysm",
       "year": 2024,

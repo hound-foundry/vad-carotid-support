@@ -39,7 +39,7 @@ export default function GuideScreen() {
     {visibleSections.map((section) => { const sectionSources = references.sources.filter((source) => section.sourceIds?.includes(source.id)); return <Card key={section.heading} title={section.heading}>
       {section.paragraphs?.map((paragraph, index) => <Body key={index}>{paragraph}</Body>)}
       {section.bullets?.map((bullet, index) => <View key={index} style={styles.bulletRow}><Text accessibilityElementsHidden style={styles.bullet}>•</Text><Text style={styles.bulletText}>{bullet}</Text></View>)}
-      {sectionSources.map((source) => <Pressable key={source.id} accessibilityRole="link" accessibilityLabel={`Open source for ${section.heading}: ${source.title}`} onPress={() => void Linking.openURL(source.url)} style={styles.inlineSource}><Text style={styles.inlineSourceText}>Source for this definition: {source.title}</Text></Pressable>)}
+      {sectionSources.map((source) => <Pressable key={source.id} accessibilityRole="link" accessibilityLabel={`Open source for ${section.heading}: ${source.title}`} onPress={() => void Linking.openURL(source.url)} style={styles.inlineSource}><Text style={styles.inlineSourceText}>Read source: {source.title}</Text></Pressable>)}
     </Card>; })}
     <Card title="Sources for this draft">
       <Text style={styles.meta}>Clinical review: {guide.clinicalReview.status} · Patient/carer review: {guide.usabilityReview.status} · Translation review: {guide.translationReview.status} · Review date: {guide.reviewedOn ?? "none"}</Text>
