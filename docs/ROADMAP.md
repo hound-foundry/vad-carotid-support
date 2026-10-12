@@ -7,6 +7,8 @@ Items are proposals, not promised dates. Safety review is a release gate.
 - [x] Open-source project purpose and licence records.
 - [x] Starter literature catalogue with explicit candidate/review status.
 - [x] Expo and TypeScript skeleton for web, iOS and Android.
+- [x] Short source-linked English guide drafts for understanding, tests, follow-up, stroke/no-stroke paths, recovery and carers; clinical and patient/carer review remains pending.
+- [x] Appointment question sheet with grouped prompts and optional local-only export.
 - [ ] Patient and carer review of navigation and language.
 - [ ] Clinically reviewed emergency wording and country-specific resources.
 - [ ] Initial UK operator, privacy and device-purpose assessment.
@@ -14,8 +16,7 @@ Items are proposals, not promised dates. Safety review is a release gate.
 ## First useful release
 
 - [ ] A short start-here route for people with no stroke, with stroke, family/carers and general learning.
-- [ ] Sourced plain-language guide to VAD/CAD and investigations.
-- [ ] Appointment question sheet with optional local-only export.
+- [ ] Patient and carer review of guide usefulness, language and support-sheet preferences.
 - [x] “How I prefer to be supported” sheet with selection, optional note and sharing preview.
 - [ ] Private notes and saved links, with delete/export and no account.
 - [ ] Curated links with evidence type, date, language, review and rights status.

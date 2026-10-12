@@ -23,9 +23,11 @@ test("malformed, oversized, and unsupported storage values fail closed", () => {
 });
 
 test("export includes only explicitly selected prompts and the user-entered note", () => {
-  const sheet = { selectedIds: ["diagnosis"], note: "Ask about follow-up" };
+  const sheet = { selectedIds: ["diagnosis", "follow-up-imaging"], note: "Ask about follow-up" };
   const exported = formatAppointmentExport(sheet);
   assert.ok(exported.includes(appointmentPrompts.find((item) => item.id === "diagnosis").text));
+  assert.ok(exported.includes("Understanding tests and results"));
+  assert.ok(exported.includes(appointmentPrompts.find((item) => item.id === "follow-up-imaging").text));
   assert.ok(exported.includes("Ask about follow-up"));
   assert.ok(!exported.includes(appointmentPrompts.find((item) => item.id === "tests").text));
   assert.ok(!exported.includes("http"));
