@@ -10,6 +10,7 @@ Items are proposals, not promised dates. Safety review is a release gate.
 - [x] Short source-linked English guide drafts for understanding, tests, follow-up, stroke/no-stroke paths, recovery and carers; clinical and patient/carer review remains pending.
 - [x] Appointment question sheet with grouped prompts and optional local-only export.
 - [x] Appointment prompts ordered around before, during and leaving the appointment, including participation needs and a clear route for pending results.
+- [x] Optional one-section-at-a-time appointment view for people who prefer a smaller set of prompts on screen.
 - [x] Patient/carer usability review prompts and safe feedback-handling guidance.
 - [ ] Patient and carer review of navigation and language.
 - [ ] Clinically reviewed emergency wording and country-specific resources.
