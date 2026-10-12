@@ -13,7 +13,7 @@ export type Guide = {
   usabilityReview: { status: "not-reviewed" | "approved"; reviewer: string | null; date: string | null };
   translationReview: { status: "not-applicable" | "not-reviewed" | "approved"; reviewer: string | null; date: string | null };
   reviewedOn: null;
-  sections: { heading: string; paragraphs?: string[]; bullets?: string[] }[];
+  sections: { heading: string; paragraphs?: string[]; bullets?: string[]; sourceIds?: string[] }[];
 };
 
 const review = { status: "not-reviewed" as const, reviewer: null, qualifications: null, date: null };
@@ -38,11 +38,11 @@ export const guides: Guide[] = [
     sections: [
       { heading: "Start with the question you have", paragraphs: ["You do not need to understand every word in a report at once. Pick one result or term that matters to you and ask the clinician who reviewed the test to explain it in everyday language. This app cannot view or interpret scans, reports or individual results." ] },
       { heading: "Questions about a scan or report", bullets: ["Which artery and part of it are described?", "What does this result tell us, and what can it not tell us?", "Is any result still pending?", "Could you explain the words I have underlined?", "Could I have a copy or plain-language summary, and who can answer questions later?" ] },
-      { heading: "Extracranial and intracranial", paragraphs: ["Extracranial means outside the skull; intracranial means inside the skull. A report may use these words to describe where a blood vessel or finding is located."] },
-      { heading: "Stenosis", paragraphs: ["Stenosis means narrowing. The word alone does not say how much a vessel is narrowed or what that means for you."] },
-      { heading: "Occlusion", paragraphs: ["Occlusion means a blockage or closure of a vessel. Ask which vessel and area the report describes, and what the finding means in your case."] },
-      { heading: "Infarct", paragraphs: ["An infarct is an area of tissue damaged because its blood supply was interrupted. The term alone does not explain the size, effects or timing of a finding."] },
-      { heading: "Pseudoaneurysm", paragraphs: ["A pseudoaneurysm is a pocket of blood outside the usual layers of an artery wall, connected to the artery through a wall defect. Ask the clinician to explain the location and significance described in your report."] },
+      { heading: "Extracranial and intracranial", paragraphs: ["Extracranial means outside the skull; intracranial means inside the skull. A report may use these words to describe where a blood vessel or finding is located."], sourceIds: ["ncbi-anatomy-skull"] },
+      { heading: "Stenosis", paragraphs: ["Stenosis means narrowing. The word alone does not say how much a vessel is narrowed or what that means for you."], sourceIds: ["radiologyinfo-stenosis"] },
+      { heading: "Occlusion", paragraphs: ["Occlusion means a blockage or closure of a vessel. Ask which vessel and area the report describes, and what the finding means in your case."], sourceIds: ["radiologyinfo-occlusion"] },
+      { heading: "Infarct", paragraphs: ["An infarct is an area of tissue damaged because its blood supply was interrupted. The term alone does not explain the size, effects or timing of a finding."], sourceIds: ["nice-infarct"] },
+      { heading: "Pseudoaneurysm", paragraphs: ["A pseudoaneurysm is a pocket of blood outside the usual layers of an artery wall, connected to the artery through a wall defect. Ask the clinician to explain the location and significance described in your report."], sourceIds: ["ncbi-pseudoaneurysm"] },
       { heading: "These words do not interpret your report", paragraphs: ["A definition cannot tell you whether a finding is current, how serious it is, what caused it, or what care you need. Words can be used in different clinical contexts. Ask the clinician who reviewed the test to explain the exact wording and how it applies to you." ] },
       { heading: "If the information feels like too much", paragraphs: ["You can ask to take one question at a time, pause, bring someone you choose, or receive information in writing or another accessible format. Your appointment can focus on what matters most to you today." ] },
       { heading: "Limits of this page", paragraphs: ["Professional guidance distinguishes different types and locations of artery dissection, and it may not apply to every presentation. This draft does not tell you what a scan means, what treatment is right, or what follow-up you personally need." ] },

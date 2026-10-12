@@ -23,6 +23,12 @@ for (const guide of guides) {
   assert.ok(guide.rights.trim(), `${guide.slug} needs a rights statement`);
   assert.ok(guide.sourceIds.length > 0, `${guide.slug} must cite at least one source`);
   for (const sourceId of guide.sourceIds) assert.ok(sources.has(sourceId), `${guide.slug} has unknown source ${sourceId}`);
+  for (const section of guide.sections) {
+    for (const sourceId of section.sourceIds ?? []) {
+      assert.ok(guide.sourceIds.includes(sourceId), `${guide.slug} section ${section.heading} cites a source not listed by the guide: ${sourceId}`);
+      assert.ok(sources.has(sourceId), `${guide.slug} section ${section.heading} has unknown source ${sourceId}`);
+    }
+  }
   assert.ok(guide.clinicalReview?.status && guide.clinicalReview.reviewer !== undefined && guide.clinicalReview.date !== undefined, `${guide.slug} needs clinical review metadata`);
   assert.ok(guide.clinicalReview.qualifications !== undefined, `${guide.slug} needs reviewer qualification metadata`);
   assert.ok(guide.usabilityReview?.status && guide.usabilityReview.reviewer !== undefined && guide.usabilityReview.date !== undefined, `${guide.slug} needs patient/carer usability review metadata`);
