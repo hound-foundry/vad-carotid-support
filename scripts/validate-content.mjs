@@ -97,6 +97,16 @@ assert.ok(unitedStates.subnationalAreas.every((area) => area.status === "not-ass
 assert.ok(unitedStates.officialSources.some((source) => source.url === "https://www.ftc.gov/legal-library/browse/rules/health-breach-notification-rule" && source.status === "source-lead-only"));
 assert.ok(unitedStates.officialSources.some((source) => source.url === "https://app.leg.wa.gov/RCW/default.aspx?cite=19.373" && source.status === "source-lead-only"));
 assert.match(unitedStates.sourceDiscoveryNote, /not an exhaustive state survey/);
+const canadaRecord = resources.countryRecords.find((country) => country.isoAlpha2 === "CA");
+assert.ok(canadaRecord && canadaRecord.officialSources.length === 14, "Canada discovery must retain its dated federal and provincial source-lead bundle");
+assert.equal(canadaRecord.sourceDiscoveryCheckedOn, "2026-10-13", "Canada source discovery needs its own dated record");
+assert.equal(canadaRecord.legalReview.status, "not-assessed", "Canada source discovery must not be mistaken for legal clearance");
+assert.equal(canadaRecord.release, "blocked", "Canada access must remain blocked pending qualified review");
+assert.equal(canadaRecord.subnationalAreas.length, 13, "Canada screening queue must include all 10 provinces and three territories");
+assert.ok(canadaRecord.subnationalAreas.every((area) => area.status === "not-assessed" && area.checkedOn === "2026-10-13" && area.reviewer === null), "Canada province/territory queue must remain explicitly unassessed");
+assert.ok(canadaRecord.officialSources.some((source) => source.url === "https://laws-lois.justice.gc.ca/eng/acts/P-8.6/" && source.status === "source-lead-only"));
+assert.ok(canadaRecord.officialSources.some((source) => source.url === "https://www.canada.ca/en/health-canada/services/drugs-health-products/medical-devices/application-information/guidance-documents/software-medical-device-guidance-document.html" && source.status === "source-lead-only"));
+assert.match(canadaRecord.sourceDiscoveryNote, /free\/open-source model alone is not an applicability exemption/);
 const euGroup = resources.regionalSourceGroups?.find((group) => group.id === "eu-member-states");
 assert.equal(euGroup?.status, "membership-scope-source-checked-only", "EU grouping must not imply law applicability");
 assert.equal(euGroup?.membershipSource, "https://european-union.europa.eu/principles-countries-history/eu-countries_en?page=1", "EU membership list source must be recorded");

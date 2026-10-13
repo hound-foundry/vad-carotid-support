@@ -5560,7 +5560,120 @@
       "isoAlpha2": "CA",
       "reviewOwner": null,
       "lastChecked": null,
-      "officialSources": [],
+      "officialSources": [
+        {
+          "title": "Personal Information Protection and Electronic Documents Act (PIPEDA)",
+          "url": "https://laws-lois.justice.gc.ca/eng/acts/P-8.6/",
+          "authority": "Department of Justice Canada",
+          "sourceType": "federal-legislation",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "PIPEDA Breach of Security Safeguards Regulations",
+          "url": "https://laws-lois.justice.gc.ca/eng/regulations/SOR-2018-64/index.html",
+          "authority": "Department of Justice Canada",
+          "sourceType": "federal-regulation",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Office of the Privacy Commissioner: provincial laws that may apply instead of PIPEDA",
+          "url": "https://www.priv.gc.ca/en/privacy-topics/privacy-laws-in-canada/the-personal-information-protection-and-electronic-documents-act-pipeda/r_o_p/prov-pipeda/",
+          "authority": "Office of the Privacy Commissioner of Canada",
+          "sourceType": "official-regulatory-guidance",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Provincial and territorial privacy laws and oversight",
+          "url": "https://www.priv.gc.ca/en/about-the-opc/what-we-do/provincial-and-territorial-collaboration/provincial-and-territorial-privacy-laws-and-oversight/",
+          "authority": "Office of the Privacy Commissioner of Canada",
+          "sourceType": "official-regulatory-guidance",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Summary of privacy laws in Canada",
+          "url": "https://www.priv.gc.ca/en/privacy-topics/privacy-laws-in-canada/02_05_d_15/",
+          "authority": "Office of the Privacy Commissioner of Canada",
+          "sourceType": "official-regulatory-guidance",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Health Canada Software as a Medical Device: Definition and Classification",
+          "url": "https://www.canada.ca/en/health-canada/services/drugs-health-products/medical-devices/application-information/guidance-documents/software-medical-device-guidance-document.html",
+          "authority": "Health Canada",
+          "sourceType": "official-regulatory-guidance",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Health Canada FAQ: software regulated as a medical device",
+          "url": "https://www.canada.ca/en/health-canada/services/drugs-health-products/medical-devices/activities/announcements/questions-answers-software-regulated-medical-device.html",
+          "authority": "Health Canada",
+          "sourceType": "official-regulatory-guidance",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Medical Devices Regulations, SOR/98-282",
+          "url": "https://laws-lois.justice.gc.ca/eng/regulations/SOR-98-282/",
+          "authority": "Department of Justice Canada",
+          "sourceType": "federal-regulation",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Food and Drugs Act",
+          "url": "https://laws-lois.justice.gc.ca/eng/acts/F-27/",
+          "authority": "Department of Justice Canada",
+          "sourceType": "federal-legislation",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Competition Act",
+          "url": "https://laws-lois.justice.gc.ca/eng/acts/C-34/",
+          "authority": "Department of Justice Canada",
+          "sourceType": "federal-legislation",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Competition Bureau: performance and efficacy claims",
+          "url": "https://competition-bureau.canada.ca/en/deceptive-marketing-practices/types-deceptive-marketing-practices/performance-claims-not-based-adequate-and-proper-test",
+          "authority": "Competition Bureau Canada",
+          "sourceType": "official-regulatory-guidance",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Accessible Canada Regulations digital technology guidance",
+          "url": "https://www.canada.ca/en/employment-social-development/programs/accessible-canada-regulations-guidance/category-digital-technologies.html",
+          "authority": "Employment and Social Development Canada",
+          "sourceType": "official-regulatory-guidance",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Quebec Act respecting the protection of personal information in the private sector",
+          "url": "https://www.legisquebec.gouv.qc.ca/en/document/cs/p-39.1",
+          "authority": "Québec Official Publisher",
+          "sourceType": "provincial-legislation-english-reference",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Federal official languages law overview",
+          "url": "https://www.canada.ca/en/canadian-heritage/campaigns/canadians-official-languages-act.html",
+          "authority": "Canadian Heritage",
+          "sourceType": "official-government-guidance",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        }
+      ],
       "reviewAreas": [
         {
           "area": "privacy-and-health-data",
@@ -5675,7 +5788,114 @@
           "reviewer": null
         }
       ],
-      "subnationalAreas": []
+      "subnationalAreas": [
+        {
+          "name": "Alberta",
+          "status": "not-assessed",
+          "reason": "Province/territory screening target only. No current private-sector, health-information, public-sector, accessibility, language, consumer, device, municipal or local-rule applicability review performed.",
+          "source": "https://www.priv.gc.ca/en/about-the-opc/what-we-do/provincial-and-territorial-collaboration/provincial-and-territorial-privacy-laws-and-oversight/",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "British Columbia",
+          "status": "not-assessed",
+          "reason": "Province/territory screening target only. No current private-sector, health-information, public-sector, accessibility, language, consumer, device, municipal or local-rule applicability review performed.",
+          "source": "https://www.priv.gc.ca/en/about-the-opc/what-we-do/provincial-and-territorial-collaboration/provincial-and-territorial-privacy-laws-and-oversight/",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Manitoba",
+          "status": "not-assessed",
+          "reason": "Province/territory screening target only. No current private-sector, health-information, public-sector, accessibility, language, consumer, device, municipal or local-rule applicability review performed.",
+          "source": "https://www.priv.gc.ca/en/about-the-opc/what-we-do/provincial-and-territorial-collaboration/provincial-and-territorial-privacy-laws-and-oversight/",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "New Brunswick",
+          "status": "not-assessed",
+          "reason": "Province/territory screening target only. No current private-sector, health-information, public-sector, accessibility, language, consumer, device, municipal or local-rule applicability review performed.",
+          "source": "https://www.priv.gc.ca/en/about-the-opc/what-we-do/provincial-and-territorial-collaboration/provincial-and-territorial-privacy-laws-and-oversight/",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Newfoundland and Labrador",
+          "status": "not-assessed",
+          "reason": "Province/territory screening target only. No current private-sector, health-information, public-sector, accessibility, language, consumer, device, municipal or local-rule applicability review performed.",
+          "source": "https://www.priv.gc.ca/en/about-the-opc/what-we-do/provincial-and-territorial-collaboration/provincial-and-territorial-privacy-laws-and-oversight/",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Northwest Territories",
+          "status": "not-assessed",
+          "reason": "Province/territory screening target only. No current private-sector, health-information, public-sector, accessibility, language, consumer, device, municipal or local-rule applicability review performed.",
+          "source": "https://www.priv.gc.ca/en/about-the-opc/what-we-do/provincial-and-territorial-collaboration/provincial-and-territorial-privacy-laws-and-oversight/",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Nova Scotia",
+          "status": "not-assessed",
+          "reason": "Province/territory screening target only. No current private-sector, health-information, public-sector, accessibility, language, consumer, device, municipal or local-rule applicability review performed.",
+          "source": "https://www.priv.gc.ca/en/about-the-opc/what-we-do/provincial-and-territorial-collaboration/provincial-and-territorial-privacy-laws-and-oversight/",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Nunavut",
+          "status": "not-assessed",
+          "reason": "Province/territory screening target only. No current private-sector, health-information, public-sector, accessibility, language, consumer, device, municipal or local-rule applicability review performed.",
+          "source": "https://www.priv.gc.ca/en/about-the-opc/what-we-do/provincial-and-territorial-collaboration/provincial-and-territorial-privacy-laws-and-oversight/",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Ontario",
+          "status": "not-assessed",
+          "reason": "Province/territory screening target only. No current private-sector, health-information, public-sector, accessibility, language, consumer, device, municipal or local-rule applicability review performed.",
+          "source": "https://www.priv.gc.ca/en/about-the-opc/what-we-do/provincial-and-territorial-collaboration/provincial-and-territorial-privacy-laws-and-oversight/",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Prince Edward Island",
+          "status": "not-assessed",
+          "reason": "Province/territory screening target only. No current private-sector, health-information, public-sector, accessibility, language, consumer, device, municipal or local-rule applicability review performed.",
+          "source": "https://www.priv.gc.ca/en/about-the-opc/what-we-do/provincial-and-territorial-collaboration/provincial-and-territorial-privacy-laws-and-oversight/",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Quebec",
+          "status": "not-assessed",
+          "reason": "Province/territory screening target only. No current private-sector, health-information, public-sector, accessibility, language, consumer, device, municipal or local-rule applicability review performed.",
+          "source": "https://www.priv.gc.ca/en/about-the-opc/what-we-do/provincial-and-territorial-collaboration/provincial-and-territorial-privacy-laws-and-oversight/",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Saskatchewan",
+          "status": "not-assessed",
+          "reason": "Province/territory screening target only. No current private-sector, health-information, public-sector, accessibility, language, consumer, device, municipal or local-rule applicability review performed.",
+          "source": "https://www.priv.gc.ca/en/about-the-opc/what-we-do/provincial-and-territorial-collaboration/provincial-and-territorial-privacy-laws-and-oversight/",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Yukon",
+          "status": "not-assessed",
+          "reason": "Province/territory screening target only. No current private-sector, health-information, public-sector, accessibility, language, consumer, device, municipal or local-rule applicability review performed.",
+          "source": "https://www.priv.gc.ca/en/about-the-opc/what-we-do/provincial-and-territorial-collaboration/provincial-and-territorial-privacy-laws-and-oversight/",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        }
+      ],
+      "sourceDiscoveryCheckedOn": "2026-10-13",
+      "sourceDiscoveryNote": "Initial official-source discovery only, not legal advice, an applicability decision, or permission to distribute in Canada. The register contains federal leads plus all 10 provinces and three territories as unassessed screening targets. OPC guidance explains that applicable privacy law depends on the organization, data, location and cross-border activity; several provinces have substantially similar private-sector laws and health-information statutes, and more than one law may apply. Territorial records also require provincial/territorial and federal scope review. Health Canada classifies software by intended/represented purpose and functions; patient/caregiver advice may require careful software-as-a-medical-device analysis. Review privacy, health data, breach response, transfers, device licensing, advertising, accessibility, French-language obligations (especially Quebec), consumer protection, children, copyright, emergency content and distribution with qualified Canadian counsel. The free/open-source model alone is not an applicability exemption. All legal and subnational reviews remain not-assessed; Canada release remains blocked."
     },
     {
       "name": "Cayman Islands",
