@@ -37159,8 +37159,50 @@
       "release": "blocked",
       "isoAlpha2": "SE",
       "reviewOwner": null,
-      "lastChecked": null,
-      "officialSources": [],
+      "lastChecked": "2026-10-13",
+      "officialSources": [
+        {
+          "title": "Swedish Authority for Privacy Protection",
+          "url": "https://www.imy.se/en",
+          "authority": "Swedish Authority for Privacy Protection",
+          "sourceType": "regulator-portal",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Swedish GDPR text and guidance",
+          "url": "https://www.imy.se/verksamhet/dataskydd/det-har-galler-enligt-gdpr/introduktion-till-gdpr/dataskyddsforordningen-i-fulltext//",
+          "authority": "Swedish Authority for Privacy Protection",
+          "sourceType": "regulator-guidance",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Medical device software",
+          "url": "https://www.lakemedelsverket.se/en/medical-devices/which-rules-apply-to-me/medical-device-software",
+          "authority": "Swedish Medical Products Agency",
+          "sourceType": "competent-authority-guidance",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Registration in Eudamed",
+          "url": "https://www.lakemedelsverket.se/en/medical-devices/manufacture/registration/registration-in-eudamed",
+          "authority": "Swedish Medical Products Agency",
+          "sourceType": "competent-authority-guidance",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Official emergency numbers",
+          "url": "https://www.krisinformation.se/en/finding-help-and-services/important-phone-numbers/",
+          "authority": "Krisinformation.se",
+          "sourceType": "official-emergency-guidance",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        }
+      ],
+      "sourceDiscoveryCheckedOn": "2026-10-13",
       "reviewAreas": [
         {
           "area": "privacy-and-health-data",

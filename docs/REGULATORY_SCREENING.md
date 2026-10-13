@@ -56,6 +56,8 @@ Austria source discovery (13 October 2026) now records the Austrian Data Protect
 
 Switzerland source discovery (13 October 2026) now records the Federal Data Protection and Information Commissioner, Swissmedic medical-device software and market-access guidance, and Swiss emergency information. These are source leads only. Switzerland remains blocked pending qualified review of federal and cantonal requirements, multilingual publication duties, privacy, medical-software, accessibility, emergency and distribution rules.
 
+Sweden source discovery (13 October 2026) now records the Swedish privacy authority, GDPR guidance, Swedish Medical Products Agency software and Eudamed guidance, and official emergency information. These are source leads only. Sweden remains blocked pending qualified review of Swedish-language requirements, GDPR, national medical-information-system rules, medical-software, accessibility, emergency and distribution obligations.
+
 ### Platform distribution policies (not legislation)
 
 | Platform | Official policy source | Release work still needed |
