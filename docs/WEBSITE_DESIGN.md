@@ -24,6 +24,7 @@ This is intentionally informed by established health-service patterns rather tha
 - Keep the static shell usable during a short connectivity interruption. Network-first refreshes should prefer current content, while a cached page is only a fallback; never cache or transmit card and appointment fields through the service worker.
 - On narrow screens, keep the brand first and use a wrapped, two-row navigation with full-size targets. Never squeeze labels into a single unreadable row; the active route uses both colour and a border so it remains clear in high contrast.
 - Treat the home route as a recovery-friendly dashboard: one calm next-step prompt, a small set of task links, and a visible boundary between general information and urgent help.
+- Borrow the reference site's sense of a guided journey and generous rounded panels, while keeping movement optional, navigation explicit and every destination reachable by keyboard, touch and assistive technology. The visual reference is [Squilla Fund by Red Collar](https://redcollar.co/work/squilla-fund); its 3D/cursor effects are intentionally not part of this patient-facing interface.
 
 ## Component vocabulary
 
