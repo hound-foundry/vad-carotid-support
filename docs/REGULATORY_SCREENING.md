@@ -86,6 +86,8 @@ Bosnia and Herzegovina source discovery (13 October 2026) now records the person
 
 Belize source discovery (13 October 2026) now records the Data Protection Act, government digital-service references, Ministry of Health licensing and accreditation, National Emergency Management Organization material, and emergency-number guidance. These are source leads only. Belize remains blocked pending qualified review of English-language national privacy, medical-software, accessibility, emergency and distribution requirements.
 
+Ghana source discovery (13 October 2026) now records the Data Protection Commission’s Act and compliance guidance, Food and Drugs Authority medical-device and software guidance, and official National Ambulance Service emergency-number guidance. These are source leads only. Ghana remains blocked pending qualified review of English-language national privacy, medical-software, accessibility, emergency and distribution requirements.
+
 ### Platform distribution policies (not legislation)
 
 | Platform | Official policy source | Release work still needed |

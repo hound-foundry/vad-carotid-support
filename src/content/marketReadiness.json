@@ -15908,8 +15908,50 @@
       "release": "blocked",
       "isoAlpha2": "GH",
       "reviewOwner": null,
-      "lastChecked": null,
-      "officialSources": [],
+      "lastChecked": "2026-10-13",
+      "officialSources": [
+        {
+          "title": "Data Protection Act 2012",
+          "url": "https://dataprotection.org.gh/wp-content/uploads/2025/05/Data-Protection-Act-2012-Act-843.pdf",
+          "authority": "Data Protection Commission, Ghana",
+          "sourceType": "privacy-law",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Data Protection Commission compliance guidance",
+          "url": "https://dataprotection.org.gh/wp-content/uploads/2025/07/GUIDELINES-TO-DEMONSTRATE-DATA-PROTECTION-COMPLIANCE-1.pdf",
+          "authority": "Data Protection Commission, Ghana",
+          "sourceType": "privacy-guidance",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Medical devices regulation",
+          "url": "https://fdaghana.gov.gh/medical-devices-cosmetics-household-chemical-substance/",
+          "authority": "Food and Drugs Authority, Ghana",
+          "sourceType": "medical-device-regulator",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Software as a medical device guidance",
+          "url": "https://fdaghana.gov.gh/imported-products/medical-devices-guidelines-import/",
+          "authority": "Food and Drugs Authority, Ghana",
+          "sourceType": "medical-software-guidance",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "National emergency number 112",
+          "url": "https://nas.gov.gh/terms-of-use.php",
+          "authority": "National Ambulance Service, Ghana",
+          "sourceType": "emergency-guidance",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        }
+      ],
+      "sourceDiscoveryCheckedOn": "2026-10-13",
       "reviewAreas": [
         {
           "area": "privacy-and-health-data",
