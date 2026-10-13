@@ -1,12 +1,15 @@
 import { Pressable, Text, TextInput, View } from "../src/components/Ui";
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { useLocalSearchParams } from "expo-router";
-import { Platform, StyleSheet } from "react-native";
+import { Platform, StyleSheet, type ScrollView as NativeScrollView } from "react-native";
 import { AppPage, Card, PageHeading, palette } from "../src/components/AppPage";
 import { emptySupportPreferences, formatSupportPreferencesExport, guidePreferenceSuggestions, MAX_NOTE_LENGTH, supportPreferences, type SupportPreferencesSheet } from "../src/features/support-preferences/model.mjs";
 import { deleteSupportPreferences, exportSupportPreferences, loadSupportPreferences, saveSupportPreferences } from "../src/features/support-preferences/store";
 import { useSheetDraft } from "../src/features/sheets/useSheetDraft";
 import { ConfirmDelete } from "../src/components/ConfirmDelete";
+import { PageAnchor, usePageAnchor } from "../src/components/PageAnchor";
+import { useAccessibility } from "../src/features/accessibility/AccessibilityProvider";
+import { useSheetView } from "../src/features/reading-session/ReadingSessionProvider";
 
 const groups = [...new Set(supportPreferences.map((item) => item.group))];
 
@@ -25,11 +28,13 @@ export default function SupportPreferencesScreen() {
     },
   });
   const sheet = draft.value;
-  const [showSelectedOnly, setShowSelectedOnly] = useState(false);
-  const [oneGroupAtATime, setOneGroupAtATime] = useState(false);
-  const [showViewOptions, setShowViewOptions] = useState(false);
-  const [groupIndex, setGroupIndex] = useState(0);
   const [message, setMessage] = useState("");
+  const { settings } = useAccessibility();
+  const { oneAtATime: oneGroupAtATime, selectedOnly: showSelectedOnly, optionsOpen: showViewOptions, pageIndex: groupIndex,
+    setOneAtATime: setOneGroupAtATime, setSelectedOnly: setShowSelectedOnly, setOptionsOpen: setShowViewOptions, setPageIndex: setGroupIndex,
+  } = useSheetView("support-preferences", groups.length, settings.simplifiedReading);
+  const scrollRef = useRef<NativeScrollView>(null);
+  const choices = usePageAnchor(scrollRef); const preview = usePageAnchor(scrollRef);
   useEffect(() => {
     if (Platform.OS !== "web" || typeof document === "undefined") return;
     const style = document.createElement("style");
@@ -84,13 +89,14 @@ export default function SupportPreferencesScreen() {
     } catch { setMessage("Copying did not complete. Use Export for sharing instead."); }
   };
 
-  return <AppPage>
+  return <AppPage scrollRef={scrollRef}>
     <PageHeading compact eyebrow="For the people around you" title="Support preferences" summary="Choose statements that fit today. Review before saving or sharing." />
     <Text style={styles.helper}>This is not a medical or emergency plan.</Text>
     <Pressable accessibilityRole="button" accessibilityState={{ expanded: showViewOptions }} onPress={() => setShowViewOptions((visible) => !visible)} style={styles.viewOptions}><Text style={styles.viewOptionsText}>{showViewOptions ? "Hide viewing options" : "Optional viewing options"}</Text></Pressable>
     {showViewOptions ? <Card title="Choose your pace"><Pressable accessibilityRole="checkbox" accessibilityLabel="Show one support section at a time" accessibilityState={{ checked: oneGroupAtATime }} onPress={() => setOneGroupAtATime((current) => !current)} style={styles.paceOption}><View style={[styles.checkbox, oneGroupAtATime && styles.checked]}>{oneGroupAtATime ? <Text style={styles.check}>✓</Text> : null}</View><Text style={styles.optionText}>Show one section at a time</Text></Pressable><Text style={styles.helper}>You can change this view at any time.</Text><Pressable accessibilityRole="checkbox" accessibilityLabel="Show selected preferences only" accessibilityState={{ checked: showSelectedOnly }} onPress={() => setShowSelectedOnly((current) => !current)} style={styles.paceOption}><View style={[styles.checkbox, showSelectedOnly && styles.checked]}>{showSelectedOnly ? <Text style={styles.check}>✓</Text> : null}</View><Text style={styles.optionText}>Show selected preferences only</Text></Pressable></Card> : null}
     {oneGroupAtATime ? <View style={styles.stepper}><Text accessibilityLiveRegion="polite" style={styles.stepProgress}>Section {groupIndex + 1} of {groups.length}: {groups[groupIndex]}</Text><View style={styles.stepButtons}><Pressable accessibilityRole="button" accessibilityState={{ disabled: groupIndex === 0 }} disabled={groupIndex === 0} onPress={() => setGroupIndex((index) => Math.max(0, index - 1))} style={({ pressed }) => [styles.stepButton, groupIndex === 0 && styles.disabled, pressed && styles.pressed]}><Text style={styles.stepButtonText}>Previous</Text></Pressable><Pressable accessibilityRole="button" accessibilityState={{ disabled: groupIndex === groups.length - 1 }} disabled={groupIndex === groups.length - 1} onPress={() => setGroupIndex((index) => Math.min(groups.length - 1, index + 1))} style={({ pressed }) => [styles.stepButton, groupIndex === groups.length - 1 && styles.disabled, pressed && styles.pressed]}><Text style={styles.stepButtonText}>{groupIndex === groups.length - 1 ? "End of sections" : "Next section"}</Text></Pressable></View></View> : null}
-    <View style={styles.selectionSummary} accessibilityLiveRegion="polite"><Text style={styles.selectionCount}>{sheet.selectedIds.length} {sheet.selectedIds.length === 1 ? "preference" : "preferences"} selected</Text>{sheet.selectedIds.length > 0 ? <Pressable accessibilityRole="button" onPress={() => { markEdited(); draft.edit((current) => ({ ...current, selectedIds: [] })); }} style={({ pressed }) => [styles.clearButton, pressed && styles.pressed]}><Text style={styles.clearButtonText}>Clear selections</Text></Pressable> : null}</View>
+    <PageAnchor anchor={choices} label="Support choices"><View style={styles.selectionSummary} accessibilityLiveRegion="polite"><Text style={styles.selectionCount}>{sheet.selectedIds.length} {sheet.selectedIds.length === 1 ? "preference" : "preferences"} selected</Text>{sheet.selectedIds.length > 0 ? <Pressable accessibilityRole="button" onPress={() => { markEdited(); draft.edit((current) => ({ ...current, selectedIds: [] })); }} style={({ pressed }) => [styles.clearButton, pressed && styles.pressed]}><Text style={styles.clearButtonText}>Clear selections</Text></Pressable> : null}</View>
+    {sheet.selectedIds.length > 0 || sheet.note.trim() ? <Button title="Review your sheet" onPress={preview.jump} /> : null}</PageAnchor>
     {(oneGroupAtATime ? groups.slice(groupIndex, groupIndex + 1) : groups).map((group) => { const allGroupItems = supportPreferences.filter((item) => item.group === group); const groupItems = showSelectedOnly ? allGroupItems.filter((item) => sheet.selectedIds.includes(item.id)) : allGroupItems; const groupSelected = allGroupItems.filter((item) => sheet.selectedIds.includes(item.id)).length; const allSelected = groupSelected === allGroupItems.length; if (showSelectedOnly && groupItems.length === 0) return null; return <Card key={group} title={group}><Pressable accessibilityRole="button" accessibilityLabel={`${allSelected ? "Clear" : "Select all"} preferences in ${group}`} onPress={() => toggleGroup(group)} style={({ pressed }) => [styles.groupAction, pressed && styles.pressed]}><Text style={styles.groupActionText}>{allSelected ? "Clear section" : "Select all in section"}</Text><Text style={styles.groupCount}>{groupSelected}/{allGroupItems.length}</Text></Pressable>{groupItems.map((item) => {
       const selected = sheet.selectedIds.includes(item.id);
       return <Pressable key={item.id} accessibilityRole="checkbox" accessibilityLabel={item.text} accessibilityState={{ checked: selected }} onPress={() => toggle(item.id)} style={styles.option}>
@@ -101,14 +107,15 @@ export default function SupportPreferencesScreen() {
     <Card title="A note about this sheet"><Text style={styles.body}>Everything is optional. These are example preferences, not instructions for your care. They can change at any time. This is not a medical or emergency plan.</Text></Card>
     <Card title="Something else I’d like you to know (optional)"><Text style={styles.helper}>This note may include personal information. It stays in this browser profile or on this device unless you export it.</Text><TextInput accessibilityLabel="Optional note about how you prefer to be supported" multiline maxLength={MAX_NOTE_LENGTH} value={sheet.note} onChangeText={(note) => { markEdited(); draft.edit((current) => ({ ...current, note })); }} placeholder="Add a short note in your own words" placeholderTextColor={palette.muted} style={styles.input} textAlignVertical="top" /><Text style={styles.counter}>{sheet.note.length}/{MAX_NOTE_LENGTH}</Text></Card>
     <Card title="If you need to leave safely"><Text style={styles.helper}>Someone who can access this browser or device may see saved support preferences and notes. Close the page, use a private device when appropriate, and remember that exports, printouts, browser history and backups are outside this app’s control.</Text></Card>
-    <Card title="Review what you’ll share"><View nativeID="support-sheet-print"><Text style={styles.previewTitle}>How I prefer to be supported</Text>{groups.map((group) => {
+    <PageAnchor anchor={preview} label="Support sheet preview"><Card title="Review what you’ll share"><View nativeID="support-sheet-print"><Text style={styles.previewTitle}>How I prefer to be supported</Text>{groups.map((group) => {
       const selected = supportPreferences.filter((item) => item.group === group && sheet.selectedIds.includes(item.id));
       return selected.length ? <View key={group} style={styles.previewGroup}><Text style={styles.previewGroupTitle}>{group}</Text>{selected.map((item) => <Text key={item.id} style={styles.previewLine}>• {item.text}</Text>)}</View> : null;
     })}{sheet.selectedIds.length === 0 && !sheet.note.trim() ? <Text style={styles.previewLine}>Choose a few statements or add a note to build your sheet.</Text> : null}{sheet.note.trim() ? <><Text style={styles.previewGroupTitle}>Something else I’d like you to know</Text><Text style={styles.previewLine}>{sheet.note.trim()}</Text></> : null}<Text style={styles.helper}>Your preferences belong to you. You choose whether to share them.</Text></View></Card>
+    <Button title="Back to choices" secondary onPress={choices.jump} />
     <View style={styles.actions}><Button title={draft.status === "saved" || draft.status === "restored" ? "Saved on this device" : draft.status === "saving" ? "Saving…" : "Save on this device"} onPress={() => void save()} /><Button title="Export for sharing" secondary onPress={() => void exportSheet()} />{Platform.OS === "web" ? <><Button title="Copy sheet text" secondary onPress={() => void copySheet()} /><Button title="Print support sheet" secondary onPress={() => globalThis.print?.()} /></> : null}<ConfirmDelete label="Delete saved preferences" question="Delete these saved preferences?" detail="This clears the sheet and deletes its saved copy from this device. Downloaded and printed copies are unchanged." onConfirm={remove} disabled={["loading", "saving", "deleting"].includes(draft.status)} /></View>
     <Text accessibilityLiveRegion="polite" style={styles.status}>{draftStatusMessage(draft.status)} {message}</Text>
     <Card title="Where the data lives"><Text style={styles.helper}>On the web, this app uses this browser profile’s local storage. It is not encrypted by this app and may be exposed to people or software with access to the profile or device. On iOS and Android, this app uses Expo SecureStore. Browser, device, operating-system and backup behavior varies; local storage alone does not guarantee privacy. Export makes a separate copy in the destination you choose; deleting here may not remove an exported or backed-up copy.</Text></Card>
-  </AppPage>;
+  </PageAnchor></AppPage>;
 }
 
 function Button({ title, onPress, secondary = false }: { title: string; onPress: () => void; secondary?: boolean }) {
@@ -148,11 +155,11 @@ const styles = StyleSheet.create({
   previewGroup: { marginTop: 12 },
   previewGroupTitle: { color: palette.ink, fontSize: 13, lineHeight: 19, fontWeight: "700", marginTop: 12 },
   previewLine: { color: palette.text, fontSize: 14, lineHeight: 22, marginTop: 7 },
-  selectionSummary: { minHeight: 44, paddingHorizontal: 3, flexDirection: "row", alignItems: "center", justifyContent: "space-between" },
+  selectionSummary: { minHeight: 44, paddingHorizontal: 3, flexDirection: "row", flexWrap: "wrap", gap: 8, alignItems: "center", justifyContent: "space-between" },
   selectionCount: { color: palette.text, fontSize: 13, lineHeight: 20, fontWeight: "800" },
   clearButton: { minHeight: 44, justifyContent: "center", paddingHorizontal: 4 },
   clearButtonText: { color: palette.tealDark, fontSize: 13, lineHeight: 20, fontWeight: "700" },
-  groupAction: { minHeight: 44, paddingHorizontal: 4, flexDirection: "row", alignItems: "center", justifyContent: "space-between" },
+  groupAction: { minHeight: 44, paddingHorizontal: 4, flexDirection: "row", flexWrap: "wrap", gap: 8, alignItems: "center", justifyContent: "space-between" },
   groupActionText: { color: palette.tealDark, fontSize: 13, lineHeight: 20, fontWeight: "700" },
   groupCount: { color: palette.muted, fontSize: 12, lineHeight: 18 },
   paceOption: { minHeight: 44, marginBottom: 8, paddingHorizontal: 3, flexDirection: "row", alignItems: "center", gap: 10 },

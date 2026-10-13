@@ -1,0 +1,51 @@
+{
+  "tester": "T4",
+  "mode": "Focused repair retest; root-actuated browser evidence",
+  "origin": "http://localhost:51360",
+  "baseRevision": "8c4087e9fa2764ae3b5cd791c0d5a66834372936",
+  "stage": "workingtree-repaired",
+  "wholeProductScore": null,
+  "checks": [
+    {
+      "name": "Early support review",
+      "status": "resolved",
+      "result": "Review your sheet is available in the first section choices group; keyboard activation focuses the preview; Back to choices is available.",
+      "evidence": ["../retest/03-support-review.txt", "../retest/03-support-review.jpg"]
+    },
+    {
+      "name": "Appointment review focus and return",
+      "status": "resolved",
+      "result": "Review action focuses the appointment preview; Back to choices and explicit Save/Export controls are visible.",
+      "evidence": ["../retest/01-appointment-review.txt", "../retest/01-appointment-review.jpg"]
+    },
+    {
+      "name": "Card deletion Escape cancellation",
+      "status": "resolved",
+      "result": "Escape closes milestone deletion confirmation, returns focus to Delete saved card, and retains saved story. Practical-card snapshot also returns focus to Delete saved card.",
+      "evidence": ["../retest/card-escape-check.json", "../retest/04-card-escape.txt", "../retest/04-card-escape.jpg", "../retest/practical-escape.txt"]
+    },
+    {
+      "name": "Explicit save/export controls and state",
+      "status": "partial",
+      "result": "Save and Export remain separate actions and previews state that changes are unsaved. This retest did not generate new output files; prior T4 output evidence remains separate.",
+      "evidence": ["../retest/03-support-review.txt", "../retest/01-appointment-review.txt"]
+    },
+    {
+      "name": "320px/200% app text and short-landscape keyboard traversal",
+      "status": "observed",
+      "result": "Assigned interaction log records appointment content, all nine menu items, and short-landscape continuation to Skip to main content.",
+      "evidence": ["../retest/interactions.json"]
+    }
+  ],
+  "cleanup": {
+    "milestoneExplicitDelete": "Milestone is absent and form is blank after explicit delete.",
+    "evidence": ["../retest/milestone-deleted.txt"]
+  },
+  "addendum": {
+    "name": "Focus after Back to choices",
+    "status": "resolved",
+    "result": "Enter on Back to choices focuses the Appointment choices group at 320px/200% app text and the Support choices group at 390px. The support fixture was reselected synthetically after the full reload correctly discarded unsaved data. No save or export occurred.",
+    "evidence": ["../retest/08-back-to-choices.txt", "../retest/08-back-to-choices.jpg", "../retest/09-support-back.txt", "../retest/09-support-back.jpg", "../retest/interactions.json"]
+  },
+  "notTested": ["OS print dialog/cancellation", "native accessibility tools", "audible speech", "screen-reader behavior", "independent human use", "whole-product score", "new export generation"]
+}

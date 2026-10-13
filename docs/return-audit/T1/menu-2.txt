@@ -1,0 +1,45 @@
+- link "Urgent help":
+  - /url: /urgent-help
+  - generic: Urgent help
+  - generic: ›
+- generic "VAD & Carotid Support"
+- navigation "Main navigation":
+  - link "Home":
+    - /url: /
+    - generic: Home
+  - button "Menu":
+    - generic: Menu
+  - link "Text and display":
+    - /url: /accessibility
+    - generic: Text and display
+- link "Skip to main content":
+  - generic: Skip to main content
+- main:
+  - link "Back to home":
+    - /url: /
+    - generic: ←
+    - generic: Home
+  - generic: CARDS
+  - heading "Choose a card" [level=1]
+  - generic: Write only what you want to include. Review it before downloading.
+  - link "Medical and communication card Contacts, optional health information and things that help you communicate.":
+    - /url: /personal-card
+    - generic: Medical and communication card
+    - generic: Contacts, optional health information and things that help you communicate.
+  - link "Anniversary or milestone card A personal moment, in your words. Download an image to share if you choose.":
+    - /url: /milestone-card
+    - generic: Anniversary or milestone card
+    - generic: A personal moment, in your words. Download an image to share if you choose.
+  - generic: Development preview · general information only · not a medical service
+  - link "About and privacy":
+    - /url: /about
+    - generic: About and privacy
+  - link "Accessibility":
+    - /url: /accessibility
+    - generic: Accessibility
+  - link "Saved on this device":
+    - /url: /saved
+    - generic: Saved on this device
+  - link "Urgent help":
+    - /url: /urgent-help
+    - generic: Urgent help

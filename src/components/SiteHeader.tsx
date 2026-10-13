@@ -14,8 +14,9 @@ export function SiteHeader() {
   const compactBrand = settings.textScale >= 1.75 && (windowWidth < 480 || windowHeight < 420);
   // onLayout reports this header's y position in its root, including the
   // actual urgent-banner height. Subtract the measured wrapped content and
-  // inner padding, then leave a little room for the page below the header.
-  const menuMaxHeight = Math.max(48, windowHeight - headerTop - headerContentHeight - 40);
+  // inner padding, then leave room for the focused skip link and its outline.
+  // A smaller reserve let keyboard focus scroll the urgent row off screen.
+  const menuMaxHeight = Math.max(48, windowHeight - headerTop - headerContentHeight - 80);
   useEffect(() => setOpen(false), [pathname]);
   useEffect(() => {
     if (!open || Platform.OS !== "web") return;

@@ -2,3 +2,4 @@
 
 # Preserve locked audit reports and raw captures byte-for-byte for their hashes.
 docs/five-tester-audit/** -text
+docs/return-audit/** -text

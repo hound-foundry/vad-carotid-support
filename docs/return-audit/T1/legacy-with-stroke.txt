@@ -1,0 +1,77 @@
+- link "Urgent help":
+  - /url: /urgent-help
+  - generic: Urgent help
+  - generic: ›
+- generic "VAD & Carotid Support"
+- navigation "Main navigation":
+  - link "Home":
+    - /url: /
+    - generic: Home
+  - button "Menu":
+    - generic: Menu
+  - link "Text and display":
+    - /url: /accessibility
+    - generic: Text and display
+- link "Skip to main content":
+  - generic: Skip to main content
+- main:
+  - link "Back to home":
+    - /url: /
+    - generic: ←
+    - generic: Home
+  - generic: DISSECTION ACCOMPANIED BY STROKE
+  - heading "Dissection and stroke" [level=1]
+  - generic: A pathway for questions about rehabilitation, communication, fatigue, daily life and support.
+  - generic: Draft information · review pending
+  - generic: Clinical and patient/carer reviews are not yet recorded. For personal care questions, ask your doctor.
+  - link "About the review process":
+    - /url: /about
+    - generic: About the review process
+  - heading "Guides for this pathway" [level=2]
+  - link "Understanding cervical artery dissection A plain-language starting point for carotid and vertebral artery dissection. For patients, carers, interested readers · About 2 min Draft · not approved for patient use":
+    - /url: /guide/understanding-dissection
+    - generic: Understanding cervical artery dissection
+    - generic: A plain-language starting point for carotid and vertebral artery dissection.
+    - generic: For patients, carers, interested readers · About 2 min
+    - generic: Draft · not approved for patient use
+  - link "Tests, scans and unfamiliar terms Understand what to ask about a scan or report without trying to interpret it on your own. For patients, carers, interested readers · About 3 min Draft · not approved for patient use":
+    - /url: /guide/tests-and-terms
+    - generic: Tests, scans and unfamiliar terms
+    - generic: Understand what to ask about a scan or report without trying to interpret it on your own.
+    - generic: For patients, carers, interested readers · About 3 min
+    - generic: Draft · not approved for patient use
+  - link "When dissection is accompanied by stroke Conversation prompts about rehabilitation, communication, daily life and support for patients and carers. For patients, carers · About 2 min Draft · not approved for patient use":
+    - /url: /guide/with-stroke
+    - generic: When dissection is accompanied by stroke
+    - generic: Conversation prompts about rehabilitation, communication, daily life and support for patients and carers.
+    - generic: For patients, carers · About 2 min
+    - generic: Draft · not approved for patient use
+  - link "Recovery, fatigue and quality of life Make room for changes in energy, confidence, mood and everyday life, even when they are hard to see. For patients, carers · About 2 min Draft · not approved for patient use":
+    - /url: /guide/recovery-and-quality-of-life
+    - generic: Recovery, fatigue and quality of life
+    - generic: Make room for changes in energy, confidence, mood and everyday life, even when they are hard to see.
+    - generic: For patients, carers · About 2 min
+    - generic: Draft · not approved for patient use
+  - link "Prepare for a follow-up appointment Choose what matters most, make room for questions and leave with a clear next step to discuss. For patients, carers · About 2 min Draft · not approved for patient use":
+    - /url: /guide/follow-up-questions
+    - generic: Prepare for a follow-up appointment
+    - generic: Choose what matters most, make room for questions and leave with a clear next step to discuss.
+    - generic: For patients, carers · About 2 min
+    - generic: Draft · not approved for patient use
+  - link "Prepare questions for your next appointment → Choose only what matters today; you can save or export after reviewing.":
+    - /url: /appointments
+    - generic: Prepare questions for your next appointment →
+    - generic: Choose only what matters today; you can save or export after reviewing.
+  - generic: Development preview · general information only · not a medical service
+  - link "About and privacy":
+    - /url: /about
+    - generic: About and privacy
+  - link "Accessibility":
+    - /url: /accessibility
+    - generic: Accessibility
+  - link "Saved on this device":
+    - /url: /saved
+    - generic: Saved on this device
+  - link "Urgent help":
+    - /url: /urgent-help
+    - generic: Urgent help

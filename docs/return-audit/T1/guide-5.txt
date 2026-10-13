@@ -1,0 +1,114 @@
+- link "Urgent help":
+  - /url: /urgent-help
+  - generic: Urgent help
+  - generic: ›
+- generic "VAD & Carotid Support"
+- navigation "Main navigation":
+  - link "Home":
+    - /url: /
+    - generic: Home
+  - button "Menu":
+    - generic: Menu
+  - link "Text and display":
+    - /url: /accessibility
+    - generic: Text and display
+- link "Skip to main content":
+  - generic: Skip to main content
+- main:
+  - link "← Back to guides":
+    - /url: /learn
+    - generic: ← Back to guides
+  - heading "Supporting someone after dissection or stroke" [level=1]
+  - generic: Practical ways to listen, make care conversations easier and look after your own needs too. About 2 min read.
+  - button "Draft information, review pending. Review details":
+    - generic: Draft information · review pending
+    - generic: +
+  - button "Read guide aloud":
+    - generic: Read guide aloud
+  - checkbox "Read one section at a time":
+    - generic: Read one section at a time
+  - heading "Start with the person" [level=2]
+  - generic: Ask what would help today instead of guessing. A person may want help with one task, company, quiet time or no help right now. Their preferences may change from day to day.
+  - heading "Make care conversations easier" [level=2]
+  - generic: •
+  - generic: Ask whether the person wants you to attend and what role they want you to take.
+  - generic: •
+  - generic: Let the person answer first unless they ask you to speak for them.
+  - generic: •
+  - generic: Agree whether you should take notes or help remember questions.
+  - generic: •
+  - generic: Leave time for breaks and communication needs.
+  - generic: •
+  - generic: Ask before sharing their health information with anyone else.
+  - generic: •
+  - generic: After the appointment, check what they want to discuss or remember; do not assume you should keep their records.
+  - heading "Support without taking over" [level=2]
+  - generic: "A practical offer can be specific and easy to accept or decline: for example, a lift, a meal or help writing down questions. You can use the support-preferences sheet together if the person wants, but they decide what it says and whether to share it."
+  - heading "Your needs matter too" [level=2]
+  - generic: Supporting someone can bring uncertainty, practical pressure and emotional strain. You can ask the care team or a local carers’ organisation what support is available to you. Evidence about which carer support programmes work best remains limited, so ask what fits your circumstances rather than assuming one service suits everyone.
+  - heading "Limits" [level=2]
+  - generic: This page is general support information, not counselling or emergency response. Ask the person whom they want involved. Privacy and information-sharing rules can vary by care setting and location, so ask the care team what applies.
+  - heading "More reading options" [level=2]
+  - button "About reading pace and text size":
+    - generic: About reading pace and text size
+    - generic: +
+  - heading "More ways to use this guide" [level=2]
+  - generic: Saving stores this guide’s topic on this device. Someone with access to the device or browser profile may see it; it is not sent to this project.
+  - button "Save this guide on this device":
+    - generic: Save this guide on this device
+  - generic: This guide is not saved.
+  - button "Print this guide":
+    - generic: Print this guide
+  - button "Copy guide link":
+    - generic: Copy guide link
+  - generic: If this guide raises a question, add it to a private appointment sheet. You choose what to include; nothing is sent to this project.
+  - link "Start with questions from this guide →":
+    - /url: /appointments?guide=supporting-someone
+    - generic: Start with questions from this guide →
+  - generic: If another person is supporting you, you can also choose preferences to review together. You decide what to share.
+  - link "Start a support preferences sheet →":
+    - /url: /support-preferences?guide=supporting-someone
+    - generic: Start a support preferences sheet →
+  - heading "Sources and review for this draft" [level=2]
+  - generic: "Clinical review: not recorded · Patient/carer review: not recorded · Translation review: English original · Review date: not recorded"
+  - 'link "Open source: Treatment and Outcomes of Cervical Artery Dissection in Adults: A Scientific Statement From the American Heart Association"':
+    - generic: "Treatment and Outcomes of Cervical Artery Dissection in Adults: A Scientific Statement From the American Heart Association (2024)"
+    - generic: Source record checked 2026-10-12. A scientific statement is not a personalised treatment plan. Verify exact passages before publishing individual claims.
+  - 'link "Open source: Information needs of people who have suffered a stroke or TIA and their preferred approaches of receiving health information: A scoping review"':
+    - generic: "Information needs of people who have suffered a stroke or TIA and their preferred approaches of receiving health information: A scoping review (2025)"
+    - generic: Source record checked 2026-10-12. The review concerns stroke/TIA, not cervical artery dissection specifically; it searched only German- and English-language literature through June 2023 and did not assess the quality of included studies.
+  - 'link "Open source: Information provision for stroke survivors and their carers"':
+    - generic: Information provision for stroke survivors and their carers (2021)
+    - generic: Source record checked 2026-10-12. The review found uncertain or small effects for several outcomes, particularly for carers; it does not demonstrate that this app improves health outcomes.
+  - 'link "Open source: Non-pharmacological interventions for caregivers of stroke survivors"':
+    - generic: Non-pharmacological interventions for caregivers of stroke survivors (2022)
+    - generic: Source record checked 2026-10-12. Eight heterogeneous studies involving 1007 participants; the review could not pool results and evidence for the most promising intervention came from one small study. Stroke-specific, not dissection-specific.
+  - 'link "Open source: Stroke rehabilitation in adults: recommendations"':
+    - generic: "Stroke rehabilitation in adults: recommendations (2023)"
+    - generic: Source record checked 2026-10-12. Adult stroke rehabilitation; do not apply all recommendations to dissection without stroke. UK service entitlements are country-specific.
+  - heading "Continue with a related guide" [level=2]
+  - link "Recovery, fatigue and quality of life Make room for changes in energy, confidence, mood and everyday life, even when they are hard to see. For patients, carers · About 2 min Draft · not approved for patient use":
+    - /url: /guide/recovery-and-quality-of-life
+    - generic: Recovery, fatigue and quality of life
+    - generic: Make room for changes in energy, confidence, mood and everyday life, even when they are hard to see.
+    - generic: For patients, carers · About 2 min
+    - generic: Draft · not approved for patient use
+  - link "Prepare for a follow-up appointment Choose what matters most, make room for questions and leave with a clear next step to discuss. For patients, carers · About 2 min Draft · not approved for patient use":
+    - /url: /guide/follow-up-questions
+    - generic: Prepare for a follow-up appointment
+    - generic: Choose what matters most, make room for questions and leave with a clear next step to discuss.
+    - generic: For patients, carers · About 2 min
+    - generic: Draft · not approved for patient use
+  - generic: Development preview · general information only · not a medical service
+  - link "About and privacy":
+    - /url: /about
+    - generic: About and privacy
+  - link "Accessibility":
+    - /url: /accessibility
+    - generic: Accessibility
+  - link "Saved on this device":
+    - /url: /saved
+    - generic: Saved on this device
+  - link "Urgent help":
+    - /url: /urgent-help
+    - generic: Urgent help

@@ -1,0 +1,63 @@
+- link "Urgent help":
+  - /url: /urgent-help
+  - generic: Urgent help
+  - generic: ›
+- generic "VAD & Carotid Support"
+- navigation "Main navigation":
+  - link "Home":
+    - /url: /
+    - generic: Home
+  - button "Menu":
+    - generic: Menu
+  - link "Text and display":
+    - /url: /accessibility
+    - generic: Text and display
+- link "Skip to main content":
+  - generic: Skip to main content
+- main:
+  - link "Back to home":
+    - /url: /
+    - generic: ←
+    - generic: Home
+  - generic: ABOUT THIS PROJECT
+  - heading "About and privacy" [level=1]
+  - generic: A free, independent, open-source Hound Foundry community project for adults affected by vertebral or carotid artery dissection, families, carers and interested readers.
+  - heading "What this project is" [level=2]
+  - generic: This is an early development preview, not a charity, healthcare provider or medical service. It does not diagnose, interpret scans, recommend medication, estimate individual risk, clear activity or replace a clinician. Personal questions about diagnosis, tests and treatment belong with the person’s own care team.
+  - heading "Clinical and lived-experience review" [level=2]
+  - generic: All guides are original drafts with linked sources and recorded review fields. No clinician or patient/carer usability review has yet been recorded. The app must not publish these guides as approved patient information until qualified review is documented.
+  - generic: The user-suggested 2017 book is listed bibliographically as an external reading resource. Its chapters and stories are not reproduced or translated.
+  - heading "Privacy and open source" [level=2]
+  - generic: No account, analytics, advertising, sync service or backend is part of V1. Appointment sheets are stored on your device only when you choose Save. Web storage uses your browser profile’s local storage; native storage uses Expo SecureStore. Each has different device and backup behavior, so neither guarantees privacy. See the repository privacy documentation before storing sensitive notes.
+  - generic: The source code uses the project’s existing open-source licence, and authored guide content uses its existing content licence. The app is free to use; it has no donation, advertising or story-submission feature.
+  - link "Read the privacy design notes ↗":
+    - generic: Read the privacy design notes ↗
+  - link "Open the project repository ↗":
+    - generic: Open the project repository ↗
+  - heading "Clear saved data" [level=2]
+  - generic: Use this when you want to remove all appointment questions, support preferences, personal cards, milestone cards, accessibility preferences and saved guide links from this device. It does not remove exported files or backups made outside this app.
+  - button "Delete all saved data on this device":
+    - generic: Delete all saved data on this device
+  - heading "Help improve the project" [level=2]
+  - generic: "Suggestions, accessibility findings and review help are welcome. Please use synthetic examples only: do not put diagnoses, scan details, contact information or another person’s health information in a public issue."
+  - link "Read contribution guidance ↗":
+    - generic: Read contribution guidance ↗
+  - heading "Languages" [level=2]
+  - generic: "English is the only authored language in this preview. These languages are planned in stages, only after qualified human review of the interface and guides: Russian, Ukrainian, Lithuanian, Latvian, Estonian, Spanish, French, Japanese, Simplified Chinese, Traditional Chinese."
+  - heading "Use it like an app" [level=2]
+  - generic: "On browsers that support installation, use the browser menu’s “Install” or “Add to home screen” action. The web version remains a static information tool: it does not create an account, add a server connection or change where saved sheets live."
+  - heading "How availability works" [level=2]
+  - generic: The basic English static web preview is available as general education and appointment preparation. It uses generic urgent-help wording and does not provide country-specific legal, medical or emergency claims. The project keeps a country watchlist before enabling local emergency details, additional languages, hosted data, paid features or native app-store distribution.
+  - generic: Development preview · general information only · not a medical service
+  - link "About and privacy":
+    - /url: /about
+    - generic: About and privacy
+  - link "Accessibility":
+    - /url: /accessibility
+    - generic: Accessibility
+  - link "Saved on this device":
+    - /url: /saved
+    - generic: Saved on this device
+  - link "Urgent help":
+    - /url: /urgent-help
+    - generic: Urgent help

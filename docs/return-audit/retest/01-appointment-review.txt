@@ -1,0 +1,84 @@
+- link "Urgent help":
+  - /url: /urgent-help
+  - generic: Urgent help
+  - generic: ›
+- generic "VAD & Carotid Support"
+- navigation "Main navigation":
+  - link "Home":
+    - /url: /
+    - generic: Home
+  - button "Menu":
+    - generic: Menu
+  - link "Text and display":
+    - /url: /accessibility
+    - generic: Text and display
+- link "Skip to main content":
+  - generic: Skip to main content
+- main:
+  - heading "Prepare an appointment" [level=1]
+  - generic: Choose what matters most today. Start with one question, add a reminder, then review before saving or exporting.
+  - button "Optional viewing options":
+    - generic: Optional viewing options
+  - generic: "Section 1 of 3: Before the appointment"
+  - button "Previous" [disabled]:
+    - generic: Previous
+  - button "Next section":
+    - generic: Next section
+  - group "Appointment choices":
+    - generic: 1 question selected
+    - button "Clear selections":
+      - generic: Clear selections
+    - button "Review your sheet":
+      - generic: Review your sheet
+  - heading "Before the appointment" [level=2]
+  - button "Select all questions in Before the appointment":
+    - generic: Select all in section
+    - generic: 1/3
+  - checkbox "What is the one thing I most want help understanding or discussing today?" [checked]:
+    - generic: ✓
+    - generic: What is the one thing I most want help understanding or discussing today?
+  - checkbox "Would I like someone to come with me, and what would I like them to do?":
+    - generic: Would I like someone to come with me, and what would I like them to do?
+  - checkbox "Would a written summary, communication aid, interpreter, or more time help me take part?":
+    - generic: Would a written summary, communication aid, interpreter, or more time help me take part?
+  - heading "My own notes (optional)" [level=2]
+  - generic: Keep notes brief and avoid names, dates of birth, contact details or copies of records. Notes stay in this browser profile or on this device unless you export them.
+  - textbox "Optional appointment notes":
+    - /placeholder: Write a question or reminder for yourself
+  - generic: 0/500
+  - heading "If you need to leave safely" [level=2]
+  - generic: Someone who can access this browser or device may see saved questions and notes. Close the page, use a private device when appropriate, and remember that exports, printouts, browser history and backups are outside this app’s control.
+  - group "Appointment sheet preview" [active]:
+    - heading "Preview" [level=2]
+    - generic: Appointment question sheet
+    - generic: Before the appointment
+    - generic: □ What is the one thing I most want help understanding or discussing today?
+    - generic: For discussion with your own care team. This is not medical advice.
+    - button "Back to choices":
+      - generic: Back to choices
+    - button "Save on this device":
+      - generic: Save on this device
+    - button "Export sheet":
+      - generic: Export sheet
+    - button "Copy sheet text":
+      - generic: Copy sheet text
+    - button "Print question sheet":
+      - generic: Print question sheet
+    - button "Delete saved sheet":
+      - generic: Delete saved sheet
+    - generic: You have unsaved changes. Choose Save to keep them on this device.
+    - heading "Where the data lives" [level=2]
+    - generic: On the web, this app uses this browser profile’s local storage. It is not encrypted by this app and may be exposed to people or software with access to the profile or device. On iOS and Android, this app uses Expo SecureStore. Browser, device, operating-system and backup behavior varies; local storage alone does not guarantee privacy. Export sends a copy to the destination you choose. Deleting here may not remove an exported or backed-up copy.
+  - generic: Development preview · general information only · not a medical service
+  - link "About and privacy":
+    - /url: /about
+    - generic: About and privacy
+  - link "Accessibility":
+    - /url: /accessibility
+    - generic: Accessibility
+  - link "Saved on this device":
+    - /url: /saved
+    - generic: Saved on this device
+  - link "Urgent help":
+    - /url: /urgent-help
+    - generic: Urgent help

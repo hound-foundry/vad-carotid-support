@@ -1,7 +1,8 @@
-import { emptyReadingSession, normalizeGuideLibrarySession, normalizeReadingSession, setReadingModeOverride, setReadingPage } from "./model.mjs";
+import { emptyReadingSession, normalizeGuideLibrarySession, normalizeReadingSession, normalizeSheetView, setReadingModeOverride, setReadingPage } from "./model.mjs";
 import { onProjectDataCleared } from "../local-data/keys.mjs";
 
 const sessions = new Map();
+const sheetViews = new Map();
 const listeners = new Set();
 let librarySession = normalizeGuideLibrarySession();
 
@@ -44,7 +45,19 @@ export function updateGuideLibrarySession(patch) {
 
 export function clearReadingSessions() {
   sessions.clear();
+  sheetViews.clear();
   librarySession = normalizeGuideLibrarySession();
+  notify();
+}
+
+export function getSheetView(id, sectionCount) {
+  const view = normalizeSheetView(sheetViews.get(id), sectionCount);
+  sheetViews.set(id, view);
+  return view;
+}
+
+export function updateSheetView(id, patch, sectionCount) {
+  sheetViews.set(id, normalizeSheetView({ ...getSheetView(id, sectionCount), ...patch }, sectionCount));
   notify();
 }
 

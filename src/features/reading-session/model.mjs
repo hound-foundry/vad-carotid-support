@@ -33,3 +33,12 @@ export function normalizeGuideLibrarySession(value) {
     audience: ["all", "patient", "carer"].includes(value?.audience) ? value.audience : "all",
   };
 }
+
+// Sheet viewing choices are session-only, separate from saved questions/notes.
+export function normalizeSheetView(value, sectionCount) {
+  return {
+    ...normalizeReadingSession(value, sectionCount),
+    selectedOnly: value?.selectedOnly === true,
+    optionsOpen: value?.optionsOpen === true,
+  };
+}

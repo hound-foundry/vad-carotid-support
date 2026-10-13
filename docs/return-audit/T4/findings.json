@@ -1,0 +1,40 @@
+{
+  "tester": "T4",
+  "perspective": "Simulated first-use busy family carer; independent assessment of parent-actuated evidence",
+  "origin": "http://localhost:56683",
+  "build": "8c4087e9fa2764ae3b5cd791c0d5a66834372936",
+  "rubric": {
+    "navigation": 2,
+    "reading_access": 1,
+    "practical_usefulness": 2,
+    "data_output_trust": 2,
+    "interruption_recovery": 1,
+    "total": 8,
+    "maximum": 10,
+    "confirmed_critical": false,
+    "critical_cap_applied": false,
+    "confidence": "Limited to captured browser evidence; actions were parent actuated and do not establish independent discovery or completion time."
+  },
+  "journeys": [
+    {"id": 1, "goal": "Help someone while preserving their choices", "result": "Help page offers support preferences, separate appointment questions, and a communication card; privacy boundary is explicit.", "evidence": ["01-help-entry.txt", "01-help-entry.jpg"]},
+    {"id": 2, "goal": "Select, save, return to, and export support preferences", "result": "Selected preference and synthetic note survive in-app return and explicit save/reload; text export contains selected content.", "evidence": ["02-support-saved.txt", "support-sheet.txt", "support-return.txt"]},
+    {"id": 3, "goal": "Preview and save a blank-start practical card", "result": "Optional fields and preview work; output contains intended fields. Saved-card edit was not exercised.", "evidence": ["03-card-blank.txt", "04-card-preview.txt", "card-restored.txt", "practical-card.txt", "practical-card-pdf.txt", "practical-card-page1.png"]},
+    {"id": 4, "goal": "Create and keep a separate milestone card", "result": "Optional date can be omitted; content remains separate from the practical card through preview, output, reload, and deletion.", "evidence": ["06-milestone-blank.txt", "07-milestone-preview.txt", "milestone-restored.txt", "08-separate-saved.txt", "milestone.txt", "milestone-pdf.txt", "milestone-page1.png"]},
+    {"id": 5, "goal": "Check sharing, privacy, and deletion", "result": "Local-storage and export limits are stated; deletion cancellation via Escape is inconsistent for cards.", "evidence": ["privacy-observation.json", "support-deletion.json", "card-deletion.json", "09-card-escape.jpg", "output-checks.json"]}
+  ],
+  "wider_coverage": {
+    "menu_destinations": "9 destinations observed in shared menu coverage; parent/shared T1 evidence, not T4 navigation actions.",
+    "guides": "7 full guide DOM samples with source/review metadata; T5 observed section resume.",
+    "appointment": "T2 recorded draft return, explicit save/reload/export, and delete.",
+    "display_and_recovery": "T3 recorded keyboard menu movement at 320px/200% app text, short landscape, unknown route, and navigation recovery.",
+    "limitations": "Shared records are not independent T4 explorations; no clinical approval implied."
+  },
+  "confirmed_findings": [
+    {"severity": "barrier", "title": "Support preferences require scanning a long list before review", "detail": "Fourteen checkbox choices span three sections before note and review/export actions; consider an early review path or concise starting set.", "evidence": ["02-support-saved.txt"]},
+    {"severity": "barrier", "title": "Escape does not cancel card deletion confirmation", "detail": "Card confirmation remains open and focus stays on Cancel deletion; click cancellation is available. Support-sheet confirmation behavior differs.", "evidence": ["card-deletion.json", "09-card-escape.jpg", "support-deletion.json"]},
+    {"severity": "useful", "title": "Card outputs keep models separate and exclude hidden fields", "detail": "Practical and milestone text/PDF content match their own forms; hidden dates and cross-card fields are absent.", "evidence": ["output-checks.json", "practical-card-page1.png", "milestone-page1.png"]},
+    {"severity": "useful", "title": "Privacy and person choice are plainly stated", "detail": "Optional details, ask-first language, local storage limits, and export-copy caveats are visible.", "evidence": ["01-help-entry.txt", "02-support-saved.txt", "03-card-blank.txt"]},
+    {"severity": "barrier", "title": "MRA is absent from the tested glossary terms", "detail": "Search returned no term match in the current glossary sample.", "evidence": ["../T1/04-glossary-empty.txt"]}
+  ],
+  "not_tested": ["true browser zoom", "NVDA or other screen reader", "audible speech", "OS print dialog and cancellation", "malformed browser storage", "editing a saved card", "clinical accuracy", "independent human discovery", "patient/carer testimony"]
+}

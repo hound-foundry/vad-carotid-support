@@ -1,7 +1,8 @@
-import { useEffect, useId, useRef, useState, type ReactNode, type Ref } from "react";
+import { useId, useState, type ReactNode, type Ref } from "react";
 import { Platform, StyleSheet, type View as NativeView } from "react-native";
 import { Text, TextInput, Pressable, View } from "../../components/Ui";
-import { Card, palette } from "../../components/AppPage";
+import { palette } from "../../components/AppPage";
+import { ConfirmDelete } from "../../components/ConfirmDelete";
 import type { CardPresentation } from "./model.mjs";
 import { exportCard, printCard, type CardFormat } from "./export";
 
@@ -25,22 +26,16 @@ export function DateFields({ id, kind, value, onKind, onValue, hiddenMessage = "
 export function CardPreview({ view }: { view: CardPresentation }) {
   return <View testID="card-preview" style={[styles.preview, view.kind === "milestone" && styles.milestone]}><Text style={styles.kind}>{view.subtitle}</Text><Text accessibilityRole="header" aria-level={2} style={styles.previewTitle}>{view.title}</Text>{view.fields.map((item) => <View key={item.id} style={styles.previewField}><Text style={styles.label}>{item.label}</Text><Text style={styles.previewValue}>{item.value}</Text></View>)}<Text style={styles.previewFooter}>{view.footer}</Text></View>;
 }
-export function SavedControls({ message, loaded, save, remove, startBlank }: { message: string; loaded: boolean; save: () => Promise<void>; remove: () => Promise<void>; startBlank: () => void }) {
-  const [confirm, setConfirm] = useState(false); const [busy, setBusy] = useState(false);
-  const cancelRef = useRef<NativeView>(null); const deleteRef = useRef<NativeView>(null); const first = useRef(true);
-  useEffect(() => { if (first.current) { first.current = false; return; } if (Platform.OS === "web") ((confirm ? cancelRef.current : deleteRef.current) as unknown as HTMLElement | null)?.focus(); }, [confirm]);
+export function SavedControls({ message, loaded, save, remove, startBlank }: { message: string; loaded: boolean; save: () => Promise<void>; remove: () => Promise<boolean>; startBlank: () => void }) {
+  const [busy, setBusy] = useState(false);
   return <View style={styles.saved}>
     <Text accessibilityLiveRegion="polite" style={styles.status}>{message}</Text>
     <Button title="Save on this device" disabled={!loaded || busy} onPress={() => { setBusy(true); void save().finally(() => setBusy(false)); }} secondary />
     <Disclosure title="Start blank or delete saved card">
-      {confirm ? <Card title="Delete saved card?">
-        <Text style={styles.hint}>This clears the draft and removes its saved card from this device. Downloaded and printed copies are unchanged.</Text>
-        <Button title="Cancel deletion" buttonRef={cancelRef} secondary onPress={() => setConfirm(false)} />
-        <Button title="Confirm delete saved card" onPress={() => { setBusy(true); void remove().finally(() => { setBusy(false); setConfirm(false); }); }} disabled={busy} />
-      </Card> : <>
-        <Button title="Start a blank draft" secondary onPress={startBlank} />
-        <Button title="Delete saved card" buttonRef={deleteRef} secondary onPress={() => setConfirm(true)} />
-      </>}
+      <Button title="Start a blank draft" secondary disabled={!loaded || busy} onPress={startBlank} />
+      <ConfirmDelete label="Delete saved card" question="Delete saved card?"
+        detail="This clears the draft and removes its saved card from this device. Downloaded and printed copies are unchanged."
+        disabled={!loaded || busy} onConfirm={async () => { setBusy(true); try { return await remove(); } finally { setBusy(false); } }} />
     </Disclosure>
   </View>;
 }

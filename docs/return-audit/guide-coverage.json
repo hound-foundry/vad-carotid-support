@@ -1,0 +1,72 @@
+[
+  {
+    "href": "/guide/understanding-dissection",
+    "h1": "  - heading \"Understanding cervical artery dissection\" [level=1]",
+    "fullRenderedGuide": true,
+    "sourceReview": true,
+    "clinicalPending": true,
+    "urgent": true,
+    "file": "T1/guide-0.txt",
+    "scope": "FullguideDOMobserved, notclinicalaccuracy/usabilityapproval"
+  },
+  {
+    "href": "/guide/tests-and-terms",
+    "h1": "  - heading \"Tests, scans and unfamiliar terms\" [level=1]",
+    "fullRenderedGuide": true,
+    "sourceReview": true,
+    "clinicalPending": true,
+    "urgent": true,
+    "file": "T1/guide-1.txt",
+    "scope": "FullguideDOMobserved, notclinicalaccuracy/usabilityapproval"
+  },
+  {
+    "href": "/guide/without-stroke",
+    "h1": "  - heading \"Dissection without a diagnosed stroke\" [level=1]",
+    "fullRenderedGuide": true,
+    "sourceReview": true,
+    "clinicalPending": true,
+    "urgent": true,
+    "file": "T1/guide-2.txt",
+    "scope": "FullguideDOMobserved, notclinicalaccuracy/usabilityapproval"
+  },
+  {
+    "href": "/guide/with-stroke",
+    "h1": "  - heading \"When dissection is accompanied by stroke\" [level=1]",
+    "fullRenderedGuide": true,
+    "sourceReview": true,
+    "clinicalPending": true,
+    "urgent": true,
+    "file": "T1/guide-3.txt",
+    "scope": "FullguideDOMobserved, notclinicalaccuracy/usabilityapproval"
+  },
+  {
+    "href": "/guide/recovery-and-quality-of-life",
+    "h1": "  - heading \"Recovery, fatigue and quality of life\" [level=1]",
+    "fullRenderedGuide": true,
+    "sourceReview": true,
+    "clinicalPending": true,
+    "urgent": true,
+    "file": "T1/guide-4.txt",
+    "scope": "FullguideDOMobserved, notclinicalaccuracy/usabilityapproval"
+  },
+  {
+    "href": "/guide/supporting-someone",
+    "h1": "  - heading \"Supporting someone after dissection or stroke\" [level=1]",
+    "fullRenderedGuide": true,
+    "sourceReview": true,
+    "clinicalPending": true,
+    "urgent": true,
+    "file": "T1/guide-5.txt",
+    "scope": "FullguideDOMobserved, notclinicalaccuracy/usabilityapproval"
+  },
+  {
+    "href": "/guide/follow-up-questions",
+    "h1": "  - heading \"Prepare for a follow-up appointment\" [level=1]",
+    "fullRenderedGuide": true,
+    "sourceReview": true,
+    "clinicalPending": true,
+    "urgent": true,
+    "file": "T1/guide-6.txt",
+    "scope": "FullguideDOMobserved, notclinicalaccuracy/usabilityapproval"
+  }
+]

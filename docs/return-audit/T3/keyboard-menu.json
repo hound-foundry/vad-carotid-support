@@ -1,0 +1,162 @@
+[
+  {
+    "bounds": {
+      "bottom": 302,
+      "height": 54,
+      "left": 16,
+      "right": 277.34375,
+      "top": 248,
+      "width": 261.34375,
+      "x": 16,
+      "y": 248
+    },
+    "height": 640,
+    "href": "/accessibility",
+    "text": "Text & display",
+    "width": 320
+  },
+  {
+    "bounds": {
+      "bottom": 365,
+      "height": 55,
+      "left": 16,
+      "right": 289,
+      "top": 310,
+      "width": 273,
+      "x": 16,
+      "y": 310
+    },
+    "height": 640,
+    "href": "/learn",
+    "text": "Guides",
+    "width": 320
+  },
+  {
+    "bounds": {
+      "bottom": 478,
+      "height": 109,
+      "left": 16,
+      "right": 289,
+      "top": 369,
+      "width": 273,
+      "x": 16,
+      "y": 369
+    },
+    "height": 640,
+    "href": "/appointments",
+    "text": "Prepare an appointment",
+    "width": 320
+  },
+  {
+    "bounds": {
+      "bottom": 537,
+      "height": 55,
+      "left": 16,
+      "right": 289,
+      "top": 482,
+      "width": 273,
+      "x": 16,
+      "y": 482
+    },
+    "height": 640,
+    "href": "/cards",
+    "text": "Make a card",
+    "width": 320
+  },
+  {
+    "bounds": {
+      "bottom": 596,
+      "height": 55,
+      "left": 16,
+      "right": 289,
+      "top": 541,
+      "width": 273,
+      "x": 16,
+      "y": 541
+    },
+    "height": 640,
+    "href": "/supporting-someone",
+    "text": "Help someone",
+    "width": 320
+  },
+  {
+    "bounds": {
+      "bottom": 608,
+      "height": 109,
+      "left": 16,
+      "right": 289,
+      "top": 499,
+      "width": 273,
+      "x": 16,
+      "y": 499
+    },
+    "height": 640,
+    "href": "/support-preferences",
+    "text": "Support preferences",
+    "width": 320
+  },
+  {
+    "bounds": {
+      "bottom": 509,
+      "height": 109,
+      "left": 16,
+      "right": 289,
+      "top": 400,
+      "width": 273,
+      "x": 16,
+      "y": 400
+    },
+    "height": 640,
+    "href": "/glossary",
+    "text": "Look up a term",
+    "width": 320
+  },
+  {
+    "bounds": {
+      "bottom": 568,
+      "height": 55,
+      "left": 16,
+      "right": 289,
+      "top": 513,
+      "width": 273,
+      "x": 16,
+      "y": 513
+    },
+    "height": 640,
+    "href": "/resources",
+    "text": "Resources",
+    "width": 320
+  },
+  {
+    "bounds": {
+      "bottom": 608,
+      "height": 109,
+      "left": 16,
+      "right": 289,
+      "top": 499,
+      "width": 273,
+      "x": 16,
+      "y": 499
+    },
+    "height": 640,
+    "href": "/saved",
+    "text": "Saved on this device",
+    "width": 320
+  },
+  {
+    "bounds": {
+      "bottom": 608,
+      "height": 109,
+      "left": 16,
+      "right": 289,
+      "top": 499,
+      "width": 273,
+      "x": 16,
+      "y": 499
+    },
+    "height": 640,
+    "href": "/about",
+    "text": "About and privacy",
+    "width": 320
+  }
+]

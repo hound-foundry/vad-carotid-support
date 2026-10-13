@@ -1,7 +1,7 @@
 import { Link } from "./AppLink";
 import { Pressable, ScrollView, Text, View, SafeAreaView } from "./Ui";
 
-import { useId, useRef, useState, type ReactNode } from "react";
+import { useId, useRef, useState, type ReactNode, type RefObject } from "react";
 import { Platform, StyleSheet, useWindowDimensions, type ScrollView as NativeScrollView } from "react-native";
 
 import { useAccessibility } from "../features/accessibility/AccessibilityProvider";
@@ -9,10 +9,11 @@ import { useAccessibility } from "../features/accessibility/AccessibilityProvide
 import { palette } from "./theme";
 export { palette } from "./theme";
 
-export function AppPage({ children, wide = false }: { children: ReactNode; wide?: boolean }) {
+export function AppPage({ children, wide = false, scrollRef }: { children: ReactNode; wide?: boolean; scrollRef?: RefObject<NativeScrollView | null> }) {
   const { settings } = useAccessibility();
   const narrow = useWindowDimensions().width < 390;
-  const mainRef = useRef<NativeScrollView>(null);
+  const internalMainRef = useRef<NativeScrollView>(null);
+  const mainRef = scrollRef ?? internalMainRef;
   return <SafeAreaView style={styles.safe} edges={["bottom"]}>{Platform.OS === "web" ? <Pressable testID="skip-link" accessibilityRole="link" accessibilityLabel="Skip to main content" nativeID="skip-to-content" style={styles.skipLink} onPress={() => (mainRef.current?.getScrollableNode() as HTMLElement | undefined)?.focus()}><Text style={styles.skipText}>Skip to main content</Text></Pressable> : null}<ScrollView ref={mainRef} nativeID="main-content" {...(Platform.OS === "web" ? { role: "main" as const, tabIndex: -1 as const } : {})} contentContainerStyle={[styles.page, settings.spacing === "roomy" && styles.pageRoomy, narrow && styles.pageNarrow, wide && styles.wide]}>{children}<SiteFooter /></ScrollView></SafeAreaView>;
 }
 

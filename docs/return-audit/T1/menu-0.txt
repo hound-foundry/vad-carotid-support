@@ -1,0 +1,76 @@
+- link "Urgent help":
+  - /url: /urgent-help
+  - generic: Urgent help
+  - generic: ›
+- generic "VAD & Carotid Support"
+- navigation "Main navigation":
+  - link "Home":
+    - /url: /
+    - generic: Home
+  - button "Menu":
+    - generic: Menu
+  - link "Text and display":
+    - /url: /accessibility
+    - generic: Text and display
+- link "Skip to main content":
+  - generic: Skip to main content
+- main:
+  - heading "Understand dissection" [level=1]
+  - generic: Choose a topic, or search for a word.
+  - button "Draft information, review pending. Review details":
+    - generic: Draft information · review pending
+    - generic: +
+  - heading "Find a guide" [level=2]
+  - textbox "Search guide content":
+    - /placeholder: "For example: scan, fatigue, follow-up"
+  - button "Filter by audience (optional) · Show":
+    - generic: Filter by audience (optional) · Show
+  - link "Understanding cervical artery dissection A plain-language starting point for carotid and vertebral artery dissection.":
+    - /url: /guide/understanding-dissection
+    - generic: Understanding cervical artery dissection
+    - generic: A plain-language starting point for carotid and vertebral artery dissection.
+  - link "Tests, scans and unfamiliar terms Understand what to ask about a scan or report without trying to interpret it on your own.":
+    - /url: /guide/tests-and-terms
+    - generic: Tests, scans and unfamiliar terms
+    - generic: Understand what to ask about a scan or report without trying to interpret it on your own.
+  - link "Dissection without a diagnosed stroke A pathway for people whose dissection was not accompanied by a diagnosed stroke.":
+    - /url: /guide/without-stroke
+    - generic: Dissection without a diagnosed stroke
+    - generic: A pathway for people whose dissection was not accompanied by a diagnosed stroke.
+  - link "When dissection is accompanied by stroke Conversation prompts about rehabilitation, communication, daily life and support for patients and carers.":
+    - /url: /guide/with-stroke
+    - generic: When dissection is accompanied by stroke
+    - generic: Conversation prompts about rehabilitation, communication, daily life and support for patients and carers.
+  - link "Recovery, fatigue and quality of life Make room for changes in energy, confidence, mood and everyday life, even when they are hard to see.":
+    - /url: /guide/recovery-and-quality-of-life
+    - generic: Recovery, fatigue and quality of life
+    - generic: Make room for changes in energy, confidence, mood and everyday life, even when they are hard to see.
+  - link "Supporting someone after dissection or stroke Practical ways to listen, make care conversations easier and look after your own needs too.":
+    - /url: /guide/supporting-someone
+    - generic: Supporting someone after dissection or stroke
+    - generic: Practical ways to listen, make care conversations easier and look after your own needs too.
+  - link "Prepare for a follow-up appointment Choose what matters most, make room for questions and leave with a clear next step to discuss.":
+    - /url: /guide/follow-up-questions
+    - generic: Prepare for a follow-up appointment
+    - generic: Choose what matters most, make room for questions and leave with a clear next step to discuss.
+  - link "Look up a term →":
+    - /url: /glossary
+    - generic: Look up a term →
+  - link "Open saved guides →":
+    - /url: /saved-guides
+    - generic: Open saved guides →
+  - button "About this library and search · Show":
+    - generic: About this library and search · Show
+  - generic: Development preview · general information only · not a medical service
+  - link "About and privacy":
+    - /url: /about
+    - generic: About and privacy
+  - link "Accessibility":
+    - /url: /accessibility
+    - generic: Accessibility
+  - link "Saved on this device":
+    - /url: /saved
+    - generic: Saved on this device
+  - link "Urgent help":
+    - /url: /urgent-help
+    - generic: Urgent help

@@ -1,0 +1,282 @@
+{
+  "mode": "returning",
+  "revision": "8c4087e9fa2764ae3b5cd791c0d5a66834372936",
+  "assessment_type": "independent assessment of parent-actuated evidence",
+  "simulated_perspective": "Returning user newly diagnosed without stroke; wants calm plain-language definitions, visible sources and one useful appointment question; dislikes jargon, alarming presentation and repetitive notices.",
+  "initial_priorities": [
+    "Understandable, calm navigation and explanations",
+    "Source visibility and one useful question to take to an appointment",
+    "Preservation across preview, save, reload, export and interruption",
+    "Readability at small screens and enlarged app text"
+  ],
+  "scores": {
+    "navigation": {
+      "score": 2,
+      "max": 2,
+      "deductions": [],
+      "confidence": "medium; all nine destinations are shared parent-actuated route captures, not independent T1 traversals"
+    },
+    "reading_access": {
+      "score": 1,
+      "max": 2,
+      "deductions": [
+        {
+          "points": 1,
+          "reason": "At 320px and 200% app text, the expanded menu looks crowded with tightly wrapped/clipped labels and nested scrolling, although all links remain available in DOM and keyboard traversal."
+        }
+      ],
+      "confidence": "medium; based on supplied T3 screenshot and DOM"
+    },
+    "practical_usefulness": {
+      "score": 2,
+      "max": 2,
+      "deductions": [],
+      "confidence": "high for supplied question, support and card flows; parent-actuated"
+    },
+    "data_output_trust": {
+      "score": 2,
+      "max": 2,
+      "deductions": [],
+      "confidence": "high for supplied actual outputs; network/log statement limited to T4 captured scope"
+    },
+    "interruption_recovery": {
+      "score": 1,
+      "max": 2,
+      "deductions": [
+        {
+          "points": 1,
+          "reason": "Escape did not dismiss the card deletion prompt, while the appointment sheet flow used Escape to cancel; appointment one-section mode and position reset to all-sections after in-app return."
+        }
+      ],
+      "confidence": "high for card Escape observation; medium for appointment view-position inference"
+    },
+    "total": 8,
+    "max_total": 10,
+    "critical_failure_cap_applied": false,
+    "critical_failure": null
+  },
+  "journey_steps": [
+    "Fresh Home at 390px with no fixtures; four task cards and a saved-items link visible.",
+    "Opened Guides from Menu, returned Home, then opened Understanding cervical artery dissection; definitions, appointment prompts, limits and source/review details captured.",
+    "Searched artery, cleared to eight terms, then searched MRA; zero-result message links to a guide and appointment question.",
+    "Opened Urgent help; direct local-emergency direction, no local number, and explicit app limits captured.",
+    "Shared menu manifest covers all nine destinations; shared guide manifest records seven full DOM samples. These are not independent exploration or human-comprehension evidence.",
+    "Appointment: one question and synthetic note; in-app Home return; preview; explicit save, reload, text export; cancellation and confirmed deletion; reload shows blank.",
+    "Support: one preference and synthetic note; in-app return; explicit save, reload and text export; deletion and blank-after-reload. Individual checkbox deselection not evidenced.",
+    "Medical and milestone card forms separately previewed and saved/reloaded; synthetic date entered then hidden; distinct content; supplied PDFs/text and milestone PNG inspected; confirmed deletion preserved the other card.",
+    "Display: ordinary 390px; high contrast and 200% app text; 320px and 844x320 landscape keyboard/menu evidence.",
+    "Guide section 2 resumed after in-app Home/Back in T5 capture; appointment view control persisted but section marker absent after return."
+  ],
+  "coverage": [
+    {
+      "area": "Home and first task",
+      "status": "observed_parent_actuated",
+      "evidence": [
+        "T1/01-home.jpg",
+        "T1/01-home.txt"
+      ]
+    },
+    {
+      "area": "All nine menu destinations",
+      "status": "observed_shared_parent_actuated",
+      "evidence": [
+        "menu-coverage.json",
+        "T1/menu-0.txt through T1/menu-8.txt"
+      ]
+    },
+    {
+      "area": "Guide reading and source/review",
+      "status": "partial",
+      "evidence": [
+        "T1/03-basics.txt",
+        "guide-coverage.json"
+      ],
+      "limit": "One T1 guide page inspected; seven-route manifest is DOM coverage, not a reading/comprehension test."
+    },
+    {
+      "area": "Glossary result and empty search",
+      "status": "observed_parent_actuated",
+      "evidence": [
+        "T1/glossary-result.txt",
+        "T1/glossary-cleared.txt",
+        "T1/04-glossary-empty.jpg"
+      ]
+    },
+    {
+      "area": "Urgent help",
+      "status": "observed_parent_actuated",
+      "evidence": [
+        "T1/05-urgent.txt"
+      ]
+    },
+    {
+      "area": "Appointment select, note, preview, return, save/reload/export, delete",
+      "status": "observed_shared_parent_actuated",
+      "evidence": [
+        "T2/02-resumed-draft.txt",
+        "T2/03-saved-export.jpg",
+        "T2/appointment-sheet.txt",
+        "T2/delete-check.json"
+      ]
+    },
+    {
+      "area": "Appointment individual question deselection",
+      "status": "not_tested",
+      "reason": "Supplied flow shows selection and sheet deletion clearing it; no isolated checkbox deselection evidence."
+    },
+    {
+      "area": "Appointment reading-view interrupted return",
+      "status": "partial",
+      "evidence": [
+        "T2/view-interruption.json",
+        "T2/view-return.txt"
+      ],
+      "limit": "After one-section mode and section 2, in-app return restored all-sections mode and no section marker; current evidence does not show position restoration."
+    },
+    {
+      "area": "Support preference selection, note, preview, return, save/reload/export/delete",
+      "status": "observed_shared_parent_actuated",
+      "evidence": [
+        "T4/02-support-saved.txt",
+        "T4/support-sheet.txt",
+        "T4/support-return.txt",
+        "T4/support-deletion.json"
+      ]
+    },
+    {
+      "area": "Individual support preference deselection",
+      "status": "not_tested",
+      "reason": "No separate unchecked-option action captured."
+    },
+    {
+      "area": "Medical and milestone cards, distinct content, hidden date and deletion",
+      "status": "observed_shared_parent_actuated",
+      "evidence": [
+        "T4/03-card-blank.txt",
+        "T4/04-card-preview.txt",
+        "T4/06-milestone-blank.txt",
+        "T4/07-milestone-preview.txt",
+        "T4/08-separate-saved.txt",
+        "T4/card-deletion.json"
+      ]
+    },
+    {
+      "area": "Actual personal and milestone outputs",
+      "status": "observed_artifact_inspection",
+      "evidence": [
+        "T4/practical-card.pdf",
+        "T4/practical-card.txt",
+        "T4/practical-card-page1.png",
+        "T4/milestone.pdf",
+        "T4/milestone.txt",
+        "T4/milestone.png",
+        "T4/output-checks.json"
+      ],
+      "limit": "Medical-card PNG was not offered in captured preview; milestone PNG was supplied and inspected."
+    },
+    {
+      "area": "Privacy and marker network/log scope",
+      "status": "observed_scoped",
+      "evidence": [
+        "T4/privacy-observation.json"
+      ],
+      "limit": "No marker in captured T4 request/log scope; does not establish every profile, run or platform."
+    },
+    {
+      "area": "390px, 320px, landscape and doubled app text",
+      "status": "observed_shared_parent_actuated",
+      "evidence": [
+        "T1/01-home.jpg",
+        "T3/02-home-double.jpg",
+        "T3/03-menu-320-double.jpg",
+        "T3/04-landscape-double.jpg",
+        "T3/keyboard-menu.json"
+      ]
+    },
+    {
+      "area": "True browser zoom",
+      "status": "not_tested"
+    },
+    {
+      "area": "NVDA and audible speech",
+      "status": "not_tested"
+    },
+    {
+      "area": "Native devices and OS print/cancel",
+      "status": "not_tested"
+    },
+    {
+      "area": "Malformed browser storage",
+      "status": "not_tested"
+    },
+    {
+      "area": "Full-focus private profile",
+      "status": "not_tested"
+    },
+    {
+      "area": "Full browser reload of guide reading position",
+      "status": "not_tested"
+    },
+    {
+      "area": "Independent T1 current-build interaction",
+      "status": "not_tested",
+      "reason": "CUA child bridge failed; parent actuated and supplied fresh captures."
+    }
+  ],
+  "strengths": [
+    "Home offers four understandable starting points and a saved-items route.",
+    "Guide and glossary explain CAD/VAD and say what definitions cannot establish about an individual.",
+    "MRA no-result provides useful guide and appointment next steps.",
+    "Question/support tools keep options selectable and exports explicit.",
+    "Medical and milestone outputs are distinct, omit hidden fields, and each PDF shows its safety label once.",
+    "Privacy copy explains local profile/device storage and exported-copy limits."
+  ],
+  "frictions": [
+    "At 320px with 200% app text, the menu appears crowded with nested scrolling and tightly wrapped labels.",
+    "Escape cancels the appointment deletion flow but does not dismiss the card deletion prompt; visible Cancel remains available.",
+    "Appointment one-section mode and position reset to all-sections after in-app return.",
+    "Draft/review-pending and development-preview notices repeat across routes."
+  ],
+  "confirmed_faults_or_barriers": [
+    {
+      "id": "T1-RF-01",
+      "title": "Crowded 320px menu at doubled app text",
+      "severity": "low",
+      "reproducible_condition": "320px viewport, 200% app text, menu expanded",
+      "evidence": [
+        "T3/03-menu-320-double.jpg",
+        "T3/03-menu-320-double.txt"
+      ],
+      "scope": "Visual crowding/nested scrolling; all menu links remained reachable in DOM and keyboard flow."
+    },
+    {
+      "id": "T1-RF-02",
+      "title": "Escape does not dismiss card deletion prompt",
+      "severity": "low",
+      "reproducible_condition": "Milestone card deletion confirmation open; press Escape",
+      "evidence": [
+        "T4/09-card-escape.txt",
+        "T4/card-deletion.json"
+      ],
+      "scope": "Cancel button remains visible and works; appointment sheet deletion used Escape cancellation."
+    }
+  ],
+  "recommendations": [
+    "Keep all menu labels and focus targets visually clear at 320px with enlarged app text; reduce nested scrolling if possible.",
+    "Make Escape behavior consistent across deletion confirmations.",
+    "Preserve the appointment one-section position after in-app return or make the reset to all-sections clear.",
+    "Keep repeated review notices compact while retaining detailed review/source information."
+  ],
+  "prior_audit_comparison": {
+    "scope": "Specific observations only; no numerical score comparison because the builds and coverage differ.",
+    "resolved_in_current_supplied_evidence": "The previously observed duplicated safety disclaimer is absent from both current supplied card PDFs; each contains one footer disclaimer.",
+    "not_retested": "The earlier saved-guides Delete all recovery finding is outside the current captured return-audit flows."
+  },
+  "limitations": [
+    "Browser bridge failure prevented independent current-build UI interaction; evidence was captured by the parent on isolated origins and independently assessed here.",
+    "No clinical accuracy, patient comprehension, or usability approval is implied.",
+    "Seven guide DOM samples do not prove a person read or understood all guides.",
+    "Private-profile behavior, browser zoom, NVDA, audible speech, native devices, OS print/cancel, malformed storage and full browser-reload reading-position recovery were not tested."
+  ],
+  "evidence_root": "docs/return-audit"
+}

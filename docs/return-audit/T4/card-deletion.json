@@ -1,0 +1,6 @@
+{
+  "escapeCancelled": false,
+  "escapeFocus": "Cancel deletion",
+  "realCardCancelFocus": "Delete saved card",
+  "confirmedBlank": true
+}

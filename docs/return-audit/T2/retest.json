@@ -1,0 +1,76 @@
+{
+  "persona": "T2",
+  "mode": "focused repair retest; coordinator-actuated evidence",
+  "baseRevision": "8c4087e9fa2764ae3b5cd791c0d5a66834372936",
+  "stage": "workingtree-repaired",
+  "bundle": "entry-f09609189cfc3276d995b855900e057b.js",
+  "sha256": "6d473e73304b64e957dd77bc267fbd8255e84c0cb1c05e2884ecd021b43fb9e5",
+  "fullProductScore": null,
+  "results": {
+    "appointmentViewSectionFilterOptionsRetained": {
+      "status": "observed pass",
+      "evidence": "Home-return capture shows section 2 of 3, one-section mode, selected-only mode, and the selected question in preview."
+    },
+    "supportSectionAndChoiceRetained": {
+      "status": "observed pass in text capture",
+      "evidence": "Returns at section 2 of 3 with the earlier communication choice selected and present in preview; no screenshot or geometry record for this return."
+    },
+    "reviewFocusWithoutSaveOrExport": {
+      "status": "observed pass",
+      "evidence": "Keyboard Enter on Review focuses the correctly named appointment preview; capture shows unsaved status and no Save/Export action. Support preview focus and unsaved status also captured."
+    },
+    "backToChoicesFocusReturn": {
+      "status": "observed pass on both tested sheets",
+      "evidence": "Keyboard Enter returns focus to the Appointment choices and Support choices groups; the selected item remains visible. No Save or Export was activated.",
+      "captures": ["../retest/08-back-to-choices.jpg", "../retest/08-back-to-choices.txt", "../retest/09-support-back.jpg", "../retest/09-support-back.txt"]
+    },
+    "simplifiedDefault": {
+      "status": "observed on both tested sheets",
+      "evidence": "Global Simplified reading is checked at 200% app text; appointment and support each open to section 1 of 3 without opening viewing options. Other tools were not checked.",
+      "captures": ["../retest/global-simplified-setting.txt", "../retest/simplified-default.txt", "../retest/support-simplified-return.txt"]
+    },
+    "savedAppointmentReload": {
+      "status": "observed pass, separate from unsaved review",
+      "evidence": "Saved question and synthetic note restore after reload."
+    },
+    "responsiveGeometry": {
+      "status": "observed in supplied captures",
+      "evidence": "Document width matches viewport at 390×844, 320×640 and 844×320; 320 px appointment preview wraps. Menu uses a narrow scroll region."
+    }
+  },
+  "assistance": "All actions were coordinator-actuated; this is not independent T2 discovery or human-use evidence.",
+  "scopeNotes": [
+    "Support simplified-default capture is blank because an earlier full reload discarded its unsaved draft.",
+    "The later support review/back step reselected one synthetic preference before proceeding; it does not show unsaved support content survived reload.",
+    "Global simplified behavior is evidenced only for the appointment and support sheets."
+  ],
+  "notTested": [
+    "true browser zoom",
+    "NVDA or another screen reader",
+    "audible speech",
+    "OS print cancellation",
+    "native screens",
+    "malformed browser storage",
+    "independent discovery or completion timing"
+  ],
+  "evidence": [
+    "../retest-build.json",
+    "../retest/01-appointment-review.jpg",
+    "../retest/01-appointment-review.txt",
+    "../retest/02-appointment-resume.jpg",
+    "../retest/02-appointment-resume.txt",
+    "../retest/03-support-review.jpg",
+    "../retest/03-support-review.txt",
+    "../retest/08-back-to-choices.jpg",
+    "../retest/08-back-to-choices.txt",
+    "../retest/09-support-back.jpg",
+    "../retest/09-support-back.txt",
+    "../retest/global-simplified-setting.txt",
+    "../retest/simplified-default.txt",
+    "../retest/support-simplified-return.txt",
+    "../retest/support-resume.txt",
+    "../retest/appointment-export.txt",
+    "../retest/appointment-saved-reload.txt",
+    "../retest/interactions.json"
+  ]
+}

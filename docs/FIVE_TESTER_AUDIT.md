@@ -1,5 +1,7 @@
 # Five simulated patient/carer audits and repairs
 
+The subsequent [fresh/returning follow-up audit](RETURNING_USER_AUDIT.md) records a new frozen build, five evidence assessments and focused repairs. This report's original ratings and evidence remain unchanged.
+
 13 October 2026. Target: the English Expo static website. These are five independent AI interface inspections, not patient feedback, disability simulation, clinical approval or accessibility certification.
 
 Subsequent verification and code hardening of the eight repairs is recorded in [repair completion](REPAIR_COMPLETION.md), including the overlapping-clear regression and extracted speech lifecycle. Original reports, scores and hashes remain unchanged.

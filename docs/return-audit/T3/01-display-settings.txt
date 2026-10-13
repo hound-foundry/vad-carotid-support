@@ -1,0 +1,60 @@
+- link "Urgent help":
+  - /url: /urgent-help
+  - generic: Urgent help
+  - generic: ›
+- generic "VAD & Carotid Support"
+- navigation "Main navigation":
+  - link "Home":
+    - /url: /
+    - generic: Home
+  - button "Menu":
+    - generic: Menu
+  - link "Text and display" [active]:
+    - /url: /accessibility
+    - generic: Text and display
+- link "Skip to main content":
+  - generic: Skip to main content
+- main:
+  - heading "Text and display" [level=1]
+  - generic: Choose what is comfortable to read. Preferences stay on this device.
+  - heading "Text size" [level=2]
+  - button "100% · selected" [pressed]:
+    - generic: 100% · selected
+  - button "125%":
+    - generic: 125%
+  - button "150%":
+    - generic: 150%
+  - button "175%":
+    - generic: 175%
+  - button "200%":
+    - generic: 200%
+  - generic: You can also use your browser or device text settings.
+  - heading "Reading and contrast" [level=2]
+  - checkbox "Roomier spacing":
+    - generic: Roomier spacing
+  - checkbox "High contrast":
+    - generic: High contrast
+  - checkbox "Dark theme":
+    - generic: Dark theme
+  - checkbox "Reduced motion" [checked]:
+    - generic: ✓
+    - generic: Reduced motion
+  - checkbox "Simplified reading":
+    - generic: Simplified reading
+  - heading "Privacy" [level=2]
+  - generic: Accessibility preferences are saved locally so they can be available when you return. They are not sent to this project.
+  - button "Reset accessibility preferences":
+    - generic: Reset accessibility preferences
+  - generic: Development preview · general information only · not a medical service
+  - link "About and privacy":
+    - /url: /about
+    - generic: About and privacy
+  - link "Accessibility":
+    - /url: /accessibility
+    - generic: Accessibility
+  - link "Saved on this device":
+    - /url: /saved
+    - generic: Saved on this device
+  - link "Urgent help":
+    - /url: /urgent-help
+    - generic: Urgent help

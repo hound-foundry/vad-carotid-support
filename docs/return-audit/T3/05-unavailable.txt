@@ -1,0 +1,36 @@
+- link "Urgent help":
+  - /url: /urgent-help
+  - generic: Urgent help
+  - generic: ›
+- generic "VAD & Carotid Support": VAD & Carotid
+- navigation "Main navigation":
+  - link "Home":
+    - /url: /
+    - generic: Home
+  - button "Menu":
+    - generic: Menu
+  - link "Text and display":
+    - /url: /accessibility
+    - generic: Text & display
+- link "Skip to main content":
+  - generic: Skip to main content
+- main:
+  - heading "Page not found" [level=1]
+  - generic: That link is unavailable. Choose Home or Menu to find a guide or tool.
+  - link "Back to home":
+    - /url: /
+    - generic: ←
+    - generic: Home
+  - generic: Development preview · general information only · not a medical service
+  - link "About and privacy":
+    - /url: /about
+    - generic: About and privacy
+  - link "Accessibility":
+    - /url: /accessibility
+    - generic: Accessibility
+  - link "Saved on this device":
+    - /url: /saved
+    - generic: Saved on this device
+  - link "Urgent help":
+    - /url: /urgent-help
+    - generic: Urgent help

@@ -1,7 +1,7 @@
 import test from "node:test";
 import assert from "node:assert/strict";
 import { clampPageIndex, effectiveOneAtATime, emptyReadingSession, normalizeGuideLibrarySession, normalizeReadingSession, setReadingModeOverride, setReadingPage } from "../src/features/reading-session/model.mjs";
-import { clearReadingSessions, getGuideLibrarySession, getReadingSession, setReadingModeForGuide, setReadingPageForGuide, subscribeReadingSessions, updateGuideLibrarySession } from "../src/features/reading-session/store.mjs";
+import { clearReadingSessions, getGuideLibrarySession, getReadingSession, getSheetView, updateSheetView, setReadingModeForGuide, setReadingPageForGuide, subscribeReadingSessions, updateGuideLibrarySession } from "../src/features/reading-session/store.mjs";
 import { clearProjectData } from "../src/features/local-data/keys.mjs";
 
 test("effective reading pace follows the global preference unless locally overridden", () => {
@@ -64,4 +64,31 @@ test("failed clear-all preserves in-memory reading state", async () => {
   assert.deepEqual(getGuideLibrarySession(), { query: "private query", audience: "carer" });
   assert.equal(notifications, 0);
   clearReadingSessions();
+});
+
+test("returning to a sheet retains its reading place and filters independently", () => {
+  clearReadingSessions();
+  updateSheetView("appointment-sheet", { pageIndex: 1, modeOverride: true, selectedOnly: true, optionsOpen: true }, 3);
+  assert.deepEqual(getSheetView("appointment-sheet", 3), { pageIndex: 1, modeOverride: true, selectedOnly: true, optionsOpen: true });
+  assert.deepEqual(getSheetView("support-preferences", 3), { pageIndex: 0, modeOverride: null, selectedOnly: false, optionsOpen: false });
+  assert.deepEqual(getReadingSession("appointment-sheet", 3), emptyReadingSession());
+});
+
+test("sheet view follows simplified reading unless overridden and keeps no private fields", () => {
+  clearReadingSessions();
+  assert.equal(effectiveOneAtATime(getSheetView("appointment-sheet", 3), true), true);
+  updateSheetView("appointment-sheet", { pageIndex: 99, modeOverride: false, note: "SYNTHETIC_PRIVATE_NOTE", selectedOnly: "true" }, 3);
+  const view = getSheetView("appointment-sheet", 3);
+  assert.deepEqual(view, { pageIndex: 2, modeOverride: false, selectedOnly: false, optionsOpen: false });
+  assert.equal(effectiveOneAtATime(view, true), false);
+  assert.equal(getSheetView("appointment-sheet", 1).pageIndex, 0);
+});
+
+test("successful clear resets sheet views; a failed clear preserves them for return", async () => {
+  clearReadingSessions();
+  updateSheetView("support-preferences", { pageIndex: 2, modeOverride: true, selectedOnly: true }, 3);
+  await assert.rejects(clearProjectData({ async removeItem() { throw new Error("storage unavailable"); } }));
+  assert.equal(getSheetView("support-preferences", 3).pageIndex, 2);
+  await clearProjectData({ async removeItem() {} });
+  assert.deepEqual(getSheetView("support-preferences", 3), { pageIndex: 0, modeOverride: null, selectedOnly: false, optionsOpen: false });
 });

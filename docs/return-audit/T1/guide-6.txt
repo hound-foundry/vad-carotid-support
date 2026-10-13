@@ -1,0 +1,124 @@
+- link "Urgent help":
+  - /url: /urgent-help
+  - generic: Urgent help
+  - generic: ›
+- generic "VAD & Carotid Support"
+- navigation "Main navigation":
+  - link "Home":
+    - /url: /
+    - generic: Home
+  - button "Menu":
+    - generic: Menu
+  - link "Text and display":
+    - /url: /accessibility
+    - generic: Text and display
+- link "Skip to main content":
+  - generic: Skip to main content
+- main:
+  - link "← Back to guides":
+    - /url: /learn
+    - generic: ← Back to guides
+  - heading "Prepare for a follow-up appointment" [level=1]
+  - generic: Choose what matters most, make room for questions and leave with a clear next step to discuss. About 2 min read.
+  - button "Draft information, review pending. Review details":
+    - generic: Draft information · review pending
+    - generic: +
+  - button "Read guide aloud":
+    - generic: Read guide aloud
+  - checkbox "Read one section at a time":
+    - generic: Read one section at a time
+  - heading "Before the appointment" [level=2]
+  - generic: •
+  - generic: Pick one or two questions that matter most if you have limited time or energy.
+  - generic: •
+  - generic: Write down unfamiliar terms or results you want explained.
+  - generic: •
+  - generic: Decide whether you want someone to come and what you want them to do.
+  - generic: •
+  - generic: Ask the clinic whether there is anything you should bring; this app does not collect or interpret medical records.
+  - generic: •
+  - generic: If reading or remembering is difficult, ask whether someone can provide information in another format.
+  - heading "During the appointment" [level=2]
+  - generic: •
+  - generic: Ask what is known, what remains uncertain and what happens next.
+  - generic: •
+  - generic: Ask whether any follow-up imaging is planned for you and, if so, what its purpose is.
+  - generic: •
+  - generic: Ask what you need to know about medicines prescribed or changed for you, and who to ask if you have a concern.
+  - generic: •
+  - generic: Ask who to contact with a non-emergency question and how to reach them.
+  - generic: •
+  - generic: Ask for a written summary or accessible format if that would help.
+  - generic: •
+  - generic: You can pause, take a break or ask the clinician to explain something another way.
+  - heading "Before you leave" [level=2]
+  - generic: •
+  - generic: Check that you understand the next step and who is responsible for it.
+  - generic: •
+  - generic: Ask when or how you should expect to hear about pending results.
+  - generic: •
+  - generic: Ask what to do if you cannot reach the listed contact with a routine question.
+  - generic: •
+  - generic: Decide what you want the person who came with you to remember or share.
+  - heading "After" [level=2]
+  - generic: Use the instructions from your own care team. If something is unclear, contact the service they identified. This checklist cannot supply missing clinical advice or determine whether a situation is urgent.
+  - heading "More reading options" [level=2]
+  - button "About reading pace and text size":
+    - generic: About reading pace and text size
+    - generic: +
+  - heading "More ways to use this guide" [level=2]
+  - generic: Saving stores this guide’s topic on this device. Someone with access to the device or browser profile may see it; it is not sent to this project.
+  - button "Save this guide on this device":
+    - generic: Save this guide on this device
+  - generic: This guide is not saved.
+  - button "Print this guide":
+    - generic: Print this guide
+  - button "Copy guide link":
+    - generic: Copy guide link
+  - generic: If this guide raises a question, add it to a private appointment sheet. You choose what to include; nothing is sent to this project.
+  - link "Start with questions from this guide →":
+    - /url: /appointments?guide=follow-up-questions
+    - generic: Start with questions from this guide →
+  - heading "Sources and review for this draft" [level=2]
+  - generic: "Clinical review: not recorded · Patient/carer review: not recorded · Translation review: English original · Review date: not recorded"
+  - 'link "Open source: Treatment and Outcomes of Cervical Artery Dissection in Adults: A Scientific Statement From the American Heart Association"':
+    - generic: "Treatment and Outcomes of Cervical Artery Dissection in Adults: A Scientific Statement From the American Heart Association (2024)"
+    - generic: Source record checked 2026-10-12. A scientific statement is not a personalised treatment plan. Verify exact passages before publishing individual claims.
+  - 'link "Open source: ESO guideline for the management of extracranial and intracranial artery dissection"':
+    - generic: ESO guideline for the management of extracranial and intracranial artery dissection (2021)
+    - generic: Source record checked 2026-10-12. Do not generalise recommendations across anatomical groups or haemorrhagic and ischaemic presentations.
+  - 'link "Open source: Information needs of people who have suffered a stroke or TIA and their preferred approaches of receiving health information: A scoping review"':
+    - generic: "Information needs of people who have suffered a stroke or TIA and their preferred approaches of receiving health information: A scoping review (2025)"
+    - generic: Source record checked 2026-10-12. The review concerns stroke/TIA, not cervical artery dissection specifically; it searched only German- and English-language literature through June 2023 and did not assess the quality of included studies.
+  - 'link "Open source: Information provision for stroke survivors and their carers"':
+    - generic: Information provision for stroke survivors and their carers (2021)
+    - generic: Source record checked 2026-10-12. The review found uncertain or small effects for several outcomes, particularly for carers; it does not demonstrate that this app improves health outcomes.
+  - 'link "Open source: Stroke rehabilitation in adults: recommendations"':
+    - generic: "Stroke rehabilitation in adults: recommendations (2023)"
+    - generic: Source record checked 2026-10-12. Adult stroke rehabilitation; do not apply all recommendations to dissection without stroke. UK service entitlements are country-specific.
+  - heading "Continue with a related guide" [level=2]
+  - link "Recovery, fatigue and quality of life Make room for changes in energy, confidence, mood and everyday life, even when they are hard to see. For patients, carers · About 2 min Draft · not approved for patient use":
+    - /url: /guide/recovery-and-quality-of-life
+    - generic: Recovery, fatigue and quality of life
+    - generic: Make room for changes in energy, confidence, mood and everyday life, even when they are hard to see.
+    - generic: For patients, carers · About 2 min
+    - generic: Draft · not approved for patient use
+  - link "Prepare for a follow-up appointment Choose what matters most, make room for questions and leave with a clear next step to discuss. For patients, carers · About 2 min Draft · not approved for patient use":
+    - /url: /guide/follow-up-questions
+    - generic: Prepare for a follow-up appointment
+    - generic: Choose what matters most, make room for questions and leave with a clear next step to discuss.
+    - generic: For patients, carers · About 2 min
+    - generic: Draft · not approved for patient use
+  - generic: Development preview · general information only · not a medical service
+  - link "About and privacy":
+    - /url: /about
+    - generic: About and privacy
+  - link "Accessibility":
+    - /url: /accessibility
+    - generic: Accessibility
+  - link "Saved on this device":
+    - /url: /saved
+    - generic: Saved on this device
+  - link "Urgent help":
+    - /url: /urgent-help
+    - generic: Urgent help

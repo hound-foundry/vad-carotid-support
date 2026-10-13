@@ -1,5 +1,7 @@
 # Website and future app parity
 
+The [follow-up audit](RETURNING_USER_AUDIT.md) and [mobile design patterns](MOBILE_DESIGN_PATTERNS.md) document the current shared sheet reading state, preview shortcuts and confirmation controls, together with the remaining device checks.
+
 The static website is the reference implementation for content language, safety boundaries and local-data behavior. A future iOS or Android build should reuse the same content records and feature models rather than creating a second medical vocabulary.
 
 ## Shared contract

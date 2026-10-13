@@ -1,0 +1,86 @@
+{
+  "persona": "T2",
+  "mode": "first-use; parent-actuated evidence; independent assessment",
+  "buildRevision": "8c4087e9fa2764ae3b5cd791c0d5a66834372936",
+  "bundleSha256": "f992acd985b2018f0dd2e23aa0a938496e6134ea54df43e677a8471eaa89c67e",
+  "ratings": {
+    "navigation": 1,
+    "readingAccess": 1,
+    "practicalUsefulness": 2,
+    "dataOutputTrust": 2,
+    "interruptionRecovery": 1,
+    "total": 7,
+    "maximum": 10,
+    "criticalFailureConfirmed": false,
+    "criticalCapApplied": false,
+    "confidence": "Limited: parent actuated every capture; no independent route discovery or fresh human task timing."
+  },
+  "journey": [
+    {
+      "step": 1,
+      "area": "home, menu, urgent help, back and 404",
+      "status": "shared evidence observed; T2 discovery not tested",
+      "finding": "Home and all nine menu destinations are represented; urgent help is persistent; back/forward/reload and a useful 404 shell are captured.",
+      "barrier": "320 px and 200% app text menu capture is crowded with partly clipped labels while scrolling.",
+      "evidence": ["T1/01-home.txt", "menu-coverage.json", "T3/recovery-navigation.json", "T3/05-unavailable.txt", "T3/03-menu-320-double.jpg"]
+    },
+    {
+      "step": 2,
+      "area": "guide, glossary and reading return",
+      "status": "shared evidence observed",
+      "finding": "Guide section reading and saved guide return to section 2 after in-app interruption are captured; draft/review status is visible.",
+      "barrier": "MRA search returns no match; page provides guide and appointment next steps. Full browser reload reading position is untested.",
+      "evidence": ["guide-coverage.json", "T1/04-glossary-empty.txt", "T5/reading-resume.json"]
+    },
+    {
+      "step": 3,
+      "area": "appointment prompts, notes and one-section view",
+      "status": "T2 evidence observed in parent-actuated capture",
+      "finding": "Clear short instruction, selected count, optional section-by-section navigation, notes, and a preview are present.",
+      "barrier": "Long form puts preview and output controls far below the prompts; one-section mode still requires substantial scrolling.",
+      "evidence": ["01-appointment-entry.jpg", "05-one-section.jpg", "01-appointment-entry.txt"]
+    },
+    {
+      "step": 4,
+      "area": "appointment interruption, save, export and delete",
+      "status": "T2 evidence observed in parent-actuated capture",
+      "finding": "Unsaved selection and note survive Home-return; explicit Save survives reload; export text matches preview; confirmed deletion is absent after reload.",
+      "barrier": "After Home-return from section 2, both one-section mode and section position reset to the all-sections view. This later trace follows deletion and does not demonstrate content retention; the earlier 02-resumed-draft trace separately shows the unsaved selection and note returning.",
+      "intervention": "A generic automation selector did not match the visible cancellation control; Escape canceled successfully; selector mismatch is not an app fault.",
+      "evidence": ["02-resumed-draft.txt", "03-saved-export.txt", "04-deleted.txt", "view-interruption.json", "view-return.txt", "delete-check.json", "appointment-sheet.txt"]
+    },
+    {
+      "step": 5,
+      "area": "support preferences and cards",
+      "status": "shared T4 evidence observed",
+      "finding": "Selectable support prompts and both optional cards have previews, edit paths, explicit save and reload restoration; exports preserve selected content and exclude hidden dates and the other card's data.",
+      "barrier": "Saved list identifies card type but not personal contents; delete Escape behavior differs between card and sheet confirmation.",
+      "evidence": ["T4/02-support-saved.txt", "T4/04-card-preview.txt", "T4/05-saved-list.txt", "T4/07-milestone-preview.txt", "T4/output-checks.json", "T4/card-deletion.json", "T4/support-deletion.json"]
+    },
+    {
+      "step": 6,
+      "area": "display settings and keyboard",
+      "status": "shared T3 evidence observed",
+      "finding": "Text/display controls include 100–200% in-app text, contrast, dark theme, roomier spacing and reduced motion; keyboard reaches all menu destinations at tested layouts.",
+      "barrier": "Menu is crowded and partly clipped at 320 px/200% app text; focus remains visible in captures.",
+      "evidence": ["T3/01-display-settings.txt", "T3/keyboard-menu.json", "T3/03-menu-320-double.jpg", "T3/04-landscape-double.jpg"]
+    }
+  ],
+  "preferences": [
+    "One-section reading with an explicit section count fits T2, provided return restores the last section.",
+    "Clear Save, Export and Delete labels, selected counts, previews and unsaved status reduce memory load.",
+    "The long appointment page and controls far below the prompts create extra scanning and scrolling."
+  ],
+  "nextImprovement": "Restore the last appointment section after leaving and returning, with a clear return cue.",
+  "clinicalApproval": "Not assessed; captures show review-pending draft content and do not establish clinical accuracy or suitability.",
+  "notTested": [
+    "true browser zoom",
+    "NVDA or other screen reader",
+    "audible guide speech",
+    "OS print-dialog cancellation",
+    "native iOS/Android screens",
+    "malformed browser storage",
+    "guide reading-position recovery after full browser reload",
+    "independent user discovery or task completion time"
+  ]
+}

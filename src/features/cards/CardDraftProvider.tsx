@@ -3,7 +3,7 @@ import { emptyMilestoneCard, emptyPersonalCard, localDate, type MilestoneCard, t
 import { milestoneCardStore, personalCardStore } from "./store";
 
 type Draft<T> = { card: T; status: string; message: string; mode: "edit" | "preview"; loaded: boolean };
-type DraftController<T> = Draft<T> & { update: (patch: Partial<T>) => void; preview: () => void; edit: () => void; save: () => Promise<void>; remove: () => Promise<void>; startBlank: () => void; clear: () => void };
+type DraftController<T> = Draft<T> & { update: (patch: Partial<T>) => void; preview: () => void; edit: () => void; save: () => Promise<void>; remove: () => Promise<boolean>; startBlank: () => void; clear: () => void };
 function useDraft<T>(empty: () => T, store: any, personal: boolean): DraftController<T> {
   const initial = (): Draft<T> => ({ card: empty(), status: "loading", message: "Checking for a saved card…", mode: "edit", loaded: false });
   const [draft, setDraft] = useState(initial); const edited = useRef(false);
@@ -12,7 +12,7 @@ function useDraft<T>(empty: () => T, store: any, personal: boolean): DraftContro
     update: (patch) => { edited.current = true; setDraft((d) => ({ ...d, loaded: true, card: { ...d.card, ...patch, ...(personal ? { updatedOn: localDate() } : {}) }, status: "unsaved", message: "Unsaved changes. They stay here while the app is open." })); },
     preview: () => setDraft((d) => ({ ...d, mode: "preview" })), edit: () => setDraft((d) => ({ ...d, mode: "edit" })),
     save: async () => { const original = draft.card; const snapshot = personal ? { ...original, updatedOn: localDate() } : original; try { await store.save(snapshot); setDraft((d) => d.card === original ? { ...d, card: snapshot, status: "saved", message: "Saved on this device." } : d); } catch { setDraft((d) => d.card === original ? { ...d, status: "failed", message: "Could not save. Your edits are still here; try again or download a copy." } : d); } },
-    remove: async () => { try { await store.remove(); edited.current = true; setDraft({ ...initial(), loaded: true, status: "absent", message: "Saved card deleted from this device. Downloaded and printed copies are unchanged." }); } catch { setDraft((d) => ({ ...d, status: "failed", message: "Could not delete the saved card. Try again." })); } },
+    remove: async () => { try { await store.remove(); edited.current = true; setDraft({ ...initial(), loaded: true, status: "absent", message: "Saved card deleted from this device. Downloaded and printed copies are unchanged." }); return true; } catch { setDraft((d) => ({ ...d, status: "failed", message: "Could not delete the saved card. Try again." })); return false; } },
     startBlank: () => { edited.current = true; setDraft({ ...initial(), loaded: true, status: "unsaved", message: "Blank draft. Your saved card is unchanged until you save or delete it." }); },
     clear: () => { edited.current = true; setDraft({ ...initial(), loaded: true, status: "absent", message: "Saved data cleared. This card is blank and not saved." }); },
   };

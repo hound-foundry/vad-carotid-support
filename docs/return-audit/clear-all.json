@@ -1,0 +1,11 @@
+{
+  "origin": "http://localhost:56683",
+  "fixtureCategories": [
+    "personal-card"
+  ],
+  "clearCancelFocus": "Delete all saved data on this device",
+  "cancelKeptCard": true,
+  "confirmRemovedCard": true,
+  "note": "Specific practical-card row is No saved card after reload; other categories were already absent.",
+  "downloadUnchanged": true
+}

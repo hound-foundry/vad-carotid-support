@@ -1,0 +1,56 @@
+{
+  "mode": "returning-retest",
+  "tester": "T3",
+  "locked": true,
+  "assessment_basis": "Independent review of coordinator-actuated current retest evidence; no direct T3 browser run.",
+  "baseRevision": "8c4087e9fa2764ae3b5cd791c0d5a66834372936",
+  "buildStage": "workingtree-repaired",
+  "bundle": {
+    "name": "entry-f09609189cfc3276d995b855900e057b.js",
+    "sha256": "6d473e73304b64e957dd77bc267fbd8255e84c0cb1c05e2884ecd021b43fb9e5"
+  },
+  "origin": "http://localhost:51360",
+  "items": [
+    {
+      "id": 1,
+      "task": "Urgent help visibility at 844x320 with 200% app text and keyboard focus at end of menu",
+      "status": "resolved_in_supplied_capture",
+      "evidence": ["retest/05-landscape-menu.jpg", "retest/05-landscape-menu.txt", "retest/interactions.json"],
+      "observation": "Urgent help row fully visible; windowScrollY=0. Scoped to supplied state."
+    },
+    {
+      "id": 2,
+      "task": "Sequential keyboard reach of all nine menu destinations at 320px/200% app text",
+      "status": "partial",
+      "evidence": ["retest/06-menu-320.jpg", "retest/06-menu-320.txt", "retest/menu-keyboard-320.json"],
+      "observation": "Nine link labels and focus bounds recorded; final About and privacy label fully visible. Inner scroll remains and earlier links scroll out of view as focus advances; no trap or clipped current label shown."
+    },
+    {
+      "id": 3,
+      "task": "Appointment preview at 320px/200% app text",
+      "status": "resolved_for_sampled_state",
+      "evidence": ["retest/07-appointment-320.jpg", "retest/07-appointment-320.txt", "retest/interactions.json"],
+      "observation": "Long labels wrap; selected question and synthetic note appear in preview; keyboard Review focuses preview without save/export. Capture is a scrolled page portion, not proof all controls show at once."
+    },
+    {
+      "id": 4,
+      "task": "Escape from card deletion confirmation and focus return",
+      "status": "resolved_in_supplied_cases",
+      "evidence": ["retest/04-card-escape.jpg", "retest/04-card-escape.txt", "retest/card-escape-check.json", "retest/practical-escape.txt"],
+      "observation": "Milestone confirmation dismisses on Escape; focus returns to Delete saved card and story remains. Practical-card evidence also reports named focus return."
+    },
+    {
+      "id": 5,
+      "task": "Browser zoom, screen reader, native app, audible speech, OS print preview/cancel",
+      "status": "not_tested",
+      "evidence": [],
+      "observation": "200% refers to in-app text-size setting. No full WCAG or all-content geometric clipping claim."
+    }
+  ],
+  "wholeProductScore": null,
+  "notes": [
+    "No source changes or browser interaction by T3.",
+    "Previous report.md and findings.json remain unchanged.",
+    "Evidence is coordinator-actuated and only supports the exact states captured."
+  ]
+}
