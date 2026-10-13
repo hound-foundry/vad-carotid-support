@@ -24114,7 +24114,160 @@
       "isoAlpha2": "MX",
       "reviewOwner": null,
       "lastChecked": null,
-      "officialSources": [],
+      "officialSources": [
+        {
+          "title": "Federal Law on Protection of Personal Data Held by Private Parties (2025 text; amendments through 14 November 2025)",
+          "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LFPDPPP.pdf",
+          "authority": "Chamber of Deputies, Secretariat of Parliamentary Services",
+          "sourceType": "federal-privacy-legislation-current-text",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "DOF decree issuing the 2025 private-sector data protection law",
+          "url": "https://www.dof.gob.mx/nota_detalle.php?codigo=5752569&fecha=20/03/2025",
+          "authority": "Official Gazette of the Federation (DOF)",
+          "sourceType": "federal-privacy-legislation-gazette",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "DOF 20 March 2025 decree: General Law on Protection of Personal Data Held by Obligated Entities",
+          "url": "https://www.dof.gob.mx/abrirPDF.php?anio=2025&archivo=20032025-VES.pdf&repo=repositorio%2F",
+          "authority": "Chamber of Deputies, Secretariat of Parliamentary Services",
+          "sourceType": "federal-public-sector-privacy-law-gazette",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "COFEPRIS medical device and SaMD registration guidance index",
+          "url": "https://www.gob.mx/cofepris/documentos/registros-dispositivos-medicos",
+          "authority": "Federal Commission for Protection against Sanitary Risks (COFEPRIS), Ministry of Health",
+          "sourceType": "medical-device-regulator-index",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "NOM-241-SSA1-2021: Good manufacturing practices for medical devices (official DOF text)",
+          "url": "https://sidof.segob.gob.mx/notas/docFuente/5638793",
+          "authority": "Ministry of Health; DOF",
+          "sourceType": "medical-device-standard",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "COFEPRIS medical-device framework and technovigilance index",
+          "url": "https://www.gob.mx/cofepris/acciones-y-programas/dispositivos-medicos-403833",
+          "authority": "COFEPRIS, Ministry of Health",
+          "sourceType": "medical-device-regulatory-index",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "General Health Law (current Chamber of Deputies text)",
+          "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LGS.pdf",
+          "authority": "Chamber of Deputies, Secretariat of Parliamentary Services",
+          "sourceType": "health-legislation-current-text",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Federal Consumer Protection Law (reform published 12 December 2025)",
+          "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LFPC.pdf",
+          "authority": "Chamber of Deputies, Secretariat of Parliamentary Services",
+          "sourceType": "consumer-legislation-current-text",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Federal Law to Prevent and Eliminate Discrimination",
+          "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LFPED.pdf",
+          "authority": "Chamber of Deputies, Secretariat of Parliamentary Services",
+          "sourceType": "rights-and-accessibility-legislation",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "General Law for the Inclusion of Persons with Disabilities (amended through 14 June 2024)",
+          "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LGIPD.pdf",
+          "authority": "Chamber of Deputies, Secretariat of Parliamentary Services",
+          "sourceType": "accessibility-legislation-current-text",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "General Law on the Rights of Children and Adolescents (amended through 15 January 2026)",
+          "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LGDNNA.pdf",
+          "authority": "Chamber of Deputies, Secretariat of Parliamentary Services",
+          "sourceType": "children-rights-legislation-current-text",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Federal Law on Copyright (amended through 15 January 2026)",
+          "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LFDA.pdf",
+          "authority": "Chamber of Deputies, Secretariat of Parliamentary Services",
+          "sourceType": "copyright-legislation-index",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Official Gazette of the Federation",
+          "url": "https://www.dof.gob.mx/",
+          "authority": "Government of Mexico, DOF",
+          "sourceType": "official-gazette-current-law-check",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Emergency telephone service 9-1-1",
+          "url": "https://www.gob.mx/911/articulos/servicio-de-atencion-de-llamadas-de-emergencias-9-1-1?idiom=es",
+          "authority": "Executive Secretariat of the National Public Security System",
+          "sourceType": "official-emergency-service-information",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "INEGI territorial division: 32 federal entities and municipality/alcaldía structure",
+          "url": "https://cuentame.inegi.org.mx/explora/geografia/division_territorial/",
+          "authority": "National Institute of Statistics and Geography (INEGI)",
+          "sourceType": "official-territorial-register",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "INEGI Catalogue of State, Municipal and Locality Geostatistical Areas",
+          "url": "https://en.www.inegi.org.mx/app/ageeml/",
+          "authority": "INEGI",
+          "sourceType": "official-subnational-territorial-register",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Income Tax Law: current federal text index for funding and donation review",
+          "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LISR.pdf",
+          "authority": "Chamber of Deputies, Secretariat of Parliamentary Services",
+          "sourceType": "funding-tax-source-index",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Apple App Review Guidelines",
+          "url": "https://developer.apple.com/app-store/review/guidelines/",
+          "authority": "Apple",
+          "sourceType": "platform-policy-not-legislation",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Google Play Health Content and Services policy",
+          "url": "https://support.google.com/googleplay/android-developer/answer/16679511?hl=en",
+          "authority": "Google Play",
+          "sourceType": "platform-policy-not-legislation",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        }
+      ],
       "reviewAreas": [
         {
           "area": "privacy-and-health-data",
@@ -24229,7 +24382,266 @@
           "reviewer": null
         }
       ],
-      "subnationalAreas": []
+      "subnationalAreas": [
+        {
+          "name": "Aguascalientes",
+          "status": "not-assessed",
+          "reason": "Federal entity screening target only. No state/local privacy, health/professional, consumer, accessibility, emergency, municipal/alcaldía or territorial applicability review performed.",
+          "source": "https://cuentame.inegi.org.mx/explora/geografia/division_territorial/",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Baja California",
+          "status": "not-assessed",
+          "reason": "Federal entity screening target only. No state/local privacy, health/professional, consumer, accessibility, emergency, municipal/alcaldía or territorial applicability review performed.",
+          "source": "https://cuentame.inegi.org.mx/explora/geografia/division_territorial/",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Baja California Sur",
+          "status": "not-assessed",
+          "reason": "Federal entity screening target only. No state/local privacy, health/professional, consumer, accessibility, emergency, municipal/alcaldía or territorial applicability review performed.",
+          "source": "https://cuentame.inegi.org.mx/explora/geografia/division_territorial/",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Campeche",
+          "status": "not-assessed",
+          "reason": "Federal entity screening target only. No state/local privacy, health/professional, consumer, accessibility, emergency, municipal/alcaldía or territorial applicability review performed.",
+          "source": "https://cuentame.inegi.org.mx/explora/geografia/division_territorial/",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Chiapas",
+          "status": "not-assessed",
+          "reason": "Federal entity screening target only. No state/local privacy, health/professional, consumer, accessibility, emergency, municipal/alcaldía or territorial applicability review performed.",
+          "source": "https://cuentame.inegi.org.mx/explora/geografia/division_territorial/",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Chihuahua",
+          "status": "not-assessed",
+          "reason": "Federal entity screening target only. No state/local privacy, health/professional, consumer, accessibility, emergency, municipal/alcaldía or territorial applicability review performed.",
+          "source": "https://cuentame.inegi.org.mx/explora/geografia/division_territorial/",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Ciudad de México",
+          "status": "not-assessed",
+          "reason": "Federal entity screening target only. No state/local privacy, health/professional, consumer, accessibility, emergency, municipal/alcaldía or territorial applicability review performed.",
+          "source": "https://cuentame.inegi.org.mx/explora/geografia/division_territorial/",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Coahuila de Zaragoza",
+          "status": "not-assessed",
+          "reason": "Federal entity screening target only. No state/local privacy, health/professional, consumer, accessibility, emergency, municipal/alcaldía or territorial applicability review performed.",
+          "source": "https://cuentame.inegi.org.mx/explora/geografia/division_territorial/",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Colima",
+          "status": "not-assessed",
+          "reason": "Federal entity screening target only. No state/local privacy, health/professional, consumer, accessibility, emergency, municipal/alcaldía or territorial applicability review performed.",
+          "source": "https://cuentame.inegi.org.mx/explora/geografia/division_territorial/",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Durango",
+          "status": "not-assessed",
+          "reason": "Federal entity screening target only. No state/local privacy, health/professional, consumer, accessibility, emergency, municipal/alcaldía or territorial applicability review performed.",
+          "source": "https://cuentame.inegi.org.mx/explora/geografia/division_territorial/",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Guanajuato",
+          "status": "not-assessed",
+          "reason": "Federal entity screening target only. No state/local privacy, health/professional, consumer, accessibility, emergency, municipal/alcaldía or territorial applicability review performed.",
+          "source": "https://cuentame.inegi.org.mx/explora/geografia/division_territorial/",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Guerrero",
+          "status": "not-assessed",
+          "reason": "Federal entity screening target only. No state/local privacy, health/professional, consumer, accessibility, emergency, municipal/alcaldía or territorial applicability review performed.",
+          "source": "https://cuentame.inegi.org.mx/explora/geografia/division_territorial/",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Hidalgo",
+          "status": "not-assessed",
+          "reason": "Federal entity screening target only. No state/local privacy, health/professional, consumer, accessibility, emergency, municipal/alcaldía or territorial applicability review performed.",
+          "source": "https://cuentame.inegi.org.mx/explora/geografia/division_territorial/",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Jalisco",
+          "status": "not-assessed",
+          "reason": "Federal entity screening target only. No state/local privacy, health/professional, consumer, accessibility, emergency, municipal/alcaldía or territorial applicability review performed.",
+          "source": "https://cuentame.inegi.org.mx/explora/geografia/division_territorial/",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "México",
+          "status": "not-assessed",
+          "reason": "Federal entity screening target only. No state/local privacy, health/professional, consumer, accessibility, emergency, municipal/alcaldía or territorial applicability review performed.",
+          "source": "https://cuentame.inegi.org.mx/explora/geografia/division_territorial/",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Michoacán de Ocampo",
+          "status": "not-assessed",
+          "reason": "Federal entity screening target only. No state/local privacy, health/professional, consumer, accessibility, emergency, municipal/alcaldía or territorial applicability review performed.",
+          "source": "https://cuentame.inegi.org.mx/explora/geografia/division_territorial/",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Morelos",
+          "status": "not-assessed",
+          "reason": "Federal entity screening target only. No state/local privacy, health/professional, consumer, accessibility, emergency, municipal/alcaldía or territorial applicability review performed.",
+          "source": "https://cuentame.inegi.org.mx/explora/geografia/division_territorial/",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Nayarit",
+          "status": "not-assessed",
+          "reason": "Federal entity screening target only. No state/local privacy, health/professional, consumer, accessibility, emergency, municipal/alcaldía or territorial applicability review performed.",
+          "source": "https://cuentame.inegi.org.mx/explora/geografia/division_territorial/",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Nuevo León",
+          "status": "not-assessed",
+          "reason": "Federal entity screening target only. No state/local privacy, health/professional, consumer, accessibility, emergency, municipal/alcaldía or territorial applicability review performed.",
+          "source": "https://cuentame.inegi.org.mx/explora/geografia/division_territorial/",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Oaxaca",
+          "status": "not-assessed",
+          "reason": "Federal entity screening target only. No state/local privacy, health/professional, consumer, accessibility, emergency, municipal/alcaldía or territorial applicability review performed.",
+          "source": "https://cuentame.inegi.org.mx/explora/geografia/division_territorial/",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Puebla",
+          "status": "not-assessed",
+          "reason": "Federal entity screening target only. No state/local privacy, health/professional, consumer, accessibility, emergency, municipal/alcaldía or territorial applicability review performed.",
+          "source": "https://cuentame.inegi.org.mx/explora/geografia/division_territorial/",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Querétaro",
+          "status": "not-assessed",
+          "reason": "Federal entity screening target only. No state/local privacy, health/professional, consumer, accessibility, emergency, municipal/alcaldía or territorial applicability review performed.",
+          "source": "https://cuentame.inegi.org.mx/explora/geografia/division_territorial/",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Quintana Roo",
+          "status": "not-assessed",
+          "reason": "Federal entity screening target only. No state/local privacy, health/professional, consumer, accessibility, emergency, municipal/alcaldía or territorial applicability review performed.",
+          "source": "https://cuentame.inegi.org.mx/explora/geografia/division_territorial/",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "San Luis Potosí",
+          "status": "not-assessed",
+          "reason": "Federal entity screening target only. No state/local privacy, health/professional, consumer, accessibility, emergency, municipal/alcaldía or territorial applicability review performed.",
+          "source": "https://cuentame.inegi.org.mx/explora/geografia/division_territorial/",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Sinaloa",
+          "status": "not-assessed",
+          "reason": "Federal entity screening target only. No state/local privacy, health/professional, consumer, accessibility, emergency, municipal/alcaldía or territorial applicability review performed.",
+          "source": "https://cuentame.inegi.org.mx/explora/geografia/division_territorial/",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Sonora",
+          "status": "not-assessed",
+          "reason": "Federal entity screening target only. No state/local privacy, health/professional, consumer, accessibility, emergency, municipal/alcaldía or territorial applicability review performed.",
+          "source": "https://cuentame.inegi.org.mx/explora/geografia/division_territorial/",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Tabasco",
+          "status": "not-assessed",
+          "reason": "Federal entity screening target only. No state/local privacy, health/professional, consumer, accessibility, emergency, municipal/alcaldía or territorial applicability review performed.",
+          "source": "https://cuentame.inegi.org.mx/explora/geografia/division_territorial/",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Tamaulipas",
+          "status": "not-assessed",
+          "reason": "Federal entity screening target only. No state/local privacy, health/professional, consumer, accessibility, emergency, municipal/alcaldía or territorial applicability review performed.",
+          "source": "https://cuentame.inegi.org.mx/explora/geografia/division_territorial/",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Tlaxcala",
+          "status": "not-assessed",
+          "reason": "Federal entity screening target only. No state/local privacy, health/professional, consumer, accessibility, emergency, municipal/alcaldía or territorial applicability review performed.",
+          "source": "https://cuentame.inegi.org.mx/explora/geografia/division_territorial/",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Veracruz de Ignacio de la Llave",
+          "status": "not-assessed",
+          "reason": "Federal entity screening target only. No state/local privacy, health/professional, consumer, accessibility, emergency, municipal/alcaldía or territorial applicability review performed.",
+          "source": "https://cuentame.inegi.org.mx/explora/geografia/division_territorial/",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Yucatán",
+          "status": "not-assessed",
+          "reason": "Federal entity screening target only. No state/local privacy, health/professional, consumer, accessibility, emergency, municipal/alcaldía or territorial applicability review performed.",
+          "source": "https://cuentame.inegi.org.mx/explora/geografia/division_territorial/",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Zacatecas",
+          "status": "not-assessed",
+          "reason": "Federal entity screening target only. No state/local privacy, health/professional, consumer, accessibility, emergency, municipal/alcaldía or territorial applicability review performed.",
+          "source": "https://cuentame.inegi.org.mx/explora/geografia/division_territorial/",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        }
+      ],
+      "sourceDiscoveryCheckedOn": "2026-10-13",
+      "sourceDiscoveryNote": "Official-source discovery only; not a completeness claim, legal opinion, or determination that any cited rule applies. Mexico enacted a new private-sector personal-data law in March 2025 with later amendments; reconcile the current consolidated text, regulations, regulator/authority transition, effective dates, sensitive health-data duties, privacy notices, user rights, security, incident response and cross-border transfers with Mexican counsel. COFEPRIS publishes a SaMD registration guide and NOM-241 defines SaMD including mobile apps when the medical-purpose definition is met; classify the actual intended purpose, content claims, app functions and distribution with counsel before any Mexico release. INEGI identifies 32 federal entities; all state and municipal/alcaldía review remains open."
     },
     {
       "name": "Micronesia (Federated States of)",
