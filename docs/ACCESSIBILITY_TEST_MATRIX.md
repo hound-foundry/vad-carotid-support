@@ -21,7 +21,8 @@ This is an evidence form for manual review of the actual web build. It is intent
 | Support preferences | Add and remove a note |  | Keyboard and screen reader | The note is labelled, bounded and deletion is understandable |  |  |  |  | Not tested |
 | Personal card | Preview selected fields and delete |  | Keyboard and screen reader | Safety label, field labels and delete confirmation are available |  |  |  |  | Not tested |
 | Milestone card | Preview, export and delete |  | Keyboard and screen reader | Personal-story label and external-copy warning are available |  |  |  |  | Not tested |
-| Accessibility | Change text scale, contrast, theme and motion |  | 200% zoom / high contrast / reduced motion | Settings persist locally and focus remains visible |  |  |  |  | Not tested |
+| Accessibility | Change text scale, spacing, contrast, theme and motion |  | 200% zoom / high contrast / reduced motion | Settings persist locally, roomier layouts have visible effect and focus remains visible |  |  |  |  | Not tested |
+| Accessibility and guide | Turn on simplified reading |  | Screen reader / text enlargement | A guide uses one section at a time and larger text without hiding safety or source limits |  |  |  |  | Not tested |
 | Print | Print a guide or card |  | Print preview | Text is readable, urgent/safety labels remain visible and controls are omitted |  |  |  |  | Not tested |
 | Narrow layout | Complete a core task |  | Mobile viewport | No horizontal scrolling; targets remain reachable |  |  |  |  | Not tested |
 
