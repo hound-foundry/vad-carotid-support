@@ -2,6 +2,7 @@ import { Link } from "expo-router";
 import type { ReactNode } from "react";
 import { Pressable, ScrollView, StyleSheet, Text, View } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
+import { useAccessibility } from "../features/accessibility/AccessibilityProvider";
 
 export const palette = {
   ink: "#183B3B",
@@ -19,7 +20,8 @@ export const palette = {
 };
 
 export function AppPage({ children, wide = false }: { children: ReactNode; wide?: boolean }) {
-  return <SafeAreaView style={styles.safe} edges={["bottom"]}><Pressable accessibilityRole="link" accessibilityLabel="Skip to main content" nativeID="skip-to-content" style={styles.skipLink} onPress={() => { if (typeof document !== "undefined") document.getElementById("main-content")?.focus(); }}><Text style={styles.skipText}>Skip to main content</Text></Pressable><ScrollView nativeID="main-content" accessible contentContainerStyle={[styles.page, wide && styles.wide]}>{children}<SiteFooter /></ScrollView></SafeAreaView>;
+  const { settings } = useAccessibility();
+  return <SafeAreaView style={styles.safe} edges={["bottom"]}><Pressable accessibilityRole="link" accessibilityLabel="Skip to main content" nativeID="skip-to-content" style={styles.skipLink} onPress={() => { if (typeof document !== "undefined") document.getElementById("main-content")?.focus(); }}><Text style={styles.skipText}>Skip to main content</Text></Pressable><ScrollView nativeID="main-content" accessible contentContainerStyle={[styles.page, settings.spacing === "roomy" && styles.pageRoomy, wide && styles.wide]}>{children}<SiteFooter /></ScrollView></SafeAreaView>;
 }
 
 export function BackHome() {
@@ -27,7 +29,8 @@ export function BackHome() {
 }
 
 export function PageHeading({ eyebrow, title, summary }: { eyebrow: string; title: string; summary: string }) {
-  return <View style={styles.heading}><Text style={styles.eyebrow}>{eyebrow.toUpperCase()}</Text><Text accessibilityRole="header" style={styles.title}>{title}</Text><Text style={styles.summary}>{summary}</Text></View>;
+  const { settings } = useAccessibility();
+  return <View style={[styles.heading, settings.spacing === "roomy" && styles.headingRoomy]}><Text style={styles.eyebrow}>{eyebrow.toUpperCase()}</Text><Text accessibilityRole="header" style={styles.title}>{title}</Text><Text style={[styles.summary, settings.spacing === "roomy" && styles.summaryRoomy]}>{summary}</Text></View>;
 }
 
 export function DraftNotice() {
@@ -35,11 +38,13 @@ export function DraftNotice() {
 }
 
 export function Card({ title, children }: { title: string; children: ReactNode }) {
-  return <View style={styles.card}><Text accessibilityRole="header" aria-level={2} style={styles.cardTitle}>{title}</Text>{children}</View>;
+  const { settings } = useAccessibility();
+  return <View style={[styles.card, settings.spacing === "roomy" && styles.cardRoomy]}><Text accessibilityRole="header" aria-level={2} style={styles.cardTitle}>{title}</Text>{children}</View>;
 }
 
 export function Body({ children }: { children: ReactNode }) {
-  return <Text style={styles.body}>{children}</Text>;
+  const { settings } = useAccessibility();
+  return <Text style={[styles.body, settings.spacing === "roomy" && styles.bodyRoomy]}>{children}</Text>;
 }
 
 function SiteFooter() {
@@ -59,14 +64,17 @@ const styles = StyleSheet.create({
   skipLink: { position: "absolute", zIndex: 10, top: 4, left: 8, minHeight: 44, paddingHorizontal: 12, justifyContent: "center", backgroundColor: palette.ink, borderRadius: 8, opacity: 0 },
   skipText: { color: palette.white, fontSize: 14, fontWeight: "800" },
   page: { width: "100%", maxWidth: 920, alignSelf: "center", paddingHorizontal: 24, paddingBottom: 56 },
+  pageRoomy: { paddingHorizontal: 28, paddingBottom: 72 },
   wide: { maxWidth: 1120 },
   backLink: { minHeight: 44, alignSelf: "flex-start", flexDirection: "row", alignItems: "center", gap: 9 },
   backArrow: { color: palette.teal, fontSize: 17 },
   back: { color: palette.tealDark, fontSize: 14, fontWeight: "700" },
   heading: { paddingTop: 16, paddingBottom: 20 },
+  headingRoomy: { paddingTop: 22, paddingBottom: 28 },
   eyebrow: { color: palette.tealDark, fontSize: 11, fontWeight: "800", letterSpacing: 1.65 },
   title: { marginTop: 11, color: palette.ink, fontFamily: "Georgia", fontSize: 32, lineHeight: 40, fontWeight: "600" },
   summary: { marginTop: 10, color: palette.text, fontSize: 16, lineHeight: 25, maxWidth: 720 },
+  summaryRoomy: { lineHeight: 29 },
   notice: { flexDirection: "row", alignItems: "flex-start", gap: 12, padding: 16, borderRadius: 14, backgroundColor: palette.alert, borderColor: "#E9CFC3", borderWidth: 1, marginBottom: 18 },
   noticeMark: { width: 23, height: 23, borderRadius: 12, backgroundColor: "#F0D5C8", alignItems: "center", justifyContent: "center", marginTop: 1 },
   noticeMarkText: { color: palette.alertInk, fontSize: 14, fontWeight: "800" },
@@ -74,8 +82,10 @@ const styles = StyleSheet.create({
   noticeTitle: { color: palette.alertInk, fontSize: 14, lineHeight: 20, fontWeight: "800" },
   noticeBody: { marginTop: 5, color: "#704D42", fontSize: 13, lineHeight: 20 },
   card: { backgroundColor: palette.white, borderColor: palette.line, borderWidth: 1, borderRadius: 15, padding: 18, marginBottom: 13 },
+  cardRoomy: { padding: 23, marginBottom: 18 },
   cardTitle: { color: palette.ink, fontSize: 17, lineHeight: 24, fontWeight: "700", marginBottom: 8 },
   body: { color: palette.text, fontSize: 15, lineHeight: 24, marginTop: 7 },
+  bodyRoomy: { lineHeight: 29, marginTop: 11 },
   footer: { marginTop: 28, paddingBottom: 4 },
   footerRule: { height: 1, backgroundColor: palette.line },
   footerText: { marginTop: 13, color: palette.muted, fontSize: 12, lineHeight: 19 },
