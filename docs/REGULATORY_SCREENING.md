@@ -96,6 +96,8 @@ Botswana source discovery (13 October 2026) now records the 2024 data-protection
 
 Azerbaijan source discovery (13 October 2026) now records official personal-data law materials, Ministry of Health medical-equipment information, and Ministry of Emergency Situations 112 guidance. These are source leads only. Azerbaijan remains blocked pending qualified review of Azerbaijani-, Russian- and English-language national privacy, medical-software, accessibility, emergency and distribution requirements.
 
+Bangladesh source discovery (13 October 2026) now records the 2026 Personal Data Protection Act, government privacy material, Directorate General of Drug Administration medical-device guidance and database, and Bangladesh Police emergency-service guidance. These are source leads only. Bangladesh remains blocked pending qualified review of Bangla- and English-language national privacy, medical-software, accessibility, emergency and distribution requirements.
+
 ### Platform distribution policies (not legislation)
 
 | Platform | Official policy source | Release work still needed |

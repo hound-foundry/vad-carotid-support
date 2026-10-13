@@ -3216,8 +3216,50 @@
       "release": "blocked",
       "isoAlpha2": "BD",
       "reviewOwner": null,
-      "lastChecked": null,
-      "officialSources": [],
+      "lastChecked": "2026-10-13",
+      "officialSources": [
+        {
+          "title": "Personal Data Protection Act 2026",
+          "url": "https://ictd.gov.bd/pages/laws/%E0%A6%AC%E0%A7%8D%E0%A6%AF%E0%A6%95%E0%A7%8D%E0%A6%A4%E0%A6%BF%E0%A6%97%E0%A6%A4-%E0%A6%89%E0%A6%AA%E0%A6%BE%E0%A6%A4%E0%A7%8D%E0%A6%A4-%E0%A6%B8%E0%A7%81%E0%A6%B0%E0%A6%95%E0%A7%8D%E0%A6%B7%E0%A6%BE-%E0%A6%86%E0%A6%87%E0%A6%A8-%E0%A7%A2%E0%A7%A6%E0%A7%A8%E0%A7%AC-70is1t-69df5ba2210b1799cc640412",
+          "authority": "Information and Communication Technology Division, Bangladesh",
+          "sourceType": "privacy-law",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Legislative Division privacy policy",
+          "url": "https://legislativediv.gov.bd/pages/static-pages/694032e435ce18e1c0563f55",
+          "authority": "Legislative and Parliamentary Affairs Division, Bangladesh",
+          "sourceType": "privacy-guidance",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Medical-device registration guidelines",
+          "url": "https://dgda.gov.bd/sites/default/files/files/dgda.portal.gov.bd/policies/802ec167_9ba7_4f1b_adde_88871d797f08/2024-02-15-08-52-970321e5d385df48394bdd2d06110efa.pdf",
+          "authority": "Directorate General of Drug Administration, Bangladesh",
+          "sourceType": "medical-device-regulator",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Imported medical-device database",
+          "url": "https://info.dgda.gov.bd/",
+          "authority": "Directorate General of Drug Administration, Bangladesh",
+          "sourceType": "medical-device-registration",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "National emergency service 999",
+          "url": "https://www.police.gov.bd/index.php/en/citizen_charter",
+          "authority": "Bangladesh Police",
+          "sourceType": "emergency-guidance",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        }
+      ],
+      "sourceDiscoveryCheckedOn": "2026-10-13",
       "reviewAreas": [
         {
           "area": "privacy-and-health-data",
