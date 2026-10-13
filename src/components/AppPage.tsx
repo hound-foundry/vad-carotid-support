@@ -19,7 +19,7 @@ export const palette = {
 };
 
 export function AppPage({ children, wide = false }: { children: ReactNode; wide?: boolean }) {
-  return <SafeAreaView style={styles.safe} edges={["bottom"]}><ScrollView contentContainerStyle={[styles.page, wide && styles.wide]}>{children}</ScrollView></SafeAreaView>;
+  return <SafeAreaView style={styles.safe} edges={["bottom"]}><Pressable accessibilityRole="link" accessibilityLabel="Skip to main content" nativeID="skip-to-content" style={styles.skipLink} onPress={() => { if (typeof document !== "undefined") document.getElementById("main-content")?.focus(); }}><Text style={styles.skipText}>Skip to main content</Text></Pressable><ScrollView nativeID="main-content" accessible contentContainerStyle={[styles.page, wide && styles.wide]}>{children}</ScrollView></SafeAreaView>;
 }
 
 export function BackHome() {
@@ -44,6 +44,8 @@ export function Body({ children }: { children: ReactNode }) {
 
 const styles = StyleSheet.create({
   safe: { flex: 1, backgroundColor: palette.paper },
+  skipLink: { position: "absolute", zIndex: 10, top: 4, left: 8, minHeight: 44, paddingHorizontal: 12, justifyContent: "center", backgroundColor: palette.ink, borderRadius: 8, opacity: 0 },
+  skipText: { color: palette.white, fontSize: 14, fontWeight: "800" },
   page: { width: "100%", maxWidth: 920, alignSelf: "center", paddingHorizontal: 24, paddingBottom: 56 },
   wide: { maxWidth: 1120 },
   backLink: { minHeight: 44, alignSelf: "flex-start", flexDirection: "row", alignItems: "center", gap: 9 },
