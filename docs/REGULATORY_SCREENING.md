@@ -94,6 +94,8 @@ Chile source discovery (13 October 2026) now records Council for Transparency pr
 
 Botswana source discovery (13 October 2026) now records the 2024 data-protection bill, government privacy notice, Ministry of Health emergency-services material, and official ambulance guidance. These are source leads only. Botswana remains blocked pending qualified review of English-language national privacy, medical-software, accessibility, emergency and distribution requirements.
 
+Azerbaijan source discovery (13 October 2026) now records official personal-data law materials, Ministry of Health medical-equipment information, and Ministry of Emergency Situations 112 guidance. These are source leads only. Azerbaijan remains blocked pending qualified review of Azerbaijani-, Russian- and English-language national privacy, medical-software, accessibility, emergency and distribution requirements.
+
 ### Platform distribution policies (not legislation)
 
 | Platform | Official policy source | Release work still needed |

@@ -2769,8 +2769,50 @@
       "release": "blocked",
       "isoAlpha2": "AZ",
       "reviewOwner": null,
-      "lastChecked": null,
-      "officialSources": [],
+      "lastChecked": "2026-10-13",
+      "officialSources": [
+        {
+          "title": "Law on Personal Data",
+          "url": "https://mincom.gov.az/en/media-en/news/28-january-data-protection-day1140",
+          "authority": "Ministry of Digital Development and Transport, Azerbaijan",
+          "sourceType": "privacy-law",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Personal data law text",
+          "url": "https://idp.gov.az/az/law/143/parent/15",
+          "authority": "State Agency for Special Communication and Information Security, Azerbaijan",
+          "sourceType": "privacy-regulator",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Ministry of Health international cooperation and medical equipment",
+          "url": "https://sehiyye.gov.az/en/nazirlik/beyn-lxalq-m-kdasliq/beynelxalq-emekdasliq/",
+          "authority": "Ministry of Health, Azerbaijan",
+          "sourceType": "health-regulator",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Ministry of Emergency Situations 112 hotline",
+          "url": "https://fhn.gov.az/en/education/112-call-center",
+          "authority": "Ministry of Emergency Situations, Azerbaijan",
+          "sourceType": "emergency-guidance",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Emergency services and 112 hotline",
+          "url": "https://fhn.gov.az/en/",
+          "authority": "Ministry of Emergency Situations, Azerbaijan",
+          "sourceType": "emergency-services",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        }
+      ],
+      "sourceDiscoveryCheckedOn": "2026-10-13",
       "reviewAreas": [
         {
           "area": "privacy-and-health-data",
