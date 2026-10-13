@@ -6962,8 +6962,50 @@
       "release": "blocked",
       "isoAlpha2": "CM",
       "reviewOwner": null,
-      "lastChecked": null,
-      "officialSources": [],
+      "lastChecked": "2026-10-13",
+      "officialSources": [
+        {
+          "title": "Personal data protection law 2024",
+          "url": "https://prc.cm/en/multimedia/documents/10271-law-n-2024-017-of-23-12-2024-web",
+          "authority": "Presidency of the Republic of Cameroon",
+          "sourceType": "privacy-law",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Data-safety law implementation context",
+          "url": "https://www.minpostel.gov.cm/index.php/fr/actualites/501-data-safety",
+          "authority": "Ministry of Posts and Telecommunications, Cameroon",
+          "sourceType": "privacy-guidance",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Public-health emergency coordination centre",
+          "url": "https://www.spm.gov.cm/site/?q=fr%2Fcontent%2Farrete-n%C2%B0-051pm-du-12-mai-2020-portant-mise-en-place-du-centre-de-coordination-des",
+          "authority": "Prime Minister’s Office, Cameroon",
+          "sourceType": "health-emergency-governance",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Official emergency numbers",
+          "url": "https://minat.gov.cm/",
+          "authority": "Ministry of Territorial Administration, Cameroon",
+          "sourceType": "emergency-guidance",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Gendarmerie emergency contact 113",
+          "url": "https://mindef.gov.cm/gendarmerie-nationale/gendarmerie-nationale/",
+          "authority": "National Gendarmerie, Cameroon",
+          "sourceType": "emergency-services",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        }
+      ],
+      "sourceDiscoveryCheckedOn": "2026-10-13",
       "reviewAreas": [
         {
           "area": "privacy-and-health-data",
