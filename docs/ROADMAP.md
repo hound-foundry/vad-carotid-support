@@ -42,6 +42,7 @@ The glossary and print controls are implemented, but their presence does not cou
 - [x] Record initial dated Japan official-source leads and a 47-prefecture screening queue; municipalities, ordinance-designated cities, Japanese-text legal review and local emergency checks remain outstanding.
 - [x] Record initial dated mainland China official-source leads and a 31-provincial-level screening queue; local-level rules, hosting, app filing, cross-border data, access and specialist legal review remain outstanding.
 - [x] Record initial dated Hong Kong SAR official-source leads and an 18-district screening queue; current law verification, medical-device framework transition, local review and emergency-language checks remain outstanding.
+- [x] Record initial dated Macao SAR official-source leads and a seven-parish territorial queue; primary-language legal review, phased medical-device regime, applicability and release reviews remain outstanding.
 - [x] Record dated Lithuania official-source leads and a 10-county/60-municipality screening queue; all national, local and release reviews remain unassessed.
 - [x] Record initial dated Ukraine source leads and constitutional top-level screening queue; all national, local and release reviews remain unassessed.
 - [ ] Resolve the remaining dependency alerts or record a reviewed mitigation and explicit release decision; see [dependency security review](DEPENDENCY_SECURITY.md).

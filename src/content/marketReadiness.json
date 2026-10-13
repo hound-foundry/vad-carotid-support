@@ -7329,7 +7329,208 @@
       "isoAlpha2": "MO",
       "reviewOwner": null,
       "lastChecked": null,
-      "officialSources": [],
+      "officialSources": [
+        {
+          "title": "Personal Data Protection Act (Law No. 8/2005), official Chinese text",
+          "url": "https://bo.dsaj.gov.mo/bo/i/2005/34/lei08_cn.asp?printer=1",
+          "authority": "Macao SAR Official Gazette / Legislative Affairs Bureau",
+          "sourceType": "legislation",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Personal Data Protection Act: official English translation, marked unofficial and reference-only",
+          "url": "https://www.dspdp.gov.mo/file/Laws%20and%20Regulations/%E5%80%8B%E4%BA%BA%E8%B3%87%E6%96%99%E4%BF%9D%E8%AD%B7%E6%B3%95_EN.pdf",
+          "authority": "Personal Data Protection Bureau (PDPB)",
+          "sourceType": "legislation-english-reference",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Personal Data Protection Bureau: authority and responsibility under Law No. 8/2005",
+          "url": "https://www.dspdp.gov.mo/en/welcome.html",
+          "authority": "PDPB",
+          "sourceType": "regulator-guidance",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "PDPB legislation and regulatory material index",
+          "url": "https://www.dspdp.gov.mo/en/relevant_laws.html",
+          "authority": "PDPB",
+          "sourceType": "regulator-legislation-index",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Administrative Regulation No. 42/2023: Organization and Operation of PDPB",
+          "url": "https://www.dspdp.gov.mo/en/welcome.html",
+          "authority": "PDPB",
+          "sourceType": "regulation",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Law No. 12/2025: Supervision and Administration Regime for Medical Devices",
+          "url": "https://bo.io.gov.mo/isapi/go.asp?d=lei-12-2025cn",
+          "authority": "Macao SAR Official Gazette / Legislative Assembly",
+          "sourceType": "legislation",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Medical-device regime portal: classification, implementation dates and technical instruments",
+          "url": "https://medicaldevices.isaf.gov.mo/",
+          "authority": "Pharmaceutical Administration Bureau (ISAF)",
+          "sourceType": "regulator-guidance",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Administrative Regulation No. 11/2026 implementing the medical-device regime",
+          "url": "https://medicaldevices.isaf.gov.mo/",
+          "authority": "ISAF",
+          "sourceType": "regulation",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "ISAF independent software medical-device manufacturing quality requirements",
+          "url": "https://medicaldevices.isaf.gov.mo/",
+          "authority": "ISAF",
+          "sourceType": "regulator-guidance",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Macao Government Portal: registration process for Class IIb and III medical devices",
+          "url": "https://www.gov.mo/en/services/ps-2223/",
+          "authority": "ISAF / Macao SAR Government",
+          "sourceType": "regulator-service-guidance",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Law No. 9/2021: Consumer Rights and Interests Protection Law",
+          "url": "https://bo.dsaj.gov.mo/bo/i/2021/28/lei09_cn.asp",
+          "authority": "Macao SAR Official Gazette / Legislative Affairs Bureau",
+          "sourceType": "legislation",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Government summary of Consumer Rights and Interests Protection Law and scope",
+          "url": "https://www.gov.mo/en/news/180149/?noredirect=en_US",
+          "authority": "Consumer Council / Macao SAR Government",
+          "sourceType": "regulator-guidance",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Decree-Law No. 33/99/M on disability prevention, rehabilitation and social integration, as adapted by Law No. 27/2024",
+          "url": "https://bo.dsaj.gov.mo/bo/i/99/29/declei33_cn.asp",
+          "authority": "Macao SAR Official Gazette / Legislative Affairs Bureau",
+          "sourceType": "legislation",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "UN Convention on the Rights of Persons with Disabilities: Macao legal journal text and digital access provisions",
+          "url": "https://www.dsaj.gov.mo/download/lawjournal/CRPD-2013En.pdf",
+          "authority": "Legal Affairs Bureau",
+          "sourceType": "treaty-and-government-guidance",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Law No. 43/99/M: Copyright and Related Rights",
+          "url": "https://bo.dsaj.gov.mo/bo/i/99/34/lei43_cn.asp",
+          "authority": "Macao SAR Official Gazette / Legislative Affairs Bureau",
+          "sourceType": "legislation",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Macao Child Protection Law No. 6/94/M",
+          "url": "https://bo.dsaj.gov.mo/bo/i/94/32/lei06_cn.asp",
+          "authority": "Macao SAR Official Gazette / Legislative Affairs Bureau",
+          "sourceType": "legislation",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Law No. 7/89/M: Advertising activity",
+          "url": "https://bo.dsaj.gov.mo/bo/i/89/33/lei07_cn.asp",
+          "authority": "Macao SAR Official Gazette / Legislative Affairs Bureau",
+          "sourceType": "legislation",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Emergency Services Hotline: 999; 110 and 112 route to 999 in Macao",
+          "url": "https://www.fsm.gov.mo/PSP/cht/poster/poster_D_1130.pdf",
+          "authority": "Public Security Police Force / Security Forces of Macao",
+          "sourceType": "emergency-authority-guidance",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Macao Government official law index and language status notice",
+          "url": "https://www.gov.mo/en/laws/",
+          "authority": "Macao SAR Government",
+          "sourceType": "official-law-publication-guidance",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Basic Law of the Macao Special Administrative Region",
+          "url": "https://bo.io.gov.mo/bo/i/1999/leibasica/index_uk.asp",
+          "authority": "Macao SAR Official Gazette",
+          "sourceType": "constitutional-source",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Macao Government official language and public information index",
+          "url": "https://www.gov.mo/en/laws/",
+          "authority": "Macao SAR Government",
+          "sourceType": "official-language-guidance",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Government source confirming Macao’s seven parishes",
+          "url": "https://www.gov.mo/en/news/89358/",
+          "authority": "Macao Government Tourism Office",
+          "sourceType": "official-territorial-register",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Income tax and nonprofit / charitable-status legal discovery portal",
+          "url": "https://www.dsf.gov.mo/",
+          "authority": "Financial Services Bureau",
+          "sourceType": "government-guidance",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Apple App Review Guidelines",
+          "url": "https://developer.apple.com/app-store/review/guidelines/",
+          "authority": "Apple",
+          "sourceType": "platform-policy",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Google Play Health Content and Services policy",
+          "url": "https://support.google.com/googleplay/android-developer/answer/16679511?hl=en-GB",
+          "authority": "Google Play",
+          "sourceType": "platform-policy",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        }
+      ],
       "reviewAreas": [
         {
           "area": "privacy-and-health-data",
@@ -7444,7 +7645,66 @@
           "reviewer": null
         }
       ],
-      "subnationalAreas": []
+      "subnationalAreas": [
+        {
+          "name": "Nossa Senhora de Fátima",
+          "status": "not-assessed",
+          "reason": "Parish-level territorial screening target only; parishes are not treated as separate jurisdictions. No local or territory-wide applicability review performed.",
+          "source": "https://www.gov.mo/en/news/89358/",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Santo António",
+          "status": "not-assessed",
+          "reason": "Parish-level territorial screening target only; parishes are not treated as separate jurisdictions. No local or territory-wide applicability review performed.",
+          "source": "https://www.gov.mo/en/news/89358/",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "São Lázaro",
+          "status": "not-assessed",
+          "reason": "Parish-level territorial screening target only; parishes are not treated as separate jurisdictions. No local or territory-wide applicability review performed.",
+          "source": "https://www.gov.mo/en/news/89358/",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Sé",
+          "status": "not-assessed",
+          "reason": "Parish-level territorial screening target only; parishes are not treated as separate jurisdictions. No local or territory-wide applicability review performed.",
+          "source": "https://www.gov.mo/en/news/89358/",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "São Lourenço",
+          "status": "not-assessed",
+          "reason": "Parish-level territorial screening target only; parishes are not treated as separate jurisdictions. No local or territory-wide applicability review performed.",
+          "source": "https://www.gov.mo/en/news/89358/",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Nossa Senhora do Carmo",
+          "status": "not-assessed",
+          "reason": "Parish-level territorial screening target only; parishes are not treated as separate jurisdictions. No local or territory-wide applicability review performed.",
+          "source": "https://www.gov.mo/en/news/89358/",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "São Francisco Xavier",
+          "status": "not-assessed",
+          "reason": "Parish-level territorial screening target only; parishes are not treated as separate jurisdictions. No local or territory-wide applicability review performed.",
+          "source": "https://www.gov.mo/en/news/89358/",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        }
+      ],
+      "sourceDiscoveryCheckedOn": "2026-10-13",
+      "sourceDiscoveryNote": "Initial Macao SAR source discovery, not legal advice or a market screen. All 14 legal review areas and national/subnational reviews remain not-assessed; release is blocked. The Government says English legal translations are references and the Chinese original is the official-language source (Portuguese may also be an authoritative language); qualified reviewers must verify controlling texts. Law No. 12/2025 medical-device regime took effect on 1 July 2026 in stages and expressly includes required computer software in its device definition; consult ISAF and local counsel to determine whether any actual app function meets that definition. Seven parishes are queued only as a territorial screening scaffold; they are not separate legal jurisdictions, and the full administrative and territorial applicability review remains open."
     },
     {
       "name": "Christmas Island",

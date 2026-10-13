@@ -257,6 +257,17 @@ assert.ok(hongKongRecord.subnationalAreas.every((area) => area.status === "not-a
 assert.ok(hongKongRecord.officialSources.some((source) => source.url === "https://www.elegislation.gov.hk/hk/cap486"), "Hong Kong PDPO source must remain visible");
 assert.ok(hongKongRecord.officialSources.some((source) => source.url === "https://www.dh.gov.hk/english/main/main_mdd/main_mdd.html"), "Hong Kong medical-device framework source must remain visible");
 assert.ok(hongKongRecord.officialSources.some((source) => source.url === "https://www.hkengage.gov.hk/en/essentials/basics/emergency-ambulance-services"), "Hong Kong emergency and accessibility route lead must remain visible");
+const macaoRecord = resources.countryRecords.find((country) => country.isoAlpha2 === "MO");
+assert.ok(macaoRecord && macaoRecord.legalReview.status === "not-assessed" && macaoRecord.subnationalReview.status === "not-assessed" && macaoRecord.release === "blocked", "Macao source discovery must not be mistaken for legal clearance");
+assert.equal(macaoRecord.sourceDiscoveryCheckedOn, "2026-10-13", "Macao source discovery needs its own dated record");
+assert.equal(macaoRecord.officialSources.length, 25, "Macao source leads should retain privacy, phased device, consumer, access, emergency and platform-policy inventory");
+assert.ok(macaoRecord.officialSources.every((source) => source.status === "source-lead-only" && source.checkedOn === "2026-10-13"), "Macao sources must remain dated source leads only");
+assert.equal(macaoRecord.reviewAreas.length, 14, "Every Macao legal review topic must remain explicit");
+assert.ok(macaoRecord.reviewAreas.every((area) => area.status === "not-assessed"), "Macao source discovery must not change a legal review area to assessed");
+assert.deepEqual(macaoRecord.subnationalAreas.map((area) => area.name), ["Nossa Senhora de Fátima", "Santo António", "São Lázaro", "Sé", "São Lourenço", "Nossa Senhora do Carmo", "São Francisco Xavier"], "Macao must retain all seven parish-level territorial targets");
+assert.ok(macaoRecord.subnationalAreas.every((area) => area.status === "not-assessed" && area.checkedOn === "2026-10-13" && area.reviewer === null), "Macao parish queue must not be mistaken for local legal clearance");
+assert.ok(macaoRecord.officialSources.some((source) => source.url === "https://bo.io.gov.mo/isapi/go.asp?d=lei-12-2025cn"), "Macao's current medical-device law must remain visible");
+assert.ok(macaoRecord.officialSources.some((source) => source.url === "https://www.dspdp.gov.mo/file/Laws%20and%20Regulations/%E5%80%8B%E4%BA%BA%E8%B3%87%E6%96%99%E4%BF%9D%E8%AD%B7%E6%B3%95_EN.pdf"), "Macao privacy-law translation caveat must remain visible");
 assert.equal(community.candidates.length, 3, "All three user-provided community candidates must be tracked");
 assert.ok(community.candidates.every((candidate) => candidate.status === "pending-verification" && /^\d{4}-\d{2}-\d{2}$/.test(candidate.lastChecked) && candidate.verificationNote?.trim()), "Unverified community candidates must remain hidden with a dated verification record");
 assert.ok(community.candidates.every((candidate) => /^https:\/\/www\.facebook\.com\/groups\/[0-9]+$/.test(candidate.url)), "The community verification queue may contain group links only");
