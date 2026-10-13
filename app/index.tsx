@@ -19,6 +19,7 @@ export default function HomeScreen() {
         <View style={styles.kickerRow}><View style={styles.kickerDot} /><Text style={styles.kicker}>A SUPPORTIVE PLACE TO BEGIN</Text></View>
         <Text accessibilityRole="header" style={styles.heroTitle}>Start with the question you have today.</Text>
         <Text style={styles.heroBody}>Free, open-source information and appointment preparation for adults affected by vertebral or carotid artery dissection, and the people beside them.</Text>
+        <Text style={styles.heroTrust}>No account · no analytics · no backend health-data store</Text>
         <Text style={styles.heroFoot}>Take one step. Come back when you’re ready for another.</Text>
       </View>
       <View style={styles.routeCard}>
@@ -84,7 +85,7 @@ const styles = StyleSheet.create({
   hero: { marginTop: 28, gap: 22 }, heroDesktop: { flexDirection: "row", alignItems: "stretch", gap: 28 },
   heroCopy: { padding: 22, borderRadius: 21, backgroundColor: palette.mint, borderWidth: 1, borderColor: "#D0E2DD" }, heroCopyDesktop: { flex: 0.92, justifyContent: "center", paddingHorizontal: 31, paddingVertical: 34 },
   kickerRow: { flexDirection: "row", alignItems: "center", gap: 8 }, kicker: { color: palette.tealDark, fontSize: 10, letterSpacing: 1.45, fontWeight: "800" }, kickerDot: { width: 7, height: 7, borderRadius: 4, backgroundColor: palette.teal },
-  heroTitle: { maxWidth: 540, marginTop: 16, color: palette.ink, fontFamily: "Georgia", fontSize: 37, lineHeight: 45, fontWeight: "600" }, heroBody: { maxWidth: 520, marginTop: 14, color: palette.text, fontSize: 16, lineHeight: 26 }, heroFoot: { marginTop: 20, color: palette.tealDark, fontSize: 13, lineHeight: 19, fontWeight: "700" },
+  heroTitle: { maxWidth: 540, marginTop: 16, color: palette.ink, fontFamily: "Georgia", fontSize: 37, lineHeight: 45, fontWeight: "600" }, heroBody: { maxWidth: 520, marginTop: 14, color: palette.text, fontSize: 16, lineHeight: 26 }, heroTrust: { marginTop: 14, color: palette.tealDark, fontSize: 12, lineHeight: 19, fontWeight: "700" }, heroFoot: { marginTop: 20, color: palette.tealDark, fontSize: 13, lineHeight: 19, fontWeight: "700" },
   routeCard: { flex: 1, minWidth: 0, paddingHorizontal: 21, paddingTop: 20, paddingBottom: 12, borderRadius: 21, borderWidth: 1, borderColor: palette.line, backgroundColor: palette.white }, routeCardHead: { paddingBottom: 9 }, routeTitle: { color: palette.ink, fontSize: 17, lineHeight: 23, fontWeight: "800" }, routeCaption: { marginTop: 3, color: palette.muted, fontSize: 12, lineHeight: 18 },
   routeList: { position: "relative" }, routeSpine: { position: "absolute", top: 14, bottom: 30, left: 8, width: 2, backgroundColor: "#B8D4CE" },
   routeLink: { display: "flex" }, routeItem: { display: "flex", position: "relative", minHeight: 76, flexDirection: "row", alignItems: "center", paddingVertical: 11, paddingLeft: 37, paddingRight: 3, borderTopWidth: 1, borderTopColor: "#EDF2F0", gap: 9 },
