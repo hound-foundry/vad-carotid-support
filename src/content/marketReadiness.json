@@ -17113,7 +17113,152 @@
       "isoAlpha2": "IN",
       "reviewOwner": null,
       "lastChecked": null,
-      "officialSources": [],
+      "officialSources": [
+        {
+          "title": "Digital Personal Data Protection Act, 2023",
+          "url": "https://www.indiacode.nic.in/indiacode/handle/123456789/22037?view_type=browse",
+          "authority": "India Code, Ministry of Law and Justice",
+          "sourceType": "central-legislation",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Digital Personal Data Protection Act commencement notification G.S.R. 843(E), 13 November 2025",
+          "url": "https://egazette.gov.in/WriteReadData/2025/267647.pdf",
+          "authority": "Ministry of Electronics and Information Technology; Gazette of India",
+          "sourceType": "gazette-commencement-notification",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Digital Personal Data Protection Rules, 2025, G.S.R. 846(E)",
+          "url": "https://www.meity.gov.in/static/uploads/2025/11/53450e6e5dc0bfa85ebd78686cadad39.pdf",
+          "authority": "Ministry of Electronics and Information Technology; Gazette of India",
+          "sourceType": "gazette-rules",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "MeitY Digital Personal Data Protection Rules 2025 file index, corrigendum and enforcement timeline",
+          "url": "https://www.meity.gov.in/documents/act-and-policies/digital-personal-data-protection-rules-2025-gDOxUjMtQWa",
+          "authority": "Ministry of Electronics and Information Technology",
+          "sourceType": "regulator-document-index",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Medical Devices Rules, 2017 and amendments index",
+          "url": "https://cdsco.gov.in/opencms/opencms/en/Acts-and-rules/Medical-Devices-Rules",
+          "authority": "Central Drugs Standard Control Organization (CDSCO)",
+          "sourceType": "medical-device-regulatory-index",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Guidance document on Medical Device Software under MDR-2017 (21 July 2026 listing)",
+          "url": "https://www.cdsco.gov.in/opencms/opencms/en/Medical-Device-Diagnostics/Medical-Device-Diagnostics/",
+          "authority": "CDSCO, Ministry of Health and Family Welfare",
+          "sourceType": "medical-software-guidance-index",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Medical device software classification under Medical Devices Rules 2017",
+          "url": "https://cdsco.gov.in/opencms/opencms/en/Medical-Device-Diagnostics/Medical-Device-Diagnostics/",
+          "authority": "CDSCO, Ministry of Health and Family Welfare",
+          "sourceType": "medical-software-classification-index",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Information Technology Act, 2000 (India Code text)",
+          "url": "https://www.indiacode.nic.in/bitstream/123456789/13116/1/it_act_2000_updated.pdf",
+          "authority": "India Code, Ministry of Law and Justice",
+          "sourceType": "central-legislation-transition-check",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Digital Personal Data Protection Act and rules: MeitY document index",
+          "url": "https://www.meity.gov.in/documents/act-and-policies",
+          "authority": "Ministry of Electronics and Information Technology",
+          "sourceType": "official-regulatory-document-index",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Consumer Protection Act, 2019",
+          "url": "https://www.indiacode.nic.in/indiacode/handle/123456789/21423?view_type=browse",
+          "authority": "India Code, Ministry of Law and Justice",
+          "sourceType": "central-legislation",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Consumer protection, misleading advertisement and dark-pattern guidelines index",
+          "url": "https://consumeraffairs.nic.in/acts-and-rules/consumer-protection/consumer-protection",
+          "authority": "Department of Consumer Affairs, Ministry of Consumer Affairs, Food & Public Distribution",
+          "sourceType": "official-regulatory-guidance-index",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Rights of Persons with Disabilities Act, 2016 and rules",
+          "url": "https://www.indiacode.nic.in/handle/123456789/2155?locale=en",
+          "authority": "India Code; Department of Empowerment of Persons with Disabilities",
+          "sourceType": "central-legislation-and-rules",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Guidelines for Indian Government Websites and Apps (GIGW 3.0): scope and objective",
+          "url": "https://guidelines.india.gov.in/scope-and-objective/",
+          "authority": "National Informatics Centre, Ministry of Electronics and Information Technology",
+          "sourceType": "government-guidance-scope-limited",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Juvenile Justice (Care and Protection of Children) Act, 2015",
+          "url": "https://www.indiacode.nic.in/bitstream/123456789/19022/1/juvenile_justice_%28care_and_protection_of_children%29_act%2C_2015_%282_of_2016%29.pdf",
+          "authority": "India Code, Ministry of Law and Justice",
+          "sourceType": "central-legislation",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Copyright Act, 1957",
+          "url": "https://www.indiacode.nic.in/indiacode/handle/123456789/1367?view_type=browse",
+          "authority": "India Code, Ministry of Law and Justice",
+          "sourceType": "central-legislation",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Emergency Response Support System (ERSS), nationwide 112",
+          "url": "https://www.mha.gov.in/en/commoncontent/emergency-response-support-system-erss",
+          "authority": "Ministry of Home Affairs",
+          "sourceType": "official-emergency-service-information",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Foreign Contribution (Regulation) Act, 2010",
+          "url": "https://www.indiacode.nic.in/indiacode/handle/123456789/18604?view_type=browse",
+          "authority": "India Code, Ministry of Law and Justice",
+          "sourceType": "central-legislation-funding-trigger",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "India state and union territory roster (official national portal)",
+          "url": "https://www.india.gov.in/calendar?date=2028-12-08",
+          "authority": "India Portal, National Informatics Centre",
+          "sourceType": "official-territorial-register",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        }
+      ],
       "reviewAreas": [
         {
           "area": "privacy-and-health-data",
@@ -17228,7 +17373,298 @@
           "reviewer": null
         }
       ],
-      "subnationalAreas": []
+      "subnationalAreas": [
+        {
+          "name": "Andhra Pradesh",
+          "status": "not-assessed",
+          "reason": "State-level screening target only. No review of state statutes/rules, professional or health requirements, consumer/accessibility rules, state emergency implementation, municipalities, territorial reach or conflicts performed.",
+          "source": "https://www.india.gov.in/calendar?date=2028-12-08",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Arunachal Pradesh",
+          "status": "not-assessed",
+          "reason": "State-level screening target only. No review of state statutes/rules, professional or health requirements, consumer/accessibility rules, state emergency implementation, municipalities, territorial reach or conflicts performed.",
+          "source": "https://www.india.gov.in/calendar?date=2028-12-08",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Assam",
+          "status": "not-assessed",
+          "reason": "State-level screening target only. No review of state statutes/rules, professional or health requirements, consumer/accessibility rules, state emergency implementation, municipalities, territorial reach or conflicts performed.",
+          "source": "https://www.india.gov.in/calendar?date=2028-12-08",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Bihar",
+          "status": "not-assessed",
+          "reason": "State-level screening target only. No review of state statutes/rules, professional or health requirements, consumer/accessibility rules, state emergency implementation, municipalities, territorial reach or conflicts performed.",
+          "source": "https://www.india.gov.in/calendar?date=2028-12-08",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Chhattisgarh",
+          "status": "not-assessed",
+          "reason": "State-level screening target only. No review of state statutes/rules, professional or health requirements, consumer/accessibility rules, state emergency implementation, municipalities, territorial reach or conflicts performed.",
+          "source": "https://www.india.gov.in/calendar?date=2028-12-08",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Goa",
+          "status": "not-assessed",
+          "reason": "State-level screening target only. No review of state statutes/rules, professional or health requirements, consumer/accessibility rules, state emergency implementation, municipalities, territorial reach or conflicts performed.",
+          "source": "https://www.india.gov.in/calendar?date=2028-12-08",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Gujarat",
+          "status": "not-assessed",
+          "reason": "State-level screening target only. No review of state statutes/rules, professional or health requirements, consumer/accessibility rules, state emergency implementation, municipalities, territorial reach or conflicts performed.",
+          "source": "https://www.india.gov.in/calendar?date=2028-12-08",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Haryana",
+          "status": "not-assessed",
+          "reason": "State-level screening target only. No review of state statutes/rules, professional or health requirements, consumer/accessibility rules, state emergency implementation, municipalities, territorial reach or conflicts performed.",
+          "source": "https://www.india.gov.in/calendar?date=2028-12-08",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Himachal Pradesh",
+          "status": "not-assessed",
+          "reason": "State-level screening target only. No review of state statutes/rules, professional or health requirements, consumer/accessibility rules, state emergency implementation, municipalities, territorial reach or conflicts performed.",
+          "source": "https://www.india.gov.in/calendar?date=2028-12-08",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Jharkhand",
+          "status": "not-assessed",
+          "reason": "State-level screening target only. No review of state statutes/rules, professional or health requirements, consumer/accessibility rules, state emergency implementation, municipalities, territorial reach or conflicts performed.",
+          "source": "https://www.india.gov.in/calendar?date=2028-12-08",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Karnataka",
+          "status": "not-assessed",
+          "reason": "State-level screening target only. No review of state statutes/rules, professional or health requirements, consumer/accessibility rules, state emergency implementation, municipalities, territorial reach or conflicts performed.",
+          "source": "https://www.india.gov.in/calendar?date=2028-12-08",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Kerala",
+          "status": "not-assessed",
+          "reason": "State-level screening target only. No review of state statutes/rules, professional or health requirements, consumer/accessibility rules, state emergency implementation, municipalities, territorial reach or conflicts performed.",
+          "source": "https://www.india.gov.in/calendar?date=2028-12-08",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Madhya Pradesh",
+          "status": "not-assessed",
+          "reason": "State-level screening target only. No review of state statutes/rules, professional or health requirements, consumer/accessibility rules, state emergency implementation, municipalities, territorial reach or conflicts performed.",
+          "source": "https://www.india.gov.in/calendar?date=2028-12-08",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Maharashtra",
+          "status": "not-assessed",
+          "reason": "State-level screening target only. No review of state statutes/rules, professional or health requirements, consumer/accessibility rules, state emergency implementation, municipalities, territorial reach or conflicts performed.",
+          "source": "https://www.india.gov.in/calendar?date=2028-12-08",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Manipur",
+          "status": "not-assessed",
+          "reason": "State-level screening target only. No review of state statutes/rules, professional or health requirements, consumer/accessibility rules, state emergency implementation, municipalities, territorial reach or conflicts performed.",
+          "source": "https://www.india.gov.in/calendar?date=2028-12-08",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Meghalaya",
+          "status": "not-assessed",
+          "reason": "State-level screening target only. No review of state statutes/rules, professional or health requirements, consumer/accessibility rules, state emergency implementation, municipalities, territorial reach or conflicts performed.",
+          "source": "https://www.india.gov.in/calendar?date=2028-12-08",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Mizoram",
+          "status": "not-assessed",
+          "reason": "State-level screening target only. No review of state statutes/rules, professional or health requirements, consumer/accessibility rules, state emergency implementation, municipalities, territorial reach or conflicts performed.",
+          "source": "https://www.india.gov.in/calendar?date=2028-12-08",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Nagaland",
+          "status": "not-assessed",
+          "reason": "State-level screening target only. No review of state statutes/rules, professional or health requirements, consumer/accessibility rules, state emergency implementation, municipalities, territorial reach or conflicts performed.",
+          "source": "https://www.india.gov.in/calendar?date=2028-12-08",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Odisha",
+          "status": "not-assessed",
+          "reason": "State-level screening target only. No review of state statutes/rules, professional or health requirements, consumer/accessibility rules, state emergency implementation, municipalities, territorial reach or conflicts performed.",
+          "source": "https://www.india.gov.in/calendar?date=2028-12-08",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Punjab",
+          "status": "not-assessed",
+          "reason": "State-level screening target only. No review of state statutes/rules, professional or health requirements, consumer/accessibility rules, state emergency implementation, municipalities, territorial reach or conflicts performed.",
+          "source": "https://www.india.gov.in/calendar?date=2028-12-08",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Rajasthan",
+          "status": "not-assessed",
+          "reason": "State-level screening target only. No review of state statutes/rules, professional or health requirements, consumer/accessibility rules, state emergency implementation, municipalities, territorial reach or conflicts performed.",
+          "source": "https://www.india.gov.in/calendar?date=2028-12-08",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Sikkim",
+          "status": "not-assessed",
+          "reason": "State-level screening target only. No review of state statutes/rules, professional or health requirements, consumer/accessibility rules, state emergency implementation, municipalities, territorial reach or conflicts performed.",
+          "source": "https://www.india.gov.in/calendar?date=2028-12-08",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Tamil Nadu",
+          "status": "not-assessed",
+          "reason": "State-level screening target only. No review of state statutes/rules, professional or health requirements, consumer/accessibility rules, state emergency implementation, municipalities, territorial reach or conflicts performed.",
+          "source": "https://www.india.gov.in/calendar?date=2028-12-08",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Telangana",
+          "status": "not-assessed",
+          "reason": "State-level screening target only. No review of state statutes/rules, professional or health requirements, consumer/accessibility rules, state emergency implementation, municipalities, territorial reach or conflicts performed.",
+          "source": "https://www.india.gov.in/calendar?date=2028-12-08",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Tripura",
+          "status": "not-assessed",
+          "reason": "State-level screening target only. No review of state statutes/rules, professional or health requirements, consumer/accessibility rules, state emergency implementation, municipalities, territorial reach or conflicts performed.",
+          "source": "https://www.india.gov.in/calendar?date=2028-12-08",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Uttar Pradesh",
+          "status": "not-assessed",
+          "reason": "State-level screening target only. No review of state statutes/rules, professional or health requirements, consumer/accessibility rules, state emergency implementation, municipalities, territorial reach or conflicts performed.",
+          "source": "https://www.india.gov.in/calendar?date=2028-12-08",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Uttarakhand",
+          "status": "not-assessed",
+          "reason": "State-level screening target only. No review of state statutes/rules, professional or health requirements, consumer/accessibility rules, state emergency implementation, municipalities, territorial reach or conflicts performed.",
+          "source": "https://www.india.gov.in/calendar?date=2028-12-08",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "West Bengal",
+          "status": "not-assessed",
+          "reason": "State-level screening target only. No review of state statutes/rules, professional or health requirements, consumer/accessibility rules, state emergency implementation, municipalities, territorial reach or conflicts performed.",
+          "source": "https://www.india.gov.in/calendar?date=2028-12-08",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Andaman and Nicobar Islands",
+          "status": "not-assessed",
+          "reason": "Union Territory/NCT screening target only. No review of applicable central and territory-specific instruments, professional or health requirements, consumer/accessibility rules, emergency implementation, municipalities, territorial reach or conflicts performed.",
+          "source": "https://www.india.gov.in/calendar?date=2028-12-08",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Chandigarh",
+          "status": "not-assessed",
+          "reason": "Union Territory/NCT screening target only. No review of applicable central and territory-specific instruments, professional or health requirements, consumer/accessibility rules, emergency implementation, municipalities, territorial reach or conflicts performed.",
+          "source": "https://www.india.gov.in/calendar?date=2028-12-08",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Dadra and Nagar Haveli and Daman and Diu",
+          "status": "not-assessed",
+          "reason": "Union Territory/NCT screening target only. No review of applicable central and territory-specific instruments, professional or health requirements, consumer/accessibility rules, emergency implementation, municipalities, territorial reach or conflicts performed.",
+          "source": "https://www.india.gov.in/calendar?date=2028-12-08",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Delhi (NCT)",
+          "status": "not-assessed",
+          "reason": "Union Territory/NCT screening target only. No review of applicable central and territory-specific instruments, professional or health requirements, consumer/accessibility rules, emergency implementation, municipalities, territorial reach or conflicts performed.",
+          "source": "https://www.india.gov.in/calendar?date=2028-12-08",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Jammu and Kashmir",
+          "status": "not-assessed",
+          "reason": "Union Territory/NCT screening target only. No review of applicable central and territory-specific instruments, professional or health requirements, consumer/accessibility rules, emergency implementation, municipalities, territorial reach or conflicts performed.",
+          "source": "https://www.india.gov.in/calendar?date=2028-12-08",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Ladakh",
+          "status": "not-assessed",
+          "reason": "Union Territory/NCT screening target only. No review of applicable central and territory-specific instruments, professional or health requirements, consumer/accessibility rules, emergency implementation, municipalities, territorial reach or conflicts performed.",
+          "source": "https://www.india.gov.in/calendar?date=2028-12-08",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Lakshadweep",
+          "status": "not-assessed",
+          "reason": "Union Territory/NCT screening target only. No review of applicable central and territory-specific instruments, professional or health requirements, consumer/accessibility rules, emergency implementation, municipalities, territorial reach or conflicts performed.",
+          "source": "https://www.india.gov.in/calendar?date=2028-12-08",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Puducherry",
+          "status": "not-assessed",
+          "reason": "Union Territory/NCT screening target only. No review of applicable central and territory-specific instruments, professional or health requirements, consumer/accessibility rules, emergency implementation, municipalities, territorial reach or conflicts performed.",
+          "source": "https://www.india.gov.in/calendar?date=2028-12-08",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        }
+      ],
+      "sourceDiscoveryCheckedOn": "2026-10-13",
+      "sourceDiscoveryNote": "Official source discovery only; applicability, completeness, current text, territorial reach and commencement remain for qualified legal review. The DPDP Act commencement Gazette (G.S.R. 843(E), 13 Nov 2025) phases provisions across publication, one year and eighteen months; the Rules Gazette (G.S.R. 846(E)) separately phases rules 1–2 and 17–21 on publication, rule 4 after one year, and rules 3, 5–16, 22–23 after eighteen months. Re-check corrigenda and effective dates at review. CDSCO lists final Medical Device Software guidance dated 21 Jul 2026; confirm its text and the app’s intended-purpose classification with Indian counsel. GIGW is expressly for government websites/apps and is recorded only as a limited accessibility reference. State/UTs and municipal/local requirements, operator/funding and data-flow facts remain open."
     },
     {
       "name": "Indonesia",
