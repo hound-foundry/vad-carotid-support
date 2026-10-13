@@ -547,3 +547,9 @@ This is an official-source discovery pass, not legal advice, a completeness clai
 | Platform and distribution | Apple App Store and Google Play developer policies (platform rules, not legislation) | Recheck current platform policies before any native release; do not treat store acceptance as legal clearance. |
 
 No Kenya release clearance is recorded. The national and all 47 county reviews remain blocked pending qualified review; subcounty/municipal rules and the app’s real operating model remain open.
+
+## Cambodia source-discovery snapshot — 13 October 2026
+
+This is an official-source discovery pass, not legal advice, a completeness claim or an applicability determination. Cambodia (`KH`) remains blocked; all 14 review areas and the national review remain `not-assessed`.
+
+Cambodia source discovery records the Ministry of Post and Telecommunications draft personal-data-protection material, Ministry of Health and Department of Drug and Food sources, and the Telecommunication Regulator’s laws and emergency-number pages. These are source leads only. Qualified review must resolve Khmer- and English-language national privacy, medical-software, accessibility, emergency, consumer, copyright, distribution and any subnational requirements before Cambodia-specific access or emergency details are enabled.

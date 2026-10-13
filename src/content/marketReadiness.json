@@ -6911,8 +6911,50 @@
       "release": "blocked",
       "isoAlpha2": "KH",
       "reviewOwner": null,
-      "lastChecked": null,
-      "officialSources": [],
+  "lastChecked": "2026-10-13",
+  "officialSources": [
+    {
+      "title": "Consultative workshop on the draft Law on Personal Data Protection",
+      "url": "https://mptc.gov.kh/en/2025/07/minister-chea-vandeth-presided-over-the-opening-ceremony-of-the-consultative-workshop-on-the-draft-law-on-personal-data-protection/",
+      "authority": "Ministry of Post and Telecommunications, Cambodia",
+      "sourceType": "privacy-law",
+      "checkedOn": "2026-10-13",
+      "status": "source-lead-only"
+    },
+    {
+      "title": "Ministry of Health",
+      "url": "https://moh.gov.kh/en/home",
+      "authority": "Ministry of Health, Cambodia",
+      "sourceType": "health-regulator",
+      "checkedOn": "2026-10-13",
+      "status": "source-lead-only"
+    },
+    {
+      "title": "Cambodia Pharmaceutical Online Registration System (CamPORS)",
+      "url": "https://ddf.moh.gov.kh/public/",
+      "authority": "Department of Drug and Food, Ministry of Health, Cambodia",
+      "sourceType": "medical-device-regulation",
+      "checkedOn": "2026-10-13",
+      "status": "source-lead-only"
+    },
+    {
+      "title": "Emergency numbers",
+      "url": "https://www.trc.gov.kh/en/resources/emergency-numbers/",
+      "authority": "Telecommunication Regulator of Cambodia",
+      "sourceType": "emergency-guidance",
+      "checkedOn": "2026-10-13",
+      "status": "source-lead-only"
+    },
+    {
+      "title": "Laws and regulations",
+      "url": "https://www.trc.gov.kh/en/laws-and-regulations/laws/",
+      "authority": "Telecommunication Regulator of Cambodia",
+      "sourceType": "digital-services-regulation",
+      "checkedOn": "2026-10-13",
+      "status": "source-lead-only"
+    }
+  ],
+  "sourceDiscoveryCheckedOn": "2026-10-13",
       "reviewAreas": [
         {
           "area": "privacy-and-health-data",
