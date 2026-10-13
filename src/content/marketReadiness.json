@@ -699,8 +699,50 @@
       "release": "blocked",
       "isoAlpha2": "AD",
       "reviewOwner": null,
-      "lastChecked": null,
-      "officialSources": [],
+      "lastChecked": "2026-10-13",
+      "officialSources": [
+        {
+          "title": "Andorran Data Protection Agency",
+          "url": "https://www.apda.ad/agencia",
+          "authority": "Agència Andorrana de Protecció de Dades",
+          "sourceType": "privacy-regulator",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Andorra personal-data protection law",
+          "url": "https://www.portaljuridicandorra.ad/R20040701A",
+          "authority": "Portal Jurídic d’Andorra",
+          "sourceType": "privacy-law",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Ministry of Health",
+          "url": "https://www.govern.ad/ca/ministeris-i-secretaries-d-estat/ministeri-de-salut",
+          "authority": "Government of Andorra",
+          "sourceType": "health-regulator",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Government privacy policy",
+          "url": "https://www.govern.ad/ca/politica-de-privacitat",
+          "authority": "Government of Andorra",
+          "sourceType": "privacy-guidance",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Emergency telephone numbers",
+          "url": "https://www.govern.ad/es/ministerios-y-secretarias-de-estado/ministerio-de-asuntos-exteriores/representaciones-diplomaticas/embajadas-d-andorra/mision-permanente-de-andorra-en-ginebra",
+          "authority": "Government of Andorra",
+          "sourceType": "emergency-guidance",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        }
+      ],
+      "sourceDiscoveryCheckedOn": "2026-10-13",
       "reviewAreas": [
         {
           "area": "privacy-and-health-data",

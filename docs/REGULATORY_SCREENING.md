@@ -74,6 +74,8 @@ Cyprus source discovery (13 October 2026) now records the Cyprus data-protection
 
 Luxembourg source discovery (13 October 2026) now records the National Data Protection Commission’s GDPR and health-data materials, Luxembourg Health Directorate medical-device guidance, and official 112 guidance. These are source leads only. Luxembourg remains blocked pending qualified review of French-, German- and Luxembourgish-language, EU and national privacy, medical-software, accessibility, emergency and distribution requirements.
 
+Andorra source discovery (13 October 2026) now records the Andorran Data Protection Agency, Andorran personal-data law, the Ministry of Health, government privacy information, and official emergency telephone guidance. These are source leads only. Andorra remains blocked pending qualified review of Catalan-language and national privacy, medical-software, accessibility, emergency and distribution requirements.
+
 ### Platform distribution policies (not legislation)
 
 | Platform | Official policy source | Release work still needed |
