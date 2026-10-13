@@ -577,3 +577,9 @@ Benin source discovery records the government law repository, the Personal Data 
 This is an official-source discovery pass, not legal advice, a completeness claim or an applicability determination. Bhutan (`BT`) remains blocked; all 14 review areas and the national review remain `not-assessed`.
 
 Bhutan source discovery records the Information, Communications and Media Act privacy provisions, Ministry of Health medical-device materials, Bhutan Food and Drug Authority device-registration guidance, Royal Bhutan Police emergency guidance, and the Attorney General’s acts index. Qualified review must resolve health-data and device-storage obligations, medical-software classification, Dzongkha and English accessibility, emergency-information publication, consumer and distribution rules, and any local requirements before Bhutan-specific access or emergency details are enabled.
+
+## Burkina Faso source-discovery snapshot — 13 October 2026
+
+This is an official-source discovery pass, not legal advice, a completeness claim or an applicability determination. Burkina Faso (`BF`) remains blocked; all 14 review areas and the national review remain `not-assessed`.
+
+Burkina Faso source discovery records the 2021 personal-data law, the Commission de l’Informatique et des Libertés, Ministry of Health and Public Hygiene materials on medical equipment, and government information about SAMU emergency services. The material is primarily French-language and local emergency coverage may vary; qualified legal, clinical, translation and accessibility review is required before Burkina Faso-specific access or emergency details are enabled.

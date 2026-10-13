@@ -6674,8 +6674,50 @@
       "release": "blocked",
       "isoAlpha2": "BF",
       "reviewOwner": null,
-      "lastChecked": null,
-      "officialSources": [],
+  "lastChecked": "2026-10-13",
+  "officialSources": [
+    {
+      "title": "Personal-data protection law No. 001-2021/AN",
+      "url": "https://www.an.bf/index.php/loip/143",
+      "authority": "Assemblée législative de transition, Burkina Faso",
+      "sourceType": "privacy-law",
+      "checkedOn": "2026-10-13",
+      "status": "source-lead-only"
+    },
+    {
+      "title": "Commission de l’Informatique et des Libertés",
+      "url": "https://cil.bf/?page_id=783",
+      "authority": "Commission de l’Informatique et des Libertés, Burkina Faso",
+      "sourceType": "privacy-regulator",
+      "checkedOn": "2026-10-13",
+      "status": "source-lead-only"
+    },
+    {
+      "title": "Ministry of Health and Public Hygiene",
+      "url": "https://www.sante.gov.bf/accueil",
+      "authority": "Ministry of Health and Public Hygiene, Burkina Faso",
+      "sourceType": "health-regulator",
+      "checkedOn": "2026-10-13",
+      "status": "source-lead-only"
+    },
+    {
+      "title": "Medical-equipment quality and calibration guidance",
+      "url": "https://www.sante.gov.bf/detail?cHash=b9c89091470055a016f89f5176165793&tx_news_pi1%5Baction%5D=detail&tx_news_pi1%5Bcontroller%5D=News&tx_news_pi1%5Bnews%5D=1024",
+      "authority": "Ministry of Health and Public Hygiene, Burkina Faso",
+      "sourceType": "medical-device-regulation",
+      "checkedOn": "2026-10-13",
+      "status": "source-lead-only"
+    },
+    {
+      "title": "SAMU emergency service",
+      "url": "https://gouvernement.gov.bf/actualites/sante-publique-le-service-daide-medicale-urgente-samu-desormais-operationnel-a-ouagadougou/",
+      "authority": "Service d’Information du Gouvernement, Burkina Faso",
+      "sourceType": "emergency-guidance",
+      "checkedOn": "2026-10-13",
+      "status": "source-lead-only"
+    }
+  ],
+  "sourceDiscoveryCheckedOn": "2026-10-13",
       "reviewAreas": [
         {
           "area": "privacy-and-health-data",
