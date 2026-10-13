@@ -595,3 +595,9 @@ Burundi source discovery records the 2026 personal-data protection law, Ministry
 This is an official-source discovery pass, not legal advice, a completeness claim or an applicability determination. Cabo Verde (`CV`) remains blocked; all 14 review areas and the national review remain `not-assessed`.
 
 Cabo Verde source discovery records the CNPD legislation index, the Ministry of Health, the national civil-protection service, and government emergency-number material. The sources show emergency-number information that requires reconciliation and current local verification before publication; Portuguese-language legal, clinical, translation and accessibility review is also required before Cabo Verde-specific access or emergency details are enabled.
+
+## Cayman Islands source-discovery snapshot — 13 October 2026
+
+This is an official-source discovery pass, not legal advice, a completeness claim or an applicability determination. Cayman Islands (`KY`) remains blocked; all 14 review areas and the territory review remain `not-assessed`.
+
+Cayman Islands source discovery records the Ombudsman’s Data Protection Act guidance, the 2021 Revision in the government legislation database, the Health Services Authority, the Health Practice Commission, and emergency-service cross-check material. Qualified review must resolve territorial applicability, health-data processing, international transfers, medical-software and professional-practice boundaries, accessibility, consumer and distribution requirements, and the territory’s emergency-information publication before Cayman-specific access is enabled.

@@ -7914,8 +7914,50 @@
       "release": "blocked",
       "isoAlpha2": "KY",
       "reviewOwner": null,
-      "lastChecked": null,
-      "officialSources": [],
+  "lastChecked": "2026-10-13",
+  "officialSources": [
+    {
+      "title": "Data Protection Act and guidance",
+      "url": "https://ombudsman.ky/data-protection",
+      "authority": "Cayman Islands Ombudsman",
+      "sourceType": "privacy-regulator",
+      "checkedOn": "2026-10-13",
+      "status": "source-lead-only"
+    },
+    {
+      "title": "Data Protection Act 2021 Revision",
+      "url": "https://legislation.gov.ky/cms/images/LEGISLATION/PRINCIPAL/2017/2017-0033/2017-0033_2021%20Revision.pdf",
+      "authority": "Cayman Islands Government legislation database",
+      "sourceType": "privacy-law",
+      "checkedOn": "2026-10-13",
+      "status": "source-lead-only"
+    },
+    {
+      "title": "Cayman Islands Health Services Authority",
+      "url": "https://www.hsa.ky/",
+      "authority": "Cayman Islands Health Services Authority",
+      "sourceType": "health-regulator",
+      "checkedOn": "2026-10-13",
+      "status": "source-lead-only"
+    },
+    {
+      "title": "Health Practice Commission",
+      "url": "https://gov.ky/web/dhrs/hpc",
+      "authority": "Department of Health Regulatory Services, Cayman Islands Government",
+      "sourceType": "health-professional-regulation",
+      "checkedOn": "2026-10-13",
+      "status": "source-lead-only"
+    },
+    {
+      "title": "Emergency services guidance",
+      "url": "https://www.gov.uk/foreign-travel-advice/cayman-islands/getting-help",
+      "authority": "UK Foreign, Commonwealth and Development Office (cross-check source)",
+      "sourceType": "emergency-guidance",
+      "checkedOn": "2026-10-13",
+      "status": "source-lead-only"
+    }
+  ],
+  "sourceDiscoveryCheckedOn": "2026-10-13",
       "reviewAreas": [
         {
           "area": "privacy-and-health-data",
