@@ -15884,8 +15884,50 @@
       "release": "blocked",
       "isoAlpha2": "GR",
       "reviewOwner": null,
-      "lastChecked": null,
-      "officialSources": [],
+      "lastChecked": "2026-10-13",
+      "officialSources": [
+        {
+          "title": "Hellenic Data Protection Authority",
+          "url": "https://www.dpa.gr/en",
+          "authority": "Hellenic Data Protection Authority",
+          "sourceType": "regulator-portal",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Greek personal-data legal framework",
+          "url": "https://www.dpa.gr/en/enimerwtiko/legal_framework/personal_data",
+          "authority": "Hellenic Data Protection Authority",
+          "sourceType": "official-legal-reference",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "National Medicines Organization",
+          "url": "https://www.eof.gr/en/",
+          "authority": "National Medicines Organization",
+          "sourceType": "competent-authority-portal",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "National emergency numbers",
+          "url": "https://www.gov.gr/en/sdg/healthcare/national-emergency-numbers",
+          "authority": "Greek public administration portal",
+          "sourceType": "official-emergency-guidance",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "112 emergency call guidance",
+          "url": "https://civilprotection.gov.gr/en/112/pote-pos-kalo",
+          "authority": "General Secretariat for Civil Protection",
+          "sourceType": "official-emergency-guidance",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        }
+      ],
+      "sourceDiscoveryCheckedOn": "2026-10-13",
       "reviewAreas": [
         {
           "area": "privacy-and-health-data",

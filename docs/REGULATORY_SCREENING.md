@@ -66,6 +66,8 @@ Denmark source discovery (13 October 2026) now records the Danish Data Protectio
 
 Finland source discovery (13 October 2026) now records the Office of the Data Protection Ombudsman, Fimea software and national-language guidance, and official 112 and preparedness information. These are source leads only. Finland remains blocked pending qualified review of Finnish and Swedish language requirements, EU and national privacy, medical-software, accessibility, emergency and distribution obligations.
 
+Greece source discovery (13 October 2026) now records the Hellenic Data Protection Authority, Greek personal-data legal references, the National Medicines Organization, and official emergency-number and 112 guidance. These are source leads only. Greece remains blocked pending qualified review of Greek-language, EU and national privacy, medical-software, accessibility, emergency and distribution requirements.
+
 ### Platform distribution policies (not legislation)
 
 | Platform | Official policy source | Release work still needed |
