@@ -48,6 +48,7 @@ The glossary and print controls are implemented, but their presence does not cou
 - [x] Record initial US federal health-app source leads and a 50-state/DC screening queue; territories and tribal/local law remain open, all applicability reviews remain unassessed, and US access is blocked.
 - [x] Record initial Canadian federal privacy, device, consumer and accessibility source leads with all 10 provinces and three territories in an unassessed screening queue; local review and Canadian release remain blocked.
 - [x] Record initial Australian federal privacy, device, consumer and accessibility source leads with six states, ACT and NT in an unassessed screening queue; external-territory review and Australian release remain blocked.
+- [x] Record initial Brazil LGPD/ANPD, internet, consumer, accessibility and ANVISA source leads with all 26 states and Federal District queued; municipal review and Brazil release remain blocked.
 - [x] Record dated Lithuania official-source leads and a 10-county/60-municipality screening queue; all national, local and release reviews remain unassessed.
 - [x] Record initial dated Ukraine source leads and constitutional top-level screening queue; all national, local and release reviews remain unassessed.
 - [ ] Resolve the remaining dependency alerts or record a reviewed mitigation and explicit release decision; see [dependency security review](DEPENDENCY_SECURITY.md).

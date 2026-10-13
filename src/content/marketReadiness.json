@@ -4390,7 +4390,144 @@
       "isoAlpha2": "BR",
       "reviewOwner": null,
       "lastChecked": null,
-      "officialSources": [],
+      "officialSources": [
+        {
+          "title": "General Data Protection Law (LGPD), compiled text",
+          "url": "https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2018/lei/l13709compilado.htm",
+          "authority": "Presidency of the Republic, Civil House",
+          "sourceType": "federal-legislation-portuguese",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "ANPD FAQ: sensitive personal data, including health data",
+          "url": "https://www.gov.br/anpd/pt-br/acesso-a-informacao/perguntas-frequentes",
+          "authority": "National Data Protection Authority (ANPD)",
+          "sourceType": "official-regulatory-guidance-portuguese",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "ANPD Resolution CD/ANPD No. 2/2022: small-scale processing agents",
+          "url": "https://www.gov.br/anpd/pt-br/acesso-a-informacao/institucional/atos-normativos/regulamentacoes_anpd/resolucao-cd-anpd-no-2-de-27-de-janeiro-de-2022",
+          "authority": "National Data Protection Authority (ANPD)",
+          "sourceType": "federal-regulation-portuguese",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "ANPD small-agent information-security guidance, updated 25 May 2026",
+          "url": "https://www.gov.br/anpd/pt-br/assuntos/noticias/anpd-publica-guia-de-seguranca-para-agentes-de-tratamento-de-pequeno-porte",
+          "authority": "National Data Protection Authority (ANPD)",
+          "sourceType": "official-regulatory-guidance-portuguese",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "ANPD Resolution CD/ANPD No. 15/2024: security-incident communications",
+          "url": "https://www.gov.br/anpd/pt-br/canais_atendimento/agente-de-tratamento/comunicado-de-incidente-de-seguranca-cis",
+          "authority": "National Data Protection Authority (ANPD)",
+          "sourceType": "federal-regulation-and-guidance-portuguese",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "ANPD Resolution CD/ANPD No. 19/2024: international data transfers",
+          "url": "https://www.gov.br/anpd/pt-br/acesso-a-informacao/institucional/atos-normativos/regulamentacoes_anpd/resolucao-cd-anpd-no-19-de-23-de-agosto-de-2024",
+          "authority": "National Data Protection Authority (ANPD)",
+          "sourceType": "federal-regulation-portuguese",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "ANPD cookies and personal-data guidance, updated 23 January 2025",
+          "url": "https://www.gov.br/anpd/pt-br/centrais-de-conteudo/materiais-educativos-e-publicacoes/guia_orientativo_cookies_e_protecao_de_dados_pessoais",
+          "authority": "National Data Protection Authority (ANPD)",
+          "sourceType": "official-regulatory-guidance-portuguese",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Brazilian Internet Civil Framework, Law No. 12.965/2014",
+          "url": "https://www.planalto.gov.br/ccivil_03/_ato2011-2014/2014/lei/l12965.htm",
+          "authority": "Presidency of the Republic, Civil House",
+          "sourceType": "federal-legislation-portuguese",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Decree No. 8.771/2016 implementing the Internet Civil Framework",
+          "url": "https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2016/decreto/d8771.htm",
+          "authority": "Presidency of the Republic, Civil House",
+          "sourceType": "federal-regulation-portuguese",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Consumer Protection Code, Law No. 8.078/1990, compiled text",
+          "url": "https://www.planalto.gov.br/ccivil_03/leis/l8078compilado.htm",
+          "authority": "Presidency of the Republic, Civil House",
+          "sourceType": "federal-legislation-portuguese",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "ANVISA Q&A on RDC 657/2022: software as a medical device",
+          "url": "https://www.gov.br/anvisa/pt-br/centraisdeconteudo/publicacoes/produtos-para-a-saude/manuais/software-como-dispositivo-medico-perguntas-e-respostas",
+          "authority": "National Health Surveillance Agency (ANVISA)",
+          "sourceType": "official-regulatory-guidance-portuguese",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "ANVISA SaMD notification and registration technical manual",
+          "url": "https://www.gov.br/anvisa/pt-br/centraisdeconteudo/publicacoes/produtos-para-a-saude/manuais/manual-regularizacao-gquip",
+          "authority": "National Health Surveillance Agency (ANVISA)",
+          "sourceType": "official-regulatory-guidance-portuguese",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "ANVISA medical-device regulatory overview",
+          "url": "https://www.gov.br/anvisa/en/regulation-of-products/medical-devices",
+          "authority": "National Health Surveillance Agency (ANVISA)",
+          "sourceType": "official-regulatory-guidance",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Brazilian Inclusion of Persons with Disabilities Act, Law No. 13.146/2015",
+          "url": "https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2015/lei/l13146.htm",
+          "authority": "Presidency of the Republic, Civil House",
+          "sourceType": "federal-legislation-portuguese",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Child and Adolescent Statute, Law No. 8.069/1990, compiled text",
+          "url": "https://www.planalto.gov.br/ccivil_03/leis/l8069compilado.htm",
+          "authority": "Presidency of the Republic, Civil House",
+          "sourceType": "federal-legislation-portuguese",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "IBGE political-administrative division and 27 federative units",
+          "url": "https://educa.ibge.gov.br/jovens/conheca-o-brasil/territorio/18310-divisao-politico-administrativa-e-regional.html",
+          "authority": "Brazilian Institute of Geography and Statistics (IBGE)",
+          "sourceType": "official-administrative-source-portuguese",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "ANPD announcement on Resolution 15/2024 incident reporting and recordkeeping",
+          "url": "https://www.gov.br/anpd/pt-br/assuntos/noticias/anpd-aprova-o-regulamento-de-comunicacao-de-incidente-de-seguranca",
+          "authority": "National Data Protection Authority (ANPD)",
+          "sourceType": "official-regulatory-guidance-portuguese",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        }
+      ],
       "reviewAreas": [
         {
           "area": "privacy-and-health-data",
@@ -4505,7 +4642,226 @@
           "reviewer": null
         }
       ],
-      "subnationalAreas": []
+      "subnationalAreas": [
+        {
+          "name": "Acre",
+          "status": "not-assessed",
+          "reason": "Federative-unit screening target only. No current state-level privacy/health, consumer, accessibility, professional, emergency, municipality or territorial-applicability review performed.",
+          "source": "https://educa.ibge.gov.br/jovens/conheca-o-brasil/territorio/18310-divisao-politico-administrativa-e-regional.html",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Alagoas",
+          "status": "not-assessed",
+          "reason": "Federative-unit screening target only. No current state-level privacy/health, consumer, accessibility, professional, emergency, municipality or territorial-applicability review performed.",
+          "source": "https://educa.ibge.gov.br/jovens/conheca-o-brasil/territorio/18310-divisao-politico-administrativa-e-regional.html",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Amapá",
+          "status": "not-assessed",
+          "reason": "Federative-unit screening target only. No current state-level privacy/health, consumer, accessibility, professional, emergency, municipality or territorial-applicability review performed.",
+          "source": "https://educa.ibge.gov.br/jovens/conheca-o-brasil/territorio/18310-divisao-politico-administrativa-e-regional.html",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Amazonas",
+          "status": "not-assessed",
+          "reason": "Federative-unit screening target only. No current state-level privacy/health, consumer, accessibility, professional, emergency, municipality or territorial-applicability review performed.",
+          "source": "https://educa.ibge.gov.br/jovens/conheca-o-brasil/territorio/18310-divisao-politico-administrativa-e-regional.html",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Bahia",
+          "status": "not-assessed",
+          "reason": "Federative-unit screening target only. No current state-level privacy/health, consumer, accessibility, professional, emergency, municipality or territorial-applicability review performed.",
+          "source": "https://educa.ibge.gov.br/jovens/conheca-o-brasil/territorio/18310-divisao-politico-administrativa-e-regional.html",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Ceará",
+          "status": "not-assessed",
+          "reason": "Federative-unit screening target only. No current state-level privacy/health, consumer, accessibility, professional, emergency, municipality or territorial-applicability review performed.",
+          "source": "https://educa.ibge.gov.br/jovens/conheca-o-brasil/territorio/18310-divisao-politico-administrativa-e-regional.html",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Distrito Federal",
+          "status": "not-assessed",
+          "reason": "Federative-unit screening target only. No current state-level privacy/health, consumer, accessibility, professional, emergency, municipality or territorial-applicability review performed.",
+          "source": "https://educa.ibge.gov.br/jovens/conheca-o-brasil/territorio/18310-divisao-politico-administrativa-e-regional.html",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Espírito Santo",
+          "status": "not-assessed",
+          "reason": "Federative-unit screening target only. No current state-level privacy/health, consumer, accessibility, professional, emergency, municipality or territorial-applicability review performed.",
+          "source": "https://educa.ibge.gov.br/jovens/conheca-o-brasil/territorio/18310-divisao-politico-administrativa-e-regional.html",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Goiás",
+          "status": "not-assessed",
+          "reason": "Federative-unit screening target only. No current state-level privacy/health, consumer, accessibility, professional, emergency, municipality or territorial-applicability review performed.",
+          "source": "https://educa.ibge.gov.br/jovens/conheca-o-brasil/territorio/18310-divisao-politico-administrativa-e-regional.html",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Maranhão",
+          "status": "not-assessed",
+          "reason": "Federative-unit screening target only. No current state-level privacy/health, consumer, accessibility, professional, emergency, municipality or territorial-applicability review performed.",
+          "source": "https://educa.ibge.gov.br/jovens/conheca-o-brasil/territorio/18310-divisao-politico-administrativa-e-regional.html",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Mato Grosso",
+          "status": "not-assessed",
+          "reason": "Federative-unit screening target only. No current state-level privacy/health, consumer, accessibility, professional, emergency, municipality or territorial-applicability review performed.",
+          "source": "https://educa.ibge.gov.br/jovens/conheca-o-brasil/territorio/18310-divisao-politico-administrativa-e-regional.html",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Mato Grosso do Sul",
+          "status": "not-assessed",
+          "reason": "Federative-unit screening target only. No current state-level privacy/health, consumer, accessibility, professional, emergency, municipality or territorial-applicability review performed.",
+          "source": "https://educa.ibge.gov.br/jovens/conheca-o-brasil/territorio/18310-divisao-politico-administrativa-e-regional.html",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Minas Gerais",
+          "status": "not-assessed",
+          "reason": "Federative-unit screening target only. No current state-level privacy/health, consumer, accessibility, professional, emergency, municipality or territorial-applicability review performed.",
+          "source": "https://educa.ibge.gov.br/jovens/conheca-o-brasil/territorio/18310-divisao-politico-administrativa-e-regional.html",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Pará",
+          "status": "not-assessed",
+          "reason": "Federative-unit screening target only. No current state-level privacy/health, consumer, accessibility, professional, emergency, municipality or territorial-applicability review performed.",
+          "source": "https://educa.ibge.gov.br/jovens/conheca-o-brasil/territorio/18310-divisao-politico-administrativa-e-regional.html",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Paraíba",
+          "status": "not-assessed",
+          "reason": "Federative-unit screening target only. No current state-level privacy/health, consumer, accessibility, professional, emergency, municipality or territorial-applicability review performed.",
+          "source": "https://educa.ibge.gov.br/jovens/conheca-o-brasil/territorio/18310-divisao-politico-administrativa-e-regional.html",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Paraná",
+          "status": "not-assessed",
+          "reason": "Federative-unit screening target only. No current state-level privacy/health, consumer, accessibility, professional, emergency, municipality or territorial-applicability review performed.",
+          "source": "https://educa.ibge.gov.br/jovens/conheca-o-brasil/territorio/18310-divisao-politico-administrativa-e-regional.html",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Pernambuco",
+          "status": "not-assessed",
+          "reason": "Federative-unit screening target only. No current state-level privacy/health, consumer, accessibility, professional, emergency, municipality or territorial-applicability review performed.",
+          "source": "https://educa.ibge.gov.br/jovens/conheca-o-brasil/territorio/18310-divisao-politico-administrativa-e-regional.html",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Piauí",
+          "status": "not-assessed",
+          "reason": "Federative-unit screening target only. No current state-level privacy/health, consumer, accessibility, professional, emergency, municipality or territorial-applicability review performed.",
+          "source": "https://educa.ibge.gov.br/jovens/conheca-o-brasil/territorio/18310-divisao-politico-administrativa-e-regional.html",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Rio de Janeiro",
+          "status": "not-assessed",
+          "reason": "Federative-unit screening target only. No current state-level privacy/health, consumer, accessibility, professional, emergency, municipality or territorial-applicability review performed.",
+          "source": "https://educa.ibge.gov.br/jovens/conheca-o-brasil/territorio/18310-divisao-politico-administrativa-e-regional.html",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Rio Grande do Norte",
+          "status": "not-assessed",
+          "reason": "Federative-unit screening target only. No current state-level privacy/health, consumer, accessibility, professional, emergency, municipality or territorial-applicability review performed.",
+          "source": "https://educa.ibge.gov.br/jovens/conheca-o-brasil/territorio/18310-divisao-politico-administrativa-e-regional.html",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Rio Grande do Sul",
+          "status": "not-assessed",
+          "reason": "Federative-unit screening target only. No current state-level privacy/health, consumer, accessibility, professional, emergency, municipality or territorial-applicability review performed.",
+          "source": "https://educa.ibge.gov.br/jovens/conheca-o-brasil/territorio/18310-divisao-politico-administrativa-e-regional.html",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Rondônia",
+          "status": "not-assessed",
+          "reason": "Federative-unit screening target only. No current state-level privacy/health, consumer, accessibility, professional, emergency, municipality or territorial-applicability review performed.",
+          "source": "https://educa.ibge.gov.br/jovens/conheca-o-brasil/territorio/18310-divisao-politico-administrativa-e-regional.html",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Roraima",
+          "status": "not-assessed",
+          "reason": "Federative-unit screening target only. No current state-level privacy/health, consumer, accessibility, professional, emergency, municipality or territorial-applicability review performed.",
+          "source": "https://educa.ibge.gov.br/jovens/conheca-o-brasil/territorio/18310-divisao-politico-administrativa-e-regional.html",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Santa Catarina",
+          "status": "not-assessed",
+          "reason": "Federative-unit screening target only. No current state-level privacy/health, consumer, accessibility, professional, emergency, municipality or territorial-applicability review performed.",
+          "source": "https://educa.ibge.gov.br/jovens/conheca-o-brasil/territorio/18310-divisao-politico-administrativa-e-regional.html",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "São Paulo",
+          "status": "not-assessed",
+          "reason": "Federative-unit screening target only. No current state-level privacy/health, consumer, accessibility, professional, emergency, municipality or territorial-applicability review performed.",
+          "source": "https://educa.ibge.gov.br/jovens/conheca-o-brasil/territorio/18310-divisao-politico-administrativa-e-regional.html",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Sergipe",
+          "status": "not-assessed",
+          "reason": "Federative-unit screening target only. No current state-level privacy/health, consumer, accessibility, professional, emergency, municipality or territorial-applicability review performed.",
+          "source": "https://educa.ibge.gov.br/jovens/conheca-o-brasil/territorio/18310-divisao-politico-administrativa-e-regional.html",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Tocantins",
+          "status": "not-assessed",
+          "reason": "Federative-unit screening target only. No current state-level privacy/health, consumer, accessibility, professional, emergency, municipality or territorial-applicability review performed.",
+          "source": "https://educa.ibge.gov.br/jovens/conheca-o-brasil/territorio/18310-divisao-politico-administrativa-e-regional.html",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        }
+      ],
+      "sourceDiscoveryCheckedOn": "2026-10-13",
+      "sourceDiscoveryNote": "Initial official-source discovery only, not legal advice, a complete applicability review, or permission to distribute in Brazil. The record contains federal leads and a 27-entry queue for all 26 states and the Federal District; municipalities and local rules are not enumerated. LGPD applies to processing operations carried out in Brazil and to certain processing directed at offering goods/services to or processing data of individuals located there, regardless of the operator/data location; health data is sensitive personal data. ANPD rules address international transfers, cookies, security incidents, and small agents; assess the actual operator, processing purposes, sensitive-data legal basis, notices, rights, data mapping, hosting/transfers, retention and incident response in authentic Portuguese text. ANVISA SaMD guidance and RDC 657/2022 require assessment of actual intended purpose and functions; no device status is assigned here. Review advertising and consumer rules, digital accessibility, children, health-professional/regulator scope, Portuguese language, copyright, emergency content, fundraising/tax, app-store and local state/municipal rules with Brazilian counsel. All legal and subnational reviews remain not-assessed; Brazil release remains blocked."
     },
     {
       "name": "British Indian Ocean Territory",

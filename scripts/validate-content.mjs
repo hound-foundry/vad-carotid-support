@@ -117,6 +117,17 @@ assert.ok(australiaRecord.subnationalAreas.every((area) => area.status === "not-
 assert.ok(australiaRecord.officialSources.some((source) => source.url === "https://www.legislation.gov.au/C2004A03712/latest" && source.status === "source-lead-only"));
 assert.ok(australiaRecord.officialSources.some((source) => source.url === "https://www.tga.gov.au/resources/guidance/understanding-how-we-regulate-software-based-medical-devices" && source.status === "source-lead-only"));
 assert.match(australiaRecord.sourceDiscoveryNote, /1 July 2026/);
+const brazilRecord = resources.countryRecords.find((country) => country.isoAlpha2 === "BR");
+assert.ok(brazilRecord && brazilRecord.officialSources.length === 17, "Brazil discovery must retain its dated federal privacy, medical-software and local-law source-lead bundle");
+assert.equal(brazilRecord.sourceDiscoveryCheckedOn, "2026-10-13", "Brazil source discovery needs its own dated record");
+assert.equal(brazilRecord.legalReview.status, "not-assessed", "Brazil source discovery must not be mistaken for legal clearance");
+assert.equal(brazilRecord.release, "blocked", "Brazil access must remain blocked pending qualified review");
+assert.equal(brazilRecord.subnationalAreas.length, 27, "Brazil screening queue must include all 26 states and the Federal District");
+assert.ok(brazilRecord.subnationalAreas.every((area) => area.status === "not-assessed" && area.checkedOn === "2026-10-13" && area.reviewer === null), "Brazil state/DF queue must remain explicitly unassessed");
+assert.ok(brazilRecord.officialSources.some((source) => source.url === "https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2018/lei/l13709compilado.htm" && source.status === "source-lead-only"));
+assert.ok(brazilRecord.officialSources.some((source) => source.url === "https://www.gov.br/anpd/pt-br/acesso-a-informacao/institucional/atos-normativos/regulamentacoes_anpd/resolucao-cd-anpd-no-19-de-23-de-agosto-de-2024" && source.status === "source-lead-only"));
+assert.ok(brazilRecord.officialSources.some((source) => source.url === "https://www.gov.br/anpd/pt-br/assuntos/noticias/anpd-aprova-o-regulamento-de-comunicacao-de-incidente-de-seguranca" && source.status === "source-lead-only"));
+assert.match(brazilRecord.sourceDiscoveryNote, /health data is sensitive personal data/);
 const euGroup = resources.regionalSourceGroups?.find((group) => group.id === "eu-member-states");
 assert.equal(euGroup?.status, "membership-scope-source-checked-only", "EU grouping must not imply law applicability");
 assert.equal(euGroup?.membershipSource, "https://european-union.europa.eu/principles-countries-history/eu-countries_en?page=1", "EU membership list source must be recorded");
