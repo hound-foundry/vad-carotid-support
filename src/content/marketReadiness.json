@@ -33559,7 +33559,176 @@
       "isoAlpha2": "ZA",
       "reviewOwner": null,
       "lastChecked": null,
-      "officialSources": [],
+      "officialSources": [
+        {
+          "title": "Protection of Personal Information Act 4 of 2013",
+          "url": "https://www.gov.za/documents/protection-personal-information-act",
+          "authority": "South African Government",
+          "sourceType": "national-privacy-legislation",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "POPIA Regulations, Government Notice 7198 / Gazette 54268 (March 2026) — scope and effect to verify",
+          "url": "https://www.gov.za/documents/notices/protection-personal-information-act-regulations-english-afrikaans-06-mar-2026",
+          "authority": "South African Government",
+          "sourceType": "privacy-regulations-2026-review-required",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Information Regulator: official guidance and notices index",
+          "url": "https://inforegulator.org.za/",
+          "authority": "Information Regulator of South Africa",
+          "sourceType": "privacy-regulator-guidance-index",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Medical Devices and IVD regulations under Medicines and Related Substances Act",
+          "url": "https://www.gov.za/documents/medicines-and-related-substances-act-regulations-medical-devices-and-vitro-diagnostic-2",
+          "authority": "South African Government / Department of Health",
+          "sourceType": "medical-device-regulations",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "SAHPRA medical devices and current licensing information",
+          "url": "https://www.sahpra.org.za/medical-devices/",
+          "authority": "South African Health Products Regulatory Authority (SAHPRA)",
+          "sourceType": "medical-device-regulator-index",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "SAHPRA Guideline for Classification of Medical Devices and IVDs, SAHPGL-MD-04 v5 (updated 28 February 2025)",
+          "url": "https://www.sahpra.org.za/?dlp_document=guideline-for-classification-of-medical-devices-and-ivds",
+          "authority": "SAHPRA",
+          "sourceType": "medical-device-classification-guideline",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "SAHPRA Guidelines Notice Board",
+          "url": "https://www.sahpra.org.za/guidelines-notice-board/",
+          "authority": "SAHPRA",
+          "sourceType": "medical-device-regulatory-updates-index",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Consumer Protection Act 68 of 2008",
+          "url": "https://www.gov.za/documents/consumer-protection-act",
+          "authority": "South African Government",
+          "sourceType": "consumer-legislation",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Electronic Communications and Transactions Act 25 of 2002",
+          "url": "https://www.gov.za/sites/default/files/gcis_document/201409/a25-02.pdf",
+          "authority": "South African Government",
+          "sourceType": "electronic-communications-legislation",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Promotion of Equality and Prevention of Unfair Discrimination Act 4 of 2000",
+          "url": "https://www.justice.gov.za/legislation/acts/2000-004.pdf",
+          "authority": "Department of Justice and Constitutional Development",
+          "sourceType": "equality-and-disability-rights-legislation",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Children’s Act 38 of 2005 and amendments",
+          "url": "https://www.gov.za/documents/childrens-act",
+          "authority": "South African Government",
+          "sourceType": "child-protection-legislation",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Copyright Act 98 of 1978",
+          "url": "https://www.gov.za/documents/copyright-act-16-apr-2015-0942",
+          "authority": "South African Government",
+          "sourceType": "copyright-and-translation-legislation",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Copyright Amendment Bill B13-2017: parliamentary status (referred to Constitutional Court; verify current legal effect)",
+          "url": "https://www.parliament.gov.za/bill/2291650",
+          "authority": "Parliament of South Africa",
+          "sourceType": "copyright-amendment-status-review-required",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Nonprofit Organisations Act 71 of 1997",
+          "url": "https://www.gov.za/tn/documents/nonprofit-organisations-act",
+          "authority": "South African Government",
+          "sourceType": "nonprofit-operator-registration",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "South African Revenue Service: Public Benefit Organisations and section 18A donations",
+          "url": "https://www.sars.gov.za/businesses-and-employers/tax-exempt-institutions/public-benefit-organisations/",
+          "authority": "South African Revenue Service (SARS)",
+          "sourceType": "nonprofit-tax-and-funding",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Emergency contacts: government guidance including 112, 10177 and 107",
+          "url": "https://www.gov.za/floods",
+          "authority": "South African Government",
+          "sourceType": "emergency-service-source-lead",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Government emergency call guidance: ambulance service 10177",
+          "url": "https://www.gov.za/news/media-statements/reporting-emergency-calls-11-dec-2013",
+          "authority": "South African Government",
+          "sourceType": "ambulance-number-source-lead",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Nine-province roster",
+          "url": "https://www.gov.za/provinces",
+          "authority": "South African Government",
+          "sourceType": "official-subnational-territory-register",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "South Africa at a glance: official languages and national overview",
+          "url": "https://www.gov.za/south-africa-glance",
+          "authority": "South African Government",
+          "sourceType": "official-language-and-country-context",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Apple App Review Guidelines",
+          "url": "https://developer.apple.com/app-store/review/guidelines/",
+          "authority": "Apple",
+          "sourceType": "platform-policy-not-legislation",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Google Play Health Content and Services policy",
+          "url": "https://support.google.com/googleplay/android-developer/answer/16679511?hl=en",
+          "authority": "Google Play",
+          "sourceType": "platform-policy-not-legislation",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        }
+      ],
       "reviewAreas": [
         {
           "area": "privacy-and-health-data",
@@ -33674,7 +33843,82 @@
           "reviewer": null
         }
       ],
-      "subnationalAreas": []
+      "subnationalAreas": [
+        {
+          "name": "Eastern Cape",
+          "status": "not-assessed",
+          "reason": "First-order province screening target only. No province-specific laws, health/professional rules, consumer or accessibility requirements, emergency arrangements, municipality/local rules or territorial-applicability review performed.",
+          "source": "https://www.gov.za/provinces",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Free State",
+          "status": "not-assessed",
+          "reason": "First-order province screening target only. No province-specific laws, health/professional rules, consumer or accessibility requirements, emergency arrangements, municipality/local rules or territorial-applicability review performed.",
+          "source": "https://www.gov.za/provinces",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Gauteng",
+          "status": "not-assessed",
+          "reason": "First-order province screening target only. No province-specific laws, health/professional rules, consumer or accessibility requirements, emergency arrangements, municipality/local rules or territorial-applicability review performed.",
+          "source": "https://www.gov.za/provinces",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "KwaZulu-Natal",
+          "status": "not-assessed",
+          "reason": "First-order province screening target only. No province-specific laws, health/professional rules, consumer or accessibility requirements, emergency arrangements, municipality/local rules or territorial-applicability review performed.",
+          "source": "https://www.gov.za/provinces",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Limpopo",
+          "status": "not-assessed",
+          "reason": "First-order province screening target only. No province-specific laws, health/professional rules, consumer or accessibility requirements, emergency arrangements, municipality/local rules or territorial-applicability review performed.",
+          "source": "https://www.gov.za/provinces",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Mpumalanga",
+          "status": "not-assessed",
+          "reason": "First-order province screening target only. No province-specific laws, health/professional rules, consumer or accessibility requirements, emergency arrangements, municipality/local rules or territorial-applicability review performed.",
+          "source": "https://www.gov.za/provinces",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Northern Cape",
+          "status": "not-assessed",
+          "reason": "First-order province screening target only. No province-specific laws, health/professional rules, consumer or accessibility requirements, emergency arrangements, municipality/local rules or territorial-applicability review performed.",
+          "source": "https://www.gov.za/provinces",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "North West",
+          "status": "not-assessed",
+          "reason": "First-order province screening target only. No province-specific laws, health/professional rules, consumer or accessibility requirements, emergency arrangements, municipality/local rules or territorial-applicability review performed.",
+          "source": "https://www.gov.za/provinces",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Western Cape",
+          "status": "not-assessed",
+          "reason": "First-order province screening target only. No province-specific laws, health/professional rules, consumer or accessibility requirements, emergency arrangements, municipality/local rules or territorial-applicability review performed.",
+          "source": "https://www.gov.za/provinces",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        }
+      ],
+      "sourceDiscoveryCheckedOn": "2026-10-13",
+      "sourceDiscoveryNote": "Official-source discovery only; not legal advice, not a completeness claim or a determination of applicability. South Africa remains blocked; all 14 legal review areas, the national review and all nine province targets remain not-assessed. POPIA is in force and regulates public- and private-body processing; an official March 2026 notice lists new POPIA regulations (Government Notice 7198, Gazette 54268), whose scope, text, commencement and effect need qualified review. Health information, device storage, security, cross-border flows, hosting and controller/processor roles need assessment against the actual product and operator. SAHPRA publishes current medical-device classification material; assess the app’s intended purpose, features and claims against the current legislation and classification guidance, including any software-specific requirements. Consumer, electronic communications, equality/disability, children’s, copyright and nonprofit/tax obligations remain to be screened for scope and current amendments. Parliament records the Copyright Amendment Bill as referred to the Constitutional Court; counsel must determine current effect before relying on any exceptions. South Africa has nine provinces and 11 official languages; language and accessibility choices require lived-experience and qualified human review. Government emergency materials list multiple numbers, including 112 and ambulance 10177; do not enable local instructions until a reviewer verifies current service reach and wording. Municipal/local rules, operator identity, app-store policies, funding/tax consequences and all territorial applicability remain open."
     },
     {
       "name": "South Georgia and the South Sandwich Islands",

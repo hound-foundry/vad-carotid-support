@@ -64,3 +64,4 @@ The glossary and print controls are implemented, but their presence does not cou
 - [ ] Complete content, translation, privacy, security and local emergency review.
 - [ ] Verify Apple and Google declarations, privacy details, store screenshots and package identifiers.
 - [ ] Produce evidence-backed release notes; keep missing review visible.
+- [x] Record dated South Africa POPIA (including the March 2026 regulations notice), SAHPRA medical-device classification, consumer, accessibility, child, copyright, emergency, nonprofit/tax and platform source leads with all nine provinces queued; municipal review and South Africa release remain blocked.
