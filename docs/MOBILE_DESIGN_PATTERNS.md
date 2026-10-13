@@ -29,3 +29,5 @@ Sleek's mobile integration guidance was examined. No credential or exported Slee
 Before native release, verify VoiceOver/TalkBack, native font rendering/scaling (including heading-font fallback), safe areas, software-keyboard reachability, and native share/print cancellation. Web screenshots and TypeScript/static export do not prove those behaviors. Avoid adding a second menu or bottom bar until real people test a native navigation prototype; four Home tasks already form a small useful starting set.
 
 The [follow-up audit](RETURNING_USER_AUDIT.md) records scores, captures, repairs and technical checks. Colour/motion choices are sensitivity-conscious and do not promise to prevent migraine or PTSD reactions.
+
+The [free design workflow](FREE_DESIGN_WORKFLOW.md) registers this Expo app, exports source-derived design values and embeds the real build for phone/desktop checks. Its external platform trial remains separate from implementation and patient usability review.

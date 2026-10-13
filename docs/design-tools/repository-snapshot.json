@@ -1,0 +1,228 @@
+{
+  "schemaVersion": 1,
+  "checkedOn": "2026-10-13",
+  "records": [
+    {
+      "repository": "morluto/rea",
+      "source": "https://api.github.com/repos/morluto/rea",
+      "url": "https://github.com/morluto/rea",
+      "defaultBranch": "main",
+      "license": "MIT",
+      "archived": false,
+      "checkedAt": "2026-10-13T16:15:33.843Z",
+      "verification": "repository metadata only; not installed or runtime-tested"
+    },
+    {
+      "repository": "nextlevelbuilder/ui-ux-pro-max-skill",
+      "source": "https://api.github.com/repos/nextlevelbuilder/ui-ux-pro-max-skill",
+      "url": "https://github.com/nextlevelbuilder/ui-ux-pro-max-skill",
+      "defaultBranch": "main",
+      "license": "MIT",
+      "archived": false,
+      "checkedAt": "2026-10-13T16:15:33.869Z",
+      "verification": "repository metadata only; not installed or runtime-tested"
+    },
+    {
+      "repository": "shadcn-ui/ui",
+      "source": "https://api.github.com/repos/shadcn-ui/ui",
+      "url": "https://github.com/shadcn-ui/ui",
+      "defaultBranch": "main",
+      "license": "MIT",
+      "archived": false,
+      "checkedAt": "2026-10-13T16:15:33.917Z",
+      "verification": "repository metadata only; not installed or runtime-tested"
+    },
+    {
+      "repository": "penpot/penpot",
+      "source": "https://api.github.com/repos/penpot/penpot",
+      "url": "https://github.com/penpot/penpot",
+      "defaultBranch": "develop",
+      "license": "MPL-2.0",
+      "archived": false,
+      "checkedAt": "2026-10-13T16:15:33.846Z",
+      "verification": "repository metadata only; not installed or runtime-tested"
+    },
+    {
+      "repository": "ionic-team/ionic-framework",
+      "source": "https://api.github.com/repos/ionic-team/ionic-framework",
+      "url": "https://github.com/ionic-team/ionic-framework",
+      "defaultBranch": "main",
+      "license": "MIT",
+      "archived": false,
+      "checkedAt": "2026-10-13T16:15:34.085Z",
+      "verification": "repository metadata only; not installed or runtime-tested"
+    },
+    {
+      "repository": "framework7io/framework7",
+      "source": "https://api.github.com/repos/framework7io/framework7",
+      "url": "https://github.com/framework7io/framework7",
+      "defaultBranch": "master",
+      "license": "MIT",
+      "archived": false,
+      "checkedAt": "2026-10-13T16:15:34.067Z",
+      "verification": "repository metadata only; not installed or runtime-tested"
+    },
+    {
+      "repository": "mobile-dev-inc/Maestro",
+      "source": "https://api.github.com/repos/mobile-dev-inc/Maestro",
+      "url": "https://github.com/mobile-dev-inc/Maestro",
+      "defaultBranch": "main",
+      "license": "Apache-2.0",
+      "archived": false,
+      "checkedAt": "2026-10-13T16:15:34.133Z",
+      "verification": "repository metadata only; not installed or runtime-tested"
+    },
+    {
+      "repository": "adobe/react-spectrum",
+      "source": "https://api.github.com/repos/adobe/react-spectrum",
+      "url": "https://github.com/adobe/react-spectrum",
+      "defaultBranch": "main",
+      "license": "Apache-2.0",
+      "archived": false,
+      "checkedAt": "2026-10-13T16:15:34.167Z",
+      "verification": "repository metadata only; not installed or runtime-tested"
+    },
+    {
+      "repository": "callstack/react-native-paper",
+      "source": "https://api.github.com/repos/callstack/react-native-paper",
+      "url": "https://github.com/callstack/react-native-paper",
+      "defaultBranch": "main",
+      "license": "MIT",
+      "archived": false,
+      "checkedAt": "2026-10-13T16:15:34.348Z",
+      "verification": "repository metadata only; not installed or runtime-tested"
+    },
+    {
+      "repository": "tamagui/tamagui",
+      "source": "https://api.github.com/repos/tamagui/tamagui",
+      "url": "https://github.com/tamagui/tamagui",
+      "defaultBranch": "main",
+      "license": "MIT",
+      "archived": false,
+      "checkedAt": "2026-10-13T16:15:34.315Z",
+      "verification": "repository metadata only; not installed or runtime-tested"
+    },
+    {
+      "repository": "mobile-next/mobile-mcp",
+      "source": "https://api.github.com/repos/mobile-next/mobile-mcp",
+      "url": "https://github.com/mobile-next/mobile-mcp",
+      "defaultBranch": "main",
+      "license": "Apache-2.0",
+      "archived": false,
+      "checkedAt": "2026-10-13T16:15:34.380Z",
+      "verification": "repository metadata only; not installed or runtime-tested"
+    },
+    {
+      "repository": "google-labs-code/stitch-skills",
+      "source": "https://api.github.com/repos/google-labs-code/stitch-skills",
+      "url": "https://github.com/google-labs-code/stitch-skills",
+      "defaultBranch": "main",
+      "license": "Apache-2.0",
+      "archived": false,
+      "checkedAt": "2026-10-13T16:15:34.426Z",
+      "verification": "repository metadata only; not installed or runtime-tested"
+    },
+    {
+      "repository": "Dammyjay93/interface-design",
+      "source": "https://api.github.com/repos/Dammyjay93/interface-design",
+      "url": "https://github.com/Dammyjay93/interface-design",
+      "defaultBranch": "main",
+      "license": "MIT",
+      "archived": false,
+      "checkedAt": "2026-10-13T16:15:34.543Z",
+      "verification": "repository metadata only; not installed or runtime-tested"
+    },
+    {
+      "repository": "gluestack/gluestack-ui",
+      "source": "https://api.github.com/repos/gluestack/gluestack-ui",
+      "url": "https://github.com/gluestack/gluestack-ui",
+      "defaultBranch": "main",
+      "license": "unknown",
+      "readmeDeclaredLicense": "MIT",
+      "licenseSource": "https://github.com/gluestack/gluestack-ui#license",
+      "archived": false,
+      "checkedAt": "2026-10-13T16:15:34.573Z",
+      "verification": "repository metadata only; not installed or runtime-tested"
+    },
+    {
+      "repository": "konstaui/konsta",
+      "source": "https://api.github.com/repos/konstaui/konsta",
+      "url": "https://github.com/konstaui/konsta",
+      "defaultBranch": "master",
+      "license": "MIT",
+      "archived": false,
+      "checkedAt": "2026-10-13T16:15:34.644Z",
+      "verification": "repository metadata only; not installed or runtime-tested"
+    },
+    {
+      "repository": "heroui-inc/heroui-native",
+      "source": "https://api.github.com/repos/heroui-inc/heroui-native",
+      "url": "https://github.com/heroui-inc/heroui-native",
+      "defaultBranch": "main",
+      "license": "Apache-2.0",
+      "archived": false,
+      "checkedAt": "2026-10-13T16:15:34.715Z",
+      "verification": "repository metadata only; not installed or runtime-tested"
+    },
+    {
+      "repository": "zhongerxin/iPhone-use",
+      "source": "https://api.github.com/repos/zhongerxin/iPhone-use",
+      "url": "https://github.com/zhongerxin/iPhone-use",
+      "defaultBranch": "main",
+      "license": "MIT",
+      "archived": false,
+      "checkedAt": "2026-10-13T16:15:34.816Z",
+      "verification": "repository metadata only; not installed or runtime-tested"
+    },
+    {
+      "repository": "expo/skills",
+      "source": "https://api.github.com/repos/expo/skills",
+      "url": "https://github.com/expo/skills",
+      "defaultBranch": "main",
+      "license": "MIT",
+      "archived": false,
+      "checkedAt": "2026-10-13T16:15:34.799Z",
+      "verification": "repository metadata only; not installed or runtime-tested"
+    },
+    {
+      "repository": "sleekdotdesign/agent-skills",
+      "source": "https://api.github.com/repos/sleekdotdesign/agent-skills",
+      "url": "https://github.com/sleekdotdesign/agent-skills",
+      "defaultBranch": "main",
+      "license": "MIT",
+      "archived": false,
+      "checkedAt": "2026-10-13T16:15:34.903Z",
+      "verification": "repository metadata only; not installed or runtime-tested"
+    },
+    {
+      "repository": "RubenGlez/mobile-design",
+      "source": "https://api.github.com/repos/RubenGlez/mobile-design",
+      "url": "https://github.com/RubenGlez/mobile-design",
+      "defaultBranch": "main",
+      "license": "MIT",
+      "archived": false,
+      "checkedAt": "2026-10-13T16:15:34.961Z",
+      "verification": "repository metadata only; not installed or runtime-tested"
+    },
+    {
+      "repository": "noumanzindani/mobile-app-uiux-pro-max-skill",
+      "source": "https://api.github.com/repos/noumanzindani/mobile-app-uiux-pro-max-skill",
+      "url": "https://github.com/noumanzindani/mobile-app-uiux-pro-max-skill",
+      "defaultBranch": "main",
+      "license": "Apache-2.0",
+      "archived": false,
+      "checkedAt": "2026-10-13T16:15:35.047Z",
+      "verification": "repository metadata only; not installed or runtime-tested"
+    },
+    {
+      "repository": "Latand/delegatus",
+      "source": "https://api.github.com/repos/Latand/delegatus",
+      "url": "https://github.com/Latand/delegatus",
+      "defaultBranch": "main",
+      "license": "MIT",
+      "archived": false,
+      "checkedAt": "2026-10-13T16:15:35.076Z",
+      "verification": "repository metadata only; not installed or runtime-tested"
+    }
+  ]
+}

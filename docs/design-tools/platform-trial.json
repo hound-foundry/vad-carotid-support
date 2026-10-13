@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-13",
+  "local": {"url": "http://localhost:4180/_design/", "routes": 10, "themes": 4, "colours": 12, "savedKeys": 6, "verified": ["Real exported Home displayed", "Appointment checkbox selected", "Enter on Review focused Appointment sheet preview", "320x640 card artboard selected", "Dark/high-contrast token swatches matched source"], "limitations": ["Resizing is not browser zoom", "Screen readers and native devices not tested", "Workbench Page selection reloads the app"]},
+  "stitch": {
+    "url": "https://stitch.withgoogle.com/projects/12616131620803892891",
+    "status": "Created reference project; two screenshots and native design-system reference persisted after reload",
+    "cost": "Hosted FAQ states free with daily credit limits, resetting midnight UTC. No subscription or paid generator used.",
+    "terms": "Additional terms explicitly approved by the user before Continue; promotional-email and research opt-ins left unchecked",
+    "transfer": "File chooser event failed twice. Supported image clipboard paste imported both screenshots. Markdown clipboard paste produced no verified guide asset; the full guide was submitted as a single design-context request.",
+    "sourceScope": "Only public source design guidance and blank public-interface Home screenshots; no user notes, cards, records, private stories or personal medical fields",
+    "imageBoundary": "Stitch warns uploaded images get stable public URLs; the imported captures contain only public app interface",
+    "verified": ["Project name", "Two reference-image canvas assets", "Design-system canvas asset", "Primary #26736E and secondary #195B58", "Images/design reference retained after reload"],
+    "limitations": ["Reference screenshots are images, not native editable screen components", "Generated tone ramps and specimen components differ from source", "Exact 12-token/four-theme and native behavior equivalence not established", "GUI does not expose native asset IDs", "No generated design was imported back into the app"]
+  },
+  "penpot": {"status": "Initial hosted check required sign-in; no Penpot import performed", "cost": "Current $0 Professional plan and open-source self-host option verified", "agentCreatedAccount": false},
+  "appRuntime": {"baselineRevision": "2a665f4b784cf36d68a1c028342f565c4d003fa3", "entry": "entry-f09609189cfc3276d995b855900e057b.js", "sha256": "6d473e73304b64e957dd77bc267fbd8255e84c0cb1c05e2884ecd021b43fb9e5", "result": "Rebuilt entry matches the pre-workflow build byte for byte; no app/src/content files changed"},
+  "validation": {"unitTests": 69, "typecheck": "pass", "contentReviewNativeConfig": "pass", "designProfile": "pass", "webExport": "pass", "exportArtifacts": 32, "exportRoutes": 27},
+  "interventions": ["Used labelled combobox role after exact-label locator missed nested select text", "Cross-frame contentWindow observation unsupported; used frame DOM and iframe attributes instead", "Main element could not receive clipboard shortcut; focusable project-title button received Control+V successfully"]
+}

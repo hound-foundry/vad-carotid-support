@@ -12,6 +12,9 @@
     "test": "node --test test/*.test.mjs && node scripts/validate-content.mjs && node scripts/validate-review.mjs && node scripts/validate-native-config.mjs",
     "build:web": "expo export --platform web",
     "preview:web": "node scripts/preview-web.mjs",
+    "design:check": "node scripts/design-kit.mjs --check",
+    "design:kit": "node scripts/design-kit.mjs",
+    "design:preview": "node scripts/preview-design-kit.mjs",
     "release:web": "npm test && node scripts/assert-market-ready.mjs && expo export --platform web && node scripts/validate-export.mjs"
   },
   "dependencies": {

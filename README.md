@@ -34,6 +34,8 @@ Open http://localhost:4173/ for the exported preview; clean card URLs also work 
 
 To help find code with the separate Atlas Kit, point its --project option at this checkout. Atlas Kit is an external local development tool and is not bundled with this project. Its existing static architecture checks target Godot projects; this app uses TypeScript checks and a web build in CI.
 
+For source-preserving design work, see the [free design workflow](docs/FREE_DESIGN_WORKFLOW.md). `npm run design:check` validates the app profile and current palette; after a web export, `npm run design:kit` produces local portable design files and `npm run design:preview` opens a development workbench at http://localhost:4180/_design/. It embeds the real Expo website across phone and desktop review sizes without changing patient routes or reading browser notes/cards.
+
 ## Contributing
 
 Start with [CONTRIBUTING.md](CONTRIBUTING.md), [clinical content standards](docs/CLINICAL_CONTENT.md) and [privacy principles](docs/PRIVACY.md). Use synthetic examples only. Do not put patient records, personal health information, unpublished clinical material, credentials or private correspondence in issues or pull requests. Never submit an individual’s medical question as a request for advice.

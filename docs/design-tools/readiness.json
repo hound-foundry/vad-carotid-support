@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "checkedAt": "2026-10-13",
+  "scope": "Read-only connection and local guidance checks; no new VAD design generation, provider canvas, subscription or app dependencies",
+  "moda": {
+    "doctorReady": true,
+    "authenticated": true,
+    "updateAvailable": false,
+    "blockers": [],
+    "unverified": [],
+    "brandListSucceeded": true,
+    "vadCanvasCreated": false,
+    "designOrExportVerified": false
+  },
+  "svgLab": {
+    "accountStatusSucceeded": true,
+    "plan": "free",
+    "mcpAccess": true,
+    "freeCreditsRemainingAtCheck": 99,
+    "freeCreditsLimit": 100,
+    "reportedCostPerOrdinaryToolCall": 1,
+    "vadDesignCreated": false,
+    "renderedDesignVerified": false
+  },
+  "uiUxProMax": {
+    "localSearchSucceeded": true,
+    "query": "focus not obscured",
+    "domain": "ux",
+    "source": "ux-guidelines.csv",
+    "resultCount": 2,
+    "relevanceVerified": "Web accessibility; results distinguish WCAG 2.2 AA minimum from AAA enhanced focus visibility",
+    "appComplianceEstablished": false
+  },
+  "notRun": ["NVDA", "Accessibility Insights", "axe-core", "Lighthouse", "Storybook", "React Native DevTools on a native device"],
+  "limits": ["Provider connection success is not design or behavior verification", "Blushie generation does not verify VAD layouts", "Credits and service plans can change", "No private browser storage or health information was used"]
+}
