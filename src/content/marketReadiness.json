@@ -11034,8 +11034,50 @@
       "release": "blocked",
       "isoAlpha2": "KM",
       "reviewOwner": null,
-      "lastChecked": null,
-      "officialSources": [],
+  "lastChecked": "2026-10-13",
+  "officialSources": [
+    {
+      "title": "Personal-data protection law",
+      "url": "https://justice.gouv.km/wp-content/pdfjs/web/viewer.html?file=https%3A%2F%2Fjustice.gouv.km%2Fwp-content%2Fuploads%2F2025%2F03%2Floi-du-26-juin-2014-portant-protection-des-donnees-a-caractere-personnel.pdf",
+      "authority": "Ministry of Justice, Union of the Comoros",
+      "sourceType": "privacy-law",
+      "checkedOn": "2026-10-13",
+      "status": "source-lead-only"
+    },
+    {
+      "title": "Official laws and decrees repository",
+      "url": "https://justice.gouv.km/",
+      "authority": "Ministry of Justice, Union of the Comoros",
+      "sourceType": "legal-repository",
+      "checkedOn": "2026-10-13",
+      "status": "source-lead-only"
+    },
+    {
+      "title": "Public health code",
+      "url": "https://justice.gouv.km/texte/code-de-sante-2011/",
+      "authority": "Ministry of Justice, Union of the Comoros",
+      "sourceType": "health-regulation",
+      "checkedOn": "2026-10-13",
+      "status": "source-lead-only"
+    },
+    {
+      "title": "Medical-device and health-product rules (source lead)",
+      "url": "https://justice.gouv.km/texte/code-de-sante-2011/",
+      "authority": "Ministry of Justice and Ministry of Health, Union of the Comoros",
+      "sourceType": "medical-device-regulation",
+      "checkedOn": "2026-10-13",
+      "status": "source-lead-only"
+    },
+    {
+      "title": "Emergency health-service guidance",
+      "url": "https://www.gov.uk/foreign-travel-advice/comoros/health",
+      "authority": "UK Foreign, Commonwealth and Development Office (cross-check source)",
+      "sourceType": "emergency-guidance",
+      "checkedOn": "2026-10-13",
+      "status": "source-lead-only"
+    }
+  ],
+  "sourceDiscoveryCheckedOn": "2026-10-13",
       "reviewAreas": [
         {
           "area": "privacy-and-health-data",

@@ -619,3 +619,9 @@ Chad source discovery records the official legal journal, Ministry of Public Hea
 This is an official-source discovery pass, not legal advice, a completeness claim or an applicability determination. Colombia (`CO`) remains blocked; all 14 review areas and the national review remain `not-assessed`.
 
 Colombia source discovery records the personal-data law and SIC oversight, INVIMA and Ministry of Health medical-device materials, and official national emergency-line guidance. Qualified review must resolve sensitive health-data processing, device storage and transfers, medical-software classification, Spanish-language accessibility, national and subnational health/emergency rules, and distribution requirements before Colombia-specific access or emergency details are enabled.
+
+## Comoros source-discovery snapshot — 13 October 2026
+
+This is an official-source discovery pass, not legal advice, a completeness claim or an applicability determination. Comoros (`KM`) remains blocked; all 14 review areas and the national review remain `not-assessed`.
+
+Comoros source discovery records the Ministry of Justice’s personal-data law and legal repository, the public health code, and emergency-health cross-check guidance. Official medical-device rules were not identified in this pass and must be located or confirmed by qualified reviewers. French-language, island-level health-service, accessibility, transfer, and emergency-coverage review remains required before Comoros-specific access is enabled.
