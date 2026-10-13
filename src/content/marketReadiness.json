@@ -27561,8 +27561,50 @@
       "release": "blocked",
       "isoAlpha2": "NL",
       "reviewOwner": null,
-      "lastChecked": null,
-      "officialSources": [],
+      "lastChecked": "2026-10-13",
+      "officialSources": [
+        {
+          "title": "Processing health data",
+          "url": "https://autoriteitpersoonsgegevens.nl/themas/gezondheid/gezondheidsgegevens-gebruiken-en-delen/gezondheidsgegevens-verwerken",
+          "authority": "Dutch Data Protection Authority",
+          "sourceType": "regulator-guidance",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Cookies guidance",
+          "url": "https://autoriteitpersoonsgegevens.nl/en/themes/internet-and-smart-devices/cookies",
+          "authority": "Dutch Data Protection Authority",
+          "sourceType": "regulator-guidance",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Sale and distribution of medical devices",
+          "url": "https://www.igj.nl/zorgsectoren/medische-technologie/toezicht-op-producten/verkoop-en-distributie-van-medische-hulpmiddelen",
+          "authority": "Health and Youth Care Inspectorate",
+          "sourceType": "competent-authority-guidance",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Calling emergency number 112",
+          "url": "https://www.rijksoverheid.nl/documenten/vraag-en-antwoord/alarmnummer-112/wat-gebeurt-er-als-ik-alarmnummer-112-bel",
+          "authority": "Government of the Netherlands",
+          "sourceType": "official-emergency-guidance",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Dutch Data Protection Authority portal",
+          "url": "https://autoriteitpersoonsgegevens.nl/en",
+          "authority": "Dutch Data Protection Authority",
+          "sourceType": "regulator-portal",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        }
+      ],
+      "sourceDiscoveryCheckedOn": "2026-10-13",
       "reviewAreas": [
         {
           "area": "privacy-and-health-data",

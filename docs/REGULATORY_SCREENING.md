@@ -44,6 +44,8 @@ Ireland source discovery (13 October 2026) now records the Data Protection Act 2
 
 Italy source discovery (13 October 2026) now records the Italian data-protection authority's cookie and tracking guidance, its regulator portal, and Ministry of Health medical-device registration and portal pages. These are source leads only. Italy remains blocked until a qualified reviewer maps the review areas, confirms how the EU medical-device framework applies to the app's actual functions, and checks national and regional requirements.
 
+The Netherlands source discovery (13 October 2026) now records Dutch health-data and cookie guidance, the Health and Youth Care Inspectorate's medical-device page, official 112 guidance, and the Dutch Data Protection Authority portal. These are source leads only. The Netherlands remains blocked pending qualified review of GDPR implementation, medical-software classification, accessibility, emergency wording and any applicable national or local requirements.
+
 ### Platform distribution policies (not legislation)
 
 | Platform | Official policy source | Release work still needed |
