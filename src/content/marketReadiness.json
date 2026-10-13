@@ -11031,8 +11031,50 @@
       "release": "blocked",
       "isoAlpha2": "CZ",
       "reviewOwner": null,
-      "lastChecked": null,
-      "officialSources": [],
+      "lastChecked": "2026-10-13",
+      "officialSources": [
+        {
+          "title": "Czech Office for Personal Data Protection",
+          "url": "https://uoou.gov.cz/en",
+          "authority": "Office for Personal Data Protection",
+          "sourceType": "regulator-portal",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Czech GDPR and data-protection guide",
+          "url": "https://uoou.gov.cz/verejnost/zakladni-prirucka-k-ochrane-udaju",
+          "authority": "Office for Personal Data Protection",
+          "sourceType": "regulator-guidance",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Cookie guidance",
+          "url": "https://uoou.gov.cz/en/cookies",
+          "authority": "Office for Personal Data Protection",
+          "sourceType": "regulator-guidance",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Medical-device IT systems",
+          "url": "https://sukl.gov.cz/en/pharmaceutical-industry/medical-devices/it-systems/",
+          "authority": "State Institute for Drug Control",
+          "sourceType": "competent-authority-guidance",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Official emergency calls",
+          "url": "https://portal.gov.cz/en/sluzby-vs/emergency-calls-S2824",
+          "authority": "Czech public administration portal",
+          "sourceType": "official-emergency-guidance",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        }
+      ],
+      "sourceDiscoveryCheckedOn": "2026-10-13",
       "reviewAreas": [
         {
           "area": "privacy-and-health-data",

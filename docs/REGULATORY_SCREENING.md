@@ -58,6 +58,8 @@ Switzerland source discovery (13 October 2026) now records the Federal Data Prot
 
 Sweden source discovery (13 October 2026) now records the Swedish privacy authority, GDPR guidance, Swedish Medical Products Agency software and Eudamed guidance, and official emergency information. These are source leads only. Sweden remains blocked pending qualified review of Swedish-language requirements, GDPR, national medical-information-system rules, medical-software, accessibility, emergency and distribution obligations.
 
+Czechia source discovery (13 October 2026) now records the Office for Personal Data Protection, Czech cookie and GDPR guidance, State Institute for Drug Control medical-device IT guidance, and official emergency-call information. These are source leads only. Czechia remains blocked pending qualified review of Czech-language, EU and national privacy, medical-software, accessibility, emergency and distribution requirements.
+
 ### Platform distribution policies (not legislation)
 
 | Platform | Official policy source | Release work still needed |
