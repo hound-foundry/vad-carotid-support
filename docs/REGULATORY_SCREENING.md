@@ -52,6 +52,8 @@ Portugal source discovery (13 October 2026) now records the National Data Protec
 
 Belgium source discovery (13 October 2026) now records the Belgian Data Protection Authority, cookie and tracking guidance, FAMHP medical-software guidance, and official 112 emergency information. These are source leads only. Belgium remains blocked pending qualified review of its multilingual federal and regional requirements, EU privacy and medical-device rules, accessibility, emergency wording and distribution.
 
+Austria source discovery (13 October 2026) now records the Austrian Data Protection Authority, its cookie and legal-source guidance, BASG medical-device market-access guidance, and official emergency-number information. These are source leads only. Austria remains blocked pending qualified review of German-language and EU privacy, medical-software, accessibility, emergency and distribution requirements.
+
 ### Platform distribution policies (not legislation)
 
 | Platform | Official policy source | Release work still needed |

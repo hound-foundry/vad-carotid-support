@@ -2466,8 +2466,50 @@
       "release": "blocked",
       "isoAlpha2": "AT",
       "reviewOwner": null,
-      "lastChecked": null,
-      "officialSources": [],
+      "lastChecked": "2026-10-13",
+      "officialSources": [
+        {
+          "title": "Austrian Data Protection Authority portal",
+          "url": "https://dsb.gv.at/?lang=en",
+          "authority": "Austrian Data Protection Authority",
+          "sourceType": "regulator-portal",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Data protection and cookies FAQs",
+          "url": "https://dsb.gv.at/faqs/datenschutz-cookies",
+          "authority": "Austrian Data Protection Authority",
+          "sourceType": "regulator-guidance",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Medical devices market access",
+          "url": "https://www.basg.gv.at/en/companies/medical-devices",
+          "authority": "Federal Office for Safety in Health Care",
+          "sourceType": "competent-authority-guidance",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Emergency numbers in Austria",
+          "url": "https://www.oesterreich.gv.at/en/themen/notfaelle_unfaelle_und_kriminalitaet/notrufnummern%23Notrufe",
+          "authority": "Austrian Federal Government",
+          "sourceType": "official-emergency-guidance",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Austrian data-protection legal sources",
+          "url": "https://dsb.gv.at/rechte-pflichten/rechtsquellen",
+          "authority": "Austrian Data Protection Authority",
+          "sourceType": "official-legal-reference",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        }
+      ],
+      "sourceDiscoveryCheckedOn": "2026-10-13",
       "reviewAreas": [
         {
           "area": "privacy-and-health-data",
