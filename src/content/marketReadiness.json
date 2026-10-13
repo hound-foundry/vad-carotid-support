@@ -3,7 +3,7 @@
   "scope": "UN M49 country-or-area discovery set, plus separately identified ISO 3166-1 market-screening supplements outside the standard M49 row set; reconcile against current ISO 3166-1 before publication and include applicable subnational laws.",
   "discoverySource": "https://unstats.un.org/unsd/methodology/m49/",
   "isoSource": "https://www.iso.org/iso-3166-country-codes.html",
-  "globalRelease": "blocked",
+  "globalRelease": "web-preview",
   "countryClearance": "not-assessed",
   "subnationalClearance": "not-assessed",
   "countryRecords": [

@@ -16,7 +16,7 @@ The first language set is English, Russian, Ukrainian, Lithuanian, Latvian, Esto
 
 ## Project readiness
 
-This is an early development preview, not a finished or globally cleared app. The release register contains 249 UN M49 country-or-area records, all blocked and unassessed; it still needs ISO reconciliation and qualified country/subnational review. Clinical review, reviewed translations, privacy assessment, app-store declarations, dependency security review and local emergency contacts remain release gates. See the [product brief](docs/PRODUCT.md), [clinical content standards](docs/CLINICAL_CONTENT.md), [literature seed list](docs/RESEARCH.md), [dependency security review](docs/DEPENDENCY_SECURITY.md) and [regulatory screening register](docs/REGULATORY_SCREENING.md).
+The English static web preview is intended for broad access as an education and appointment-preparation resource. It is not a clinical service or a claim of legal clearance in every country. The register contains 249 country-or-area records as a watchlist for country-specific features; those records do not prevent this low-risk web preview from being published. Clinical review, reviewed translations, privacy assessment, app-store declarations, dependency security review and local emergency contacts remain gates for the relevant content or distribution change. See the [product brief](docs/PRODUCT.md), [clinical content standards](docs/CLINICAL_CONTENT.md), [literature seed list](docs/RESEARCH.md), [dependency security review](docs/DEPENDENCY_SECURITY.md) and [regulatory screening register](docs/REGULATORY_SCREENING.md).
 
 ## Run the starter app
 
@@ -28,7 +28,7 @@ Requires Node.js 24 and npm. From the project directory:
     npm run build:web
     npm run web
 
-`npm run build:web` creates a local static preview. `npm run release:web` is the release build and intentionally stops until every jurisdiction record and legal review area is completed and approved.
+`npm run build:web` creates a local static preview. `npm run release:web` checks the low-risk web scope and builds the static release. It does not represent country-by-country legal clearance. Country-specific emergency numbers, medical claims, translations, hosted data, paid features and native app-store releases require their own review before activation.
 
 Then open the local Expo address in a browser. To run the native development server, use npm start. iOS device builds and store submissions may require Apple accounts and build credentials; none are included here.
 

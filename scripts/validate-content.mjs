@@ -58,7 +58,7 @@ for (const entry of glossary) {
   assert.ok(sources.has(entry.sourceId), `Glossary term ${entry.term} has unknown source ${entry.sourceId}`);
 }
 
-assert.equal(resources.globalRelease, "blocked", "International release must stay blocked until jurisdiction screening is complete");
+assert.equal(resources.globalRelease, "web-preview", "The broad web preview must use the low-risk web-preview release state");
 assert.ok(resources.countryRecords.length >= 240, "Country/area release queue must be comprehensive");
 assert.equal(resources.countryRecords.length, 249, "Inventory must include the 248-row M49 set and the separately identified Taiwan market-screening supplement");
 assert.equal(resources.isoCodeCrosswalk?.source, "https://unstats.un.org/unsd/methodology/m49/overview/", "ISO identifier crosswalk source must be recorded");
