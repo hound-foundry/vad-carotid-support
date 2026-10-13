@@ -80,6 +80,8 @@ Albania source discovery (13 October 2026) now records the Information and Data 
 
 Armenia source discovery (13 October 2026) now records the Personal Data Protection Agency, its legislation portal, Ministry of Health eHealth and health-policy materials, and official Ministry of Internal Affairs 112 guidance. These are source leads only. Armenia remains blocked pending qualified review of Armenian-, Russian- and English-language, national privacy, medical-software, accessibility, emergency and distribution requirements.
 
+Barbados source discovery (13 October 2026) now records the Data Protection Commission, the Data Protection Act, Ministry of Health and medical-equipment materials, and official emergency telephone guidance. These are source leads only. Barbados remains blocked pending qualified review of English-language, national privacy, medical-software, accessibility, emergency and distribution requirements.
+
 ### Platform distribution policies (not legislation)
 
 | Platform | Official policy source | Release work still needed |

@@ -3309,8 +3309,50 @@
       "release": "blocked",
       "isoAlpha2": "BB",
       "reviewOwner": null,
-      "lastChecked": null,
-      "officialSources": [],
+      "lastChecked": "2026-10-13",
+      "officialSources": [
+        {
+          "title": "Data Protection Commission",
+          "url": "https://www.gov.bb/General/data-protection-commissioner",
+          "authority": "Government of Barbados",
+          "sourceType": "privacy-regulator",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Data Protection Act 2019",
+          "url": "https://oag.gov.bb/attachments/Data%20Protection%20Act%2C%202019-29.pdf",
+          "authority": "Office of the Attorney General, Barbados",
+          "sourceType": "privacy-law",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Ministry of Health",
+          "url": "https://health.gov.bb/About",
+          "authority": "Ministry of Health, Barbados",
+          "sourceType": "health-regulator",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Pharmaceuticals and medical equipment",
+          "url": "https://health.gov.bb/News/Press-Releases/Access-To-Pharmaceuticals-Medical",
+          "authority": "Ministry of Health, Barbados",
+          "sourceType": "medical-equipment-guidance",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Important telephone numbers",
+          "url": "https://dem.gov.bb/public/downloads/SHELTERBOOKLET2024.pdf",
+          "authority": "Department of Emergency Management, Barbados",
+          "sourceType": "emergency-guidance",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        }
+      ],
+      "sourceDiscoveryCheckedOn": "2026-10-13",
       "reviewAreas": [
         {
           "area": "privacy-and-health-data",
