@@ -3411,8 +3411,50 @@
       "release": "blocked",
       "isoAlpha2": "BE",
       "reviewOwner": null,
-      "lastChecked": null,
-      "officialSources": [],
+      "lastChecked": "2026-10-13",
+      "officialSources": [
+        {
+          "title": "Belgian Data Protection Authority portal",
+          "url": "https://www.gegevensbeschermingsautoriteit.be/",
+          "authority": "Belgian Data Protection Authority",
+          "sourceType": "regulator-portal",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Cookies and tracking guidance",
+          "url": "https://gegevensbeschermingsautoriteit.be/citoyen/themes/internet/cookies",
+          "authority": "Belgian Data Protection Authority",
+          "sourceType": "regulator-guidance",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "In-house medical software: registration and legislation",
+          "url": "https://www.famhp.be/en/human_use/health_products/medical_devices_and_their_accessories/health_institutions_and_5",
+          "authority": "Federal Agency for Medicines and Health Products",
+          "sourceType": "competent-authority-guidance",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Urgent medical assistance",
+          "url": "https://www.belgium.be/en/health/healthcare/emergencies",
+          "authority": "Belgium.be",
+          "sourceType": "official-emergency-guidance",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Emergency numbers options menu",
+          "url": "https://news.belgium.be/en/options-menu-both-emergency-numbers-11-february-2020",
+          "authority": "Federal Public Service Home Affairs",
+          "sourceType": "official-emergency-guidance",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        }
+      ],
+      "sourceDiscoveryCheckedOn": "2026-10-13",
       "reviewAreas": [
         {
           "area": "privacy-and-health-data",

@@ -50,6 +50,8 @@ Poland source discovery (13 October 2026) now records the Office for Personal Da
 
 Portugal source discovery (13 October 2026) now records the National Data Protection Commission, INFARMED software and medical-device classification guidance, and official 112 emergency-service pages. These are source leads only. Portugal remains blocked pending qualified review of Portuguese and EU privacy, medical-software, accessibility, translation, emergency and distribution requirements.
 
+Belgium source discovery (13 October 2026) now records the Belgian Data Protection Authority, cookie and tracking guidance, FAMHP medical-software guidance, and official 112 emergency information. These are source leads only. Belgium remains blocked pending qualified review of its multilingual federal and regional requirements, EU privacy and medical-device rules, accessibility, emergency wording and distribution.
+
 ### Platform distribution policies (not legislation)
 
 | Platform | Official policy source | Release work still needed |
