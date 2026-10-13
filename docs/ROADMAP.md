@@ -15,6 +15,9 @@ Items are proposals, not promised dates. Safety review is a release gate.
 - [x] Browser print action for the user-reviewed appointment-sheet preview.
 - [x] Patient/carer usability review prompts and safe feedback-handling guidance.
 - [x] Prepare a clinical review packet mapping each draft to its review questions; reviewer and approval remain outstanding.
+- [x] Add separate local-only personal information and milestone/story cards with explicit preview, export, print and delete actions.
+- [x] Add persistent local accessibility controls, a shared accessibility footer and safe-exit privacy guidance on private tools.
+- [x] Add an installable static web shell with a network-first offline fallback; card and appointment data remain outside service-worker requests.
 - [ ] Patient and carer review of navigation and language.
 - [ ] Clinician review of glossary definitions and appointment prompts before any patient-facing release.
 - [ ] Clinically reviewed emergency wording and country-specific resources.
@@ -26,7 +29,7 @@ Items are proposals, not promised dates. Safety review is a release gate.
 - [x] Short-on-time home links to a glossary term, a single appointment question and carer guidance.
 - [ ] Patient and carer review of guide usefulness, language and support-sheet preferences.
 - [x] “How I prefer to be supported” sheet with selection, optional note and sharing preview.
-- [ ] Private notes with delete/export and no account.
+- [x] Private notes with delete/export and no account.
 - [x] Save guide links locally with explicit export/delete controls and a device privacy notice.
 - [x] Listed resource cards show evidence type, check date, language, editorial/clinical review status and rights basis; community candidates remain hidden pending verification.
 - [ ] English-reviewed content; add translated interface and short guides after language and clinical review.
