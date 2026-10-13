@@ -4269,8 +4269,50 @@
       "release": "blocked",
       "isoAlpha2": "BJ",
       "reviewOwner": null,
-      "lastChecked": null,
-      "officialSources": [],
+  "lastChecked": "2026-10-13",
+  "officialSources": [
+    {
+      "title": "Law on personal data protection in Benin",
+      "url": "https://sgg.gouv.bj/documentheque/lois/27/",
+      "authority": "General Secretariat of the Government of Benin",
+      "sourceType": "privacy-law",
+      "checkedOn": "2026-10-13",
+      "status": "source-lead-only"
+    },
+    {
+      "title": "Personal Data Protection Authority privacy guidance",
+      "url": "https://service.apdp.bj/mise_en_conformite/politique_de_confidentialite",
+      "authority": "Autorité de Protection des Données à caractère Personnel, Benin",
+      "sourceType": "privacy-regulator",
+      "checkedOn": "2026-10-13",
+      "status": "source-lead-only"
+    },
+    {
+      "title": "Ministry of Health",
+      "url": "https://sante.gouv.bj/",
+      "authority": "Ministry of Health, Benin",
+      "sourceType": "health-regulator",
+      "checkedOn": "2026-10-13",
+      "status": "source-lead-only"
+    },
+    {
+      "title": "Health-products and medical-device registration authority",
+      "url": "https://mohbenin.com/",
+      "authority": "Benin Ministry for Products Registration and Trade Authorization Commission",
+      "sourceType": "medical-device-regulation",
+      "checkedOn": "2026-10-13",
+      "status": "source-lead-only"
+    },
+    {
+      "title": "Health emergency numbers",
+      "url": "https://sante.gouv.bj/article/numeros-durgence/numeros-durgence-sanitaires",
+      "authority": "Ministry of Health, Benin",
+      "sourceType": "emergency-guidance",
+      "checkedOn": "2026-10-13",
+      "status": "source-lead-only"
+    }
+  ],
+  "sourceDiscoveryCheckedOn": "2026-10-13",
       "reviewAreas": [
         {
           "area": "privacy-and-health-data",

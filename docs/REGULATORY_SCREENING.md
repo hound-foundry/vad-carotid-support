@@ -565,3 +565,9 @@ Bahrain source discovery records the Personal Data Protection Law and executive 
 This is an official-source discovery pass, not legal advice, a completeness claim or an applicability determination. Belarus (`BY`) remains blocked; all 14 review areas and the national review remain `not-assessed`.
 
 Belarus source discovery records the personal-data protection law and National Personal Data Protection Center, the Ministry of Health, a cross-check for ambulance guidance, and a medical-device registration source lead. Some material is Russian-language or secondary and must be verified against current Belarusian legal publications. Qualified review must resolve health-data processing, cross-border transfers, local-language accessibility, medical-software classification, emergency-information publication, consumer and distribution rules, and any applicable subnational requirements before Belarus-specific access or emergency details are enabled.
+
+## Benin source-discovery snapshot — 13 October 2026
+
+This is an official-source discovery pass, not legal advice, a completeness claim or an applicability determination. Benin (`BJ`) remains blocked; all 14 review areas and the national review remain `not-assessed`.
+
+Benin source discovery records the government law repository, the Personal Data Protection Authority, the Ministry of Health, a health-products and medical-device registration source, and current health-emergency guidance. The material is primarily French-language and must receive qualified legal, clinical, translation and accessibility review before Benin-specific access or emergency details are enabled.
