@@ -1,5 +1,5 @@
 import assert from "node:assert/strict";
-import { readFile } from "node:fs/promises";
+import { access, readFile } from "node:fs/promises";
 
 const ledger = JSON.parse(await readFile(new URL("../content/claimLedger.json", import.meta.url), "utf8"));
 const records = JSON.parse(await readFile(new URL("../content/reviewRecords.json", import.meta.url), "utf8"));
@@ -8,6 +8,17 @@ assert.equal(records.schemaVersion, 1);
 assert.equal(records.releaseStatus, "blocked-pending-human-review");
 assert.ok(ledger.coverage.length >= 13, "clinical ledger must cover guides, glossary, prompts, urgent help, homepage and cards");
 assert.ok(ledger.claims.length >= 5, "ledger must include representative high-risk claim records");
+const evidenceFiles = [
+  "../content/claimLedger.json",
+  "../docs/CLINICAL_REVIEW_PACKET.md",
+  "../docs/USABILITY_REVIEW.md",
+  "../docs/USABILITY_FEEDBACK_LOG.md",
+  "../docs/ACCESSIBILITY_TEST_MATRIX.md",
+  "../docs/DATA_FLOW.md",
+  "../docs/REGULATORY_SCREENING.md",
+  "../docs/DEEP_REVIEW.md",
+];
+for (const path of evidenceFiles) await access(new URL(path, import.meta.url));
 for (const item of ledger.coverage) {
   assert.match(item.id, /^(guides|glossary|appointment-prompts|urgent-help|homepage|personal-card|milestone-card):/);
   assert.ok(item.path && item.selector && item.units && item.risk && item.reviewerRole, `incomplete coverage record: ${item.id}`);
