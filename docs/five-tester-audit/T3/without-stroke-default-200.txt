@@ -1,0 +1,9 @@
+Browser tab: 1, Title: "VAD & Carotid Support", URL: "http://localhost:51070/without-stroke".
+The following is a diff from the previous accessibility tree with ~ and + representing changed and added elements, respectively. Removed elements are summarized by ID range.
+~1 AXWebArea VAD & Carotid Support, URL: localhost:51070/without-stroke
+~				16 text DISSECTION WITHOUT A DIAGNOSED STROKE
+~				17 heading Dissection without a diagnosed stroke, Value: 1
+~					18 text Dissection without a diagnosed stroke
+~				19 text A pathway for people whose dissection was not accompanied by a diagnosed stroke, including questions about follow-up and life after diagnosis.
+~				27 link Value: localhost:51070/guide/without-stroke, Description: Dissection without a diagnosed stroke A pathway for people whose dissection was not accompanied by a diagnosed stroke. For patients, carers · About 1 min Draft · not approved for patient use
+The focused UI element is 1 AXWebArea VAD & Carotid Support, URL: localhost:51070/without-stroke

@@ -1,0 +1,39 @@
+Browser tab: 1, Title: "VAD & Carotid Support", URL: "http://localhost:51070/with-stroke".
+1 AXWebArea VAD & Carotid Support, URL: localhost:51070/with-stroke
+	2 container
+		3 link Description: Urgent help, Value: localhost:51070/urgent-help
+		4 container
+			5 text VAD & Carotid Support
+			6 container Main navigation
+				7 link Description: Home, Value: localhost:51070/
+				8 button (collapsed) Menu, Secondary Actions: Expand
+					9 text Menu
+				10 link Description: Text and display, Value: localhost:51070/accessibility
+		11 container
+			12 link Description: Skip to main content, ID: skip-to-content
+				13 text Skip to main content
+			14 container
+				15 link Description: Back to home, Value: localhost:51070/
+				16 text DISSECTION ACCOMPANIED BY STROKE
+				17 heading Dissection and stroke, Value: 1
+					18 text Dissection and stroke
+				19 text A pathway for questions about rehabilitation, communication, fatigue, daily life and support.
+				20 container
+					21 text Draft information · review pending Clinical and patient/carer reviews are not yet recorded. For personal care questions, ask your doctor.
+					22 link Description: About the review process, Value: localhost:51070/about
+				23 heading Guides for this pathway, Value: 2
+					24 text Guides for this pathway
+				25 link Value: localhost:51070/guide/understanding-dissection, Description: Understanding cervical artery dissection A plain-language starting point for carotid and vertebral artery dissection. For patients, carers, interested readers · About 2 min Draft · not approved for patient use
+				26 link Value: localhost:51070/guide/tests-and-terms, Description: Tests, scans and unfamiliar terms Understand what to ask about a scan or report without trying to interpret it on your own. For patients, carers, interested readers · About 3 min Draft · not approved for patient use
+				27 link Value: localhost:51070/guide/with-stroke, Description: When dissection is accompanied by stroke Conversation prompts about rehabilitation, communication, daily life and support for patients and carers. For patients, carers · About 2 min Draft · not approved for patient use
+				28 link Value: localhost:51070/guide/recovery-and-quality-of-life, Description: Recovery, fatigue and quality of life Make room for changes in energy, confidence, mood and everyday life, even when they are hard to see. For patients, carers · About 2 min Draft · not approved for patient use
+				29 link Value: localhost:51070/guide/follow-up-questions, Description: Prepare for a follow-up appointment Choose what matters most, make room for questions and leave with a clear next step to discuss. For patients, carers · About 2 min Draft · not approved for patient use
+				30 link Value: localhost:51070/appointments, Description: Prepare questions for your next appointment → Choose only what matters today; you can save or export after reviewing.
+				31 text Development preview · general information only · not a medical service
+				32 container
+					33 link Description: About and privacy, Value: localhost:51070/about
+					34 link Description: Accessibility, Value: localhost:51070/accessibility
+					35 link Description: Saved on this device, Value: localhost:51070/saved
+					36 link Description: Urgent help, Value: localhost:51070/urgent-help
+
+The focused UI element is 1 AXWebArea VAD & Carotid Support, URL: localhost:51070/with-stroke

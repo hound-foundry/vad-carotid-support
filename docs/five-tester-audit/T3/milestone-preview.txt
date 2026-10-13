@@ -1,0 +1,59 @@
+Browser tab: 1, Title: "VAD & Carotid Support", URL: "http://localhost:51070/milestone-card".
+1 AXWebArea VAD & Carotid Support, URL: localhost:51070/milestone-card
+	2 container
+		3 link Description: Urgent help, Value: localhost:51070/urgent-help
+		4 container
+			5 text VAD & Carotid Support
+			6 container Main navigation
+				7 link Description: Home, Value: localhost:51070/
+				8 button (collapsed) Menu, Secondary Actions: Expand
+					9 text Menu
+				10 link Description: Text and display, Value: localhost:51070/accessibility
+		11 container
+			12 link Description: Skip to main content, ID: skip-to-content
+				13 text Skip to main content
+			14 container
+				15 link Description: Back to home, Value: localhost:51070/
+				51 container Description: CARD · PREVIEW Review your card Download a personal card to keep or share yourself., ID: milestone-stage
+					52 container
+						53 text CARD · PREVIEW
+						54 heading Review your card, Value: 1
+							55 text Review your card
+						56 text Download a personal card to keep or share yourself.
+				57 text Survivor milestone
+				58 heading A synthetic milestone, Value: 2
+					59 text A synthetic milestone
+				60 container
+					61 text Name T3 Milestone
+				62 container
+					63 text Message T3 synthetic: a moment to remember.
+				64 text Personal story/milestone — not medical advice or proof of diagnosis.
+				65 button Edit card
+					66 text Edit card
+				67 text Files and printouts contain the information shown above. Copies leave this app’s control.
+				68 button Download image (PNG)
+					69 text Download image (PNG)
+				70 button Download PDF
+					71 text Download PDF
+				72 button Print card
+					73 text Print card
+				74 button (collapsed) Text alternative · Show, Secondary Actions: Expand
+					75 container
+						76 text Text alternative  ·  Show
+				36 text Unsaved changes. They stay here while the app is open.
+				37 button Save on this device
+					38 text Save on this device
+				39 button (collapsed) Start blank or delete saved card · Show, Secondary Actions: Expand
+					40 container
+						41 text Start blank or delete saved card  ·  Show
+				42 button (collapsed) Privacy and leaving this page · Show, Secondary Actions: Expand
+					43 container
+						44 text Privacy and leaving this page  ·  Show
+				45 text Development preview · general information only · not a medical service
+				46 container
+					47 link Description: About and privacy, Value: localhost:51070/about
+					48 link Description: Accessibility, Value: localhost:51070/accessibility
+					49 link Description: Saved on this device, Value: localhost:51070/saved
+					50 link Description: Urgent help, Value: localhost:51070/urgent-help
+
+The focused UI element is 51 container Description: CARD · PREVIEW Review your card Download a personal card to keep or share yourself., ID: milestone-stage

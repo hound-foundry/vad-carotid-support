@@ -1,0 +1,204 @@
+{
+  "tester": "T2",
+  "addendumFor": {
+    "report": "report.md",
+    "structuredReport": "report.json",
+    "lockedReportsModified": false
+  },
+  "scorePreserved": {
+    "total": 8,
+    "criticalCapApplied": false
+  },
+  "readingInterruption": {
+    "coverageStatusMeaning": "pass means exercised and observed, not that resume behavior succeeded",
+    "retainedSequence": [
+      "Enable Read one section at a time on the Understanding cervical artery dissection guide.",
+      "Advance to Section 2 of 4.",
+      "Leave for /learn.",
+      "Search for fatigue.",
+      "Open a different guide.",
+      "Return to the Understanding guide.",
+      "Observe it restart at Section 1 of 4."
+    ],
+    "navigationMechanism": "Unknown from retained observations. The record does not establish whether leaving for /learn used an in-app link, browser Back, or direct tab navigation, and exact CUA calls were not retained. Do not infer.",
+    "evidence": [
+      "evidence/11-guide-mid.png",
+      "evidence/guide-understanding-simplified.txt"
+    ],
+    "finding": "T2-01"
+  },
+  "deleteCancellationCoverage": {
+    "coverageStatusMeaning": "pass means deletion behavior was exercised; it does not mean cancel or undo was available",
+    "supportPreferences": {
+      "tested": true,
+      "result": "Delete cleared the synthetic saved choices and note immediately; no active dialog or visible cancel/undo appeared.",
+      "evidence": [
+        "evidence/support-delete-before.png",
+        "evidence/support-delete-after-timeout.png"
+      ],
+      "finding": "T2-02"
+    },
+    "appointmentSheet": {
+      "tested": true,
+      "result": "Synthetic saved sheet was deleted; retained observation reported no confirmation or cancellation UI.",
+      "evidence": [
+        "evidence/appointment-reloaded.txt"
+      ]
+    },
+    "cards": {
+      "deleteOrCancelTested": false,
+      "reason": "No card deletion or cancellation action was exercised."
+    }
+  },
+  "unsavedLeaveAndReturn": {
+    "appointmentSheet": {
+      "tested": false,
+      "reason": "Explicit save, reload, and restoration were observed; a separate leave-route-while-unsaved and return sequence is not established by retained evidence."
+    },
+    "supportPreferences": {
+      "tested": false,
+      "reason": "Explicit save, reload, and restoration were observed; a separate leave-route-while-unsaved and return sequence is not established by retained evidence."
+    },
+    "personalCard": {
+      "tested": false,
+      "reason": "Preview/edit return within the card flow, explicit save, and reload were observed; route-leave-before-save and return was not established."
+    },
+    "milestoneCard": {
+      "tested": false,
+      "reason": "Preview/edit return within the card flow, explicit save, and reload were observed; route-leave-before-save and return was not established."
+    }
+  },
+  "optionalFieldsAndDateModes": {
+    "appointmentSheet": {
+      "tested": [
+        "Select and remove questions",
+        "Synthetic note",
+        "Optional one-section view",
+        "Optional selected-questions-only view",
+        "Explicit save and reload"
+      ],
+      "notEstablished": [
+        "Leaving the route with unsaved edits and returning"
+      ],
+      "evidence": [
+        "evidence/appointment-edited.txt",
+        "evidence/appointment-reloaded.txt"
+      ]
+    },
+    "supportPreferences": {
+      "tested": [
+        "Select preferences",
+        "Synthetic note",
+        "Optional one-section view",
+        "Optional selected-only view",
+        "Explicit save and reload"
+      ],
+      "notEstablished": [
+        "Leaving the route with unsaved edits and returning"
+      ],
+      "evidence": [
+        "evidence/support-preferences-edited.txt",
+        "evidence/support-preferences-reloaded.txt"
+      ]
+    },
+    "personalCard": {
+      "enteredAndObserved": [
+        "Preferred name: T2 Test",
+        "Communication/access text",
+        "What helps: Written key points.",
+        "Selected Please write important things down.",
+        "Specific date: 4 October 2026"
+      ],
+      "fieldsInspectedButEntryNotEstablished": [
+        "Description",
+        "Avoid",
+        "Emergency contact",
+        "Clinician/service contact",
+        "Medicines",
+        "Allergies"
+      ],
+      "dateModes": {
+        "noDateDefaultObserved": true,
+        "specificDateEntered": true,
+        "otherDateModes": "Not established."
+      },
+      "withinFlowPreviewEditReturnSaveReloadTested": true,
+      "routeLeaveBeforeSaveReturnTested": false,
+      "deleteCancelTested": false,
+      "evidence": [
+        "evidence/personal-card-fields.txt",
+        "evidence/personal-card-preview.txt",
+        "evidence/personal-card-reloaded.txt",
+        "evidence/personal-card-export.pdf",
+        "evidence/personal-card-export.txt"
+      ]
+    },
+    "milestoneCard": {
+      "enteredAndObserved": [
+        "Synthetic title/name/message",
+        "Survivor wording selected",
+        "Year-only date: 2026"
+      ],
+      "dateModes": {
+        "noDateDefaultObserved": true,
+        "yearOnlyEntered": true,
+        "otherDateModes": "Not tested."
+      },
+      "withinFlowPreviewEditReturnSaveReloadTested": true,
+      "routeLeaveBeforeSaveReturnTested": false,
+      "deleteCancelTested": false,
+      "evidence": [
+        "evidence/milestone-card-preview.txt",
+        "evidence/milestone-card-preview-year.txt",
+        "evidence/milestone-card-reloaded.txt",
+        "evidence/milestone-card-export.pdf",
+        "evidence/milestone-card-export.png",
+        "evidence/milestone-card-export.txt"
+      ]
+    }
+  },
+  "privacyObservation": {
+    "marker": "T2-privacy-marker-07",
+    "route": "http://localhost:51069/support-preferences",
+    "observationAPIs": [
+      "CDP Network.enable and Network.requestWillBeSent",
+      "CDP Runtime.enable and Runtime.consoleAPICalled",
+      "CDP Log.enable and Log.entryAdded",
+      "tab.dev.logs with limit 100"
+    ],
+    "observedRequestScope": [
+      "GET http://localhost:51069/support-preferences",
+      "GET http://localhost:51069/_expo/static/js/web/entry-748300c0e9a32847664a86b826cff7c4.js"
+    ],
+    "afterMarkerSave": "No additional requestWillBeSent, consoleAPICalled or Log.entryAdded events in the observed window; tab.dev.logs returned an empty list.",
+    "externalDestinationOpened": false,
+    "limitations": [
+      "Observation covered one local route load and one synthetic save.",
+      "Request bodies, storage internals and every app lifecycle were not inspected."
+    ],
+    "evidence": [
+      "evidence/privacy-observation.txt",
+      "evidence/privacy-marker-saved.png"
+    ]
+  },
+  "clearAllCorrection": {
+    "tested": false,
+    "lockedReportReasonWas": "Avoided to protect other testers' possible local fixtures in a shared browser profile.",
+    "correction": "That concern reflected a setup misunderstanding. The coordinator clarified that the five origins use separate origin-scoped localStorage; clearing the assigned origin would not clear other origins.",
+    "actualReason": "The clear-all task was not exercised. No clear-all behavior is asserted.",
+    "scoreChanged": false,
+    "findingAdded": false
+  },
+  "screenshotEvidence": {
+    "acceptedGuideScreenshots": [
+      "evidence/guide-understanding-dissection-stable.png",
+      "evidence/guide-tests-and-terms-stable.png",
+      "evidence/guide-without-stroke-stable.png",
+      "evidence/guide-with-stroke-stable.png",
+      "evidence/guide-recovery-and-quality-of-life-stable.png",
+      "evidence/guide-supporting-someone-stable.png",
+      "evidence/guide-follow-up-questions-stable.png"
+    ],
+    "rejected": "Initial guide screenshots with 11,328-byte files showed an unstable narrow header and no guide; exclude them from accepted screenshot references."
+  }
+}

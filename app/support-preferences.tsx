@@ -1,11 +1,12 @@
 import { Pressable, Text, TextInput, View } from "../src/components/Ui";
 import { useEffect, useState } from "react";
 import { useLocalSearchParams } from "expo-router";
-import { Alert, Platform, StyleSheet } from "react-native";
+import { Platform, StyleSheet } from "react-native";
 import { AppPage, Card, PageHeading, palette } from "../src/components/AppPage";
 import { emptySupportPreferences, formatSupportPreferencesExport, guidePreferenceSuggestions, MAX_NOTE_LENGTH, supportPreferences, type SupportPreferencesSheet } from "../src/features/support-preferences/model.mjs";
 import { deleteSupportPreferences, exportSupportPreferences, loadSupportPreferences, saveSupportPreferences } from "../src/features/support-preferences/store";
 import { useSheetDraft } from "../src/features/sheets/useSheetDraft";
+import { ConfirmDelete } from "../src/components/ConfirmDelete";
 
 const groups = [...new Set(supportPreferences.map((item) => item.group))];
 
@@ -63,13 +64,6 @@ export default function SupportPreferencesScreen() {
       setMessage(ok ? "Saved preferences deleted from this app’s device storage." : "Could not delete the saved preferences from device storage.");
     } catch { setMessage("Could not delete the saved preferences from device storage."); }
   };
-  const confirmRemove = () => {
-    if (Platform.OS === "web") {
-      if (globalThis.confirm("Delete the saved support preferences from this device?")) void remove();
-      return;
-    }
-    Alert.alert("Delete saved preferences?", "This clears this app’s saved support preferences from this device.", [{ text: "Cancel", style: "cancel" }, { text: "Delete", style: "destructive", onPress: () => { void remove(); } }]);
-  };
   const exportSheet = async () => {
     try {
       await exportSupportPreferences(sheet);
@@ -107,7 +101,7 @@ export default function SupportPreferencesScreen() {
       const selected = supportPreferences.filter((item) => item.group === group && sheet.selectedIds.includes(item.id));
       return selected.length ? <View key={group} style={styles.previewGroup}><Text style={styles.previewGroupTitle}>{group}</Text>{selected.map((item) => <Text key={item.id} style={styles.previewLine}>• {item.text}</Text>)}</View> : null;
     })}{sheet.selectedIds.length === 0 && !sheet.note.trim() ? <Text style={styles.previewLine}>Choose a few statements or add a note to build your sheet.</Text> : null}{sheet.note.trim() ? <><Text style={styles.previewGroupTitle}>Something else I’d like you to know</Text><Text style={styles.previewLine}>{sheet.note.trim()}</Text></> : null}<Text style={styles.helper}>Your preferences belong to you. You choose whether to share them.</Text></View></Card>
-    <View style={styles.actions}><Button title={draft.status === "saved" || draft.status === "restored" ? "Saved on this device" : draft.status === "saving" ? "Saving…" : "Save on this device"} onPress={() => void save()} /><Button title="Export for sharing" secondary onPress={() => void exportSheet()} />{Platform.OS === "web" ? <><Button title="Copy sheet text" secondary onPress={() => void copySheet()} /><Button title="Print support sheet" secondary onPress={() => globalThis.print?.()} /></> : null}<Button title="Delete saved preferences" secondary onPress={confirmRemove} /></View>
+    <View style={styles.actions}><Button title={draft.status === "saved" || draft.status === "restored" ? "Saved on this device" : draft.status === "saving" ? "Saving…" : "Save on this device"} onPress={() => void save()} /><Button title="Export for sharing" secondary onPress={() => void exportSheet()} />{Platform.OS === "web" ? <><Button title="Copy sheet text" secondary onPress={() => void copySheet()} /><Button title="Print support sheet" secondary onPress={() => globalThis.print?.()} /></> : null}<ConfirmDelete label="Delete saved preferences" question="Delete these saved preferences?" detail="This clears the sheet and deletes its saved copy from this device. Downloaded and printed copies are unchanged." onConfirm={remove} disabled={["loading", "saving", "deleting"].includes(draft.status)} /></View>
     <Text accessibilityLiveRegion="polite" style={styles.status}>{draftStatusMessage(draft.status)} {message}</Text>
     <Card title="Where the data lives"><Text style={styles.helper}>On the web, this app uses this browser profile’s local storage. It is not encrypted by this app and may be exposed to people or software with access to the profile or device. On iOS and Android, this app uses Expo SecureStore. Browser, device, operating-system and backup behavior varies; local storage alone does not guarantee privacy. Export makes a separate copy in the destination you choose; deleting here may not remove an exported or backed-up copy.</Text></Card>
   </AppPage>;

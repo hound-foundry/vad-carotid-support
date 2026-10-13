@@ -1,0 +1,5 @@
+Browser tab: 1, Title: "localhost:51070/not-a-page", URL: "http://localhost:51070/not-a-page".
+1 AXWebArea localhost:51070/not-a-page
+	2 text Page not found
+
+The focused UI element is 1 AXWebArea localhost:51070/not-a-page

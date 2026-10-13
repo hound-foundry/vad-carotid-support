@@ -1,0 +1,59 @@
+Prepare an appointment
+Choose what matters most today. Start with one question, add a reminder, then review before saving or exporting.
+Optional viewing options
+3 questions selected
+Clear selections
+Before the appointment
+Clear section
+3/3
+✓
+What is the one thing I most want help understanding or discussing today?
+✓
+Would I like someone to come with me, and what would I like them to do?
+✓
+Would a written summary, communication aid, interpreter, or more time help me take part?
+During the appointment
+Select all in section
+0/9
+Could you explain the diagnosis and which artery is involved?
+Could you explain what my test results show, what remains uncertain, and whether anything is still pending?
+Is any follow-up imaging planned for me? If so, what is its purpose?
+What do I need to know about medicines prescribed or changed for me, and who should I ask if I have a concern?
+Which day-to-day concerns, such as energy or concentration, would be useful to discuss?
+How could I describe changes in energy, fatigue or concentration so we can discuss what support may fit?
+Which everyday activities have become harder, and could we talk about support or rehabilitation options?
+How could I discuss work, study or usual routines and any support I may need for my situation?
+What support is available for me and the people helping me?
+Before I leave
+Select all in section
+0/3
+Could we write down the next steps and who is responsible for each one?
+Who will contact me about any pending results, and how can I follow up if I do not hear back?
+Who can I contact with a non-emergency question between appointments?
+My own notes (optional)
+Keep notes brief and avoid names, dates of birth, contact details or copies of records. Notes stay in this browser profile or on this device unless you export them.
+39/500
+If you need to leave safely
+Someone who can access this browser or device may see saved questions and notes. Close the page, use a private device when appropriate, and remember that exports, printouts, browser history and backups are outside this app’s control.
+Preview
+Appointment question sheet
+Before the appointment
+□ What is the one thing I most want help understanding or discussing today?
+□ Would I like someone to come with me, and what would I like them to do?
+□ Would a written summary, communication aid, interpreter, or more time help me take part?
+My own notes
+T2 fixture: ask for written next steps.
+For discussion with your own care team. This is not medical advice.
+Saved on this device
+Export sheet
+Copy sheet text
+Print question sheet
+Delete saved sheet
+Your saved questions and notes were restored from this device. 
+Where the data lives
+On the web, this app uses this browser profile’s local storage. It is not encrypted by this app and may be exposed to people or software with access to the profile or device. On iOS and Android, this app uses Expo SecureStore. Browser, device, operating-system and backup behavior varies; local storage alone does not guarantee privacy. Export sends a copy to the destination you choose. Deleting here may not remove an exported or backed-up copy.
+Development preview · general information only · not a medical service
+About and privacy
+Accessibility
+Saved on this device
+Urgent help

@@ -1,0 +1,9 @@
+Browser tab: 1, Title: "VAD & Carotid Support", URL: "http://localhost:51070/personal-card".
+The following is a diff from the previous accessibility tree with ~ and + representing changed and added elements, respectively. Removed elements are summarized by ID range.
+Removed element IDs: 87-109
+~				72 button Download PDF
+~				74 button Print card
+~					84 button Download text
+~				86 text Print view opened. Choose Print or Cancel there.
+~				37 text Saved on this device.
+The focused UI element is 0 AXWebArea VAD & Carotid Support, URL: localhost:51070/personal-card

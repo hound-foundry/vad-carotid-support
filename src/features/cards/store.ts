@@ -1,6 +1,6 @@
 import { Platform, Share } from "react-native";
 import * as SecureStore from "expo-secure-store";
-import { createCardStore } from "./storage.mjs";
+import { coordinateCardClearing, createCardStore } from "./storage.mjs";
 import { MILESTONE_CARD_KEY, PERSONAL_CARD_KEY, formatMilestoneCardExport, formatPersonalCardExport, type MilestoneCard, type PersonalCard } from "./model.mjs";
 
 const getItem = async (key: string) => Platform.OS === "web" ? globalThis.localStorage?.getItem(key) ?? null : SecureStore.getItemAsync(key);
@@ -10,6 +10,7 @@ const removeItem = async (key: string) => { if (Platform.OS === "web") { if (!gl
 const adapter = { getItem, setItem, removeItem };
 export const personalCardStore = createCardStore(adapter, "personal");
 export const milestoneCardStore = createCardStore(adapter, "milestone");
+coordinateCardClearing([personalCardStore, milestoneCardStore]);
 export async function loadPersonalCard(): Promise<PersonalCard> { return await personalCardStore.load() as PersonalCard; }
 export async function savePersonalCard(card: PersonalCard) { await personalCardStore.save(card); }
 export async function deletePersonalCard() { await personalCardStore.remove(); }

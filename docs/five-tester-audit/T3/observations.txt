@@ -1,0 +1,47 @@
+Browser tab: 1, Title: "VAD & Carotid Support", URL: "http://localhost:51070/".
+There has been no change in the accessibility tree.
+The focused UI element is 2 link Description: Urgent help, URL: localhost:51070/urgent-help
+---TAB---
+Browser tab: 1, Title: "VAD & Carotid Support", URL: "http://localhost:51070/".
+There has been no change in the accessibility tree.
+The focused UI element is 6 link Description: Home, URL: localhost:51070/
+---TAB---
+Browser tab: 1, Title: "VAD & Carotid Support", URL: "http://localhost:51070/".
+There has been no change in the accessibility tree.
+The focused UI element is 7 button (collapsed) Menu, Secondary Actions: Expand
+---TAB---
+Browser tab: 1, Title: "VAD & Carotid Support", URL: "http://localhost:51070/".
+There has been no change in the accessibility tree.
+The focused UI element is 9 link Description: Text and display, URL: localhost:51070/accessibility
+---TAB---
+Browser tab: 1, Title: "VAD & Carotid Support", URL: "http://localhost:51070/".
+There has been no change in the accessibility tree.
+The focused UI element is 11 link Description: Skip to main content, ID: skip-to-content
+---TAB---
+Browser tab: 1, Title: "VAD & Carotid Support", URL: "http://localhost:51070/".
+There has been no change in the accessibility tree.
+The focused UI element is 17 link Description: Understand dissection Guides and unfamiliar words., URL: localhost:51070/learn
+---TAB---
+Browser tab: 1, Title: "VAD & Carotid Support", URL: "http://localhost:51070/".
+There has been no change in the accessibility tree.
+The focused UI element is 18 link Description: Prepare an appointment Choose questions for your doctor., URL: localhost:51070/appointments
+---TAB---
+Browser tab: 1, Title: "VAD & Carotid Support", URL: "http://localhost:51070/".
+There has been no change in the accessibility tree.
+The focused UI element is 19 link Description: Make a card Medical information or a personal milestone., URL: localhost:51070/cards
+---TAB---
+Browser tab: 1, Title: "VAD & Carotid Support", URL: "http://localhost:51070/".
+There has been no change in the accessibility tree.
+The focused UI element is 20 link Description: Help someone Practical ideas for family and carers., URL: localhost:51070/supporting-someone
+---TAB---
+Browser tab: 1, Title: "VAD & Carotid Support", URL: "http://localhost:51070/".
+There has been no change in the accessibility tree.
+The focused UI element is 21 link Description: Open saved guides, sheets and cards, URL: localhost:51070/saved
+---TAB---
+Browser tab: 1, Title: "VAD & Carotid Support", URL: "http://localhost:51070/".
+There has been no change in the accessibility tree.
+The focused UI element is 27 link Description: About and privacy, URL: localhost:51070/about
+---TAB---
+Browser tab: 1, Title: "VAD & Carotid Support", URL: "http://localhost:51070/".
+There has been no change in the accessibility tree.
+The focused UI element is 28 link Description: Accessibility, URL: localhost:51070/accessibility

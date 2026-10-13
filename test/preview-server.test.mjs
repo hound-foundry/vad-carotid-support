@@ -19,3 +19,21 @@ test("clean card URLs and reloads resolve without a catch-all or directory trave
     assert.equal((await fetch(origin+"/%00")).status,403);
   } finally { server.close(); await once(server,"close"); await rm(dir,{recursive:true,force:true}); }
 });
+
+test("unknown pages retain an accessible 404 shell while missing assets stay plain 404", async () => {
+  const dir = await mkdtemp(join(tmpdir(), "vad-404-test-"));
+  assert.equal(dirname(resolve(dir)), resolve(tmpdir()));
+  await writeFile(join(dir, "+not-found.html"), "<h1>Page not found</h1><a href='/'>Home</a><a href='/urgent-help'>Urgent help</a>");
+  const server = createPreviewServer(dir); server.listen(0, "127.0.0.1"); await once(server, "listening");
+  const origin = `http://127.0.0.1:${server.address().port}`;
+  try {
+    const page = await fetch(origin + "/stale-link");
+    assert.equal(page.status, 404); assert.match(page.headers.get("content-type"), /text\/html/);
+    assert.match(await page.text(), /Home.*Urgent help/);
+    const asset = await fetch(origin + "/missing.js");
+    assert.equal(asset.status, 404); assert.match(asset.headers.get("content-type"), /text\/plain/);
+    assert.doesNotMatch(await asset.text(), /<h1>/);
+    const head = await fetch(origin + "/stale-link", { method: "HEAD" });
+    assert.equal(head.status, 404); assert.equal(await head.text(), "");
+  } finally { server.close(); await once(server, "close"); await rm(dir, { recursive: true, force: true }); }
+});

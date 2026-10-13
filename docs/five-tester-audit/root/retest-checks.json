@@ -1,0 +1,52 @@
+{
+  "date": "2026-10-13",
+  "operator": "primary agent",
+  "origin": "http://localhost:52073",
+  "repairedEntry": "entry-43829916d0b8ade49d91424899eebfb3.js",
+  "independence": "Primary browser operation after the five original reports were locked. Original testers reviewed supplied evidence separately; these are not five new independent browser runs.",
+  "fixtures": "Disposable synthetic values only; no localhost:4173 saved data opened or changed.",
+  "checks": [
+    { "task": "All nine menu destinations", "result": "pass", "evidence": ["repaired-menu-journeys.json"], "scope": "Actual Menu open/link clicks at doubled text; urgent-help present on every destination." },
+    { "task": "200% Home at320,390 and short landscape", "result": "pass", "evidence": ["after-home-320-double.jpg", "after-home-390-double.jpg", "after-home-landscape-double.jpg"], "scope": "Heading wraps at spaces; vertical scrolling remains. Actual browser zoom not tested." },
+    { "task": "Sequential keyboard menu reachability and Escape", "result": "pass", "evidence": ["keyboard-menu-trace.json", "after-menu-320-keyboard-last.jpg"], "scope": "Enter opens; ten sequential Tabs reach Text and display then all nine menu entries; Escape returns focus to Menu at320x568/200%." },
+    { "task": "Skip link target", "result": "pass", "evidence": ["keyboard-skip-focus.json"], "scope": "Enter on skip link focuses role main." },
+    { "task": "Appointment saved reload, Escape/cancel, confirmed delete", "result": "pass", "evidence": ["after-appointment-delete-cancel.jpg", "appointment-cancel-escape.txt", "appointment-cancel-reload.txt", "appointment-delete-reload.txt"], "scope": "Marker persists after Escape/reload; absent after Confirm/reload. Cancel initially receives focus." },
+    { "task": "Support unsaved in-app return and Cancel", "result": "pass", "evidence": ["support-unsaved-return.txt", "after-support-delete-confirm.jpg", "support-cancel-reload.txt"], "scope": "Home/Menu return preserves unsaved note; explicit save and Cancel/reload preserve saved note." },
+    { "task": "Support confirmed delete", "result": "pass", "evidence": ["support-confirm-delete-reload.txt"], "scope": "After Save/Delete/Confirm/reload, zero preferences and blank note." },
+    { "task": "Saved-guide delete Cancel/Confirm", "result": "pass", "evidence": ["after-guides-delete-confirm.jpg", "saved-guides-cancel-reload.txt", "saved-guides-delete-reload.txt"], "scope": "One guide remains after Cancel/reload and no guides after Confirm/reload." },
+    { "task": "All seven guide shells", "result": "pass", "evidence": ["repaired-guide-smoke.json"], "scope": "Fresh full DOM snapshots per guide include all blocks, sources, draft review status and urgent-help. Does not clinically verify source claims." },
+    { "task": "Guide in-app interruption return", "result": "pass", "evidence": ["repaired-guide-section2.txt", "repaired-guide-inapp-return.txt"], "scope": "Understanding Section2 -> Back to guides -> Tests -> Back to guides -> Understanding retains Section2. Reload/direct navigation is a new session." },
+    { "task": "Manual read-aloud control feedback", "result": "pass-limited", "evidence": ["repaired-speech-start.txt", "repaired-speech-stop.txt", "after-speech-feedback.jpg"], "scope": "Start exposes Stop/status; stop exposes stopped state. Audible speech not verified." },
+    { "task": "Unavailable page recovery", "result": "pass", "evidence": ["after-unavailable-recovery.jpg", "unavailable-home-history.txt"], "scope": "Direct load/reload preserves shell, Home link works; Back returns404 and Forward returnsHome. HTTP404 checked separately by server unit test." },
+    { "task": "Medical card preview/unsaved return/save/reload", "result": "pass", "evidence": ["medical-preview.txt", "medical-save-reload.txt", "after-medical-preview.jpg"], "scope": "All optional synthetic fields retained through Home/cards return and explicit save/reload. Hidden event date omitted; Last updated labelled." },
+    { "task": "Actual medical PDF and text", "result": "pass", "evidence": ["medical-repaired.pdf", "medical-repaired.txt", "medical-repaired-extracted.txt", "medical-repaired-page1.png"], "scope": "One page for T4 short fixture; fields match preview; one safetyfooter; hidden date and form instructions absent." },
+    { "task": "Milestone defaults/preview/save/reload and separate contents", "result": "pass", "evidence": ["milestone-blank.txt", "milestone-preview.txt", "milestone-save-reload.txt"], "scope": "Neutral title/optional name, date and survivor wording; no medical-card cross-population." },
+    { "task": "Actual milestone PNG/text/PDF and export failure", "result": "pass-limited", "evidence": ["milestone-repaired.png", "milestone-repaired.txt", "milestone-supported.pdf", "milestone-supported-preview.txt", "milestone-pdf-unsupported.txt"], "scope": "PNG/text preserve tested Lithuanian/Ukrainian/Chinese text and omit hidden date. PDF works for the supported variant; Chinese glyph request visibly fails with alternatives, rather than silent omission." },
+    { "task": "Per-card Cancel/Confirm and reload", "result": "pass", "evidence": ["medical-cancel-reload.txt", "medical-delete-reload.txt", "milestone-cancel-reload.txt", "milestone-delete-reload.txt"], "scope": "Cancel retains each saved card; confirmed removal reloads blank. Other card is separate." },
+    { "task": "Saved-hub generic labels", "result": "pass", "evidence": ["saved-hub-populated.txt", "after-saved-generic-labels.jpg"], "scope": "Tool names/statuses only; no typed names, contacts or medicines in hub." },
+    { "task": "Synthetic card marker in URL/requests/logs", "result": "pass-limited", "evidence": ["privacy-card-save.json"], "scope": "During typing/explicit local Save: no request events, no marker in URL or captured logs; no event truncation. Does not cover every lifecycle/referrer/crash/backup path." },
+    { "task": "Display settings persist and apply", "result": "pass", "evidence": ["display-prefs-reload.txt", "after-home-dark-contrast.jpg"], "scope": "Roomier/high contrast/dark/simplified retained on reload; reduced motion toggled and returned on. Visual Home theme checked." },
+    { "task": "Clear-all Cancel/Confirm and reload", "result": "pass", "evidence": ["before-clear-populated.txt", "after-clear-all-confirm.jpg", "clear-all-cancel-reload.txt", "clear-all-confirm-reload.txt", "after-clear-all-empty.jpg", "clear-all-display-defaults.txt"], "scope": "Five populated tool categories retained after Cancel/reload; all empty after Confirm/reload, display defaults restored. Reduced motion default is true. Six raw key removals and asynchronous draining are unit-test evidence; evaluator did not expose localStorage." }
+  ],
+  "remainingObservations": [
+    { "id": "ROOT-LOW-01", "category": "visual-observation", "severity": "low", "evidence": ["after-menu-320-keyboard-last.jpg"], "description": "The top of the urgent banner is partly outside this keyboard-scrolled capture. Its link remains in the shell and reachable, with no blocked essential action observed. Confirm behavior during actual browser zoom and assistive-technology testing." }
+  ],
+  "interventions": [
+    "Two text-size locator attempts used checkbox role because the native AX snapshot called those controls checkboxes. Fresh DOM inspection showed button/pressed semantics; selecting the actual button succeeded. No app fault inferred from the automation locator mismatch.",
+    "Read-only evaluation of localStorage was unsupported. Deletion was checked through UI reload and model/adapter tests, not direct browser key enumeration.",
+    "A changed milestone message without Chinese was explicitly previewed for the supported-font PDF. It is a separate fixture from the full Unicode PNG/text, not a claim of identical contents across those two variants."
+  ],
+  "notTested": [
+    "NVDA/screen reader and live spoken announcements",
+    "Actual browser zoom",
+    "Physical touchscreen/device and native VoiceOver/TalkBack",
+    "Audible speech playback",
+    "OS print preview, print cancellation, physical printing",
+    "Browser download cancellation or native sharing cancellation",
+    "Every date precision through every browser output (covered in model tests; browser fixtures exact then hidden)",
+    "Malformed/oversized storage in browser (covered by model/adapter tests)",
+    "Multiple browser profiles/tabs and device backup recovery",
+    "Production-host logs, every referrer/crash/telemetry path",
+    "Patient/carer sessions, clinical accuracy, qualified translation and legal clearance"
+  ]
+}

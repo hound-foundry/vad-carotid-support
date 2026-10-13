@@ -1,0 +1,30 @@
+Browser tab: 1, Title: "VAD & Carotid Support", URL: "http://localhost:51070/appointments".
+The following is a diff from the previous accessibility tree with ~ and + representing changed and added elements, respectively. Removed elements are summarized by ID range.
+Removed element IDs: 22-29, 115
+~					122 text Section  2  of  3 :  During the appointment
+~					124 button Previous
+~				128 heading During the appointment, Value: 2
+~					129 text During the appointment
+~				130 button Select all questions in During the appointment
+~					131 text Select all in section
++					132 container
++						133 text 0 / 9
++				134 checkbox Description: Could you explain the diagnosis and which artery is involved?, Value: 0
++					135 text Could you explain the diagnosis and which artery is involved?
++				136 checkbox Value: 0, Description: Could you explain what my test results show, what remains uncertain, and whether anything is still pending?
++					137 text Could you explain what my test results show, what remains uncertain, and whether anything is still pending?
++				138 checkbox Description: Is any follow-up imaging planned for me? If so, what is its purpose?, Value: 0
++					139 text Is any follow-up imaging planned for me? If so, what is its purpose?
++				140 checkbox Value: 0, Description: What do I need to know about medicines prescribed or changed for me, and who should I ask if I have a concern?
++					141 text What do I need to know about medicines prescribed or changed for me, and who should I ask if I have a concern?
++				142 checkbox Description: Which day-to-day concerns, such as energy or concentration, would be useful to discuss?, Value: 0
++					143 text Which day-to-day concerns, such as energy or concentration, would be useful to discuss?
++				144 checkbox Value: 0, Description: How could I describe changes in energy, fatigue or concentration so we can discuss what support may fit?
++					145 text How could I describe changes in energy, fatigue or concentration so we can discuss what support may fit?
++				146 checkbox Value: 0, Description: Which everyday activities have become harder, and could we talk about support or rehabilitation options?
++					147 text Which everyday activities have become harder, and could we talk about support or rehabilitation options?
++				148 checkbox Description: How could I discuss work, study or usual routines and any support I may need for my situation?, Value: 0
++					149 text How could I discuss work, study or usual routines and any support I may need for my situation?
++				150 checkbox Description: What support is available for me and the people helping me?, Value: 0
++					151 text What support is available for me and the people helping me?
+The focused UI element is 126 button Next section

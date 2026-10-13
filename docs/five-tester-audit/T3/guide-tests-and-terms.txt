@@ -1,0 +1,137 @@
+- link "Urgent help":
+  - /url: /urgent-help
+  - generic: Urgent help
+  - generic: ›
+- generic: VAD & Carotid Support
+- navigation "Main navigation":
+  - link "Home":
+    - /url: /
+    - generic: Home
+  - button "Menu":
+    - generic: Menu
+  - link "Text and display":
+    - /url: /accessibility
+    - generic: Text and display
+- link "Skip to main content":
+  - generic: Skip to main content
+- main:
+  - link "← Back to guides":
+    - /url: /learn
+    - generic: ← Back to guides
+  - heading "Tests, scans and unfamiliar terms" [level=1]
+  - generic: Understand what to ask about a scan or report without trying to interpret it on your own. About 3 min read.
+  - button "Draft information, review pending. Review details":
+    - generic: Draft information · review pending
+    - generic: +
+  - button "Read guide aloud":
+    - generic: Read guide aloud
+  - checkbox "Read one section at a time":
+    - generic: Read one section at a time
+  - heading "Start with the question you have" [level=2]
+  - generic: You do not need to understand every word in a report at once. Pick one result or term that matters to you and ask the clinician who reviewed the test to explain it in everyday language. This app cannot view or interpret scans, reports or individual results.
+  - heading "Questions about a scan or report" [level=2]
+  - generic: •
+  - generic: Which artery and part of it are described?
+  - generic: •
+  - generic: What does this result tell us, and what can it not tell us?
+  - generic: •
+  - generic: Is any result still pending?
+  - generic: •
+  - generic: Could you explain the words I have underlined?
+  - generic: •
+  - generic: Could I have a copy or plain-language summary, and who can answer questions later?
+  - heading "Extracranial and intracranial" [level=2]
+  - generic: Extracranial means outside the skull; intracranial means inside the skull. A report may use these words to describe where a blood vessel or finding is located.
+  - 'link "Open source for Extracranial and intracranial: Anatomy, Head and Neck, Skull"':
+    - generic: "Read source: Anatomy, Head and Neck, Skull"
+  - heading "Stenosis" [level=2]
+  - generic: Stenosis means narrowing. The word alone does not say how much a vessel is narrowed or what that means for you.
+  - 'link "Open source for Stenosis: Definition: stenosis"':
+    - generic: "Read source: Definition: stenosis"
+  - heading "Occlusion" [level=2]
+  - generic: Occlusion means a blockage or closure of a vessel. Ask which vessel and area the report describes, and what the finding means in your case.
+  - 'link "Open source for Occlusion: Carotid Artery Stenosis: Diagnosis and Treatment"':
+    - generic: "Read source: Carotid Artery Stenosis: Diagnosis and Treatment"
+  - heading "Infarct" [level=2]
+  - generic: An infarct is an area of tissue damaged because its blood supply was interrupted. The term alone does not explain the size, effects or timing of a finding.
+  - 'link "Open source for Infarct: NICE guideline glossary: infarct"':
+    - generic: "Read source: NICE guideline glossary: infarct"
+  - heading "Pseudoaneurysm" [level=2]
+  - generic: A pseudoaneurysm is a pocket of blood outside the usual layers of an artery wall, connected to the artery through a wall defect. Ask the clinician to explain the location and significance described in your report.
+  - 'link "Open source for Pseudoaneurysm: Pseudoaneurysm"':
+    - generic: "Read source: Pseudoaneurysm"
+  - heading "These words do not interpret your report" [level=2]
+  - generic: A definition cannot tell you whether a finding is current, how serious it is, what caused it, or what care you need. Words can be used in different clinical contexts. Ask the clinician who reviewed the test to explain the exact wording and how it applies to you.
+  - heading "If the information feels like too much" [level=2]
+  - generic: You can ask to take one question at a time, pause, bring someone you choose, or receive information in writing or another accessible format. Your appointment can focus on what matters most to you today.
+  - heading "Limits of this page" [level=2]
+  - generic: Professional guidance distinguishes different types and locations of artery dissection, and it may not apply to every presentation. This draft does not tell you what a scan means, what treatment is right, or what follow-up you personally need.
+  - heading "More reading options" [level=2]
+  - button "About reading pace and text size":
+    - generic: About reading pace and text size
+    - generic: +
+  - heading "More ways to use this guide" [level=2]
+  - generic: Saving stores this guide’s topic on this device. Someone with access to the device or browser profile may see it; it is not sent to this project.
+  - button "Save this guide on this device":
+    - generic: Save this guide on this device
+  - generic: This guide is not saved.
+  - button "Print this guide":
+    - generic: Print this guide
+  - button "Copy guide link":
+    - generic: Copy guide link
+  - generic: If this guide raises a question, add it to a private appointment sheet. You choose what to include; nothing is sent to this project.
+  - link "Start with questions from this guide →":
+    - /url: /appointments?guide=tests-and-terms
+    - generic: Start with questions from this guide →
+  - heading "Sources and review for this draft" [level=2]
+  - generic: "Clinical review: not recorded · Patient/carer review: not recorded · Translation review: English original · Review date: not recorded"
+  - 'link "Open source: Treatment and Outcomes of Cervical Artery Dissection in Adults: A Scientific Statement From the American Heart Association"':
+    - generic: "Treatment and Outcomes of Cervical Artery Dissection in Adults: A Scientific Statement From the American Heart Association (2024)"
+    - generic: Source record checked 2026-10-12. A scientific statement is not a personalised treatment plan. Verify exact passages before publishing individual claims.
+  - 'link "Open source: ESO guideline for the management of extracranial and intracranial artery dissection"':
+    - generic: ESO guideline for the management of extracranial and intracranial artery dissection (2021)
+    - generic: Source record checked 2026-10-12. Do not generalise recommendations across anatomical groups or haemorrhagic and ischaemic presentations.
+  - 'link "Open source: Vascular Disease Patient Information Page: Cervical artery dissection (CeAD)"':
+    - generic: "Vascular Disease Patient Information Page: Cervical artery dissection (CeAD) (2021)"
+    - generic: Source record checked 2026-10-12. An older educational source; check clinical details against current guidance. Link rather than reproduce.
+  - 'link "Open source: Definition: stenosis"':
+    - generic: "Definition: stenosis"
+    - generic: Source record checked 2026-10-12. A word definition does not establish degree, cause or individual significance of a reported narrowing.
+  - 'link "Open source: Carotid Artery Stenosis: Diagnosis and Treatment"':
+    - generic: "Carotid Artery Stenosis: Diagnosis and Treatment"
+    - generic: Source record checked 2026-10-12. The page discusses carotid stenosis in a different clinical context; it is used only for the general word meaning, not to explain dissection or any individual report.
+  - 'link "Open source: NICE guideline glossary: infarct"':
+    - generic: "NICE guideline glossary: infarct (2019)"
+    - generic: Source record checked 2026-10-12. The general definition does not establish the location, size, timing, cause or impact of a finding in an individual report.
+  - 'link "Open source: Anatomy, Head and Neck, Skull"':
+    - generic: Anatomy, Head and Neck, Skull (2023)
+    - generic: Source record checked 2026-10-12. Anatomy terms do not explain the significance of an individual scan finding.
+  - 'link "Open source: Pseudoaneurysm"':
+    - generic: Pseudoaneurysm (2024)
+    - generic: Source record checked 2026-10-12. The chapter focuses on multiple pseudoaneurysm causes and locations; it does not determine the significance or management of a reported finding.
+  - heading "Continue with a related guide" [level=2]
+  - link "Understanding cervical artery dissection A plain-language starting point for carotid and vertebral artery dissection. For patients, carers, interested readers · About 2 min Draft · not approved for patient use":
+    - /url: /guide/understanding-dissection
+    - generic: Understanding cervical artery dissection
+    - generic: A plain-language starting point for carotid and vertebral artery dissection.
+    - generic: For patients, carers, interested readers · About 2 min
+    - generic: Draft · not approved for patient use
+  - link "Prepare for a follow-up appointment Choose what matters most, make room for questions and leave with a clear next step to discuss. For patients, carers · About 2 min Draft · not approved for patient use":
+    - /url: /guide/follow-up-questions
+    - generic: Prepare for a follow-up appointment
+    - generic: Choose what matters most, make room for questions and leave with a clear next step to discuss.
+    - generic: For patients, carers · About 2 min
+    - generic: Draft · not approved for patient use
+  - generic: Development preview · general information only · not a medical service
+  - link "About and privacy":
+    - /url: /about
+    - generic: About and privacy
+  - link "Accessibility":
+    - /url: /accessibility
+    - generic: Accessibility
+  - link "Saved on this device":
+    - /url: /saved
+    - generic: Saved on this device
+  - link "Urgent help":
+    - /url: /urgent-help
+    - generic: Urgent help

@@ -1,0 +1,18 @@
+Browser tab: 1, Title: "VAD & Carotid Support", URL: "http://localhost:51070/appointments".
+The following is a diff from the previous accessibility tree with ~ and + representing changed and added elements, respectively. Removed elements are summarized by ID range.
+Removed element IDs: 120
+~				108 checkbox Description: Show one appointment section at a time, Value: 1
++					120 text ✓
+~				110 checkbox Description: Show selected questions only, Value: 0
++				121 container
++					122 text Section  1  of  3 :  Before the appointment
++				123 container
++					124 button (disabled) Previous
++						125 text Previous
++					126 button Next section
++						127 text Next section
++				128 checkbox Description: Would I like someone to come with me, and what would I like them to do?, Value: 0
++					129 text Would I like someone to come with me, and what would I like them to do?
++				130 checkbox Description: Would a written summary, communication aid, interpreter, or more time help me take part?, Value: 0
++					131 text Would a written summary, communication aid, interpreter, or more time help me take part?
+The focused UI element is 108 checkbox Description: Show one appointment section at a time, Value: 1

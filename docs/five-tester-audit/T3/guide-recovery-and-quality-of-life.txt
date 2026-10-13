@@ -1,0 +1,113 @@
+- link "Urgent help":
+  - /url: /urgent-help
+  - generic: Urgent help
+  - generic: ›
+- generic: VAD & Carotid Support
+- navigation "Main navigation":
+  - link "Home":
+    - /url: /
+    - generic: Home
+  - button "Menu":
+    - generic: Menu
+  - link "Text and display":
+    - /url: /accessibility
+    - generic: Text and display
+- link "Skip to main content":
+  - generic: Skip to main content
+- main:
+  - link "← Back to guides":
+    - /url: /learn
+    - generic: ← Back to guides
+  - heading "Recovery, fatigue and quality of life" [level=1]
+  - generic: Make room for changes in energy, confidence, mood and everyday life, even when they are hard to see. About 2 min read.
+  - button "Draft information, review pending. Review details":
+    - generic: Draft information · review pending
+    - generic: +
+  - button "Read guide aloud":
+    - generic: Read guide aloud
+  - checkbox "Read one section at a time":
+    - generic: Read one section at a time
+  - heading "There is room for what is hard" [level=2]
+  - generic: Recovery can touch energy, pain, sleep, concentration, confidence, mood, relationships, work and social life. Some changes are easy for other people to see; others are private or come and go. You do not have to prove that a concern is serious before raising it with a clinician.
+  - heading "A metaphor some people find helpful" [level=2]
+  - generic: Some people use spoon theory as a way to describe how everyday tasks can draw on a limited amount of energy, and why choices may be needed when fatigue is present. The metaphor comes from Christine Miserandino’s account of her own experience living with lupus; it is not a clinical measure, does not establish what fatigue is like after a dissection or stroke, and may not fit everyone.
+  - 'link "Open source for A metaphor some people find helpful: From Fatigue to Energy: Information for patients"':
+    - generic: "Read source: From Fatigue to Energy: Information for patients"
+  - heading "Choose one thing to bring up" [level=2]
+  - generic: •
+  - generic: What has been hardest in daily life recently?
+  - generic: •
+  - generic: What would I most like help with first?
+  - generic: •
+  - generic: Is fatigue, sleep, pain, concentration or mood affecting something I want to do?
+  - generic: •
+  - generic: How could I discuss work, study or usual routines with my care team?
+  - generic: •
+  - generic: Could we discuss support, rehabilitation or a referral that may fit my situation?
+  - generic: •
+  - generic: Who should I speak with if this remains difficult?
+  - heading "A small and limited research signal" [level=2]
+  - generic: A long-term study of cervical artery dissection survivors reported that quality of life may not be captured fully by standard disability ratings. A newer exploratory study followed a selected group with good early functional outcomes and still found long-term fatigue and psychological symptoms in some participants. These studies cannot predict an individual’s experience, establish a general prevalence, or show that this app changes outcomes.
+  - heading "Support for people around you" [level=2]
+  - generic: Family and friends may notice changes or have questions of their own. If you want, choose what to share and ask someone to help with a specific task. The person supporting you can also ask their own care team or local support service about help for carers.
+  - heading "More reading options" [level=2]
+  - button "About reading pace and text size":
+    - generic: About reading pace and text size
+    - generic: +
+  - heading "More ways to use this guide" [level=2]
+  - generic: Saving stores this guide’s topic on this device. Someone with access to the device or browser profile may see it; it is not sent to this project.
+  - button "Save this guide on this device":
+    - generic: Save this guide on this device
+  - generic: This guide is not saved.
+  - button "Print this guide":
+    - generic: Print this guide
+  - button "Copy guide link":
+    - generic: Copy guide link
+  - generic: If this guide raises a question, add it to a private appointment sheet. You choose what to include; nothing is sent to this project.
+  - link "Start with questions from this guide →":
+    - /url: /appointments?guide=recovery-and-quality-of-life
+    - generic: Start with questions from this guide →
+  - generic: If another person is supporting you, you can also choose preferences to review together. You decide what to share.
+  - link "Start a support preferences sheet →":
+    - /url: /support-preferences?guide=recovery-and-quality-of-life
+    - generic: Start a support preferences sheet →
+  - heading "Sources and review for this draft" [level=2]
+  - generic: "Clinical review: not recorded · Patient/carer review: not recorded · Translation review: English original · Review date: not recorded"
+  - 'link "Open source: Quality of life in survivors after cervical artery dissection"':
+    - generic: Quality of life in survivors after cervical artery dissection (2009)
+    - generic: Source record checked 2026-10-12. Older observational cohort; does not establish current population prevalence or show that this app improves outcomes.
+  - 'link "Open source: Long-term mental health and quality of life in patients after cervical artery dissection"':
+    - generic: Long-term mental health and quality of life in patients after cervical artery dissection (2026)
+    - generic: Source record checked 2026-10-12. Exploratory follow-up of 89 selected patients with excellent early outcomes; not representative prevalence, a diagnostic tool, or an intervention trial.
+  - 'link "Open source: Stroke rehabilitation in adults: recommendations"':
+    - generic: "Stroke rehabilitation in adults: recommendations (2023)"
+    - generic: Source record checked 2026-10-12. Adult stroke rehabilitation; do not apply all recommendations to dissection without stroke. UK service entitlements are country-specific.
+  - 'link "Open source: From Fatigue to Energy: Information for patients"':
+    - generic: "From Fatigue to Energy: Information for patients"
+    - generic: Source record checked 2026-10-13. This metaphor is not a clinical measure or evidence about fatigue after cervical artery dissection or stroke; the source leaflet addresses another condition and its medical guidance must not be generalized.
+  - heading "Continue with a related guide" [level=2]
+  - link "Supporting someone after dissection or stroke Practical ways to listen, make care conversations easier and look after your own needs too. For carers, patients · About 2 min Draft · not approved for patient use":
+    - /url: /guide/supporting-someone
+    - generic: Supporting someone after dissection or stroke
+    - generic: Practical ways to listen, make care conversations easier and look after your own needs too.
+    - generic: For carers, patients · About 2 min
+    - generic: Draft · not approved for patient use
+  - link "Prepare for a follow-up appointment Choose what matters most, make room for questions and leave with a clear next step to discuss. For patients, carers · About 2 min Draft · not approved for patient use":
+    - /url: /guide/follow-up-questions
+    - generic: Prepare for a follow-up appointment
+    - generic: Choose what matters most, make room for questions and leave with a clear next step to discuss.
+    - generic: For patients, carers · About 2 min
+    - generic: Draft · not approved for patient use
+  - generic: Development preview · general information only · not a medical service
+  - link "About and privacy":
+    - /url: /about
+    - generic: About and privacy
+  - link "Accessibility":
+    - /url: /accessibility
+    - generic: Accessibility
+  - link "Saved on this device":
+    - /url: /saved
+    - generic: Saved on this device
+  - link "Urgent help":
+    - /url: /urgent-help
+    - generic: Urgent help

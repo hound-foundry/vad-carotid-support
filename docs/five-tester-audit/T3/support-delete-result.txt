@@ -1,0 +1,13 @@
+Browser tab: 1, Title: "VAD & Carotid Support", URL: "http://localhost:51070/support-preferences".
+The following is a diff from the previous accessibility tree with ~ and + representing changed and added elements, respectively. Removed elements are summarized by ID range.
+Removed element IDs: 22-23, 31, 87-90
+~					21 text 0 preferences  selected
+~						29 text 0 / 6
+~				30 checkbox Description: Please give me time to think and respond., Value: 0
+~				77 text entry area (settable) Optional note about how you prefer to be supported
+~					79 text 0 / 300
++					112 text Choose a few statements or add a note to build your sheet.
+~				92 button Save on this device
+~					93 text Save on this device
+~				102 text Nothing is saved unless you choose Save on this device. Saved preferences deleted from this app’s device storage.
+The focused UI element is 100 button Delete saved preferences

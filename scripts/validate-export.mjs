@@ -18,6 +18,7 @@ const urgent = await readFile(join(root, "urgent-help.html"), "utf8");
 const home = await readFile(join(root, "index.html"), "utf8");
 const personal = await readFile(join(root, "personal-card.html"), "utf8");
 const milestone = await readFile(join(root, "milestone-card.html"), "utf8");
+const notFound = await readFile(join(root, "+not-found.html"), "utf8");
 const headers = await readFile(join(root, "_headers"), "utf8");
 const manifest = JSON.parse(await readFile(join(root, "manifest.json"), "utf8"));
 assert.match(urgent, /contact local emergency services now/i, "urgent-help route must retain generic emergency wording");
@@ -26,6 +27,9 @@ assert.match(home, /@media print/, "export must include print styles");
 assert.match(home, /data-testid=\\?\"site-header\\?\"/, "print styles must hide site navigation");
 assert.match(personal, /not an official medical record or emergency plan/i, "personal card safety label must be exported");
 assert.match(milestone, /not medical advice or proof of diagnosis/i, "milestone card safety label must be exported");
+assert.match(notFound, /Page not found/, "unavailable-page shell must give a clear heading");
+assert.match(notFound, /Urgent help/, "urgent help must remain available from a missing page");
+assert.match(notFound, /href=\\?\"\//, "unavailable-page shell must provide a Home route");
 for (const directive of ["X-Content-Type-Options: nosniff", "Referrer-Policy: strict-origin-when-cross-origin", "Permissions-Policy: camera=(), microphone=(), geolocation=()"])
   assert.match(headers, new RegExp(directive.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")), `static headers lost directive: ${directive}`);
 assert.equal(manifest.id, "/", "manifest must define a stable app id");

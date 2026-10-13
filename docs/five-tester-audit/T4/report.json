@@ -1,0 +1,101 @@
+{
+  "tester": "T4",
+  "baselineRevision": "72688788cb926af39b9813c38ac830301a0eaeda",
+  "origin": "http://localhost:51071",
+  "perspective": {
+    "type": "simulated",
+    "description": "Busy partner/family carer without a persistent access impairment, often interrupted; wants practical support while respecting the person's choices. Values printable questions, communication preferences and clear privacy boundaries; dislikes long reading lists before useful actions, patronising instructions and pressure to disclose another person's details.",
+    "fixtureValues": "invented and disposable"
+  },
+  "scores": {
+    "navigation": {"score": 2, "outOf": 2, "deduction": "None; all menu destinations, direct routes, history and legacy routes worked."},
+    "readingAccess": {"score": 1, "outOf": 2, "deduction": "Doubled app text at 320px pushed the title below the first viewport; true browser zoom and screen-reader support were not tested."},
+    "practicalUsefulness": {"score": 2, "outOf": 2, "deduction": "None; practical question, preference, guide and card flows were usable with invented values."},
+    "dataOutputTrust": {"score": 1, "outOf": 2, "deduction": "Medical-card PDF had a date-only second page; no-event-date medical card still showed an update date."},
+    "recoveryFromInterruption": {"score": 1, "outOf": 2, "deduction": "In-session return and explicit saves worked, but unsaved sheet reload cleared data and native confirmation results were partly uninspectable."},
+    "total": 7,
+    "criticalCap": 4,
+    "criticalCapApplied": false,
+    "confirmedCriticalFindings": []
+  },
+  "verdict": "Useful, practical support flows are easy to reach and respect optional disclosure. Improve the narrow doubled-text layout and medical-card print output/date clarity; confirmation and native print behavior remain partly untested.",
+  "firstUse": "Home exposed practical actions without requiring a long reading sequence. Review-pending and development-preview status were visible. A carer could build useful questions and communication preferences without entering real identity or contact details.",
+  "strengths": [
+    "Practical tools were easy to reach from Home.",
+    "Question and communication-preference sheets supported select, remove, note, preview, return and explicit save.",
+    "Optional invented card values were sufficient; real phone numbers or another person's details were unnecessary.",
+    "Local-save/privacy statements and generic saved-item labels clarified device storage.",
+    "Guide review status, sources, limitations, simplified/one-section modes and manual speech controls were visible.",
+    "Actual TXT, PDF and milestone PNG exports were inspected; milestone no-event-date outputs were consistent."
+  ],
+  "frustrations": [
+    "At 200% app text in 320px, the header took many lines and pushed the title below the first viewport.",
+    "Medical-card PDF page two held only the update date and footer.",
+    "A medical card with no event date still displayed an update date that could be confused with one without clear labeling.",
+    "Unsaved sheet content survived in-session navigation but not reload.",
+    "Print status did not expose an inspectable print surface in the IAB."
+  ],
+  "findings": [
+    {
+      "id": "T4-01", "category": "preference", "severity": "low", "route": "/", "title": "Doubled app text pushes Home title below first view at 320px",
+      "steps": ["Set app text to 200%", "Set viewport to 320x568", "Open Home"],
+      "expected": "Practical entry point remains reasonably quick to reach.",
+      "actual": "Header wraps across many lines and title begins below initial viewport. documentElement.scrollWidth remains 320px; no horizontal overflow or proven clipping.",
+      "evidence": ["layout-320-doubled.png", "layout-390-doubled.png", "layout-landscape-844x360.png"]
+    },
+    {
+      "id": "T4-02", "category": "usability-barrier", "severity": "low", "route": "/personal-card", "title": "Medical-card PDF creates a date-only second page",
+      "steps": ["Fill optional medical-card fields with synthetic values", "Save and export PDF", "Inspect both actual PDF pages"],
+      "expected": "Printable card occupies a compact page with its related information.",
+      "actual": "Page one contains the card; page two contains only Last updated 2026-10-13 and a footer.",
+      "evidence": ["medical-card-export.pdf", "medical-card-export-page1.png", "medical-card-export-page2.png", "medical-card-export-extracted.txt"]
+    },
+    {
+      "id": "T4-03", "category": "preference", "severity": "low", "route": "/personal-card", "title": "No event date still displays an update date",
+      "steps": ["Create and save a medical card", "Choose No date for the event date", "Inspect preview and actual TXT/PDF exports"],
+      "expected": "The event-date choice is unambiguous and separate from any update timestamp.",
+      "actual": "No event date is selected, while preview, TXT and PDF contain Last updated 2026-10-13. This is an update date, not a false event date, but needs a clear label.",
+      "evidence": ["medical-card-preview-saved.png", "medical-card-export.txt", "medical-card-export-extracted.txt"]
+    },
+    {
+      "id": "T4-U1", "category": "untested", "severity": "not-rated", "route": "/appointments and /support-preferences", "title": "Native delete/cancel and clear-all confirmation paths not fully inspectable",
+      "steps": ["Invoke appointment delete once", "Observe eventual UI status", "Native confirmation was not exposed via supported dialog API; do not repeat timeout-prone dialogs", "Support deletion and clear-all result likewise unavailable"],
+      "expected": "Both confirm and cancel outcomes can be observed and verified.",
+      "actual": "Appointment later displayed Saved sheet deleted from this app's device storage; its cancel path was not tested. Support delete and clear-all outcomes could not be reliably inspected. No repeated action was attempted.",
+      "evidence": ["about-privacy-clear.png", "support-preferences-saved.png"]
+    },
+    {
+      "id": "T4-U2", "category": "untested", "severity": "not-rated", "route": "/personal-card and /milestone-card", "title": "Native print layout not exposed in IAB",
+      "steps": ["Invoke each card print action", "Observe in-app status", "Do not submit physical print"],
+      "expected": "Print layout and cancel state can be inspected.",
+      "actual": "App status said print view opened and to choose Print or Cancel, but no inspectable preview surface or browser cancellation control was available.",
+      "evidence": ["medical-card-print-view.png", "milestone-card-print-view.png"]
+    }
+  ],
+  "coverage": [
+    {"scope":"Home first-use exploration","status":"pass","evidence":["01-home.png"]},
+    {"scope":"All nine menu destinations, header/footer, urgent route, direct load/reload, Back/Forward","status":"pass","evidence":["02-guides.png","menu-appointments.png","menu-cards.png","menu-supporting.png","menu-support-preferences.png","menu-glossary.png","menu-resources.png","menu-saved.png","menu-about.png","urgent-help.png"]},
+    {"scope":"Legacy /with-stroke and /without-stroke plus unknown route","status":"pass","evidence":["guide-with-stroke.png","guide-without-stroke.png"],"note":"/not-a-page showed Page not found."},
+    {"scope":"All seven guides, review/source, saved link, reading modes, manual speech controls, interruption/return","status":"pass","evidence":["03-guide-understanding.png","04-review-details.png","guide-tests-and-terms.png","guide-without-stroke.png","guide-with-stroke.png","guide-recovery-quality.png","guide-supporting-someone.png","guide-follow-up-questions.png","13-guide-saved.png","14-saved-hub.png","11-one-section-mode.png","12-manual-speech-state.png","simplified-guide.png"],"note":"Manual speech UI state changed; audible output not tested. Saved guide reopened and reloaded."},
+    {"scope":"Glossary matching and empty search","status":"pass","evidence":["glossary-initial.png"],"note":"stenosis matched; nonsense query showed empty state and hint."},
+    {"scope":"Appointment sheet select/remove, invented note, preview, leave/return, save/reload, TXT export","status":"pass","evidence":["appointment-initial.png","appointment-invented-preview.png","appointment-one-section.png","appointment-unsaved.png","appointment-saved-stable.png","appointment-export.txt"]},
+    {"scope":"Appointment delete cancel and deletion","status":"partial-untested","evidence":["appointment-saved-stable.png"],"note":"Deletion eventually displayed in UI; native confirmation/cancel path was not inspectable."},
+    {"scope":"Support preferences select/remove, invented note, preview, leave/return, save/reload, TXT export","status":"pass","evidence":["support-preferences-initial.png","support-preferences-preview.png","support-preferences-one-section.png","support-preferences-saved.png","support-preferences-export.txt"]},
+    {"scope":"Support-preferences delete and cancel","status":"untested","evidence":["support-preferences-saved.png"],"note":"Native confirmation interrupted supported API; final state unavailable."},
+    {"scope":"Medical card blank/default, optional fields, edit-preview-return, save/reload, no date, separate fields, PDF/TXT","status":"pass","evidence":["medical-card-blank.png","medical-card-filled.png","medical-card-preview.png","medical-card-saved-reload-edit.png","medical-card-preview-saved.png","medical-card-export.pdf","medical-card-export.txt","medical-card-export-page1.png","medical-card-export-page2.png"]},
+    {"scope":"Milestone card blank/default, optional fields, edit-preview-return, save/reload, no date, separate fields, PDF/TXT/PNG","status":"pass","evidence":["milestone-card-blank.png","milestone-card-preview.png","milestone-card-export.pdf","milestone-card-export.txt","milestone-card-export.png","milestone-card-pdf-page1.png"]},
+    {"scope":"Saved hub labels/privacy markers and URL/request/log check","status":"pass-limited","evidence":["saved-hub-both-cards.png","about-privacy-clear.png"],"note":"Generic labels and local storage language observed. One synthetic save/reload window had no data marker in URL, outgoing requests or logs; not a comprehensive audit."},
+    {"scope":"Display text, spacing, themes, contrast, motion, simplified reading, reset","status":"pass","evidence":["accessibility-initial.png","display-200-spacing-contrast-dark.png","simplified-guide.png","display-reset.png"]},
+    {"scope":"390px, 320px, short landscape at doubled app text and keyboard","status":"pass","evidence":["layout-390-doubled.png","layout-320-doubled.png","layout-landscape-844x360.png","keyboard-focus.png","keyboard-activation.png"],"note":"No horizontal overflow observed; skip link reached and activated."},
+    {"scope":"Card delete, clear-all, native print/cancel state","status":"partial-untested","evidence":["about-privacy-clear.png","medical-card-print-view.png","milestone-card-print-view.png"],"note":"Card-delete panel observed, action not invoked; clear-all confirm result unavailable; print surface not exposed; no physical print."},
+    {"scope":"True browser zoom, NVDA/screen reader and native devices","status":"not-tested","reason":"Unsupported in this IAB test setup."}
+  ],
+  "limits": [
+    "Simulated UX/engineering review; not patient/carer feedback or clinical/accessibility approval.",
+    "True browser zoom, NVDA/screen reader, native devices and audible speech were not tested.",
+    "Privacy request inspection was limited to one synthetic save/reload session.",
+    "No physical print, external upload, Facebook, login or patient-specific AI timing workflow was used.",
+    "Temporary viewport/display settings were reset; only T4 tabs were closed before browser release."
+  ],
+  "locked": true
+}

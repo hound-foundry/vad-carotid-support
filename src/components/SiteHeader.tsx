@@ -4,11 +4,14 @@ import { usePathname } from "expo-router";
 import { Platform, StyleSheet, useWindowDimensions, type View as NativeView } from "react-native";
 import { Pressable, ScrollView, Text, View } from "./Ui";
 import { palette } from "./theme";
+import { useAccessibility } from "../features/accessibility/AccessibilityProvider";
 
 const links = [["/learn", "Guides"], ["/appointments", "Prepare an appointment"], ["/cards", "Make a card"], ["/supporting-someone", "Help someone"], ["/support-preferences", "Support preferences"], ["/glossary", "Look up a term"], ["/resources", "Resources"], ["/saved", "Saved on this device"], ["/about", "About and privacy"]] as const;
 export function SiteHeader() {
   const pathname = usePathname(); const [open, setOpen] = useState(false); const [headerTop, setHeaderTop] = useState(0); const [headerContentHeight, setHeaderContentHeight] = useState(0); const menuRef = useRef<NativeView>(null);
-  const { height: windowHeight } = useWindowDimensions();
+  const { height: windowHeight, width: windowWidth } = useWindowDimensions();
+  const { settings } = useAccessibility();
+  const compactBrand = settings.textScale >= 1.75 && (windowWidth < 480 || windowHeight < 420);
   // onLayout reports this header's y position in its root, including the
   // actual urgent-banner height. Subtract the measured wrapped content and
   // inner padding, then leave a little room for the page below the header.
@@ -21,11 +24,11 @@ export function SiteHeader() {
   }, [open]);
   return <View testID="site-header" onLayout={(event) => setHeaderTop(event.nativeEvent.layout.y)} style={styles.shell}><View style={styles.inner}>
     <View onLayout={(event) => setHeaderContentHeight(event.nativeEvent.layout.height)}>
-      <Text style={styles.brand}>VAD & Carotid Support</Text>
+      <Text accessibilityLabel="VAD & Carotid Support" style={styles.brand}>{compactBrand ? "VAD & Carotid" : "VAD & Carotid Support"}</Text>
       <View role="navigation" aria-label="Main navigation" style={styles.nav}>
         <Link href="/" asChild><Pressable accessibilityRole="link" aria-current={pathname === "/" ? "page" : undefined} style={[styles.item, pathname === "/" && styles.current]}><Text style={styles.label}>Home</Text></Pressable></Link>
         <Pressable ref={menuRef} accessibilityRole="button" accessibilityState={{ expanded: open }} aria-controls="site-menu" onPress={() => setOpen(!open)} style={[styles.item, open && styles.current]}><Text style={styles.label}>{open ? "Close menu" : "Menu"}</Text></Pressable>
-        <Link href="/accessibility" asChild><Pressable accessibilityRole="link" aria-current={pathname === "/accessibility" ? "page" : undefined} style={[styles.item, pathname === "/accessibility" && styles.current]}><Text style={styles.label}>Text and display</Text></Pressable></Link>
+        <Link href="/accessibility" asChild><Pressable accessibilityRole="link" accessibilityLabel="Text and display" aria-current={pathname === "/accessibility" ? "page" : undefined} style={[styles.item, pathname === "/accessibility" && styles.current]}><Text style={styles.label}>{compactBrand ? "Text & display" : "Text and display"}</Text></Pressable></Link>
       </View>
     </View>
     {open ? <ScrollView nativeID="site-menu" role="navigation" aria-label="All pages" style={[styles.menu, { maxHeight: menuMaxHeight }]} contentContainerStyle={styles.menuContent} keyboardShouldPersistTaps="handled">{links.map(([href, label]) => <Link key={href} href={href as any} asChild><Pressable accessibilityRole="link" aria-current={pathname === href ? "page" : undefined} onPress={() => setOpen(false)} style={[styles.menuItem, pathname === href && styles.current]}><Text style={styles.label}>{label}</Text></Pressable></Link>)}</ScrollView> : null}

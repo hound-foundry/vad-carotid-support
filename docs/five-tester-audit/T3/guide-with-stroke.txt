@@ -1,0 +1,116 @@
+- link "Urgent help":
+  - /url: /urgent-help
+  - generic: Urgent help
+  - generic: ›
+- generic: VAD & Carotid Support
+- navigation "Main navigation":
+  - link "Home":
+    - /url: /
+    - generic: Home
+  - button "Menu":
+    - generic: Menu
+  - link "Text and display":
+    - /url: /accessibility
+    - generic: Text and display
+- link "Skip to main content":
+  - generic: Skip to main content
+- main:
+  - link "← Back to guides":
+    - /url: /learn
+    - generic: ← Back to guides
+  - heading "When dissection is accompanied by stroke" [level=1]
+  - generic: Conversation prompts about rehabilitation, communication, daily life and support for patients and carers. About 2 min read.
+  - button "Draft information, review pending. Review details":
+    - generic: Draft information · review pending
+    - generic: +
+  - button "Read guide aloud":
+    - generic: Read guide aloud
+  - checkbox "Read one section at a time":
+    - generic: Read one section at a time
+  - heading "Recovery can involve many parts of life" [level=2]
+  - generic: Stroke effects and rehabilitation needs vary. Communication, movement, vision, thinking, mood, energy, confidence and daily activities may be part of a person’s experience. Not every effect is visible to other people, and no list can predict one person’s recovery.
+  - heading "You and your carer may need different information" [level=2]
+  - generic: People with stroke and the people supporting them may have different questions. Information needs can change over time, and it may help to revisit a topic with the care team instead of trying to absorb everything at once. The research behind this idea concerns stroke broadly, not dissection specifically.
+  - heading "Questions for the care team" [level=2]
+  - generic: •
+  - generic: Who coordinates my rehabilitation and follow-up?
+  - generic: •
+  - generic: How can we make appointments work for my communication, reading, memory or energy needs?
+  - generic: •
+  - generic: What support is available for me and for the person helping me?
+  - generic: •
+  - generic: Who can help with practical needs after discharge?
+  - generic: •
+  - generic: What is the best way to ask a non-emergency question between appointments?
+  - generic: •
+  - generic: Could we write down the next steps and who is responsible for each one?
+  - heading "If someone comes with you" [level=2]
+  - generic: You can decide whether another person joins and what you want them to do. They might listen, help you remember questions or take notes if you ask. The clinician should know how you prefer to communicate and who you want involved.
+  - heading "Urgent changes" [level=2]
+  - generic: If there are sudden symptoms that may be a stroke, contact local emergency services now. Do not use an app or wait for a routine appointment to assess them.
+  - heading "Sources and limits" [level=2]
+  - generic: The linked adult stroke rehabilitation guideline is written for its own jurisdiction and health system. It is a source for discussion, not a promise of local services or eligibility.
+  - heading "More reading options" [level=2]
+  - button "About reading pace and text size":
+    - generic: About reading pace and text size
+    - generic: +
+  - heading "More ways to use this guide" [level=2]
+  - generic: Saving stores this guide’s topic on this device. Someone with access to the device or browser profile may see it; it is not sent to this project.
+  - button "Save this guide on this device":
+    - generic: Save this guide on this device
+  - generic: This guide is not saved.
+  - button "Print this guide":
+    - generic: Print this guide
+  - button "Copy guide link":
+    - generic: Copy guide link
+  - generic: If this guide raises a question, add it to a private appointment sheet. You choose what to include; nothing is sent to this project.
+  - link "Start with questions from this guide →":
+    - /url: /appointments?guide=with-stroke
+    - generic: Start with questions from this guide →
+  - generic: If another person is supporting you, you can also choose preferences to review together. You decide what to share.
+  - link "Start a support preferences sheet →":
+    - /url: /support-preferences?guide=with-stroke
+    - generic: Start a support preferences sheet →
+  - heading "Sources and review for this draft" [level=2]
+  - generic: "Clinical review: not recorded · Patient/carer review: not recorded · Translation review: English original · Review date: not recorded"
+  - 'link "Open source: Treatment and Outcomes of Cervical Artery Dissection in Adults: A Scientific Statement From the American Heart Association"':
+    - generic: "Treatment and Outcomes of Cervical Artery Dissection in Adults: A Scientific Statement From the American Heart Association (2024)"
+    - generic: Source record checked 2026-10-12. A scientific statement is not a personalised treatment plan. Verify exact passages before publishing individual claims.
+  - 'link "Open source: ESO guideline for the management of extracranial and intracranial artery dissection"':
+    - generic: ESO guideline for the management of extracranial and intracranial artery dissection (2021)
+    - generic: Source record checked 2026-10-12. Do not generalise recommendations across anatomical groups or haemorrhagic and ischaemic presentations.
+  - 'link "Open source: Information needs of people who have suffered a stroke or TIA and their preferred approaches of receiving health information: A scoping review"':
+    - generic: "Information needs of people who have suffered a stroke or TIA and their preferred approaches of receiving health information: A scoping review (2025)"
+    - generic: Source record checked 2026-10-12. The review concerns stroke/TIA, not cervical artery dissection specifically; it searched only German- and English-language literature through June 2023 and did not assess the quality of included studies.
+  - 'link "Open source: Information provision for stroke survivors and their carers"':
+    - generic: Information provision for stroke survivors and their carers (2021)
+    - generic: Source record checked 2026-10-12. The review found uncertain or small effects for several outcomes, particularly for carers; it does not demonstrate that this app improves health outcomes.
+  - 'link "Open source: Stroke rehabilitation in adults: recommendations"':
+    - generic: "Stroke rehabilitation in adults: recommendations (2023)"
+    - generic: Source record checked 2026-10-12. Adult stroke rehabilitation; do not apply all recommendations to dissection without stroke. UK service entitlements are country-specific.
+  - heading "Continue with a related guide" [level=2]
+  - link "Recovery, fatigue and quality of life Make room for changes in energy, confidence, mood and everyday life, even when they are hard to see. For patients, carers · About 2 min Draft · not approved for patient use":
+    - /url: /guide/recovery-and-quality-of-life
+    - generic: Recovery, fatigue and quality of life
+    - generic: Make room for changes in energy, confidence, mood and everyday life, even when they are hard to see.
+    - generic: For patients, carers · About 2 min
+    - generic: Draft · not approved for patient use
+  - link "Prepare for a follow-up appointment Choose what matters most, make room for questions and leave with a clear next step to discuss. For patients, carers · About 2 min Draft · not approved for patient use":
+    - /url: /guide/follow-up-questions
+    - generic: Prepare for a follow-up appointment
+    - generic: Choose what matters most, make room for questions and leave with a clear next step to discuss.
+    - generic: For patients, carers · About 2 min
+    - generic: Draft · not approved for patient use
+  - generic: Development preview · general information only · not a medical service
+  - link "About and privacy":
+    - /url: /about
+    - generic: About and privacy
+  - link "Accessibility":
+    - /url: /accessibility
+    - generic: Accessibility
+  - link "Saved on this device":
+    - /url: /saved
+    - generic: Saved on this device
+  - link "Urgent help":
+    - /url: /urgent-help
+    - generic: Urgent help

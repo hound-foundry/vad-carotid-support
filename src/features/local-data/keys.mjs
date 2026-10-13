@@ -11,8 +11,8 @@ export function onProjectDataCleared(listener) { clearedListeners.add(listener);
 /** @param {(phase:"before"|"after"|"failed")=>void|Promise<void>} listener */
 export function onProjectDataClearing(listener) { clearingListeners.add(listener); return () => { clearingListeners.delete(listener); }; }
 export async function clearProjectData(adapter) {
-  await Promise.all([...clearingListeners].map((listener) => listener("before")));
   try {
+    await Promise.all([...clearingListeners].map((listener) => listener("before")));
     const results = await Promise.allSettled(LOCAL_DATA_KEYS.map((key) => adapter.removeItem(key)));
     const failure = results.find((result) => result.status === "rejected");
     if (failure?.status === "rejected") throw failure.reason;

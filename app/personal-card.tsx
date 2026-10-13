@@ -28,7 +28,7 @@ export default function PersonalCardScreen() {
         {field("whatHelps", "What helps me (optional)", true)}{field("avoid", "Please avoid (optional)", true)}
         {field("emergencyContact", "Emergency contact (optional)", true)}{field("clinicianContact", "Clinician or service contact (optional)", true)}
         {field("medicines", "Medicines (optional)", true, "Entered by you; check that this is current.")}{field("allergies", "Allergies (optional)", true, "Entered by you; check that this is current.")}
-        <Text style={styles.label}>When it happened (optional)</Text><DateFields id="personal-date" kind={draft.card.eventDateKind} value={draft.card.eventDate} onKind={(v) => update("eventDateKind", v)} onValue={(v) => update("eventDate", v)} />
+        <Text style={styles.label}>When it happened (optional)</Text><DateFields id="personal-date" kind={draft.card.eventDateKind} value={draft.card.eventDate} onKind={(v) => update("eventDateKind", v)} onValue={(v) => update("eventDate", v)} hiddenMessage="No event date will appear. The card still shows when it was last updated." />
         <Button title="Review card" onPress={draft.preview} />
       </Disclosure>
       <Text style={styles.note}>Personal information card — not an official medical record or emergency plan.</Text>

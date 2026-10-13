@@ -1,0 +1,24 @@
+Browser tab: 1, Title: "VAD & Carotid Support", URL: "http://localhost:51070/milestone-card".
+The following is a diff from the previous accessibility tree with ~ and + representing changed and added elements, respectively. Removed elements are summarized by ID range.
+Removed element IDs: 59, 61, 63-64, 67, 70-76
+~				51 container ID: milestone-stage, Description: CARD · EDIT Anniversary or milestone card Mark a moment in your own words. Dates and “survivor” wording are optional.
+~						53 text CARD · EDIT
+~						54 heading Anniversary or milestone card, Value: 1
+~							55 text Anniversary or milestone card
+~						56 text Mark a moment in your own words. Dates and “survivor” wording are optional.
+~				57 text Display name (optional)
+~				58 text field (settable) Description: Display name (optional), Value: T3 Milestone, ID: milestone-name
++				59 text Card title
+~				60 text field (settable) Description: Card title, Value: A synthetic milestone, ID: milestone-title
++				61 text Personal message (optional)
+~				62 text entry area (settable) Description: Personal message (optional), Value: T3 synthetic: a moment to remember., ID: milestone-message
++				63 button Review card
++					64 text Review card
+~				65 button (collapsed) Add an optional date · Show, Secondary Actions: Expand
+~					66 container
++						67 text Add an optional date  ·  Show
+~				68 button (collapsed) Optional wording · Show, Secondary Actions: Expand
+~					69 container
++						70 text Optional wording  ·  Show
++				71 text Personal story/milestone — not medical advice or proof of diagnosis.
+The focused UI element is 51 container ID: milestone-stage, Description: CARD · EDIT Anniversary or milestone card Mark a moment in your own words. Dates and “survivor” wording are optional.

@@ -1,0 +1,338 @@
+REMOVE
+Browser tab: 1, Title: "VAD & Carotid Support", URL: "http://localhost:51070/appointments".
+1 AXWebArea VAD & Carotid Support, URL: localhost:51070/appointments
+	2 container
+		3 link Description: Urgent help, Value: localhost:51070/urgent-help
+		4 container
+			5 text VAD & Carotid Support
+			6 container Main navigation
+				7 link Description: Home, Value: localhost:51070/
+				8 button (collapsed) Menu, Secondary Actions: Expand
+					9 text Menu
+				10 link Description: Text and display, Value: localhost:51070/accessibility
+		11 container
+			12 link Description: Skip to main content, ID: skip-to-content
+				13 text Skip to main content
+			14 container
+				15 heading Prepare an appointment, Value: 1
+					16 text Prepare an appointment
+				17 text Choose what matters most today. Start with one question, add a reminder, then review before saving or exporting.
+				18 button (collapsed) Optional viewing options, Secondary Actions: Expand
+					19 text Optional viewing options
+				20 container
+					21 text 0 questions  selected
+				22 heading Before the appointment, Value: 2
+					23 text Before the appointment
+				24 button Select all questions in Before the appointment
+					25 text Select all in section
+					26 container
+						27 text 0 / 3
+				28 checkbox Description: What is the one thing I most want help understanding or discussing today?, Value: 0
+					29 text What is the one thing I most want help understanding or discussing today?
+				30 checkbox Description: Would I like someone to come with me, and what would I like them to do?, Value: 0
+					31 text Would I like someone to come with me, and what would I like them to do?
+				32 checkbox Description: Would a written summary, communication aid, interpreter, or more time help me take part?, Value: 0
+					33 text Would a written summary, communication aid, interpreter, or more time help me take part?
+				34 heading During the appointment, Value: 2
+					35 text During the appointment
+				36 button Select all questions in During the appointment
+					37 text Select all in section
+					38 container
+						39 text 0 / 9
+				40 checkbox Description: Could you explain the diagnosis and which artery is involved?, Value: 0
+					41 text Could you explain the diagnosis and which artery is involved?
+				42 checkbox Value: 0, Description: Could you explain what my test results show, what remains uncertain, and whether anything is still pending?
+					43 text Could you explain what my test results show, what remains uncertain, and whether anything is still pending?
+				44 checkbox Description: Is any follow-up imaging planned for me? If so, what is its purpose?, Value: 0
+					45 text Is any follow-up imaging planned for me? If so, what is its purpose?
+				46 checkbox Value: 0, Description: What do I need to know about medicines prescribed or changed for me, and who should I ask if I have a concern?
+					47 text What do I need to know about medicines prescribed or changed for me, and who should I ask if I have a concern?
+				48 checkbox Description: Which day-to-day concerns, such as energy or concentration, would be useful to discuss?, Value: 0
+					49 text Which day-to-day concerns, such as energy or concentration, would be useful to discuss?
+				50 checkbox Value: 0, Description: How could I describe changes in energy, fatigue or concentration so we can discuss what support may fit?
+					51 text How could I describe changes in energy, fatigue or concentration so we can discuss what support may fit?
+				52 checkbox Value: 0, Description: Which everyday activities have become harder, and could we talk about support or rehabilitation options?
+					53 text Which everyday activities have become harder, and could we talk about support or rehabilitation options?
+				54 checkbox Description: How could I discuss work, study or usual routines and any support I may need for my situation?, Value: 0
+					55 text How could I discuss work, study or usual routines and any support I may need for my situation?
+				56 checkbox Description: What support is available for me and the people helping me?, Value: 0
+					57 text What support is available for me and the people helping me?
+				58 heading Before I leave, Value: 2
+					59 text Before I leave
+				60 button Select all questions in Before I leave
+					61 text Select all in section
+					62 container
+						63 text 0 / 3
+				64 checkbox Description: Could we write down the next steps and who is responsible for each one?, Value: 0
+					65 text Could we write down the next steps and who is responsible for each one?
+				66 checkbox Description: Who will contact me about any pending results, and how can I follow up if I do not hear back?, Value: 0
+					67 text Who will contact me about any pending results, and how can I follow up if I do not hear back?
+				68 checkbox Description: Who can I contact with a non-emergency question between appointments?, Value: 0
+					69 text Who can I contact with a non-emergency question between appointments?
+				70 heading My own notes (optional), Value: 2
+					71 text My own notes (optional)
+				72 text Keep notes brief and avoid names, dates of birth, contact details or copies of records. Notes stay in this browser profile or on this device unless you export them.
+				73 text entry area (settable) Description: Optional appointment notes, Value: T3 synthetic note: ask for a written summary.
+				74 container
+					75 text 45 / 500
+				76 heading If you need to leave safely, Value: 2
+					77 text If you need to leave safely
+				78 text Someone who can access this browser or device may see saved questions and notes. Close the page, use a private device when appropriate, and remember that exports, printouts, browser history and backups are outside this app’s control.
+				79 heading Preview, Value: 2
+					80 text Preview
+				81 container appointment-sheet-print
+					82 text Appointment question sheet
+					112 text Choose the questions that matter most to you.
+					110 text My own notes
+					111 text T3 synthetic note: ask for a written summary.
+					84 text For discussion with your own care team. This is not medical advice.
+				85 button Save on this device
+					86 text Save on this device
+				87 button Export sheet
+					88 text Export sheet
+				89 button Copy sheet text
+					90 text Copy sheet text
+				91 button Print question sheet
+					92 text Print question sheet
+				93 button Delete saved sheet
+					94 text Delete saved sheet
+				95 text You have unsaved changes. Choose Save to keep them on this device.
+				96 heading Where the data lives, Value: 2
+					97 text Where the data lives
+				98 text On the web, this app uses this browser profile’s local storage. It is not encrypted by this app and may be exposed to people or software with access to the profile or device. On iOS and Android, this app uses Expo SecureStore. Browser, device, operating-system and backup behavior varies; local storage alone does not guarantee privacy. Export sends a copy to the destination you choose. Deleting here may not remove an exported or backed-up copy.
+				99 text Development preview · general information only · not a medical service
+				100 container
+					101 link Description: About and privacy, Value: localhost:51070/about
+					102 link Description: Accessibility, Value: localhost:51070/accessibility
+					103 link Description: Saved on this device, Value: localhost:51070/saved
+					104 link Description: Urgent help, Value: localhost:51070/urgent-help
+
+The focused UI element is 28 checkbox Description: What is the one thing I most want help understanding or discussing today?, Value: 0
+SAVE
+Browser tab: 1, Title: "VAD & Carotid Support", URL: "http://localhost:51070/appointments".
+1 AXWebArea VAD & Carotid Support, URL: localhost:51070/appointments
+	2 container
+		3 link Description: Urgent help, Value: localhost:51070/urgent-help
+		4 container
+			5 text VAD & Carotid Support
+			6 container Main navigation
+				7 link Description: Home, Value: localhost:51070/
+				8 button (collapsed) Menu, Secondary Actions: Expand
+					9 text Menu
+				10 link Description: Text and display, Value: localhost:51070/accessibility
+		11 container
+			12 link Description: Skip to main content, ID: skip-to-content
+				13 text Skip to main content
+			14 container
+				15 heading Prepare an appointment, Value: 1
+					16 text Prepare an appointment
+				17 text Choose what matters most today. Start with one question, add a reminder, then review before saving or exporting.
+				18 button (collapsed) Optional viewing options, Secondary Actions: Expand
+					19 text Optional viewing options
+				20 container
+					21 text 1 question  selected
+				112 button Clear selections
+					113 text Clear selections
+				22 heading Before the appointment, Value: 2
+					23 text Before the appointment
+				24 button Select all questions in Before the appointment
+					25 text Select all in section
+					26 container
+						27 text 1 / 3
+				28 checkbox Description: What is the one thing I most want help understanding or discussing today?, Value: 1
+					114 text ✓
+					29 text What is the one thing I most want help understanding or discussing today?
+				30 checkbox Description: Would I like someone to come with me, and what would I like them to do?, Value: 0
+					31 text Would I like someone to come with me, and what would I like them to do?
+				32 checkbox Description: Would a written summary, communication aid, interpreter, or more time help me take part?, Value: 0
+					33 text Would a written summary, communication aid, interpreter, or more time help me take part?
+				34 heading During the appointment, Value: 2
+					35 text During the appointment
+				36 button Select all questions in During the appointment
+					37 text Select all in section
+					38 container
+						39 text 0 / 9
+				40 checkbox Description: Could you explain the diagnosis and which artery is involved?, Value: 0
+					41 text Could you explain the diagnosis and which artery is involved?
+				42 checkbox Value: 0, Description: Could you explain what my test results show, what remains uncertain, and whether anything is still pending?
+					43 text Could you explain what my test results show, what remains uncertain, and whether anything is still pending?
+				44 checkbox Description: Is any follow-up imaging planned for me? If so, what is its purpose?, Value: 0
+					45 text Is any follow-up imaging planned for me? If so, what is its purpose?
+				46 checkbox Value: 0, Description: What do I need to know about medicines prescribed or changed for me, and who should I ask if I have a concern?
+					47 text What do I need to know about medicines prescribed or changed for me, and who should I ask if I have a concern?
+				48 checkbox Description: Which day-to-day concerns, such as energy or concentration, would be useful to discuss?, Value: 0
+					49 text Which day-to-day concerns, such as energy or concentration, would be useful to discuss?
+				50 checkbox Value: 0, Description: How could I describe changes in energy, fatigue or concentration so we can discuss what support may fit?
+					51 text How could I describe changes in energy, fatigue or concentration so we can discuss what support may fit?
+				52 checkbox Value: 0, Description: Which everyday activities have become harder, and could we talk about support or rehabilitation options?
+					53 text Which everyday activities have become harder, and could we talk about support or rehabilitation options?
+				54 checkbox Description: How could I discuss work, study or usual routines and any support I may need for my situation?, Value: 0
+					55 text How could I discuss work, study or usual routines and any support I may need for my situation?
+				56 checkbox Description: What support is available for me and the people helping me?, Value: 0
+					57 text What support is available for me and the people helping me?
+				58 heading Before I leave, Value: 2
+					59 text Before I leave
+				60 button Select all questions in Before I leave
+					61 text Select all in section
+					62 container
+						63 text 0 / 3
+				64 checkbox Description: Could we write down the next steps and who is responsible for each one?, Value: 0
+					65 text Could we write down the next steps and who is responsible for each one?
+				66 checkbox Description: Who will contact me about any pending results, and how can I follow up if I do not hear back?, Value: 0
+					67 text Who will contact me about any pending results, and how can I follow up if I do not hear back?
+				68 checkbox Description: Who can I contact with a non-emergency question between appointments?, Value: 0
+					69 text Who can I contact with a non-emergency question between appointments?
+				70 heading My own notes (optional), Value: 2
+					71 text My own notes (optional)
+				72 text Keep notes brief and avoid names, dates of birth, contact details or copies of records. Notes stay in this browser profile or on this device unless you export them.
+				73 text entry area (settable) Description: Optional appointment notes, Value: T3 synthetic note: ask for a written summary.
+				74 container
+					75 text 45 / 500
+				76 heading If you need to leave safely, Value: 2
+					77 text If you need to leave safely
+				78 text Someone who can access this browser or device may see saved questions and notes. Close the page, use a private device when appropriate, and remember that exports, printouts, browser history and backups are outside this app’s control.
+				79 heading Preview, Value: 2
+					80 text Preview
+				81 container appointment-sheet-print
+					82 text Appointment question sheet
+					115 container
+						116 text Before the appointment □  What is the one thing I most want help understanding or discussing today?
+					110 text My own notes
+					111 text T3 synthetic note: ask for a written summary.
+					84 text For discussion with your own care team. This is not medical advice.
+				85 button Saved on this device
+					86 text Saved on this device
+				87 button Export sheet
+					88 text Export sheet
+				89 button Copy sheet text
+					90 text Copy sheet text
+				91 button Print question sheet
+					92 text Print question sheet
+				93 button Delete saved sheet
+					94 text Delete saved sheet
+				95 text Saved on this device. It is not sent to the project.
+				96 heading Where the data lives, Value: 2
+					97 text Where the data lives
+				98 text On the web, this app uses this browser profile’s local storage. It is not encrypted by this app and may be exposed to people or software with access to the profile or device. On iOS and Android, this app uses Expo SecureStore. Browser, device, operating-system and backup behavior varies; local storage alone does not guarantee privacy. Export sends a copy to the destination you choose. Deleting here may not remove an exported or backed-up copy.
+				99 text Development preview · general information only · not a medical service
+				100 container
+					101 link Description: About and privacy, Value: localhost:51070/about
+					102 link Description: Accessibility, Value: localhost:51070/accessibility
+					103 link Description: Saved on this device, Value: localhost:51070/saved
+					104 link Description: Urgent help, Value: localhost:51070/urgent-help
+
+The focused UI element is 85 button Saved on this device
+RELOAD
+Browser tab: 1, Title: "VAD & Carotid Support", URL: "http://localhost:51070/appointments".
+1 AXWebArea VAD & Carotid Support, URL: localhost:51070/appointments
+	2 container
+		3 link Description: Urgent help, Value: localhost:51070/urgent-help
+		4 container
+			5 text VAD & Carotid Support
+			6 container Main navigation
+				7 link Description: Home, Value: localhost:51070/
+				8 button (collapsed) Menu, Secondary Actions: Expand
+					9 text Menu
+				10 link Description: Text and display, Value: localhost:51070/accessibility
+		11 container
+			12 link Description: Skip to main content, ID: skip-to-content
+				13 text Skip to main content
+			14 container
+				15 heading Prepare an appointment, Value: 1
+					16 text Prepare an appointment
+				17 text Choose what matters most today. Start with one question, add a reminder, then review before saving or exporting.
+				18 button (collapsed) Optional viewing options, Secondary Actions: Expand
+					19 text Optional viewing options
+				20 container
+					21 text 1 question  selected
+				22 button Clear selections
+					23 text Clear selections
+				24 heading Before the appointment, Value: 2
+					25 text Before the appointment
+				26 button Select all questions in Before the appointment
+					27 text Select all in section
+					28 container
+						29 text 1 / 3
+				30 checkbox Description: What is the one thing I most want help understanding or discussing today?, Value: 1
+					31 text ✓
+					32 text What is the one thing I most want help understanding or discussing today?
+				33 checkbox Description: Would I like someone to come with me, and what would I like them to do?, Value: 0
+					34 text Would I like someone to come with me, and what would I like them to do?
+				35 checkbox Description: Would a written summary, communication aid, interpreter, or more time help me take part?, Value: 0
+					36 text Would a written summary, communication aid, interpreter, or more time help me take part?
+				37 heading During the appointment, Value: 2
+					38 text During the appointment
+				39 button Select all questions in During the appointment
+					40 text Select all in section
+					41 container
+						42 text 0 / 9
+				43 checkbox Description: Could you explain the diagnosis and which artery is involved?, Value: 0
+					44 text Could you explain the diagnosis and which artery is involved?
+				45 checkbox Value: 0, Description: Could you explain what my test results show, what remains uncertain, and whether anything is still pending?
+					46 text Could you explain what my test results show, what remains uncertain, and whether anything is still pending?
+				47 checkbox Description: Is any follow-up imaging planned for me? If so, what is its purpose?, Value: 0
+					48 text Is any follow-up imaging planned for me? If so, what is its purpose?
+				49 checkbox Value: 0, Description: What do I need to know about medicines prescribed or changed for me, and who should I ask if I have a concern?
+					50 text What do I need to know about medicines prescribed or changed for me, and who should I ask if I have a concern?
+				51 checkbox Description: Which day-to-day concerns, such as energy or concentration, would be useful to discuss?, Value: 0
+					52 text Which day-to-day concerns, such as energy or concentration, would be useful to discuss?
+				53 checkbox Value: 0, Description: How could I describe changes in energy, fatigue or concentration so we can discuss what support may fit?
+					54 text How could I describe changes in energy, fatigue or concentration so we can discuss what support may fit?
+				55 checkbox Value: 0, Description: Which everyday activities have become harder, and could we talk about support or rehabilitation options?
+					56 text Which everyday activities have become harder, and could we talk about support or rehabilitation options?
+				57 checkbox Description: How could I discuss work, study or usual routines and any support I may need for my situation?, Value: 0
+					58 text How could I discuss work, study or usual routines and any support I may need for my situation?
+				59 checkbox Description: What support is available for me and the people helping me?, Value: 0
+					60 text What support is available for me and the people helping me?
+				61 heading Before I leave, Value: 2
+					62 text Before I leave
+				63 button Select all questions in Before I leave
+					64 text Select all in section
+					65 container
+						66 text 0 / 3
+				67 checkbox Description: Could we write down the next steps and who is responsible for each one?, Value: 0
+					68 text Could we write down the next steps and who is responsible for each one?
+				69 checkbox Description: Who will contact me about any pending results, and how can I follow up if I do not hear back?, Value: 0
+					70 text Who will contact me about any pending results, and how can I follow up if I do not hear back?
+				71 checkbox Description: Who can I contact with a non-emergency question between appointments?, Value: 0
+					72 text Who can I contact with a non-emergency question between appointments?
+				73 heading My own notes (optional), Value: 2
+					74 text My own notes (optional)
+				75 text Keep notes brief and avoid names, dates of birth, contact details or copies of records. Notes stay in this browser profile or on this device unless you export them.
+				76 text entry area (settable) Description: Optional appointment notes, Value: T3 synthetic note: ask for a written summary.
+				77 container
+					78 text 45 / 500
+				79 heading If you need to leave safely, Value: 2
+					80 text If you need to leave safely
+				81 text Someone who can access this browser or device may see saved questions and notes. Close the page, use a private device when appropriate, and remember that exports, printouts, browser history and backups are outside this app’s control.
+				82 heading Preview, Value: 2
+					83 text Preview
+				84 container appointment-sheet-print
+					85 text Appointment question sheet
+					86 container
+						87 text Before the appointment □  What is the one thing I most want help understanding or discussing today?
+					88 text My own notes
+					89 text T3 synthetic note: ask for a written summary.
+					90 text For discussion with your own care team. This is not medical advice.
+				91 button Saved on this device
+					92 text Saved on this device
+				93 button Export sheet
+					94 text Export sheet
+				95 button Copy sheet text
+					96 text Copy sheet text
+				97 button Print question sheet
+					98 text Print question sheet
+				99 button Delete saved sheet
+					100 text Delete saved sheet
+				101 text Your saved questions and notes were restored from this device.
+				102 heading Where the data lives, Value: 2
+					103 text Where the data lives
+				104 text On the web, this app uses this browser profile’s local storage. It is not encrypted by this app and may be exposed to people or software with access to the profile or device. On iOS and Android, this app uses Expo SecureStore. Browser, device, operating-system and backup behavior varies; local storage alone does not guarantee privacy. Export sends a copy to the destination you choose. Deleting here may not remove an exported or backed-up copy.
+				105 text Development preview · general information only · not a medical service
+				106 container
+					107 link Description: About and privacy, Value: localhost:51070/about
+					108 link Description: Accessibility, Value: localhost:51070/accessibility
+					109 link Description: Saved on this device, Value: localhost:51070/saved
+					110 link Description: Urgent help, Value: localhost:51070/urgent-help
+
+The focused UI element is 1 AXWebArea VAD & Carotid Support, URL: localhost:51070/appointments

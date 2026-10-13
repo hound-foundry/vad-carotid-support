@@ -1,0 +1,33 @@
+Browser tab: 1, Title: "VAD & Carotid Support", URL: "http://localhost:51069/saved".
+1 AXWebArea VAD & Carotid Support, URL: localhost:51069/saved
+	2 container
+		3 link Description: Urgent help, Value: localhost:51069/urgent-help
+		4 container
+			5 text VAD & Carotid Support
+			6 container Main navigation
+				7 link Description: Home, Value: localhost:51069/
+				8 button (collapsed) Menu, Secondary Actions: Expand
+					9 text Menu
+				10 link Description: Text and display, Value: localhost:51069/accessibility
+		11 container
+			12 link Description: Skip to main content, ID: skip-to-content
+				13 text Skip to main content
+			14 container
+				15 heading Saved on this device, Value: 1
+					16 text Saved on this device
+				17 text Open a guide, sheet or card. Unsaved sheets and cards remain here while this app is open.
+				18 link Description: Saved guides Saved on this device, Value: localhost:51069/saved-guides
+				19 link Description: Appointment sheet No saved items, Value: localhost:51069/appointments
+				20 link Description: Support preferences Saved on this device, Value: localhost:51069/support-preferences
+				21 link Description: Medical and communication card Saved on this device, Value: localhost:51069/personal-card
+				22 link Description: Anniversary or milestone card Saved on this device, Value: localhost:51069/milestone-card
+				23 text Names, notes and health details are shown only when you open their tool. Closing or reloading loses unsaved edits.
+				24 link Description: Privacy and clear all saved data, Value: localhost:51069/about
+				25 text Development preview · general information only · not a medical service
+				26 container
+					27 link Description: About and privacy, Value: localhost:51069/about
+					28 link Description: Accessibility, Value: localhost:51069/accessibility
+					29 link Description: Saved on this device, Value: localhost:51069/saved
+					30 link Description: Urgent help, Value: localhost:51069/urgent-help
+
+The focused UI element is 1 AXWebArea VAD & Carotid Support, URL: localhost:51069/saved

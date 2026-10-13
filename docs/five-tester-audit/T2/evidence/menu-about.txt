@@ -1,0 +1,32 @@
+←
+Home
+ABOUT THIS PROJECT
+About and privacy
+A free, independent, open-source Hound Foundry community project for adults affected by vertebral or carotid artery dissection, families, carers and interested readers.
+What this project is
+This is an early development preview, not a charity, healthcare provider or medical service. It does not diagnose, interpret scans, recommend medication, estimate individual risk, clear activity or replace a clinician. Personal questions about diagnosis, tests and treatment belong with the person’s own care team.
+Clinical and lived-experience review
+All guides are original drafts with linked sources and recorded review fields. No clinician or patient/carer usability review has yet been recorded. The app must not publish these guides as approved patient information until qualified review is documented.
+The user-suggested 2017 book is listed bibliographically as an external reading resource. Its chapters and stories are not reproduced or translated.
+Privacy and open source
+No account, analytics, advertising, sync service or backend is part of V1. Appointment sheets are stored on your device only when you choose Save. Web storage uses your browser profile’s local storage; native storage uses Expo SecureStore. Each has different device and backup behavior, so neither guarantees privacy. See the repository privacy documentation before storing sensitive notes.
+The source code uses the project’s existing open-source licence, and authored guide content uses its existing content licence. The app is free to use; it has no donation, advertising or story-submission feature.
+Read the privacy design notes ↗
+Open the project repository ↗
+Clear saved data
+Use this when you want to remove all appointment questions, support preferences, personal cards, milestone cards, accessibility preferences and saved guide links from this device. It does not remove exported files or backups made outside this app.
+Delete all saved data on this device
+Help improve the project
+Suggestions, accessibility findings and review help are welcome. Please use synthetic examples only: do not put diagnoses, scan details, contact information or another person’s health information in a public issue.
+Read contribution guidance ↗
+Languages
+English is the only authored language in this preview. These languages are planned in stages, only after qualified human review of the interface and guides: Russian, Ukrainian, Lithuanian, Latvian, Estonian, Spanish, French, Japanese, Simplified Chinese, Traditional Chinese.
+Use it like an app
+On browsers that support installation, use the browser menu’s “Install” or “Add to home screen” action. The web version remains a static information tool: it does not create an account, add a server connection or change where saved sheets live.
+How availability works
+The basic English static web preview is available as general education and appointment preparation. It uses generic urgent-help wording and does not provide country-specific legal, medical or emergency claims. The project keeps a country watchlist before enabling local emergency details, additional languages, hosted data, paid features or native app-store distribution.
+Development preview · general information only · not a medical service
+About and privacy
+Accessibility
+Saved on this device
+Urgent help

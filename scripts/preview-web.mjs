@@ -15,9 +15,18 @@ export function createPreviewServer(directory) {
       const candidates = pathname === "/" ? [join(root, "index.html")] : [target, target + ".html", join(target, "index.html")];
       let found;
       for (const candidate of candidates) { try { if ((await stat(candidate)).isFile()) { found = candidate; break; } } catch { /* Try the clean static route. */ } }
-      if (!found) { res.writeHead(404, { "Content-Type": "text/plain" }); res.end("Page not found"); return; }
+      let status = 200;
+      if (!found) {
+        // Only page requests get an accessible 404 shell. Missing assets must
+        // never receive HTML or a successful response.
+        if (!extname(pathname) || extname(pathname) === ".html") {
+          const notFound = join(root, "+not-found.html");
+          try { if ((await stat(notFound)).isFile()) { found = notFound; status = 404; } } catch { /* Plain 404 if no exported shell exists. */ }
+        }
+        if (!found) { res.writeHead(404, { "Content-Type": "text/plain; charset=utf-8" }); res.end("Page not found"); return; }
+      }
       const data = req.method === "HEAD" ? undefined : await readFile(found);
-      res.writeHead(200, { "Content-Type": mime[extname(found)] ?? "application/octet-stream", "Cache-Control": "no-cache", "X-Content-Type-Options": "nosniff", "Referrer-Policy": "strict-origin-when-cross-origin", "Permissions-Policy": "camera=(), microphone=(), geolocation=()" });
+      res.writeHead(status, { "Content-Type": mime[extname(found)] ?? "application/octet-stream", "Cache-Control": "no-cache", "X-Content-Type-Options": "nosniff", "Referrer-Policy": "strict-origin-when-cross-origin", "Permissions-Policy": "camera=(), microphone=(), geolocation=()" });
       res.end(data);
     } catch { res.writeHead(400); res.end("Invalid request"); }
   });

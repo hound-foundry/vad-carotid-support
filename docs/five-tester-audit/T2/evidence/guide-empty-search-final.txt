@@ -1,0 +1,42 @@
+Browser tab: 1, Title: "VAD & Carotid Support", URL: "http://localhost:51069/learn".
+1 AXWebArea VAD & Carotid Support, URL: localhost:51069/learn
+	2 container
+		3 link Description: Urgent help, Value: localhost:51069/urgent-help
+		4 container
+			5 text VAD & Carotid Support
+			6 container Main navigation
+				7 link Description: Home, Value: localhost:51069/
+				8 button (collapsed) Menu, Secondary Actions: Expand
+					9 text Menu
+				10 link Description: Text and display, Value: localhost:51069/accessibility
+		11 container
+			12 link Description: Skip to main content, ID: skip-to-content
+				13 text Skip to main content
+			14 container
+				15 heading Understand dissection, Value: 1
+					16 text Understand dissection
+				17 text Choose a topic, or search for a word.
+				18 button (collapsed) Description: Draft information, review pending. Review details, Secondary Actions: Expand
+					19 text Draft information · review pending
+				20 heading Find a guide, Value: 2
+					21 text Find a guide
+				22 text field (settable) Description: Search guide content, Value: zzmarker-7
+				23 button Clear search
+					24 text Clear search
+				25 button (collapsed) Filter by audience (optional) · Show, Secondary Actions: Expand
+					26 container
+						27 text Filter by audience (optional)  ·  Show
+				28 text No guides match that search. Try a different word or clear the search.
+				29 link Description: Look up a term →, Value: localhost:51069/glossary
+				30 link Description: Open saved guides →, Value: localhost:51069/saved-guides
+				31 button (collapsed) About this library and search · Show, Secondary Actions: Expand
+					32 container
+						33 text About this library and search  ·  Show
+				34 text Development preview · general information only · not a medical service
+				35 container
+					36 link Description: About and privacy, Value: localhost:51069/about
+					37 link Description: Accessibility, Value: localhost:51069/accessibility
+					38 link Description: Saved on this device, Value: localhost:51069/saved
+					39 link Description: Urgent help, Value: localhost:51069/urgent-help
+
+The focused UI element is 22 text field (settable) Description: Search guide content, Value: zzmarker-7

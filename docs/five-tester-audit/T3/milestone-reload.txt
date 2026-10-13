@@ -1,0 +1,25 @@
+Browser tab: 1, Title: "VAD & Carotid Support", URL: "http://localhost:51070/milestone-card".
+The following is a diff from the previous accessibility tree with ~ and + representing changed and added elements, respectively. Removed elements are summarized by ID range.
+Removed element IDs: 57-81
++				16 container
++					17 text CARD · EDIT
++					18 heading Anniversary or milestone card, Value: 1
++						19 text Anniversary or milestone card
++					20 text Mark a moment in your own words. Dates and “survivor” wording are optional.
++				21 text Display name (optional)
++				22 text field (settable) Description: Display name (optional), Value: T3 Milestone, ID: milestone-name
++				23 text Card title
++				24 text field (settable) Description: Card title, Value: A synthetic milestone, ID: milestone-title
++				25 text Personal message (optional)
++				26 text entry area (settable) Description: Personal message (optional), Value: T3 synthetic: a moment to remember., ID: milestone-message
++				27 button Review card
++					28 text Review card
++				29 button (collapsed) Add an optional date · Show, Secondary Actions: Expand
++					30 container
++						31 text Add an optional date  ·  Show
++				32 button (collapsed) Optional wording · Show, Secondary Actions: Expand
++					33 container
++						34 text Optional wording  ·  Show
++				35 text Personal story/milestone — not medical advice or proof of diagnosis.
+~				36 text Saved card restored from this device.
+The focused UI element is 1 AXWebArea VAD & Carotid Support, URL: localhost:51070/milestone-card

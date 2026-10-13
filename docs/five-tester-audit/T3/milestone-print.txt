@@ -1,0 +1,23 @@
+Browser tab: 1, Title: "VAD & Carotid Support", URL: "http://localhost:51070/milestone-card".
+The following is a diff from the previous accessibility tree with ~ and + representing changed and added elements, respectively. Removed elements are summarized by ID range.
+~				68 button (disabled) Download image (PNG)
+~				70 button (disabled) Download PDF
+~				72 button (disabled) Print card
+~					83 button (disabled) Download text
+~				85 text Opening the card print view…
++	86 container Card print preview
++		87 AXWebArea A synthetic milestone, URL: about:srcdoc
++			88 container Card
++				89 text Survivor milestone
++				90 heading A synthetic milestone, Value: 1
++					91 text A synthetic milestone
++				92 container
++					93 heading Name, Value: 2
++						94 text Name
++					95 text T3 Milestone
++				96 container
++					97 heading Message, Value: 2
++						98 text Message
++					99 text T3 synthetic: a moment to remember.
++				100 text Personal story/milestone — not medical advice or proof of diagnosis.
+The focused UI element is 87 AXWebArea A synthetic milestone, URL: about:srcdoc

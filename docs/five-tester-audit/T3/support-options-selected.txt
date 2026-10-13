@@ -1,0 +1,120 @@
+Browser tab: 1, Title: "VAD & Carotid Support", URL: "http://localhost:51070/support-preferences".
+1 AXWebArea VAD & Carotid Support, URL: localhost:51070/support-preferences
+	2 container
+		3 link Description: Urgent help, Value: localhost:51070/urgent-help
+		4 container
+			5 text VAD & Carotid Support
+			6 container Main navigation
+				7 link Description: Home, Value: localhost:51070/
+				8 button (collapsed) Menu, Secondary Actions: Expand
+					9 text Menu
+				10 link Description: Text and display, Value: localhost:51070/accessibility
+		11 container
+			12 link Description: Skip to main content, ID: skip-to-content
+				13 text Skip to main content
+			14 container
+				15 heading Support preferences, Value: 1
+					16 text Support preferences
+				17 text Choose statements that fit today. Review before saving or sharing.
+				18 text This is not a medical or emergency plan.
+				19 button (expanded) Hide viewing options, Secondary Actions: Collapse
+					20 text Hide viewing options
+				21 heading Choose your pace, Value: 2
+					22 text Choose your pace
+				23 checkbox Description: Show one support section at a time, Value: 0
+					24 text Show one section at a time
+				25 text You can change this view at any time.
+				26 checkbox Description: Show selected preferences only, Value: 0
+					27 text Show selected preferences only
+				28 container
+					29 text 1 preference  selected
+				30 button Clear selections
+					31 text Clear selections
+				32 heading Communication, Value: 2
+					33 text Communication
+				34 button Select all preferences in Communication
+					35 text Select all in section
+					36 container
+						37 text 0 / 6
+				38 checkbox Description: Please give me time to think and respond., Value: 0
+					39 text Please give me time to think and respond.
+				40 checkbox Description: One question at a time helps me., Value: 0
+					41 text One question at a time helps me.
+				42 checkbox Description: Please write down key points., Value: 0
+					43 text Please write down key points.
+				44 checkbox Description: Ask me before speaking or deciding for me., Value: 0
+					45 text Ask me before speaking or deciding for me.
+				46 checkbox Description: Please use plain language and explain unfamiliar words., Value: 0
+					47 text Please use plain language and explain unfamiliar words.
+				48 checkbox Description: Please check what kind of support would help today; it can change., Value: 0
+					49 text Please check what kind of support would help today; it can change.
+				50 heading Practical help, Value: 2
+					51 text Practical help
+				52 button Select all preferences in Practical help
+					53 text Select all in section
+					54 container
+						55 text 0 / 5
+				56 checkbox Description: I may want help getting to an appointment., Value: 0
+					57 text I may want help getting to an appointment.
+				58 checkbox Description: I may want someone to take notes, if I ask., Value: 0
+					59 text I may want someone to take notes, if I ask.
+				60 checkbox Description: Please offer practical help and let me choose., Value: 0
+					61 text Please offer practical help and let me choose.
+				62 checkbox Description: It helps to plan breaks., Value: 0
+					63 text It helps to plan breaks.
+				64 checkbox Description: If I seem tired, ask whether I want to pause or continue later., Value: 0
+					65 text If I seem tired, ask whether I want to pause or continue later.
+				66 heading Privacy and boundaries, Value: 2
+					67 text Privacy and boundaries
+				68 button Select all preferences in Privacy and boundaries
+					69 text Select all in section
+					70 container
+						71 text 1 / 3
+				72 checkbox Description: Please ask before sharing information about me., Value: 1
+					73 text ✓
+					74 text Please ask before sharing information about me.
+				75 checkbox Description: Let me choose who joins a conversation., Value: 0
+					76 text Let me choose who joins a conversation.
+				77 checkbox Description: Please ask before offering advice., Value: 0
+					78 text Please ask before offering advice.
+				79 heading A note about this sheet, Value: 2
+					80 text A note about this sheet
+				81 text Everything is optional. These are example preferences, not instructions for your care. They can change at any time. This is not a medical or emergency plan.
+				82 heading Something else I’d like you to know (optional), Value: 2
+					83 text Something else I’d like you to know (optional)
+				84 text This note may include personal information. It stays in this browser profile or on this device unless you export it.
+				85 text entry area (settable) Optional note about how you prefer to be supported
+				86 container
+					87 text 0 / 300
+				88 heading If you need to leave safely, Value: 2
+					89 text If you need to leave safely
+				90 text Someone who can access this browser or device may see saved support preferences and notes. Close the page, use a private device when appropriate, and remember that exports, printouts, browser history and backups are outside this app’s control.
+				91 heading Review what you’ll share, Value: 2
+					92 text Review what you’ll share
+				93 container support-sheet-print
+					94 text How I prefer to be supported
+					95 container
+						96 text Privacy and boundaries •  Please ask before sharing information about me.
+					97 text Your preferences belong to you. You choose whether to share them.
+				98 button Save on this device
+					99 text Save on this device
+				100 button Export for sharing
+					101 text Export for sharing
+				102 button Copy sheet text
+					103 text Copy sheet text
+				104 button Print support sheet
+					105 text Print support sheet
+				106 button Delete saved preferences
+					107 text Delete saved preferences
+				108 text You have unsaved changes. Choose Save to keep them on this device.
+				109 heading Where the data lives, Value: 2
+					110 text Where the data lives
+				111 text On the web, this app uses this browser profile’s local storage. It is not encrypted by this app and may be exposed to people or software with access to the profile or device. On iOS and Android, this app uses Expo SecureStore. Browser, device, operating-system and backup behavior varies; local storage alone does not guarantee privacy. Export makes a separate copy in the destination you choose; deleting here may not remove an exported or backed-up copy.
+				112 text Development preview · general information only · not a medical service
+				113 container
+					114 link Description: About and privacy, Value: localhost:51070/about
+					115 link Description: Accessibility, Value: localhost:51070/accessibility
+					116 link Description: Saved on this device, Value: localhost:51070/saved
+					117 link Description: Urgent help, Value: localhost:51070/urgent-help
+
+The focused UI element is 19 button (expanded) Hide viewing options, Secondary Actions: Collapse

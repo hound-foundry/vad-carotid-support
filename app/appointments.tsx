@@ -1,11 +1,12 @@
 import { Pressable, Text, TextInput, View } from "../src/components/Ui";
 import { useEffect, useState } from "react";
-import { Alert, Platform, StyleSheet } from "react-native";
+import { Platform, StyleSheet } from "react-native";
 import { useLocalSearchParams } from "expo-router";
 import { AppPage, Card, PageHeading } from "../src/components/AppPage";
 import { appointmentPrompts, emptyAppointmentSheet, formatAppointmentExport, guidePromptSuggestions, MAX_NOTE_LENGTH, type AppointmentSheet } from "../src/features/appointments/model.mjs";
 import { exportAppointmentSheet, loadAppointmentSheet, saveAppointmentSheet, deleteAppointmentSheet } from "../src/features/appointments/store";
 import { useSheetDraft } from "../src/features/sheets/useSheetDraft";
+import { ConfirmDelete } from "../src/components/ConfirmDelete";
 
 export default function AppointmentsScreen() {
   const { guide } = useLocalSearchParams<{ guide?: string }>();
@@ -45,13 +46,6 @@ export default function AppointmentsScreen() {
   };
   const save = async () => { const ok = await draft.save(); setMessage(ok ? "" : "Could not save on this device. You can still review or export this sheet."); };
   const remove = async () => { const ok = await draft.remove(); setMessage(ok ? "Saved sheet deleted from this app’s device storage." : "Could not delete the saved sheet from device storage."); };
-  const confirmRemove = () => {
-    if (Platform.OS === "web") {
-      if (globalThis.confirm("Delete the saved appointment sheet from this device?")) void remove();
-      return;
-    }
-    Alert.alert("Delete saved questions?", "This clears this app’s saved appointment sheet from this device.", [{ text: "Cancel", style: "cancel" }, { text: "Delete", style: "destructive", onPress: () => { void remove(); } }]);
-  };
   const exportSheet = async () => { try { await exportAppointmentSheet(sheet); setMessage("Export opened after your request. The destination app or file is outside this project’s control."); } catch { setMessage("Export did not complete."); } };
   const copySheet = async () => { try { if (!globalThis.navigator?.clipboard) { setMessage("Copying is unavailable in this browser. Use Export sheet instead."); return; } await globalThis.navigator.clipboard.writeText(formatAppointmentExport(sheet)); setMessage("Question sheet copied after your request. The destination app is outside this project’s control."); } catch { setMessage("Copying did not complete. Use Export sheet instead."); } };
   const printSheet = () => { if (Platform.OS === "web") globalThis.print?.(); };
@@ -86,7 +80,7 @@ export default function AppointmentsScreen() {
     <Card title="My own notes (optional)"><Text style={styles.helper}>Keep notes brief and avoid names, dates of birth, contact details or copies of records. Notes stay in this browser profile or on this device unless you export them.</Text><TextInput accessibilityLabel="Optional appointment notes" multiline maxLength={MAX_NOTE_LENGTH} value={sheet.note} onChangeText={(note) => { setMessage(""); draft.edit((current) => ({ ...current, note })); }} placeholder="Write a question or reminder for yourself" placeholderTextColor="#596861" style={styles.input} textAlignVertical="top" /><Text style={styles.counter}>{sheet.note.length}/{MAX_NOTE_LENGTH}</Text></Card>
     <Card title="If you need to leave safely"><Text style={styles.helper}>Someone who can access this browser or device may see saved questions and notes. Close the page, use a private device when appropriate, and remember that exports, printouts, browser history and backups are outside this app’s control.</Text></Card>
     <Card title="Preview"><View nativeID="appointment-sheet-print"><Text style={styles.previewTitle}>Appointment question sheet</Text>{promptGroups.map((group) => { const selected = appointmentPrompts.filter((prompt) => prompt.group === group && sheet.selectedIds.includes(prompt.id)); return selected.length ? <View key={group}><Text style={styles.previewSubhead}>{group}</Text>{selected.map((prompt) => <Text key={prompt.id} style={styles.previewLine}>□ {prompt.text}</Text>)}</View> : null; })}{sheet.selectedIds.length === 0 ? <Text style={styles.previewLine}>Choose the questions that matter most to you.</Text> : null}{sheet.note.trim() ? <><Text style={styles.previewSubhead}>My own notes</Text><Text style={styles.previewLine}>{sheet.note.trim()}</Text></> : null}<Text style={styles.helper}>For discussion with your own care team. This is not medical advice.</Text></View></Card>
-    <View style={styles.actions}><Button title={draft.status === "saved" || draft.status === "restored" ? "Saved on this device" : draft.status === "saving" ? "Saving…" : "Save on this device"} onPress={() => void save()} /><Button title="Export sheet" secondary onPress={() => void exportSheet()} />{Platform.OS === "web" ? <><Button title="Copy sheet text" secondary onPress={() => void copySheet()} /><Button title="Print question sheet" secondary onPress={printSheet} /></> : null}<Button title="Delete saved sheet" secondary onPress={confirmRemove} /></View>
+    <View style={styles.actions}><Button title={draft.status === "saved" || draft.status === "restored" ? "Saved on this device" : draft.status === "saving" ? "Saving…" : "Save on this device"} onPress={() => void save()} /><Button title="Export sheet" secondary onPress={() => void exportSheet()} />{Platform.OS === "web" ? <><Button title="Copy sheet text" secondary onPress={() => void copySheet()} /><Button title="Print question sheet" secondary onPress={printSheet} /></> : null}<ConfirmDelete label="Delete saved sheet" question="Delete this saved sheet?" detail="This clears the sheet and deletes its saved copy from this device. Downloaded and printed copies are unchanged." onConfirm={remove} disabled={["loading", "saving", "deleting"].includes(draft.status)} /></View>
     <Text accessibilityLiveRegion="polite" style={styles.status}>{draftStatusMessage(draft.status)} {message}</Text>
     <Card title="Where the data lives"><Text style={styles.helper}>On the web, this app uses this browser profile’s local storage. It is not encrypted by this app and may be exposed to people or software with access to the profile or device. On iOS and Android, this app uses Expo SecureStore. Browser, device, operating-system and backup behavior varies; local storage alone does not guarantee privacy. Export sends a copy to the destination you choose. Deleting here may not remove an exported or backed-up copy.</Text></Card>
   </AppPage>;

@@ -1,0 +1,82 @@
+Browser tab: 1, Title: "VAD & Carotid Support", URL: "http://localhost:51070/appointments".
+1 AXWebArea VAD & Carotid Support, URL: localhost:51070/appointments
+	2 container
+		3 link Description: Urgent help, Value: localhost:51070/urgent-help
+		4 container
+			5 text VAD & Carotid Support
+			6 container Main navigation
+				7 link Description: Home, Value: localhost:51070/
+				8 button (collapsed) Menu, Secondary Actions: Expand
+					9 text Menu
+				10 link Description: Text and display, Value: localhost:51070/accessibility
+		11 container
+			12 link Description: Skip to main content, ID: skip-to-content
+				13 text Skip to main content
+			14 container
+				15 heading Prepare an appointment, Value: 1
+					16 text Prepare an appointment
+				17 text Choose what matters most today. Start with one question, add a reminder, then review before saving or exporting.
+				18 button (expanded) Hide viewing options, Secondary Actions: Collapse
+					19 text Hide viewing options
+				105 heading Choose your pace, Value: 2
+					106 text Choose your pace
+				107 text You do not need to choose everything. One question is a useful start, and you can change your choices at any time.
+				108 checkbox Description: Show one appointment section at a time, Value: 0
+					109 text Show one section at a time
+				110 checkbox Description: Show selected questions only, Value: 1
+					120 text ✓
+					111 text Show selected questions only
+				112 text Your selected questions stay on this screen as you move between sections. You can change this view at any time.
+				20 container
+					21 text 1 question  selected
+				113 button Clear selections
+					114 text Clear selections
+				22 heading Before the appointment, Value: 2
+					23 text Before the appointment
+				24 button Select all questions in Before the appointment
+					25 text Select all in section
+					26 container
+						27 text 1 / 3
+				28 checkbox Description: What is the one thing I most want help understanding or discussing today?, Value: 1
+					115 text ✓
+					29 text What is the one thing I most want help understanding or discussing today?
+				70 heading My own notes (optional), Value: 2
+					71 text My own notes (optional)
+				72 text Keep notes brief and avoid names, dates of birth, contact details or copies of records. Notes stay in this browser profile or on this device unless you export them.
+				73 text entry area (settable) Description: Optional appointment notes, Value: T3 synthetic note: written summary.
+				74 container
+					75 text 35 / 500
+				76 heading If you need to leave safely, Value: 2
+					77 text If you need to leave safely
+				78 text Someone who can access this browser or device may see saved questions and notes. Close the page, use a private device when appropriate, and remember that exports, printouts, browser history and backups are outside this app’s control.
+				79 heading Preview, Value: 2
+					80 text Preview
+				81 container appointment-sheet-print
+					82 text Appointment question sheet
+					116 container
+						117 text Before the appointment □  What is the one thing I most want help understanding or discussing today?
+					118 text My own notes
+					119 text T3 synthetic note: written summary.
+					84 text For discussion with your own care team. This is not medical advice.
+				85 button Save on this device
+					86 text Save on this device
+				87 button Export sheet
+					88 text Export sheet
+				89 button Copy sheet text
+					90 text Copy sheet text
+				91 button Print question sheet
+					92 text Print question sheet
+				93 button Delete saved sheet
+					94 text Delete saved sheet
+				95 text You have unsaved changes. Choose Save to keep them on this device.
+				96 heading Where the data lives, Value: 2
+					97 text Where the data lives
+				98 text On the web, this app uses this browser profile’s local storage. It is not encrypted by this app and may be exposed to people or software with access to the profile or device. On iOS and Android, this app uses Expo SecureStore. Browser, device, operating-system and backup behavior varies; local storage alone does not guarantee privacy. Export sends a copy to the destination you choose. Deleting here may not remove an exported or backed-up copy.
+				99 text Development preview · general information only · not a medical service
+				100 container
+					101 link Description: About and privacy, Value: localhost:51070/about
+					102 link Description: Accessibility, Value: localhost:51070/accessibility
+					103 link Description: Saved on this device, Value: localhost:51070/saved
+					104 link Description: Urgent help, Value: localhost:51070/urgent-help
+
+The focused UI element is 110 checkbox Description: Show selected questions only, Value: 1

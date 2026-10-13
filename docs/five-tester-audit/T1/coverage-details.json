@@ -1,0 +1,200 @@
+{
+  "tester": "T1",
+  "baselineRevision": "72688788cb926af39b9813c38ac830301a0eaeda",
+  "supportingProvenanceOnly": true,
+  "lockedReportUnchanged": true,
+  "filenameReconciliation": {
+    "reportJsonReference": "output-appointment-sheet.txt",
+    "originalEvidenceCopyName": "output-appointment-sheet.bin",
+    "laterRenameAttempt": "output-appointment-sheet.bin -> output-appointment-sheet.txt",
+    "currentFolderInventoryAtReconciliation": "output-appointment-sheet.txt",
+    "browserDownloadBasename": "appointment-question-sheet.txt",
+    "note": "The first local evidence copy was initially saved as .bin. Before report lock I attempted to rename it to .txt; current folder inventory contains .txt. The parent’s inventory saw the earlier .bin name. These names refer to the appointment-sheet text export."
+  },
+  "numberedExplorationAndBacktracking": [
+    {
+      "step": 1,
+      "route": "/",
+      "action": "Opened the assigned origin in a hidden IAB tab, read the protocol, and explored the home screen without UI hints.",
+      "backtracking": "None."
+    },
+    {
+      "step": 2,
+      "route": "/learn and /guide/*",
+      "action": "Read all seven listed guides end-to-end; inspected review details/source links, one-section mode, and read-aloud start/stop. Saved and reloaded guide entries.",
+      "backtracking": "Used Back to guides and later returned from glossary to the no-stroke guide at section 2."
+    },
+    {
+      "step": 3,
+      "route": "/appointments",
+      "action": "Selected and removed sample questions, entered a synthetic note, inspected preview, saved/reloaded, exported text, tested section pace/selected-only/clear selections.",
+      "backtracking": "Earlier in-session delete cancel/confirm was exercised; final saved hub had no appointment item. A repeated delete-control click timed out."
+    },
+    {
+      "step": 4,
+      "route": "/support-preferences",
+      "action": "Selected then removed a sample statement, entered a synthetic note, saved/reloaded, exported text, and deleted the saved preference fixture.",
+      "backtracking": "Returned through direct routes; no unsaved-draft leave/return test."
+    },
+    {
+      "step": 5,
+      "route": "/cards, /personal-card, /milestone-card",
+      "action": "Inspected the chooser through AX text, then opened both forms; previewed, saved/reloaded, downloaded outputs, inspected print previews, and removed fixtures.",
+      "backtracking": "Return-to-edit and reload were used on saved or preview states; no deliberate unsaved-card leave/return test. The /cards chooser screenshot is missing."
+    },
+    {
+      "step": 6,
+      "route": "/glossary and /resources",
+      "action": "Matched stenosis, tested a no-match query, inspected resource list and audience controls.",
+      "backtracking": "Clicked the no-match guide link and used browser Back; the query persisted. A separate direct goto/back attempt did not preserve it."
+    },
+    {
+      "step": 7,
+      "route": "/saved, /saved-guides, /about, /urgent-help, /supporting-someone",
+      "action": "Visited remaining destinations and checked saved-hub labels, help content, privacy/about and urgent guidance; removed saved-guide fixtures.",
+      "backtracking": "Saved-guide deletion cleared two entries immediately without confirmation/undo."
+    },
+    {
+      "step": 8,
+      "route": "/about and /resources",
+      "action": "Checked direct reload, Back and Forward; opened both plain legacy stroke route forms and an unavailable route.",
+      "backtracking": "Back returned to About; Forward returned to Resources."
+    },
+    {
+      "step": 9,
+      "route": "/accessibility and responsive layouts",
+      "action": "Tested text scale, spacing, contrast, dark theme, reduced motion and simplified reading; checked 390px, 320px, short landscape and 200% app text, keyboard focus/Enter, and pointer scrolling.",
+      "backtracking": "Reset display preferences and temporary viewport."
+    },
+    {
+      "step": 10,
+      "route": "/appointments",
+      "action": "Entered one synthetic privacy marker after starting Network event observation; checked current URL, request events and console logs.",
+      "backtracking": "Cleared the unsaved note afterwards; saved fixtures were removed and the hidden tab closed."
+    }
+  ],
+  "personalCard": {
+    "route": "/personal-card",
+    "blankDefaultsObserved": [
+      "No communication statement selected in the initial blank form.",
+      "Optional fields are empty.",
+      "Date precision defaults to No date; UI says no date will appear."
+    ],
+    "optionalFieldsInspected": [
+      "Preferred name",
+      "Communication and access needs",
+      "How I describe my situation",
+      "What helps me",
+      "Please avoid",
+      "Emergency contact",
+      "Clinician or service contact",
+      "Medicines",
+      "Allergies",
+      "When it happened"
+    ],
+    "fieldsGivenSyntheticValues": {
+      "Preferred name": "T1 Demo",
+      "Communication and access needs": "Please use plain language.",
+      "When it happened": "Year only: 2022 in the earlier fixture."
+    },
+    "otherOptionalFieldsNotFilled": [
+      "How I describe my situation",
+      "What helps me",
+      "Please avoid",
+      "Emergency contact",
+      "Clinician or service contact",
+      "Medicines",
+      "Allergies"
+    ],
+    "statementsExercised": [
+      "Please use short, clear sentences. (selected in an earlier fixture)",
+      "Please give me time to answer. (selected, saved, and observed checked after reload)"
+    ],
+    "dateModesSelected": [
+      "No date (default; later PDF omitted date)",
+      "Year only (synthetic year 2022 in the earlier fixture)"
+    ],
+    "dateModesVisibleButNotSelected": [
+      "Exact date",
+      "Month and year",
+      "Approximate date"
+    ],
+    "saveReloadAndOutput": "Saved fixture restored after reload; TXT and PDF outputs inspected. PDF rendered to one page."
+  },
+  "milestoneCard": {
+    "route": "/milestone-card",
+    "blankDefaultsObserved": [
+      "Display name blank",
+      "Personal message blank",
+      "Title prefilled as My milestone",
+      "Date precision defaults to No date; UI says no date will appear."
+    ],
+    "syntheticValues": [
+      "Display name: T1 Demo",
+      "Title: A small step",
+      "Message: Today I asked one question."
+    ],
+    "optionalWording": [
+      "Use the word “survivor” was unchecked by default and checked for the final synthetic output."
+    ],
+    "dateModesSelected": [
+      "No date for the final exported card; output had no date.",
+      "Year only with synthetic year 2022 in the earlier fixture."
+    ],
+    "dateModesVisibleButNotSelected": [
+      "Exact date",
+      "Month and year",
+      "Approximate date"
+    ],
+    "saveReloadAndOutput": "Saved fixture restored after reload; PNG and PDF files inspected. PDF rendered to one page."
+  },
+  "sheetAndLeaveReturnScope": {
+    "appointmentSheet": {
+      "selectedAndRemoved": "Selected one useful question, selected a second, then removed that second. Later Clear selections returned count to zero and retained the note.",
+      "note": "Ask what follow-up is planned and who to contact.",
+      "previewSaveReloadExport": "Previewed, saved, reloaded the saved question and note, and inspected the downloaded TXT.",
+      "optionalViewing": "Enabled one section at a time and selected-only, advanced sections, closed options, and advanced again.",
+      "clearAll": "Clear selections exercised.",
+      "unsavedLeaveAndReturn": "not-tested — drafts were previewed and saved, then reload/return was tested on saved data; I did not intentionally leave before saving."
+    },
+    "supportPreferences": {
+      "selectedAndRemoved": "Selected One question at a time helps me. and Please use plain language and explain unfamiliar words.; removed the first choice.",
+      "note": "Please use plain language.",
+      "previewSaveReloadExport": "Saved, reloaded and inspected the downloaded TXT.",
+      "clearAll": "not-tested — no select-all/clear-all control sequence was exercised.",
+      "unsavedLeaveAndReturn": "not-tested — draft was saved before leaving/reloading."
+    },
+    "cards": {
+      "unsavedLeaveAndReturn": "not-tested — drafts were reviewed and saved before a reload; no deliberate away-and-return while unsaved.",
+      "deleteCancel": "Personal and milestone card deletion prompts were canceled, then deletion was confirmed for synthetic saved fixtures."
+    },
+    "downloadCancellation": "not-tested — browser download events were captured as successful outputs; no cancellation action was exercised."
+  },
+  "privacyObservation": {
+    "marker": "T1_PRIVACY_MARKER_72688788",
+    "field": "Optional appointment notes",
+    "networkObservation": "After Network.enable and a cursor read, typing the marker produced zero Network.requestWillBeSent events in the returned window; no marker-bearing request was observed.",
+    "url": "At the observation point: http://localhost:51068/appointments; marker absent.",
+    "consoleLogs": "No captured console entries contained the marker.",
+    "bounds": "This checked one unsaved note entry and the immediate observation interval only. It does not establish global absence of telemetry, nor cover saved card data, other fields, all routes or export destinations."
+  },
+  "routeEvidenceGaps": [
+    {
+      "route": "/cards",
+      "status": "observed-without-dedicated-screenshot",
+      "observation": "AX snapshot showed Choose a card and both card links (/personal-card and /milestone-card). Navigation then moved directly to /personal-card.",
+      "misleadingReference": "11-milestone-blank.jpg is a child form capture, not the chooser. The report’s row should be read with this limitation."
+    }
+  ],
+  "otherExactScope": {
+    "glossary": "stenosis matched Stenosis / Narrowing; zzzxq returned 0 terms. In-app link to tests-and-terms followed by Back retained zzzxq. A direct goto/back attempt did not retain the search.",
+    "legacyAndMissingRoutes": [
+      "/without-stroke resolved to Dissection without a diagnosed stroke.",
+      "/with-stroke resolved to Dissection and stroke.",
+      "/not-a-real-page-t1 displayed Page not found."
+    ],
+    "responsive": "390x844, 320x640 and 844x390 were tested. At 320x640 with 200% app text, the page had no horizontal overflow but the heading and header navigation wrapped heavily.",
+    "auditory": "Start button changed to Stop reading aloud and returned to Read guide aloud after stop; actual audible playback was not verified.",
+    "evidenceTooling": "Screenshot/download APIs were clarified through CUA documentation; browser rejected file: navigation, so the existing bundled PDF runtime was used to inspect downloaded PDF text and render pages."
+  }
+}

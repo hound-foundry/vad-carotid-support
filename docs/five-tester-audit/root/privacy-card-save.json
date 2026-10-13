@@ -1,0 +1,13 @@
+{
+  "marker": "ROOT_PRIVACY_CARD_1381",
+  "action": "Type and explicitly save milestone card at52073",
+  "url": "http://localhost:52073/milestone-card",
+  "requests": {
+    "cursor": 692,
+    "events": [],
+    "hasMore": false,
+    "truncated": false
+  },
+  "logs": [],
+  "evaluatorStorage": "Read-only evaluator did not expose localStorage; not inspected directly."
+}

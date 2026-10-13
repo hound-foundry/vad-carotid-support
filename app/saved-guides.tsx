@@ -2,11 +2,12 @@ import { Link } from "../src/components/AppLink";
 import { Pressable, Text, View } from "../src/components/Ui";
 import { useFocusEffect } from "expo-router";
 import { useCallback, useState } from "react";
-import { Alert, Platform, StyleSheet } from "react-native";
+import { Platform, StyleSheet } from "react-native";
 import { AppPage, BackHome, Card, DraftNotice, PageHeading, palette } from "../src/components/AppPage";
 import { guides } from "../src/content/guides";
 import { deleteSavedGuides, exportSavedGuides, loadSavedGuides } from "../src/features/saved-guides/store";
 import { formatSavedGuidesExport } from "../src/features/saved-guides/model.mjs";
+import { ConfirmDelete } from "../src/components/ConfirmDelete";
 
 export default function SavedGuidesScreen() {
   const [slugs, setSlugs] = useState<string[]>([]);
@@ -39,14 +40,6 @@ export default function SavedGuidesScreen() {
     }
   };
 
-  const confirmRemoveAll = () => {
-    if (!loaded) return;
-    if (Platform.OS === "web") {
-      if (globalThis.confirm("Delete all saved guides from this device?")) void removeAll();
-      return;
-    }
-    Alert.alert("Delete saved guides?", "This clears saved guide links from this app’s device storage.", [{ text: "Cancel", style: "cancel" }, { text: "Delete", style: "destructive", onPress: () => { void removeAll(); } }]);
-  };
 
   const exportList = async () => {
     try {
@@ -67,7 +60,7 @@ export default function SavedGuidesScreen() {
     </Card>
     <View style={styles.actions}>
       <ActionButton title="Export saved guide list" onPress={() => void exportList()} disabled={!loaded} />
-      <ActionButton title="Delete all saved guides" onPress={confirmRemoveAll} secondary disabled={!loaded || saved.length === 0} />
+      <ConfirmDelete label="Delete all saved guides" question="Delete your saved guide list?" detail="This removes the saved links from this device. You can find the guides again in the library." onConfirm={removeAll} disabled={!loaded || saved.length === 0} />
     </View>
     <Text accessibilityLiveRegion="polite" style={styles.status}>{message}</Text>
     <Card title="Privacy and storage"><Text style={styles.body}>Saving a guide may reveal an interest in this topic to anyone who can access this browser profile or device. On the web, this app uses browser local storage, which is not encrypted by the app and may be included in browser sync or backup. On iOS and Android, it uses Expo SecureStore; device and backup behavior can vary. Saving does not send the list to this project. Export creates a separate copy only after you choose Export; deleting here cannot remove exported or backed-up copies.</Text></Card>

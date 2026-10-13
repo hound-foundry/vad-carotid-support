@@ -1,0 +1,9 @@
+Browser tab: 1, Title: "VAD & Carotid Support", URL: "http://localhost:51070/with-stroke".
+The following is a diff from the previous accessibility tree with ~ and + representing changed and added elements, respectively. Removed elements are summarized by ID range.
+~1 AXWebArea VAD & Carotid Support, URL: localhost:51070/with-stroke
+~				16 text DISSECTION ACCOMPANIED BY STROKE
+~				17 heading Dissection and stroke, Value: 1
+~					18 text Dissection and stroke
+~				19 text A pathway for questions about rehabilitation, communication, fatigue, daily life and support.
+~				27 link Value: localhost:51070/guide/with-stroke, Description: When dissection is accompanied by stroke Conversation prompts about rehabilitation, communication, daily life and support for patients and carers. For patients, carers · About 2 min Draft · not approved for patient use
+The focused UI element is 1 AXWebArea VAD & Carotid Support, URL: localhost:51070/with-stroke

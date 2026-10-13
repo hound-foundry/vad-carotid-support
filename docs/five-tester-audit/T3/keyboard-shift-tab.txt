@@ -1,0 +1,8 @@
+SHIFT+TAB
+Browser tab: 1, Title: "VAD & Carotid Support", URL: "http://localhost:51070/".
+There has been no change in the accessibility tree.
+The focused UI element is 35 link Description: Home, URL: localhost:51070/
+TAB
+Browser tab: 1, Title: "VAD & Carotid Support", URL: "http://localhost:51070/".
+There has been no change in the accessibility tree.
+The focused UI element is 36 button (expanded) Close menu, Secondary Actions: Collapse

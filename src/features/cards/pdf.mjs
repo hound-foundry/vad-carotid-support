@@ -16,13 +16,15 @@ export async function createCardPdf(view, regularBytes, boldBytes) {
   const block = (text, font, size, colour = ink) => { for (const textLine of wrapText(text, contentWidth, (s) => font.widthOfTextAtSize(s, size))) line(textLine, font, size, colour); };
   newPage(); block(view.title, bold, view.kind === "milestone" ? 28 : 24); y -= 12;
   for (const item of view.fields) {
-    if (y < 135) newPage();
+    const labelLines = wrapText(item.label, contentWidth, (s) => bold.widthOfTextAtSize(s, 14));
+    // Keep the label and first value line together without an arbitrary gap
+    // that strands a short final field on a new page.
+    if (y - labelLines.length * 14 * 1.6 < 72) newPage();
     block(item.label, bold, 14, teal); block(item.value, regular, 17); y -= 14;
   }
-  y -= 12; block(view.footer, regular, 13, ink);
   for (const sheet of doc.getPages()) {
-    const footerLines = wrapText(view.footer, contentWidth, (s) => regular.widthOfTextAtSize(s, 10));
-    footerLines.forEach((text, index) => sheet.drawText(text, { x: margin, y: 50 - index * 14, size: 10, font: regular, color: ink }));
+    const footerLines = wrapText(view.footer, contentWidth, (s) => regular.widthOfTextAtSize(s, 13));
+    footerLines.forEach((text, index) => sheet.drawText(text, { x: margin, y: 50 - index * 16, size: 13, font: regular, color: ink }));
   }
   // Neutral document metadata; private fields are not copied into metadata or filenames.
   doc.setTitle(view.kind === "personal" ? "Personal information card" : "Personal milestone card"); doc.setProducer("VAD & Carotid Support");

@@ -1,0 +1,32 @@
+[
+  {
+    "origin": "http://localhost:51068",
+    "status": 200,
+    "htmlSha256": "669B522623DC397CFCD443AFA8803C0F68152745BD0E29E0600C9BBB8F276A3D",
+    "frozenEntryPresent": true
+  },
+  {
+    "origin": "http://localhost:51069",
+    "status": 200,
+    "htmlSha256": "669B522623DC397CFCD443AFA8803C0F68152745BD0E29E0600C9BBB8F276A3D",
+    "frozenEntryPresent": true
+  },
+  {
+    "origin": "http://localhost:51070",
+    "status": 200,
+    "htmlSha256": "669B522623DC397CFCD443AFA8803C0F68152745BD0E29E0600C9BBB8F276A3D",
+    "frozenEntryPresent": true
+  },
+  {
+    "origin": "http://localhost:51071",
+    "status": 200,
+    "htmlSha256": "669B522623DC397CFCD443AFA8803C0F68152745BD0E29E0600C9BBB8F276A3D",
+    "frozenEntryPresent": true
+  },
+  {
+    "origin": "http://localhost:51072",
+    "status": 200,
+    "htmlSha256": "669B522623DC397CFCD443AFA8803C0F68152745BD0E29E0600C9BBB8F276A3D",
+    "frozenEntryPresent": true
+  }
+]

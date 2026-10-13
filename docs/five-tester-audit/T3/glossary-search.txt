@@ -1,0 +1,96 @@
+MATCH
+Browser tab: 1, Title: "VAD & Carotid Support", URL: "http://localhost:51070/glossary".
+1 AXWebArea VAD & Carotid Support, URL: localhost:51070/glossary
+	2 container
+		3 link Description: Urgent help, Value: localhost:51070/urgent-help
+		4 container
+			5 text VAD & Carotid Support
+			6 container Main navigation
+				7 link Description: Home, Value: localhost:51070/
+				8 button (collapsed) Menu, Secondary Actions: Expand
+					9 text Menu
+				10 link Description: Text and display, Value: localhost:51070/accessibility
+		11 container
+			12 link Description: Skip to main content, ID: skip-to-content
+				13 text Skip to main content
+			14 container
+				15 heading Look up a term, Value: 1
+					16 text Look up a term
+				17 text Short definitions for unfamiliar words.
+				18 button (collapsed) Description: Draft information, review pending. Review details, Secondary Actions: Expand
+					19 text Draft information · review pending
+				20 heading Find a term, Value: 2
+					21 text Find a term
+				22 text field (settable) Description: Search glossary terms, Value: stenosis
+				93 button Clear search
+					94 text Clear search
+				23 container
+					24 text 1 term  shown
+				67 heading Stenosis, Value: 2
+					68 text Stenosis
+				69 text Narrowing.
+				70 text The word alone does not say how much a vessel is narrowed or what that means for you.
+				71 link Open source: Definition: stenosis
+					72 container
+						73 text Source:  Definition: stenosis  ↗
+				81 button (collapsed) Using this glossary · Show, Secondary Actions: Expand
+					82 container
+						83 text Using this glossary  ·  Show
+				84 heading Still unsure?, Value: 2
+					85 text Still unsure?
+				86 text You can ask: “Could you explain this word and tell me what it means in my situation?” This app cannot interpret reports or scans.
+				87 text Development preview · general information only · not a medical service
+				88 container
+					89 link Description: About and privacy, Value: localhost:51070/about
+					90 link Description: Accessibility, Value: localhost:51070/accessibility
+					91 link Description: Saved on this device, Value: localhost:51070/saved
+					92 link Description: Urgent help, Value: localhost:51070/urgent-help
+
+The focused UI element is 22 text field (settable) Description: Search glossary terms, Value: stenosis
+EMPTY
+Browser tab: 1, Title: "VAD & Carotid Support", URL: "http://localhost:51070/glossary".
+1 AXWebArea VAD & Carotid Support, URL: localhost:51070/glossary
+	2 container
+		3 link Description: Urgent help, Value: localhost:51070/urgent-help
+		4 container
+			5 text VAD & Carotid Support
+			6 container Main navigation
+				7 link Description: Home, Value: localhost:51070/
+				8 button (collapsed) Menu, Secondary Actions: Expand
+					9 text Menu
+				10 link Description: Text and display, Value: localhost:51070/accessibility
+		11 container
+			12 link Description: Skip to main content, ID: skip-to-content
+				13 text Skip to main content
+			14 container
+				15 heading Look up a term, Value: 1
+					16 text Look up a term
+				17 text Short definitions for unfamiliar words.
+				18 button (collapsed) Description: Draft information, review pending. Review details, Secondary Actions: Expand
+					19 text Draft information · review pending
+				20 heading Find a term, Value: 2
+					21 text Find a term
+				22 text field (settable) Description: Search glossary terms, Value: T3-no-such-term-928
+				93 button Clear search
+					94 text Clear search
+				23 container
+					24 text 0 terms  shown
+				95 heading No matching term, Value: 2
+					96 text No matching term
+				97 text Try a shorter word or ask the clinician who reviewed your report to explain the term.
+				98 link Description: Read the tests and terms guide →, Value: localhost:51070/guide/tests-and-terms
+				99 link Description: Prepare a question for your appointment →, Value: localhost:51070/appointments
+				81 button (collapsed) Using this glossary · Show, Secondary Actions: Expand
+					82 container
+						83 text Using this glossary  ·  Show
+				84 heading Still unsure?, Value: 2
+					85 text Still unsure?
+				86 text You can ask: “Could you explain this word and tell me what it means in my situation?” This app cannot interpret reports or scans.
+				87 text Development preview · general information only · not a medical service
+				88 container
+					89 link Description: About and privacy, Value: localhost:51070/about
+					90 link Description: Accessibility, Value: localhost:51070/accessibility
+					91 link Description: Saved on this device, Value: localhost:51070/saved
+					92 link Description: Urgent help, Value: localhost:51070/urgent-help
+
+The focused UI element is 22 text field (settable) Description: Search glossary terms, Value: T3-no-such-term-928
