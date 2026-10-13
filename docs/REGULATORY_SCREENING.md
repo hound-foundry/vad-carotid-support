@@ -76,6 +76,8 @@ Luxembourg source discovery (13 October 2026) now records the National Data Prot
 
 Andorra source discovery (13 October 2026) now records the Andorran Data Protection Agency, Andorran personal-data law, the Ministry of Health, government privacy information, and official emergency telephone guidance. These are source leads only. Andorra remains blocked pending qualified review of Catalan-language and national privacy, medical-software, accessibility, emergency and distribution requirements.
 
+Albania source discovery (13 October 2026) now records the Information and Data Protection Commissioner’s personal-data materials, Ministry of Health medical-device services, the National Agency of Medicines and Medical Devices, and official emergency-number guidance. These are source leads only. Albania remains blocked pending qualified review of Albanian- and English-language, national privacy, medical-software, accessibility, emergency and distribution requirements.
+
 ### Platform distribution policies (not legislation)
 
 | Platform | Official policy source | Release work still needed |

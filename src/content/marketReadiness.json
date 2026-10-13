@@ -294,8 +294,50 @@
       "release": "blocked",
       "isoAlpha2": "AL",
       "reviewOwner": null,
-      "lastChecked": null,
-      "officialSources": [],
+      "lastChecked": "2026-10-13",
+      "officialSources": [
+        {
+          "title": "Personal data protection legislation",
+          "url": "https://idp.al/en/data-protection-legislation/",
+          "authority": "Information and Data Protection Commissioner, Albania",
+          "sourceType": "privacy-regulator",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Your data and sensitive health data",
+          "url": "https://idp.al/en/your-data/",
+          "authority": "Information and Data Protection Commissioner, Albania",
+          "sourceType": "privacy-guidance",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Ministry health services and medical-device registration",
+          "url": "https://shendetesia.gov.al/en/10111-2/",
+          "authority": "Ministry of Health and Social Welfare, Albania",
+          "sourceType": "medical-device-regulator",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "National Agency of Medicines and Medical Devices",
+          "url": "https://shendetesia.gov.al/en/institucionet-e-varesise/",
+          "authority": "Ministry of Health and Social Welfare, Albania",
+          "sourceType": "health-regulator",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Emergency numbers",
+          "url": "https://www.qsut.gov.al/en/numrat-e-emergjences/",
+          "authority": "University Hospital Centre ‘Mother Teresa’, Albania",
+          "sourceType": "emergency-guidance",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        }
+      ],
+      "sourceDiscoveryCheckedOn": "2026-10-13",
       "reviewAreas": [
         {
           "area": "privacy-and-health-data",
