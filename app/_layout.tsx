@@ -1,4 +1,5 @@
 import { Link, Stack } from "expo-router";
+import Head from "expo-router/head";
 import { StatusBar } from "expo-status-bar";
 import { Pressable, StyleSheet, Text, View } from "react-native";
 import { SafeAreaProvider, SafeAreaView } from "react-native-safe-area-context";
@@ -10,6 +11,11 @@ export default function RootLayout() {
     <SafeAreaProvider>
       <StatusBar style="dark" />
       <View style={styles.root}>
+        <Head>
+          <title>VAD &amp; Carotid Support</title>
+          <meta name="description" content="Free, open-source information and appointment preparation for adults affected by vertebral or carotid artery dissection, families and carers." />
+          <meta name="theme-color" content="#F3F7F6" />
+        </Head>
         <SafeAreaView style={styles.urgentSafe} edges={["top"]}>
           <Link href="/urgent-help" asChild>
             <Pressable accessibilityRole="link" accessibilityLabel="Urgent help: contact local emergency services now" style={styles.urgent}>
