@@ -23,7 +23,7 @@ The 2017 survivor book is linked by bibliographic record only. Three suggested F
 
 Broad topic signals abstracted from the user-supplied excerpts are recorded for editorial planning only. They are not evidence or prevalence data; no names, profile links, quotes or identifiable stories are retained. Any clinical content on these themes still needs sources and review.
 
-The app is an international English development preview, not a cleared global release. The legal register enumerates a UN M49 discovery set of 248 country-or-area records; every record remains unassessed and blocked. Reconcile against current ISO 3166-1 and review relevant subnational law before any public launch. This inventory is not legal clearance.
+The app is an international English development preview, not a cleared global release. The legal register contains a UN M49 discovery set of 248 country-or-area records and a separately labelled Taiwan market-screening supplement for the planned Traditional Chinese rollout; every record remains unassessed and blocked. The supplement does not add Taiwan as a separate UN M49 row or express a territorial-status conclusion. Reconcile all identifiers against current ISO 3166-1 and review relevant subnational law before any public launch. This inventory is not legal clearance.
 
 ## Practical value
 

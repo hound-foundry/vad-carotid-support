@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "scope": "UN M49 country-or-area discovery set; reconcile against current ISO 3166-1 before publication and include applicable state, province, territory and other subnational rules.",
+  "scope": "UN M49 country-or-area discovery set, plus separately identified ISO 3166-1 market-screening supplements outside the standard M49 row set; reconcile against current ISO 3166-1 before publication and include applicable subnational laws.",
   "discoverySource": "https://unstats.un.org/unsd/methodology/m49/",
   "isoSource": "https://www.iso.org/iso-3166-country-codes.html",
   "globalRelease": "blocked",
@@ -7705,6 +7705,482 @@
       ],
       "sourceDiscoveryCheckedOn": "2026-10-13",
       "sourceDiscoveryNote": "Initial Macao SAR source discovery, not legal advice or a market screen. All 14 legal review areas and national/subnational reviews remain not-assessed; release is blocked. The Government says English legal translations are references and the Chinese original is the official-language source (Portuguese may also be an authoritative language); qualified reviewers must verify controlling texts. Law No. 12/2025 medical-device regime took effect on 1 July 2026 in stages and expressly includes required computer software in its device definition; consult ISAF and local counsel to determine whether any actual app function meets that definition. Seven parishes are queued only as a territorial screening scaffold; they are not separate legal jurisdictions, and the full administrative and territorial applicability review remains open."
+    },
+    {
+      "name": "Taiwan",
+      "m49": "158",
+      "alpha3": "TWN",
+      "legalReview": {
+        "status": "not-assessed",
+        "reviewer": null,
+        "date": null
+      },
+      "subnationalReview": {
+        "status": "not-assessed",
+        "reviewer": null,
+        "date": null
+      },
+      "release": "blocked",
+      "isoAlpha2": "TW",
+      "reviewOwner": null,
+      "lastChecked": null,
+      "officialSources": [
+        {
+          "title": "UN M49 FAQ: Taiwan entry scope and statistical-only code 158",
+          "url": "https://unstats.un.org/unsd/methodology/m49/",
+          "authority": "United Nations Statistics Division",
+          "sourceType": "territorial-scope-and-statistical-code",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "ISO Online Browsing Platform: Taiwan ISO 3166 code entry",
+          "url": "https://www.iso.org/obp/ui/#iso:code:3166:TW",
+          "authority": "International Organization for Standardization",
+          "sourceType": "code-list",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Personal Data Protection Act (current consolidated law and amendment status)",
+          "url": "https://law.moj.gov.tw/LawClass/LawAll.aspx?Pcode=I0050021",
+          "authority": "Ministry of Justice, Laws & Regulations Database",
+          "sourceType": "legislation",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Personal Data Protection Act: official English text and legislative history",
+          "url": "https://law.pdpc.gov.tw/EngLawContent.aspx?id=5&lan=E",
+          "authority": "Preparatory Office of the Personal Data Protection Commission",
+          "sourceType": "legislation-english-reference",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Medical Devices Act: official English and Chinese text",
+          "url": "https://www.mohw.gov.tw/cp-6626-80198-1.html",
+          "authority": "Ministry of Health and Welfare / Taiwan Food and Drug Administration",
+          "sourceType": "legislation",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Medical Devices Act: consolidated national law text",
+          "url": "https://law.moj.gov.tw/LawClass/LawAll.aspx?pcode=L0030106",
+          "authority": "Ministry of Justice, Laws & Regulations Database",
+          "sourceType": "legislation",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Regulations Governing the Classification of Medical Devices",
+          "url": "https://www.fda.gov.tw/ENG/lawContent.aspx?cid=5063&id=3388",
+          "authority": "Taiwan Food and Drug Administration",
+          "sourceType": "implementing-regulation",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "TFDA medical software classification guidance (English reference; Chinese prevails)",
+          "url": "https://www.fda.gov.tw/tc/includes/GetFile.ashx?id=f636694821886559217&type=1",
+          "authority": "Taiwan Food and Drug Administration",
+          "sourceType": "regulator-guidance",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "TFDA process for requesting a medical-device classification",
+          "url": "https://www.fda.gov.tw/eng/siteListContent.aspx?id=28095&sid=10336",
+          "authority": "Taiwan Food and Drug Administration",
+          "sourceType": "regulator-service-guidance",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Consumer Protection Act",
+          "url": "https://law.moj.gov.tw/LawClass/LawAll.aspx?pcode=J0170001",
+          "authority": "Ministry of Justice, Laws & Regulations Database",
+          "sourceType": "legislation",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Copyright Act (current consolidated text and amendment status)",
+          "url": "https://law.moj.gov.tw/LawClass/LawAll.aspx?pcode=J0070017",
+          "authority": "Ministry of Justice, Laws & Regulations Database",
+          "sourceType": "legislation",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Protection of Children and Youths Welfare and Rights Act",
+          "url": "https://law.moj.gov.tw/LawClass/LawAll.aspx?pcode=D0050001",
+          "authority": "Ministry of Justice, Laws & Regulations Database",
+          "sourceType": "legislation",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "People with Disabilities Rights Protection Act",
+          "url": "https://law.moj.gov.tw/LawClass/LawAll.aspx?pcode=D0050046",
+          "authority": "Ministry of Justice, Laws & Regulations Database",
+          "sourceType": "legislation",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Regulations Governing the Website Accessibility Certification Label and Website Accessibility Testing",
+          "url": "https://law.moda.gov.tw/EngLawContent.aspx?id=49&lan=E",
+          "authority": "Ministry of Digital Affairs",
+          "sourceType": "accessibility-regulation",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Government Accessible Web Check and Accessible Web Development Guidelines",
+          "url": "https://web.moda.gov.tw/en/digital-affairs/digital-service/operations/228",
+          "authority": "Ministry of Digital Affairs",
+          "sourceType": "accessibility-guidance",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Cyber Security Management Act (current consolidated law)",
+          "url": "https://law.moj.gov.tw/LawClass/LawAll.aspx?pcode=A0030297",
+          "authority": "Ministry of Justice, Laws & Regulations Database",
+          "sourceType": "legislation",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Electronic Signatures Act",
+          "url": "https://law.moj.gov.tw/LawClass/LawAll.aspx?pcode=J0080037",
+          "authority": "Ministry of Justice, Laws & Regulations Database",
+          "sourceType": "legislation",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Taiwan local-government structure and 22 first-level municipalities, counties and cities",
+          "url": "https://ws.moi.gov.tw/001/Upload/400/RelFile/0/31/2021%20MOI%20ebook-en.pdf",
+          "authority": "Ministry of the Interior",
+          "sourceType": "official-territorial-register",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Taiwan administrative-boundary data update, August 2026",
+          "url": "https://www.moi.gov.tw/english/News_Content.aspx?n=7627&s=340496",
+          "authority": "Ministry of the Interior / National Land Surveying and Mapping Center",
+          "sourceType": "administrative-boundary-source",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Emergency calls: 119 fire and ambulance services",
+          "url": "https://www.nfa.gov.tw/cht/?code=list&ids=66",
+          "authority": "National Fire Agency, Ministry of the Interior",
+          "sourceType": "emergency-authority-guidance",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        }
+      ],
+      "reviewAreas": [
+        {
+          "area": "privacy-and-health-data",
+          "status": "not-assessed",
+          "reason": null,
+          "source": null,
+          "checkedOn": null,
+          "reviewer": null
+        },
+        {
+          "area": "cookies-and-device-storage",
+          "status": "not-assessed",
+          "reason": null,
+          "source": null,
+          "checkedOn": null,
+          "reviewer": null
+        },
+        {
+          "area": "security-and-breach-reporting",
+          "status": "not-assessed",
+          "reason": null,
+          "source": null,
+          "checkedOn": null,
+          "reviewer": null
+        },
+        {
+          "area": "international-transfers-and-hosting",
+          "status": "not-assessed",
+          "reason": null,
+          "source": null,
+          "checkedOn": null,
+          "reviewer": null
+        },
+        {
+          "area": "medical-software-classification",
+          "status": "not-assessed",
+          "reason": null,
+          "source": null,
+          "checkedOn": null,
+          "reviewer": null
+        },
+        {
+          "area": "consumer-and-advertising",
+          "status": "not-assessed",
+          "reason": null,
+          "source": null,
+          "checkedOn": null,
+          "reviewer": null
+        },
+        {
+          "area": "accessibility",
+          "status": "not-assessed",
+          "reason": null,
+          "source": null,
+          "checkedOn": null,
+          "reviewer": null
+        },
+        {
+          "area": "children-and-vulnerable-users",
+          "status": "not-assessed",
+          "reason": null,
+          "source": null,
+          "checkedOn": null,
+          "reviewer": null
+        },
+        {
+          "area": "copyright-and-translation",
+          "status": "not-assessed",
+          "reason": null,
+          "source": null,
+          "checkedOn": null,
+          "reviewer": null
+        },
+        {
+          "area": "emergency-information",
+          "status": "not-assessed",
+          "reason": null,
+          "source": null,
+          "checkedOn": null,
+          "reviewer": null
+        },
+        {
+          "area": "app-store-and-distribution",
+          "status": "not-assessed",
+          "reason": null,
+          "source": null,
+          "checkedOn": null,
+          "reviewer": null
+        },
+        {
+          "area": "tax-charity-and-funding",
+          "status": "not-assessed",
+          "reason": null,
+          "source": null,
+          "checkedOn": null,
+          "reviewer": null
+        },
+        {
+          "area": "language-and-recordkeeping",
+          "status": "not-assessed",
+          "reason": null,
+          "source": null,
+          "checkedOn": null,
+          "reviewer": null
+        },
+        {
+          "area": "enforcement-and-operational-response",
+          "status": "not-assessed",
+          "reason": null,
+          "source": null,
+          "checkedOn": null,
+          "reviewer": null
+        }
+      ],
+      "subnationalAreas": [
+        {
+          "name": "Taipei City",
+          "status": "not-assessed",
+          "reason": "First-level municipality/county/city screening target only. No local ordinance, lower-level district, or jurisdictional applicability review performed.",
+          "source": "https://ws.moi.gov.tw/001/Upload/400/RelFile/0/31/2021%20MOI%20ebook-en.pdf",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "New Taipei City",
+          "status": "not-assessed",
+          "reason": "First-level municipality/county/city screening target only. No local ordinance, lower-level district, or jurisdictional applicability review performed.",
+          "source": "https://ws.moi.gov.tw/001/Upload/400/RelFile/0/31/2021%20MOI%20ebook-en.pdf",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Taoyuan City",
+          "status": "not-assessed",
+          "reason": "First-level municipality/county/city screening target only. No local ordinance, lower-level district, or jurisdictional applicability review performed.",
+          "source": "https://ws.moi.gov.tw/001/Upload/400/RelFile/0/31/2021%20MOI%20ebook-en.pdf",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Taichung City",
+          "status": "not-assessed",
+          "reason": "First-level municipality/county/city screening target only. No local ordinance, lower-level district, or jurisdictional applicability review performed.",
+          "source": "https://ws.moi.gov.tw/001/Upload/400/RelFile/0/31/2021%20MOI%20ebook-en.pdf",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Tainan City",
+          "status": "not-assessed",
+          "reason": "First-level municipality/county/city screening target only. No local ordinance, lower-level district, or jurisdictional applicability review performed.",
+          "source": "https://ws.moi.gov.tw/001/Upload/400/RelFile/0/31/2021%20MOI%20ebook-en.pdf",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Kaohsiung City",
+          "status": "not-assessed",
+          "reason": "First-level municipality/county/city screening target only. No local ordinance, lower-level district, or jurisdictional applicability review performed.",
+          "source": "https://ws.moi.gov.tw/001/Upload/400/RelFile/0/31/2021%20MOI%20ebook-en.pdf",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Yilan County",
+          "status": "not-assessed",
+          "reason": "First-level municipality/county/city screening target only. No local ordinance, lower-level district, or jurisdictional applicability review performed.",
+          "source": "https://ws.moi.gov.tw/001/Upload/400/RelFile/0/31/2021%20MOI%20ebook-en.pdf",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Hsinchu County",
+          "status": "not-assessed",
+          "reason": "First-level municipality/county/city screening target only. No local ordinance, lower-level district, or jurisdictional applicability review performed.",
+          "source": "https://ws.moi.gov.tw/001/Upload/400/RelFile/0/31/2021%20MOI%20ebook-en.pdf",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Miaoli County",
+          "status": "not-assessed",
+          "reason": "First-level municipality/county/city screening target only. No local ordinance, lower-level district, or jurisdictional applicability review performed.",
+          "source": "https://ws.moi.gov.tw/001/Upload/400/RelFile/0/31/2021%20MOI%20ebook-en.pdf",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Changhua County",
+          "status": "not-assessed",
+          "reason": "First-level municipality/county/city screening target only. No local ordinance, lower-level district, or jurisdictional applicability review performed.",
+          "source": "https://ws.moi.gov.tw/001/Upload/400/RelFile/0/31/2021%20MOI%20ebook-en.pdf",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Nantou County",
+          "status": "not-assessed",
+          "reason": "First-level municipality/county/city screening target only. No local ordinance, lower-level district, or jurisdictional applicability review performed.",
+          "source": "https://ws.moi.gov.tw/001/Upload/400/RelFile/0/31/2021%20MOI%20ebook-en.pdf",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Yunlin County",
+          "status": "not-assessed",
+          "reason": "First-level municipality/county/city screening target only. No local ordinance, lower-level district, or jurisdictional applicability review performed.",
+          "source": "https://ws.moi.gov.tw/001/Upload/400/RelFile/0/31/2021%20MOI%20ebook-en.pdf",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Chiayi County",
+          "status": "not-assessed",
+          "reason": "First-level municipality/county/city screening target only. No local ordinance, lower-level district, or jurisdictional applicability review performed.",
+          "source": "https://ws.moi.gov.tw/001/Upload/400/RelFile/0/31/2021%20MOI%20ebook-en.pdf",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Pingtung County",
+          "status": "not-assessed",
+          "reason": "First-level municipality/county/city screening target only. No local ordinance, lower-level district, or jurisdictional applicability review performed.",
+          "source": "https://ws.moi.gov.tw/001/Upload/400/RelFile/0/31/2021%20MOI%20ebook-en.pdf",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Hualien County",
+          "status": "not-assessed",
+          "reason": "First-level municipality/county/city screening target only. No local ordinance, lower-level district, or jurisdictional applicability review performed.",
+          "source": "https://ws.moi.gov.tw/001/Upload/400/RelFile/0/31/2021%20MOI%20ebook-en.pdf",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Taitung County",
+          "status": "not-assessed",
+          "reason": "First-level municipality/county/city screening target only. No local ordinance, lower-level district, or jurisdictional applicability review performed.",
+          "source": "https://ws.moi.gov.tw/001/Upload/400/RelFile/0/31/2021%20MOI%20ebook-en.pdf",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Penghu County",
+          "status": "not-assessed",
+          "reason": "First-level municipality/county/city screening target only. No local ordinance, lower-level district, or jurisdictional applicability review performed.",
+          "source": "https://ws.moi.gov.tw/001/Upload/400/RelFile/0/31/2021%20MOI%20ebook-en.pdf",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Kinmen County",
+          "status": "not-assessed",
+          "reason": "First-level municipality/county/city screening target only. No local ordinance, lower-level district, or jurisdictional applicability review performed.",
+          "source": "https://ws.moi.gov.tw/001/Upload/400/RelFile/0/31/2021%20MOI%20ebook-en.pdf",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Lienchiang County",
+          "status": "not-assessed",
+          "reason": "First-level municipality/county/city screening target only. No local ordinance, lower-level district, or jurisdictional applicability review performed.",
+          "source": "https://ws.moi.gov.tw/001/Upload/400/RelFile/0/31/2021%20MOI%20ebook-en.pdf",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Keelung City",
+          "status": "not-assessed",
+          "reason": "First-level municipality/county/city screening target only. No local ordinance, lower-level district, or jurisdictional applicability review performed.",
+          "source": "https://ws.moi.gov.tw/001/Upload/400/RelFile/0/31/2021%20MOI%20ebook-en.pdf",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Hsinchu City",
+          "status": "not-assessed",
+          "reason": "First-level municipality/county/city screening target only. No local ordinance, lower-level district, or jurisdictional applicability review performed.",
+          "source": "https://ws.moi.gov.tw/001/Upload/400/RelFile/0/31/2021%20MOI%20ebook-en.pdf",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Chiayi City",
+          "status": "not-assessed",
+          "reason": "First-level municipality/county/city screening target only. No local ordinance, lower-level district, or jurisdictional applicability review performed.",
+          "source": "https://ws.moi.gov.tw/001/Upload/400/RelFile/0/31/2021%20MOI%20ebook-en.pdf",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        }
+      ],
+      "sourceDiscoveryCheckedOn": "2026-10-13",
+      "sourceDiscoveryNote": "Separate market-screening record for coverage of the planned Traditional Chinese language market. The UN M49 FAQ says Taiwan is not shown separately in the standard M49 list and is considered within China (M49 156) for that statistical framework; it says 158 may be used strictly for statistical purposes. The 158 value here is only a statistical identifier, not a territorial-status or legal-applicability finding. ISO code identifiers are linked to the current ISO Online Browsing Platform; recheck them against the current code list before release. Taiwan’s privacy statute lists medical and health data among personal data; the 2025 amendments have an effective date still to be determined. The 22 first-level local-government names are a screening queue, not a finding that local laws apply. All legal and local review is unassessed; release remains blocked.",
+      "inventoryBasis": "ISO 3166-1 market-screening supplement outside the standard UN M49 country-or-area row set"
     },
     {
       "name": "Christmas Island",
@@ -37608,19 +38084,19 @@
     }
   ],
   "notes": [
-    "This is a comprehensive discovery queue, not a completed legal register or legal opinion.",
+    "This is a comprehensive discovery queue for the recorded M49 set and intended market supplements, not a completed legal register or legal opinion.",
     "Every listed country or area remains not assessed and blocked from release.",
-    "The UN M49 list is maintained for statistical use and does not determine territorial status or legal jurisdiction.",
-    "ISO alpha-2 identifiers have been cross-checked against the official UN M49 Overview ISO crosswalk; review country naming and inventory scope against the current ISO Online Browsing Platform, identify applicable subnational laws, and obtain qualified local review before launch."
+    "The UN M49 list is maintained for statistical use and does not determine territorial status or legal jurisdiction. Separately scoped market supplements are identified as such and do not alter the M49 row set.",
+    "The 248 UN M49 identifiers have been cross-checked against the official M49 Overview ISO crosswalk. Supplemental market records are screened separately; review all codes and names against the current ISO Online Browsing Platform, identify applicable subnational laws, and obtain qualified local review before launch."
   ],
-  "datasetCheckedOn": "2026-10-12",
+  "datasetCheckedOn": "2026-10-13",
   "isoCodeCrosswalk": {
     "source": "https://unstats.un.org/unsd/methodology/m49/overview/",
     "checkedOn": "2026-10-12",
-    "method": "Matched each project M49 code and ISO alpha-3 code to the official English M49 Overview table, then recorded its ISO alpha-2 code.",
+    "method": "Matched the 248 standard M49 records by M49 and ISO alpha-3 codes to the official English M49 Overview table and recorded their ISO alpha-2 codes; separately scoped market supplements are not counted as M49 matches.",
     "matchedRecords": 248,
     "status": "identifier-reconciliation-only",
-    "limit": "Country/area identifiers only. No legal applicability, country-name scope, subnational law, or release status was assessed."
+    "limit": "Identifier reconciliation for standard M49 country-or-area rows only. The M49 FAQ says Taiwan is not separately shown and that 158 may be used only for strict statistical purposes; no legal applicability, territorial status, country-name scope, subnational law, or release status was assessed."
   },
   "regionalSourceGroups": [
     {
