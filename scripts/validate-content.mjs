@@ -71,6 +71,10 @@ assert.ok(resources.countryRecords.every((country) => /^[A-Z]{2}$/.test(country.
 assert.equal(new Set(resources.countryRecords.map((country) => country.isoAlpha2)).size, resources.countryRecords.length, "ISO alpha-2 identifiers must be unique in the inventory");
 assert.ok(resources.countryRecords.every((country) => country.legalReview.status === "not-assessed" && country.release === "blocked"), "Unreviewed jurisdictions must remain blocked");
 assert.ok(resources.countryRecords.every((country) => country.reviewAreas.length >= 14 && country.reviewAreas.every((area) => area.status === "not-assessed")), "All required legal review areas must remain explicit and unassessed until screened");
+for (const country of resources.countryRecords.filter((record) => record.officialSources.length > 0)) {
+  assert.match(country.sourceDiscoveryCheckedOn ?? "", /^\d{4}-\d{2}-\d{2}$/, `${country.isoAlpha2} source discovery needs a dated check`);
+  assert.ok(country.officialSources.every((source) => source.title?.trim() && source.url?.startsWith("https://") && source.authority?.trim() && source.sourceType?.trim() && ["source-lead-only", "identifier-checked"].includes(source.status) && /^\d{4}-\d{2}-\d{2}$/.test(source.checkedOn ?? "")), `${country.isoAlpha2} source leads must have complete dated metadata and remain non-clearance records`);
+}
 const taiwanRecord = resources.countryRecords.find((country) => country.isoAlpha2 === "TW");
 assert.ok(taiwanRecord && taiwanRecord.alpha3 === "TWN" && taiwanRecord.m49 === "158", "Taiwan market supplement must use the recorded ISO identifiers and statistical-only M49 code");
 assert.match(taiwanRecord.inventoryBasis ?? "", /outside the standard UN M49/);
