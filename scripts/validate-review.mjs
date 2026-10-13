@@ -3,6 +3,7 @@ import { access, readFile } from "node:fs/promises";
 
 const ledger = JSON.parse(await readFile(new URL("../content/claimLedger.json", import.meta.url), "utf8"));
 const records = JSON.parse(await readFile(new URL("../content/reviewRecords.json", import.meta.url), "utf8"));
+const accessibilityMatrix = await readFile(new URL("../docs/ACCESSIBILITY_TEST_MATRIX.md", import.meta.url), "utf8");
 assert.equal(ledger.schemaVersion, 1);
 assert.equal(records.schemaVersion, 1);
 assert.equal(records.releaseStatus, "blocked-pending-human-review");
@@ -19,6 +20,9 @@ const evidenceFiles = [
   "../docs/DEEP_REVIEW.md",
 ];
 for (const path of evidenceFiles) await access(new URL(path, import.meta.url));
+for (const requiredTask of ["Find urgent help", "Use skip link", "Read one section at a time", "Select prompts, save, export and delete", "Preview selected fields and delete", "Turn on simplified reading"]) {
+  assert.match(accessibilityMatrix, new RegExp(requiredTask.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")), `accessibility matrix lost required task: ${requiredTask}`);
+}
 for (const item of ledger.coverage) {
   assert.match(item.id, /^(guides|glossary|appointment-prompts|urgent-help|homepage|personal-card|milestone-card):/);
   assert.ok(item.path && item.selector && item.units && item.risk && item.reviewerRole, `incomplete coverage record: ${item.id}`);
