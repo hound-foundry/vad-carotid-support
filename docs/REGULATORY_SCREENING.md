@@ -571,3 +571,9 @@ Belarus source discovery records the personal-data protection law and National P
 This is an official-source discovery pass, not legal advice, a completeness claim or an applicability determination. Benin (`BJ`) remains blocked; all 14 review areas and the national review remain `not-assessed`.
 
 Benin source discovery records the government law repository, the Personal Data Protection Authority, the Ministry of Health, a health-products and medical-device registration source, and current health-emergency guidance. The material is primarily French-language and must receive qualified legal, clinical, translation and accessibility review before Benin-specific access or emergency details are enabled.
+
+## Bhutan source-discovery snapshot — 13 October 2026
+
+This is an official-source discovery pass, not legal advice, a completeness claim or an applicability determination. Bhutan (`BT`) remains blocked; all 14 review areas and the national review remain `not-assessed`.
+
+Bhutan source discovery records the Information, Communications and Media Act privacy provisions, Ministry of Health medical-device materials, Bhutan Food and Drug Authority device-registration guidance, Royal Bhutan Police emergency guidance, and the Attorney General’s acts index. Qualified review must resolve health-data and device-storage obligations, medical-software classification, Dzongkha and English accessibility, emergency-information publication, consumer and distribution rules, and any local requirements before Bhutan-specific access or emergency details are enabled.

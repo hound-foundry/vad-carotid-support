@@ -4581,8 +4581,50 @@
       "release": "blocked",
       "isoAlpha2": "BT",
       "reviewOwner": null,
-      "lastChecked": null,
-      "officialSources": [],
+  "lastChecked": "2026-10-13",
+  "officialSources": [
+    {
+      "title": "Information, Communications and Media Act of Bhutan 2018",
+      "url": "https://www.bicma.gov.bt/data/publications/act/BICM_Act_2018_English.pdf",
+      "authority": "Bhutan InfoComm and Media Authority",
+      "sourceType": "privacy-law",
+      "checkedOn": "2026-10-13",
+      "status": "source-lead-only"
+    },
+    {
+      "title": "Ministry of Health publications and medical-device list",
+      "url": "https://moh.gov.bt/pages/publications/",
+      "authority": "Ministry of Health, Royal Government of Bhutan",
+      "sourceType": "health-regulator",
+      "checkedOn": "2026-10-13",
+      "status": "source-lead-only"
+    },
+    {
+      "title": "Guideline for registration of medical devices",
+      "url": "https://bfda.gov.bt/wp-content/uploads/2025/09/Guideline-for-Registration-of-Medical-Devices-2022.pdf",
+      "authority": "Bhutan Food and Drug Authority",
+      "sourceType": "medical-device-regulation",
+      "checkedOn": "2026-10-13",
+      "status": "source-lead-only"
+    },
+    {
+      "title": "Emergency contact numbers",
+      "url": "https://rbp.gov.bt/emergency-contacts-helpline-services/",
+      "authority": "Royal Bhutan Police",
+      "sourceType": "emergency-guidance",
+      "checkedOn": "2026-10-13",
+      "status": "source-lead-only"
+    },
+    {
+      "title": "Office of the Attorney General acts index",
+      "url": "https://oag.gov.bt/language/en/resources/acts-2/",
+      "authority": "Office of the Attorney General, Bhutan",
+      "sourceType": "consumer-and-distribution-law",
+      "checkedOn": "2026-10-13",
+      "status": "source-lead-only"
+    }
+  ],
+  "sourceDiscoveryCheckedOn": "2026-10-13",
       "reviewAreas": [
         {
           "area": "privacy-and-health-data",
