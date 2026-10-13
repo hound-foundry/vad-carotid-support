@@ -5993,8 +5993,50 @@
       "release": "blocked",
       "isoAlpha2": "BG",
       "reviewOwner": null,
-      "lastChecked": null,
-      "officialSources": [],
+      "lastChecked": "2026-10-13",
+      "officialSources": [
+        {
+          "title": "Commission for Personal Data Protection",
+          "url": "https://cpdp.bg/en/commission-for-personal-data-protection-cpdp/",
+          "authority": "Commission for Personal Data Protection, Bulgaria",
+          "sourceType": "privacy-regulator",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Personal Data Protection Act",
+          "url": "https://cpdp.bg/en/legislation/personal-data-protection-act/",
+          "authority": "Commission for Personal Data Protection, Bulgaria",
+          "sourceType": "privacy-law",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Medical devices regulation",
+          "url": "https://www.bda.bg/en/information-for-companies/114-medical-devices-category",
+          "authority": "Bulgarian Drug Agency",
+          "sourceType": "medical-device-regulator",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Medical-device registration",
+          "url": "https://www.bda.bg/en/administrative-services/945-registration-of-medicinal-products",
+          "authority": "Bulgarian Drug Agency",
+          "sourceType": "medical-device-registration",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Emergency number 112",
+          "url": "https://www.mvr.bg/upload/11356/7c93d0ed-broshura_en-pdf.pdf",
+          "authority": "Ministry of Interior, Bulgaria",
+          "sourceType": "emergency-guidance",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        }
+      ],
+      "sourceDiscoveryCheckedOn": "2026-10-13",
       "reviewAreas": [
         {
           "area": "privacy-and-health-data",

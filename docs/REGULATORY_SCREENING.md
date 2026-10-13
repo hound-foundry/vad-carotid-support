@@ -88,6 +88,8 @@ Belize source discovery (13 October 2026) now records the Data Protection Act, g
 
 Ghana source discovery (13 October 2026) now records the Data Protection Commission’s Act and compliance guidance, Food and Drugs Authority medical-device and software guidance, and official National Ambulance Service emergency-number guidance. These are source leads only. Ghana remains blocked pending qualified review of English-language national privacy, medical-software, accessibility, emergency and distribution requirements.
 
+Bulgaria source discovery (13 October 2026) now records the Commission for Personal Data Protection, its Personal Data Protection Act, Bulgarian Drug Agency medical-device materials, and official 112 guidance. These are source leads only. Bulgaria remains blocked pending qualified review of Bulgarian- and English-language, EU and national privacy, medical-software, accessibility, emergency and distribution requirements.
+
 ### Platform distribution policies (not legislation)
 
 | Platform | Official policy source | Release work still needed |
