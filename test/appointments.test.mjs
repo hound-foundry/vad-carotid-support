@@ -1,12 +1,21 @@
 import test from "node:test";
 import assert from "node:assert/strict";
-import { appointmentPrompts, emptyAppointmentSheet, formatAppointmentExport, MAX_NOTE_LENGTH, parseAppointmentSheet, serializeAppointmentSheet } from "../src/features/appointments/model.mjs";
+import { appointmentPrompts, emptyAppointmentSheet, formatAppointmentExport, guidePromptSuggestions, MAX_NOTE_LENGTH, parseAppointmentSheet, serializeAppointmentSheet } from "../src/features/appointments/model.mjs";
 import { createAppointmentStore } from "../src/features/appointments/storage.mjs";
 import { STORAGE_KEY } from "../src/features/appointments/model.mjs";
 
 test("new sheet is empty and contains no personal identifiers", () => {
   const sheet = emptyAppointmentSheet();
   assert.deepEqual(sheet, { selectedIds: [], note: "" });
+});
+
+test("guide question suggestions use only known prompt ids", () => {
+  const knownIds = new Set(appointmentPrompts.map((item) => item.id));
+  for (const [guide, ids] of Object.entries(guidePromptSuggestions)) {
+    assert.ok(guide.length > 0);
+    assert.ok(ids.length > 0);
+    assert.ok(ids.every((id) => knownIds.has(id)), `${guide} contains an unknown prompt`);
+  }
 });
 
 test("saved data round-trips only known prompts and bounds notes", () => {
