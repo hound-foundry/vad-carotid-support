@@ -6,18 +6,20 @@ import { AppPage, BackHome, Card, DraftNotice, PageHeading } from "../../src/com
 import { getGuide, guides } from "../../src/content/guides";
 import { GuideList } from "../../src/components/GuideList";
 import { SaveGuideButton } from "../../src/features/saved-guides/SaveGuideButton";
+import { useAccessibility } from "../../src/features/accessibility/AccessibilityProvider";
 
 export function generateStaticParams() { return guides.map((guide) => ({ slug: guide.slug })); }
 
 export default function GuideScreen() {
   const { slug } = useLocalSearchParams<{ slug: string }>();
+  const { settings } = useAccessibility();
   const [oneAtATime, setOneAtATime] = useState(false);
   const [sectionIndex, setSectionIndex] = useState(0);
   const [largeText, setLargeText] = useState(false);
   const [shareMessage, setShareMessage] = useState("");
   const [isSpeaking, setIsSpeaking] = useState(false);
   const speechRef = useRef<SpeechSynthesisUtterance | null>(null);
-  useEffect(() => { if (typeof window !== "undefined") window.speechSynthesis?.cancel(); setOneAtATime(false); setSectionIndex(0); setLargeText(false); setShareMessage(""); setIsSpeaking(false); speechRef.current = null; }, [slug]);
+  useEffect(() => { if (typeof window !== "undefined") window.speechSynthesis?.cancel(); setOneAtATime(settings.simplifiedReading); setSectionIndex(0); setLargeText(settings.simplifiedReading); setShareMessage(""); setIsSpeaking(false); speechRef.current = null; }, [slug, settings.simplifiedReading]);
   useEffect(() => () => { if (typeof window !== "undefined") window.speechSynthesis?.cancel(); }, []);
   const guide = getGuide(slug);
   if (!guide) return <AppPage><BackHome /><PageHeading eyebrow="Guide not found" title="This guide is unavailable." summary="Return to the guide library to choose another page." /><Link href="/learn">Browse guides</Link></AppPage>;
@@ -25,7 +27,8 @@ export default function GuideScreen() {
   const wordCount = guide.sections.reduce((total, section) => total + [...(section.paragraphs ?? []), ...(section.bullets ?? []), section.heading].join(" ").split(/\s+/).filter(Boolean).length, 0);
   const readingMinutes = Math.max(1, Math.ceil(wordCount / 180));
   const relatedSlugs = (guide.slug === "understanding-dissection" ? ["tests-and-terms", "follow-up-questions"] : guide.slug === "tests-and-terms" ? ["understanding-dissection", "follow-up-questions"] : guide.slug === "recovery-and-quality-of-life" ? ["follow-up-questions", "supporting-someone"] : guide.slug === "supporting-someone" ? ["recovery-and-quality-of-life", "follow-up-questions"] : ["recovery-and-quality-of-life", "follow-up-questions"]) as string[];
-  const visibleSections = oneAtATime ? [guide.sections[sectionIndex]].filter(Boolean) : guide.sections;
+  const simplified = settings.simplifiedReading;
+  const visibleSections = oneAtATime || simplified ? [guide.sections[sectionIndex]].filter(Boolean) : guide.sections;
   return <AppPage>
     <BackHome />
     <PageHeading eyebrow="English guide · general information" title={guide.title} summary={`${guide.summary} About ${readingMinutes} min read; you can take one section at a time.`} />
@@ -60,7 +63,7 @@ export default function GuideScreen() {
     </View>
     {shareMessage ? <Text accessibilityLiveRegion="polite" style={styles.shareMessage}>{shareMessage}</Text> : null}
     <Card title="Make reading work for you">
-      <Text style={styles.nextStep}>If the page feels tiring to read, increase the text size. This setting applies only while this guide is open and is not saved.</Text>
+      <Text style={styles.nextStep}>{simplified ? "Simplified reading is on: this guide shows one section at a time with larger text." : "If the page feels tiring to read, increase the text size. This setting applies only while this guide is open and is not saved."}</Text>
       <View accessibilityRole="radiogroup" aria-label="Guide text size" style={styles.textSizeChoices}>
         <Pressable accessibilityRole="radio" accessibilityState={{ selected: !largeText }} onPress={() => setLargeText(false)} style={({ pressed }) => [styles.textSizeButton, !largeText && styles.textSizeSelected, pressed && styles.pressed]}><Text style={[styles.textSizeLabel, !largeText && styles.textSizeSelectedLabel]}>Standard text</Text></Pressable>
         <Pressable accessibilityRole="radio" accessibilityState={{ selected: largeText }} onPress={() => setLargeText(true)} style={({ pressed }) => [styles.textSizeButton, largeText && styles.textSizeSelected, pressed && styles.pressed]}><Text style={[styles.textSizeLabel, largeText && styles.textSizeSelectedLabel]}>Larger text</Text></Pressable>
@@ -75,7 +78,7 @@ export default function GuideScreen() {
     {guide.sections.length > 1 ? <Card title="Choose your reading pace">
       <Pressable accessibilityRole="checkbox" accessibilityLabel="Read one section at a time" accessibilityState={{ checked: oneAtATime }} onPress={() => { setSectionIndex(0); setOneAtATime((current) => !current); }} style={styles.paceOption}>
         <View style={[styles.checkbox, oneAtATime && styles.checked]}>{oneAtATime ? <Text style={styles.check}>✓</Text> : null}</View>
-        <Text style={styles.paceLabel}>Read one section at a time</Text>
+        <Text style={styles.paceLabel}>Read one section at a time{simplified ? " (set by simplified reading)" : ""}</Text>
       </Pressable>
       <Text style={styles.paceHint}>All sections are shown by default. This option changes only how the guide is displayed; it does not save your place.</Text>
       {oneAtATime ? <View style={styles.paging}>
