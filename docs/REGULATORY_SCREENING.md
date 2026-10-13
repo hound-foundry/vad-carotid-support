@@ -62,6 +62,8 @@ Czechia source discovery (13 October 2026) now records the Office for Personal D
 
 Norway source discovery (13 October 2026) now records the Norwegian Data Protection Authority, personal-health-data legal references, Norwegian Medical Products Agency software guidance, and official Helsenorge emergency-care information. These are source leads only. Norway remains blocked pending qualified review of Norwegian and EEA privacy, medical-software, accessibility, emergency, language and distribution requirements.
 
+Denmark source discovery (13 October 2026) now records the Danish Data Protection Agency, cookie and GDPR guidance, Danish Medicines Agency software and market-access guidance, and official emergency information. These are source leads only. Denmark remains blocked pending qualified review of Danish-language, EU and national privacy, medical-software, accessibility, emergency and distribution requirements.
+
 ### Platform distribution policies (not legislation)
 
 | Platform | Official policy source | Release work still needed |

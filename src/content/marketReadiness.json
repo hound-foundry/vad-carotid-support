@@ -11478,8 +11478,50 @@
       "release": "blocked",
       "isoAlpha2": "DK",
       "reviewOwner": null,
-      "lastChecked": null,
-      "officialSources": [],
+      "lastChecked": "2026-10-13",
+      "officialSources": [
+        {
+          "title": "Danish Data Protection Agency English portal",
+          "url": "https://www.datatilsynet.dk/english/",
+          "authority": "Danish Data Protection Agency",
+          "sourceType": "regulator-portal",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Danish cookie and GDPR guidance",
+          "url": "https://www.datatilsynet.dk/regler-og-vejledning/gdpr-univers-for-smaa-virksomheder/cookies-og-gdpr",
+          "authority": "Danish Data Protection Agency",
+          "sourceType": "regulator-guidance",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Software and apps as medical devices",
+          "url": "https://laegemiddelstyrelsen.dk/en/devices/legislation-and-guidance/guidance/guidance-for-manufacturers-on-health-apps-and-software-as-medical-devices/~/media/D2C82054AC1748A58ED5D7487254AA71.ashx",
+          "authority": "Danish Medicines Agency",
+          "sourceType": "competent-authority-guidance",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Medical-device registration and marketing",
+          "url": "https://laegemiddelstyrelsen.dk/en/devices/registration-and-marketing/",
+          "authority": "Danish Medicines Agency",
+          "sourceType": "competent-authority-guidance",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Official emergencies guidance",
+          "url": "https://lifeindenmark.borger.dk/healthcare/emergencies",
+          "authority": "Danish public administration portal",
+          "sourceType": "official-emergency-guidance",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        }
+      ],
+      "sourceDiscoveryCheckedOn": "2026-10-13",
       "reviewAreas": [
         {
           "area": "privacy-and-health-data",
