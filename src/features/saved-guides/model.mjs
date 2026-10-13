@@ -1,4 +1,5 @@
 // @ts-check
+import { APP_NAME } from "../../brand.mjs";
 
 export const STORAGE_KEY = "vad-carotid-support.saved-guides.v1";
 const SLUG_PATTERN = /^[a-z0-9]+(?:-[a-z0-9]+)*$/;
@@ -44,7 +45,7 @@ export function serializeSavedGuides(slugs) {
 export function formatSavedGuidesExport(guides, baseUrl = "") {
   const base = baseUrl.replace(/\/$/, "");
   return [
-    "Saved guides — VAD & Carotid Support",
+    `Saved guides — ${APP_NAME}`,
     "These are links to general information drafts, not a personal care record.",
     "",
     ...(guides.length ? guides.map((guide) => `${guide.title}\n${base}/guide/${guide.slug}`) : ["No guides were saved."]),

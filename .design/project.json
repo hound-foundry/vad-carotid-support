@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
   "id": "vad-carotid-support",
-  "name": "VAD & Carotid Support",
+  "name": "Dissection Companion",
   "framework": "expo-react-native",
   "designDocument": ".stitch/DESIGN.md",
-  "themeSource": "src/components/theme.ts",
+  "themeSource": "src/components/theme.mjs",
   "styleSources": ["src/components/AppPage.tsx", "src/components/SiteHeader.tsx", "src/features/cards/CardUi.tsx"],
-  "protectedPaths": ["app/_layout.tsx", "src/components/Ui.tsx", "src/components/webStyles.ts", "src/features/local-data/keys.mjs", "src/features/cards/model.mjs", "src/features/cards/store.ts", "src/features/cards/export.ts", "src/features/appointments/model.mjs", "src/features/support-preferences/model.mjs"],
+  "protectedPaths": ["app.json", "src/brand.mjs", "src/components/theme.ts", "app/_layout.tsx", "app/guide/[slug].tsx", "src/components/Ui.tsx", "src/components/webStyles.ts", "src/features/local-data/keys.mjs", "src/features/cards/model.mjs", "src/features/cards/store.ts", "src/features/cards/export.ts", "src/features/cards/document.mjs", "src/features/cards/pdf.mjs", "src/features/appointments/model.mjs", "src/features/support-preferences/model.mjs", "src/features/saved-guides/model.mjs"],
   "privacy": {"localOnly": true, "explicitSave": true, "explicitExport": true, "separateCards": true, "savedKeyCount": 6},
   "routes": [
     {"path": "/", "label": "Home", "source": "app/index.tsx"},

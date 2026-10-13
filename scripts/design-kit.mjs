@@ -1,11 +1,12 @@
 import { readFile, readdir, mkdir, writeFile, stat } from "node:fs/promises";
 import { createHash } from "node:crypto";
 import { resolve, relative, sep } from "node:path";
-import { fileURLToPath } from "node:url";
+import { fileURLToPath, pathToFileURL } from "node:url";
 import { execFileSync } from "node:child_process";
 import ts from "typescript";
 import { LOCAL_DATA_KEYS } from "../src/features/local-data/keys.mjs";
 import { workbenchHtml, paletteSvg } from "./design-workbench.mjs";
+import { APP_NAME } from "../src/brand.mjs";
 
 export const projectRoot = fileURLToPath(new URL("../", import.meta.url));
 export const kitDirectory = resolve(projectRoot, "output/design-kit");
@@ -16,7 +17,7 @@ export function projectPath(root, name) {
   return target;
 }
 export function validateProfile(profile) {
-  if (profile?.schemaVersion !== 1 || profile.id !== "vad-carotid-support" || profile.framework !== "expo-react-native") throw new Error("Profile must describe this Expo app");
+  if (profile?.schemaVersion !== 1 || profile.id !== "vad-carotid-support" || profile.name !== APP_NAME || profile.framework !== "expo-react-native") throw new Error("Profile must describe this Expo app");
   for (const flag of ["localOnly", "explicitSave", "explicitExport", "separateCards"]) if (profile.privacy?.[flag] !== true) throw new Error("Missing privacy boundary: " + flag);
   if (profile.privacy.savedKeyCount !== LOCAL_DATA_KEYS.length || new Set(LOCAL_DATA_KEYS).size !== 6) throw new Error("Saved-data contract changed; review the profile");
   if (!Array.isArray(profile.routes) || profile.routes.length === 0 || !Array.isArray(profile.viewports) || profile.viewports.length === 0) throw new Error("Routes and viewports required");
@@ -27,9 +28,9 @@ export function validateProfile(profile) {
   }
   for (const viewport of profile.viewports) if (!/^[a-z-]+$/.test(viewport.id) || !Number.isInteger(viewport.width) || !Number.isInteger(viewport.height) || viewport.width < 320 || viewport.width > 1920 || viewport.height < 320 || viewport.height > 1200) throw new Error("Invalid review viewport");
 }
-export function readDocumentColors(document) {
+export function readDocumentColors(document, expectedName = APP_NAME) {
   const frontmatter = document.match(/^---\r?\n([\s\S]*?)\r?\n---(?:\r?\n|$)/)?.[1];
-  if (!frontmatter || !/^name:\s*VAD & Carotid Support\s*$/m.test(frontmatter)) throw new Error("Design frontmatter name is missing");
+  if (!frontmatter || frontmatter.match(/^name:[ \t]*(.+)$/m)?.[1].trim() !== expectedName) throw new Error("Design frontmatter name does not match the app brand");
   const colors = {}; let inColors = false;
   for (const line of frontmatter.split(/\r?\n/)) {
     if (line === "colors:") { inColors = true; continue; }
@@ -70,18 +71,20 @@ export async function inspectDesign(root = projectRoot) {
     const bytes = await readFile(path); sourceHashes[name] = createHash("sha256").update(bytes).digest("hex"); sources[name] = bytes.toString("utf8");
   }
   const design = await readFile(projectPath(root, profile.designDocument), "utf8");
-  // Execute only this project's existing pure theme, after removing TS types.
-  const compiled = ts.transpileModule(sources[profile.themeSource], {compilerOptions:{module:ts.ModuleKind.ESNext,target:ts.ScriptTarget.ES2022}}).outputText;
-  const { palette, themeFor } = await import("data:text/javascript;base64," + Buffer.from(compiled).toString("base64"));
-  assertPaletteMatches(readDocumentColors(design), palette);
+  // Only the checked local pure theme module is loaded; it is shared with card exports.
+  const { palette, themeFor, designContrastReport } = await import(pathToFileURL(projectPath(root, profile.themeSource)).href);
+  assertPaletteMatches(readDocumentColors(design, profile.name), palette);
+  const contrastChecks = designContrastReport();
+  for (const check of contrastChecks) if (check.ratio < check.minimum) throw new Error(`Contrast failed: ${check.theme}/${check.contrast} ${check.pair}`);
   const themes = {};
   for (const theme of ["light", "dark"]) for (const contrast of ["standard", "high"]) themes[theme + "-" + contrast] = themeFor({theme,contrast});
   const metrics = Object.fromEntries(profile.styleSources.map(name => [name, numericStyles(sources[name], name)]));
   const ui = sources["src/components/Ui.tsx"];
-  const extracted = {pressableMinHeight:ui.match(/minHeight: Math\.max\((\d+),/)?.[1],inputMinHeight:ui.match(/minHeight: (\d+), borderColor/)?.[1],bodyFloor:ui.match(/Math\.max\((\d+), base\)/)?.[1],smallLabelFloor:ui.match(/base < (\d+) \? \1/)?.[1]};
+  const textFloor = ui.match(/Math\.max\((\d+), base\)/)?.[1];
+  const extracted = {pressableMinHeight:ui.match(/minHeight: Math\.max\((\d+),/)?.[1],inputMinHeight:ui.match(/minHeight: (\d+), borderColor/)?.[1],bodyFloor:textFloor,smallLabelFloor:textFloor};
   if (Object.values(extracted).some(value => !value)) throw new Error("UI wrapper changed; update design extraction before exporting");
   const effectiveRules = Object.fromEntries(Object.entries(extracted).map(([key,value])=>[key,Number(value)]));
-  return {profile, design, tokens:{schemaVersion:1,format:"vad-design-tokens/1",palette,themes,authoredMetrics:metrics,effectiveRules},sourceHashes};
+  return {profile, design, tokens:{schemaVersion:1,format:"vad-design-tokens/1",palette,themes,contrastChecks,authoredMetrics:metrics,effectiveRules},sourceHashes};
 }
 export async function buildDesignKit(root = projectRoot, destination = kitDirectory) {
   const kit = await inspectDesign(root);

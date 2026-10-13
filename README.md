@@ -1,4 +1,6 @@
-# VAD & Carotid Support
+# Dissection Companion
+
+Vertebral & carotid artery support.
 
 A free, independent, open-source project to make life after vertebral or carotid artery dissection easier to understand—for patients, families, carers and anyone trying to help.
 

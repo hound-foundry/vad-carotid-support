@@ -1,4 +1,6 @@
-# Free design workflow for VAD & Carotid Support
+# Free design workflow for Dissection Companion
+
+The [blue redesign](DESIGN_RESULTS.md) is now implemented in the real app. The platform-trial files and teal screenshots below are historical evidence from before that change; no new cloud design was generated for this pass.
 
 Checked 13 October 2026 against the supplied Blushie research, current official pages and the [22-repository metadata snapshot](design-tools/repository-snapshot.json). This app is now registered in [.design/project.json](../.design/project.json). Its source-derived guide is [.stitch/DESIGN.md](../.stitch/DESIGN.md); the import brief is separate. These describe the existing Expo app. Blushie's Vite architecture, fonts, Today/Stash screens and entitlement model do not apply here.
 

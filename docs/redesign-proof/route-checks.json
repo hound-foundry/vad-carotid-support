@@ -1,0 +1,890 @@
+[
+  {
+    "route": "/",
+    "width": 390,
+    "height": 844,
+    "textScale": 1,
+    "contentWidth": 375,
+    "scrollWidth": 375,
+    "urgentInViewport": true
+  },
+  {
+    "route": "/learn",
+    "width": 390,
+    "height": 844,
+    "textScale": 1,
+    "contentWidth": 375,
+    "scrollWidth": 375,
+    "urgentInViewport": true
+  },
+  {
+    "route": "/appointments",
+    "width": 390,
+    "height": 844,
+    "textScale": 1,
+    "contentWidth": 375,
+    "scrollWidth": 375,
+    "urgentInViewport": true
+  },
+  {
+    "route": "/cards",
+    "width": 390,
+    "height": 844,
+    "textScale": 1,
+    "contentWidth": 375,
+    "scrollWidth": 375,
+    "urgentInViewport": true
+  },
+  {
+    "route": "/personal-card",
+    "width": 390,
+    "height": 844,
+    "textScale": 1,
+    "contentWidth": 375,
+    "scrollWidth": 375,
+    "urgentInViewport": true
+  },
+  {
+    "route": "/milestone-card",
+    "width": 390,
+    "height": 844,
+    "textScale": 1,
+    "contentWidth": 375,
+    "scrollWidth": 375,
+    "urgentInViewport": true
+  },
+  {
+    "route": "/supporting-someone",
+    "width": 390,
+    "height": 844,
+    "textScale": 1,
+    "contentWidth": 375,
+    "scrollWidth": 375,
+    "urgentInViewport": true
+  },
+  {
+    "route": "/support-preferences",
+    "width": 390,
+    "height": 844,
+    "textScale": 1,
+    "contentWidth": 375,
+    "scrollWidth": 375,
+    "urgentInViewport": true
+  },
+  {
+    "route": "/glossary",
+    "width": 390,
+    "height": 844,
+    "textScale": 1,
+    "contentWidth": 375,
+    "scrollWidth": 375,
+    "urgentInViewport": true
+  },
+  {
+    "route": "/resources",
+    "width": 390,
+    "height": 844,
+    "textScale": 1,
+    "contentWidth": 375,
+    "scrollWidth": 375,
+    "urgentInViewport": true
+  },
+  {
+    "route": "/saved",
+    "width": 390,
+    "height": 844,
+    "textScale": 1,
+    "contentWidth": 375,
+    "scrollWidth": 375,
+    "urgentInViewport": true
+  },
+  {
+    "route": "/saved-guides",
+    "width": 390,
+    "height": 844,
+    "textScale": 1,
+    "contentWidth": 375,
+    "scrollWidth": 375,
+    "urgentInViewport": true
+  },
+  {
+    "route": "/about",
+    "width": 390,
+    "height": 844,
+    "textScale": 1,
+    "contentWidth": 375,
+    "scrollWidth": 375,
+    "urgentInViewport": true
+  },
+  {
+    "route": "/accessibility",
+    "width": 390,
+    "height": 844,
+    "textScale": 1,
+    "contentWidth": 375,
+    "scrollWidth": 375,
+    "urgentInViewport": true
+  },
+  {
+    "route": "/urgent-help",
+    "width": 390,
+    "height": 844,
+    "textScale": 1,
+    "contentWidth": 375,
+    "scrollWidth": 375,
+    "urgentInViewport": true
+  },
+  {
+    "route": "/with-stroke",
+    "width": 390,
+    "height": 844,
+    "textScale": 1,
+    "contentWidth": 375,
+    "scrollWidth": 375,
+    "urgentInViewport": true
+  },
+  {
+    "route": "/without-stroke",
+    "width": 390,
+    "height": 844,
+    "textScale": 1,
+    "contentWidth": 375,
+    "scrollWidth": 375,
+    "urgentInViewport": true
+  },
+  {
+    "route": "/guide/understanding-dissection",
+    "width": 390,
+    "height": 844,
+    "textScale": 1,
+    "contentWidth": 375,
+    "scrollWidth": 375,
+    "urgentInViewport": true
+  },
+  {
+    "route": "/guide/tests-and-terms",
+    "width": 390,
+    "height": 844,
+    "textScale": 1,
+    "contentWidth": 375,
+    "scrollWidth": 375,
+    "urgentInViewport": true
+  },
+  {
+    "route": "/guide/with-stroke",
+    "width": 390,
+    "height": 844,
+    "textScale": 1,
+    "contentWidth": 375,
+    "scrollWidth": 375,
+    "urgentInViewport": true
+  },
+  {
+    "route": "/guide/without-stroke",
+    "width": 390,
+    "height": 844,
+    "textScale": 1,
+    "contentWidth": 375,
+    "scrollWidth": 375,
+    "urgentInViewport": true
+  },
+  {
+    "route": "/guide/follow-up-questions",
+    "width": 390,
+    "height": 844,
+    "textScale": 1,
+    "contentWidth": 375,
+    "scrollWidth": 375,
+    "urgentInViewport": true
+  },
+  {
+    "route": "/guide/supporting-someone",
+    "width": 390,
+    "height": 844,
+    "textScale": 1,
+    "contentWidth": 375,
+    "scrollWidth": 375,
+    "urgentInViewport": true
+  },
+  {
+    "route": "/guide/recovery-and-quality-of-life",
+    "width": 390,
+    "height": 844,
+    "textScale": 1,
+    "contentWidth": 375,
+    "scrollWidth": 375,
+    "urgentInViewport": true
+  },
+  {
+    "route": "/",
+    "width": 320,
+    "height": 640,
+    "textScale": 1,
+    "contentWidth": 305,
+    "scrollWidth": 305,
+    "urgentInViewport": true
+  },
+  {
+    "route": "/learn",
+    "width": 320,
+    "height": 640,
+    "textScale": 1,
+    "contentWidth": 305,
+    "scrollWidth": 305,
+    "urgentInViewport": true
+  },
+  {
+    "route": "/appointments",
+    "width": 320,
+    "height": 640,
+    "textScale": 1,
+    "contentWidth": 305,
+    "scrollWidth": 305,
+    "urgentInViewport": true
+  },
+  {
+    "route": "/cards",
+    "width": 320,
+    "height": 640,
+    "textScale": 1,
+    "contentWidth": 305,
+    "scrollWidth": 305,
+    "urgentInViewport": true
+  },
+  {
+    "route": "/personal-card",
+    "width": 320,
+    "height": 640,
+    "textScale": 1,
+    "contentWidth": 305,
+    "scrollWidth": 305,
+    "urgentInViewport": true
+  },
+  {
+    "route": "/milestone-card",
+    "width": 320,
+    "height": 640,
+    "textScale": 1,
+    "contentWidth": 305,
+    "scrollWidth": 305,
+    "urgentInViewport": true
+  },
+  {
+    "route": "/supporting-someone",
+    "width": 320,
+    "height": 640,
+    "textScale": 1,
+    "contentWidth": 305,
+    "scrollWidth": 305,
+    "urgentInViewport": true
+  },
+  {
+    "route": "/support-preferences",
+    "width": 320,
+    "height": 640,
+    "textScale": 1,
+    "contentWidth": 305,
+    "scrollWidth": 305,
+    "urgentInViewport": true
+  },
+  {
+    "route": "/glossary",
+    "width": 320,
+    "height": 640,
+    "textScale": 1,
+    "contentWidth": 305,
+    "scrollWidth": 305,
+    "urgentInViewport": true
+  },
+  {
+    "route": "/resources",
+    "width": 320,
+    "height": 640,
+    "textScale": 1,
+    "contentWidth": 305,
+    "scrollWidth": 305,
+    "urgentInViewport": true
+  },
+  {
+    "route": "/saved",
+    "width": 320,
+    "height": 640,
+    "textScale": 1,
+    "contentWidth": 305,
+    "scrollWidth": 305,
+    "urgentInViewport": true
+  },
+  {
+    "route": "/saved-guides",
+    "width": 320,
+    "height": 640,
+    "textScale": 1,
+    "contentWidth": 305,
+    "scrollWidth": 305,
+    "urgentInViewport": true
+  },
+  {
+    "route": "/about",
+    "width": 320,
+    "height": 640,
+    "textScale": 1,
+    "contentWidth": 305,
+    "scrollWidth": 305,
+    "urgentInViewport": true
+  },
+  {
+    "route": "/accessibility",
+    "width": 320,
+    "height": 640,
+    "textScale": 1,
+    "contentWidth": 305,
+    "scrollWidth": 305,
+    "urgentInViewport": true
+  },
+  {
+    "route": "/urgent-help",
+    "width": 320,
+    "height": 640,
+    "textScale": 1,
+    "contentWidth": 305,
+    "scrollWidth": 305,
+    "urgentInViewport": true
+  },
+  {
+    "route": "/with-stroke",
+    "width": 320,
+    "height": 640,
+    "textScale": 1,
+    "contentWidth": 305,
+    "scrollWidth": 305,
+    "urgentInViewport": true
+  },
+  {
+    "route": "/without-stroke",
+    "width": 320,
+    "height": 640,
+    "textScale": 1,
+    "contentWidth": 305,
+    "scrollWidth": 305,
+    "urgentInViewport": true
+  },
+  {
+    "route": "/guide/understanding-dissection",
+    "width": 320,
+    "height": 640,
+    "textScale": 1,
+    "contentWidth": 305,
+    "scrollWidth": 305,
+    "urgentInViewport": true
+  },
+  {
+    "route": "/guide/tests-and-terms",
+    "width": 320,
+    "height": 640,
+    "textScale": 1,
+    "contentWidth": 305,
+    "scrollWidth": 305,
+    "urgentInViewport": true
+  },
+  {
+    "route": "/guide/with-stroke",
+    "width": 320,
+    "height": 640,
+    "textScale": 1,
+    "contentWidth": 305,
+    "scrollWidth": 305,
+    "urgentInViewport": true
+  },
+  {
+    "route": "/guide/without-stroke",
+    "width": 320,
+    "height": 640,
+    "textScale": 1,
+    "contentWidth": 305,
+    "scrollWidth": 305,
+    "urgentInViewport": true
+  },
+  {
+    "route": "/guide/follow-up-questions",
+    "width": 320,
+    "height": 640,
+    "textScale": 1,
+    "contentWidth": 305,
+    "scrollWidth": 305,
+    "urgentInViewport": true
+  },
+  {
+    "route": "/guide/supporting-someone",
+    "width": 320,
+    "height": 640,
+    "textScale": 1,
+    "contentWidth": 305,
+    "scrollWidth": 305,
+    "urgentInViewport": true
+  },
+  {
+    "route": "/guide/recovery-and-quality-of-life",
+    "width": 320,
+    "height": 640,
+    "textScale": 1,
+    "contentWidth": 305,
+    "scrollWidth": 305,
+    "urgentInViewport": true
+  },
+  {
+    "route": "/",
+    "width": 844,
+    "height": 320,
+    "textScale": 1,
+    "contentWidth": 829,
+    "scrollWidth": 829,
+    "urgentInViewport": true
+  },
+  {
+    "route": "/learn",
+    "width": 844,
+    "height": 320,
+    "textScale": 1,
+    "contentWidth": 829,
+    "scrollWidth": 829,
+    "urgentInViewport": true
+  },
+  {
+    "route": "/appointments",
+    "width": 844,
+    "height": 320,
+    "textScale": 1,
+    "contentWidth": 829,
+    "scrollWidth": 829,
+    "urgentInViewport": true
+  },
+  {
+    "route": "/cards",
+    "width": 844,
+    "height": 320,
+    "textScale": 1,
+    "contentWidth": 829,
+    "scrollWidth": 829,
+    "urgentInViewport": true
+  },
+  {
+    "route": "/personal-card",
+    "width": 844,
+    "height": 320,
+    "textScale": 1,
+    "contentWidth": 829,
+    "scrollWidth": 829,
+    "urgentInViewport": true
+  },
+  {
+    "route": "/milestone-card",
+    "width": 844,
+    "height": 320,
+    "textScale": 1,
+    "contentWidth": 829,
+    "scrollWidth": 829,
+    "urgentInViewport": true
+  },
+  {
+    "route": "/supporting-someone",
+    "width": 844,
+    "height": 320,
+    "textScale": 1,
+    "contentWidth": 829,
+    "scrollWidth": 829,
+    "urgentInViewport": true
+  },
+  {
+    "route": "/support-preferences",
+    "width": 844,
+    "height": 320,
+    "textScale": 1,
+    "contentWidth": 829,
+    "scrollWidth": 829,
+    "urgentInViewport": true
+  },
+  {
+    "route": "/glossary",
+    "width": 844,
+    "height": 320,
+    "textScale": 1,
+    "contentWidth": 829,
+    "scrollWidth": 829,
+    "urgentInViewport": true
+  },
+  {
+    "route": "/resources",
+    "width": 844,
+    "height": 320,
+    "textScale": 1,
+    "contentWidth": 829,
+    "scrollWidth": 829,
+    "urgentInViewport": true
+  },
+  {
+    "route": "/saved",
+    "width": 844,
+    "height": 320,
+    "textScale": 1,
+    "contentWidth": 829,
+    "scrollWidth": 829,
+    "urgentInViewport": true
+  },
+  {
+    "route": "/saved-guides",
+    "width": 844,
+    "height": 320,
+    "textScale": 1,
+    "contentWidth": 829,
+    "scrollWidth": 829,
+    "urgentInViewport": true
+  },
+  {
+    "route": "/about",
+    "width": 844,
+    "height": 320,
+    "textScale": 1,
+    "contentWidth": 829,
+    "scrollWidth": 829,
+    "urgentInViewport": true
+  },
+  {
+    "route": "/accessibility",
+    "width": 844,
+    "height": 320,
+    "textScale": 1,
+    "contentWidth": 829,
+    "scrollWidth": 829,
+    "urgentInViewport": true
+  },
+  {
+    "route": "/urgent-help",
+    "width": 844,
+    "height": 320,
+    "textScale": 1,
+    "contentWidth": 829,
+    "scrollWidth": 829,
+    "urgentInViewport": true
+  },
+  {
+    "route": "/with-stroke",
+    "width": 844,
+    "height": 320,
+    "textScale": 1,
+    "contentWidth": 829,
+    "scrollWidth": 829,
+    "urgentInViewport": true
+  },
+  {
+    "route": "/without-stroke",
+    "width": 844,
+    "height": 320,
+    "textScale": 1,
+    "contentWidth": 829,
+    "scrollWidth": 829,
+    "urgentInViewport": true
+  },
+  {
+    "route": "/guide/understanding-dissection",
+    "width": 844,
+    "height": 320,
+    "textScale": 1,
+    "contentWidth": 829,
+    "scrollWidth": 829,
+    "urgentInViewport": true
+  },
+  {
+    "route": "/guide/tests-and-terms",
+    "width": 844,
+    "height": 320,
+    "textScale": 1,
+    "contentWidth": 829,
+    "scrollWidth": 829,
+    "urgentInViewport": true
+  },
+  {
+    "route": "/guide/with-stroke",
+    "width": 844,
+    "height": 320,
+    "textScale": 1,
+    "contentWidth": 829,
+    "scrollWidth": 829,
+    "urgentInViewport": true
+  },
+  {
+    "route": "/guide/without-stroke",
+    "width": 844,
+    "height": 320,
+    "textScale": 1,
+    "contentWidth": 829,
+    "scrollWidth": 829,
+    "urgentInViewport": true
+  },
+  {
+    "route": "/guide/follow-up-questions",
+    "width": 844,
+    "height": 320,
+    "textScale": 1,
+    "contentWidth": 829,
+    "scrollWidth": 829,
+    "urgentInViewport": true
+  },
+  {
+    "route": "/guide/supporting-someone",
+    "width": 844,
+    "height": 320,
+    "textScale": 1,
+    "contentWidth": 829,
+    "scrollWidth": 829,
+    "urgentInViewport": true
+  },
+  {
+    "route": "/guide/recovery-and-quality-of-life",
+    "width": 844,
+    "height": 320,
+    "textScale": 1,
+    "contentWidth": 829,
+    "scrollWidth": 829,
+    "urgentInViewport": true
+  },
+  {
+    "route": "/",
+    "width": 390,
+    "height": 844,
+    "textScale": 2,
+    "headingPixels": 56,
+    "contentWidth": 375,
+    "scrollWidth": 375,
+    "urgentInViewport": true
+  },
+  {
+    "route": "/learn",
+    "width": 390,
+    "height": 844,
+    "textScale": 2,
+    "headingPixels": 64,
+    "contentWidth": 375,
+    "scrollWidth": 375,
+    "urgentInViewport": true
+  },
+  {
+    "route": "/appointments",
+    "width": 390,
+    "height": 844,
+    "textScale": 2,
+    "headingPixels": 64,
+    "contentWidth": 375,
+    "scrollWidth": 375,
+    "urgentInViewport": true
+  },
+  {
+    "route": "/cards",
+    "width": 390,
+    "height": 844,
+    "textScale": 2,
+    "headingPixels": 64,
+    "contentWidth": 375,
+    "scrollWidth": 375,
+    "urgentInViewport": true
+  },
+  {
+    "route": "/personal-card",
+    "width": 390,
+    "height": 844,
+    "textScale": 2,
+    "headingPixels": 64,
+    "contentWidth": 375,
+    "scrollWidth": 375,
+    "urgentInViewport": true
+  },
+  {
+    "route": "/milestone-card",
+    "width": 390,
+    "height": 844,
+    "textScale": 2,
+    "headingPixels": 64,
+    "contentWidth": 375,
+    "scrollWidth": 375,
+    "urgentInViewport": true
+  },
+  {
+    "route": "/supporting-someone",
+    "width": 390,
+    "height": 844,
+    "textScale": 2,
+    "headingPixels": 64,
+    "contentWidth": 375,
+    "scrollWidth": 375,
+    "urgentInViewport": true
+  },
+  {
+    "route": "/support-preferences",
+    "width": 390,
+    "height": 844,
+    "textScale": 2,
+    "headingPixels": 64,
+    "contentWidth": 375,
+    "scrollWidth": 375,
+    "urgentInViewport": true
+  },
+  {
+    "route": "/glossary",
+    "width": 390,
+    "height": 844,
+    "textScale": 2,
+    "headingPixels": 64,
+    "contentWidth": 375,
+    "scrollWidth": 375,
+    "urgentInViewport": true
+  },
+  {
+    "route": "/resources",
+    "width": 390,
+    "height": 844,
+    "textScale": 2,
+    "headingPixels": 64,
+    "contentWidth": 375,
+    "scrollWidth": 375,
+    "urgentInViewport": true
+  },
+  {
+    "route": "/saved",
+    "width": 390,
+    "height": 844,
+    "textScale": 2,
+    "headingPixels": 64,
+    "contentWidth": 375,
+    "scrollWidth": 375,
+    "urgentInViewport": true
+  },
+  {
+    "route": "/saved-guides",
+    "width": 390,
+    "height": 844,
+    "textScale": 2,
+    "headingPixels": 64,
+    "contentWidth": 375,
+    "scrollWidth": 375,
+    "urgentInViewport": true
+  },
+  {
+    "route": "/about",
+    "width": 390,
+    "height": 844,
+    "textScale": 2,
+    "headingPixels": 64,
+    "contentWidth": 375,
+    "scrollWidth": 375,
+    "urgentInViewport": true
+  },
+  {
+    "route": "/accessibility",
+    "width": 390,
+    "height": 844,
+    "textScale": 2,
+    "headingPixels": 64,
+    "contentWidth": 375,
+    "scrollWidth": 375,
+    "urgentInViewport": true
+  },
+  {
+    "route": "/urgent-help",
+    "width": 390,
+    "height": 844,
+    "textScale": 2,
+    "headingPixels": 64,
+    "contentWidth": 375,
+    "scrollWidth": 375,
+    "urgentInViewport": true
+  },
+  {
+    "route": "/with-stroke",
+    "width": 390,
+    "height": 844,
+    "textScale": 2,
+    "headingPixels": 64,
+    "contentWidth": 375,
+    "scrollWidth": 375,
+    "urgentInViewport": true
+  },
+  {
+    "route": "/without-stroke",
+    "width": 390,
+    "height": 844,
+    "textScale": 2,
+    "headingPixels": 64,
+    "contentWidth": 375,
+    "scrollWidth": 375,
+    "urgentInViewport": true
+  },
+  {
+    "route": "/guide/understanding-dissection",
+    "width": 390,
+    "height": 844,
+    "textScale": 2,
+    "headingPixels": 64,
+    "contentWidth": 375,
+    "scrollWidth": 375,
+    "urgentInViewport": true
+  },
+  {
+    "route": "/guide/tests-and-terms",
+    "width": 390,
+    "height": 844,
+    "textScale": 2,
+    "headingPixels": 64,
+    "contentWidth": 375,
+    "scrollWidth": 375,
+    "urgentInViewport": true
+  },
+  {
+    "route": "/guide/with-stroke",
+    "width": 390,
+    "height": 844,
+    "textScale": 2,
+    "headingPixels": 64,
+    "contentWidth": 375,
+    "scrollWidth": 375,
+    "urgentInViewport": true
+  },
+  {
+    "route": "/guide/without-stroke",
+    "width": 390,
+    "height": 844,
+    "textScale": 2,
+    "headingPixels": 64,
+    "contentWidth": 375,
+    "scrollWidth": 375,
+    "urgentInViewport": true
+  },
+  {
+    "route": "/guide/follow-up-questions",
+    "width": 390,
+    "height": 844,
+    "textScale": 2,
+    "headingPixels": 64,
+    "contentWidth": 375,
+    "scrollWidth": 375,
+    "urgentInViewport": true
+  },
+  {
+    "route": "/guide/supporting-someone",
+    "width": 390,
+    "height": 844,
+    "textScale": 2,
+    "headingPixels": 64,
+    "contentWidth": 375,
+    "scrollWidth": 375,
+    "urgentInViewport": true
+  },
+  {
+    "route": "/guide/recovery-and-quality-of-life",
+    "width": 390,
+    "height": 844,
+    "textScale": 2,
+    "headingPixels": 64,
+    "contentWidth": 375,
+    "scrollWidth": 375,
+    "urgentInViewport": true
+  }
+]

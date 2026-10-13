@@ -1,0 +1,18 @@
+[
+  {
+    "kind": "personal",
+    "pages": 1,
+    "producer": "Dissection Companion",
+    "hiddenDateOmitted": true,
+    "selectedFieldsOnly": true,
+    "formInstructionsAbsent": true
+  },
+  {
+    "kind": "milestone",
+    "pages": 1,
+    "producer": "Dissection Companion",
+    "hiddenDateOmitted": true,
+    "selectedFieldsOnly": true,
+    "formInstructionsAbsent": true
+  }
+]

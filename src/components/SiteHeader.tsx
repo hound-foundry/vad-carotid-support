@@ -5,6 +5,7 @@ import { Platform, StyleSheet, useWindowDimensions, type View as NativeView } fr
 import { Pressable, ScrollView, Text, View } from "./Ui";
 import { palette } from "./theme";
 import { useAccessibility } from "../features/accessibility/AccessibilityProvider";
+import { APP_NAME, APP_SUBTITLE } from "../brand.mjs";
 
 const links = [["/learn", "Guides"], ["/appointments", "Prepare an appointment"], ["/cards", "Make a card"], ["/supporting-someone", "Help someone"], ["/support-preferences", "Support preferences"], ["/glossary", "Look up a term"], ["/resources", "Resources"], ["/saved", "Saved on this device"], ["/about", "About and privacy"]] as const;
 export function SiteHeader() {
@@ -25,7 +26,8 @@ export function SiteHeader() {
   }, [open]);
   return <View testID="site-header" onLayout={(event) => setHeaderTop(event.nativeEvent.layout.y)} style={styles.shell}><View style={styles.inner}>
     <View onLayout={(event) => setHeaderContentHeight(event.nativeEvent.layout.height)}>
-      <Text accessibilityLabel="VAD & Carotid Support" style={styles.brand}>{compactBrand ? "VAD & Carotid" : "VAD & Carotid Support"}</Text>
+      <Text accessibilityLabel={APP_NAME} style={styles.brand}>{APP_NAME}</Text>
+      {pathname === "/" && !compactBrand && windowHeight >= 420 ? <Text style={styles.subtitle}>{APP_SUBTITLE}</Text> : null}
       <View role="navigation" aria-label="Main navigation" style={styles.nav}>
         <Link href="/" asChild><Pressable accessibilityRole="link" aria-current={pathname === "/" ? "page" : undefined} style={[styles.item, pathname === "/" && styles.current]}><Text style={styles.label}>Home</Text></Pressable></Link>
         <Pressable ref={menuRef} accessibilityRole="button" accessibilityState={{ expanded: open }} aria-controls="site-menu" onPress={() => setOpen(!open)} style={[styles.item, open && styles.current]}><Text style={styles.label}>{open ? "Close menu" : "Menu"}</Text></Pressable>
@@ -35,4 +37,4 @@ export function SiteHeader() {
     {open ? <ScrollView nativeID="site-menu" role="navigation" aria-label="All pages" style={[styles.menu, { maxHeight: menuMaxHeight }]} contentContainerStyle={styles.menuContent} keyboardShouldPersistTaps="handled">{links.map(([href, label]) => <Link key={href} href={href as any} asChild><Pressable accessibilityRole="link" aria-current={pathname === href ? "page" : undefined} onPress={() => setOpen(false)} style={[styles.menuItem, pathname === href && styles.current]}><Text style={styles.label}>{label}</Text></Pressable></Link>)}</ScrollView> : null}
   </View></View>;
 }
-const styles = StyleSheet.create({ shell: { backgroundColor: palette.paper, borderBottomWidth: 1, borderBottomColor: palette.line }, inner: { width: "100%", maxWidth: 980, alignSelf: "center", paddingHorizontal: 16, paddingVertical: 8 }, brand: { color: palette.ink, fontSize: 18, fontWeight: "700" }, nav: { flexDirection: "row", flexWrap: "wrap", gap: 4, marginTop: 3 }, item: { justifyContent: "center", paddingHorizontal: 10, borderRadius: 12 }, label: { color: palette.tealDark, fontSize: 16, fontWeight: "700" }, current: { backgroundColor: palette.mint }, menu: { paddingTop: 8 }, menuContent: { gap: 4 }, menuItem: { paddingHorizontal: 12, justifyContent: "center", borderRadius: 12, borderBottomWidth: 1, borderBottomColor: palette.line } });
+const styles = StyleSheet.create({ shell: { backgroundColor: palette.paper, borderBottomWidth: 1, borderBottomColor: palette.line }, inner: { width: "100%", maxWidth: 980, alignSelf: "center", paddingHorizontal: 16, paddingVertical: 8 }, subtitle: { color: palette.text, fontSize: 16, marginTop: 2 }, brand: { color: palette.ink, fontSize: 18, fontWeight: "700" }, nav: { flexDirection: "row", flexWrap: "wrap", gap: 4, marginTop: 3 }, item: { justifyContent: "center", paddingHorizontal: 10, borderRadius: 12 }, label: { color: palette.tealDark, fontSize: 16, fontWeight: "700" }, current: { backgroundColor: palette.mint }, menu: { paddingTop: 8 }, menuContent: { gap: 4 }, menuItem: { paddingHorizontal: 12, justifyContent: "center", borderRadius: 12, borderBottomWidth: 1, borderBottomColor: palette.line } });

@@ -1,4 +1,5 @@
 // @ts-check
+import { APP_NAME } from "../../brand.mjs";
 
 export const STORAGE_KEY = "vad-carotid-support.appointment-sheet.v1";
 export const MAX_NOTE_LENGTH = 500;
@@ -69,7 +70,7 @@ export function formatAppointmentExport(sheet) {
   const groups = [...new Set(selected.map((item) => item.group))];
   return [
     "Appointment question sheet",
-    "Prepared with VAD & Carotid Support",
+    `Prepared with ${APP_NAME}`,
     "",
     ...(selected.length ? groups.flatMap((group) => [group, ...selected.filter((item) => item.group === group).map((item) => `• ${item.text}`), ""]) : ["Choose the questions that matter most to you.", ""]),
     ...(sheet.note.trim() ? ["", "My own notes", sheet.note.trim()] : []),

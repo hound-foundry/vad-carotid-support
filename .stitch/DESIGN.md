@@ -1,27 +1,27 @@
 ---
-name: VAD & Carotid Support
+name: Dissection Companion
 colors:
-  ink: '#183B3B'
-  text: '#435A5A'
-  muted: '#4C6360'
-  teal: '#26736E'
-  tealDark: '#195B58'
-  mint: '#E4F0ED'
-  paper: '#F3F7F6'
+  ink: '#183248'
+  text: '#33485C'
+  muted: '#526574'
+  teal: '#2B5F87'
+  tealDark: '#214C70'
+  mint: '#E8EFF4'
+  paper: '#F5F6F4'
   white: '#FFFFFF'
-  line: '#DCE7E4'
+  line: '#D3DFE7'
   alert: '#F9E9E2'
   alertInk: '#713A2D'
   gold: '#956020'
 ---
 
-# Design System: VAD & Carotid Support
+# Design System: Dissection Companion
 
-Extracted from the existing Expo project, 13 October 2026. This describes the working interface; it does not approve clinical content or introduce a new design direction. The source of truth is `src/components/theme.ts`, the `Ui` wrappers and existing components. `npm run design:check` detects palette drift; the exported kit records current source fingerprints. The separate cloud reference trial is recorded in `.stitch/metadata.json`; it is not an implementation source of truth.
+Updated for the approved blue redesign, 13 October 2026. Display name/subtitle come from `src/brand.mjs`; colours come from `src/components/theme.mjs`, re-exported through the existing `theme.ts` import path. The `Ui` wrappers and existing components define the actual interface. `npm run design:check` detects palette/brand drift and checks 48 opaque contrast pairs; fingerprints identify source and build inputs. The earlier teal cloud trial in `.stitch/metadata.json` is historical and has not been updated to this design. Clinical content approval remains separate.
 
 ## 1. Visual Theme & Atmosphere
 
-Quiet teal, pale paper surfaces and rounded panels make the interface feel like a practical personal notebook. Short task labels lead into information, appointment preparation, support preferences and two separate cards. Useful actions take priority over decoration.
+Restrained blue, soft off-white reading surfaces and rounded panels form a practical interface. The working name is Dissection Companion, with the subtitle “Vertebral & carotid artery support.” Short task labels lead into information, appointment preparation, support preferences and two separate cards. Useful actions take priority over decoration.
 
 Reading is controlled by the person. There are no decorative transitions, automatic reminders, graphic medical imagery or forced survivor wording. These choices consider fatigue, vision and communication difficulty; they do not promise to prevent headache, migraine or PTSD reactions.
 
@@ -29,46 +29,48 @@ Reading is controlled by the person. There are no decorative transitions, automa
 
 ### Primary Foundation
 
-- Paper `#F3F7F6`: page and header background.
+- Paper `#F5F6F4`: page and header background.
 - White `#FFFFFF`: cards and secondary controls.
-- Mint `#E4F0ED`: selected navigation and calm secondary surfaces.
-- Line `#DCE7E4`: ordinary borders and separators.
+- Selected surface `#E8EFF4`: navigation and calm secondary surfaces; the legacy property name is `mint`.
+- Line `#D3DFE7`: ordinary borders and separators.
 
 ### Accent & Interactive
 
-- Teal `#26736E`: primary control background, with white text.
-- Deep teal `#195B58`: action text, outline and standard focus colour.
+- Primary blue `#2B5F87`: filled control background with white text; the compatible property name is `teal`.
+- Deep blue `#214C70`: links and standard focus colour; the compatible property name is `tealDark`.
 - Muted gold `#956020`: restrained existing accents, not a new status code.
 
 ### Typography & Text Hierarchy
 
-- Ink `#183B3B`: headings and primary information.
-- Text `#435A5A`: body copy.
-- Muted `#4C6360`: supporting labels. Keep actual text readable rather than reducing opacity.
+- Ink `#183248`: headings and primary information.
+- Text `#33485C`: body copy.
+- Muted `#526574`: supporting labels. Keep text readable rather than reducing opacity.
 
 ### Functional States
 
 - Alert paper `#F9E9E2` and alert ink `#713A2D`: persistent urgent-help row and existing notices.
 - Selection, save, restore, failure and draft status also have written labels; colour alone carries no meaning.
-- `themeFor` supplies light, dark and both high-contrast variants. Exported `tokens.json` contains the actual resolved variants. Dark focus uses `#BDEBDA`; high contrast increases outline width to 4px. Do not infer accessibility certification from these tokens.
+- `themeFor` supplies light, blue-grey dark and both high-contrast variants. Exported `tokens.json` contains resolved variants and bounded contrast checks. Dark focus uses `#BDD9EE`; high contrast increases outline width to 4px. Filled controls retain dark backgrounds and white labels. Do not infer accessibility certification from these tokens.
 
 ## 3. Typography Rules
 
 ### Hierarchy & Weights
 
-Body and controls use the platform's sans-serif defaults. Major page titles request Georgia at 32/40 with weight 600; native fallback needs device verification. Navigation requests 16/700, card headings 17/700 and card-preview headings 26/700.
+All text uses system sans-serif. Web text uses the shared system font stack; native text uses the platform default. Page titles retain 32px/600, navigation 16/700, card headings 17/700 and card-preview headings 26/700 before accessibility scaling. PDF output uses the existing embedded Noto Sans fonts. Native rendering still requires device verification.
 
-The `Ui.Text` wrapper controls effective size: requested sizes below 16 become 16; other sizes have an 18px floor, then multiply by the selected 100–200% text scale. Ordinary body text therefore renders at least 18px. These effective rules take precedence over smaller authored sizes in route StyleSheets.
+The `Ui.Text` wrapper enforces an 18px floor for all text, then multiplies by the selected 100–200% scale. This also keeps smaller authored notes and labels readable. These effective rules take precedence over smaller sizes in route StyleSheets.
 
 ### Spacing Principles
 
 Line height is at least 1.5 times effective text size, or 1.75 in roomy mode. Existing authored line heights may increase this further. Let text and controls grow; never shrink long card text to fit. Preserve real labels when enlarging text.
 
+Shared body blocks and primary guide paragraphs/bullets have a 680px maximum reading width. Panels and controls retain their responsive widths; narrow screens use the available space.
+
 ## 4. Component Stylings
 
 ### Buttons
 
-Use existing `Ui.Pressable` and feature controls. The wrapper enforces a 48px minimum height; card buttons have 14px corners, 16px horizontal and 10px vertical padding. Teal/white primary and outlined secondary states share written labels. Web focus is a visible 3px outline with a 3px offset. Actual pressed/disabled/loading states remain owned by the components.
+Use existing `Ui.Pressable` and feature controls. The wrapper enforces a 48px minimum height; card buttons have 14px corners, 16px horizontal and 10px vertical padding. Blue/white primary and outlined secondary states share written labels. Web focus is a visible 3px outline with a 3px offset. Actual pressed/disabled/loading states remain owned by the components.
 
 ### Cards & Personal Information
 
@@ -108,7 +110,7 @@ Review at 390×844, 320×640, 1440×900 and 844×320. Test enlarged app text sep
 
 ### Language to Use
 
-Preserve this calm teal, rounded Expo interface. Improve one selected task and state at a time. Use real route labels and synthetic fixtures only. Supply phone and desktop constraints together, plus large-text and short-height states.
+Preserve this calm blue, rounded Expo interface. Improve one selected task and state at a time. Use real route labels and synthetic fixtures only. Supply phone and desktop constraints together, plus large-text and short-height states.
 
 ### Color References
 

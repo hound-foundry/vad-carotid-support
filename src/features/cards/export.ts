@@ -1,6 +1,7 @@
 import { Platform, Share } from "react-native";
 import type { CardPresentation } from "./model.mjs";
 import { cardHtml, formatCardText, wrapText } from "./document.mjs";
+import { palette, fontStack } from "../../components/theme";
 
 export type CardFormat = "pdf" | "png" | "txt";
 export type ExportOutcome = "downloaded" | "shared" | "cancelled";
@@ -12,12 +13,12 @@ export async function createMilestonePng(view: CardPresentation): Promise<Blob> 
   const canvas = document.createElement("canvas"); const ctx = canvas.getContext("2d"); if (!ctx) throw new Error("Image download is unavailable. Try PDF or text.");
   const width = 1200, inset = 84, contentWidth = width - inset * 2;
   const blocks = [{ text: view.subtitle, size: 30, bold: true }, { text: view.title, size: 54, bold: true }, ...view.fields.flatMap((item) => [{ text: item.label, size: 26, bold: true }, { text: item.value, size: item.id === "displayName" ? 38 : 34, bold: item.id === "displayName" }]), { text: view.footer, size: 26, bold: false }];
-  const measured = blocks.map((block) => { ctx.font = `${block.bold ? "700" : "400"} ${block.size}px system-ui,sans-serif`; return { ...block, lines: wrapText(block.text, contentWidth, (s: string) => ctx.measureText(s).width) as string[] }; });
+  const measured = blocks.map((block) => { ctx.font = `${block.bold ? "700" : "400"} ${block.size}px ${fontStack}`; return { ...block, lines: wrapText(block.text, contentWidth, (s: string) => ctx.measureText(s).width) as string[] }; });
   const height = Math.max(800, inset * 2 + measured.reduce((sum, block) => sum + block.lines.length * block.size * 1.6 + 28, 0));
-  canvas.width = width; canvas.height = height; ctx.fillStyle = "#E4F0ED"; ctx.fillRect(0,0,width,height); ctx.fillStyle = "#FFFFFF"; ctx.beginPath(); ctx.roundRect(36,36,width-72,height-72,32); ctx.fill();
-  ctx.strokeStyle = "#26736E"; ctx.lineWidth = 4; ctx.stroke(); ctx.textBaseline = "top";
+  canvas.width = width; canvas.height = height; ctx.fillStyle = palette.mint; ctx.fillRect(0,0,width,height); ctx.fillStyle = palette.white; ctx.beginPath(); ctx.roundRect(36,36,width-72,height-72,32); ctx.fill();
+  ctx.strokeStyle = palette.teal; ctx.lineWidth = 4; ctx.stroke(); ctx.textBaseline = "top";
   let y = inset;
-  for (const block of measured) { ctx.fillStyle = "#183B3B"; ctx.font = `${block.bold ? "700" : "400"} ${block.size}px system-ui,sans-serif`; for (const text of block.lines) { ctx.fillText(text, inset, y); y += block.size * 1.6; } y += 28; }
+  for (const block of measured) { ctx.fillStyle = palette.ink; ctx.font = `${block.bold ? "700" : "400"} ${block.size}px ${fontStack}`; for (const text of block.lines) { ctx.fillText(text, inset, y); y += block.size * 1.6; } y += 28; }
   return new Promise((resolve, reject) => canvas.toBlob((blob) => blob ? resolve(blob) : reject(new Error("Image could not be created. Try again or use text.")), "image/png"));
 }
 export async function exportCard(view: CardPresentation, format: CardFormat): Promise<ExportOutcome> {

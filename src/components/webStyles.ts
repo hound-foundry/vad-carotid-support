@@ -1,8 +1,9 @@
+import { fontStack, focusColours } from "./theme";
 export const webStyles = `
-html{scroll-behavior:auto}body{margin:0}button,a,input,textarea{font:inherit}
-button:focus-visible,a:focus-visible,input:focus-visible,textarea:focus-visible,[tabindex]:focus-visible{outline:3px solid #195B58;outline-offset:3px}
+html{scroll-behavior:auto}body{margin:0;font-family:${fontStack}}button,a,input,textarea{font:inherit}
+button:focus-visible,a:focus-visible,input:focus-visible,textarea:focus-visible,[tabindex]:focus-visible{outline:3px solid ${focusColours.light};outline-offset:3px}
 [data-vad-theme="dark"]{color-scheme:dark}
-[data-vad-theme="dark"] :focus-visible{outline-color:#BDEBDA}
+[data-vad-theme="dark"] :focus-visible{outline-color:${focusColours.dark}}
 [data-vad-contrast="high"] :focus-visible{outline-width:4px}
 #skip-to-content:focus-visible{left:16px!important;top:4px!important}
 main:focus{outline:none}

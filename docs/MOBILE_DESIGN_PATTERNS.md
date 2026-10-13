@@ -1,6 +1,6 @@
 # Mobile design patterns in the existing Expo project
 
-The current React Native/Expo components can carry the design between the website and eventual iOS/Android app. This pass applies task-flow improvements to the established teal, rounded interface. A different design platform is not required.
+The current React Native/Expo components carry the design between the website and eventual iOS/Android app. The approved Dissection Companion redesign uses restrained blue, rounded panels, system sans-serif and an 18px minimum text size. Existing task flows and saved-data contracts remain intact. See [redesign results](DESIGN_RESULTS.md) for actual screenshots and bounded verification.
 
 | Pattern | Implemented here | Purpose |
 |---|---|---|
@@ -26,7 +26,7 @@ These references do not establish this product's accessibility conformance or cl
 
 Sleek's mobile integration guidance was examined. No credential or exported Sleek project was supplied here, so no live design run, account connection, paid generation or import is claimed. Its Expo/StyleSheet guidance fits this repository: inspect actual exported code/screenshots, map the theme once, preserve real state/navigation, and verify native behavior. Figma or Sleek exports can provide specific visual references later; the current fixes use the existing components.
 
-Before native release, verify VoiceOver/TalkBack, native font rendering/scaling (including heading-font fallback), safe areas, software-keyboard reachability, and native share/print cancellation. Web screenshots and TypeScript/static export do not prove those behaviors. Avoid adding a second menu or bottom bar until real people test a native navigation prototype; four Home tasks already form a small useful starting set.
+Before native release, verify VoiceOver/TalkBack, system font rendering/scaling, safe areas, software-keyboard reachability, and native share/print cancellation. Web screenshots and TypeScript/static export do not prove those behaviors. Avoid adding a second menu or bottom bar until real people test a native navigation prototype; four Home tasks already form a small useful starting set.
 
 The [follow-up audit](RETURNING_USER_AUDIT.md) records scores, captures, repairs and technical checks. Colour/motion choices are sensitivity-conscious and do not promise to prevent migraine or PTSD reactions.
 

@@ -1,4 +1,5 @@
 import { Link } from "../../src/components/AppLink";
+import { APP_NAME } from "../../src/brand.mjs";
 import { Pressable, Text, View } from "../../src/components/Ui";
 import { useLocalSearchParams } from "expo-router";
 import { useEffect, useState } from "react";
@@ -89,7 +90,7 @@ export default function GuideScreen() {
         {Platform.OS === "web" ? <Pressable accessibilityRole="button" onPress={() => globalThis.print?.()} style={({ pressed }) => [styles.actionButton, pressed && styles.pressed]}><Text style={styles.actionText}>Print this guide</Text></Pressable> : null}
         <Pressable accessibilityRole="button" onPress={async () => {
           try {
-            const url = Platform.OS === "web" && typeof window !== "undefined" ? window.location.href : `VAD & Carotid Support: ${guide.title}`;
+            const url = Platform.OS === "web" && typeof window !== "undefined" ? window.location.href : `${APP_NAME}: ${guide.title}`;
             if (Platform.OS === "web" && globalThis.navigator?.clipboard) { await globalThis.navigator.clipboard.writeText(url); setShareMessage("Guide link copied. Share it only with people you choose."); }
             else if (Platform.OS !== "web") await Share.share({ title: guide.title, message: `${guide.title}\n${url}` });
             else setShareMessage("Copying is unavailable in this browser. You can use the page address to share this guide.");
@@ -112,8 +113,8 @@ export default function GuideScreen() {
 
 const styles = StyleSheet.create({
   backLink: { minHeight: 44, alignSelf: "flex-start", justifyContent: "center" }, backLinkText: { color: "#195B58", fontSize: 14, lineHeight: 20, fontWeight: "700" },
-  body: { color: "#435A5A", fontSize: 15, lineHeight: 24, marginTop: 7 }, roomyBody: { lineHeight: 29, marginTop: 11 },
-  bulletRow: { flexDirection: "row", gap: 8, marginTop: 9 }, roomyBulletRow: { marginTop: 14, gap: 11 }, bullet: { color: "#537670", fontSize: 15, lineHeight: 24 }, bulletText: { flex: 1, color: "#576762", fontSize: 15, lineHeight: 24 }, roomyBulletText: { lineHeight: 29 },
+  body: { color: "#435A5A", fontSize: 18, lineHeight: 27, marginTop: 7, maxWidth: 680 }, roomyBody: { lineHeight: 29, marginTop: 11 },
+  bulletRow: { flexDirection: "row", gap: 8, marginTop: 9 }, roomyBulletRow: { marginTop: 14, gap: 11 }, bullet: { color: "#537670", fontSize: 15, lineHeight: 24 }, bulletText: { flex: 1, color: "#576762", fontSize: 18, lineHeight: 27, maxWidth: 680 }, roomyBulletText: { lineHeight: 29 },
   paceToolbar: { paddingHorizontal: 6, paddingTop: 4, paddingBottom: 9, marginBottom: 10, borderBottomWidth: 1, borderBottomColor: "#DDE7E3" }, paceOption: { minHeight: 44, flexDirection: "row", alignItems: "center", gap: 10 }, checkbox: { width: 22, height: 22, borderWidth: 1.5, borderColor: "#71817A", borderRadius: 5, alignItems: "center", justifyContent: "center" }, checked: { backgroundColor: "#195B58", borderColor: "#195B58" }, check: { color: "#FFFFFF", fontSize: 14, lineHeight: 18, fontWeight: "800" }, paceLabel: { color: "#183B3B", fontSize: 15, lineHeight: 22, fontWeight: "700" }, paceHint: { color: "#596861", fontSize: 13, lineHeight: 19, marginTop: 4 }, settingLink: { minHeight: 44, alignSelf: "flex-start", justifyContent: "center", paddingRight: 8 }, settingLinkText: { color: "#195B58", fontSize: 13, lineHeight: 20, fontWeight: "700" }, disclosureButton: { minHeight: 44, flexDirection: "row", alignItems: "center", justifyContent: "space-between" }, disclosureMark: { color: "#195B58", fontSize: 20, fontWeight: "700" },
   paging: { marginTop: 3, paddingTop: 8, borderTopWidth: 1, borderTopColor: "#EDF0EC" }, progress: { color: "#435A5A", fontSize: 13, lineHeight: 20 }, pagingButtons: { flexDirection: "row", flexWrap: "wrap", gap: 10, marginTop: 6 }, pagingButton: { minHeight: 44, minWidth: 96, paddingHorizontal: 16, borderRadius: 9, borderWidth: 1, borderColor: "#26736E", alignItems: "center", justifyContent: "center" }, pagingButtonText: { color: "#195B58", fontSize: 14, fontWeight: "700" }, disabledButton: { borderColor: "#DCE7E4", opacity: 0.55 }, pressed: { opacity: 0.7 },
   inlineSource: { paddingTop: 10, marginTop: 10, borderTopWidth: 1, borderTopColor: "#EDF0EC" }, inlineSourceText: { color: "#195B58", fontSize: 13, lineHeight: 20, fontWeight: "600" }, pageActions: { flexDirection: "row", flexWrap: "wrap", gap: 8, marginTop: 8 }, actionButton: { minHeight: 44, alignSelf: "flex-start", justifyContent: "center", paddingHorizontal: 14, marginBottom: 6, borderWidth: 1, borderColor: "#CAD8D1", borderRadius: 9, backgroundColor: "#FFFFFF" }, actionText: { color: "#195B58", fontSize: 13, lineHeight: 20, fontWeight: "700" }, shareMessage: { color: "#52635C", fontSize: 13, lineHeight: 20, marginTop: 7 },

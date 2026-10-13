@@ -1,4 +1,5 @@
 // @ts-check
+import { APP_NAME } from "../../brand.mjs";
 
 export const STORAGE_KEY = "vad-carotid-support.support-preferences.v1";
 export const MAX_NOTE_LENGTH = 300;
@@ -64,7 +65,7 @@ export function formatSupportPreferencesExport(sheet) {
   const groups = [...new Set(selected.map((item) => item.group))];
   return [
     "How I prefer to be supported",
-    "Prepared with VAD & Carotid Support",
+    `Prepared with ${APP_NAME}`,
     "",
     ...(selected.length ? groups.flatMap((group) => [group, ...selected.filter((item) => item.group === group).map((item) => `• ${item.text}`), ""]) : ["Choose any statements that feel right for you.", ""]),
     ...(sheet.note.trim() ? ["Something else I’d like you to know", sheet.note.trim(), ""] : []),
