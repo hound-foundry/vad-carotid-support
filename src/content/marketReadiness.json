@@ -24203,8 +24203,50 @@
       "release": "blocked",
       "isoAlpha2": "LU",
       "reviewOwner": null,
-      "lastChecked": null,
-      "officialSources": [],
+      "lastChecked": "2026-10-13",
+      "officialSources": [
+        {
+          "title": "GDPR legislation and health-data provisions",
+          "url": "https://cnpd.public.lu/en/legislation/droit-europ/union-europeenne/rgpd/chapitre-1.html",
+          "authority": "National Data Protection Commission, Luxembourg",
+          "sourceType": "privacy-regulator",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "GDPR principles and public-health processing",
+          "url": "https://cnpd.public.lu/en/legislation/droit-europ/union-europeenne/rgpd/chapitre-2.html",
+          "authority": "National Data Protection Commission, Luxembourg",
+          "sourceType": "privacy-guidance",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Medical devices",
+          "url": "https://santesecu.public.lu/en/espace-professionnel/departement-sante/pharmacies-et-medicaments/dispositifs-medicaux.html",
+          "authority": "Luxembourg Health Directorate",
+          "sourceType": "medical-device-regulator",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Medical devices for citizens",
+          "url": "https://santesecu.public.lu/en/espace-citoyen/departement-sante/medicaments-humains/dispositifs-medicaux.html",
+          "authority": "Luxembourg Health Directorate",
+          "sourceType": "medical-software-guidance",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Emergency number 112",
+          "url": "https://112.public.lu/dam-assets/fr/publications/eischt-hellef-booklet-2021/ONLINE-EN-CGDIS-FIRST-AID-Booklett.pdf",
+          "authority": "Corps grand-ducal d’incendie et de secours, Luxembourg",
+          "sourceType": "emergency-guidance",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        }
+      ],
+      "sourceDiscoveryCheckedOn": "2026-10-13",
       "reviewAreas": [
         {
           "area": "privacy-and-health-data",
