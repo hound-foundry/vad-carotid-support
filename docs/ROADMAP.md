@@ -51,6 +51,7 @@ The glossary and print controls are implemented, but their presence does not cou
 - [x] Record initial Brazil LGPD/ANPD, internet, consumer, accessibility and ANVISA source leads with all 26 states and Federal District queued; municipal review and Brazil release remain blocked.
 - [x] Record dated India central privacy, phased DPDP commencement/Rules, medical-software, consumer, disability, child, copyright, emergency and funding source leads with all 28 states and 8 union territories/NCT queued; municipal/local review and India release remain blocked.
 - [x] Record dated Mexico federal privacy, COFEPRIS/SaMD, health, consumer, disability, child, copyright, emergency and territory source leads with all 32 federal entities queued; municipal/alcaldía review and Mexico release remain blocked.
+- [x] Record dated Argentina data-protection and transfer, ANMAT SaMD (including 2026 criteria update), patient-rights, consumer, accessibility, child, copyright, emergency and nonprofit source leads with 23 provinces and CABA queued; municipal review and Argentina release remain blocked.
 - [x] Record dated Lithuania official-source leads and a 10-county/60-municipality screening queue; all national, local and release reviews remain unassessed.
 - [x] Record initial dated Ukraine source leads and constitutional top-level screening queue; all national, local and release reviews remain unassessed.
 - [ ] Resolve the remaining dependency alerts or record a reviewed mitigation and explicit release decision; see [dependency security review](DEPENDENCY_SECURITY.md).

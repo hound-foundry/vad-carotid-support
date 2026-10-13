@@ -1375,7 +1375,184 @@
       "isoAlpha2": "AR",
       "reviewOwner": null,
       "lastChecked": null,
-      "officialSources": [],
+      "officialSources": [
+        {
+          "title": "Personal Data Protection Law No. 25,326 (updated text)",
+          "url": "https://www.argentina.gob.ar/normativa/nacional/64790/actualizacion",
+          "authority": "National Directorate of Official Records / Argentina.gob.ar",
+          "sourceType": "national-privacy-legislation-updated-text",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Decree 1558/2001 implementing Law 25,326 (updated text)",
+          "url": "https://www.argentina.gob.ar/normativa/nacional/70368/actualizacion",
+          "authority": "National Directorate of Official Records / Argentina.gob.ar",
+          "sourceType": "privacy-regulations",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "AAIP guidance on international transfers of personal data",
+          "url": "https://www.argentina.gob.ar/transferencias-internacionales",
+          "authority": "Agency for Access to Public Information (AAIP)",
+          "sourceType": "regulator-transfer-guidance",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "AAIP: obligations for personal-data controllers, security and registration",
+          "url": "https://www.argentina.gob.ar/aaip/datospersonales/responsables/obligaciones",
+          "authority": "AAIP",
+          "sourceType": "regulator-compliance-guidance",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "ANMAT Disposition 64/2025: medical-product and SaMD classification rules",
+          "url": "https://www.argentina.gob.ar/normativa/nacional/disposici%C3%B3n-64-2025-408309/texto",
+          "authority": "National Administration of Drugs, Food and Medical Technology (ANMAT)",
+          "sourceType": "medical-device-legislation",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "ANMAT announcement: updated SaMD regulatory criteria, 10 September 2026",
+          "url": "https://www.argentina.gob.ar/noticias/anmat-actualiza-los-criterios-regulatorios-para-software-como-dispositivo-medico-samd",
+          "authority": "ANMAT",
+          "sourceType": "medical-software-regulator-guidance-2026",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "ANMAT medical products registration, definitions and regulatory systems",
+          "url": "https://www.argentina.gob.ar/anmat/regulados/productosmedicos",
+          "authority": "ANMAT",
+          "sourceType": "medical-device-regulator-index",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "ANMAT Disposition 9688/2019: registration, software and life-cycle requirements",
+          "url": "https://www.argentina.gob.ar/normativa/nacional/disposici%C3%B3n-9688-2019-332646/texto",
+          "authority": "ANMAT",
+          "sourceType": "medical-software-registration-requirements",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "ANMAT Disposition 11467/2024: essential requirements for medical products and software",
+          "url": "https://www.argentina.gob.ar/normativa/nacional/disposici%C3%B3n-11467-2024-408073/texto",
+          "authority": "ANMAT",
+          "sourceType": "medical-device-software-safety-requirements",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Patient Rights, Clinical Records and Informed Consent Law No. 26,529",
+          "url": "https://www.argentina.gob.ar/normativa/nacional/ley-26529-160432/actualizacion",
+          "authority": "Ministry of Health / National Directorate of Official Records",
+          "sourceType": "patient-rights-legislation",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Decree 1089/2012 implementing the Patient Rights Law",
+          "url": "https://www.argentina.gob.ar/normativa/nacional/199296/texto",
+          "authority": "National Directorate of Official Records / Argentina.gob.ar",
+          "sourceType": "patient-rights-regulations",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Consumer Protection Law No. 24,240 (updated text)",
+          "url": "https://www.argentina.gob.ar/normativa/nacional/ley-24240-638/actualizacion",
+          "authority": "National Directorate of Official Records / Argentina.gob.ar",
+          "sourceType": "consumer-legislation-updated-text",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Web Information Accessibility Law No. 26,653",
+          "url": "https://www.argentina.gob.ar/normativa/nacional/ley-26653-175694/texto",
+          "authority": "National Directorate of Official Records / Argentina.gob.ar",
+          "sourceType": "web-accessibility-legislation-scope-check",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Convention on the Rights of Persons with Disabilities, approved by Law No. 26,378",
+          "url": "https://www.argentina.gob.ar/normativa/nacional/ley-26378-141317/texto",
+          "authority": "National Directorate of Official Records / Argentina.gob.ar",
+          "sourceType": "accessibility-and-disability-rights",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Comprehensive Protection of Children and Adolescents Law No. 26,061",
+          "url": "https://www.argentina.gob.ar/normativa/nacional/ley-26061-110778/actualizacion",
+          "authority": "National Directorate of Official Records / Argentina.gob.ar",
+          "sourceType": "child-protection-legislation-updated-text",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Intellectual Property Law No. 11,723 (updated text)",
+          "url": "https://www.argentina.gob.ar/normativa/nacional/42755/actualizacion",
+          "authority": "National Directorate of Official Records / Argentina.gob.ar",
+          "sourceType": "copyright-and-translation-legislation",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Civil and Commercial Code, Law No. 26,994: associations and foundations",
+          "url": "https://www.argentina.gob.ar/normativa/nacional/ley-26994-235975/actualizacion",
+          "authority": "National Directorate of Official Records / Argentina.gob.ar",
+          "sourceType": "nonprofit-operator-and-funding-scope",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "National government emergency guidance and numbers",
+          "url": "https://www.argentina.gob.ar/tema/emergencias",
+          "authority": "Ministry of Health and Argentina.gob.ar",
+          "sourceType": "official-emergency-service-information",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "INDEC jurisdictional register: 23 provinces and CABA",
+          "url": "https://viascirculacion.indec.gob.ar/?contenido=definiciones",
+          "authority": "National Institute of Statistics and Censuses (INDEC)",
+          "sourceType": "official-territorial-register",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Apple App Review Guidelines",
+          "url": "https://developer.apple.com/app-store/review/guidelines/",
+          "authority": "Apple",
+          "sourceType": "platform-policy-not-legislation",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Google Play Health Content and Services policy",
+          "url": "https://support.google.com/googleplay/android-developer/answer/16679511?hl=en",
+          "authority": "Google Play",
+          "sourceType": "platform-policy-not-legislation",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "AAIP official legislation and regulatory search",
+          "url": "https://www.argentina.gob.ar/aaip/buscador-normativa",
+          "authority": "AAIP",
+          "sourceType": "official-regulatory-source-index",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        }
+      ],
       "reviewAreas": [
         {
           "area": "privacy-and-health-data",
@@ -1490,7 +1667,202 @@
           "reviewer": null
         }
       ],
-      "subnationalAreas": []
+      "subnationalAreas": [
+        {
+          "name": "Buenos Aires",
+          "status": "not-assessed",
+          "reason": "First-order jurisdiction screening target only. No province/CABA-specific privacy, health/professional, consumer, accessibility, emergency, local-government or territorial-applicability review performed.",
+          "source": "https://viascirculacion.indec.gob.ar/?contenido=definiciones",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Catamarca",
+          "status": "not-assessed",
+          "reason": "First-order jurisdiction screening target only. No province/CABA-specific privacy, health/professional, consumer, accessibility, emergency, local-government or territorial-applicability review performed.",
+          "source": "https://viascirculacion.indec.gob.ar/?contenido=definiciones",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Chaco",
+          "status": "not-assessed",
+          "reason": "First-order jurisdiction screening target only. No province/CABA-specific privacy, health/professional, consumer, accessibility, emergency, local-government or territorial-applicability review performed.",
+          "source": "https://viascirculacion.indec.gob.ar/?contenido=definiciones",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Chubut",
+          "status": "not-assessed",
+          "reason": "First-order jurisdiction screening target only. No province/CABA-specific privacy, health/professional, consumer, accessibility, emergency, local-government or territorial-applicability review performed.",
+          "source": "https://viascirculacion.indec.gob.ar/?contenido=definiciones",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Córdoba",
+          "status": "not-assessed",
+          "reason": "First-order jurisdiction screening target only. No province/CABA-specific privacy, health/professional, consumer, accessibility, emergency, local-government or territorial-applicability review performed.",
+          "source": "https://viascirculacion.indec.gob.ar/?contenido=definiciones",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Corrientes",
+          "status": "not-assessed",
+          "reason": "First-order jurisdiction screening target only. No province/CABA-specific privacy, health/professional, consumer, accessibility, emergency, local-government or territorial-applicability review performed.",
+          "source": "https://viascirculacion.indec.gob.ar/?contenido=definiciones",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Entre Ríos",
+          "status": "not-assessed",
+          "reason": "First-order jurisdiction screening target only. No province/CABA-specific privacy, health/professional, consumer, accessibility, emergency, local-government or territorial-applicability review performed.",
+          "source": "https://viascirculacion.indec.gob.ar/?contenido=definiciones",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Formosa",
+          "status": "not-assessed",
+          "reason": "First-order jurisdiction screening target only. No province/CABA-specific privacy, health/professional, consumer, accessibility, emergency, local-government or territorial-applicability review performed.",
+          "source": "https://viascirculacion.indec.gob.ar/?contenido=definiciones",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Jujuy",
+          "status": "not-assessed",
+          "reason": "First-order jurisdiction screening target only. No province/CABA-specific privacy, health/professional, consumer, accessibility, emergency, local-government or territorial-applicability review performed.",
+          "source": "https://viascirculacion.indec.gob.ar/?contenido=definiciones",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "La Pampa",
+          "status": "not-assessed",
+          "reason": "First-order jurisdiction screening target only. No province/CABA-specific privacy, health/professional, consumer, accessibility, emergency, local-government or territorial-applicability review performed.",
+          "source": "https://viascirculacion.indec.gob.ar/?contenido=definiciones",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "La Rioja",
+          "status": "not-assessed",
+          "reason": "First-order jurisdiction screening target only. No province/CABA-specific privacy, health/professional, consumer, accessibility, emergency, local-government or territorial-applicability review performed.",
+          "source": "https://viascirculacion.indec.gob.ar/?contenido=definiciones",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Mendoza",
+          "status": "not-assessed",
+          "reason": "First-order jurisdiction screening target only. No province/CABA-specific privacy, health/professional, consumer, accessibility, emergency, local-government or territorial-applicability review performed.",
+          "source": "https://viascirculacion.indec.gob.ar/?contenido=definiciones",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Misiones",
+          "status": "not-assessed",
+          "reason": "First-order jurisdiction screening target only. No province/CABA-specific privacy, health/professional, consumer, accessibility, emergency, local-government or territorial-applicability review performed.",
+          "source": "https://viascirculacion.indec.gob.ar/?contenido=definiciones",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Neuquén",
+          "status": "not-assessed",
+          "reason": "First-order jurisdiction screening target only. No province/CABA-specific privacy, health/professional, consumer, accessibility, emergency, local-government or territorial-applicability review performed.",
+          "source": "https://viascirculacion.indec.gob.ar/?contenido=definiciones",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Río Negro",
+          "status": "not-assessed",
+          "reason": "First-order jurisdiction screening target only. No province/CABA-specific privacy, health/professional, consumer, accessibility, emergency, local-government or territorial-applicability review performed.",
+          "source": "https://viascirculacion.indec.gob.ar/?contenido=definiciones",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Salta",
+          "status": "not-assessed",
+          "reason": "First-order jurisdiction screening target only. No province/CABA-specific privacy, health/professional, consumer, accessibility, emergency, local-government or territorial-applicability review performed.",
+          "source": "https://viascirculacion.indec.gob.ar/?contenido=definiciones",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "San Juan",
+          "status": "not-assessed",
+          "reason": "First-order jurisdiction screening target only. No province/CABA-specific privacy, health/professional, consumer, accessibility, emergency, local-government or territorial-applicability review performed.",
+          "source": "https://viascirculacion.indec.gob.ar/?contenido=definiciones",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "San Luis",
+          "status": "not-assessed",
+          "reason": "First-order jurisdiction screening target only. No province/CABA-specific privacy, health/professional, consumer, accessibility, emergency, local-government or territorial-applicability review performed.",
+          "source": "https://viascirculacion.indec.gob.ar/?contenido=definiciones",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Santa Cruz",
+          "status": "not-assessed",
+          "reason": "First-order jurisdiction screening target only. No province/CABA-specific privacy, health/professional, consumer, accessibility, emergency, local-government or territorial-applicability review performed.",
+          "source": "https://viascirculacion.indec.gob.ar/?contenido=definiciones",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Santa Fe",
+          "status": "not-assessed",
+          "reason": "First-order jurisdiction screening target only. No province/CABA-specific privacy, health/professional, consumer, accessibility, emergency, local-government or territorial-applicability review performed.",
+          "source": "https://viascirculacion.indec.gob.ar/?contenido=definiciones",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Santiago del Estero",
+          "status": "not-assessed",
+          "reason": "First-order jurisdiction screening target only. No province/CABA-specific privacy, health/professional, consumer, accessibility, emergency, local-government or territorial-applicability review performed.",
+          "source": "https://viascirculacion.indec.gob.ar/?contenido=definiciones",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Tierra del Fuego, Antártida e Islas del Atlántico Sur",
+          "status": "not-assessed",
+          "reason": "First-order jurisdiction screening target only. No province/CABA-specific privacy, health/professional, consumer, accessibility, emergency, local-government or territorial-applicability review performed.",
+          "source": "https://viascirculacion.indec.gob.ar/?contenido=definiciones",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Tucumán",
+          "status": "not-assessed",
+          "reason": "First-order jurisdiction screening target only. No province/CABA-specific privacy, health/professional, consumer, accessibility, emergency, local-government or territorial-applicability review performed.",
+          "source": "https://viascirculacion.indec.gob.ar/?contenido=definiciones",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Ciudad Autónoma de Buenos Aires",
+          "status": "not-assessed",
+          "reason": "First-order jurisdiction screening target only. No province/CABA-specific privacy, health/professional, consumer, accessibility, emergency, local-government or territorial-applicability review performed.",
+          "source": "https://viascirculacion.indec.gob.ar/?contenido=definiciones",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        }
+      ],
+      "sourceDiscoveryCheckedOn": "2026-10-13",
+      "sourceDiscoveryNote": "Official-source discovery only; not legal advice, a completeness claim or a determination of applicability. Argentina has a current 2026 ANMAT notice explaining that under Disposition 64/2025, software with the manufacturer’s intended medical use for diagnosis, prevention, treatment or mitigation of a specific condition may be SaMD, including qualifying mobile apps, and must undergo the relevant authorization process. Counsel must assess the actual app purpose, features, wording and distribution. Law 25,326 identifies health information as sensitive and Article 12 restricts transfers to destinations without adequate protection; map hosting, analytics, external resources and all other flows before review. The 2023 data-protection bill appears as an update initiative on AAIP pages, not as current law; confirm any later legislative action rather than relying on the proposal. Law 26,653 applies to specified public bodies, public-service contractors and civil-society organizations receiving public support; whether its scope reaches a future operator is unassessed. Argentina’s emergency page distinguishes nationwide 911 from 107 ambulance service limited to Buenos Aires City and some Buenos Aires localities. Keep emergency text generic until local review. Federal, provincial, CABA and municipal applicability remains open."
     },
     {
       "name": "Armenia",

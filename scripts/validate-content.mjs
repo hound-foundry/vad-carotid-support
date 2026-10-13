@@ -154,6 +154,18 @@ assert.ok(mexicoRecord.subnationalAreas.every((area) => area.status === "not-ass
 assert.ok(mexicoRecord.officialSources.some((source) => source.url === "https://www.diputados.gob.mx/LeyesBiblio/pdf/LFPDPPP.pdf"), "Mexico 2025 private-sector personal-data law must remain visible");
 assert.ok(mexicoRecord.officialSources.some((source) => source.url === "https://sidof.segob.gob.mx/notas/docFuente/5638793"), "Mexico NOM-241 medical software source must remain visible");
 assert.match(mexicoRecord.sourceDiscoveryNote, /not a completeness claim/);
+const argentinaRecord = resources.countryRecords.find((country) => country.isoAlpha2 === "AR");
+assert.ok(argentinaRecord && argentinaRecord.legalReview.status === "not-assessed" && argentinaRecord.subnationalReview.status === "not-assessed" && argentinaRecord.release === "blocked", "Argentina source discovery must not be mistaken for legal clearance");
+assert.equal(argentinaRecord.sourceDiscoveryCheckedOn, "2026-10-13", "Argentina source discovery needs its own dated record");
+assert.equal(argentinaRecord.officialSources.length, 22, "Argentina source leads must retain current data, transfer, SaMD, patient-rights, consumer, accessibility, child, copyright, emergency and territory sources");
+assert.ok(argentinaRecord.officialSources.every((source) => source.status === "source-lead-only" && source.checkedOn === "2026-10-13"), "Argentina sources must remain dated source leads only");
+assert.equal(argentinaRecord.reviewAreas.length, 14, "Every Argentina legal review topic must remain explicit");
+assert.ok(argentinaRecord.reviewAreas.every((area) => area.status === "not-assessed"), "Argentina source discovery must not change a legal review area to assessed");
+assert.equal(argentinaRecord.subnationalAreas.length, 24, "Argentina must retain 23 provinces and CABA as unassessed screening targets");
+assert.equal(new Set(argentinaRecord.subnationalAreas.map((area) => area.name)).size, 24, "Argentina provincial/CABA screening targets must be unique");
+assert.ok(argentinaRecord.subnationalAreas.every((area) => area.status === "not-assessed" && area.checkedOn === "2026-10-13" && area.reviewer === null), "Argentina subnational screening must not be mistaken for local clearance");
+assert.ok(argentinaRecord.officialSources.some((source) => source.url === "https://www.argentina.gob.ar/normativa/nacional/disposici%C3%B3n-64-2025-408309/texto"), "Argentina ANMAT Disposition 64/2025 must remain visible");
+assert.match(argentinaRecord.sourceDiscoveryNote, /107 ambulance service limited to Buenos Aires/);
 const euGroup = resources.regionalSourceGroups?.find((group) => group.id === "eu-member-states");
 assert.equal(euGroup?.status, "membership-scope-source-checked-only", "EU grouping must not imply law applicability");
 assert.equal(euGroup?.membershipSource, "https://european-union.europa.eu/principles-countries-history/eu-countries_en?page=1", "EU membership list source must be recorded");
