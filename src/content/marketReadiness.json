@@ -29587,8 +29587,50 @@
       "release": "blocked",
       "isoAlpha2": "NO",
       "reviewOwner": null,
-      "lastChecked": null,
-      "officialSources": [],
+      "lastChecked": "2026-10-13",
+      "officialSources": [
+        {
+          "title": "Norwegian Data Protection Authority",
+          "url": "https://www.datatilsynet.no/en/",
+          "authority": "Norwegian Data Protection Authority",
+          "sourceType": "regulator-portal",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Personal health data filing system reference",
+          "url": "https://www.datatilsynet.no/globalassets/global/english/personal_health_data_filing_system_act_20100907.pdf",
+          "authority": "Norwegian Data Protection Authority",
+          "sourceType": "official-legal-reference",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Medical device software guidance",
+          "url": "https://www.dmp.no/medisinsk-utstyr/programvare-som-medisinsk-utstyr",
+          "authority": "Norwegian Medical Products Agency",
+          "sourceType": "competent-authority-guidance",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Norwegian Medical Products Agency portal",
+          "url": "https://www.dmp.no/en",
+          "authority": "Norwegian Medical Products Agency",
+          "sourceType": "competent-authority-portal",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Medical emergency and healthcare guidance",
+          "url": "https://www.helsenorge.no/en/foreigners-in-norway/refugees-and-asylum-seekers/where-to-get-help/",
+          "authority": "Norwegian Directorate of Health",
+          "sourceType": "official-emergency-guidance",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        }
+      ],
+      "sourceDiscoveryCheckedOn": "2026-10-13",
       "reviewAreas": [
         {
           "area": "privacy-and-health-data",

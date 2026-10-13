@@ -60,6 +60,8 @@ Sweden source discovery (13 October 2026) now records the Swedish privacy author
 
 Czechia source discovery (13 October 2026) now records the Office for Personal Data Protection, Czech cookie and GDPR guidance, State Institute for Drug Control medical-device IT guidance, and official emergency-call information. These are source leads only. Czechia remains blocked pending qualified review of Czech-language, EU and national privacy, medical-software, accessibility, emergency and distribution requirements.
 
+Norway source discovery (13 October 2026) now records the Norwegian Data Protection Authority, personal-health-data legal references, Norwegian Medical Products Agency software guidance, and official Helsenorge emergency-care information. These are source leads only. Norway remains blocked pending qualified review of Norwegian and EEA privacy, medical-software, accessibility, emergency, language and distribution requirements.
+
 ### Platform distribution policies (not legislation)
 
 | Platform | Official policy source | Release work still needed |
