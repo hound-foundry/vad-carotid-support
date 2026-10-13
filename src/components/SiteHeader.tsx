@@ -22,7 +22,7 @@ export function SiteHeader() {
       <View><Text style={styles.brand}>VAD & Carotid Support</Text><Text style={styles.brandNote}>Information made with care</Text></View>
     </Pressable></Link>
     <View role="navigation" aria-label="Main navigation" style={[styles.nav, compact ? styles.navCompact : styles.navWide]}>
-      {links.map((item) => { const selected = activeArea === item.area; return <Link key={item.href} href={item.href as any} asChild><Pressable accessibilityRole="link" aria-current={selected ? "page" : undefined}>
+      {(compact ? links.filter((item) => ["guides", "appointments", "support", "accessibility"].includes(item.area)) : links).map((item) => { const selected = activeArea === item.area; return <Link key={item.href} href={item.href as any} asChild><Pressable accessibilityRole="link" aria-current={selected ? "page" : undefined}>
         <View style={[styles.navLink, compact && styles.navLinkCompact, selected && styles.navLinkSelected]}><Text style={[styles.navText, compact && styles.navTextCompact, selected && styles.navTextSelected]}>{compact ? item.mobileLabel : item.label}</Text></View>
       </Pressable></Link>; })}
     </View>
