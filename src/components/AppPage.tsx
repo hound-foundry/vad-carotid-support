@@ -21,7 +21,7 @@ export const palette = {
 
 export function AppPage({ children, wide = false }: { children: ReactNode; wide?: boolean }) {
   const { settings } = useAccessibility();
-  return <SafeAreaView style={styles.safe} edges={["bottom"]}><Pressable accessibilityRole="link" accessibilityLabel="Skip to main content" nativeID="skip-to-content" style={styles.skipLink} onPress={() => { if (typeof document !== "undefined") document.getElementById("main-content")?.focus(); }}><Text style={styles.skipText}>Skip to main content</Text></Pressable><ScrollView nativeID="main-content" accessible contentContainerStyle={[styles.page, settings.spacing === "roomy" && styles.pageRoomy, wide && styles.wide]}>{children}<SiteFooter /></ScrollView></SafeAreaView>;
+  return <SafeAreaView style={styles.safe} edges={["bottom"]}><Pressable testID="skip-link" accessibilityRole="link" accessibilityLabel="Skip to main content" nativeID="skip-to-content" style={styles.skipLink} onPress={() => { if (typeof document !== "undefined") document.getElementById("main-content")?.focus(); }}><Text style={styles.skipText}>Skip to main content</Text></Pressable><ScrollView nativeID="main-content" accessible contentContainerStyle={[styles.page, settings.spacing === "roomy" && styles.pageRoomy, wide && styles.wide]}>{children}<SiteFooter /></ScrollView></SafeAreaView>;
 }
 
 export function BackHome() {
@@ -48,7 +48,7 @@ export function Body({ children }: { children: ReactNode }) {
 }
 
 function SiteFooter() {
-  return <View style={styles.footer}>
+  return <View testID="site-footer" style={styles.footer}>
     <View style={styles.footerRule} />
     <Text style={styles.footerText}>Development preview · general information only · not a medical service</Text>
     <View style={styles.footerLinks}>

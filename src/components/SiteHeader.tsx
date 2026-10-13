@@ -16,7 +16,7 @@ export function SiteHeader() {
   const compact = useWindowDimensions().width < 760;
   const activeArea = pathname === "/appointments" ? "appointments" : pathname === "/support-preferences" ? "support" : pathname === "/resources" ? "resources" : pathname === "/saved-guides" ? "saved" : pathname === "/accessibility" ? "accessibility" : pathname === "/" || pathname === "/about" || pathname === "/urgent-help" ? null : "guides";
 
-  return <View style={styles.shell}><View style={[styles.inner, compact ? styles.innerCompact : styles.innerWide]}>
+  return <View testID="site-header" style={styles.shell}><View style={[styles.inner, compact ? styles.innerCompact : styles.innerWide]}>
     <Link href="/" asChild><Pressable accessibilityRole="link" accessibilityLabel="VAD and Carotid Support home" accessibilityState={{ selected: pathname === "/" }} style={styles.brandRow}>
       <View style={styles.brandMark}><View style={styles.brandMarkInner} /></View>
       <View><Text style={styles.brand}>VAD & Carotid Support</Text><Text style={styles.brandNote}>Information made with care</Text></View>
