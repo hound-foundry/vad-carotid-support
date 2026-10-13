@@ -110,6 +110,8 @@ Cameroon source discovery (13 October 2026) now records the 2024 personal-data p
 
 Bolivia source discovery (13 October 2026) now records official personal-data provisions, State Agency for Medicines and Health Technologies medical-device registers and standards, and Bolivian Police and Fire Directorate emergency guidance. These are source leads only. Bolivia remains blocked pending qualified review of Spanish-language national privacy, medical-software, accessibility, emergency and distribution requirements.
 
+Brunei Darussalam source discovery (13 October 2026) now records the Personal Data Protection Order 2025, authorised-officer information, government health advice, and official emergency and disaster-management hotlines. These are source leads only. Brunei Darussalam remains blocked pending qualified review of Malay- and English-language national privacy, medical-software, accessibility, emergency and distribution requirements.
+
 ### Platform distribution policies (not legislation)
 
 | Platform | Official policy source | Release work still needed |

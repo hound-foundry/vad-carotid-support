@@ -6152,8 +6152,50 @@
       "release": "blocked",
       "isoAlpha2": "BN",
       "reviewOwner": null,
-      "lastChecked": null,
-      "officialSources": [],
+      "lastChecked": "2026-10-13",
+      "officialSources": [
+        {
+          "title": "Personal Data Protection Order 2025",
+          "url": "https://pdp.aiti.gov.bn/media/tndpduml/s-1_2025-e.pdf",
+          "authority": "Authority for Info-communications Technology Industry, Brunei Darussalam",
+          "sourceType": "privacy-law",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Personal-data authorised officers and enforcement",
+          "url": "https://www.aiti.gov.bn/about-us/list-of-authorised-officers/",
+          "authority": "Authority for Info-communications Technology Industry, Brunei Darussalam",
+          "sourceType": "privacy-regulator",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Government health advice line",
+          "url": "https://www.gov.bn/services/Home.aspx/",
+          "authority": "Government of Brunei Darussalam",
+          "sourceType": "health-service-guidance",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Government emergency hotlines",
+          "url": "https://www.egnc.gov.bn/",
+          "authority": "E-Government National Centre, Brunei Darussalam",
+          "sourceType": "emergency-guidance",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "National disaster-management emergency services",
+          "url": "https://www.ndmc.gov.bn/home/",
+          "authority": "National Disaster Management Centre, Brunei Darussalam",
+          "sourceType": "emergency-management",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        }
+      ],
+      "sourceDiscoveryCheckedOn": "2026-10-13",
       "reviewAreas": [
         {
           "area": "privacy-and-health-data",
