@@ -46,6 +46,8 @@ Italy source discovery (13 October 2026) now records the Italian data-protection
 
 The Netherlands source discovery (13 October 2026) now records Dutch health-data and cookie guidance, the Health and Youth Care Inspectorate's medical-device page, official 112 guidance, and the Dutch Data Protection Authority portal. These are source leads only. The Netherlands remains blocked pending qualified review of GDPR implementation, medical-software classification, accessibility, emergency wording and any applicable national or local requirements.
 
+Poland source discovery (13 October 2026) now records the Office for Personal Data Protection, medical-device registration and regulatory guidance, and official emergency and first-aid guidance. These are source leads only. Poland remains blocked pending qualified review of Polish and EU data-protection, medical-software, accessibility, translation, emergency and distribution requirements.
+
 ### Platform distribution policies (not legislation)
 
 | Platform | Official policy source | Release work still needed |

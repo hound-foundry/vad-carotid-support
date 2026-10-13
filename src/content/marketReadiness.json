@@ -30811,8 +30811,50 @@
       "release": "blocked",
       "isoAlpha2": "PL",
       "reviewOwner": null,
-      "lastChecked": null,
-      "officialSources": [],
+      "lastChecked": "2026-10-13",
+      "officialSources": [
+        {
+          "title": "Office for Personal Data Protection",
+          "url": "https://uodo.gov.pl/en",
+          "authority": "Office for Personal Data Protection",
+          "sourceType": "regulator-portal",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Medical-device registration",
+          "url": "https://www.gov.pl/web/urpl/rejestracja-wyrobow-medycznych",
+          "authority": "Office for Registration of Medicinal Products, Medical Devices and Biocidal Products",
+          "sourceType": "competent-authority-guidance",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Polish medical-device regulations",
+          "url": "https://www.gov.pl/web/zdrowie/wyroby-medyczne",
+          "authority": "Ministry of Health",
+          "sourceType": "official-regulatory-guidance",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Emergency number 112",
+          "url": "https://www.gov.pl/web/mswia-en/emergency-number-112",
+          "authority": "Ministry of the Interior and Administration",
+          "sourceType": "official-emergency-guidance",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "First aid and emergency medical numbers",
+          "url": "https://www.gov.pl/web/zdrowie/pierwsza-pomoc",
+          "authority": "Ministry of Health",
+          "sourceType": "official-emergency-guidance",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        }
+      ],
+      "sourceDiscoveryCheckedOn": "2026-10-13",
       "reviewAreas": [
         {
           "area": "privacy-and-health-data",
