@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "release": "english-static-preview",
   "releaseStatus": "blocked-pending-human-review",
-  "revision": "18bfc43",
+  "revision": "working-tree-after-website-shell",
   "lastChecked": "2026-10-13",
   "tracks": {
     "clinical": { "status": "not-reviewed", "ownerRole": "qualified clinician", "evidence": "content/claimLedger.json", "stopShip": true, "reviewer": null, "reviewedOn": null, "nextReviewOn": null },

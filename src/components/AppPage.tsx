@@ -19,7 +19,7 @@ export const palette = {
 };
 
 export function AppPage({ children, wide = false }: { children: ReactNode; wide?: boolean }) {
-  return <SafeAreaView style={styles.safe} edges={["bottom"]}><Pressable accessibilityRole="link" accessibilityLabel="Skip to main content" nativeID="skip-to-content" style={styles.skipLink} onPress={() => { if (typeof document !== "undefined") document.getElementById("main-content")?.focus(); }}><Text style={styles.skipText}>Skip to main content</Text></Pressable><ScrollView nativeID="main-content" accessible contentContainerStyle={[styles.page, wide && styles.wide]}>{children}</ScrollView></SafeAreaView>;
+  return <SafeAreaView style={styles.safe} edges={["bottom"]}><Pressable accessibilityRole="link" accessibilityLabel="Skip to main content" nativeID="skip-to-content" style={styles.skipLink} onPress={() => { if (typeof document !== "undefined") document.getElementById("main-content")?.focus(); }}><Text style={styles.skipText}>Skip to main content</Text></Pressable><ScrollView nativeID="main-content" accessible contentContainerStyle={[styles.page, wide && styles.wide]}>{children}<SiteFooter /></ScrollView></SafeAreaView>;
 }
 
 export function BackHome() {
@@ -40,6 +40,18 @@ export function Card({ title, children }: { title: string; children: ReactNode }
 
 export function Body({ children }: { children: ReactNode }) {
   return <Text style={styles.body}>{children}</Text>;
+}
+
+function SiteFooter() {
+  return <View style={styles.footer}>
+    <View style={styles.footerRule} />
+    <Text style={styles.footerText}>Development preview · general information only · not a medical service</Text>
+    <View style={styles.footerLinks}>
+      <Link href="/about" asChild><Pressable accessibilityRole="link" style={styles.footerLink}><Text style={styles.footerLinkText}>About and privacy</Text></Pressable></Link>
+      <Link href="/accessibility" asChild><Pressable accessibilityRole="link" style={styles.footerLink}><Text style={styles.footerLinkText}>Accessibility</Text></Pressable></Link>
+      <Link href="/urgent-help" asChild><Pressable accessibilityRole="link" style={styles.footerLink}><Text style={styles.footerLinkText}>Urgent help</Text></Pressable></Link>
+    </View>
+  </View>;
 }
 
 const styles = StyleSheet.create({
@@ -64,4 +76,10 @@ const styles = StyleSheet.create({
   card: { backgroundColor: palette.white, borderColor: palette.line, borderWidth: 1, borderRadius: 15, padding: 18, marginBottom: 13 },
   cardTitle: { color: palette.ink, fontSize: 17, lineHeight: 24, fontWeight: "700", marginBottom: 8 },
   body: { color: palette.text, fontSize: 15, lineHeight: 24, marginTop: 7 },
+  footer: { marginTop: 28, paddingBottom: 4 },
+  footerRule: { height: 1, backgroundColor: palette.line },
+  footerText: { marginTop: 13, color: palette.muted, fontSize: 12, lineHeight: 19 },
+  footerLinks: { flexDirection: "row", flexWrap: "wrap", gap: 5, marginTop: 5 },
+  footerLink: { minHeight: 44, justifyContent: "center", paddingRight: 14 },
+  footerLinkText: { color: palette.tealDark, fontSize: 13, lineHeight: 19, fontWeight: "700" },
 });
