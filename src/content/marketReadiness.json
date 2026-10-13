@@ -16012,7 +16012,216 @@
       "isoAlpha2": "JP",
       "reviewOwner": null,
       "lastChecked": null,
-      "officialSources": [],
+      "officialSources": [
+        {
+          "title": "Act on the Protection of Personal Information (APPI): consolidated English reference and official law index",
+          "url": "https://www.ppc.go.jp/en/legal/",
+          "authority": "Personal Information Protection Commission (PPC)",
+          "sourceType": "regulator-guidance",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "PPC Japanese laws and regulations index for personal information protection",
+          "url": "https://www.ppc.go.jp/legal/laws/",
+          "authority": "PPC",
+          "sourceType": "regulator-legislation-index",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "PMDA: Software as a Medical Device and qualification under the PMD Act",
+          "url": "https://www.pmda.go.jp/english/review-services/reviews/0009.html",
+          "authority": "Pharmaceuticals and Medical Devices Agency (PMDA)",
+          "sourceType": "regulator-guidance",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "PMDA: medical-device regulatory information and QMS requirements",
+          "url": "https://www.pmda.go.jp/english/review-services/regulatory-info/0004.html",
+          "authority": "PMDA",
+          "sourceType": "regulator-guidance",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "PMDA: FAQ on importing and marketing medical devices and SaMD determination",
+          "url": "https://www.pmda.go.jp/english/about-pmda/0004.html",
+          "authority": "PMDA",
+          "sourceType": "regulator-guidance",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Act on Securing Quality, Efficacy and Safety of Products Including Pharmaceuticals and Medical Devices (PMD Act; Japanese text)",
+          "url": "https://www.mhlw.go.jp/web/t_doc?dataId=81004000&dataType=0&pageNo=1",
+          "authority": "Ministry of Health, Labour and Welfare (MHLW)",
+          "sourceType": "legislation",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "2025 PMD Act amendments and staged commencement notices",
+          "url": "https://www.mhlw.go.jp/stf/newpage_58083.html",
+          "authority": "MHLW",
+          "sourceType": "legislation-and-commencement",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Act for Eliminating Discrimination against Persons with Disabilities: English policy and law information",
+          "url": "https://www8.cao.go.jp/shougai/english/index-e.html",
+          "authority": "Cabinet Office",
+          "sourceType": "government-guidance",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Cabinet Office 2024 disability policy report: reasonable accommodation duty for businesses from 1 April 2024",
+          "url": "https://www8.cao.go.jp/shougai/english/annualreport/2024/pdf/index.pdf",
+          "authority": "Cabinet Office",
+          "sourceType": "government-guidance",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Consumer Affairs Agency: consumer law index, including Consumer Contract Act and Specified Commercial Transactions Act",
+          "url": "https://www.caa.go.jp/en/law/",
+          "authority": "Consumer Affairs Agency (CAA)",
+          "sourceType": "regulator-legislation-index",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "CAA English guide to the Act on Specified Commercial Transactions",
+          "url": "https://www.no-trouble.caa.go.jp/foreignlanguage/english/",
+          "authority": "CAA",
+          "sourceType": "regulator-guidance",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "CAA English consumer transaction information",
+          "url": "https://www.caa.go.jp/en/policy/consumer_transaction/",
+          "authority": "CAA",
+          "sourceType": "regulator-guidance",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "METI: Interpretative Guidelines on Electronic Commerce and Information Property Trading",
+          "url": "https://www.meti.go.jp/english/policy/mono_info_service/information_economy/index.html",
+          "authority": "Ministry of Economy, Trade and Industry (METI)",
+          "sourceType": "government-guidance",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "METI: 2025 revision notice for e-commerce and information-property guidelines",
+          "url": "https://www.meti.go.jp/press/2024/02/20250212003/20250212003.html",
+          "authority": "METI",
+          "sourceType": "government-guidance",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Agency for Cultural Affairs: Copyright Act and amendment index",
+          "url": "https://www.bunka.go.jp/english/policy/copyright/index.html",
+          "authority": "Agency for Cultural Affairs",
+          "sourceType": "legislation-index",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Cabinet Office: Act on the Promotion of Policy on Children and related policy material",
+          "url": "https://www.cfa.go.jp/en/policies/child",
+          "authority": "Children and Families Agency",
+          "sourceType": "government-guidance",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Cabinet Office NPO portal: legal and operational information for specified nonprofit corporations",
+          "url": "https://www.npo-homepage.go.jp/about/npo-kisochishiki/npo-gaiyou",
+          "authority": "Cabinet Office",
+          "sourceType": "government-guidance",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "FDMA English ambulance-use guide for visitors to Japan (119)",
+          "url": "https://www.fdma.go.jp/publication/portal/items/portal001_pamphiet_english.pdf",
+          "authority": "Fire and Disaster Management Agency (FDMA)",
+          "sourceType": "emergency-authority-guidance",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "FDMA emergency-use guide and multilingual materials index",
+          "url": "https://www.fdma.go.jp/publication/portal/post1.html",
+          "authority": "FDMA",
+          "sourceType": "emergency-authority-guidance",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Statistics Bureau administrative map: Japan has 47 prefectures (as of 1 April 2025)",
+          "url": "https://www.stat.go.jp/english/data/handbook/pdf/shjmap_a.pdf",
+          "authority": "Statistics Bureau of Japan",
+          "sourceType": "official-territorial-register",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Statistics Bureau: Social and Demographic Statistics by prefecture and municipality",
+          "url": "https://www.stat.go.jp/english/data/ssds/outline.html",
+          "authority": "Statistics Bureau of Japan",
+          "sourceType": "official-territorial-register",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Japanese Constitution, official English reference translation",
+          "url": "https://www.japaneselawtranslation.go.jp/en/laws/view/174",
+          "authority": "Japanese Law Translation Database System / Ministry of Justice",
+          "sourceType": "constitutional-source",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Apple App Review Guidelines",
+          "url": "https://developer.apple.com/app-store/review/guidelines/",
+          "authority": "Apple",
+          "sourceType": "platform-policy",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Google Play Health Content and Services policy",
+          "url": "https://support.google.com/googleplay/android-developer/answer/16679511?hl=en-GB",
+          "authority": "Google Play",
+          "sourceType": "platform-policy",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Act on Improving Transparency and Fairness of Specified Digital Platforms (METI overview)",
+          "url": "https://www.meti.go.jp/english/policy/mono_info_service/information_economy/digital_platforms/index.html",
+          "authority": "METI",
+          "sourceType": "legislation-and-guidance",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Basic Act on Cybersecurity and government policy overview",
+          "url": "https://www.nisc.go.jp/eng/",
+          "authority": "National center of Incident readiness and Strategy for Cybersecurity (NISC)",
+          "sourceType": "government-guidance",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        }
+      ],
       "reviewAreas": [
         {
           "area": "privacy-and-health-data",
@@ -16127,7 +16336,386 @@
           "reviewer": null
         }
       ],
-      "subnationalAreas": []
+      "subnationalAreas": [
+        {
+          "name": "Hokkaido",
+          "status": "not-assessed",
+          "reason": "Prefecture-level screening target only. No prefectural, municipal, ordinance-designated city, ward or jurisdictional applicability review performed.",
+          "source": "https://www.stat.go.jp/english/data/handbook/pdf/shjmap_a.pdf",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Aomori",
+          "status": "not-assessed",
+          "reason": "Prefecture-level screening target only. No prefectural, municipal, ordinance-designated city, ward or jurisdictional applicability review performed.",
+          "source": "https://www.stat.go.jp/english/data/handbook/pdf/shjmap_a.pdf",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Iwate",
+          "status": "not-assessed",
+          "reason": "Prefecture-level screening target only. No prefectural, municipal, ordinance-designated city, ward or jurisdictional applicability review performed.",
+          "source": "https://www.stat.go.jp/english/data/handbook/pdf/shjmap_a.pdf",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Miyagi",
+          "status": "not-assessed",
+          "reason": "Prefecture-level screening target only. No prefectural, municipal, ordinance-designated city, ward or jurisdictional applicability review performed.",
+          "source": "https://www.stat.go.jp/english/data/handbook/pdf/shjmap_a.pdf",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Akita",
+          "status": "not-assessed",
+          "reason": "Prefecture-level screening target only. No prefectural, municipal, ordinance-designated city, ward or jurisdictional applicability review performed.",
+          "source": "https://www.stat.go.jp/english/data/handbook/pdf/shjmap_a.pdf",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Yamagata",
+          "status": "not-assessed",
+          "reason": "Prefecture-level screening target only. No prefectural, municipal, ordinance-designated city, ward or jurisdictional applicability review performed.",
+          "source": "https://www.stat.go.jp/english/data/handbook/pdf/shjmap_a.pdf",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Fukushima",
+          "status": "not-assessed",
+          "reason": "Prefecture-level screening target only. No prefectural, municipal, ordinance-designated city, ward or jurisdictional applicability review performed.",
+          "source": "https://www.stat.go.jp/english/data/handbook/pdf/shjmap_a.pdf",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Ibaraki",
+          "status": "not-assessed",
+          "reason": "Prefecture-level screening target only. No prefectural, municipal, ordinance-designated city, ward or jurisdictional applicability review performed.",
+          "source": "https://www.stat.go.jp/english/data/handbook/pdf/shjmap_a.pdf",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Tochigi",
+          "status": "not-assessed",
+          "reason": "Prefecture-level screening target only. No prefectural, municipal, ordinance-designated city, ward or jurisdictional applicability review performed.",
+          "source": "https://www.stat.go.jp/english/data/handbook/pdf/shjmap_a.pdf",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Gunma",
+          "status": "not-assessed",
+          "reason": "Prefecture-level screening target only. No prefectural, municipal, ordinance-designated city, ward or jurisdictional applicability review performed.",
+          "source": "https://www.stat.go.jp/english/data/handbook/pdf/shjmap_a.pdf",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Saitama",
+          "status": "not-assessed",
+          "reason": "Prefecture-level screening target only. No prefectural, municipal, ordinance-designated city, ward or jurisdictional applicability review performed.",
+          "source": "https://www.stat.go.jp/english/data/handbook/pdf/shjmap_a.pdf",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Chiba",
+          "status": "not-assessed",
+          "reason": "Prefecture-level screening target only. No prefectural, municipal, ordinance-designated city, ward or jurisdictional applicability review performed.",
+          "source": "https://www.stat.go.jp/english/data/handbook/pdf/shjmap_a.pdf",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Tokyo",
+          "status": "not-assessed",
+          "reason": "Prefecture-level screening target only. No prefectural, municipal, ordinance-designated city, ward or jurisdictional applicability review performed.",
+          "source": "https://www.stat.go.jp/english/data/handbook/pdf/shjmap_a.pdf",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Kanagawa",
+          "status": "not-assessed",
+          "reason": "Prefecture-level screening target only. No prefectural, municipal, ordinance-designated city, ward or jurisdictional applicability review performed.",
+          "source": "https://www.stat.go.jp/english/data/handbook/pdf/shjmap_a.pdf",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Niigata",
+          "status": "not-assessed",
+          "reason": "Prefecture-level screening target only. No prefectural, municipal, ordinance-designated city, ward or jurisdictional applicability review performed.",
+          "source": "https://www.stat.go.jp/english/data/handbook/pdf/shjmap_a.pdf",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Toyama",
+          "status": "not-assessed",
+          "reason": "Prefecture-level screening target only. No prefectural, municipal, ordinance-designated city, ward or jurisdictional applicability review performed.",
+          "source": "https://www.stat.go.jp/english/data/handbook/pdf/shjmap_a.pdf",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Ishikawa",
+          "status": "not-assessed",
+          "reason": "Prefecture-level screening target only. No prefectural, municipal, ordinance-designated city, ward or jurisdictional applicability review performed.",
+          "source": "https://www.stat.go.jp/english/data/handbook/pdf/shjmap_a.pdf",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Fukui",
+          "status": "not-assessed",
+          "reason": "Prefecture-level screening target only. No prefectural, municipal, ordinance-designated city, ward or jurisdictional applicability review performed.",
+          "source": "https://www.stat.go.jp/english/data/handbook/pdf/shjmap_a.pdf",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Yamanashi",
+          "status": "not-assessed",
+          "reason": "Prefecture-level screening target only. No prefectural, municipal, ordinance-designated city, ward or jurisdictional applicability review performed.",
+          "source": "https://www.stat.go.jp/english/data/handbook/pdf/shjmap_a.pdf",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Nagano",
+          "status": "not-assessed",
+          "reason": "Prefecture-level screening target only. No prefectural, municipal, ordinance-designated city, ward or jurisdictional applicability review performed.",
+          "source": "https://www.stat.go.jp/english/data/handbook/pdf/shjmap_a.pdf",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Gifu",
+          "status": "not-assessed",
+          "reason": "Prefecture-level screening target only. No prefectural, municipal, ordinance-designated city, ward or jurisdictional applicability review performed.",
+          "source": "https://www.stat.go.jp/english/data/handbook/pdf/shjmap_a.pdf",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Shizuoka",
+          "status": "not-assessed",
+          "reason": "Prefecture-level screening target only. No prefectural, municipal, ordinance-designated city, ward or jurisdictional applicability review performed.",
+          "source": "https://www.stat.go.jp/english/data/handbook/pdf/shjmap_a.pdf",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Aichi",
+          "status": "not-assessed",
+          "reason": "Prefecture-level screening target only. No prefectural, municipal, ordinance-designated city, ward or jurisdictional applicability review performed.",
+          "source": "https://www.stat.go.jp/english/data/handbook/pdf/shjmap_a.pdf",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Mie",
+          "status": "not-assessed",
+          "reason": "Prefecture-level screening target only. No prefectural, municipal, ordinance-designated city, ward or jurisdictional applicability review performed.",
+          "source": "https://www.stat.go.jp/english/data/handbook/pdf/shjmap_a.pdf",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Shiga",
+          "status": "not-assessed",
+          "reason": "Prefecture-level screening target only. No prefectural, municipal, ordinance-designated city, ward or jurisdictional applicability review performed.",
+          "source": "https://www.stat.go.jp/english/data/handbook/pdf/shjmap_a.pdf",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Kyoto",
+          "status": "not-assessed",
+          "reason": "Prefecture-level screening target only. No prefectural, municipal, ordinance-designated city, ward or jurisdictional applicability review performed.",
+          "source": "https://www.stat.go.jp/english/data/handbook/pdf/shjmap_a.pdf",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Osaka",
+          "status": "not-assessed",
+          "reason": "Prefecture-level screening target only. No prefectural, municipal, ordinance-designated city, ward or jurisdictional applicability review performed.",
+          "source": "https://www.stat.go.jp/english/data/handbook/pdf/shjmap_a.pdf",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Hyogo",
+          "status": "not-assessed",
+          "reason": "Prefecture-level screening target only. No prefectural, municipal, ordinance-designated city, ward or jurisdictional applicability review performed.",
+          "source": "https://www.stat.go.jp/english/data/handbook/pdf/shjmap_a.pdf",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Nara",
+          "status": "not-assessed",
+          "reason": "Prefecture-level screening target only. No prefectural, municipal, ordinance-designated city, ward or jurisdictional applicability review performed.",
+          "source": "https://www.stat.go.jp/english/data/handbook/pdf/shjmap_a.pdf",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Wakayama",
+          "status": "not-assessed",
+          "reason": "Prefecture-level screening target only. No prefectural, municipal, ordinance-designated city, ward or jurisdictional applicability review performed.",
+          "source": "https://www.stat.go.jp/english/data/handbook/pdf/shjmap_a.pdf",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Tottori",
+          "status": "not-assessed",
+          "reason": "Prefecture-level screening target only. No prefectural, municipal, ordinance-designated city, ward or jurisdictional applicability review performed.",
+          "source": "https://www.stat.go.jp/english/data/handbook/pdf/shjmap_a.pdf",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Shimane",
+          "status": "not-assessed",
+          "reason": "Prefecture-level screening target only. No prefectural, municipal, ordinance-designated city, ward or jurisdictional applicability review performed.",
+          "source": "https://www.stat.go.jp/english/data/handbook/pdf/shjmap_a.pdf",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Okayama",
+          "status": "not-assessed",
+          "reason": "Prefecture-level screening target only. No prefectural, municipal, ordinance-designated city, ward or jurisdictional applicability review performed.",
+          "source": "https://www.stat.go.jp/english/data/handbook/pdf/shjmap_a.pdf",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Hiroshima",
+          "status": "not-assessed",
+          "reason": "Prefecture-level screening target only. No prefectural, municipal, ordinance-designated city, ward or jurisdictional applicability review performed.",
+          "source": "https://www.stat.go.jp/english/data/handbook/pdf/shjmap_a.pdf",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Yamaguchi",
+          "status": "not-assessed",
+          "reason": "Prefecture-level screening target only. No prefectural, municipal, ordinance-designated city, ward or jurisdictional applicability review performed.",
+          "source": "https://www.stat.go.jp/english/data/handbook/pdf/shjmap_a.pdf",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Tokushima",
+          "status": "not-assessed",
+          "reason": "Prefecture-level screening target only. No prefectural, municipal, ordinance-designated city, ward or jurisdictional applicability review performed.",
+          "source": "https://www.stat.go.jp/english/data/handbook/pdf/shjmap_a.pdf",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Kagawa",
+          "status": "not-assessed",
+          "reason": "Prefecture-level screening target only. No prefectural, municipal, ordinance-designated city, ward or jurisdictional applicability review performed.",
+          "source": "https://www.stat.go.jp/english/data/handbook/pdf/shjmap_a.pdf",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Ehime",
+          "status": "not-assessed",
+          "reason": "Prefecture-level screening target only. No prefectural, municipal, ordinance-designated city, ward or jurisdictional applicability review performed.",
+          "source": "https://www.stat.go.jp/english/data/handbook/pdf/shjmap_a.pdf",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Kochi",
+          "status": "not-assessed",
+          "reason": "Prefecture-level screening target only. No prefectural, municipal, ordinance-designated city, ward or jurisdictional applicability review performed.",
+          "source": "https://www.stat.go.jp/english/data/handbook/pdf/shjmap_a.pdf",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Fukuoka",
+          "status": "not-assessed",
+          "reason": "Prefecture-level screening target only. No prefectural, municipal, ordinance-designated city, ward or jurisdictional applicability review performed.",
+          "source": "https://www.stat.go.jp/english/data/handbook/pdf/shjmap_a.pdf",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Saga",
+          "status": "not-assessed",
+          "reason": "Prefecture-level screening target only. No prefectural, municipal, ordinance-designated city, ward or jurisdictional applicability review performed.",
+          "source": "https://www.stat.go.jp/english/data/handbook/pdf/shjmap_a.pdf",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Nagasaki",
+          "status": "not-assessed",
+          "reason": "Prefecture-level screening target only. No prefectural, municipal, ordinance-designated city, ward or jurisdictional applicability review performed.",
+          "source": "https://www.stat.go.jp/english/data/handbook/pdf/shjmap_a.pdf",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Kumamoto",
+          "status": "not-assessed",
+          "reason": "Prefecture-level screening target only. No prefectural, municipal, ordinance-designated city, ward or jurisdictional applicability review performed.",
+          "source": "https://www.stat.go.jp/english/data/handbook/pdf/shjmap_a.pdf",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Oita",
+          "status": "not-assessed",
+          "reason": "Prefecture-level screening target only. No prefectural, municipal, ordinance-designated city, ward or jurisdictional applicability review performed.",
+          "source": "https://www.stat.go.jp/english/data/handbook/pdf/shjmap_a.pdf",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Miyazaki",
+          "status": "not-assessed",
+          "reason": "Prefecture-level screening target only. No prefectural, municipal, ordinance-designated city, ward or jurisdictional applicability review performed.",
+          "source": "https://www.stat.go.jp/english/data/handbook/pdf/shjmap_a.pdf",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Kagoshima",
+          "status": "not-assessed",
+          "reason": "Prefecture-level screening target only. No prefectural, municipal, ordinance-designated city, ward or jurisdictional applicability review performed.",
+          "source": "https://www.stat.go.jp/english/data/handbook/pdf/shjmap_a.pdf",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Okinawa",
+          "status": "not-assessed",
+          "reason": "Prefecture-level screening target only. No prefectural, municipal, ordinance-designated city, ward or jurisdictional applicability review performed.",
+          "source": "https://www.stat.go.jp/english/data/handbook/pdf/shjmap_a.pdf",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        }
+      ],
+      "sourceDiscoveryCheckedOn": "2026-10-13",
+      "sourceDiscoveryNote": "Initial Japan source discovery, not legal advice or a market screen. All 14 review areas and national/subnational reviews remain not-assessed; release remains blocked. PPC warns that only authentic Japanese legislation has legal effect and English translations are reference only. PMDA says intended use and risk matter for medical-software qualification, which must be assessed against the final product. The 47-prefecture queue is only a top-level screening scaffold; municipalities, ordinance-designated cities and wards, ordinances, language and emergency arrangements remain outstanding."
     },
     {
       "name": "Jersey",
