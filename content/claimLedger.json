@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "status": "not-reviewed",
+  "lastUpdated": "2026-10-13",
+  "releaseRule": "Every atomic medical claim must have a source, limits, risk level and explicit qualified-review decision before publication.",
+  "coverage": [
+    { "id": "guides:understanding-dissection", "path": "src/content/guides.ts", "selector": "slug=understanding-dissection", "units": "all summaries, paragraphs and bullets", "risk": "high", "reviewerRole": "qualified clinician" },
+    { "id": "guides:tests-and-terms", "path": "src/content/guides.ts", "selector": "slug=tests-and-terms", "units": "all summaries, paragraphs and bullets", "risk": "high", "reviewerRole": "qualified clinician" },
+    { "id": "guides:without-stroke", "path": "src/content/guides.ts", "selector": "slug=without-stroke", "units": "all summaries, paragraphs and bullets", "risk": "high", "reviewerRole": "qualified clinician" },
+    { "id": "guides:with-stroke", "path": "src/content/guides.ts", "selector": "slug=with-stroke", "units": "all summaries, paragraphs and bullets", "risk": "high", "reviewerRole": "qualified clinician" },
+    { "id": "guides:recovery-and-quality-of-life", "path": "src/content/guides.ts", "selector": "slug=recovery-and-quality-of-life", "units": "all summaries, paragraphs and bullets", "risk": "high", "reviewerRole": "qualified clinician" },
+    { "id": "guides:supporting-someone", "path": "src/content/guides.ts", "selector": "slug=supporting-someone", "units": "all summaries, paragraphs and bullets", "risk": "medium", "reviewerRole": "qualified clinician and carer reviewer" },
+    { "id": "guides:follow-up-questions", "path": "src/content/guides.ts", "selector": "slug=follow-up-questions", "units": "all summaries, paragraphs and bullets", "risk": "high", "reviewerRole": "qualified clinician" },
+    { "id": "glossary:all", "path": "src/content/glossary.ts", "selector": "all exported terms", "units": "definition and limit for every term", "risk": "high", "reviewerRole": "qualified clinician" },
+    { "id": "appointment-prompts:all", "path": "src/features/appointments/model.mjs", "selector": "appointmentPrompts", "units": "every selectable prompt", "risk": "high", "reviewerRole": "qualified clinician" },
+    { "id": "urgent-help:all", "path": "app/urgent-help.tsx and src/content/guides.ts", "selector": "urgent-help wording", "units": "every emergency instruction and limitation", "risk": "critical", "reviewerRole": "qualified clinician and local emergency-content reviewer" },
+    { "id": "homepage:medical-copy", "path": "app/index.tsx", "selector": "medical-purpose copy", "units": "condition, audience and safety wording", "risk": "high", "reviewerRole": "qualified clinician" },
+    { "id": "personal-card:safety-copy", "path": "app/personal-card.tsx and src/features/cards/model.mjs", "selector": "card warnings and export footer", "units": "every medical-record, emergency-plan and medicine warning", "risk": "high", "reviewerRole": "qualified clinician and privacy reviewer" },
+    { "id": "milestone-card:safety-copy", "path": "app/milestone-card.tsx and src/features/cards/model.mjs", "selector": "milestone disclaimer", "units": "every diagnosis, proof and medical-advice limitation", "risk": "medium", "reviewerRole": "clinical and patient/carer reviewers" }
+  ],
+  "claims": [
+    { "id": "claim-cad-vad-definition", "contentRef": "guides:understanding-dissection", "text": "A cervical artery dissection is a problem in the wall of an artery in the neck.", "sourceIds": ["aha-2024", "eso-2021"], "evidenceType": "scientific-statement-and-guideline", "limits": "General definition; does not interpret an individual scan.", "jurisdiction": "general", "risk": "high", "decision": "not-reviewed", "reviewer": null, "reviewedOn": null, "nextReviewOn": null },
+    { "id": "claim-tests-do-not-interpret", "contentRef": "guides:tests-and-terms", "text": "A definition cannot tell you whether a finding is current, how serious it is, what caused it, or what care you need.", "sourceIds": ["aha-2024", "eso-2021"], "evidenceType": "safety-limitation", "limits": "Must not discourage a person from asking their clinician to explain a report.", "jurisdiction": "general", "risk": "high", "decision": "not-reviewed", "reviewer": null, "reviewedOn": null, "nextReviewOn": null },
+    { "id": "claim-urgent-stroke-action", "contentRef": "urgent-help:all", "text": "Sudden symptoms that may be a stroke require contacting local emergency services now.", "sourceIds": [], "evidenceType": "emergency-safety-wording", "limits": "No local number is supplied until that jurisdiction is verified.", "jurisdiction": "general", "risk": "critical", "decision": "not-reviewed", "reviewer": null, "reviewedOn": null, "nextReviewOn": null },
+    { "id": "claim-spoon-theory-limit", "contentRef": "guides:recovery-and-quality-of-life", "text": "Spoon theory is a metaphor some people use for limited energy; it is not a clinical measure.", "sourceIds": ["spoon-theory-oxford"], "evidenceType": "lived-experience-framework", "limits": "Must not be presented as a diagnostic or fatigue measurement tool.", "jurisdiction": "general", "risk": "medium", "decision": "not-reviewed", "reviewer": null, "reviewedOn": null, "nextReviewOn": null },
+    { "id": "claim-card-not-record", "contentRef": "personal-card:safety-copy", "text": "The personal information card is not an official medical record or emergency plan.", "sourceIds": [], "evidenceType": "product-safety-boundary", "limits": "Must remain visible in preview and export.", "jurisdiction": "general", "risk": "high", "decision": "not-reviewed", "reviewer": null, "reviewedOn": null, "nextReviewOn": null }
+  ]
+}
