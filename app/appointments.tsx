@@ -1,7 +1,8 @@
 import { useEffect, useRef, useState } from "react";
 import { Alert, Platform, Pressable, StyleSheet, Text, TextInput, View } from "react-native";
+import { useLocalSearchParams } from "expo-router";
 import { AppPage, BackHome, Card, PageHeading } from "../src/components/AppPage";
-import { appointmentPrompts, emptyAppointmentSheet, MAX_NOTE_LENGTH, type AppointmentSheet } from "../src/features/appointments/model.mjs";
+import { appointmentPrompts, emptyAppointmentSheet, guidePromptSuggestions, MAX_NOTE_LENGTH, type AppointmentSheet } from "../src/features/appointments/model.mjs";
 import { deleteAppointmentSheet, exportAppointmentSheet, loadAppointmentSheet, saveAppointmentSheet } from "../src/features/appointments/store";
 
 export default function AppointmentsScreen() {
@@ -12,6 +13,7 @@ export default function AppointmentsScreen() {
   const [groupIndex, setGroupIndex] = useState(0);
   const edited = useRef(false);
   const [message, setMessage] = useState("Loading saved questions from this device…");
+  const { guide } = useLocalSearchParams<{ guide?: string }>();
   const promptGroups = [...new Set(appointmentPrompts.map((prompt) => prompt.group))];
   useEffect(() => {
     if (Platform.OS !== "web" || typeof document === "undefined") return;
@@ -21,7 +23,7 @@ export default function AppointmentsScreen() {
     document.head.appendChild(style);
     return () => style.remove();
   }, []);
-  useEffect(() => { let active = true; void loadAppointmentSheet().then((value) => { if (active && !edited.current) { setSheet(value); setMessage("Your sheet is stored on this device only when you choose Save."); } }).catch(() => { if (active) setMessage("Device storage could not be read. Your current edits remain on screen until you leave."); }); return () => { active = false; }; }, []);
+  useEffect(() => { let active = true; void loadAppointmentSheet().then((value) => { if (active && !edited.current) { const suggested = typeof guide === "string" ? guidePromptSuggestions[guide] ?? [] : []; const shouldSuggest = value.selectedIds.length === 0 && suggested.length > 0; setSheet(shouldSuggest ? { ...value, selectedIds: suggested } : value); setMessage(shouldSuggest ? "A few questions related to the guide are selected for you to review. Nothing is saved until you choose Save." : "Your sheet is stored on this device only when you choose Save."); } }).catch(() => { if (active) setMessage("Device storage could not be read. Your current edits remain on screen until you leave."); }); return () => { active = false; }; }, [guide]);
 
   const toggle = (id: string) => { edited.current = true; setSaved(false); setMessage("You have unsaved changes. Choose Save to keep them on this device."); setSheet((current) => ({ ...current, selectedIds: current.selectedIds.includes(id) ? current.selectedIds.filter((selected) => selected !== id) : [...current.selectedIds, id] })); };
   const toggleGroup = (group: string) => {

@@ -19,6 +19,17 @@ export const appointmentPrompts = [
   { id: "between-appointments", group: "Before I leave", text: "Who can I contact with a non-emergency question between appointments?" },
 ];
 
+/** Suggested prompts are only pre-selected in memory after a person chooses a guide action. They are never saved automatically. */
+export const guidePromptSuggestions = {
+  "understanding-dissection": ["diagnosis", "tests", "next-steps"],
+  "tests-and-terms": ["tests", "follow-up-imaging"],
+  "without-stroke": ["follow-up-imaging", "fatigue-pattern", "daily-activities", "between-appointments"],
+  "with-stroke": ["access-needs", "daily-life", "fatigue-pattern", "daily-activities", "support"],
+  "recovery-and-quality-of-life": ["daily-life", "fatigue-pattern", "daily-activities", "support"],
+  "supporting-someone": ["appointment-support", "access-needs", "support", "next-steps"],
+  "follow-up-questions": ["priority", "tests", "next-steps", "pending-results", "between-appointments"],
+};
+
 /** @returns {{ selectedIds: string[], note: string }} */
 export function emptyAppointmentSheet() {
   return { selectedIds: [], note: "" };

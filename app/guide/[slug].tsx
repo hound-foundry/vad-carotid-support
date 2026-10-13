@@ -55,7 +55,7 @@ export default function GuideScreen() {
     </Card>
     <Card title="Turn reading into a next step">
       <Text style={styles.nextStep}>If this guide raises a question, add it to a private appointment sheet. You choose what to include; nothing is sent to this project.</Text>
-      <Link href="/appointments" asChild><Pressable accessibilityRole="link" style={({ pressed }) => [styles.nextStepLink, pressed && styles.pressed]}><Text style={styles.nextStepLinkText}>Open the appointment question sheet →</Text></Pressable></Link>
+      <Link href={{ pathname: "/appointments", params: { guide: guide.slug } }} asChild><Pressable accessibilityRole="link" style={({ pressed }) => [styles.nextStepLink, pressed && styles.pressed]}><Text style={styles.nextStepLinkText}>Start with questions from this guide →</Text></Pressable></Link>
     </Card>
     {guide.sections.length > 1 ? <Card title="Choose your reading pace">
       <Pressable accessibilityRole="checkbox" accessibilityLabel="Read one section at a time" accessibilityState={{ checked: oneAtATime }} onPress={() => { setSectionIndex(0); setOneAtATime((current) => !current); }} style={styles.paceOption}>
