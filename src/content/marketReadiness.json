@@ -3798,8 +3798,50 @@
       "release": "blocked",
       "isoAlpha2": "BZ",
       "reviewOwner": null,
-      "lastChecked": null,
-      "officialSources": [],
+      "lastChecked": "2026-10-13",
+      "officialSources": [
+        {
+          "title": "Data Protection Act 2021",
+          "url": "https://www.nationalassembly.gov.bz/wp-content/uploads/2021/12/Act-No-45-of-2021-Data-Protection-Act.pdf",
+          "authority": "National Assembly of Belize",
+          "sourceType": "privacy-law",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Digital government and Data Protection Act references",
+          "url": "https://egov.gov.bz/digital-journey/",
+          "authority": "Government of Belize e-Governance",
+          "sourceType": "privacy-policy",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Licensing and accreditation of health services",
+          "url": "https://www.health.gov.bz/services/licensing-and-accreditation/",
+          "authority": "Ministry of Health and Wellness, Belize",
+          "sourceType": "health-regulator",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "National Emergency Management Organization",
+          "url": "https://publicservice.gov.bz/national-emergency-management-organization/",
+          "authority": "Government of Belize",
+          "sourceType": "emergency-management",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Emergency numbers country brief",
+          "url": "https://www.mpuele.gov.bz/wp-content/uploads/2024/04/Belize-Country-Brief_Final_CTU_March-21.pdf",
+          "authority": "Government of Belize",
+          "sourceType": "emergency-guidance",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        }
+      ],
+      "sourceDiscoveryCheckedOn": "2026-10-13",
       "reviewAreas": [
         {
           "area": "privacy-and-health-data",

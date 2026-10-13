@@ -84,6 +84,8 @@ Barbados source discovery (13 October 2026) now records the Data Protection Comm
 
 Bosnia and Herzegovina source discovery (13 October 2026) now records the personal-data protection agency, its regulations portal, the national medicines and medical-devices agency, medical-device rules, and official emergency police contact guidance. These are source leads only. Bosnia and Herzegovina remains blocked pending qualified review across Bosnian, Croatian, Serbian and English materials, including entity-level health and emergency requirements.
 
+Belize source discovery (13 October 2026) now records the Data Protection Act, government digital-service references, Ministry of Health licensing and accreditation, National Emergency Management Organization material, and emergency-number guidance. These are source leads only. Belize remains blocked pending qualified review of English-language national privacy, medical-software, accessibility, emergency and distribution requirements.
+
 ### Platform distribution policies (not legislation)
 
 | Platform | Official policy source | Release work still needed |
