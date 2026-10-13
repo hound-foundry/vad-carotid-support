@@ -19,6 +19,7 @@ const home = await readFile(join(root, "index.html"), "utf8");
 const personal = await readFile(join(root, "personal-card.html"), "utf8");
 const milestone = await readFile(join(root, "milestone-card.html"), "utf8");
 const headers = await readFile(join(root, "_headers"), "utf8");
+const manifest = JSON.parse(await readFile(join(root, "manifest.json"), "utf8"));
 assert.match(urgent, /contact local emergency services now/i, "urgent-help route must retain generic emergency wording");
 assert.match(home, /What this app can and cannot do/i, "home route must explain the product boundary");
 assert.match(home, /@media print/, "export must include print styles");
@@ -27,5 +28,8 @@ assert.match(personal, /not an official medical record or emergency plan/i, "per
 assert.match(milestone, /not medical advice or proof of diagnosis/i, "milestone card safety label must be exported");
 for (const directive of ["X-Content-Type-Options: nosniff", "Referrer-Policy: strict-origin-when-cross-origin", "Permissions-Policy: camera=(), microphone=(), geolocation=()"])
   assert.match(headers, new RegExp(directive.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")), `static headers lost directive: ${directive}`);
+assert.equal(manifest.id, "/", "manifest must define a stable app id");
+assert.equal(manifest.scope, "/", "manifest must define the static app scope");
+assert.equal(manifest.lang, "en", "manifest must declare the authored language");
 assert.ok(files.length >= 25);
 console.log(`Validated ${files.length} static route and shell artifacts in dist/.`);
