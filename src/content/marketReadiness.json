@@ -4608,8 +4608,50 @@
       "release": "blocked",
       "isoAlpha2": "BA",
       "reviewOwner": null,
-      "lastChecked": null,
-      "officialSources": [],
+      "lastChecked": "2026-10-13",
+      "officialSources": [
+        {
+          "title": "Personal Data Protection Agency competencies",
+          "url": "https://azlp.ba/o_agenciji/nadleznosti/default.aspx?id=459&langTag=en-US&pageIndex=1",
+          "authority": "Agency for Personal Data Protection in Bosnia and Herzegovina",
+          "sourceType": "privacy-regulator",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Personal data protection regulations",
+          "url": "https://www.azlp.ba/propisi/Default.aspx?id=5&langTag=en-US&pageIndex=1",
+          "authority": "Agency for Personal Data Protection in Bosnia and Herzegovina",
+          "sourceType": "privacy-law",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Agency for Medicines and Medical Devices",
+          "url": "https://almbih.gov.ba/en/agencija-za-lijekove-i-medicinska-sredstva-bosne-i-hercegovine-eng/",
+          "authority": "Agency for Medicines and Medical Devices of Bosnia and Herzegovina",
+          "sourceType": "medical-device-regulator",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Medical-device ordinance",
+          "url": "https://www.almbih.gov.ba/wp-content/uploads/2023/10/ordinance_on_medical_devices.pdf",
+          "authority": "Agency for Medicines and Medical Devices of Bosnia and Herzegovina",
+          "sourceType": "medical-device-law",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Emergency police contact",
+          "url": "https://sipa.gov.ba/en/contact",
+          "authority": "State Investigation and Protection Agency, Bosnia and Herzegovina",
+          "sourceType": "emergency-guidance",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        }
+      ],
+      "sourceDiscoveryCheckedOn": "2026-10-13",
       "reviewAreas": [
         {
           "area": "privacy-and-health-data",
