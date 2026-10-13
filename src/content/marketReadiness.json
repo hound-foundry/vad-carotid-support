@@ -6846,7 +6846,208 @@
       "isoAlpha2": "HK",
       "reviewOwner": null,
       "lastChecked": null,
-      "officialSources": [],
+      "officialSources": [
+        {
+          "title": "Personal Data (Privacy) Ordinance (Cap. 486), current law source",
+          "url": "https://www.elegislation.gov.hk/hk/cap486",
+          "authority": "Hong Kong e-Legislation / Department of Justice",
+          "sourceType": "legislation",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "PCPD overview of the Personal Data (Privacy) Ordinance and data protection principles",
+          "url": "https://www.pcpd.org.hk/english/data_privacy_law/ordinance_at_a_Glance/ordinance.html",
+          "authority": "Office of the Privacy Commissioner for Personal Data (PCPD)",
+          "sourceType": "regulator-guidance",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "PCPD 2026 guidance on PDPO and the electronic health system",
+          "url": "https://www.pcpd.org.hk/english/news_events/media_statements/press_20260331.html",
+          "authority": "PCPD",
+          "sourceType": "regulator-guidance",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "PDPO section 33 cross-border transfer provision: commencement status requires current verification",
+          "url": "https://www.pcpd.org.hk/tc_chi/files/pdpo.pdf",
+          "authority": "PCPD",
+          "sourceType": "legislation-commencement-status",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Disability Discrimination Ordinance (Cap. 487)",
+          "url": "https://www.elegislation.gov.hk/hk/cap487",
+          "authority": "Hong Kong e-Legislation / Department of Justice",
+          "sourceType": "legislation",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Equal Opportunities Commission overview of disability discrimination and services",
+          "url": "https://www.eoc.org.hk/en/discrimination-laws/disability-discrimination",
+          "authority": "Equal Opportunities Commission (EOC)",
+          "sourceType": "regulator-guidance",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Digital Policy Office accessibility guidance and FAQ",
+          "url": "https://www.digitalpolicy.gov.hk/en/our_work/digital_infrastructure/digital_inclusion/accessibility/faq/",
+          "authority": "Digital Policy Office (DPO)",
+          "sourceType": "government-guidance",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Trade Descriptions Ordinance (Cap. 362)",
+          "url": "https://www.elegislation.gov.hk/hk/cap362",
+          "authority": "Hong Kong e-Legislation / Department of Justice",
+          "sourceType": "legislation",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Electronic Transactions Ordinance (Cap. 553)",
+          "url": "https://www.elegislation.gov.hk/hk/cap553",
+          "authority": "Hong Kong e-Legislation / Department of Justice",
+          "sourceType": "legislation",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Consumer Council: consumer protection and relevant Hong Kong legislation",
+          "url": "https://www.consumer.org.hk/en/consumer-rights",
+          "authority": "Consumer Council",
+          "sourceType": "regulator-guidance",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Medical Device Division: Medical Device Administrative Control System and future statutory framework",
+          "url": "https://www.dh.gov.hk/english/main/main_mdd/main_mdd.html",
+          "authority": "Department of Health (DH)",
+          "sourceType": "regulator-guidance",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Preparatory Office for the Hong Kong Centre for Medical Products Regulation",
+          "url": "https://www.dh.gov.hk/english/main/main_pocmpr/main_pocmpr.html",
+          "authority": "DH",
+          "sourceType": "government-policy",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Medical device regulatory transition and MDACS overview",
+          "url": "https://www.dh.gov.hk/tc_chi/main/main_pocmpr/files/cmpr_infobro202506_e_tc.pdf",
+          "authority": "DH",
+          "sourceType": "government-guidance",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Undesirable Medical Advertisements Ordinance (Cap. 231)",
+          "url": "https://www.elegislation.gov.hk/hk/cap231",
+          "authority": "Hong Kong e-Legislation / Department of Justice",
+          "sourceType": "legislation",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Personal Data (Privacy) Ordinance and health-data guidance materials",
+          "url": "https://www.pcpd.org.hk/english/resources_centre/response_topics/response_topics2.html",
+          "authority": "PCPD",
+          "sourceType": "regulator-guidance",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Basic Law, Article 9: official languages",
+          "url": "https://www.basiclaw.gov.hk/en/basiclaw/chapter1.html",
+          "authority": "Constitutional and Mainland Affairs Bureau",
+          "sourceType": "constitutional-source",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Copyright Ordinance (Cap. 528)",
+          "url": "https://www.elegislation.gov.hk/hk/cap528",
+          "authority": "Hong Kong e-Legislation / Department of Justice",
+          "sourceType": "legislation",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Protection of Children and Juveniles Ordinance (Cap. 213)",
+          "url": "https://www.elegislation.gov.hk/hk/cap213",
+          "authority": "Hong Kong e-Legislation / Department of Justice",
+          "sourceType": "legislation",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Inland Revenue Department guidance on tax-exempt charities and section 88",
+          "url": "https://www.ird.gov.hk/eng/tax/ach.htm",
+          "authority": "Inland Revenue Department (IRD)",
+          "sourceType": "government-guidance",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Emergency services and ambulance: 999 and accessibility route 992",
+          "url": "https://www.hkengage.gov.hk/en/essentials/basics/emergency-ambulance-services",
+          "authority": "Hong Kong Talent Engage / HKSAR Government",
+          "sourceType": "emergency-authority-guidance",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Home Affairs Department official list of Hong Kong’s 18 districts",
+          "url": "https://www.had.gov.hk/en/18_districts/my_map.htm",
+          "authority": "Home Affairs Department (HAD)",
+          "sourceType": "official-territorial-register",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Department of Justice: official status of verified copies on Hong Kong e-Legislation",
+          "url": "https://www.doj.gov.hk/en/about/orgchart_ldd_published_version.html",
+          "authority": "Department of Justice",
+          "sourceType": "official-law-publication-guidance",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Hong Kong e-Legislation important notices on verified copies and language versions",
+          "url": "https://www.elegislation.gov.hk/importantnotices",
+          "authority": "Department of Justice",
+          "sourceType": "official-law-publication-guidance",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Apple App Review Guidelines",
+          "url": "https://developer.apple.com/app-store/review/guidelines/",
+          "authority": "Apple",
+          "sourceType": "platform-policy",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Google Play Health Content and Services policy",
+          "url": "https://support.google.com/googleplay/android-developer/answer/16679511?hl=en-GB",
+          "authority": "Google Play",
+          "sourceType": "platform-policy",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        }
+      ],
       "reviewAreas": [
         {
           "area": "privacy-and-health-data",
@@ -6961,7 +7162,154 @@
           "reviewer": null
         }
       ],
-      "subnationalAreas": []
+      "subnationalAreas": [
+        {
+          "name": "Central and Western",
+          "status": "not-assessed",
+          "reason": "District-level screening target only. No district-specific or territory-wide legal applicability review performed.",
+          "source": "https://www.had.gov.hk/en/18_districts/my_map.htm",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Eastern",
+          "status": "not-assessed",
+          "reason": "District-level screening target only. No district-specific or territory-wide legal applicability review performed.",
+          "source": "https://www.had.gov.hk/en/18_districts/my_map.htm",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Southern",
+          "status": "not-assessed",
+          "reason": "District-level screening target only. No district-specific or territory-wide legal applicability review performed.",
+          "source": "https://www.had.gov.hk/en/18_districts/my_map.htm",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Wan Chai",
+          "status": "not-assessed",
+          "reason": "District-level screening target only. No district-specific or territory-wide legal applicability review performed.",
+          "source": "https://www.had.gov.hk/en/18_districts/my_map.htm",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Kowloon City",
+          "status": "not-assessed",
+          "reason": "District-level screening target only. No district-specific or territory-wide legal applicability review performed.",
+          "source": "https://www.had.gov.hk/en/18_districts/my_map.htm",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Yau Tsim Mong",
+          "status": "not-assessed",
+          "reason": "District-level screening target only. No district-specific or territory-wide legal applicability review performed.",
+          "source": "https://www.had.gov.hk/en/18_districts/my_map.htm",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Sham Shui Po",
+          "status": "not-assessed",
+          "reason": "District-level screening target only. No district-specific or territory-wide legal applicability review performed.",
+          "source": "https://www.had.gov.hk/en/18_districts/my_map.htm",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Wong Tai Sin",
+          "status": "not-assessed",
+          "reason": "District-level screening target only. No district-specific or territory-wide legal applicability review performed.",
+          "source": "https://www.had.gov.hk/en/18_districts/my_map.htm",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Kwun Tong",
+          "status": "not-assessed",
+          "reason": "District-level screening target only. No district-specific or territory-wide legal applicability review performed.",
+          "source": "https://www.had.gov.hk/en/18_districts/my_map.htm",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Tai Po",
+          "status": "not-assessed",
+          "reason": "District-level screening target only. No district-specific or territory-wide legal applicability review performed.",
+          "source": "https://www.had.gov.hk/en/18_districts/my_map.htm",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Yuen Long",
+          "status": "not-assessed",
+          "reason": "District-level screening target only. No district-specific or territory-wide legal applicability review performed.",
+          "source": "https://www.had.gov.hk/en/18_districts/my_map.htm",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Tuen Mun",
+          "status": "not-assessed",
+          "reason": "District-level screening target only. No district-specific or territory-wide legal applicability review performed.",
+          "source": "https://www.had.gov.hk/en/18_districts/my_map.htm",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "North",
+          "status": "not-assessed",
+          "reason": "District-level screening target only. No district-specific or territory-wide legal applicability review performed.",
+          "source": "https://www.had.gov.hk/en/18_districts/my_map.htm",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Sai Kung",
+          "status": "not-assessed",
+          "reason": "District-level screening target only. No district-specific or territory-wide legal applicability review performed.",
+          "source": "https://www.had.gov.hk/en/18_districts/my_map.htm",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Sha Tin",
+          "status": "not-assessed",
+          "reason": "District-level screening target only. No district-specific or territory-wide legal applicability review performed.",
+          "source": "https://www.had.gov.hk/en/18_districts/my_map.htm",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Tsuen Wan",
+          "status": "not-assessed",
+          "reason": "District-level screening target only. No district-specific or territory-wide legal applicability review performed.",
+          "source": "https://www.had.gov.hk/en/18_districts/my_map.htm",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Kwai Tsing",
+          "status": "not-assessed",
+          "reason": "District-level screening target only. No district-specific or territory-wide legal applicability review performed.",
+          "source": "https://www.had.gov.hk/en/18_districts/my_map.htm",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Islands",
+          "status": "not-assessed",
+          "reason": "District-level screening target only. No district-specific or territory-wide legal applicability review performed.",
+          "source": "https://www.had.gov.hk/en/18_districts/my_map.htm",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        }
+      ],
+      "sourceDiscoveryCheckedOn": "2026-10-13",
+      "sourceDiscoveryNote": "Initial Hong Kong SAR source discovery, not legal advice or a market screen. All national and district-level reviews remain not-assessed, and release remains blocked. Hong Kong maintains its own legislation and official consolidated laws are published on Hong Kong e-Legislation; verified PDF copies carry legal status. The PDPO’s section 33 cross-border transfer restriction has a complex commencement history and must be checked against current verified law. The Department of Health currently describes MDACS as an administrative control system while a statutory medical-device framework is being developed; verify current status and intended-purpose classification at release. The 18 district queue is a screening scaffold only; it does not cover all local applicability or territory-wide legal duties."
     },
     {
       "name": "China, Macao Special Administrative Region",

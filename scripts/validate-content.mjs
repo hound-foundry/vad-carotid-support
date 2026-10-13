@@ -245,6 +245,18 @@ assert.ok(chinaRecord.subnationalAreas.every((area) => area.status === "not-asse
 assert.ok(chinaRecord.officialSources.some((source) => source.url === "https://www.cac.gov.cn/2024-03/22/c_1712776611775634.htm"), "China cross-border data transfer rules must remain visible");
 assert.ok(chinaRecord.officialSources.some((source) => source.url === "https://www.gov.cn/zhengce/zhengceku/202308/content_6897341.htm?type=mobile-internet"), "China mobile app filing requirement must remain visible");
 assert.ok(chinaRecord.officialSources.some((source) => source.url === "https://sdca.miit.gov.cn/zwgk/fgbz/art/2026/art_4815dd4ec11d454783b83a91502a3cc7.html"), "China's current amended Cybersecurity Law source must remain visible");
+const hongKongRecord = resources.countryRecords.find((country) => country.isoAlpha2 === "HK");
+assert.ok(hongKongRecord && hongKongRecord.legalReview.status === "not-assessed" && hongKongRecord.subnationalReview.status === "not-assessed" && hongKongRecord.release === "blocked", "Hong Kong source discovery must not be mistaken for legal clearance");
+assert.equal(hongKongRecord.sourceDiscoveryCheckedOn, "2026-10-13", "Hong Kong source discovery needs its own dated record");
+assert.equal(hongKongRecord.officialSources.length, 25, "Hong Kong source leads should retain privacy, disability, device, consumer, emergency and platform-policy inventory");
+assert.ok(hongKongRecord.officialSources.every((source) => source.status === "source-lead-only" && source.checkedOn === "2026-10-13"), "Hong Kong sources must remain dated source leads only");
+assert.equal(hongKongRecord.reviewAreas.length, 14, "Every Hong Kong legal review topic must remain explicit");
+assert.ok(hongKongRecord.reviewAreas.every((area) => area.status === "not-assessed"), "Hong Kong source discovery must not change a legal review area to assessed");
+assert.deepEqual(hongKongRecord.subnationalAreas.map((area) => area.name), ["Central and Western", "Eastern", "Southern", "Wan Chai", "Kowloon City", "Yau Tsim Mong", "Sham Shui Po", "Wong Tai Sin", "Kwun Tong", "Tai Po", "Yuen Long", "Tuen Mun", "North", "Sai Kung", "Sha Tin", "Tsuen Wan", "Kwai Tsing", "Islands"], "Hong Kong must retain all 18 district screening targets");
+assert.ok(hongKongRecord.subnationalAreas.every((area) => area.status === "not-assessed" && area.checkedOn === "2026-10-13" && area.reviewer === null), "Hong Kong district source discovery must not be mistaken for local clearance");
+assert.ok(hongKongRecord.officialSources.some((source) => source.url === "https://www.elegislation.gov.hk/hk/cap486"), "Hong Kong PDPO source must remain visible");
+assert.ok(hongKongRecord.officialSources.some((source) => source.url === "https://www.dh.gov.hk/english/main/main_mdd/main_mdd.html"), "Hong Kong medical-device framework source must remain visible");
+assert.ok(hongKongRecord.officialSources.some((source) => source.url === "https://www.hkengage.gov.hk/en/essentials/basics/emergency-ambulance-services"), "Hong Kong emergency and accessibility route lead must remain visible");
 assert.equal(community.candidates.length, 3, "All three user-provided community candidates must be tracked");
 assert.ok(community.candidates.every((candidate) => candidate.status === "pending-verification" && /^\d{4}-\d{2}-\d{2}$/.test(candidate.lastChecked) && candidate.verificationNote?.trim()), "Unverified community candidates must remain hidden with a dated verification record");
 assert.ok(community.candidates.every((candidate) => /^https:\/\/www\.facebook\.com\/groups\/[0-9]+$/.test(candidate.url)), "The community verification queue may contain group links only");
