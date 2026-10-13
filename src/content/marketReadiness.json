@@ -3207,8 +3207,50 @@
       "release": "blocked",
       "isoAlpha2": "BH",
       "reviewOwner": null,
-      "lastChecked": null,
-      "officialSources": [],
+  "lastChecked": "2026-10-13",
+  "officialSources": [
+    {
+      "title": "Personal Data Protection Law No. 30 of 2018",
+      "url": "https://www.pdp.gov.bh/en/assets/pdf/regulations.pdf",
+      "authority": "Personal Data Protection Authority, Kingdom of Bahrain",
+      "sourceType": "privacy-law",
+      "checkedOn": "2026-10-13",
+      "status": "source-lead-only"
+    },
+    {
+      "title": "Personal Data Protection executive decisions",
+      "url": "https://www.pdp.gov.bh/assets/pdf/executive-decisions/eng/trans-order-sensitive-data-processing-procedures-en.pdf",
+      "authority": "Personal Data Protection Authority, Kingdom of Bahrain",
+      "sourceType": "privacy-regulation",
+      "checkedOn": "2026-10-13",
+      "status": "source-lead-only"
+    },
+    {
+      "title": "Medical device certificate service",
+      "url": "https://www.moh.gov.bh/VirtualServiceCenter/CenterServices?lang=en",
+      "authority": "Ministry of Health, Kingdom of Bahrain",
+      "sourceType": "medical-device-regulation",
+      "checkedOn": "2026-10-13",
+      "status": "source-lead-only"
+    },
+    {
+      "title": "Medical emergencies",
+      "url": "https://www.bahrain.gov.bh/wps/portal/en/BNP/SiteMap/!/ut/p/z1/nVNNc4IwEP0r9uCR2SWJEI9YrdhOSyt-kYsTMGpqCejQr39fuLSjrWLd207e2923bwMCZiCMfNMrWejMyJcyj4Qztwct9Pk1YnvUdtAhxGMk7FMMEKb7AHs0RnyaDLxhcNO1kdkgzuHjkfDwPP43wH947KIT-Nwlbocyn-zzD59pHZ9eMr-HnSHpUMR-iKf7E5iAAJEnegGRrfiSO0xZCVOxxbiMLW7T2HIlJXKR0FZLLit0Yoq8WEMUm3yuTBNlnL0WjWKtGhttVossbWIs1zupTYMgxf3sUPBvReK0H9NqhBOW32ENoLqJuiaibm1_VfhZe0AgKmW6Ryu0CUzftHqHscl2aXnn4T9t8BFu606r_Dv6ebsVXmlZZgr1UcDsMs9CZSBPx1WknH5am2Fved-jTMTs6gvUfuXU/",
+      "authority": "Government of Bahrain",
+      "sourceType": "emergency-guidance",
+      "checkedOn": "2026-10-13",
+      "status": "source-lead-only"
+    },
+    {
+      "title": "Emergency hotline directory",
+      "url": "https://www.bahrain.gov.bh/wps/portal/en/BNP/DirectoryOfEmergencyHotlineNumbers/",
+      "authority": "Government of Bahrain",
+      "sourceType": "emergency-management",
+      "checkedOn": "2026-10-13",
+      "status": "source-lead-only"
+    }
+  ],
+  "sourceDiscoveryCheckedOn": "2026-10-13",
       "reviewAreas": [
         {
           "area": "privacy-and-health-data",

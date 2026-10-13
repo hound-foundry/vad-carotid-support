@@ -553,3 +553,9 @@ No Kenya release clearance is recorded. The national and all 47 county reviews r
 This is an official-source discovery pass, not legal advice, a completeness claim or an applicability determination. Cambodia (`KH`) remains blocked; all 14 review areas and the national review remain `not-assessed`.
 
 Cambodia source discovery records the Ministry of Post and Telecommunications draft personal-data-protection material, Ministry of Health and Department of Drug and Food sources, and the Telecommunication Regulator’s laws and emergency-number pages. These are source leads only. Qualified review must resolve Khmer- and English-language national privacy, medical-software, accessibility, emergency, consumer, copyright, distribution and any subnational requirements before Cambodia-specific access or emergency details are enabled.
+
+## Bahrain source-discovery snapshot — 13 October 2026
+
+This is an official-source discovery pass, not legal advice, a completeness claim or an applicability determination. Bahrain (`BH`) remains blocked; all 14 review areas and the national review remain `not-assessed`.
+
+Bahrain source discovery records the Personal Data Protection Law and executive decisions, the Ministry of Health medical-device certificate service, and government emergency guidance and hotline directories. These are source leads only. Qualified review must resolve health-data processing, device-storage and transfer obligations, medical-software classification, Arabic and English accessibility, emergency-information publication, consumer and distribution rules, and any applicable local requirements before Bahrain-specific access or emergency details are enabled.
