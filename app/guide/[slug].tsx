@@ -1,5 +1,5 @@
 import { Link, useLocalSearchParams } from "expo-router";
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { Linking, Platform, Pressable, Share, StyleSheet, Text, View } from "react-native";
 import references from "../../content/references.json";
 import { AppPage, BackHome, Card, DraftNotice, PageHeading } from "../../src/components/AppPage";
@@ -15,7 +15,10 @@ export default function GuideScreen() {
   const [sectionIndex, setSectionIndex] = useState(0);
   const [largeText, setLargeText] = useState(false);
   const [shareMessage, setShareMessage] = useState("");
-  useEffect(() => { setOneAtATime(false); setSectionIndex(0); setLargeText(false); setShareMessage(""); }, [slug]);
+  const [isSpeaking, setIsSpeaking] = useState(false);
+  const speechRef = useRef<SpeechSynthesisUtterance | null>(null);
+  useEffect(() => { if (typeof window !== "undefined") window.speechSynthesis?.cancel(); setOneAtATime(false); setSectionIndex(0); setLargeText(false); setShareMessage(""); setIsSpeaking(false); speechRef.current = null; }, [slug]);
+  useEffect(() => () => { if (typeof window !== "undefined") window.speechSynthesis?.cancel(); }, []);
   const guide = getGuide(slug);
   if (!guide) return <AppPage><BackHome /><PageHeading eyebrow="Guide not found" title="This guide is unavailable." summary="Return to the guide library to choose another page." /><Link href="/learn">Browse guides</Link></AppPage>;
   const sources = references.sources.filter((source) => guide.sourceIds.includes(source.id));
@@ -30,6 +33,17 @@ export default function GuideScreen() {
     <SaveGuideButton slug={guide.slug} />
     <View style={styles.pageActions}>
       {Platform.OS === "web" ? <Pressable accessibilityRole="button" onPress={() => globalThis.print?.()} style={({ pressed }) => [styles.printButton, pressed && styles.pressed]}><Text style={styles.printButtonText}>Print this guide</Text></Pressable> : null}
+      {Platform.OS === "web" ? <Pressable accessibilityRole="button" accessibilityState={{ busy: isSpeaking }} onPress={() => {
+        if (typeof window === "undefined" || !window.speechSynthesis || typeof SpeechSynthesisUtterance === "undefined") { setShareMessage("Read-aloud is not available in this browser. You can use the larger text option instead."); return; }
+        if (isSpeaking) { window.speechSynthesis.cancel(); setIsSpeaking(false); return; }
+        const spokenText = [guide.title, guide.summary, ...guide.sections.flatMap((section) => [section.heading, ...(section.paragraphs ?? []), ...(section.bullets ?? [])])].join(". ");
+        const utterance = new SpeechSynthesisUtterance(spokenText);
+        utterance.onend = () => setIsSpeaking(false);
+        utterance.onerror = () => { setIsSpeaking(false); setShareMessage("Read-aloud could not start. You can use the larger text option instead."); };
+        speechRef.current = utterance;
+        window.speechSynthesis.speak(utterance);
+        setIsSpeaking(true);
+      }} style={({ pressed }) => [styles.printButton, pressed && styles.pressed]}><Text style={styles.printButtonText}>{isSpeaking ? "Stop reading aloud" : "Read guide aloud"}</Text></Pressable> : null}
       <Pressable accessibilityRole="button" onPress={async () => {
         try {
           const url = Platform.OS === "web" && typeof window !== "undefined" ? window.location.href : `VAD & Carotid Support: ${guide.title}`;
