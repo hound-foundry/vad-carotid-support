@@ -18,6 +18,7 @@ Items are proposals, not promised dates. Safety review is a release gate.
 - [x] Add separate local-only personal information and milestone/story cards with explicit preview, export, print and delete actions.
 - [x] Add persistent local accessibility controls, a shared accessibility footer and safe-exit privacy guidance on private tools.
 - [x] Add an installable static web shell with a network-first offline fallback; card and appointment data remain outside service-worker requests.
+- [x] Add stable installable-web metadata, static-host privacy headers and generated-export checks.
 - [ ] Patient and carer review of navigation and language.
 - [ ] Clinician review of glossary definitions and appointment prompts before any patient-facing release.
 - [ ] Clinically reviewed emergency wording and country-specific resources.
