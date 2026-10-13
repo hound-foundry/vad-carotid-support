@@ -6235,7 +6235,232 @@
       "isoAlpha2": "CN",
       "reviewOwner": null,
       "lastChecked": null,
-      "officialSources": [],
+      "officialSources": [
+        {
+          "title": "Personal Information Protection Law (PIPL): English reference text",
+          "url": "https://en.spp.gov.cn/2021-12/29/c_948419.htm",
+          "authority": "Supreme People’s Procuratorate / NPC English source",
+          "sourceType": "legislation-english-reference",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "PIPL: official Chinese text published by the Cyberspace Administration of China",
+          "url": "https://www.cac.gov.cn/2021-08/20/c_1631050028355286.htm",
+          "authority": "Cyberspace Administration of China (CAC)",
+          "sourceType": "legislation",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Data Security Law of the People’s Republic of China: English reference text",
+          "url": "https://en.spp.gov.cn/2021-06/10/c_948426.htm",
+          "authority": "Supreme People’s Procuratorate / NPC English source",
+          "sourceType": "legislation-english-reference",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Regulations on Network Data Security Management (effective 1 January 2025): Chinese primary text",
+          "url": "https://www.cac.gov.cn/2024-09/30/c_1729384452307680.htm",
+          "authority": "CAC / State Council",
+          "sourceType": "regulation",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Regulations on Network Data Security Management: English translation",
+          "url": "https://en.moj.gov.cn/pdf/RegulationsonNetworkDataSecurityManagement.pdf",
+          "authority": "Ministry of Justice",
+          "sourceType": "regulation-english-reference",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Regulations on Promoting and Regulating Cross-Border Data Flow (2024): Chinese primary text",
+          "url": "https://www.cac.gov.cn/2024-03/22/c_1712776611775634.htm",
+          "authority": "CAC",
+          "sourceType": "regulation",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Revised Cybersecurity Law (2025 amendment; effective 1 January 2026): current Chinese text",
+          "url": "https://sdca.miit.gov.cn/zwgk/fgbz/art/2026/art_4815dd4ec11d454783b83a91502a3cc7.html",
+          "authority": "Ministry of Industry and Information Technology (MIIT), provincial communications administration",
+          "sourceType": "legislation",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Personal Information Protection Compliance Audit Measures (effective 1 May 2025)",
+          "url": "https://www.cac.gov.cn/2025-02/14/c_1741233507681519.htm",
+          "authority": "CAC",
+          "sourceType": "regulation",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "MIIT notice interpretation: filing requirements for mobile Internet applications",
+          "url": "https://www.miit.gov.cn/jgsj/xgj/hlwgl/art/2023/art_564bf0759d7e41d5b4aa8ce4996b9e84.html",
+          "authority": "MIIT",
+          "sourceType": "regulator-guidance",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "MIIT notice on mobile Internet application filing",
+          "url": "https://www.gov.cn/zhengce/zhengceku/202308/content_6897341.htm?type=mobile-internet",
+          "authority": "MIIT / Anhui Communications Administration",
+          "sourceType": "regulation",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "NMPA current medical-device regulations index",
+          "url": "https://english.nmpa.gov.cn/CurrentRegulations.html",
+          "authority": "National Medical Products Administration (NMPA)",
+          "sourceType": "regulator-legislation-index",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Regulations for Supervision and Administration of Medical Devices: implementation information",
+          "url": "https://english.nmpa.gov.cn/2021-05/31/c_644306.htm",
+          "authority": "NMPA",
+          "sourceType": "regulator-guidance",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "NMPA Good Manufacturing Practice appendix for independent software medical devices",
+          "url": "https://english.nmpa.gov.cn/2019-07/12/c_398090.htm",
+          "authority": "NMPA",
+          "sourceType": "regulator-guidance",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "NMPA guidance for classification of AI-based medical software products",
+          "url": "https://english.nmpa.gov.cn/2021-07/08/c_660267.htm",
+          "authority": "NMPA",
+          "sourceType": "regulator-guidance",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Medical-device adverse-event monitoring and re-evaluation provisions",
+          "url": "https://english.nmpa.gov.cn/2019-12/16/c_961748.htm",
+          "authority": "NMPA / State Administration for Market Regulation",
+          "sourceType": "regulation-english-reference",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Consumer Rights and Interests Protection Law (Chinese primary text)",
+          "url": "https://www.samr.gov.cn/zt/ndzt/2019n/bjspjsqjxcjwljxyjsckpxc/zcfg/art/2023/art_5004b2b0f4154c76acfca499fe9c737a.html",
+          "authority": "State Administration for Market Regulation (SAMR)",
+          "sourceType": "legislation",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Regulations for Implementing the Consumer Rights and Interests Protection Law (effective 1 July 2024)",
+          "url": "https://english.www.gov.cn/policies/latestreleases/202403/19/content_WS65f974b2c6d0868f4e8e53d1.html",
+          "authority": "State Council",
+          "sourceType": "regulation-english-reference",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Anti-Unfair Competition and Advertising Law provisions: official legislation index",
+          "url": "https://www.samr.gov.cn/",
+          "authority": "SAMR",
+          "sourceType": "regulator-legislation-index",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Law on the Protection of Minors: official National Laws and Regulations Database search entry point; verify current consolidated text",
+          "url": "https://flk.npc.gov.cn/",
+          "authority": "State Council",
+          "sourceType": "official-law-database",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Copyright Law: official national legislation search entry point",
+          "url": "https://flk.npc.gov.cn/",
+          "authority": "State Council",
+          "sourceType": "official-law-database",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Law on the Protection of Disabled Persons: official National Laws and Regulations Database search entry point; verify current consolidated text",
+          "url": "https://flk.npc.gov.cn/",
+          "authority": "State Council",
+          "sourceType": "official-law-database",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "National Health Commission: emergency medical number 120",
+          "url": "https://en.nhc.gov.cn/2014-11/23/c_45682_3.htm",
+          "authority": "National Health Commission",
+          "sourceType": "emergency-authority-guidance",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "China provincial-level administrative divisions: 34 including Taiwan, Hong Kong and Macao",
+          "url": "https://english.scio.gov.cn/m/chinafacts/2017-04/17/content_40632751.htm",
+          "authority": "State Council Information Office",
+          "sourceType": "official-territorial-register",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "2025 Foreign Investment Guide: 34 provincial-level areas and composition",
+          "url": "https://fdi.mofcom.gov.cn/EN/come-newzonghe.html?comeID=1&name=Country+Overview&parentId=104",
+          "authority": "Ministry of Commerce",
+          "sourceType": "official-territorial-register",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Constitution of the People’s Republic of China: official English reference",
+          "url": "https://en.moj.gov.cn/constitution/",
+          "authority": "Ministry of Justice",
+          "sourceType": "constitutional-source",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "NPO registration and nonprofit policy: Ministry of Civil Affairs portal",
+          "url": "https://www.mca.gov.cn/",
+          "authority": "Ministry of Civil Affairs",
+          "sourceType": "government-guidance",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Apple App Review Guidelines",
+          "url": "https://developer.apple.com/app-store/review/guidelines/",
+          "authority": "Apple",
+          "sourceType": "platform-policy",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Google Play Health Content and Services policy",
+          "url": "https://support.google.com/googleplay/android-developer/answer/16679511?hl=en-GB",
+          "authority": "Google Play",
+          "sourceType": "platform-policy",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        }
+      ],
       "reviewAreas": [
         {
           "area": "privacy-and-health-data",
@@ -6350,7 +6575,258 @@
           "reviewer": null
         }
       ],
-      "subnationalAreas": []
+      "subnationalAreas": [
+        {
+          "name": "Beijing Municipality",
+          "status": "not-assessed",
+          "reason": "Mainland provincial-level screening target only. No provincial, prefecture/city, county, local-rule or jurisdictional applicability review performed.",
+          "source": "https://english.scio.gov.cn/m/chinafacts/2017-04/17/content_40632751.htm",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Tianjin Municipality",
+          "status": "not-assessed",
+          "reason": "Mainland provincial-level screening target only. No provincial, prefecture/city, county, local-rule or jurisdictional applicability review performed.",
+          "source": "https://english.scio.gov.cn/m/chinafacts/2017-04/17/content_40632751.htm",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Hebei Province",
+          "status": "not-assessed",
+          "reason": "Mainland provincial-level screening target only. No provincial, prefecture/city, county, local-rule or jurisdictional applicability review performed.",
+          "source": "https://english.scio.gov.cn/m/chinafacts/2017-04/17/content_40632751.htm",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Shanxi Province",
+          "status": "not-assessed",
+          "reason": "Mainland provincial-level screening target only. No provincial, prefecture/city, county, local-rule or jurisdictional applicability review performed.",
+          "source": "https://english.scio.gov.cn/m/chinafacts/2017-04/17/content_40632751.htm",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Inner Mongolia Autonomous Region",
+          "status": "not-assessed",
+          "reason": "Mainland provincial-level screening target only. No provincial, prefecture/city, county, local-rule or jurisdictional applicability review performed.",
+          "source": "https://english.scio.gov.cn/m/chinafacts/2017-04/17/content_40632751.htm",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Liaoning Province",
+          "status": "not-assessed",
+          "reason": "Mainland provincial-level screening target only. No provincial, prefecture/city, county, local-rule or jurisdictional applicability review performed.",
+          "source": "https://english.scio.gov.cn/m/chinafacts/2017-04/17/content_40632751.htm",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Jilin Province",
+          "status": "not-assessed",
+          "reason": "Mainland provincial-level screening target only. No provincial, prefecture/city, county, local-rule or jurisdictional applicability review performed.",
+          "source": "https://english.scio.gov.cn/m/chinafacts/2017-04/17/content_40632751.htm",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Heilongjiang Province",
+          "status": "not-assessed",
+          "reason": "Mainland provincial-level screening target only. No provincial, prefecture/city, county, local-rule or jurisdictional applicability review performed.",
+          "source": "https://english.scio.gov.cn/m/chinafacts/2017-04/17/content_40632751.htm",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Shanghai Municipality",
+          "status": "not-assessed",
+          "reason": "Mainland provincial-level screening target only. No provincial, prefecture/city, county, local-rule or jurisdictional applicability review performed.",
+          "source": "https://english.scio.gov.cn/m/chinafacts/2017-04/17/content_40632751.htm",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Jiangsu Province",
+          "status": "not-assessed",
+          "reason": "Mainland provincial-level screening target only. No provincial, prefecture/city, county, local-rule or jurisdictional applicability review performed.",
+          "source": "https://english.scio.gov.cn/m/chinafacts/2017-04/17/content_40632751.htm",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Zhejiang Province",
+          "status": "not-assessed",
+          "reason": "Mainland provincial-level screening target only. No provincial, prefecture/city, county, local-rule or jurisdictional applicability review performed.",
+          "source": "https://english.scio.gov.cn/m/chinafacts/2017-04/17/content_40632751.htm",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Anhui Province",
+          "status": "not-assessed",
+          "reason": "Mainland provincial-level screening target only. No provincial, prefecture/city, county, local-rule or jurisdictional applicability review performed.",
+          "source": "https://english.scio.gov.cn/m/chinafacts/2017-04/17/content_40632751.htm",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Fujian Province",
+          "status": "not-assessed",
+          "reason": "Mainland provincial-level screening target only. No provincial, prefecture/city, county, local-rule or jurisdictional applicability review performed.",
+          "source": "https://english.scio.gov.cn/m/chinafacts/2017-04/17/content_40632751.htm",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Jiangxi Province",
+          "status": "not-assessed",
+          "reason": "Mainland provincial-level screening target only. No provincial, prefecture/city, county, local-rule or jurisdictional applicability review performed.",
+          "source": "https://english.scio.gov.cn/m/chinafacts/2017-04/17/content_40632751.htm",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Shandong Province",
+          "status": "not-assessed",
+          "reason": "Mainland provincial-level screening target only. No provincial, prefecture/city, county, local-rule or jurisdictional applicability review performed.",
+          "source": "https://english.scio.gov.cn/m/chinafacts/2017-04/17/content_40632751.htm",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Henan Province",
+          "status": "not-assessed",
+          "reason": "Mainland provincial-level screening target only. No provincial, prefecture/city, county, local-rule or jurisdictional applicability review performed.",
+          "source": "https://english.scio.gov.cn/m/chinafacts/2017-04/17/content_40632751.htm",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Hubei Province",
+          "status": "not-assessed",
+          "reason": "Mainland provincial-level screening target only. No provincial, prefecture/city, county, local-rule or jurisdictional applicability review performed.",
+          "source": "https://english.scio.gov.cn/m/chinafacts/2017-04/17/content_40632751.htm",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Hunan Province",
+          "status": "not-assessed",
+          "reason": "Mainland provincial-level screening target only. No provincial, prefecture/city, county, local-rule or jurisdictional applicability review performed.",
+          "source": "https://english.scio.gov.cn/m/chinafacts/2017-04/17/content_40632751.htm",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Guangdong Province",
+          "status": "not-assessed",
+          "reason": "Mainland provincial-level screening target only. No provincial, prefecture/city, county, local-rule or jurisdictional applicability review performed.",
+          "source": "https://english.scio.gov.cn/m/chinafacts/2017-04/17/content_40632751.htm",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Guangxi Zhuang Autonomous Region",
+          "status": "not-assessed",
+          "reason": "Mainland provincial-level screening target only. No provincial, prefecture/city, county, local-rule or jurisdictional applicability review performed.",
+          "source": "https://english.scio.gov.cn/m/chinafacts/2017-04/17/content_40632751.htm",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Hainan Province",
+          "status": "not-assessed",
+          "reason": "Mainland provincial-level screening target only. No provincial, prefecture/city, county, local-rule or jurisdictional applicability review performed.",
+          "source": "https://english.scio.gov.cn/m/chinafacts/2017-04/17/content_40632751.htm",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Chongqing Municipality",
+          "status": "not-assessed",
+          "reason": "Mainland provincial-level screening target only. No provincial, prefecture/city, county, local-rule or jurisdictional applicability review performed.",
+          "source": "https://english.scio.gov.cn/m/chinafacts/2017-04/17/content_40632751.htm",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Sichuan Province",
+          "status": "not-assessed",
+          "reason": "Mainland provincial-level screening target only. No provincial, prefecture/city, county, local-rule or jurisdictional applicability review performed.",
+          "source": "https://english.scio.gov.cn/m/chinafacts/2017-04/17/content_40632751.htm",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Guizhou Province",
+          "status": "not-assessed",
+          "reason": "Mainland provincial-level screening target only. No provincial, prefecture/city, county, local-rule or jurisdictional applicability review performed.",
+          "source": "https://english.scio.gov.cn/m/chinafacts/2017-04/17/content_40632751.htm",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Yunnan Province",
+          "status": "not-assessed",
+          "reason": "Mainland provincial-level screening target only. No provincial, prefecture/city, county, local-rule or jurisdictional applicability review performed.",
+          "source": "https://english.scio.gov.cn/m/chinafacts/2017-04/17/content_40632751.htm",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Tibet Autonomous Region",
+          "status": "not-assessed",
+          "reason": "Mainland provincial-level screening target only. No provincial, prefecture/city, county, local-rule or jurisdictional applicability review performed.",
+          "source": "https://english.scio.gov.cn/m/chinafacts/2017-04/17/content_40632751.htm",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Shaanxi Province",
+          "status": "not-assessed",
+          "reason": "Mainland provincial-level screening target only. No provincial, prefecture/city, county, local-rule or jurisdictional applicability review performed.",
+          "source": "https://english.scio.gov.cn/m/chinafacts/2017-04/17/content_40632751.htm",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Gansu Province",
+          "status": "not-assessed",
+          "reason": "Mainland provincial-level screening target only. No provincial, prefecture/city, county, local-rule or jurisdictional applicability review performed.",
+          "source": "https://english.scio.gov.cn/m/chinafacts/2017-04/17/content_40632751.htm",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Qinghai Province",
+          "status": "not-assessed",
+          "reason": "Mainland provincial-level screening target only. No provincial, prefecture/city, county, local-rule or jurisdictional applicability review performed.",
+          "source": "https://english.scio.gov.cn/m/chinafacts/2017-04/17/content_40632751.htm",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Ningxia Hui Autonomous Region",
+          "status": "not-assessed",
+          "reason": "Mainland provincial-level screening target only. No provincial, prefecture/city, county, local-rule or jurisdictional applicability review performed.",
+          "source": "https://english.scio.gov.cn/m/chinafacts/2017-04/17/content_40632751.htm",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Xinjiang Uygur Autonomous Region",
+          "status": "not-assessed",
+          "reason": "Mainland provincial-level screening target only. No provincial, prefecture/city, county, local-rule or jurisdictional applicability review performed.",
+          "source": "https://english.scio.gov.cn/m/chinafacts/2017-04/17/content_40632751.htm",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        }
+      ],
+      "sourceDiscoveryCheckedOn": "2026-10-13",
+      "sourceDiscoveryNote": "Initial source discovery for mainland China, not legal advice or a market screen. The country record remains blocked and all national/subnational reviews remain not-assessed. PIPL and other primary statutes require current Chinese-language legal review; English texts can be incomplete or reference-only. The 31 mainland provincial-level areas are a top-level queue only; Hong Kong and Macao have separate records, Taiwan is separately scoped, and local prefecture/city/county rules and operational requirements remain unreviewed. Assess Chinese app filing, hosting, sensitive health data, cross-border flow, platform access and medical-device qualification before any availability decision."
     },
     {
       "name": "China, Hong Kong Special Administrative Region",
