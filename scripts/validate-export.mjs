@@ -15,9 +15,11 @@ const files = [
 ];
 for (const file of files) await access(join(root, file));
 const urgent = await readFile(join(root, "urgent-help.html"), "utf8");
+const home = await readFile(join(root, "index.html"), "utf8");
 const personal = await readFile(join(root, "personal-card.html"), "utf8");
 const milestone = await readFile(join(root, "milestone-card.html"), "utf8");
 assert.match(urgent, /contact local emergency services now/i, "urgent-help route must retain generic emergency wording");
+assert.match(home, /What this app can and cannot do/i, "home route must explain the product boundary");
 assert.match(personal, /not an official medical record or emergency plan/i, "personal card safety label must be exported");
 assert.match(milestone, /not medical advice or proof of diagnosis/i, "milestone card safety label must be exported");
 assert.ok(files.length >= 25);
