@@ -274,9 +274,12 @@ assert.ok(estoniaRecord && estoniaRecord.alpha3 === "EST" && estoniaRecord.m49 =
 assert.equal(estoniaRecord.legalReview.status, "not-assessed", "Estonian source discovery must not imply a completed legal screen");
 assert.equal(estoniaRecord.subnationalReview.status, "not-assessed", "Estonian source discovery must not imply a completed subnational screen");
 assert.equal(estoniaRecord.release, "blocked", "Estonia must remain blocked pending qualified review");
-assert.equal(estoniaRecord.sourceDiscoveryCheckedOn, "2026-10-12", "Estonian source discovery needs its own dated record");
+assert.equal(estoniaRecord.sourceDiscoveryCheckedOn, "2026-10-13", "Estonian source discovery needs its own dated record");
 assert.equal(estoniaRecord.reviewAreas.length, 14, "Every Estonian review topic must remain explicit");
 assert.ok(estoniaRecord.reviewAreas.every((area) => area.status === "not-assessed"), "Estonian source leads must not change any legal topic to assessed");
+assert.equal(estoniaRecord.subnationalAreas.length, 15, "Estonia must retain all 15 counties as unassessed screening targets");
+assert.equal(new Set(estoniaRecord.subnationalAreas.map((area) => area.name)).size, 15, "Estonian county screening targets must be unique");
+assert.ok(estoniaRecord.subnationalAreas.every((area) => area.status === "not-assessed" && area.checkedOn === "2026-10-13" && area.reviewer === null), "Estonian county screening must not be mistaken for local clearance");
 const estoniaSourceUrls = [
   "https://www.riigiteataja.ee/en/eli/507112023002/consolide",
   "https://www.aki.ee/en/guidelines-legislation/legislation",
@@ -299,9 +302,12 @@ assert.ok(latviaRecord && latviaRecord.alpha3 === "LVA" && latviaRecord.m49 === 
 assert.equal(latviaRecord.legalReview.status, "not-assessed", "Latvian source discovery must not imply a completed legal screen");
 assert.equal(latviaRecord.subnationalReview.status, "not-assessed", "Latvian source discovery must not imply a completed subnational screen");
 assert.equal(latviaRecord.release, "blocked", "Latvia must remain blocked pending qualified review");
-assert.equal(latviaRecord.sourceDiscoveryCheckedOn, "2026-10-12", "Latvian source discovery needs its own dated record");
+assert.equal(latviaRecord.sourceDiscoveryCheckedOn, "2026-10-13", "Latvian source discovery needs its own dated record");
 assert.equal(latviaRecord.reviewAreas.length, 14, "Every Latvian review topic must remain explicit");
 assert.ok(latviaRecord.reviewAreas.every((area) => area.status === "not-assessed"), "Latvian source leads must not change any legal topic to assessed");
+assert.equal(latviaRecord.subnationalAreas.length, 43, "Latvia must retain all 43 local-government units as unassessed screening targets");
+assert.equal(new Set(latviaRecord.subnationalAreas.map((area) => area.name)).size, 43, "Latvian local-government screening targets must be unique");
+assert.ok(latviaRecord.subnationalAreas.every((area) => area.status === "not-assessed" && area.checkedOn === "2026-10-13" && area.reviewer === null), "Latvian local-government screening must not be mistaken for local clearance");
 const latviaSourceUrls = [
   "https://likumi.lv/ta/en/en/id/300099-personal-data-processing-law",
   "https://likumi.lv/ta/id/300099-fizisko-personu-datu-apstrades-likums",
