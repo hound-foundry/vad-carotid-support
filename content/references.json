@@ -388,18 +388,35 @@
       "topics": [
         "urgent-help"
       ],
-      "inspection": "Official indexed warning-sign text inspected.",
-      "use": "Editorial source for stroke warning signs including sudden balance and vision changes.",
+      "inspection": "Official full patient page inspected on 13 October 2026, including B.E. F.A.S.T., other signs, early treatment and symptoms that stop.",
+      "use": "Source for originally worded B.E. F.A.S.T. explanations and prompt emergency action, including when symptoms stop.",
       "limits": "US emergency instructions require localisation. A warning-sign list cannot exclude stroke or replace urgent assessment.",
       "language": "en",
-      "checked_on": "2026-10-12",
+      "checked_on": "2026-10-13",
       "editorial_status": "candidate",
       "clinical_review": {
         "status": "not-reviewed",
         "reviewer": null,
         "date": null
       },
-      "rights": "Link and original bibliographic annotation only; source content is not relicensed."
+      "rights": "Link and original paraphrases only; source content and artwork are not relicensed."
+    },
+    {
+      "id": "nhs-stroke-symptoms",
+      "title": "Symptoms of a stroke",
+      "year": 2024,
+      "kind": "patient-information",
+      "url": "https://www.nhs.uk/conditions/stroke/symptoms/",
+      "audience": ["patient", "carer", "interested-reader"],
+      "topics": ["urgent-help"],
+      "inspection": "Full official page inspected on 13 October 2026. Displayed review date: 12 September 2024; next review due: 12 September 2027.",
+      "use": "Supports emergency action for possible stroke, including when signs stop, and distinguishing urgent action from routine appointments.",
+      "limits": "UK patient information, not dissection-specific guidance. Its UK emergency number is not used in this international preview; symptom lists cannot exclude stroke.",
+      "language": "en",
+      "checked_on": "2026-10-13",
+      "editorial_status": "candidate",
+      "clinical_review": { "status": "not-reviewed", "reviewer": null, "date": null },
+      "rights": "Link and original paraphrases only; source content and artwork are not relicensed."
     },
     {
       "id": "cleveland-overview",

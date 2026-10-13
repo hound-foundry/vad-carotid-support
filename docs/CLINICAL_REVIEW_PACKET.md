@@ -50,3 +50,11 @@ The review record does not authorize use of a reviewer’s name, employer, comme
 ## Current state
 
 No clinical reviewer has completed this review through the project. The pages and glossary remain drafts. This packet does not recruit or represent a reviewer, and it does not replace clinical or country-specific regulatory review.
+
+### Urgent-help revision, 13 October 2026
+
+The authored copy in `src/content/urgentHelp.ts` now explains B.E. F.A.S.T., directs possible stroke signs to local emergency services even when symptoms stop, and directs general health concerns to a doctor or qualified medical professional. The page describes the app as information and preparation, with no symptom assessment, diagnosis, personal advice or emergency care. This describes product behaviour; it is not a medical-device classification decision.
+
+The American Stroke Association's full stroke-symptom page and the NHS stroke-symptom page were checked on this date. Their country-specific emergency numbers are not reproduced in the global copy. Thirteen exact copy units have source context, limits, required expertise and a pending decision in `content/claimLedger.json`; validation detects changes that no longer match that ledger. The next editorial source check is due 13 April 2027, earlier if guidance changes.
+
+Qualified review must specifically check the distinction between professional contact and immediate emergency action, the limitations of B.E. F.A.S.T., and the phrase “Acting quickly can save a life.” This is broader stroke information, not dissection diagnosis, a complete symptom list, a screening score or a promise about an individual's outcome. No clinical approval has been recorded.
