@@ -625,3 +625,9 @@ Colombia source discovery records the personal-data law and SIC oversight, INVIM
 This is an official-source discovery pass, not legal advice, a completeness claim or an applicability determination. Comoros (`KM`) remains blocked; all 14 review areas and the national review remain `not-assessed`.
 
 Comoros source discovery records the Ministry of Justice’s personal-data law and legal repository, the public health code, and emergency-health cross-check guidance. Official medical-device rules were not identified in this pass and must be located or confirmed by qualified reviewers. French-language, island-level health-service, accessibility, transfer, and emergency-coverage review remains required before Comoros-specific access is enabled.
+
+## Costa Rica source-discovery snapshot — 13 October 2026
+
+This is an official-source discovery pass, not legal advice, a completeness claim or an applicability determination. Costa Rica (`CR`) remains blocked; all 14 review areas and the national review remain `not-assessed`.
+
+Costa Rica source discovery records PRODHAB’s Law 8968 materials and compliance guidance, Ministry of Health health-device and extrahospital-care materials, and the national 9-1-1 emergency system. Qualified review must resolve sensitive health-data processing, database-registration questions, device storage and transfers, medical-software classification, Spanish accessibility, emergency-service scope, and national/subnational distribution requirements before Costa Rica-specific access is enabled.

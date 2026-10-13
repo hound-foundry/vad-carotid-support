@@ -11481,8 +11481,50 @@
       "release": "blocked",
       "isoAlpha2": "CR",
       "reviewOwner": null,
-      "lastChecked": null,
-      "officialSources": [],
+  "lastChecked": "2026-10-13",
+  "officialSources": [
+    {
+      "title": "Law 8968 and current data-protection legislation",
+      "url": "https://www.prodhab.go.cr/acercade/normativa/",
+      "authority": "Agencia de Protección de Datos de los Habitantes (PRODHAB), Costa Rica",
+      "sourceType": "privacy-law",
+      "checkedOn": "2026-10-13",
+      "status": "source-lead-only"
+    },
+    {
+      "title": "PRODHAB compliance guidance",
+      "url": "https://www.prodhab.go.cr/preguntasfrecuentes.aspx",
+      "authority": "Agencia de Protección de Datos de los Habitantes (PRODHAB), Costa Rica",
+      "sourceType": "privacy-regulator",
+      "checkedOn": "2026-10-13",
+      "status": "source-lead-only"
+    },
+    {
+      "title": "Medical-device and health technology regulation",
+      "url": "https://www.ministeriodesalud.go.cr/",
+      "authority": "Ministry of Health, Costa Rica",
+      "sourceType": "health-regulator",
+      "checkedOn": "2026-10-13",
+      "status": "source-lead-only"
+    },
+    {
+      "title": "Extrahospital medical-care regulation",
+      "url": "https://www.ministeriodesalud.go.cr/index.php/prensa/62-noticias-2025/2066-nuevo-reglamento-mejorara-la-atencion-medica-fuera-de-los-hospitales",
+      "authority": "Ministry of Health, Costa Rica",
+      "sourceType": "emergency-health-regulation",
+      "checkedOn": "2026-10-13",
+      "status": "source-lead-only"
+    },
+    {
+      "title": "National emergency system and 9-1-1",
+      "url": "https://publico.cr/institucion/sistema-emergencias-911",
+      "authority": "Sistema de Emergencias 9-1-1, Costa Rica (directory source)",
+      "sourceType": "emergency-guidance",
+      "checkedOn": "2026-10-13",
+      "status": "source-lead-only"
+    }
+  ],
+  "sourceDiscoveryCheckedOn": "2026-10-13",
       "reviewAreas": [
         {
           "area": "privacy-and-health-data",
