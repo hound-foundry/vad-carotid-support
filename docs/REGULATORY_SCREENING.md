@@ -108,6 +108,8 @@ The Bahamas source discovery (13 October 2026) now records the Data Protection (
 
 Cameroon source discovery (13 October 2026) now records the 2024 personal-data protection law, Ministry of Posts and Telecommunications data-safety material, public-health emergency coordination, and official emergency contacts. These are source leads only. Cameroon remains blocked pending qualified review of French- and English-language national privacy, medical-software, accessibility, emergency and distribution requirements.
 
+Bolivia source discovery (13 October 2026) now records official personal-data provisions, State Agency for Medicines and Health Technologies medical-device registers and standards, and Bolivian Police and Fire Directorate emergency guidance. These are source leads only. Bolivia remains blocked pending qualified review of Spanish-language national privacy, medical-software, accessibility, emergency and distribution requirements.
+
 ### Platform distribution policies (not legislation)
 
 | Platform | Official policy source | Release work still needed |

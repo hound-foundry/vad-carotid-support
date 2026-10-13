@@ -4590,8 +4590,50 @@
       "release": "blocked",
       "isoAlpha2": "BO",
       "reviewOwner": null,
-      "lastChecked": null,
-      "officialSources": [],
+      "lastChecked": "2026-10-13",
+      "officialSources": [
+        {
+          "title": "Personal-data protection provisions",
+          "url": "https://www.agetic.gob.bo/wp-content/uploads/2023/04/bolivia_digital.pdf",
+          "authority": "Agency of Electronic Government and Information and Communication Technologies, Bolivia",
+          "sourceType": "privacy-law",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "State medical-device registration records",
+          "url": "https://apiwww.agemed.gob.bo/api/listautcom",
+          "authority": "State Agency for Medicines and Health Technologies, Bolivia",
+          "sourceType": "medical-device-regulator",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "National medical-device regulatory standards",
+          "url": "https://apiwww.agemed.gob.bo/api/web/regulacion%7Cnormativa_nacional",
+          "authority": "State Agency for Medicines and Health Technologies, Bolivia",
+          "sourceType": "medical-device-law",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Police emergency numbers",
+          "url": "https://www.policia.bo/?Itemid=1&option=com_frontpage",
+          "authority": "Bolivian Police",
+          "sourceType": "emergency-guidance",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Fire and rescue emergency number 119",
+          "url": "https://bomberos-sippci.policia.bo/",
+          "authority": "National Fire Directorate, Bolivia",
+          "sourceType": "emergency-services",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        }
+      ],
+      "sourceDiscoveryCheckedOn": "2026-10-13",
       "reviewAreas": [
         {
           "area": "privacy-and-health-data",
