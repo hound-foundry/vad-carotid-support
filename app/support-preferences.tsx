@@ -2,7 +2,7 @@ import { useEffect, useRef, useState } from "react";
 import { useLocalSearchParams } from "expo-router";
 import { Alert, Platform, Pressable, StyleSheet, Text, TextInput, View } from "react-native";
 import { AppPage, BackHome, Card, PageHeading, palette } from "../src/components/AppPage";
-import { emptySupportPreferences, guidePreferenceSuggestions, MAX_NOTE_LENGTH, supportPreferences, type SupportPreferencesSheet } from "../src/features/support-preferences/model.mjs";
+import { emptySupportPreferences, formatSupportPreferencesExport, guidePreferenceSuggestions, MAX_NOTE_LENGTH, supportPreferences, type SupportPreferencesSheet } from "../src/features/support-preferences/model.mjs";
 import { deleteSupportPreferences, exportSupportPreferences, loadSupportPreferences, saveSupportPreferences } from "../src/features/support-preferences/store";
 
 const groups = [...new Set(supportPreferences.map((item) => item.group))];
@@ -91,6 +91,13 @@ export default function SupportPreferencesScreen() {
       setMessage("Export did not complete.");
     }
   };
+  const copySheet = async () => {
+    try {
+      if (!globalThis.navigator?.clipboard) { setMessage("Copying is unavailable in this browser. Use Export for sharing instead."); return; }
+      await globalThis.navigator.clipboard.writeText(formatSupportPreferencesExport(sheet));
+      setMessage("Support preferences copied after your request. The destination app is outside this project’s control.");
+    } catch { setMessage("Copying did not complete. Use Export for sharing instead."); }
+  };
 
   return <AppPage>
     <BackHome />
@@ -111,7 +118,7 @@ export default function SupportPreferencesScreen() {
       const selected = supportPreferences.filter((item) => item.group === group && sheet.selectedIds.includes(item.id));
       return selected.length ? <View key={group} style={styles.previewGroup}><Text style={styles.previewGroupTitle}>{group}</Text>{selected.map((item) => <Text key={item.id} style={styles.previewLine}>• {item.text}</Text>)}</View> : null;
     })}{sheet.selectedIds.length === 0 && !sheet.note.trim() ? <Text style={styles.previewLine}>Choose a few statements or add a note to build your sheet.</Text> : null}{sheet.note.trim() ? <><Text style={styles.previewGroupTitle}>Something else I’d like you to know</Text><Text style={styles.previewLine}>{sheet.note.trim()}</Text></> : null}<Text style={styles.helper}>Your preferences belong to you. You choose whether to share them.</Text></View></Card>
-    <View style={styles.actions}><Button title={saved ? "Saved on this device" : "Save on this device"} onPress={() => void save()} /><Button title="Export for sharing" secondary onPress={() => void exportSheet()} />{Platform.OS === "web" ? <Button title="Print support sheet" secondary onPress={() => globalThis.print?.()} /> : null}<Button title="Delete saved preferences" secondary onPress={confirmRemove} /></View>
+    <View style={styles.actions}><Button title={saved ? "Saved on this device" : "Save on this device"} onPress={() => void save()} /><Button title="Export for sharing" secondary onPress={() => void exportSheet()} />{Platform.OS === "web" ? <><Button title="Copy sheet text" secondary onPress={() => void copySheet()} /><Button title="Print support sheet" secondary onPress={() => globalThis.print?.()} /></> : null}<Button title="Delete saved preferences" secondary onPress={confirmRemove} /></View>
     <Text accessibilityLiveRegion="polite" style={styles.status}>{message}</Text>
     <Card title="Where the data lives"><Text style={styles.helper}>On the web, this app uses this browser profile’s local storage. It is not encrypted by this app and may be exposed to people or software with access to the profile or device. On iOS and Android, this app uses Expo SecureStore. Browser, device, operating-system and backup behavior varies; local storage alone does not guarantee privacy. Export makes a separate copy in the destination you choose; deleting here may not remove an exported or backed-up copy.</Text></Card>
   </AppPage>;
