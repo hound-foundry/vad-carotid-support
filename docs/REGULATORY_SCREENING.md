@@ -104,6 +104,8 @@ Algeria source discovery (13 October 2026) now records the national personal-dat
 
 Angola source discovery (13 October 2026) now records the Data Protection Agency, national privacy legislation, Ministry of Health specialist guidance, and official National Police and Criminal Investigation Service emergency contacts. These are source leads only. Angola remains blocked pending qualified review of Portuguese-language national privacy, medical-software, accessibility, emergency and distribution requirements.
 
+The Bahamas source discovery (13 October 2026) now records the Data Protection (Privacy of Personal Information) Act, official health information, Disaster Risk Management emergency guidance, and government emergency numbers. These are source leads only. The Bahamas remains blocked pending qualified review of English-language national privacy, medical-software, accessibility, emergency and distribution requirements.
+
 ### Platform distribution policies (not legislation)
 
 | Platform | Official policy source | Release work still needed |

@@ -3030,8 +3030,50 @@
       "release": "blocked",
       "isoAlpha2": "BS",
       "reviewOwner": null,
-      "lastChecked": null,
-      "officialSources": [],
+      "lastChecked": "2026-10-13",
+      "officialSources": [
+        {
+          "title": "Data Protection (Privacy of Personal Information) Act",
+          "url": "https://laws.bahamas.gov.bs/cms/images/LEGISLATION/PRINCIPAL/2003/2003-0003/2003-0003.pdf",
+          "authority": "Government of The Bahamas",
+          "sourceType": "privacy-law",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Ministry of Health and Wellness official health information",
+          "url": "https://healthytogether.gov.bs/contact-and-feedback/",
+          "authority": "Government of The Bahamas",
+          "sourceType": "health-service-guidance",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Disaster Risk Management emergency numbers",
+          "url": "https://getready.gov.bs/",
+          "authority": "Disaster Risk Management Authority, The Bahamas",
+          "sourceType": "emergency-guidance",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Official emergency services 919 and 911",
+          "url": "https://opm.gov.bs/national-address-17-august-2020/",
+          "authority": "Office of the Prime Minister, The Bahamas",
+          "sourceType": "emergency-services",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Government legislation index",
+          "url": "https://laws.bahamas.gov.bs/cms/legislation/index/by-alphabetical.html",
+          "authority": "Government of The Bahamas",
+          "sourceType": "legal-register",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        }
+      ],
+      "sourceDiscoveryCheckedOn": "2026-10-13",
       "reviewAreas": [
         {
           "area": "privacy-and-health-data",
