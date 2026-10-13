@@ -17,11 +17,13 @@ export default function GuideScreen() {
   const guide = getGuide(slug);
   if (!guide) return <AppPage><BackHome /><PageHeading eyebrow="Guide not found" title="This guide is unavailable." summary="Return to the guide library to choose another page." /><Link href="/learn">Browse guides</Link></AppPage>;
   const sources = references.sources.filter((source) => guide.sourceIds.includes(source.id));
+  const wordCount = guide.sections.reduce((total, section) => total + [...(section.paragraphs ?? []), ...(section.bullets ?? []), section.heading].join(" ").split(/\s+/).filter(Boolean).length, 0);
+  const readingMinutes = Math.max(1, Math.ceil(wordCount / 180));
   const relatedSlugs = (guide.slug === "understanding-dissection" ? ["tests-and-terms", "follow-up-questions"] : guide.slug === "tests-and-terms" ? ["understanding-dissection", "follow-up-questions"] : guide.slug === "recovery-and-quality-of-life" ? ["follow-up-questions", "supporting-someone"] : guide.slug === "supporting-someone" ? ["recovery-and-quality-of-life", "follow-up-questions"] : ["recovery-and-quality-of-life", "follow-up-questions"]) as string[];
   const visibleSections = oneAtATime ? [guide.sections[sectionIndex]].filter(Boolean) : guide.sections;
   return <AppPage>
     <BackHome />
-    <PageHeading eyebrow="English guide · general information" title={guide.title} summary={guide.summary} />
+    <PageHeading eyebrow="English guide · general information" title={guide.title} summary={`${guide.summary} About ${readingMinutes} min read; you can take one section at a time.`} />
     <DraftNotice />
     <SaveGuideButton slug={guide.slug} />
     {Platform.OS === "web" ? <Pressable accessibilityRole="button" onPress={() => globalThis.print?.()} style={({ pressed }) => [styles.printButton, pressed && styles.pressed]}><Text style={styles.printButtonText}>Print this guide</Text></Pressable> : null}
