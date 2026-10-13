@@ -10,6 +10,7 @@ export const appointmentPrompts = [
   { id: "diagnosis", group: "During the appointment", text: "Could you explain the diagnosis and which artery is involved?" },
   { id: "tests", group: "During the appointment", text: "Could you explain what my test results show, what remains uncertain, and whether anything is still pending?" },
   { id: "follow-up-imaging", group: "During the appointment", text: "Is any follow-up imaging planned for me? If so, what is its purpose?" },
+  { id: "medicines", group: "During the appointment", text: "What do I need to know about medicines prescribed or changed for me, and who should I ask if I have a concern?" },
   { id: "daily-life", group: "During the appointment", text: "Which day-to-day concerns, such as energy or concentration, would be useful to discuss?" },
   { id: "fatigue-pattern", group: "During the appointment", text: "How could I describe changes in energy, fatigue or concentration so we can discuss what support may fit?" },
   { id: "daily-activities", group: "During the appointment", text: "Which everyday activities have become harder, and could we talk about support or rehabilitation options?" },
@@ -22,13 +23,13 @@ export const appointmentPrompts = [
 
 /** Suggested prompts are only pre-selected in memory after a person chooses a guide action. They are never saved automatically. */
 export const guidePromptSuggestions = {
-  "understanding-dissection": ["diagnosis", "tests", "next-steps"],
+  "understanding-dissection": ["diagnosis", "tests", "medicines", "next-steps"],
   "tests-and-terms": ["tests", "follow-up-imaging"],
   "without-stroke": ["follow-up-imaging", "fatigue-pattern", "daily-activities", "between-appointments"],
-  "with-stroke": ["access-needs", "daily-life", "fatigue-pattern", "daily-activities", "work-and-routines", "support"],
+  "with-stroke": ["access-needs", "daily-life", "fatigue-pattern", "daily-activities", "work-and-routines", "medicines", "support"],
   "recovery-and-quality-of-life": ["daily-life", "fatigue-pattern", "daily-activities", "work-and-routines", "support"],
   "supporting-someone": ["appointment-support", "access-needs", "support", "next-steps"],
-  "follow-up-questions": ["priority", "tests", "next-steps", "pending-results", "between-appointments"],
+  "follow-up-questions": ["priority", "tests", "medicines", "next-steps", "pending-results", "between-appointments"],
 };
 
 /** @returns {{ selectedIds: string[], note: string }} */
