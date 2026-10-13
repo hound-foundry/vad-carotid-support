@@ -24971,8 +24971,50 @@
       "release": "blocked",
       "isoAlpha2": "MT",
       "reviewOwner": null,
-      "lastChecked": null,
-      "officialSources": [],
+      "lastChecked": "2026-10-13",
+      "officialSources": [
+        {
+          "title": "IDPC legislation and GDPR implementation",
+          "url": "https://idpc.org.mt/our-office/legislation/",
+          "authority": "Malta Information and Data Protection Commissioner",
+          "sourceType": "privacy-regulator",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "IDPC guidance note on cookies consent requirements",
+          "url": "https://idpc.org.mt/idpc-publications/guidance-note-on-cookies-consent-requirements/",
+          "authority": "Malta Information and Data Protection Commissioner",
+          "sourceType": "cookie-guidance",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Medical Devices",
+          "url": "https://medicinesauthority.gov.mt/medicaldevices",
+          "authority": "Malta Medicines Authority",
+          "sourceType": "medical-device-regulator",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Medical Emergencies",
+          "url": "https://www.gov.mt/en/Life%20Events/Pages/Healthy%20Living/Medical-Emergencies.aspx",
+          "authority": "Government of Malta",
+          "sourceType": "emergency-guidance",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "What is the 1400 Helpline?",
+          "url": "https://health.gov.mt/what-is-the-1400-helpline/",
+          "authority": "Malta Health",
+          "sourceType": "health-service-guidance",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        }
+      ],
+      "sourceDiscoveryCheckedOn": "2026-10-13",
       "reviewAreas": [
         {
           "area": "privacy-and-health-data",

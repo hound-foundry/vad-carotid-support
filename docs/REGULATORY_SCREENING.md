@@ -68,6 +68,8 @@ Finland source discovery (13 October 2026) now records the Office of the Data Pr
 
 Greece source discovery (13 October 2026) now records the Hellenic Data Protection Authority, Greek personal-data legal references, the National Medicines Organization, and official emergency-number and 112 guidance. These are source leads only. Greece remains blocked pending qualified review of Greek-language, EU and national privacy, medical-software, accessibility, emergency and distribution requirements.
 
+Malta source discovery (13 October 2026) now records the Malta Information and Data Protection Commissioner’s legislation and cookie guidance, the Malta Medicines Authority medical-device portal, and official Maltese emergency and health-service guidance. These are source leads only. Malta remains blocked pending qualified review of Maltese, EU and national privacy, medical-software, accessibility, emergency and distribution requirements.
+
 ### Platform distribution policies (not legislation)
 
 | Platform | Official policy source | Release work still needed |
