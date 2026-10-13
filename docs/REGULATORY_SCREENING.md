@@ -64,6 +64,8 @@ Norway source discovery (13 October 2026) now records the Norwegian Data Protect
 
 Denmark source discovery (13 October 2026) now records the Danish Data Protection Agency, cookie and GDPR guidance, Danish Medicines Agency software and market-access guidance, and official emergency information. These are source leads only. Denmark remains blocked pending qualified review of Danish-language, EU and national privacy, medical-software, accessibility, emergency and distribution requirements.
 
+Finland source discovery (13 October 2026) now records the Office of the Data Protection Ombudsman, Fimea software and national-language guidance, and official 112 and preparedness information. These are source leads only. Finland remains blocked pending qualified review of Finnish and Swedish language requirements, EU and national privacy, medical-software, accessibility, emergency and distribution obligations.
+
 ### Platform distribution policies (not legislation)
 
 | Platform | Official policy source | Release work still needed |

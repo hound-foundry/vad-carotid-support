@@ -13669,8 +13669,50 @@
       "release": "blocked",
       "isoAlpha2": "FI",
       "reviewOwner": null,
-      "lastChecked": null,
-      "officialSources": [],
+      "lastChecked": "2026-10-13",
+      "officialSources": [
+        {
+          "title": "Office of the Data Protection Ombudsman",
+          "url": "https://tietosuoja.fi/en",
+          "authority": "Office of the Data Protection Ombudsman",
+          "sourceType": "regulator-portal",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Medical device software guidance",
+          "url": "https://fimea.fi/en/medical-devices/what-are-medical-devices-/special-device-groups/software",
+          "authority": "Finnish Medicines Agency",
+          "sourceType": "competent-authority-guidance",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Medical-device language requirements",
+          "url": "https://fimea.fi/en/medical-devices/device-distributors-and-importers/distributors/national-language-requirements",
+          "authority": "Finnish Medicines Agency",
+          "sourceType": "competent-authority-guidance",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Official emergency number 112",
+          "url": "https://www.suomi.fi/services/phoneservice/112-emergency-number-in-finland-emergency-response-centre-agency-finland/c7cad442-1820-4854-8d40-48536e6d7fcd",
+          "authority": "Emergency Response Centre Agency Finland",
+          "sourceType": "official-emergency-guidance",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Emergency preparedness guidance",
+          "url": "https://www.suomi.fi/guides/preparedness/how-to-prepare-for-incidents-and-crises/general-instructions-on-preparedness-home-emergency-supplies-and-on-what-to-do-in-different-situations?a=f4e6",
+          "authority": "Finnish public administration portal",
+          "sourceType": "official-emergency-guidance",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        }
+      ],
+      "sourceDiscoveryCheckedOn": "2026-10-13",
       "reviewAreas": [
         {
           "area": "privacy-and-health-data",
