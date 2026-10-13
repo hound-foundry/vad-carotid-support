@@ -11658,8 +11658,50 @@
       "release": "blocked",
       "isoAlpha2": "CI",
       "reviewOwner": null,
-      "lastChecked": null,
-      "officialSources": [],
+      "lastChecked": "2026-10-13",
+      "officialSources": [
+        {
+          "title": "Law No. 2013-450 on personal-data protection",
+          "url": "https://artci.ci/en/law-no-2013-450-of-19-june-2013-relating-to-the-protection-of-personal-data/",
+          "authority": "Autorité de Régulation des Télécommunications/TIC de Côte d’Ivoire",
+          "sourceType": "privacy-law",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Personal-data compliance assessment",
+          "url": "https://artci.ci/en/press-release-regarding-the-census-and-compliance-assessment-of-public-and-private-entities-processing-personal-data/",
+          "authority": "Autorité de Régulation des Télécommunications/TIC de Côte d’Ivoire",
+          "sourceType": "privacy-regulator",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Ministry of Health",
+          "url": "https://www.sante.gouv.ci/mot-du-ministre",
+          "authority": "Ministry of Health, Public Hygiene and Universal Health Coverage, Côte d’Ivoire",
+          "sourceType": "health-regulator",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Information-systems security regulations",
+          "url": "https://www.anssi.gouv.ci/reglementations/",
+          "authority": "Agence Nationale de la Sécurité des Systèmes d’Information, Côte d’Ivoire",
+          "sourceType": "security-regulation",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Government emergency services directory",
+          "url": "https://www.gouv.ci/index.php/actualite/amelioration-du-service-public-losep-au-service-de-la-population-2453",
+          "authority": "Government of Côte d’Ivoire",
+          "sourceType": "emergency-guidance",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        }
+      ],
+      "sourceDiscoveryCheckedOn": "2026-10-13",
       "reviewAreas": [
         {
           "area": "privacy-and-health-data",

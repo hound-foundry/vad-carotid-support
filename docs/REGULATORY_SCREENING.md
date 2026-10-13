@@ -631,3 +631,9 @@ Comoros source discovery records the Ministry of Justice’s personal-data law a
 This is an official-source discovery pass, not legal advice, a completeness claim or an applicability determination. Costa Rica (`CR`) remains blocked; all 14 review areas and the national review remain `not-assessed`.
 
 Costa Rica source discovery records PRODHAB’s Law 8968 materials and compliance guidance, Ministry of Health health-device and extrahospital-care materials, and the national 9-1-1 emergency system. Qualified review must resolve sensitive health-data processing, database-registration questions, device storage and transfers, medical-software classification, Spanish accessibility, emergency-service scope, and national/subnational distribution requirements before Costa Rica-specific access is enabled.
+
+## Côte d’Ivoire source-discovery snapshot — 13 October 2026
+
+This is an official-source discovery pass, not legal advice, a completeness claim or an applicability determination. Côte d’Ivoire (`CI`) remains blocked; all 14 review areas and the national review remain `not-assessed`.
+
+Côte d’Ivoire source discovery records Law 2013-450 and ARTCI privacy-compliance materials, Ministry of Health oversight, ANSSI security regulations, and the government emergency-services directory. The directory contains multiple service numbers and requires current local verification; French-language legal, clinical, accessibility, translation, health-device, and emergency-routing review remains required before Côte d’Ivoire-specific access is enabled.
