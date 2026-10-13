@@ -613,3 +613,9 @@ Central African Republic source discovery records the digital agency’s 2024 pe
 This is an official-source discovery pass, not legal advice, a completeness claim or an applicability determination. Chad (`TD`) remains blocked; all 14 review areas and the national review remain `not-assessed`.
 
 Chad source discovery records the official legal journal, Ministry of Public Health, Ministry of Posts and Digital Economy, and emergency-service sources. The legal journal must be searched for current personal-data and health-related rules, while French-language legal, clinical, accessibility, translation and emergency-coverage review remains required before Chad-specific access is enabled.
+
+## Colombia source-discovery snapshot — 13 October 2026
+
+This is an official-source discovery pass, not legal advice, a completeness claim or an applicability determination. Colombia (`CO`) remains blocked; all 14 review areas and the national review remain `not-assessed`.
+
+Colombia source discovery records the personal-data law and SIC oversight, INVIMA and Ministry of Health medical-device materials, and official national emergency-line guidance. Qualified review must resolve sensitive health-data processing, device storage and transfers, medical-software classification, Spanish-language accessibility, national and subnational health/emergency rules, and distribution requirements before Colombia-specific access or emergency details are enabled.

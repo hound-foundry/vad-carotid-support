@@ -10857,8 +10857,50 @@
       "release": "blocked",
       "isoAlpha2": "CO",
       "reviewOwner": null,
-      "lastChecked": null,
-      "officialSources": [],
+  "lastChecked": "2026-10-13",
+  "officialSources": [
+    {
+      "title": "Statutory Law 1581 of 2012 on personal-data protection",
+      "url": "https://sedeelectronica.sic.gov.co/transparencia/normativa/ley-estatutaria-1581-de-2012",
+      "authority": "Superintendencia de Industria y Comercio, Colombia",
+      "sourceType": "privacy-law",
+      "checkedOn": "2026-10-13",
+      "status": "source-lead-only"
+    },
+    {
+      "title": "Medical devices and biomedical equipment",
+      "url": "https://www.invima.gov.co/productos-vigilados/dispositivos-medicos",
+      "authority": "Instituto Nacional de Vigilancia de Medicamentos y Alimentos (INVIMA), Colombia",
+      "sourceType": "medical-device-regulation",
+      "checkedOn": "2026-10-13",
+      "status": "source-lead-only"
+    },
+    {
+      "title": "Ministry of Health medical-device policy",
+      "url": "https://www.minsalud.gov.co/salud/medicamentos-y-tecnologias/Paginas/dispositivos-medicos-equipos-biomedicos.aspx",
+      "authority": "Ministry of Health and Social Protection, Colombia",
+      "sourceType": "health-regulator",
+      "checkedOn": "2026-10-13",
+      "status": "source-lead-only"
+    },
+    {
+      "title": "National emergency line 123",
+      "url": "https://www1.funcionpublica.gov.co/preguntas-frecuentes/-/asset_publisher/sqxafjubsrEu/content/linea-unica-de-emergencias-nacional-123/28585938",
+      "authority": "Departamento Administrativo de la Función Pública, Colombia",
+      "sourceType": "emergency-guidance",
+      "checkedOn": "2026-10-13",
+      "status": "source-lead-only"
+    },
+    {
+      "title": "National police emergency lines",
+      "url": "https://oas.policia.gov.co/index.php?main_page=product_info&products_id=40",
+      "authority": "Policía Nacional de Colombia",
+      "sourceType": "emergency-management",
+      "checkedOn": "2026-10-13",
+      "status": "source-lead-only"
+    }
+  ],
+  "sourceDiscoveryCheckedOn": "2026-10-13",
       "reviewAreas": [
         {
           "area": "privacy-and-health-data",
