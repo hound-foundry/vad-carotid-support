@@ -10896,8 +10896,50 @@
       "release": "blocked",
       "isoAlpha2": "CY",
       "reviewOwner": null,
-      "lastChecked": null,
-      "officialSources": [],
+      "lastChecked": "2026-10-13",
+      "officialSources": [
+        {
+          "title": "Office of the Commissioner for Personal Data Protection",
+          "url": "https://www.dataprotection.gov.cy/dataprotection/dataprotection.nsf/page0a_en/page0a_en?Click=&OpenDocument=",
+          "authority": "Office of the Commissioner for Personal Data Protection, Cyprus",
+          "sourceType": "privacy-regulator",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "GDPR information",
+          "url": "https://www.dataprotection.gov.cy/dataprotection/dataprotection.nsf/0/1b49c680e13b01e2c2258209004c7940/$FILE/Speach%20ACIIF%20-%205-12-2017.pdf",
+          "authority": "Office of the Commissioner for Personal Data Protection, Cyprus",
+          "sourceType": "privacy-guidance",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Pharmaceutical Services",
+          "url": "https://www.phs.moh.gov.cy/index_en.html",
+          "authority": "Ministry of Health, Cyprus",
+          "sourceType": "health-regulator",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Single European emergency call number 112",
+          "url": "https://www.moi.gov.cy/moi/cd/cd.nsf/all/F7E43307AE6AB97AC225858A0025A2D6/$file/112%20Leaflet.pdf?openelement=",
+          "authority": "Cyprus Civil Defence Force",
+          "sourceType": "emergency-guidance",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Emergency help and contact information",
+          "url": "https://www.police.gov.cy/police/police.nsf/All/824E9E0C773CEFF4C22588930023A6AB/$file/English.pdf?OpenElement=",
+          "authority": "Cyprus Police",
+          "sourceType": "emergency-guidance",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        }
+      ],
+      "sourceDiscoveryCheckedOn": "2026-10-13",
       "reviewAreas": [
         {
           "area": "privacy-and-health-data",
