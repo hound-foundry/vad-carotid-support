@@ -4,6 +4,7 @@ import { Linking, Platform, Pressable, StyleSheet, Text, View } from "react-nati
 import references from "../../content/references.json";
 import { AppPage, BackHome, Body, Card, DraftNotice, PageHeading } from "../../src/components/AppPage";
 import { getGuide, guides } from "../../src/content/guides";
+import { GuideList } from "../../src/components/GuideList";
 import { SaveGuideButton } from "../../src/features/saved-guides/SaveGuideButton";
 
 export function generateStaticParams() { return guides.map((guide) => ({ slug: guide.slug })); }
@@ -16,6 +17,7 @@ export default function GuideScreen() {
   const guide = getGuide(slug);
   if (!guide) return <AppPage><BackHome /><PageHeading eyebrow="Guide not found" title="This guide is unavailable." summary="Return to the guide library to choose another page." /><Link href="/learn">Browse guides</Link></AppPage>;
   const sources = references.sources.filter((source) => guide.sourceIds.includes(source.id));
+  const relatedSlugs = (guide.slug === "understanding-dissection" ? ["tests-and-terms", "follow-up-questions"] : guide.slug === "tests-and-terms" ? ["understanding-dissection", "follow-up-questions"] : guide.slug === "recovery-and-quality-of-life" ? ["follow-up-questions", "supporting-someone"] : guide.slug === "supporting-someone" ? ["recovery-and-quality-of-life", "follow-up-questions"] : ["recovery-and-quality-of-life", "follow-up-questions"]) as string[];
   const visibleSections = oneAtATime ? [guide.sections[sectionIndex]].filter(Boolean) : guide.sections;
   return <AppPage>
     <BackHome />
@@ -50,6 +52,7 @@ export default function GuideScreen() {
       <Text style={styles.meta}>Clinical review: {guide.clinicalReview.status} · Patient/carer review: {guide.usabilityReview.status} · Translation review: {guide.translationReview.status} · Review date: {guide.reviewedOn ?? "none"}</Text>
       {sources.map((source) => <Pressable key={source.id} accessibilityRole="link" accessibilityLabel={`Open source: ${source.title}`} onPress={() => void Linking.openURL(source.url)} style={styles.source}><Text style={styles.sourceTitle}>{source.title}{source.year ? ` (${source.year})` : ""}</Text><Text style={styles.sourceLimit}>Source record checked {source.checked_on}. {source.limits}</Text></Pressable>)}
     </Card>
+    <Card title="Continue with a related guide"><GuideList slugs={relatedSlugs} /></Card>
   </AppPage>;
 }
 
