@@ -40358,6 +40358,86 @@
           "status": "source-lead-only"
         },
         {
+          "title": "California Confidentiality of Medical Information Act (Civil Code Part 2.6), including digital-service scope",
+          "url": "https://leginfo.legislature.ca.gov/faces/codes_displayText.xhtml?article=&chapter=2.6.&division=1.&lawCode=CIV&part=2.6.&title=",
+          "authority": "California Legislative Information / Office of Legislative Counsel",
+          "sourceType": "state-health-privacy-legislation",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Connecticut Data Privacy and Security Act, Conn. Gen. Stat. §§ 42-515 to 42-526 (current chapter)",
+          "url": "https://www.cga.ct.gov/Current/pub/chap_743jj.htm",
+          "authority": "Connecticut General Assembly, Office of Legislative Research",
+          "sourceType": "state-consumer-privacy-legislation",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Texas Health and Safety Code Chapter 181: Medical Records Privacy",
+          "url": "https://tcss.legis.texas.gov/resources/HS/htm/HS.181.htm",
+          "authority": "Texas Legislative Council",
+          "sourceType": "state-health-privacy-legislation",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "FTC Children’s Online Privacy Protection Rule (COPPA), 16 CFR Part 312",
+          "url": "https://www.ftc.gov/legal-library/browse/rules/childrens-online-privacy-protection-rule-coppa",
+          "authority": "Federal Trade Commission (FTC)",
+          "sourceType": "children-privacy-regulation",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "FTC 2025 final amendments to the COPPA Rule",
+          "url": "https://www.ftc.gov/news-events/news/press-releases/2025/01/ftc-finalizes-changes-childrens-privacy-rule-limiting-companies-ability-monetize-kids-data",
+          "authority": "Federal Trade Commission (FTC)",
+          "sourceType": "children-privacy-rule-amendment",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "DOJ ADA Title II web and mobile accessibility rule and 2026 compliance-date extension",
+          "url": "https://www.ada.gov/title-ii-web-rule/",
+          "authority": "U.S. Department of Justice (DOJ), Civil Rights Division",
+          "sourceType": "digital-accessibility-rule",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "DOJ guidance on web accessibility under ADA Titles II and III",
+          "url": "https://www.ada.gov/resources/web-guidance/",
+          "authority": "U.S. Department of Justice (DOJ), Civil Rights Division",
+          "sourceType": "digital-accessibility-guidance",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "HHS Section 504 accessibility rule interim final rule and 2026 compliance-date extensions",
+          "url": "https://public-inspection.federalregister.gov/2026-09266.pdf",
+          "authority": "U.S. Department of Health and Human Services (HHS), Office for Civil Rights",
+          "sourceType": "section-504-accessibility-rule",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "911.gov: U.S. emergency-call information",
+          "url": "https://www.911.gov/",
+          "authority": "U.S. Department of Transportation / National 911 Program",
+          "sourceType": "emergency-information",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "IRS federal tax exemption overview for charitable organizations",
+          "url": "https://www.irs.gov/charities-non-profits/charitable-organizations",
+          "authority": "Internal Revenue Service (IRS)",
+          "sourceType": "charity-tax-guidance",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
           "title": "Census Bureau geography definitions: states, DC and territories",
           "url": "https://www.census.gov/data/data-tools/survey-explorer/geo.html",
           "authority": "U.S. Census Bureau",
@@ -40891,7 +40971,7 @@
         }
       ],
       "sourceDiscoveryCheckedOn": "2026-10-13",
-      "sourceDiscoveryNote": "Initial US source discovery only, not legal advice, a federal or state applicability screen, or permission to distribute. The 50 states and District of Columbia are queued as not-assessed review targets. The federal source leads show why role and product function matter: HIPAA depends on covered-entity/business-associate relationships; the FTC Act and Health Breach Notification Rule may be relevant outside HIPAA; FDA device status depends on intended purpose and software functions. Washington and Nevada are examples of state consumer-health-data laws, not an exhaustive state survey. Separately inventoried US territories, tribal jurisdictions, counties, municipalities and state/local rules still require scope mapping. Screen privacy, breach, consumer, accessibility, device, health-professional, charity/tax, emergency and distribution rules with qualified US counsel. All reviews remain not-assessed and US release remains blocked."
+      "sourceDiscoveryNote": "Federal and state source discovery only; not legal advice, a complete applicability screen, or permission to distribute. The 50 states and District of Columbia remain queued as 51 not-assessed review targets; US release remains blocked. Current federal leads include FTC health-app and Health Breach Notification Rule guidance, HIPAA role boundaries, FDA medical-software guidance, COPPA, ADA web accessibility and the HHS Section 504 digital-accessibility framework. The DOJ reports a 2026 extension to certain Title II public-entity compliance dates; HHS separately extended Section 504 dates for recipients of HHS financial assistance. Neither settles this project's applicability. Additional state health/privacy leads now include California CMIA, Connecticut Data Privacy and Security Act, Texas Health and Safety Code Chapter 181, Washington My Health My Data Act and Nevada consumer-health-data rules. This is a selected set, not a complete list: state comprehensive privacy statutes, health-specific laws, breach notification, consumer, accessibility, child, professional-practice, charity/fundraising and local rules still require a state-by-state review. The NCSL consumer privacy bill database can aid discovery but is not a substitute for current enacted law. Territories, tribal jurisdictions, counties, municipalities, actual hosting/data flows, operator identity, funding and platform requirements remain open. Generic emergency wording remains until local emergency routes are verified."
     },
     {
       "name": "United States Virgin Islands",
