@@ -9,6 +9,7 @@ const groups = [...new Set(supportPreferences.map((item) => item.group))];
 export default function SupportPreferencesScreen() {
   const [sheet, setSheet] = useState<SupportPreferencesSheet>(emptySupportPreferences());
   const [saved, setSaved] = useState(false);
+  const [showSelectedOnly, setShowSelectedOnly] = useState(false);
   const edited = useRef(false);
   const [message, setMessage] = useState("Loading saved preferences from this device…");
 
@@ -82,7 +83,8 @@ export default function SupportPreferencesScreen() {
     <PageHeading eyebrow="For the people around you" title="How I prefer to be supported." summary="Choose a few statements that fit today. Review them, then decide whether to save them here or export a copy to share." />
     <Card title="A note about this sheet"><Text style={styles.body}>Everything is optional. These are example preferences, not instructions for your care. They can change at any time. This is not a medical or emergency plan.</Text></Card>
     <View style={styles.selectionSummary} accessibilityLiveRegion="polite"><Text style={styles.selectionCount}>{sheet.selectedIds.length} {sheet.selectedIds.length === 1 ? "preference" : "preferences"} selected</Text>{sheet.selectedIds.length > 0 ? <Pressable accessibilityRole="button" onPress={() => { markEdited(); setSheet((current) => ({ ...current, selectedIds: [] })); }} style={({ pressed }) => [styles.clearButton, pressed && styles.pressed]}><Text style={styles.clearButtonText}>Clear selections</Text></Pressable> : null}</View>
-    {groups.map((group) => { const groupItems = supportPreferences.filter((item) => item.group === group); const groupSelected = groupItems.filter((item) => sheet.selectedIds.includes(item.id)).length; const allSelected = groupSelected === groupItems.length; return <Card key={group} title={group}><Pressable accessibilityRole="button" accessibilityLabel={`${allSelected ? "Clear" : "Select all"} preferences in ${group}`} onPress={() => toggleGroup(group)} style={({ pressed }) => [styles.groupAction, pressed && styles.pressed]}><Text style={styles.groupActionText}>{allSelected ? "Clear section" : "Select all in section"}</Text><Text style={styles.groupCount}>{groupSelected}/{groupItems.length}</Text></Pressable>{groupItems.map((item) => {
+    <Pressable accessibilityRole="checkbox" accessibilityLabel="Show selected preferences only" accessibilityState={{ checked: showSelectedOnly }} onPress={() => setShowSelectedOnly((current) => !current)} style={styles.paceOption}><View style={[styles.checkbox, showSelectedOnly && styles.checked]}>{showSelectedOnly ? <Text style={styles.check}>✓</Text> : null}</View><Text style={styles.optionText}>Show selected preferences only</Text></Pressable>
+    {groups.map((group) => { const allGroupItems = supportPreferences.filter((item) => item.group === group); const groupItems = showSelectedOnly ? allGroupItems.filter((item) => sheet.selectedIds.includes(item.id)) : allGroupItems; const groupSelected = allGroupItems.filter((item) => sheet.selectedIds.includes(item.id)).length; const allSelected = groupSelected === allGroupItems.length; if (showSelectedOnly && groupItems.length === 0) return null; return <Card key={group} title={group}><Pressable accessibilityRole="button" accessibilityLabel={`${allSelected ? "Clear" : "Select all"} preferences in ${group}`} onPress={() => toggleGroup(group)} style={({ pressed }) => [styles.groupAction, pressed && styles.pressed]}><Text style={styles.groupActionText}>{allSelected ? "Clear section" : "Select all in section"}</Text><Text style={styles.groupCount}>{groupSelected}/{allGroupItems.length}</Text></Pressable>{groupItems.map((item) => {
       const selected = sheet.selectedIds.includes(item.id);
       return <Pressable key={item.id} accessibilityRole="checkbox" accessibilityLabel={item.text} accessibilityState={{ checked: selected }} onPress={() => toggle(item.id)} style={styles.option}>
         <View style={[styles.checkbox, selected && styles.checked]}>{selected ? <Text style={styles.check}>✓</Text> : null}</View>
@@ -125,6 +127,7 @@ const styles = StyleSheet.create({
   groupAction: { minHeight: 44, paddingHorizontal: 4, flexDirection: "row", alignItems: "center", justifyContent: "space-between" },
   groupActionText: { color: palette.tealDark, fontSize: 13, lineHeight: 20, fontWeight: "700" },
   groupCount: { color: palette.muted, fontSize: 12, lineHeight: 18 },
+  paceOption: { minHeight: 44, marginBottom: 8, paddingHorizontal: 3, flexDirection: "row", alignItems: "center", gap: 10 },
   actions: { gap: 8, marginVertical: 8 },
   button: { minHeight: 46, paddingHorizontal: 15, borderRadius: 10, backgroundColor: palette.teal, alignItems: "center", justifyContent: "center" },
   secondaryButton: { backgroundColor: palette.white, borderWidth: 1, borderColor: palette.line },
