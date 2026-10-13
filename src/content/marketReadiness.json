@@ -37294,8 +37294,50 @@
       "release": "blocked",
       "isoAlpha2": "CH",
       "reviewOwner": null,
-      "lastChecked": null,
-      "officialSources": [],
+      "lastChecked": "2026-10-13",
+      "officialSources": [
+        {
+          "title": "Swiss Federal Data Protection and Information Commissioner health guidance",
+          "url": "https://www.edoeb.admin.ch/en/health",
+          "authority": "Federal Data Protection and Information Commissioner",
+          "sourceType": "regulator-guidance",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Cookies and similar technologies factsheet",
+          "url": "https://www.edoeb.admin.ch/dam/en/sd-web/ByXs53ExpIEy/20260327%20Merkblatt%20Cookies_EN.pdf",
+          "authority": "Federal Data Protection and Information Commissioner",
+          "sourceType": "regulator-guidance",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Medical device software information sheet",
+          "url": "https://www.swissmedic.ch/dam/swissmedic/en/dokumente/medizinprodukte/mep_urr/bw630_30_007d_mbmedizinprodukte-software.pdf.download.pdf/BW630_30_007e_MB%20Medical%20Device%20Software.pdf",
+          "authority": "Swissmedic",
+          "sourceType": "competent-authority-guidance",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Swissmedic medical-device overview",
+          "url": "https://www.swissmedic.ch/swissmedic/en/home/medical-devices/overview-medical-devices.html",
+          "authority": "Swissmedic",
+          "sourceType": "competent-authority-portal",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Swiss medical emergency information",
+          "url": "https://www.ch.ch/en/travel-and-emigrate/useful-travel-information/",
+          "authority": "Swiss Confederation",
+          "sourceType": "official-emergency-guidance",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        }
+      ],
+      "sourceDiscoveryCheckedOn": "2026-10-13",
       "reviewAreas": [
         {
           "area": "privacy-and-health-data",

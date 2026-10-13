@@ -54,6 +54,8 @@ Belgium source discovery (13 October 2026) now records the Belgian Data Protecti
 
 Austria source discovery (13 October 2026) now records the Austrian Data Protection Authority, its cookie and legal-source guidance, BASG medical-device market-access guidance, and official emergency-number information. These are source leads only. Austria remains blocked pending qualified review of German-language and EU privacy, medical-software, accessibility, emergency and distribution requirements.
 
+Switzerland source discovery (13 October 2026) now records the Federal Data Protection and Information Commissioner, Swissmedic medical-device software and market-access guidance, and Swiss emergency information. These are source leads only. Switzerland remains blocked pending qualified review of federal and cantonal requirements, multilingual publication duties, privacy, medical-software, accessibility, emergency and distribution rules.
+
 ### Platform distribution policies (not legislation)
 
 | Platform | Official policy source | Release work still needed |
