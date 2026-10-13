@@ -1,13 +1,15 @@
 import { Link, Stack } from "expo-router";
 import Head from "expo-router/head";
 import { StatusBar } from "expo-status-bar";
-import { Pressable, StyleSheet, Text, View } from "react-native";
+import { useEffect } from "react";
+import { Platform, Pressable, StyleSheet, Text, View } from "react-native";
 import { SafeAreaProvider, SafeAreaView } from "react-native-safe-area-context";
 import { palette } from "../src/components/AppPage";
 import { SiteHeader } from "../src/components/SiteHeader";
 import { AccessibilityProvider } from "../src/features/accessibility/AccessibilityProvider";
 
 export default function RootLayout() {
+  useEffect(() => { if (Platform.OS === "web" && "serviceWorker" in navigator && process.env.NODE_ENV === "production") void navigator.serviceWorker.register("/sw.js").catch(() => undefined); }, []);
   return (
     <SafeAreaProvider>
       <AccessibilityProvider>

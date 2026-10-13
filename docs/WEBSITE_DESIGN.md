@@ -21,6 +21,7 @@ This is intentionally informed by established health-service patterns rather tha
 - Prefer real text and printable layouts to decorative imagery.
 - Keep motion optional and never use animation to communicate medical urgency.
 - Keep the same shell across the website and future app so the mental model transfers.
+- Keep the static shell usable during a short connectivity interruption. Network-first refreshes should prefer current content, while a cached page is only a fallback; never cache or transmit card and appointment fields through the service worker.
 
 ## Component vocabulary
 
