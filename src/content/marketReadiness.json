@@ -4827,8 +4827,50 @@
       "release": "blocked",
       "isoAlpha2": "BW",
       "reviewOwner": null,
-      "lastChecked": null,
-      "officialSources": [],
+      "lastChecked": "2026-10-13",
+      "officialSources": [
+        {
+          "title": "Data Protection Act 2024",
+          "url": "https://www.parliament.gov.bw/documents/ORDPAP-15-08-24_02_11_34_16_08_2024.pdf",
+          "authority": "Parliament of Botswana",
+          "sourceType": "privacy-law",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Government data-protection privacy notice",
+          "url": "https://socialservices.gov.bw/",
+          "authority": "Department of Social Development, Botswana",
+          "sourceType": "privacy-guidance",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Emergency Medical Services",
+          "url": "https://gov.bw/public-health-services/emergency-medical-services-ambulance-services",
+          "authority": "Government of Botswana",
+          "sourceType": "health-service-guidance",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Ministry of Health emergency services",
+          "url": "https://www.moh.gov.bw/emergency_services.html",
+          "authority": "Ministry of Health and Wellness, Botswana",
+          "sourceType": "health-regulator",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Emergency ambulance number 997",
+          "url": "https://gov.bw/public-health-services/emergency-medical-services-ambulance-services",
+          "authority": "Government of Botswana",
+          "sourceType": "emergency-guidance",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        }
+      ],
+      "sourceDiscoveryCheckedOn": "2026-10-13",
       "reviewAreas": [
         {
           "area": "privacy-and-health-data",

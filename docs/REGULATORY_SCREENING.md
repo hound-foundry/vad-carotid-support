@@ -92,6 +92,8 @@ Bulgaria source discovery (13 October 2026) now records the Commission for Perso
 
 Chile source discovery (13 October 2026) now records Council for Transparency privacy material, the Public Health Institute’s National Agency for Medical Devices and registration standards, and official ambulance guidance. These are source leads only. Chile remains blocked pending qualified review of Spanish-language national privacy, medical-software, accessibility, emergency and distribution requirements.
 
+Botswana source discovery (13 October 2026) now records the 2024 data-protection bill, government privacy notice, Ministry of Health emergency-services material, and official ambulance guidance. These are source leads only. Botswana remains blocked pending qualified review of English-language national privacy, medical-software, accessibility, emergency and distribution requirements.
+
 ### Platform distribution policies (not legislation)
 
 | Platform | Official policy source | Release work still needed |
