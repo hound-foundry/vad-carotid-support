@@ -7605,8 +7605,50 @@
       "release": "blocked",
       "isoAlpha2": "CL",
       "reviewOwner": null,
-      "lastChecked": null,
-      "officialSources": [],
+      "lastChecked": "2026-10-13",
+      "officialSources": [
+        {
+          "title": "Privacy policy and Law 19.628 references",
+          "url": "https://www.consejotransparencia.cl/informacion/politicasprivacidad/",
+          "authority": "Council for Transparency, Chile",
+          "sourceType": "privacy-regulator",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "National Agency for Medical Devices",
+          "url": "https://www.ispch.cl/andim/",
+          "authority": "Public Health Institute of Chile",
+          "sourceType": "medical-device-regulator",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Medical-device sanitary registration",
+          "url": "https://www.ispch.cl/andim/registro-y-autorizacion/registro/",
+          "authority": "Public Health Institute of Chile",
+          "sourceType": "medical-device-registration",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Medical-device regulatory standards",
+          "url": "https://www.ispch.cl/normativa-andim/",
+          "authority": "Public Health Institute of Chile",
+          "sourceType": "medical-device-law",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Emergency ambulance number 131",
+          "url": "https://www.conaset.gov.cl/contactos-movil.html",
+          "authority": "National Traffic Safety Commission, Chile",
+          "sourceType": "emergency-guidance",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        }
+      ],
+      "sourceDiscoveryCheckedOn": "2026-10-13",
       "reviewAreas": [
         {
           "area": "privacy-and-health-data",

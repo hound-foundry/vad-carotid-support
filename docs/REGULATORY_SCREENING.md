@@ -90,6 +90,8 @@ Ghana source discovery (13 October 2026) now records the Data Protection Commiss
 
 Bulgaria source discovery (13 October 2026) now records the Commission for Personal Data Protection, its Personal Data Protection Act, Bulgarian Drug Agency medical-device materials, and official 112 guidance. These are source leads only. Bulgaria remains blocked pending qualified review of Bulgarian- and English-language, EU and national privacy, medical-software, accessibility, emergency and distribution requirements.
 
+Chile source discovery (13 October 2026) now records Council for Transparency privacy material, the Public Health Institute’s National Agency for Medical Devices and registration standards, and official ambulance guidance. These are source leads only. Chile remains blocked pending qualified review of Spanish-language national privacy, medical-software, accessibility, emergency and distribution requirements.
+
 ### Platform distribution policies (not legislation)
 
 | Platform | Official policy source | Release work still needed |
