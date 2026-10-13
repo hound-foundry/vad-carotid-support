@@ -102,6 +102,8 @@ Zimbabwe source discovery (13 October 2026) now records Cyber and Data Protectio
 
 Algeria source discovery (13 October 2026) now records the national personal-data protection authority, its compliance portal, Ministry of Health oversight material, and Ministry of Interior emergency-coordination sources. These are source leads only. Algeria remains blocked pending qualified review of Arabic-, French- and English-language national privacy, medical-software, accessibility, emergency and distribution requirements.
 
+Angola source discovery (13 October 2026) now records the Data Protection Agency, national privacy legislation, Ministry of Health specialist guidance, and official National Police and Criminal Investigation Service emergency contacts. These are source leads only. Angola remains blocked pending qualified review of Portuguese-language national privacy, medical-software, accessibility, emergency and distribution requirements.
+
 ### Platform distribution policies (not legislation)
 
 | Platform | Official policy source | Release work still needed |

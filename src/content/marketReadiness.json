@@ -960,8 +960,50 @@
       "release": "blocked",
       "isoAlpha2": "AO",
       "reviewOwner": null,
-      "lastChecked": null,
-      "officialSources": [],
+      "lastChecked": "2026-10-13",
+      "officialSources": [
+        {
+          "title": "Data Protection Agency citizen rights",
+          "url": "https://apd.ao/ao/direitos-do-cidadao/",
+          "authority": "Agência de Protecção de Dados, Angola",
+          "sourceType": "privacy-regulator",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "National data-protection legislation",
+          "url": "https://apd.ao/ao/legislacao/",
+          "authority": "Agência de Protecção de Dados, Angola",
+          "sourceType": "privacy-law",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Ministry of Health specialist neurology protocol",
+          "url": "https://pdh2e.minsa.gov.ao/uploads/protocolo/copia-de-NEUROLOGIA-Para-Revisao-Estado-de-Mal-Epiletico-638b64c1ea474.pdf",
+          "authority": "Ministry of Health, Angola",
+          "sourceType": "health-guidance",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "National emergency number 111",
+          "url": "https://dispo.pna.gov.ao/",
+          "authority": "National Police of Angola",
+          "sourceType": "emergency-guidance",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Criminal Investigation Service emergency contact",
+          "url": "https://sic.gov.ao/en/home-2/",
+          "authority": "Criminal Investigation Service, Angola",
+          "sourceType": "emergency-services",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        }
+      ],
+      "sourceDiscoveryCheckedOn": "2026-10-13",
       "reviewAreas": [
         {
           "area": "privacy-and-health-data",
