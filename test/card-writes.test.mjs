@@ -2,7 +2,7 @@ import test from "node:test";
 import assert from "node:assert/strict";
 import { createCardStore, coordinateCardClearing } from "../src/features/cards/storage.mjs";
 import { emptyPersonalCard, emptyMilestoneCard } from "../src/features/cards/model.mjs";
-import { clearProjectData, onProjectDataClearing } from "../src/features/local-data/keys.mjs";
+import { clearProjectData, LOCAL_DATA_KEYS, onProjectDataClearing } from "../src/features/local-data/keys.mjs";
 
 function delayedAdapter() {
   const data = new Map(); const pending = [];
@@ -13,6 +13,47 @@ function delayedAdapter() {
   };
 }
 const tick = () => new Promise((resolve) => setImmediate(resolve));
+
+test("overlapping clears share one operation and keep writes paused until removal finishes", async () => {
+  const adapter = delayedAdapter();
+  const removals = [];
+  adapter.removeItem = (key) => new Promise((resolve) => removals.push(() => {
+    adapter.data.delete(key);
+    resolve();
+  }));
+  const store = createCardStore(adapter, "personal");
+  const unsubscribe = coordinateCardClearing([store]);
+  try {
+    const first = clearProjectData(adapter);
+    const second = clearProjectData(adapter);
+    assert.equal(first, second, "both callers await the same complete clear");
+    await tick();
+    assert.equal(removals.length, LOCAL_DATA_KEYS.length, "one removal per key");
+    await assert.rejects(store.save(emptyPersonalCard()), /being cleared/);
+    for (const finish of removals) finish();
+    await Promise.all([first, second]);
+    assert.equal(adapter.data.has(store.key), false);
+    const saving = store.save(emptyPersonalCard());
+    await tick();
+    adapter.pending.shift()();
+    await saving;
+    assert.equal(adapter.data.has(store.key), true, "later explicit saves work");
+  } finally { unsubscribe(); }
+});
+
+test("a failed shared clear releases its operation so the same adapter can retry", async () => {
+  let unavailable = true;
+  const adapter = {
+    removeItem: async () => { if (unavailable) throw new Error("unavailable"); },
+  };
+  const first = clearProjectData(adapter), second = clearProjectData(adapter);
+  assert.equal(first, second);
+  await assert.rejects(first, /unavailable/);
+  unavailable = false;
+  const retry = clearProjectData(adapter);
+  assert.notEqual(retry, first);
+  await retry;
+});
 
 test("card deletion waits for an earlier asynchronous save", async () => {
   const adapter = delayedAdapter(); const store = createCardStore(adapter, "personal");

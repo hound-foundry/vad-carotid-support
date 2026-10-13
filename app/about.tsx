@@ -16,8 +16,10 @@ export default function About() {
       await clearAllSavedData();
       clearDrafts(); reset();
       setClearMessage("Saved sheets, cards, guide links and accessibility preferences were deleted from this device.");
+      return true;
     } catch {
       setClearMessage("Some saved data could not be deleted. Use each tool’s delete control to try again.");
+      return false;
     }
   };
   return <AppPage><BackHome /><PageHeading eyebrow="About this project" title="About and privacy" summary="A free, independent, open-source Hound Foundry community project for adults affected by vertebral or carotid artery dissection, families, carers and interested readers." />

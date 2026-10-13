@@ -35,8 +35,10 @@ export default function SavedGuidesScreen() {
       await deleteSavedGuides();
       setSlugs([]);
       setMessage("Saved guides deleted from this app’s device storage.");
+      return true;
     } catch {
       setMessage("Could not delete saved guides from device storage.");
+      return false;
     }
   };
 

@@ -1,0 +1,36 @@
+# Verification of the eight patient-interface repairs
+
+13 October 2026. Starting revision: `d19d4200997e7b3f443c8532e9dfb939945e72da`. This is a technical completion review using disposable synthetic examples, not clinical approval or a patient study.
+
+## Requirement-by-requirement evidence
+
+| Requirement | Current implementation | Verification |
+|---|---|---|
+| Readable Home heading at doubled text; short/narrow branding retains accessible names | `app/index.tsx` uses “Guides and tools”, followed by four tasks, then the audience explanation. `SiteHeader.tsx` compacts visual branding while preserving full accessible labels. | Fresh [320px](repair-completion/home-320-double.jpg), [390px](repair-completion/home-390-double.jpg) and [844×360](repair-completion/home-landscape-double.jpg) captures at 200% app text. [Accessible names](repair-completion/home-accessible-names.txt) retain the full brand and Text and display labels. |
+| Recoverable missing page; real HTTP404; missing assets remain plain404 | `app/+not-found.tsx` uses the shared shell and Home link. `scripts/preview-web.mjs` distinguishes page requests from assets. | Fresh [missing-page capture](repair-completion/missing-page.jpg). Actual HTTP probes: page404/HTML with Home and Urgent help; missing JS and PNG404/plain text. Server tests cover HEAD, route loading and traversal protection; export validation checks the real shell. |
+| Inspectable in-page deletion with Cancel focus, Escape and return focus; explicit draft-removal copy | Shared `ConfirmDelete` is used by appointments, support preferences, saved guides and clear-all. Callbacks now must return a Boolean success result; a failure leaves the confirmation open for Cancel/retry. | [Final sheet regressions](repair-completion/final-deletion-regressions.json), [guide deletion](repair-completion/final-guide-delete.json) and [global clear](repair-completion/final-clear-all.json). Cancel/Escape preserve fixtures through reload; confirmation removes them. Focus is Cancel deletion, then the initiating button. All four call sites preserve errors and report their result. Model tests exercise failed deletion without losing the sheet. |
+| Medical PDF does not strand Last updated on a new page; long content paginates legibly | The PDF generator reserves measured label/first-value space, uses 14pt labels and 17pt values, and adds pages when content needs them. | Actual downloaded short fixture: one page with Last updated. Actual 500-character field: two pages, all repeated text accounted for, no shrink/clipping/overlap in inspected renders. [PDF verification](repair-completion/pdf-verification.json), [short render](repair-completion/medical-card-page1.png), [long page1](repair-completion/medical-card-long-page1.png), [long page2](repair-completion/medical-card-long-page2.png). |
+| One legible safety footer per PDF page | The footer is 13pt, printed once per page; the duplicate body copy is absent. The safety wording is unchanged. | Text extraction counted exactly one safety label on each of the four inspected pages: short medical1, long medical2, milestone1. [Milestone render](repair-completion/milestone-card-page1.png). |
+| No event date is clearly distinct from Last updated; no date schema/format changes | The personal-card date field explains that no event date will appear, while the separate update timestamp remains. Presentations still filter hidden event dates. | [Date-helper UI record](repair-completion/no-event-date-helper.txt), [medical preview](repair-completion/medical-preview.txt), and actual PDFs omit `GOAL_HIDDEN_DATE_2042` while showing the labelled update date. Existing model tests cover all date granularities and hidden dates in text/HTML. Date models and document formats are unchanged. |
+| Read-aloud feedback beside its control; stale callbacks guarded | `read-aloud/controller.mjs` owns lifecycle and feedback; `useReadAloud.ts` binds the controller to guide/section/route changes. The guide route only supplies its existing text and renders the state. | [Speech UI capture](repair-completion/speech-status.jpg) and [start/stop/section-change records](repair-completion/speech-states.json). Five controller tests cover finish, stop, stale callbacks, reset, unavailable support, constructor/speak exceptions, interruption and error feedback. Audible playback is not claimed. |
+| Pending card writes cannot restore cleared data; writes resume after successful or failed clear | Existing card queues pause/drain around clearing. Overlapping clear calls now share one operation per storage adapter; the app uses a stable adapter. Completion/failure releases that operation so retry and later explicit saves work. | Seven delayed-adapter tests exercise save/delete ordering, both card stores, writes blocked during clear, failed saves, failed clears/pre-clear hooks, overlapping clears and retry. Before this hardening, a forced overlapping-clear fixture re-created a card after clearance; the shared-operation regression now passes. Browser clear/reload removes saved fixtures. No key or schema changed. |
+
+## Structure and failure handling
+
+The work keeps separate responsibilities: presentation in routes, one shared confirmation component, storage coordination in the local-data feature, independent personal/milestone stores, and a testable speech controller with a small React hook. It adds no service, account, storage key, public endpoint, dependency or clinical content change.
+
+Deletion handlers previously caught failures without returning a result, so the shared control could close after a failed attempt. They now return `true` only after removal succeeds and `false` on failure. TypeScript enforces this contract for every call site. Failure text stays generic; raw storage exceptions and private values are not displayed or logged by this control.
+
+Overlapping-clear sharing uses a private WeakMap keyed by the stable storage adapter. Both callers wait for the same full pause/drain/remove/resume operation. A rejection also releases the operation, preserving retries. The original single-clear delayed-write and failure tests remain in place.
+
+## Validation and boundaries
+
+- All 62 tests pass, with content/review/native configuration validation.
+- TypeScript, static web export (27 routes) and export validation (32 required artifacts) pass.
+- Final interface bundle: `entry-6bd9c06febb88561070b8ef3849ee298.js`.
+- Browser checks used only `localhost:53073`. Existing preview storage on `localhost:4173` was not opened or cleared.
+- PDF files were downloaded during this turn before the final confirmation-only refinement. The PDF generator and presentation models were unchanged by that refinement; all four rendered pages were inspected.
+- Browser deletion success, cancellation and focus paths were exercised. Failed storage is exercised through controlled model/adapters and source/type checking; browser storage-failure injection was not performed.
+- Actual browser zoom, NVDA/VoiceOver/TalkBack, audible speech and physical printing remain outside these engineering claims. Clinical, translation and market-review statuses remain unchanged.
+
+The [five original audit reports](FIVE_TESTER_AUDIT.md) retain their original assessments and limits; this review supplements their repairs rather than rewriting those reports.

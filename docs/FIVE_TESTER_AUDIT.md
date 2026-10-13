@@ -2,6 +2,8 @@
 
 13 October 2026. Target: the English Expo static website. These are five independent AI interface inspections, not patient feedback, disability simulation, clinical approval or accessibility certification.
 
+Subsequent verification and code hardening of the eight repairs is recorded in [repair completion](REPAIR_COMPLETION.md), including the overlapping-clear regression and extracted speech lifecycle. Original reports, scores and hashes remain unchanged.
+
 ## Method and provenance
 
 Five fresh `gpt-6-luna` agents received distinct scenarios and the same [protocol](five-tester-audit/protocol.md), with no conversation, previous ratings, source code or other testers' reports. They first explored Home, then used the shared checklist. Browser operation was serialized. The baseline was frozen at `72688788cb926af39b9813c38ac830301a0eaeda`; [baseline/origin records](five-tester-audit/origin-proof.json) establish that the five separate test origins served the same export. Only disposable invented values were entered. The user's `localhost:4173` storage was not opened, changed or cleared.

@@ -1,0 +1,19 @@
+{
+  "entry": "entry-6bd9c06febb88561070b8ef3849ee298.js",
+  "checks": [
+    {
+      "route": "/appointments",
+      "cancelFocus": "Cancel deletion",
+      "returnFocus": "Delete saved sheet",
+      "cancelRetained": true,
+      "confirmedRemoved": true
+    },
+    {
+      "route": "/support-preferences",
+      "cancelFocus": "Cancel deletion",
+      "returnFocus": "Delete saved preferences",
+      "cancelRetained": true,
+      "confirmedRemoved": true
+    }
+  ]
+}

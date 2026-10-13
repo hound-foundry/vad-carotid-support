@@ -62,7 +62,11 @@ export default function SupportPreferencesScreen() {
     try {
       const ok = await draft.remove();
       setMessage(ok ? "Saved preferences deleted from this app’s device storage." : "Could not delete the saved preferences from device storage.");
-    } catch { setMessage("Could not delete the saved preferences from device storage."); }
+      return ok;
+    } catch {
+      setMessage("Could not delete the saved preferences from device storage.");
+      return false;
+    }
   };
   const exportSheet = async () => {
     try {

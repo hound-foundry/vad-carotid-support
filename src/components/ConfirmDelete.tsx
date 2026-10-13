@@ -3,10 +3,19 @@ import { Platform, StyleSheet, type View as NativeView } from "react-native";
 import { Card, palette } from "./AppPage";
 import { Pressable, Text, View } from "./Ui";
 
+type ConfirmDeleteProps = {
+  label: string;
+  question: string;
+  detail: string;
+  /** Return true only when deletion completed successfully. */
+  onConfirm: () => Promise<boolean>;
+  disabled?: boolean;
+};
+
+const failureMessage = "Deletion did not complete. You can cancel or try again.";
+
 /** Keep destructive choices in the page, with Cancel receiving keyboard focus. */
-export function ConfirmDelete({ label, question, detail, onConfirm, disabled = false }: {
-  label: string; question: string; detail: string; onConfirm: () => Promise<void>; disabled?: boolean;
-}) {
+export function ConfirmDelete({ label, question, detail, onConfirm, disabled = false }: ConfirmDeleteProps) {
   const [open, setOpen] = useState(false);
   const [busy, setBusy] = useState(false);
   const [failure, setFailure] = useState("");
@@ -30,12 +39,16 @@ export function ConfirmDelete({ label, question, detail, onConfirm, disabled = f
   }, [open, busy]);
   const confirm = async () => {
     setBusy(true); setFailure("");
-    try { await onConfirm(); setOpen(false); }
-    catch { setFailure("Deletion did not complete. You can cancel or try again."); }
+    try {
+      const result = await onConfirm();
+      if (!result) setFailure(failureMessage);
+      else setOpen(false);
+    }
+    catch { setFailure(failureMessage); }
     finally { setBusy(false); }
   };
   return <View style={styles.wrapper}>
-    <Pressable ref={triggerRef} accessibilityRole="button" accessibilityState={{ disabled: disabled || busy, expanded: open }} disabled={disabled || busy} onPress={() => setOpen(true)} style={styles.button}><Text style={styles.label}>{label}</Text></Pressable>
+    <Pressable ref={triggerRef} accessibilityRole="button" accessibilityState={{ disabled: disabled || busy, expanded: open }} disabled={disabled || busy} onPress={() => { setFailure(""); setOpen(true); }} style={styles.button}><Text style={styles.label}>{label}</Text></Pressable>
     {open ? <View accessibilityLiveRegion="polite"><Card title={question}>
       <Text style={styles.detail}>{detail}</Text>
       {failure ? <Text accessibilityLiveRegion="polite" style={styles.detail}>{failure}</Text> : null}

@@ -6,11 +6,24 @@ import { PERSONAL_CARD_KEY, MILESTONE_CARD_KEY } from "../cards/model.mjs";
 export const LOCAL_DATA_KEYS = [appointments, support, guides, accessibility, PERSONAL_CARD_KEY, MILESTONE_CARD_KEY];
 const clearedListeners = new Set();
 const clearingListeners = new Set();
+const activeClears = new WeakMap();
 /** @param {()=>void|Promise<void>} listener */
 export function onProjectDataCleared(listener) { clearedListeners.add(listener); return () => { clearedListeners.delete(listener); }; }
 /** @param {(phase:"before"|"after"|"failed")=>void|Promise<void>} listener */
 export function onProjectDataClearing(listener) { clearingListeners.add(listener); return () => { clearingListeners.delete(listener); }; }
-export async function clearProjectData(adapter) {
+/** Share overlapping requests so one caller cannot resume writes mid-clear. */
+export function clearProjectData(adapter) {
+  const current = activeClears.get(adapter);
+  if (current) return current;
+
+  const operation = Promise.resolve().then(() => performClear(adapter));
+  activeClears.set(adapter, operation);
+  const release = () => { activeClears.delete(adapter); };
+  void operation.then(release, release);
+  return operation;
+}
+
+async function performClear(adapter) {
   try {
     await Promise.all([...clearingListeners].map((listener) => listener("before")));
     const results = await Promise.allSettled(LOCAL_DATA_KEYS.map((key) => adapter.removeItem(key)));

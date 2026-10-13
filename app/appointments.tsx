@@ -45,7 +45,11 @@ export default function AppointmentsScreen() {
     draft.edit((current) => ({ ...current, selectedIds: allSelected ? current.selectedIds.filter((id) => !groupIds.includes(id)) : [...new Set([...current.selectedIds, ...groupIds])] }));
   };
   const save = async () => { const ok = await draft.save(); setMessage(ok ? "" : "Could not save on this device. You can still review or export this sheet."); };
-  const remove = async () => { const ok = await draft.remove(); setMessage(ok ? "Saved sheet deleted from this app’s device storage." : "Could not delete the saved sheet from device storage."); };
+  const remove = async () => {
+    const ok = await draft.remove();
+    setMessage(ok ? "Saved sheet deleted from this app’s device storage." : "Could not delete the saved sheet from device storage.");
+    return ok;
+  };
   const exportSheet = async () => { try { await exportAppointmentSheet(sheet); setMessage("Export opened after your request. The destination app or file is outside this project’s control."); } catch { setMessage("Export did not complete."); } };
   const copySheet = async () => { try { if (!globalThis.navigator?.clipboard) { setMessage("Copying is unavailable in this browser. Use Export sheet instead."); return; } await globalThis.navigator.clipboard.writeText(formatAppointmentExport(sheet)); setMessage("Question sheet copied after your request. The destination app is outside this project’s control."); } catch { setMessage("Copying did not complete. Use Export sheet instead."); } };
   const printSheet = () => { if (Platform.OS === "web") globalThis.print?.(); };

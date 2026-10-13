@@ -1,7 +1,7 @@
 import { Link } from "../../src/components/AppLink";
 import { Pressable, Text, View } from "../../src/components/Ui";
 import { useLocalSearchParams } from "expo-router";
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useState } from "react";
 import { Linking, Platform, Share, StyleSheet } from "react-native";
 import references from "../../content/references.json";
 import { AppPage, Card, DraftNotice, PageHeading } from "../../src/components/AppPage";
@@ -10,6 +10,7 @@ import { GuideList } from "../../src/components/GuideList";
 import { SaveGuideButton } from "../../src/features/saved-guides/SaveGuideButton";
 import { useAccessibility } from "../../src/features/accessibility/AccessibilityProvider";
 import { useReadingSession } from "../../src/features/reading-session/ReadingSessionProvider";
+import { useReadAloud } from "../../src/features/read-aloud/useReadAloud";
 
 export function generateStaticParams() { return guides.map((guide) => ({ slug: guide.slug })); }
 
@@ -21,19 +22,12 @@ export default function GuideScreen() {
   const sectionCount = guide?.sections.length ?? 0;
   const reading = useReadingSession(slug ?? "", sectionCount, settings.simplifiedReading);
   const [shareMessage, setShareMessage] = useState("");
-  const [speechMessage, setSpeechMessage] = useState("");
-  const [isSpeaking, setIsSpeaking] = useState(false);
   const [readingOptionsOpen, setReadingOptionsOpen] = useState(false);
-  const speechRef = useRef<SpeechSynthesisUtterance | null>(null);
+  const speech = useReadAloud(`${slug}:${reading.pageIndex}:${reading.oneAtATime}`);
 
   useEffect(() => {
-    if (typeof window !== "undefined") window.speechSynthesis?.cancel();
     setShareMessage("");
-    setSpeechMessage("");
-    setIsSpeaking(false);
-    speechRef.current = null;
   }, [slug, reading.pageIndex, reading.oneAtATime]);
-  useEffect(() => () => { if (typeof window !== "undefined") window.speechSynthesis?.cancel(); }, []);
 
   if (!guide) return <AppPage><Link href="/learn" asChild><Pressable accessibilityRole="link" style={styles.backLink}><Text style={styles.backLinkText}>← Back to guides</Text></Pressable></Link><PageHeading eyebrow="Guide not found" title="This guide is unavailable." summary="Return to the guide library to choose another page." /><Link href="/learn">Browse guides</Link></AppPage>;
 
@@ -43,16 +37,8 @@ export default function GuideScreen() {
   const relatedSlugs = (guide.slug === "understanding-dissection" ? ["tests-and-terms", "follow-up-questions"] : guide.slug === "tests-and-terms" ? ["understanding-dissection", "follow-up-questions"] : guide.slug === "recovery-and-quality-of-life" ? ["follow-up-questions", "supporting-someone"] : guide.slug === "supporting-someone" ? ["recovery-and-quality-of-life", "follow-up-questions"] : ["recovery-and-quality-of-life", "follow-up-questions"]) as string[];
   const visibleSections = reading.oneAtATime ? [guide.sections[reading.pageIndex]].filter(Boolean) : guide.sections;
   const toggleSpeech = () => {
-    if (typeof window === "undefined" || !window.speechSynthesis || typeof SpeechSynthesisUtterance === "undefined") { setSpeechMessage("Read-aloud is not available in this browser. You can use Text and display to change text size."); return; }
-    if (isSpeaking) { speechRef.current = null; window.speechSynthesis.cancel(); setIsSpeaking(false); setSpeechMessage("Read-aloud stopped."); return; }
     const spokenText = ["Draft information. Clinical and patient/carer reviews are not yet recorded. For personal care questions, ask your doctor.", guide.title, guide.summary, ...visibleSections.flatMap((section) => [section.heading, ...(section.paragraphs ?? []), ...(section.bullets ?? [])])].join(". ");
-    const utterance = new SpeechSynthesisUtterance(spokenText);
-    utterance.onend = () => { if (speechRef.current !== utterance) return; setIsSpeaking(false); setSpeechMessage("Read-aloud finished."); };
-    utterance.onerror = (event) => { if (speechRef.current !== utterance) return; setIsSpeaking(false); if (!["canceled", "interrupted"].includes(event.error)) setSpeechMessage("Read-aloud could not start. You can use Text and display to change text size."); };
-    speechRef.current = utterance;
-    setIsSpeaking(true);
-    setSpeechMessage("Read-aloud requested.");
-    try { window.speechSynthesis.speak(utterance); } catch { setIsSpeaking(false); setSpeechMessage("Read-aloud could not start. You can use Text and display to change text size."); }
+    speech.toggle(spokenText);
   };
 
   return <AppPage>
@@ -61,8 +47,8 @@ export default function GuideScreen() {
     <DraftNotice compact />
 
     <View style={styles.paceToolbar}>
-      {Platform.OS === "web" ? <Pressable accessibilityRole="button" accessibilityState={{ busy: isSpeaking }} onPress={toggleSpeech} style={styles.actionButton}><Text style={styles.actionText}>{isSpeaking ? "Stop reading aloud" : reading.oneAtATime ? "Read section aloud" : "Read guide aloud"}</Text></Pressable> : null}
-      {speechMessage ? <Text accessibilityLiveRegion="polite" style={styles.paceHint}>{speechMessage}</Text> : null}
+      {Platform.OS === "web" ? <Pressable accessibilityRole="button" accessibilityState={{ busy: speech.isSpeaking }} onPress={toggleSpeech} style={styles.actionButton}><Text style={styles.actionText}>{speech.isSpeaking ? "Stop reading aloud" : reading.oneAtATime ? "Read section aloud" : "Read guide aloud"}</Text></Pressable> : null}
+      {speech.message ? <Text accessibilityLiveRegion="polite" style={styles.paceHint}>{speech.message}</Text> : null}
       {guide.sections.length > 1 ? <>
       <Pressable accessibilityRole="checkbox" accessibilityLabel="Read one section at a time" accessibilityState={{ checked: reading.oneAtATime }} onPress={() => reading.setOneAtATime(!reading.oneAtATime)} style={styles.paceOption}>
         <View style={[styles.checkbox, reading.oneAtATime && styles.checked]}>{reading.oneAtATime ? <Text style={styles.check}>✓</Text> : null}</View>
