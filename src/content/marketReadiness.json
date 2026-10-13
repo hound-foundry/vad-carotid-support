@@ -20595,8 +20595,201 @@
       "release": "blocked",
       "isoAlpha2": "KE",
       "reviewOwner": null,
-      "lastChecked": null,
-      "officialSources": [],
+      "lastChecked": "2026-10-13",
+      "officialSources": [
+        {
+          "title": "Data Protection Act, 2019 (Cap. 411C)",
+          "url": "https://new.kenyalaw.org/akn/ke/act/2019/24/eng%402019-11-15/source",
+          "authority": "Kenya Law / National Council for Law Reporting",
+          "sourceType": "national-privacy-legislation",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Data Protection (General) Regulations, 2021",
+          "url": "https://www.odpc.go.ke/wp-content/uploads/2024/03/THE-DATA-PROTECTION-GENERAL-REGULATIONS-2021-1.pdf",
+          "authority": "Office of the Data Protection Commissioner (ODPC)",
+          "sourceType": "privacy-regulations",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "ODPC guidance index: health data, cross-border transfers, children, DPIA, consent and registration",
+          "url": "https://www.odpc.go.ke/guidelines-2/",
+          "authority": "Office of the Data Protection Commissioner (ODPC)",
+          "sourceType": "privacy-regulatory-guidance",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Digital Health Act, 2023 (No. 15)",
+          "url": "https://www.kenyalaw.org/kl/fileadmin/pdfdownloads/Acts/2023/TheDigitalHealthAct_2023.pdf",
+          "authority": "Kenya Law / Government of Kenya",
+          "sourceType": "digital-health-legislation",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Pharmacy and Poisons Board Guideline on Regulation of Medical Device Software in Kenya (published 16 April 2026)",
+          "url": "https://web.pharmacyboardkenya.org/download/guideline-on-regulation-of-medical-device-software-in-kenya-mdsw/",
+          "authority": "Pharmacy and Poisons Board (PPB)",
+          "sourceType": "medical-device-software-guidance",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Ministry of Health index listing draft Digital Health regulations",
+          "url": "https://www.health.go.ke/social-health-regulations",
+          "authority": "Ministry of Health",
+          "sourceType": "digital-health-draft-regulations",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Ministry of Health notice on draft Digital Health Act regulations and public participation",
+          "url": "https://health.go.ke/node/1476",
+          "authority": "Ministry of Health",
+          "sourceType": "digital-health-draft-regulations",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Health Act, 2017 (Cap. 241)",
+          "url": "https://new.kenyalaw.org/akn/ke/act/2017/21/eng%402017-06-30/source",
+          "authority": "Kenya Law / National Council for Law Reporting",
+          "sourceType": "health-legislation",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Consumer Protection Act, 2012 (Cap. 501) — verify current consolidation",
+          "url": "https://new.kenyalaw.org/akn/ke/act/2012/46/eng%402017-01-01/source",
+          "authority": "Kenya Law / National Council for Law Reporting",
+          "sourceType": "consumer-legislation",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Persons with Disabilities Act, 2025 (No. 4)",
+          "url": "https://new.kenyalaw.org/akn/ke/act/2025/4/eng%402025-05-13/source",
+          "authority": "Kenya Law / National Council for Law Reporting",
+          "sourceType": "disability-accessibility-legislation",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Constitution of Kenya, 2010 — languages and devolved government",
+          "url": "https://www.mod.go.ke/the-constitution-of-kenya-2010-online/",
+          "authority": "Ministry of Defence / Government of Kenya",
+          "sourceType": "constitution-language-and-devolution",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Children Act, 2022 (No. 29)",
+          "url": "https://www.socialprotection.go.ke/sites/default/files/Downloads/The-Children-Act-2022.pdf",
+          "authority": "State Department for Social Protection and Senior Citizen Affairs",
+          "sourceType": "child-protection-legislation",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Copyright Act (Cap. 130)",
+          "url": "https://new.kenyalaw.org/akn/ke/act/2001/12/eng%402017-07-03/source.pdf",
+          "authority": "Kenya Law / National Council for Law Reporting",
+          "sourceType": "copyright-legislation",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Kenya Police Service official hotline information: 999, 112 and 911",
+          "url": "https://www.kenyapolice.go.ke/node/1",
+          "authority": "National Police Service / Kenya Police Service",
+          "sourceType": "emergency-information",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Public Benefits Organizations Act, 2013 — consolidation as at 20 June 2025",
+          "url": "https://new.kenyalaw.org/akn/ke/act/2013/18/eng%402025-06-20/source",
+          "authority": "Kenya Law / National Council for Law Reporting",
+          "sourceType": "nonprofit-legislation",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Public Benefit Organizations Regulatory Authority annual sector report 2024–2025",
+          "url": "https://www.pbora.go.ke/sites/default/files/2026-04/PBO%20SECTOR%20REPORT%202024-2025-Cmprsd.pdf",
+          "authority": "Public Benefit Organizations Regulatory Authority (PBORA)",
+          "sourceType": "nonprofit-regulatory-guidance",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "KRA implementation notice: Income Tax (Charitable Organisations and Donations Exemption) Rules, 2024",
+          "url": "https://www.kra.go.ke/news-center/public-notices/2164-implementation-of-the-income-tax-charitable-organisations-and-donations-exemption-rules%2C-2024",
+          "authority": "Kenya Revenue Authority (KRA)",
+          "sourceType": "charity-tax-guidance",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "KRA taxation information for not-for-profit organisations",
+          "url": "https://www.kra.go.ke/business/charities-religious-orgs/not-for-profit-pin-registration/not-for-profit-types-of-taxes",
+          "authority": "Kenya Revenue Authority (KRA)",
+          "sourceType": "nonprofit-tax-guidance",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Constitution of Kenya, First Schedule: counties",
+          "url": "https://klrc.go.ke/index.php/constitution-of-kenya/163-schedules-schedules/165-first-schedule-counties",
+          "authority": "Kenya Law Reform Commission (KLRC)",
+          "sourceType": "county-roster",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "State Department for Devolution county information and 47-county context",
+          "url": "https://devolution.go.ke/county-information",
+          "authority": "State Department for Devolution",
+          "sourceType": "county-devolution-guidance",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Ministry of Health draft digital health regulatory impact statement",
+          "url": "https://health.go.ke/sites/default/files/2024-11/DRAFT%20RIS%20FOR%20DIGITAL%20HEALTH%20REGULATIONS%20-%2018.11.2024%20%282%29.pdf",
+          "authority": "Ministry of Health",
+          "sourceType": "digital-health-draft-impact-assessment",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Digital Health (Use of e-Health Applications and Technologies) Regulations, 2024 — draft copy",
+          "url": "https://health.go.ke/sites/default/files/2024-12/DRAFT%20Digital%20Health%20%28Use%20of%20e-Health%20Applications%20and%20Technologies%29%20Regulations%2C%202024-19.11.2024%20%281%29.pdf",
+          "authority": "Ministry of Health",
+          "sourceType": "digital-health-draft-regulations",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Children Act, 2022 listing on Kenya Law",
+          "url": "https://new.kenyalaw.org/akn/ke/act/2022/29/eng%402022-07-29/source",
+          "authority": "Kenya Law / National Council for Law Reporting",
+          "sourceType": "child-protection-legislation",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Ministry of Health: 2025 update on proposed Digital Health regulations",
+          "url": "https://www.health.go.ke/health-cs-hon-aden-duale-briefs-senate-committee-digital-health-regulations",
+          "authority": "Ministry of Health",
+          "sourceType": "digital-health-draft-regulations",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        }
+      ],
       "reviewAreas": [
         {
           "area": "privacy-and-health-data",
@@ -20711,7 +20904,386 @@
           "reviewer": null
         }
       ],
-      "subnationalAreas": []
+      "subnationalAreas": [
+        {
+          "name": "Mombasa",
+          "status": "not-assessed",
+          "reason": "County screening target only. No county laws, health implementation, local-language needs, emergency arrangements, municipal or subcounty requirements, or territorial applicability have been assessed.",
+          "source": "https://klrc.go.ke/index.php/constitution-of-kenya/163-schedules-schedules/165-first-schedule-counties",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Kwale",
+          "status": "not-assessed",
+          "reason": "County screening target only. No county laws, health implementation, local-language needs, emergency arrangements, municipal or subcounty requirements, or territorial applicability have been assessed.",
+          "source": "https://klrc.go.ke/index.php/constitution-of-kenya/163-schedules-schedules/165-first-schedule-counties",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Kilifi",
+          "status": "not-assessed",
+          "reason": "County screening target only. No county laws, health implementation, local-language needs, emergency arrangements, municipal or subcounty requirements, or territorial applicability have been assessed.",
+          "source": "https://klrc.go.ke/index.php/constitution-of-kenya/163-schedules-schedules/165-first-schedule-counties",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Tana River",
+          "status": "not-assessed",
+          "reason": "County screening target only. No county laws, health implementation, local-language needs, emergency arrangements, municipal or subcounty requirements, or territorial applicability have been assessed.",
+          "source": "https://klrc.go.ke/index.php/constitution-of-kenya/163-schedules-schedules/165-first-schedule-counties",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Lamu",
+          "status": "not-assessed",
+          "reason": "County screening target only. No county laws, health implementation, local-language needs, emergency arrangements, municipal or subcounty requirements, or territorial applicability have been assessed.",
+          "source": "https://klrc.go.ke/index.php/constitution-of-kenya/163-schedules-schedules/165-first-schedule-counties",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Taita/Taveta",
+          "status": "not-assessed",
+          "reason": "County screening target only. No county laws, health implementation, local-language needs, emergency arrangements, municipal or subcounty requirements, or territorial applicability have been assessed.",
+          "source": "https://klrc.go.ke/index.php/constitution-of-kenya/163-schedules-schedules/165-first-schedule-counties",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Garissa",
+          "status": "not-assessed",
+          "reason": "County screening target only. No county laws, health implementation, local-language needs, emergency arrangements, municipal or subcounty requirements, or territorial applicability have been assessed.",
+          "source": "https://klrc.go.ke/index.php/constitution-of-kenya/163-schedules-schedules/165-first-schedule-counties",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Wajir",
+          "status": "not-assessed",
+          "reason": "County screening target only. No county laws, health implementation, local-language needs, emergency arrangements, municipal or subcounty requirements, or territorial applicability have been assessed.",
+          "source": "https://klrc.go.ke/index.php/constitution-of-kenya/163-schedules-schedules/165-first-schedule-counties",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Mandera",
+          "status": "not-assessed",
+          "reason": "County screening target only. No county laws, health implementation, local-language needs, emergency arrangements, municipal or subcounty requirements, or territorial applicability have been assessed.",
+          "source": "https://klrc.go.ke/index.php/constitution-of-kenya/163-schedules-schedules/165-first-schedule-counties",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Marsabit",
+          "status": "not-assessed",
+          "reason": "County screening target only. No county laws, health implementation, local-language needs, emergency arrangements, municipal or subcounty requirements, or territorial applicability have been assessed.",
+          "source": "https://klrc.go.ke/index.php/constitution-of-kenya/163-schedules-schedules/165-first-schedule-counties",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Isiolo",
+          "status": "not-assessed",
+          "reason": "County screening target only. No county laws, health implementation, local-language needs, emergency arrangements, municipal or subcounty requirements, or territorial applicability have been assessed.",
+          "source": "https://klrc.go.ke/index.php/constitution-of-kenya/163-schedules-schedules/165-first-schedule-counties",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Meru",
+          "status": "not-assessed",
+          "reason": "County screening target only. No county laws, health implementation, local-language needs, emergency arrangements, municipal or subcounty requirements, or territorial applicability have been assessed.",
+          "source": "https://klrc.go.ke/index.php/constitution-of-kenya/163-schedules-schedules/165-first-schedule-counties",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Tharaka-Nithi",
+          "status": "not-assessed",
+          "reason": "County screening target only. No county laws, health implementation, local-language needs, emergency arrangements, municipal or subcounty requirements, or territorial applicability have been assessed.",
+          "source": "https://klrc.go.ke/index.php/constitution-of-kenya/163-schedules-schedules/165-first-schedule-counties",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Embu",
+          "status": "not-assessed",
+          "reason": "County screening target only. No county laws, health implementation, local-language needs, emergency arrangements, municipal or subcounty requirements, or territorial applicability have been assessed.",
+          "source": "https://klrc.go.ke/index.php/constitution-of-kenya/163-schedules-schedules/165-first-schedule-counties",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Kitui",
+          "status": "not-assessed",
+          "reason": "County screening target only. No county laws, health implementation, local-language needs, emergency arrangements, municipal or subcounty requirements, or territorial applicability have been assessed.",
+          "source": "https://klrc.go.ke/index.php/constitution-of-kenya/163-schedules-schedules/165-first-schedule-counties",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Machakos",
+          "status": "not-assessed",
+          "reason": "County screening target only. No county laws, health implementation, local-language needs, emergency arrangements, municipal or subcounty requirements, or territorial applicability have been assessed.",
+          "source": "https://klrc.go.ke/index.php/constitution-of-kenya/163-schedules-schedules/165-first-schedule-counties",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Makueni",
+          "status": "not-assessed",
+          "reason": "County screening target only. No county laws, health implementation, local-language needs, emergency arrangements, municipal or subcounty requirements, or territorial applicability have been assessed.",
+          "source": "https://klrc.go.ke/index.php/constitution-of-kenya/163-schedules-schedules/165-first-schedule-counties",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Nyandarua",
+          "status": "not-assessed",
+          "reason": "County screening target only. No county laws, health implementation, local-language needs, emergency arrangements, municipal or subcounty requirements, or territorial applicability have been assessed.",
+          "source": "https://klrc.go.ke/index.php/constitution-of-kenya/163-schedules-schedules/165-first-schedule-counties",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Nyeri",
+          "status": "not-assessed",
+          "reason": "County screening target only. No county laws, health implementation, local-language needs, emergency arrangements, municipal or subcounty requirements, or territorial applicability have been assessed.",
+          "source": "https://klrc.go.ke/index.php/constitution-of-kenya/163-schedules-schedules/165-first-schedule-counties",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Kirinyaga",
+          "status": "not-assessed",
+          "reason": "County screening target only. No county laws, health implementation, local-language needs, emergency arrangements, municipal or subcounty requirements, or territorial applicability have been assessed.",
+          "source": "https://klrc.go.ke/index.php/constitution-of-kenya/163-schedules-schedules/165-first-schedule-counties",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Murang’a",
+          "status": "not-assessed",
+          "reason": "County screening target only. No county laws, health implementation, local-language needs, emergency arrangements, municipal or subcounty requirements, or territorial applicability have been assessed.",
+          "source": "https://klrc.go.ke/index.php/constitution-of-kenya/163-schedules-schedules/165-first-schedule-counties",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Kiambu",
+          "status": "not-assessed",
+          "reason": "County screening target only. No county laws, health implementation, local-language needs, emergency arrangements, municipal or subcounty requirements, or territorial applicability have been assessed.",
+          "source": "https://klrc.go.ke/index.php/constitution-of-kenya/163-schedules-schedules/165-first-schedule-counties",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Turkana",
+          "status": "not-assessed",
+          "reason": "County screening target only. No county laws, health implementation, local-language needs, emergency arrangements, municipal or subcounty requirements, or territorial applicability have been assessed.",
+          "source": "https://klrc.go.ke/index.php/constitution-of-kenya/163-schedules-schedules/165-first-schedule-counties",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "West Pokot",
+          "status": "not-assessed",
+          "reason": "County screening target only. No county laws, health implementation, local-language needs, emergency arrangements, municipal or subcounty requirements, or territorial applicability have been assessed.",
+          "source": "https://klrc.go.ke/index.php/constitution-of-kenya/163-schedules-schedules/165-first-schedule-counties",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Samburu",
+          "status": "not-assessed",
+          "reason": "County screening target only. No county laws, health implementation, local-language needs, emergency arrangements, municipal or subcounty requirements, or territorial applicability have been assessed.",
+          "source": "https://klrc.go.ke/index.php/constitution-of-kenya/163-schedules-schedules/165-first-schedule-counties",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Trans Nzoia",
+          "status": "not-assessed",
+          "reason": "County screening target only. No county laws, health implementation, local-language needs, emergency arrangements, municipal or subcounty requirements, or territorial applicability have been assessed.",
+          "source": "https://klrc.go.ke/index.php/constitution-of-kenya/163-schedules-schedules/165-first-schedule-counties",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Uasin Gishu",
+          "status": "not-assessed",
+          "reason": "County screening target only. No county laws, health implementation, local-language needs, emergency arrangements, municipal or subcounty requirements, or territorial applicability have been assessed.",
+          "source": "https://klrc.go.ke/index.php/constitution-of-kenya/163-schedules-schedules/165-first-schedule-counties",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Elgeyo/Marakwet",
+          "status": "not-assessed",
+          "reason": "County screening target only. No county laws, health implementation, local-language needs, emergency arrangements, municipal or subcounty requirements, or territorial applicability have been assessed.",
+          "source": "https://klrc.go.ke/index.php/constitution-of-kenya/163-schedules-schedules/165-first-schedule-counties",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Nandi",
+          "status": "not-assessed",
+          "reason": "County screening target only. No county laws, health implementation, local-language needs, emergency arrangements, municipal or subcounty requirements, or territorial applicability have been assessed.",
+          "source": "https://klrc.go.ke/index.php/constitution-of-kenya/163-schedules-schedules/165-first-schedule-counties",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Baringo",
+          "status": "not-assessed",
+          "reason": "County screening target only. No county laws, health implementation, local-language needs, emergency arrangements, municipal or subcounty requirements, or territorial applicability have been assessed.",
+          "source": "https://klrc.go.ke/index.php/constitution-of-kenya/163-schedules-schedules/165-first-schedule-counties",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Laikipia",
+          "status": "not-assessed",
+          "reason": "County screening target only. No county laws, health implementation, local-language needs, emergency arrangements, municipal or subcounty requirements, or territorial applicability have been assessed.",
+          "source": "https://klrc.go.ke/index.php/constitution-of-kenya/163-schedules-schedules/165-first-schedule-counties",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Nakuru",
+          "status": "not-assessed",
+          "reason": "County screening target only. No county laws, health implementation, local-language needs, emergency arrangements, municipal or subcounty requirements, or territorial applicability have been assessed.",
+          "source": "https://klrc.go.ke/index.php/constitution-of-kenya/163-schedules-schedules/165-first-schedule-counties",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Narok",
+          "status": "not-assessed",
+          "reason": "County screening target only. No county laws, health implementation, local-language needs, emergency arrangements, municipal or subcounty requirements, or territorial applicability have been assessed.",
+          "source": "https://klrc.go.ke/index.php/constitution-of-kenya/163-schedules-schedules/165-first-schedule-counties",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Kajiado",
+          "status": "not-assessed",
+          "reason": "County screening target only. No county laws, health implementation, local-language needs, emergency arrangements, municipal or subcounty requirements, or territorial applicability have been assessed.",
+          "source": "https://klrc.go.ke/index.php/constitution-of-kenya/163-schedules-schedules/165-first-schedule-counties",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Kericho",
+          "status": "not-assessed",
+          "reason": "County screening target only. No county laws, health implementation, local-language needs, emergency arrangements, municipal or subcounty requirements, or territorial applicability have been assessed.",
+          "source": "https://klrc.go.ke/index.php/constitution-of-kenya/163-schedules-schedules/165-first-schedule-counties",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Bomet",
+          "status": "not-assessed",
+          "reason": "County screening target only. No county laws, health implementation, local-language needs, emergency arrangements, municipal or subcounty requirements, or territorial applicability have been assessed.",
+          "source": "https://klrc.go.ke/index.php/constitution-of-kenya/163-schedules-schedules/165-first-schedule-counties",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Kakamega",
+          "status": "not-assessed",
+          "reason": "County screening target only. No county laws, health implementation, local-language needs, emergency arrangements, municipal or subcounty requirements, or territorial applicability have been assessed.",
+          "source": "https://klrc.go.ke/index.php/constitution-of-kenya/163-schedules-schedules/165-first-schedule-counties",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Vihiga",
+          "status": "not-assessed",
+          "reason": "County screening target only. No county laws, health implementation, local-language needs, emergency arrangements, municipal or subcounty requirements, or territorial applicability have been assessed.",
+          "source": "https://klrc.go.ke/index.php/constitution-of-kenya/163-schedules-schedules/165-first-schedule-counties",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Bungoma",
+          "status": "not-assessed",
+          "reason": "County screening target only. No county laws, health implementation, local-language needs, emergency arrangements, municipal or subcounty requirements, or territorial applicability have been assessed.",
+          "source": "https://klrc.go.ke/index.php/constitution-of-kenya/163-schedules-schedules/165-first-schedule-counties",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Busia",
+          "status": "not-assessed",
+          "reason": "County screening target only. No county laws, health implementation, local-language needs, emergency arrangements, municipal or subcounty requirements, or territorial applicability have been assessed.",
+          "source": "https://klrc.go.ke/index.php/constitution-of-kenya/163-schedules-schedules/165-first-schedule-counties",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Siaya",
+          "status": "not-assessed",
+          "reason": "County screening target only. No county laws, health implementation, local-language needs, emergency arrangements, municipal or subcounty requirements, or territorial applicability have been assessed.",
+          "source": "https://klrc.go.ke/index.php/constitution-of-kenya/163-schedules-schedules/165-first-schedule-counties",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Kisumu",
+          "status": "not-assessed",
+          "reason": "County screening target only. No county laws, health implementation, local-language needs, emergency arrangements, municipal or subcounty requirements, or territorial applicability have been assessed.",
+          "source": "https://klrc.go.ke/index.php/constitution-of-kenya/163-schedules-schedules/165-first-schedule-counties",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Homa Bay",
+          "status": "not-assessed",
+          "reason": "County screening target only. No county laws, health implementation, local-language needs, emergency arrangements, municipal or subcounty requirements, or territorial applicability have been assessed.",
+          "source": "https://klrc.go.ke/index.php/constitution-of-kenya/163-schedules-schedules/165-first-schedule-counties",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Migori",
+          "status": "not-assessed",
+          "reason": "County screening target only. No county laws, health implementation, local-language needs, emergency arrangements, municipal or subcounty requirements, or territorial applicability have been assessed.",
+          "source": "https://klrc.go.ke/index.php/constitution-of-kenya/163-schedules-schedules/165-first-schedule-counties",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Kisii",
+          "status": "not-assessed",
+          "reason": "County screening target only. No county laws, health implementation, local-language needs, emergency arrangements, municipal or subcounty requirements, or territorial applicability have been assessed.",
+          "source": "https://klrc.go.ke/index.php/constitution-of-kenya/163-schedules-schedules/165-first-schedule-counties",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Nyamira",
+          "status": "not-assessed",
+          "reason": "County screening target only. No county laws, health implementation, local-language needs, emergency arrangements, municipal or subcounty requirements, or territorial applicability have been assessed.",
+          "source": "https://klrc.go.ke/index.php/constitution-of-kenya/163-schedules-schedules/165-first-schedule-counties",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Nairobi City",
+          "status": "not-assessed",
+          "reason": "County screening target only. No county laws, health implementation, local-language needs, emergency arrangements, municipal or subcounty requirements, or territorial applicability have been assessed.",
+          "source": "https://klrc.go.ke/index.php/constitution-of-kenya/163-schedules-schedules/165-first-schedule-counties",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        }
+      ],
+      "sourceDiscoveryCheckedOn": "2026-10-13",
+      "sourceDiscoveryNote": "Official-source discovery only; not legal advice, not a completeness claim, and not a determination of applicability. Kenya remains blocked; all 14 legal review areas, the national review and all 47 county targets remain not-assessed. The Data Protection Act and General Regulations plus ODPC health-data, children, DPIA and cross-border guidance need application to actual appointment-note/device-storage flows, controller roles, notice, rights, security and hosting. PPB published a Medical Device Software guideline in April 2026; assess intended purpose, functionality, claims and distribution with Kenyan regulatory counsel. Ministry materials list digital-health application, data-exchange and health-information regulations as drafts; verify final gazetting and commencement. The Persons with Disabilities Act 2025 replaced the 2003 Act and includes accessible communication; review its reach to a digital information service and test with disabled survivors/carers. Keep adult audience clear; review child protections before serving minors. The PBO Act commenced on 14 May 2024 and is consolidated to June 2025; review current registration and funding rules plus KRA charitable tax/donation rules before forming an entity or accepting funds. Kenya Police lists 999, 112 and 911 as hotlines, which does not establish ambulance reach in all locations; keep generic emergency wording pending local verification. County health and local requirements, municipal/subcounty rules, language, source rights, platform policies and all actual territorial/applicability questions remain open."
     },
     {
       "name": "Kiribati",
