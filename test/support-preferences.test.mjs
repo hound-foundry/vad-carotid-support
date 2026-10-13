@@ -1,10 +1,19 @@
 import test from "node:test";
 import assert from "node:assert/strict";
-import { emptySupportPreferences, formatSupportPreferencesExport, MAX_NOTE_LENGTH, parseSupportPreferences, serializeSupportPreferences, STORAGE_KEY, supportPreferences } from "../src/features/support-preferences/model.mjs";
+import { emptySupportPreferences, formatSupportPreferencesExport, guidePreferenceSuggestions, MAX_NOTE_LENGTH, parseSupportPreferences, serializeSupportPreferences, STORAGE_KEY, supportPreferences } from "../src/features/support-preferences/model.mjs";
 import { createSupportPreferencesStore } from "../src/features/support-preferences/storage.mjs";
 
 test("new support sheet is empty and contains no personal identifiers", () => {
   assert.deepEqual(emptySupportPreferences(), { selectedIds: [], note: "" });
+});
+
+test("guide support suggestions use only known preference ids", () => {
+  const knownIds = new Set(supportPreferences.map((item) => item.id));
+  for (const [guide, ids] of Object.entries(guidePreferenceSuggestions)) {
+    assert.ok(guide.length > 0);
+    assert.ok(ids.length > 0);
+    assert.ok(ids.every((id) => knownIds.has(id)), `${guide} contains an unknown preference`);
+  }
 });
 
 test("saved data accepts only known unique choices and bounds notes", () => {

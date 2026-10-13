@@ -1,7 +1,8 @@
 import { useEffect, useRef, useState } from "react";
+import { useLocalSearchParams } from "expo-router";
 import { Alert, Platform, Pressable, StyleSheet, Text, TextInput, View } from "react-native";
 import { AppPage, BackHome, Card, PageHeading, palette } from "../src/components/AppPage";
-import { emptySupportPreferences, MAX_NOTE_LENGTH, supportPreferences, type SupportPreferencesSheet } from "../src/features/support-preferences/model.mjs";
+import { emptySupportPreferences, guidePreferenceSuggestions, MAX_NOTE_LENGTH, supportPreferences, type SupportPreferencesSheet } from "../src/features/support-preferences/model.mjs";
 import { deleteSupportPreferences, exportSupportPreferences, loadSupportPreferences, saveSupportPreferences } from "../src/features/support-preferences/store";
 
 const groups = [...new Set(supportPreferences.map((item) => item.group))];
@@ -14,6 +15,7 @@ export default function SupportPreferencesScreen() {
   const [groupIndex, setGroupIndex] = useState(0);
   const edited = useRef(false);
   const [message, setMessage] = useState("Loading saved preferences from this device…");
+  const { guide } = useLocalSearchParams<{ guide?: string }>();
   useEffect(() => {
     if (Platform.OS !== "web" || typeof document === "undefined") return;
     const style = document.createElement("style");
@@ -27,14 +29,16 @@ export default function SupportPreferencesScreen() {
     let active = true;
     void loadSupportPreferences().then((value) => {
       if (active && !edited.current) {
-        setSheet(value);
-        setMessage("Nothing is saved unless you choose Save on this device.");
+        const suggested = typeof guide === "string" ? guidePreferenceSuggestions[guide] ?? [] : [];
+        const shouldSuggest = value.selectedIds.length === 0 && suggested.length > 0;
+        setSheet(shouldSuggest ? { ...value, selectedIds: suggested } : value);
+        setMessage(shouldSuggest ? "A few support preferences related to the guide are selected for you to review. Nothing is saved until you choose Save." : "Nothing is saved unless you choose Save on this device.");
       }
     }).catch(() => {
       if (active) setMessage("Device storage could not be read. Your current choices stay on screen until you leave.");
     });
     return () => { active = false; };
-  }, []);
+  }, [guide]);
 
   const markEdited = () => {
     edited.current = true;

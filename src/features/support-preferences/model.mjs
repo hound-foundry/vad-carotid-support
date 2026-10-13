@@ -20,6 +20,13 @@ export const supportPreferences = [
   { id: "ask-before-advice", group: "Privacy and boundaries", text: "Please ask before offering advice." },
 ];
 
+/** Suggested choices are shown only after a person chooses a guide action; they are never saved automatically. */
+export const guidePreferenceSuggestions = {
+  "supporting-someone": ["time-to-respond", "one-question", "write-key-points", "ask-before-speaking", "offer-help", "ask-before-sharing", "choose-attendees"],
+  "with-stroke": ["time-to-respond", "one-question", "write-key-points", "plain-language", "plan-breaks", "pause-or-continue"],
+  "recovery-and-quality-of-life": ["check-what-helps-today", "offer-help", "plan-breaks", "pause-or-continue", "ask-before-advice"],
+};
+
 /** @returns {{ selectedIds: string[], note: string }} */
 export function emptySupportPreferences() {
   return { selectedIds: [], note: "" };
