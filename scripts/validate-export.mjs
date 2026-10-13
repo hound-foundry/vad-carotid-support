@@ -8,7 +8,7 @@ const files = [
   "index.html", "about.html", "accessibility.html", "appointments.html", "glossary.html", "learn.html",
   "milestone-card.html", "personal-card.html", "resources.html", "saved-guides.html", "support-preferences.html",
   "supporting-someone.html", "urgent-help.html", "with-stroke.html", "without-stroke.html", "+not-found.html",
-  "_sitemap.html", "manifest.json", "icon.svg", "sw.js",
+  "_sitemap.html", "manifest.json", "icon.svg", "sw.js", "_headers",
   "guide/understanding-dissection.html", "guide/tests-and-terms.html", "guide/without-stroke.html",
   "guide/with-stroke.html", "guide/recovery-and-quality-of-life.html", "guide/follow-up-questions.html",
   "guide/supporting-someone.html",

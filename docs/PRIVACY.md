@@ -13,3 +13,6 @@ Sensitive content must not enter URLs, referrers, browser logs, analytics, crash
 The website can still generate server logs and expose visitors to external-link tracking when they leave the site. Review hosting, DNS/CDN, error handling, dependency and store data disclosures. Link out with clear destination labels; do not embed third-party pages. Use no cookies and keep device storage limited to the appointment sheet, support-preferences sheet and saved guide slugs documented above; assess the applicable storage rules before release.
 
 Before launch, determine the real operator/controller, contact route, lawful bases, special-category conditions where relevant, records, rights handling, breach response, vendor agreements, international transfers and any required regulator fee or registration. A free or volunteer project is not automatically exempt from data protection law.
+## Static-host headers
+
+The web bundle includes `public/_headers` with a minimal deployment baseline: MIME sniffing protection, a strict-origin referrer policy, and disabled camera, microphone and geolocation permissions. A hosting provider may require different syntax or additional headers; verify the deployed response headers before launch. Do not add analytics, a backend or third-party embeds without repeating the privacy and security review.

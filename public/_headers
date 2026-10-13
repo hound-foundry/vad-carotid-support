@@ -1,0 +1,7 @@
+/*
+  Static-host baseline. Keep deployment-specific headers under review when a
+  host, analytics provider or backend is introduced.
+*/
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: strict-origin-when-cross-origin
+  Permissions-Policy: camera=(), microphone=(), geolocation=()
