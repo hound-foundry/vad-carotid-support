@@ -583,3 +583,9 @@ Bhutan source discovery records the Information, Communications and Media Act pr
 This is an official-source discovery pass, not legal advice, a completeness claim or an applicability determination. Burkina Faso (`BF`) remains blocked; all 14 review areas and the national review remain `not-assessed`.
 
 Burkina Faso source discovery records the 2021 personal-data law, the Commission de l’Informatique et des Libertés, Ministry of Health and Public Hygiene materials on medical equipment, and government information about SAMU emergency services. The material is primarily French-language and local emergency coverage may vary; qualified legal, clinical, translation and accessibility review is required before Burkina Faso-specific access or emergency details are enabled.
+
+## Burundi source-discovery snapshot — 13 October 2026
+
+This is an official-source discovery pass, not legal advice, a completeness claim or an applicability determination. Burundi (`BI`) remains blocked; all 14 review areas and the national review remain `not-assessed`.
+
+Burundi source discovery records the 2026 personal-data protection law, Ministry of Public Health medical-device materials, the national medicines and food regulator, and Ministry of Interior emergency guidance. The new law and health materials require current French-language legal and clinical review, including effective dates, regulator roles, cross-border transfers, local-language accessibility, medical-software classification, emergency coverage, and distribution requirements before Burundi-specific access is enabled.

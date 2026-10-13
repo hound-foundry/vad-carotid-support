@@ -6851,8 +6851,50 @@
       "release": "blocked",
       "isoAlpha2": "BI",
       "reviewOwner": null,
-      "lastChecked": null,
-      "officialSources": [],
+  "lastChecked": "2026-10-13",
+  "officialSources": [
+    {
+      "title": "Personal-data protection law No. 1/03 of 10 March 2026",
+      "url": "https://arct.gov.bi/2026/03/18/loi-n1-03-du-10-mars-2026-portant-protection-des-donnees-a-caractere-personnel/",
+      "authority": "Agence de Régulation et de Contrôle des Télécommunications, Burundi",
+      "sourceType": "privacy-law",
+      "checkedOn": "2026-10-13",
+      "status": "source-lead-only"
+    },
+    {
+      "title": "Ministry of Public Health documentation",
+      "url": "https://minisante.gov.bi/?page_id=208",
+      "authority": "Ministry of Public Health, Burundi",
+      "sourceType": "health-regulator",
+      "checkedOn": "2026-10-13",
+      "status": "source-lead-only"
+    },
+    {
+      "title": "Burundi national medical-device list",
+      "url": "https://minisante.gov.bi/?page_id=208",
+      "authority": "Ministry of Public Health, Burundi",
+      "sourceType": "medical-device-regulation",
+      "checkedOn": "2026-10-13",
+      "status": "source-lead-only"
+    },
+    {
+      "title": "Burundi Medicines and Food Regulatory Authority",
+      "url": "https://abrema.gov.bi/information/document",
+      "authority": "ABREMA, Burundi",
+      "sourceType": "health-products-regulation",
+      "checkedOn": "2026-10-13",
+      "status": "source-lead-only"
+    },
+    {
+      "title": "Emergency telephone guidance",
+      "url": "https://mininterinfos.gov.bi/telephone-durgence/",
+      "authority": "Ministry of Interior, Community Development and Public Security, Burundi",
+      "sourceType": "emergency-guidance",
+      "checkedOn": "2026-10-13",
+      "status": "source-lead-only"
+    }
+  ],
+  "sourceDiscoveryCheckedOn": "2026-10-13",
       "reviewAreas": [
         {
           "area": "privacy-and-health-data",
