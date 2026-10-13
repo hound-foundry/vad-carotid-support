@@ -471,8 +471,50 @@
       "release": "blocked",
       "isoAlpha2": "DZ",
       "reviewOwner": null,
-      "lastChecked": null,
-      "officialSources": [],
+      "lastChecked": "2026-10-13",
+      "officialSources": [
+        {
+          "title": "National personal-data protection authority notice",
+          "url": "https://plaintes.anpdp.dz/notice.php",
+          "authority": "National Authority for the Protection of Personal Data, Algeria",
+          "sourceType": "privacy-regulator",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Personal-data protection authority registration portal",
+          "url": "https://portail.anpdp.dz/",
+          "authority": "National Authority for the Protection of Personal Data, Algeria",
+          "sourceType": "privacy-compliance",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Health competencies platform under Ministry of Health oversight",
+          "url": "https://kafaat-djaliya.sante.gov.dz/",
+          "authority": "Ministry of Health and Ministry of Foreign Affairs, Algeria",
+          "sourceType": "health-regulator",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "National major-risk and emergency coordination",
+          "url": "https://interieur.gov.dz/delegation-nationale-aux-risques-majeurs/",
+          "authority": "Ministry of Interior, Algeria",
+          "sourceType": "emergency-management",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Civil protection emergency coordination",
+          "url": "https://interieur.gov.dz/accueil_fr/organisation-et-missions-de-la-dgpc/",
+          "authority": "Ministry of Interior, Algeria",
+          "sourceType": "emergency-services",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        }
+      ],
+      "sourceDiscoveryCheckedOn": "2026-10-13",
       "reviewAreas": [
         {
           "area": "privacy-and-health-data",
