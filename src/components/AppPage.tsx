@@ -1,6 +1,6 @@
 import { Link } from "expo-router";
 import type { ReactNode } from "react";
-import { Pressable, ScrollView, StyleSheet, Text, View } from "react-native";
+import { Pressable, ScrollView, StyleSheet, Text, View, useWindowDimensions } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
 import { useAccessibility } from "../features/accessibility/AccessibilityProvider";
 
@@ -21,7 +21,8 @@ export const palette = {
 
 export function AppPage({ children, wide = false }: { children: ReactNode; wide?: boolean }) {
   const { settings } = useAccessibility();
-  return <SafeAreaView style={styles.safe} edges={["bottom"]}><Pressable testID="skip-link" accessibilityRole="link" accessibilityLabel="Skip to main content" nativeID="skip-to-content" style={styles.skipLink} onPress={() => { if (typeof document !== "undefined") document.getElementById("main-content")?.focus(); }}><Text style={styles.skipText}>Skip to main content</Text></Pressable><ScrollView nativeID="main-content" accessible contentContainerStyle={[styles.page, settings.spacing === "roomy" && styles.pageRoomy, wide && styles.wide]}>{children}<SiteFooter /></ScrollView></SafeAreaView>;
+  const narrow = useWindowDimensions().width < 390;
+  return <SafeAreaView style={styles.safe} edges={["bottom"]}><Pressable testID="skip-link" accessibilityRole="link" accessibilityLabel="Skip to main content" nativeID="skip-to-content" style={styles.skipLink} onPress={() => { if (typeof document !== "undefined") document.getElementById("main-content")?.focus(); }}><Text style={styles.skipText}>Skip to main content</Text></Pressable><ScrollView nativeID="main-content" accessible contentContainerStyle={[styles.page, narrow && styles.pageNarrow, settings.spacing === "roomy" && styles.pageRoomy, wide && styles.wide]}>{children}<SiteFooter /></ScrollView></SafeAreaView>;
 }
 
 export function BackHome() {
@@ -64,6 +65,7 @@ const styles = StyleSheet.create({
   skipLink: { position: "absolute", zIndex: 10, top: 4, left: 8, minHeight: 44, paddingHorizontal: 12, justifyContent: "center", backgroundColor: palette.ink, borderRadius: 8, opacity: 0 },
   skipText: { color: palette.white, fontSize: 14, fontWeight: "800" },
   page: { width: "100%", maxWidth: 920, alignSelf: "center", paddingHorizontal: 24, paddingBottom: 56 },
+  pageNarrow: { paddingHorizontal: 16 },
   pageRoomy: { paddingHorizontal: 28, paddingBottom: 72 },
   wide: { maxWidth: 1120 },
   backLink: { minHeight: 44, alignSelf: "flex-start", flexDirection: "row", alignItems: "center", gap: 9 },
