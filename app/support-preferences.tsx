@@ -34,6 +34,12 @@ export default function SupportPreferencesScreen() {
     markEdited();
     setSheet((current) => ({ ...current, selectedIds: current.selectedIds.includes(id) ? current.selectedIds.filter((selected) => selected !== id) : [...current.selectedIds, id] }));
   };
+  const toggleGroup = (group: string) => {
+    const groupIds = supportPreferences.filter((item) => item.group === group).map((item) => item.id);
+    const allSelected = groupIds.every((id) => sheet.selectedIds.includes(id));
+    markEdited();
+    setSheet((current) => ({ ...current, selectedIds: allSelected ? current.selectedIds.filter((id) => !groupIds.includes(id)) : [...new Set([...current.selectedIds, ...groupIds])] }));
+  };
   const save = async () => {
     try {
       await saveSupportPreferences(sheet);
@@ -76,13 +82,13 @@ export default function SupportPreferencesScreen() {
     <PageHeading eyebrow="For the people around you" title="How I prefer to be supported." summary="Choose a few statements that fit today. Review them, then decide whether to save them here or export a copy to share." />
     <Card title="A note about this sheet"><Text style={styles.body}>Everything is optional. These are example preferences, not instructions for your care. They can change at any time. This is not a medical or emergency plan.</Text></Card>
     <View style={styles.selectionSummary} accessibilityLiveRegion="polite"><Text style={styles.selectionCount}>{sheet.selectedIds.length} {sheet.selectedIds.length === 1 ? "preference" : "preferences"} selected</Text>{sheet.selectedIds.length > 0 ? <Pressable accessibilityRole="button" onPress={() => { markEdited(); setSheet((current) => ({ ...current, selectedIds: [] })); }} style={({ pressed }) => [styles.clearButton, pressed && styles.pressed]}><Text style={styles.clearButtonText}>Clear selections</Text></Pressable> : null}</View>
-    {groups.map((group) => <Card key={group} title={group}>{supportPreferences.filter((item) => item.group === group).map((item) => {
+    {groups.map((group) => { const groupItems = supportPreferences.filter((item) => item.group === group); const groupSelected = groupItems.filter((item) => sheet.selectedIds.includes(item.id)).length; const allSelected = groupSelected === groupItems.length; return <Card key={group} title={group}><Pressable accessibilityRole="button" accessibilityLabel={`${allSelected ? "Clear" : "Select all"} preferences in ${group}`} onPress={() => toggleGroup(group)} style={({ pressed }) => [styles.groupAction, pressed && styles.pressed]}><Text style={styles.groupActionText}>{allSelected ? "Clear section" : "Select all in section"}</Text><Text style={styles.groupCount}>{groupSelected}/{groupItems.length}</Text></Pressable>{groupItems.map((item) => {
       const selected = sheet.selectedIds.includes(item.id);
       return <Pressable key={item.id} accessibilityRole="checkbox" accessibilityLabel={item.text} accessibilityState={{ checked: selected }} onPress={() => toggle(item.id)} style={styles.option}>
         <View style={[styles.checkbox, selected && styles.checked]}>{selected ? <Text style={styles.check}>✓</Text> : null}</View>
         <Text style={styles.optionText}>{item.text}</Text>
       </Pressable>;
-    })}</Card>)}
+    })}</Card>; })}
     <Card title="Something else I’d like you to know (optional)"><Text style={styles.helper}>This note may include personal information. It stays in this browser profile or on this device unless you export it.</Text><TextInput accessibilityLabel="Optional note about how you prefer to be supported" multiline maxLength={MAX_NOTE_LENGTH} value={sheet.note} onChangeText={(note) => { markEdited(); setSheet((current) => ({ ...current, note })); }} placeholder="Add a short note in your own words" placeholderTextColor={palette.muted} style={styles.input} textAlignVertical="top" /><Text style={styles.counter}>{sheet.note.length}/{MAX_NOTE_LENGTH}</Text></Card>
     <Card title="Review what you’ll share"><Text style={styles.previewTitle}>How I prefer to be supported</Text>{groups.map((group) => {
       const selected = supportPreferences.filter((item) => item.group === group && sheet.selectedIds.includes(item.id));
@@ -116,6 +122,9 @@ const styles = StyleSheet.create({
   selectionCount: { color: palette.text, fontSize: 13, lineHeight: 20, fontWeight: "800" },
   clearButton: { minHeight: 44, justifyContent: "center", paddingHorizontal: 4 },
   clearButtonText: { color: palette.tealDark, fontSize: 13, lineHeight: 20, fontWeight: "700" },
+  groupAction: { minHeight: 44, paddingHorizontal: 4, flexDirection: "row", alignItems: "center", justifyContent: "space-between" },
+  groupActionText: { color: palette.tealDark, fontSize: 13, lineHeight: 20, fontWeight: "700" },
+  groupCount: { color: palette.muted, fontSize: 12, lineHeight: 18 },
   actions: { gap: 8, marginVertical: 8 },
   button: { minHeight: 46, paddingHorizontal: 15, borderRadius: 10, backgroundColor: palette.teal, alignItems: "center", justifyContent: "center" },
   secondaryButton: { backgroundColor: palette.white, borderWidth: 1, borderColor: palette.line },
