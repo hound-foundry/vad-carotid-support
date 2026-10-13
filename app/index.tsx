@@ -43,6 +43,7 @@ export default function HomeScreen() {
         <QuickLink href="/glossary" title="Look up a term" />
         <QuickLink href="/appointments" title="Choose an appointment question" />
         <QuickLink href="/supporting-someone" title="Find carer guidance" />
+        <QuickLink href="/saved-guides" title="Open saved guides" />
       </View>
     </View>
 
@@ -77,7 +78,7 @@ function ActionCard({ href, label, title, detail, action }: { href: "/appointmen
   </View></Pressable></Link>;
 }
 
-function QuickLink({ href, title }: { href: "/glossary" | "/appointments" | "/supporting-someone"; title: string }) {
+function QuickLink({ href, title }: { href: "/glossary" | "/appointments" | "/supporting-someone" | "/saved-guides"; title: string }) {
   return <Link href={href} asChild><Pressable accessibilityRole="link" style={({ pressed }) => [styles.quickLink, pressed && styles.quickPressed]}><Text style={styles.quickLinkText}>{title} <Text accessibilityElementsHidden>→</Text></Text></Pressable></Link>;
 }
 
