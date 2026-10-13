@@ -607,3 +607,9 @@ Cayman Islands source discovery records the Ombudsman’s Data Protection Act gu
 This is an official-source discovery pass, not legal advice, a completeness claim or an applicability determination. Central African Republic (`CF`) remains blocked; all 14 review areas and the national review remain `not-assessed`.
 
 Central African Republic source discovery records the digital agency’s 2024 personal-data and cybersecurity law index, Ministry of Health and Population sources, and emergency cross-check guidance. Emergency numbers are reported as unreliable and coverage may be limited outside Bangui; no country-specific emergency instruction is enabled. French-language legal, clinical, accessibility, and translation review remains required.
+
+## Chad source-discovery snapshot — 13 October 2026
+
+This is an official-source discovery pass, not legal advice, a completeness claim or an applicability determination. Chad (`TD`) remains blocked; all 14 review areas and the national review remain `not-assessed`.
+
+Chad source discovery records the official legal journal, Ministry of Public Health, Ministry of Posts and Digital Economy, and emergency-service sources. The legal journal must be searched for current personal-data and health-related rules, while French-language legal, clinical, accessibility, translation and emergency-coverage review remains required before Chad-specific access is enabled.

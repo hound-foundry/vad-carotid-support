@@ -8268,8 +8268,50 @@
       "release": "blocked",
       "isoAlpha2": "TD",
       "reviewOwner": null,
-      "lastChecked": null,
-      "officialSources": [],
+  "lastChecked": "2026-10-13",
+  "officialSources": [
+    {
+      "title": "Official Journal and legal texts",
+      "url": "https://jo.sgg.gouv.td/",
+      "authority": "General Secretariat of the Government, Chad",
+      "sourceType": "privacy-law",
+      "checkedOn": "2026-10-13",
+      "status": "source-lead-only"
+    },
+    {
+      "title": "Ministry of Public Health",
+      "url": "https://sante.gouv.td/",
+      "authority": "Ministry of Public Health and Prevention, Chad",
+      "sourceType": "health-regulator",
+      "checkedOn": "2026-10-13",
+      "status": "source-lead-only"
+    },
+    {
+      "title": "Ministry health emergency service",
+      "url": "https://sante.gouv.td/",
+      "authority": "Ministry of Public Health and Prevention, Chad",
+      "sourceType": "emergency-guidance",
+      "checkedOn": "2026-10-13",
+      "status": "source-lead-only"
+    },
+    {
+      "title": "Ministry of Posts and Digital Economy regulations",
+      "url": "https://mpntic.gouv.td/",
+      "authority": "Ministry of Posts and Digital Economy, Chad",
+      "sourceType": "digital-services-regulation",
+      "checkedOn": "2026-10-13",
+      "status": "source-lead-only"
+    },
+    {
+      "title": "Emergency and ambulance guidance (cross-check)",
+      "url": "https://www.gov.uk/foreign-travel-advice/chad/getting-help",
+      "authority": "UK Foreign, Commonwealth and Development Office (cross-check source)",
+      "sourceType": "emergency-management",
+      "checkedOn": "2026-10-13",
+      "status": "source-lead-only"
+    }
+  ],
+  "sourceDiscoveryCheckedOn": "2026-10-13",
       "reviewAreas": [
         {
           "area": "privacy-and-health-data",
