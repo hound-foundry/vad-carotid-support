@@ -1,51 +1,27 @@
-import { Link, usePathname } from "expo-router";
-import { Pressable, StyleSheet, Text, View, useWindowDimensions } from "react-native";
-import { palette } from "./AppPage";
+import { Link } from "./AppLink";
+import { useEffect, useRef, useState } from "react";
+import { usePathname } from "expo-router";
+import { Platform, StyleSheet, type View as NativeView } from "react-native";
+import { Pressable, Text, View } from "./Ui";
+import { palette } from "./theme";
 
-const links = [
-  { href: "/learn" as const, label: "Guides", mobileLabel: "Guides", area: "guides" },
-  { href: "/appointments" as const, label: "Appointment sheet", mobileLabel: "Appointments", area: "appointments" },
-  { href: "/support-preferences" as const, label: "Support sheet", mobileLabel: "Support", area: "support" },
-  { href: "/resources" as const, label: "Resources", mobileLabel: "Resources", area: "resources" },
-  { href: "/saved-guides" as const, label: "Saved guides", mobileLabel: "Saved", area: "saved" },
-  { href: "/accessibility" as const, label: "Accessibility", mobileLabel: "Access", area: "accessibility" },
-];
-
+const links = [["/learn", "Guides"], ["/appointments", "Prepare an appointment"], ["/cards", "Make a card"], ["/supporting-someone", "Help someone"], ["/support-preferences", "Support preferences"], ["/glossary", "Look up a term"], ["/resources", "Resources"], ["/saved", "Saved on this device"], ["/about", "About and privacy"]] as const;
 export function SiteHeader() {
-  const pathname = usePathname();
-  const compact = useWindowDimensions().width < 760;
-  const activeArea = pathname === "/appointments" ? "appointments" : pathname === "/support-preferences" ? "support" : pathname === "/resources" ? "resources" : pathname === "/saved-guides" ? "saved" : pathname === "/accessibility" ? "accessibility" : pathname === "/" || pathname === "/about" || pathname === "/urgent-help" ? null : "guides";
-
-  return <View testID="site-header" style={styles.shell}><View style={[styles.inner, compact ? styles.innerCompact : styles.innerWide]}>
-    <Link href="/" asChild><Pressable accessibilityRole="link" accessibilityLabel="VAD and Carotid Support home" accessibilityState={{ selected: pathname === "/" }} style={styles.brandRow}>
-      <View style={styles.brandMark}><View style={styles.brandMarkInner} /></View>
-      <View><Text style={styles.brand}>VAD & Carotid Support</Text><Text style={styles.brandNote}>Information made with care</Text></View>
-    </Pressable></Link>
-    <View role="navigation" aria-label="Main navigation" style={[styles.nav, compact ? styles.navCompact : styles.navWide]}>
-      {(compact ? links.filter((item) => ["guides", "appointments", "support", "accessibility"].includes(item.area)) : links).map((item) => { const selected = activeArea === item.area; return <Link key={item.href} href={item.href as any} asChild><Pressable accessibilityRole="link" aria-current={selected ? "page" : undefined}>
-        <View style={[styles.navLink, compact && styles.navLinkCompact, selected && styles.navLinkSelected]}><Text style={[styles.navText, compact && styles.navTextCompact, selected && styles.navTextSelected]}>{compact ? item.mobileLabel : item.label}</Text></View>
-      </Pressable></Link>; })}
+  const pathname = usePathname(); const [open, setOpen] = useState(false); const menuRef = useRef<NativeView>(null);
+  useEffect(() => setOpen(false), [pathname]);
+  useEffect(() => {
+    if (!open || Platform.OS !== "web") return;
+    const close = (event: KeyboardEvent) => { if (event.key === "Escape") { setOpen(false); (menuRef.current as unknown as HTMLElement)?.focus(); } };
+    document.addEventListener("keydown", close); return () => document.removeEventListener("keydown", close);
+  }, [open]);
+  return <View testID="site-header" style={styles.shell}><View style={styles.inner}>
+    <Text style={styles.brand}>VAD & Carotid Support</Text>
+    <View role="navigation" aria-label="Main navigation" style={styles.nav}>
+      <Link href="/" asChild><Pressable accessibilityRole="link" aria-current={pathname === "/" ? "page" : undefined} style={[styles.item, pathname === "/" && styles.current]}><Text style={styles.label}>Home</Text></Pressable></Link>
+      <Pressable ref={menuRef} accessibilityRole="button" accessibilityState={{ expanded: open }} aria-controls="site-menu" onPress={() => setOpen(!open)} style={[styles.item, open && styles.current]}><Text style={styles.label}>{open ? "Close menu" : "Menu"}</Text></Pressable>
+      <Link href="/accessibility" asChild><Pressable accessibilityRole="link" aria-current={pathname === "/accessibility" ? "page" : undefined} style={[styles.item, pathname === "/accessibility" && styles.current]}><Text style={styles.label}>Text and display</Text></Pressable></Link>
     </View>
+    {open ? <View nativeID="site-menu" role="navigation" aria-label="All pages" style={styles.menu}>{links.map(([href, label]) => <Link key={href} href={href as any} asChild><Pressable accessibilityRole="link" aria-current={pathname === href ? "page" : undefined} onPress={() => setOpen(false)} style={[styles.menuItem, pathname === href && styles.current]}><Text style={styles.label}>{label}</Text></Pressable></Link>)}</View> : null}
   </View></View>;
 }
-
-const styles = StyleSheet.create({
-  shell: { width: "100%", backgroundColor: palette.paper, borderBottomWidth: 1, borderBottomColor: palette.line },
-  inner: { width: "100%", maxWidth: 1120, alignSelf: "center", paddingHorizontal: 24 },
-  innerWide: { minHeight: 76, flexDirection: "row", alignItems: "center", justifyContent: "space-between", gap: 20 },
-  innerCompact: { paddingTop: 8, paddingBottom: 7, gap: 4 },
-  brandRow: { display: "flex", minHeight: 54, flexDirection: "row", alignItems: "center", gap: 11 },
-  brandMark: { width: 36, height: 36, borderRadius: 19, backgroundColor: palette.mint, alignItems: "center", justifyContent: "center" },
-  brandMarkInner: { width: 14, height: 14, borderRadius: 8, borderWidth: 2, borderColor: palette.teal, transform: [{ rotate: "35deg" }] },
-  brand: { color: palette.ink, fontSize: 15, fontWeight: "800" },
-  brandNote: { marginTop: 2, color: palette.muted, fontSize: 11, letterSpacing: 0.15 },
-  nav: { display: "flex", alignItems: "center" },
-  navWide: { flexDirection: "row", gap: 5 },
-  navCompact: { width: "100%", flexDirection: "row", flexWrap: "wrap", justifyContent: "flex-start", gap: 4 },
-  navLink: { display: "flex", minHeight: 42, justifyContent: "center", paddingHorizontal: 11, borderRadius: 9 },
-  navLinkCompact: { minWidth: 96, flexGrow: 1, flexBasis: "30%", alignItems: "center", paddingHorizontal: 6, borderWidth: 1, borderColor: "transparent" },
-  navLinkSelected: { backgroundColor: palette.mint, borderColor: "#C6DDD7" },
-  navText: { color: palette.tealDark, fontSize: 13, fontWeight: "700" },
-  navTextCompact: { fontSize: 12 },
-  navTextSelected: { color: palette.ink },
-});
+const styles = StyleSheet.create({ shell: { backgroundColor: palette.paper, borderBottomWidth: 1, borderBottomColor: palette.line }, inner: { width: "100%", maxWidth: 980, alignSelf: "center", paddingHorizontal: 16, paddingVertical: 8 }, brand: { color: palette.ink, fontSize: 18, fontWeight: "700" }, nav: { flexDirection: "row", flexWrap: "wrap", gap: 4, marginTop: 3 }, item: { justifyContent: "center", paddingHorizontal: 10, borderRadius: 12 }, label: { color: palette.tealDark, fontSize: 16, fontWeight: "700" }, current: { backgroundColor: palette.mint }, menu: { paddingTop: 8, gap: 4 }, menuItem: { paddingHorizontal: 12, justifyContent: "center", borderRadius: 12, borderBottomWidth: 1, borderBottomColor: palette.line } });

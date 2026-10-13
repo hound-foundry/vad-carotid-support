@@ -1,9 +1,11 @@
+import { Pressable, Text, TextInput, View } from "../src/components/Ui";
 import { useEffect, useRef, useState } from "react";
-import { Alert, Platform, Pressable, StyleSheet, Text, TextInput, View } from "react-native";
+import { Alert, Platform, StyleSheet } from "react-native";
 import { useLocalSearchParams } from "expo-router";
 import { AppPage, BackHome, Card, PageHeading } from "../src/components/AppPage";
 import { appointmentPrompts, emptyAppointmentSheet, formatAppointmentExport, guidePromptSuggestions, MAX_NOTE_LENGTH, type AppointmentSheet } from "../src/features/appointments/model.mjs";
 import { deleteAppointmentSheet, exportAppointmentSheet, loadAppointmentSheet, saveAppointmentSheet } from "../src/features/appointments/store";
+import { onProjectDataCleared } from "../src/features/local-data/keys.mjs";
 
 export default function AppointmentsScreen() {
   const [sheet, setSheet] = useState<AppointmentSheet>(emptyAppointmentSheet());
@@ -15,6 +17,7 @@ export default function AppointmentsScreen() {
   const [message, setMessage] = useState("Loading saved questions from this device…");
   const { guide } = useLocalSearchParams<{ guide?: string }>();
   const promptGroups = [...new Set(appointmentPrompts.map((prompt) => prompt.group))];
+  useEffect(() => onProjectDataCleared(() => { edited.current = true; setSheet(emptyAppointmentSheet()); setSaved(false); setMessage("Saved data cleared. This sheet is blank."); }), []);
   useEffect(() => {
     if (Platform.OS !== "web" || typeof document === "undefined") return;
     const style = document.createElement("style");
@@ -48,7 +51,7 @@ export default function AppointmentsScreen() {
   const printSheet = () => { if (Platform.OS === "web") globalThis.print?.(); };
 
   const visibleGroups = oneGroupAtATime ? promptGroups.slice(groupIndex, groupIndex + 1) : promptGroups;
-  return <AppPage><BackHome /><PageHeading eyebrow="Appointment preparation" title="Make space for your questions." summary="Choose what matters most today. You can start with one question, add a reminder, and review the sheet before deciding to save or export it." />
+  return <AppPage><BackHome /><PageHeading eyebrow="Appointment preparation" title="Prepare an appointment" summary="Choose what matters most today. You can start with one question, add a reminder, and review the sheet before deciding to save or export it." />
     <Card title="Choose your pace">
       <Text style={styles.helper}>You do not need to choose everything. One question is a useful start, and you can change your choices at any time.</Text>
       <Pressable accessibilityRole="checkbox" accessibilityLabel="Show one appointment section at a time" accessibilityState={{ checked: oneGroupAtATime }} onPress={() => setOneGroupAtATime((current) => !current)} style={styles.paceOption}>

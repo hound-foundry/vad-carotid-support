@@ -1,5 +1,6 @@
+import { Pressable, Text, TextInput, View } from "../src/components/Ui";
 import { useState } from "react";
-import { Linking, Pressable, StyleSheet, Text, TextInput, View } from "react-native";
+import { Linking, StyleSheet } from "react-native";
 import { AppPage, BackHome, Card, DraftNotice, PageHeading, palette } from "../src/components/AppPage";
 import { glossary } from "../src/content/glossary";
 import references from "../content/references.json";

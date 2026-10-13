@@ -1,5 +1,7 @@
-import { Link } from "expo-router";
-import { Pressable, StyleSheet, Text } from "react-native";
+import { Link } from "./AppLink";
+import { Pressable, Text } from "./Ui";
+
+import { StyleSheet } from "react-native";
 import { guides, type Audience } from "../content/guides";
 import { palette } from "./AppPage";
 

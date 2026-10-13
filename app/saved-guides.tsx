@@ -1,6 +1,8 @@
-import { Link, useFocusEffect } from "expo-router";
+import { Link } from "../src/components/AppLink";
+import { Pressable, Text, View } from "../src/components/Ui";
+import { useFocusEffect } from "expo-router";
 import { useCallback, useState } from "react";
-import { Alert, Platform, Pressable, StyleSheet, Text, View } from "react-native";
+import { Alert, Platform, StyleSheet } from "react-native";
 import { AppPage, BackHome, Card, DraftNotice, PageHeading, palette } from "../src/components/AppPage";
 import { guides } from "../src/content/guides";
 import { deleteSavedGuides, exportSavedGuides, loadSavedGuides } from "../src/features/saved-guides/store";

@@ -8,7 +8,7 @@ The project begins with lived experience and a simple aim: make trustworthy info
 
 ## What we are building
 
-The shared Expo project is web-first and remains structured for later iOS and Android builds. The current preview includes seven short, sourced English guide drafts, larger text and browser read-aloud controls, deliberate guide-link sharing, guide-to-appointment and guide-to-support-sheet prompts, copy and export actions for local sheets, a source-linked plain-language glossary, short-on-time home links, separate with-stroke and without-stroke paths, carer information, a local appointment question sheet with browser print, a local “How I prefer to be supported” sheet, separate personal and milestone cards, device-only saved data, a searchable external-resource directory, an installable static web shell with an offline fallback, a shared accessibility footer and urgent-help access from every route. The website is the reference implementation for the future native app; see [website design](docs/WEBSITE_DESIGN.md) and [app parity](docs/APP_PARITY.md). Each guide and glossary definition is clearly marked as unapproved pending clinical and patient/carer review.
+The shared Expo project is web-first and remains structured for later iOS and Android builds. The home has four actions: understand dissection, prepare an appointment, make a card and help someone. The preview includes seven sourced English guide drafts, a glossary, appointment and support sheets, separate practical and milestone cards, local saved items, text/display preferences, read-aloud guide controls, external resources and urgent help on every route. Cards have a short form, separate preview, explicit save, designed PDF/PNG downloads where offered, card-only print and a text alternative. See the [design case study](docs/DESIGN_CASE_STUDY.md), [website design](docs/WEBSITE_DESIGN.md) and [app parity](docs/APP_PARITY.md). Each guide and glossary definition is clearly marked as unapproved pending clinical and patient/carer review.
 
 The app will point people back to their own care team. It will not diagnose, score symptoms, choose medicines, promise recovery or tell a person when to return to an activity. Country and language settings will be separate. External articles will remain on their publishers’ sites. Users can delete each local sheet or clear all saved sheets and guide links from the About page; exported copies and device backups are outside the app’s control.
 
@@ -26,11 +26,11 @@ Requires Node.js 24 and npm. From the project directory:
     npm test
     npm run typecheck
     npm run build:web
-    npm run web
+    npm run preview:web
 
 `npm run build:web` creates a local static preview. `npm run release:web` checks the low-risk web scope and builds the static release. It does not represent country-by-country legal clearance. Country-specific emergency numbers, medical claims, translations, hosted data, paid features and native app-store releases require their own review before activation.
 
-Then open the local Expo address in a browser. To run the native development server, use npm start. iOS device builds and store submissions may require Apple accounts and build credentials; none are included here.
+Open http://localhost:4173/ for the exported preview; clean card URLs also work on reload. For live Expo web development use `npm run web`, and for the native development server use `npm start`. iOS device builds and store submissions may require Apple accounts and build credentials; none are included here.
 
 To help find code with the separate Atlas Kit, point its --project option at this checkout. Atlas Kit is an external local development tool and is not bundled with this project. Its existing static architecture checks target Godot projects; this app uses TypeScript checks and a web build in CI.
 

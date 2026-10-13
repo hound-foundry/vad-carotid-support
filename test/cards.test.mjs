@@ -23,7 +23,7 @@ test("milestone card stays separate and labels social export as personal", () =>
   const card = { ...emptyMilestoneCard(), useSurvivorWord: true, dateKind: "month-year", date: "October 2026", title: "A year since my milestone", message: "Today I mark this moment." };
   const exported = formatMilestoneCardExport(card);
   assert.match(exported, /Survivor milestone/);
-  assert.match(exported, /Date \(month-year\)/);
+  assert.match(exported, /Date \(month and year\)/);
   assert.match(exported, /not medical advice or proof of diagnosis/);
   assert.equal(parseMilestoneCard(serializeMilestoneCard(card)).message, card.message);
 });

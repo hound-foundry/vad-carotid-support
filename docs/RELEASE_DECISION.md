@@ -12,3 +12,5 @@ This record is intentionally blocked until the required human reviews are comple
 | Translation | Language review records | Language reviewer | Not started | No translated release approved | — |
 
 Current release status: **blocked-pending-human-review**.
+
+The 13 October [design case study](DESIGN_CASE_STUDY.md) supplies engineering evidence for the revised home/header, `/cards`, `/saved`, `/personal-card`, `/milestone-card` and display preferences. Keyboard, mobile layout, file generation and synthetic privacy observations do not promote any review track above. Include the two new directory routes in the next patient/carer and full assistive-technology review.

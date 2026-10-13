@@ -1,6 +1,8 @@
+import { Link } from "../src/components/AppLink";
+import { Pressable, Text, TextInput, View } from "../src/components/Ui";
 import { useState } from "react";
-import { Link } from "expo-router";
-import { Pressable, StyleSheet, Text, TextInput, View } from "react-native";
+
+import { StyleSheet } from "react-native";
 import { AppPage, BackHome, Card, DraftNotice, PageHeading, palette } from "../src/components/AppPage";
 import { GuideList } from "../src/components/GuideList";
 import type { Audience } from "../src/content/guides";
@@ -8,7 +10,7 @@ import type { Audience } from "../src/content/guides";
 export default function LearnScreen() {
   const [query, setQuery] = useState("");
   const [audience, setAudience] = useState<"all" | Audience>("all");
-  return <AppPage><BackHome /><PageHeading eyebrow="Guide library" title="Clear explanations, with sources and limits." summary="Short English drafts for adults, families, carers and interested readers." /><DraftNotice />
+  return <AppPage><BackHome /><PageHeading eyebrow="Guide library" title="Understand dissection" summary="Short English drafts for adults, families, carers and interested readers." /><DraftNotice />
     <Card title="Find a guide">
       <Text style={styles.helper}>Search guide titles and page text for a topic or unfamiliar word. Search stays on this page, is not saved, and is not added to the address.</Text>
       <Link href="/saved-guides" asChild><Pressable accessibilityRole="link" style={styles.savedLink}><Text style={styles.savedLinkText}>Open saved guides →</Text></Pressable></Link>

@@ -1,9 +1,11 @@
+import { Pressable, Text, TextInput, View } from "../src/components/Ui";
 import { useEffect, useRef, useState } from "react";
 import { useLocalSearchParams } from "expo-router";
-import { Alert, Platform, Pressable, StyleSheet, Text, TextInput, View } from "react-native";
+import { Alert, Platform, StyleSheet } from "react-native";
 import { AppPage, BackHome, Card, PageHeading, palette } from "../src/components/AppPage";
 import { emptySupportPreferences, formatSupportPreferencesExport, guidePreferenceSuggestions, MAX_NOTE_LENGTH, supportPreferences, type SupportPreferencesSheet } from "../src/features/support-preferences/model.mjs";
 import { deleteSupportPreferences, exportSupportPreferences, loadSupportPreferences, saveSupportPreferences } from "../src/features/support-preferences/store";
+import { onProjectDataCleared } from "../src/features/local-data/keys.mjs";
 
 const groups = [...new Set(supportPreferences.map((item) => item.group))];
 
@@ -16,6 +18,7 @@ export default function SupportPreferencesScreen() {
   const edited = useRef(false);
   const [message, setMessage] = useState("Loading saved preferences from this device…");
   const { guide } = useLocalSearchParams<{ guide?: string }>();
+  useEffect(() => onProjectDataCleared(() => { edited.current = true; setSheet(emptySupportPreferences()); setSaved(false); setMessage("Saved data cleared. This sheet is blank."); }), []);
   useEffect(() => {
     if (Platform.OS !== "web" || typeof document === "undefined") return;
     const style = document.createElement("style");

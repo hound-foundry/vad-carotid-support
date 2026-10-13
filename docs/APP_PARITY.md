@@ -14,9 +14,11 @@ The static website is the reference implementation for content language, safety 
 ## Native implementation sequence
 
 1. Reuse the route content and models in an Expo native shell.
-2. Replace browser print/download adapters with platform share and document adapters that require an explicit user action.
+2. Verify the implemented Expo Print/Sharing PDF and text adapters on real devices. PNG is offered on the website; native image export is not claimed. Sharing cancellation must never report a completed transfer when the platform does not expose that result.
 3. Keep storage adapters separate from content and UI so deletion and clear-all remain testable.
 4. Test VoiceOver, TalkBack, large text, reduced motion, contrast and dynamic type before any store submission.
 5. Complete app-store privacy declarations and target-market review only after the intended native data flow is fixed.
 
 Atlas remains a separate development tool. It may index this checkout for code navigation, but its Godot-oriented checks are not evidence of Expo or clinical readiness.
+
+The short card forms, shared filtered presentations, memory-only drafts, version 1 storage records and three-control header are shared Expo code. Browser PDF rendering and canvas PNG generation are platform adapters. Web font coverage, untagged PDF output and pending native accessibility checks are documented in [the design case study](DESIGN_CASE_STUDY.md).

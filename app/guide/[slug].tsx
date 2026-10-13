@@ -1,6 +1,8 @@
-import { Link, useLocalSearchParams } from "expo-router";
+import { Link } from "../../src/components/AppLink";
+import { Pressable, Text, View } from "../../src/components/Ui";
+import { useLocalSearchParams } from "expo-router";
 import { useEffect, useRef, useState } from "react";
-import { Linking, Platform, Pressable, Share, StyleSheet, Text, View } from "react-native";
+import { Linking, Platform, Share, StyleSheet } from "react-native";
 import references from "../../content/references.json";
 import { AppPage, BackHome, Card, DraftNotice, PageHeading } from "../../src/components/AppPage";
 import { getGuide, guides } from "../../src/content/guides";

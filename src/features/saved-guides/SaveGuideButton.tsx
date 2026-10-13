@@ -1,5 +1,6 @@
+import { Pressable, Text, View } from "../../components/Ui";
 import { useEffect, useState } from "react";
-import { Pressable, StyleSheet, Text, View } from "react-native";
+import { StyleSheet } from "react-native";
 import { loadSavedGuides, saveSavedGuides } from "./store";
 
 export function SaveGuideButton({ slug }: { slug: string }) {

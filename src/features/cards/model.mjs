@@ -56,19 +56,22 @@ export function serializeMilestoneCard(card) {
   return JSON.stringify({ version: 1, card: clean });
 }
 
-function lines(title, pairs, footer) {
-  return [title, "Prepared with VAD & Carotid Support", "", ...pairs.flatMap(([label, value]) => value?.trim() ? [`${label}:`, value.trim(), ""] : []), footer].join("\n");
+/** @typedef {{kind: "personal" | "milestone", title: string, subtitle: string, fields: Array<{id: string, label: string, value: string}>, footer: string}} CardPresentation */
+export function localDate(now = new Date()) { return `${now.getFullYear()}-${String(now.getMonth()+1).padStart(2,"0")}-${String(now.getDate()).padStart(2,"0")}`; }
+const field = (id, label, value) => ({ id, label, value: typeof value === "string" ? value.trim() : "" });
+const dateLabel = (kind) => ({ exact: "exact date", "month-year": "month and year", year: "year only", approximate: "approximate" })[kind] ?? "no date";
+/** @returns {CardPresentation} */
+export function personalCardPresentation(input, today = localDate()) {
+  const card = parsePersonalCard(serializePersonalCard(input));
+  return { kind: "personal", title: "Medical and communication card", subtitle: "Personal information", fields: [
+    field("preferredName", "Preferred name", card.preferredName), field("description", "About me", card.description), field("communicationNeeds", "Communication and access needs", card.communicationNeeds), field("whatHelps", "What helps me", card.whatHelps), field("avoid", "Please avoid", card.avoid), field("emergencyContact", "Emergency contact", card.emergencyContact), field("clinicianContact", "Clinician or service contact", card.clinicianContact), field("medicines", "Medicines (entered by me; check current)", card.medicines), field("allergies", "Allergies (entered by me; check current)", card.allergies), field("eventDate", `Event date (${dateLabel(card.eventDateKind)})`, card.eventDateKind === "none" ? "" : card.eventDate), field("updatedOn", "Last updated", card.updatedOn || today),
+  ].filter((item) => item.value), footer: "Personal information card — not an official medical record or emergency plan." };
 }
-
-export function formatPersonalCardExport(card) {
-  const dateLabel = card.eventDateKind && card.eventDateKind !== "none" ? `Event date (${card.eventDateKind})` : "Event date";
-  return lines("Personal information and communication card", [
-    ["Preferred name", card.preferredName], ["About me", card.description], ["Communication and access needs", card.communicationNeeds], ["What helps me", card.whatHelps], ["Please avoid", card.avoid], ["Emergency contact", card.emergencyContact], ["Clinician/contact", card.clinicianContact], ["Medicines (entered by me; check current)", card.medicines], ["Allergies (entered by me; check current)", card.allergies], [dateLabel, card.eventDate], ["Last updated", card.updatedOn],
-  ], "Personal information card — not an official medical record or emergency plan.");
+/** @returns {CardPresentation} */
+export function milestoneCardPresentation(input) {
+  const card = parseMilestoneCard(serializeMilestoneCard(input));
+  return { kind: "milestone", title: card.title.trim() || "My milestone", subtitle: card.useSurvivorWord ? "Survivor milestone" : "Personal milestone", fields: [field("displayName", "Name", card.displayName), field("date", `Date (${dateLabel(card.dateKind)})`, card.dateKind === "none" ? "" : card.date), field("message", "Message", card.message)].filter((item) => item.value), footer: "Personal story/milestone — not medical advice or proof of diagnosis." };
 }
-
-export function formatMilestoneCardExport(card) {
-  const label = card.useSurvivorWord ? "Survivor milestone" : "Personal milestone";
-  const dateLabel = card.dateKind && card.dateKind !== "none" ? `Date (${card.dateKind})` : "Date";
-  return lines(label, [["Name", card.displayName], ["Title", card.title], [dateLabel, card.date], ["Message", card.message]], "Personal story/milestone — not medical advice or proof of diagnosis.");
-}
+export function formatCardText(view) { return [view.subtitle, view.title, "", ...view.fields.flatMap(({label,value}) => [label + ":", value, ""]), view.footer].join("\n"); }
+export const formatPersonalCardExport = (card) => formatCardText(personalCardPresentation(card));
+export const formatMilestoneCardExport = (card) => formatCardText(milestoneCardPresentation(card));

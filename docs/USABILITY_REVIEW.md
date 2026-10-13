@@ -19,6 +19,12 @@ Ask the reviewer to think aloud if comfortable. Do not explain the interface unt
 3. Choose one appointment question, find the preview, and explain what Save, Export and Delete do. Do not enter real personal information or save it during a review.
 4. Find guidance for a family member or carer and identify one idea that respects the patient’s choices.
 5. Find urgent-help information. Confirm it is visually distinct from routine appointment guidance; do not simulate an emergency or ask the reviewer to judge clinical wording.
+6. From Make a card, create a medical/communication card using invented details. Choose a communication statement, review it, return to edit, and explain which information will be included. Compare No date with an invented date.
+7. Create a separate anniversary/milestone card with an invented message and no date. Explain image download, PDF, Print, Save and Delete. Confirm that the practical card's invented medicine/contact fields did not appear here.
+8. Leave an unsaved card, navigate Home, and return through Saved on this device. Explain the difference between the unsaved draft and an explicitly saved copy, and what a reload would do.
+9. Try the same short task with larger text or another chosen display setting. Invite feedback about memory demands, attention, vision and communication without asking the person to disclose a condition.
+
+Offer only one or two tasks per session when preferred. The design aim is finding one useful action within about 60 seconds, observed unobtrusively; do not display a timer or treat task speed as a measure of the person. No participant session or completion-time result is recorded by this protocol or the engineering case study.
 
 If a task feels tiring or confusing, stop that task and ask what would make it easier. A reviewer does not need to complete every task for their feedback to be useful.
 

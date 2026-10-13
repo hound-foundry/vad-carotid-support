@@ -1,28 +1,19 @@
-import { Link } from "expo-router";
-import type { ReactNode } from "react";
-import { Pressable, ScrollView, StyleSheet, Text, View, useWindowDimensions } from "react-native";
-import { SafeAreaView } from "react-native-safe-area-context";
+import { Link } from "./AppLink";
+import { Pressable, ScrollView, Text, View, SafeAreaView } from "./Ui";
+
+import { useRef, type ReactNode } from "react";
+import { Platform, StyleSheet, useWindowDimensions, type ScrollView as NativeScrollView } from "react-native";
+
 import { useAccessibility } from "../features/accessibility/AccessibilityProvider";
 
-export const palette = {
-  ink: "#183B3B",
-  text: "#435A5A",
-  muted: "#617474",
-  teal: "#26736E",
-  tealDark: "#195B58",
-  mint: "#E4F0ED",
-  paper: "#F3F7F6",
-  white: "#FFFFFF",
-  line: "#DCE7E4",
-  alert: "#F9E9E2",
-  alertInk: "#713A2D",
-  gold: "#956020",
-};
+import { palette } from "./theme";
+export { palette } from "./theme";
 
 export function AppPage({ children, wide = false }: { children: ReactNode; wide?: boolean }) {
   const { settings } = useAccessibility();
   const narrow = useWindowDimensions().width < 390;
-  return <SafeAreaView style={styles.safe} edges={["bottom"]}><Pressable testID="skip-link" accessibilityRole="link" accessibilityLabel="Skip to main content" nativeID="skip-to-content" style={styles.skipLink} onPress={() => { if (typeof document !== "undefined") document.getElementById("main-content")?.focus(); }}><Text style={styles.skipText}>Skip to main content</Text></Pressable><ScrollView nativeID="main-content" accessible contentContainerStyle={[styles.page, narrow && styles.pageNarrow, settings.spacing === "roomy" && styles.pageRoomy, wide && styles.wide]}>{children}<SiteFooter /></ScrollView></SafeAreaView>;
+  const mainRef = useRef<NativeScrollView>(null);
+  return <SafeAreaView style={styles.safe} edges={["bottom"]}>{Platform.OS === "web" ? <Pressable testID="skip-link" accessibilityRole="link" accessibilityLabel="Skip to main content" nativeID="skip-to-content" style={styles.skipLink} onPress={() => (mainRef.current?.getScrollableNode() as HTMLElement | undefined)?.focus()}><Text style={styles.skipText}>Skip to main content</Text></Pressable> : null}<ScrollView ref={mainRef} nativeID="main-content" {...(Platform.OS === "web" ? { role: "main" as const, tabIndex: -1 as const } : {})} contentContainerStyle={[styles.page, settings.spacing === "roomy" && styles.pageRoomy, narrow && styles.pageNarrow, wide && styles.wide]}>{children}<SiteFooter /></ScrollView></SafeAreaView>;
 }
 
 export function BackHome() {
@@ -35,7 +26,7 @@ export function PageHeading({ eyebrow, title, summary }: { eyebrow: string; titl
 }
 
 export function DraftNotice() {
-  return <View accessibilityRole="alert" style={styles.notice}><View style={styles.noticeMark}><Text style={styles.noticeMarkText}>!</Text></View><View style={styles.noticeCopy}><Text style={styles.noticeTitle}>Draft — not approved for patient use</Text><Text style={styles.noticeBody}>Clinical review and patient/carer usability review have not been recorded. This information cannot assess or guide your individual care.</Text></View></View>;
+  return <View style={styles.notice}><View style={styles.noticeCopy}><Text style={styles.noticeTitle}>Draft information · review pending</Text><Text style={styles.noticeBody}>Clinical and patient/carer reviews are not yet recorded. For personal care questions, ask your doctor.</Text><Link href="/about" asChild><Pressable accessibilityRole="link"><Text style={styles.back}>About the review process</Text></Pressable></Link></View></View>;
 }
 
 export function Card({ title, children }: { title: string; children: ReactNode }) {
@@ -55,6 +46,7 @@ function SiteFooter() {
     <View style={styles.footerLinks}>
       <Link href="/about" asChild><Pressable accessibilityRole="link" style={styles.footerLink}><Text style={styles.footerLinkText}>About and privacy</Text></Pressable></Link>
       <Link href="/accessibility" asChild><Pressable accessibilityRole="link" style={styles.footerLink}><Text style={styles.footerLinkText}>Accessibility</Text></Pressable></Link>
+      <Link href={"/saved" as any} asChild><Pressable accessibilityRole="link" style={styles.footerLink}><Text style={styles.footerLinkText}>Saved on this device</Text></Pressable></Link>
       <Link href="/urgent-help" asChild><Pressable accessibilityRole="link" style={styles.footerLink}><Text style={styles.footerLinkText}>Urgent help</Text></Pressable></Link>
     </View>
   </View>;
@@ -62,7 +54,7 @@ function SiteFooter() {
 
 const styles = StyleSheet.create({
   safe: { flex: 1, backgroundColor: palette.paper },
-  skipLink: { position: "absolute", zIndex: 10, top: 4, left: 8, minHeight: 44, paddingHorizontal: 12, justifyContent: "center", backgroundColor: palette.ink, borderRadius: 8, opacity: 0 },
+  skipLink: { position: "absolute", zIndex: 10, top: 4, left: -10000, minHeight: 48, paddingHorizontal: 12, justifyContent: "center", backgroundColor: palette.ink, borderRadius: 8 },
   skipText: { color: palette.white, fontSize: 14, fontWeight: "800" },
   page: { width: "100%", maxWidth: 920, alignSelf: "center", paddingHorizontal: 24, paddingBottom: 56 },
   pageNarrow: { paddingHorizontal: 16 },

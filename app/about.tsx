@@ -1,18 +1,19 @@
+import { Pressable, Text } from "../src/components/Ui";
 import { useState } from "react";
-import { Alert, Linking, Platform, Pressable, StyleSheet, Text } from "react-native";
+import { Alert, Linking, Platform, StyleSheet } from "react-native";
 import { AppPage, BackHome, Card, PageHeading } from "../src/components/AppPage";
 import { languagePlan } from "../src/content/locales";
-import { deleteAppointmentSheet } from "../src/features/appointments/store";
-import { deleteSavedGuides } from "../src/features/saved-guides/store";
-import { deleteSupportPreferences } from "../src/features/support-preferences/store";
-import { deleteMilestoneCard, deletePersonalCard } from "../src/features/cards/store";
-import { deleteAccessibilitySettings } from "../src/features/accessibility/store";
+import { clearAllSavedData } from "../src/features/local-data/store";
+import { useAccessibility } from "../src/features/accessibility/AccessibilityProvider";
+import { useCardDrafts } from "../src/features/cards/CardDraftProvider";
 
 export default function About() {
   const [clearMessage, setClearMessage] = useState("");
+  const { reset } = useAccessibility(); const { clearDrafts } = useCardDrafts();
   const clearLocalData = async () => {
     try {
-      await Promise.all([deleteAppointmentSheet(), deleteSupportPreferences(), deleteSavedGuides(), deletePersonalCard(), deleteMilestoneCard(), deleteAccessibilitySettings()]);
+      await clearAllSavedData();
+      clearDrafts(); reset();
       setClearMessage("Saved sheets, cards, guide links and accessibility preferences were deleted from this device.");
     } catch {
       setClearMessage("Some saved data could not be deleted. Use each tool’s delete control to try again.");
@@ -25,7 +26,7 @@ export default function About() {
     }
     Alert.alert("Clear saved data?", "This deletes saved sheets, cards, guide links and accessibility preferences from this device. Exported copies are not affected.", [{ text: "Cancel", style: "cancel" }, { text: "Delete", style: "destructive", onPress: () => { void clearLocalData(); } }]);
   };
-  return <AppPage><BackHome /><PageHeading eyebrow="About this project" title="Built to make the next step feel a little clearer." summary="A free, independent, open-source Hound Foundry community project for adults affected by vertebral or carotid artery dissection, families, carers and interested readers." />
+  return <AppPage><BackHome /><PageHeading eyebrow="About this project" title="About and privacy" summary="A free, independent, open-source Hound Foundry community project for adults affected by vertebral or carotid artery dissection, families, carers and interested readers." />
     <Card title="What this project is"><Text style={styles.body}>This is an early development preview, not a charity, healthcare provider or medical service. It does not diagnose, interpret scans, recommend medication, estimate individual risk, clear activity or replace a clinician. Personal questions about diagnosis, tests and treatment belong with the person’s own care team.</Text></Card>
     <Card title="Clinical and lived-experience review"><Text style={styles.body}>All guides are original drafts with linked sources and recorded review fields. No clinician or patient/carer usability review has yet been recorded. The app must not publish these guides as approved patient information until qualified review is documented.</Text><Text style={styles.body}>The user-suggested 2017 book is listed bibliographically as an external reading resource. Its chapters and stories are not reproduced or translated.</Text></Card>
     <Card title="Privacy and open source"><Text style={styles.body}>No account, analytics, advertising, sync service or backend is part of V1. Appointment sheets are stored on your device only when you choose Save. Web storage uses your browser profile’s local storage; native storage uses Expo SecureStore. Each has different device and backup behavior, so neither guarantees privacy. See the repository privacy documentation before storing sensitive notes.</Text><Text style={styles.body}>The source code uses the project’s existing open-source licence, and authored guide content uses its existing content licence. The app is free to use; it has no donation, advertising or story-submission feature.</Text><Pressable accessibilityRole="link" onPress={() => void Linking.openURL("https://github.com/hound-foundry/vad-carotid-support/blob/codex/patient-support-foundation/docs/PRIVACY.md")} style={({ pressed }) => [styles.repoLink, pressed && styles.pressed]}><Text style={styles.repoText}>Read the privacy design notes ↗</Text></Pressable><Pressable accessibilityRole="link" onPress={() => void Linking.openURL("https://github.com/hound-foundry/vad-carotid-support")} style={({ pressed }) => [styles.repoLink, pressed && styles.pressed]}><Text style={styles.repoText}>Open the project repository ↗</Text></Pressable></Card>

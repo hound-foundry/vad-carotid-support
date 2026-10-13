@@ -35,3 +35,9 @@ This is an evidence form for manual review of the actual web build. It is intent
 - Critical issues:
 - Follow-up changes:
 - Decision: Not reviewed
+
+## Engineering observations — 13 October 2026
+
+The [design case study](DESIGN_CASE_STUDY.md) contains screenshots and observed browser checks for the simplified header/home, card stages, menu Escape/focus behavior, hidden skip link, labelled inputs, web ARIA states, 320–390px layouts, 200% app text and full-page dark/high contrast. These checks used the exported build in the Codex Chromium-based in-app browser and synthetic cards. They are narrower than the matrix above and do not mark a combined keyboard/screen-reader row pass.
+
+NVDA was not run. Manual 200% browser zoom, a full screen-reader route pass, physical print verification and native VoiceOver/TalkBack checks remain pending. The output PDF is untagged; provide the semantic HTML review and text alternative rather than calling it PDF/UA accessible.

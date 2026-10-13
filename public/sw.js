@@ -1,5 +1,5 @@
-const CACHE_NAME = "vad-support-shell-v1";
-const SHELL = ["/", "/manifest.json", "/icon.svg"];
+const CACHE_NAME = "vad-support-shell-v2";
+const SHELL = ["/", "/manifest.json", "/icon.svg", "/fonts/NotoSans-Regular.ttf", "/fonts/NotoSans-Bold.ttf"];
 
 self.addEventListener("install", (event) => {
   event.waitUntil(caches.open(CACHE_NAME).then((cache) => cache.addAll(SHELL)).then(() => self.skipWaiting()));

@@ -1,7 +1,7 @@
 // @ts-nocheck
 export const STORAGE_KEY = "vad-carotid-support.accessibility.v1";
 /** @typedef {{ textScale: number, spacing: "standard" | "roomy", contrast: "standard" | "high", theme: "light" | "dark", reducedMotion: boolean, simplifiedReading: boolean }} AccessibilitySettings */
-export function emptyAccessibilitySettings() { return { textScale: 1, spacing: "standard", contrast: "standard", theme: "light", reducedMotion: false, simplifiedReading: false }; }
+export function emptyAccessibilitySettings() { return { textScale: 1, spacing: "standard", contrast: "standard", theme: "light", reducedMotion: true, simplifiedReading: false }; }
 export function parseAccessibilitySettings(input) {
   if (typeof input !== "string" || input.length > 1000) return emptyAccessibilitySettings();
   try {
