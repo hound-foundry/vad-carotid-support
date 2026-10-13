@@ -43614,8 +43614,50 @@
       "release": "blocked",
       "isoAlpha2": "ZW",
       "reviewOwner": null,
-      "lastChecked": null,
-      "officialSources": [],
+      "lastChecked": "2026-10-13",
+      "officialSources": [
+        {
+          "title": "Cyber and Data Protection Act privacy notice",
+          "url": "https://www.zimra.co.zw/about-us/privacy-policy",
+          "authority": "Zimbabwe Revenue Authority",
+          "sourceType": "privacy-guidance",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Data Protection Authority liaison information",
+          "url": "https://www.zimra.co.zw/news/2347-know-your-data-protection-officers-safeguarding-zimra-s-data-integrity",
+          "authority": "Zimbabwe Revenue Authority",
+          "sourceType": "privacy-regulator",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Medical Directorate",
+          "url": "https://www.mohcc.gov.zw/?page_id=6044",
+          "authority": "Ministry of Health and Child Care, Zimbabwe",
+          "sourceType": "health-regulator",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Medical equipment and health-sector regulation",
+          "url": "https://www.mohcc.gov.zw/?p=6834",
+          "authority": "Ministry of Health and Child Care, Zimbabwe",
+          "sourceType": "medical-equipment-guidance",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Emergency help and stroke warning guidance",
+          "url": "https://impilo.mohcc.gov.zw/welcome/emergency",
+          "authority": "Ministry of Health and Child Care, Zimbabwe",
+          "sourceType": "emergency-guidance",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        }
+      ],
+      "sourceDiscoveryCheckedOn": "2026-10-13",
       "reviewAreas": [
         {
           "area": "privacy-and-health-data",

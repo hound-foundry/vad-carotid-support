@@ -98,6 +98,8 @@ Azerbaijan source discovery (13 October 2026) now records official personal-data
 
 Bangladesh source discovery (13 October 2026) now records the 2026 Personal Data Protection Act, government privacy material, Directorate General of Drug Administration medical-device guidance and database, and Bangladesh Police emergency-service guidance. These are source leads only. Bangladesh remains blocked pending qualified review of Bangla- and English-language national privacy, medical-software, accessibility, emergency and distribution requirements.
 
+Zimbabwe source discovery (13 October 2026) now records Cyber and Data Protection Act privacy material, Data Protection Authority liaison information, Ministry of Health medical and equipment sources, and official emergency guidance. These are source leads only. Zimbabwe remains blocked pending qualified review of English-language national privacy, medical-software, accessibility, emergency and distribution requirements.
+
 ### Platform distribution policies (not legislation)
 
 | Platform | Official policy source | Release work still needed |
