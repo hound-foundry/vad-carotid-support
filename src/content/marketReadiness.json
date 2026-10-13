@@ -1965,8 +1965,50 @@
       "release": "blocked",
       "isoAlpha2": "AM",
       "reviewOwner": null,
-      "lastChecked": null,
-      "officialSources": [],
+      "lastChecked": "2026-10-13",
+      "officialSources": [
+        {
+          "title": "Personal Data Protection Agency",
+          "url": "https://pdpa.am/en",
+          "authority": "Personal Data Protection Agency of Armenia",
+          "sourceType": "privacy-regulator",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Personal data protection legislation",
+          "url": "https://www.pdpa.am/en/legislation",
+          "authority": "Personal Data Protection Agency of Armenia",
+          "sourceType": "privacy-law",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Ministry of Health eHealth strategy and medical data systems",
+          "url": "https://www.moh.am/uploads/eHealth%20Strategy_ENG.pdf",
+          "authority": "Ministry of Health of Armenia",
+          "sourceType": "health-regulator",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "National health accounts and medical goods",
+          "url": "https://www.moh.am/uploads/NHA-2015-English.pdf",
+          "authority": "Ministry of Health of Armenia",
+          "sourceType": "health-policy",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Unified 112 emergency number",
+          "url": "https://mia.gov.am/2026/02/15/112-5/",
+          "authority": "Ministry of Internal Affairs of Armenia",
+          "sourceType": "emergency-guidance",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        }
+      ],
+      "sourceDiscoveryCheckedOn": "2026-10-13",
       "reviewAreas": [
         {
           "area": "privacy-and-health-data",

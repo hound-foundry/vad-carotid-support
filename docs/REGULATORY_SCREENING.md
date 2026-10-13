@@ -78,6 +78,8 @@ Andorra source discovery (13 October 2026) now records the Andorran Data Protect
 
 Albania source discovery (13 October 2026) now records the Information and Data Protection Commissioner’s personal-data materials, Ministry of Health medical-device services, the National Agency of Medicines and Medical Devices, and official emergency-number guidance. These are source leads only. Albania remains blocked pending qualified review of Albanian- and English-language, national privacy, medical-software, accessibility, emergency and distribution requirements.
 
+Armenia source discovery (13 October 2026) now records the Personal Data Protection Agency, its legislation portal, Ministry of Health eHealth and health-policy materials, and official Ministry of Internal Affairs 112 guidance. These are source leads only. Armenia remains blocked pending qualified review of Armenian-, Russian- and English-language, national privacy, medical-software, accessibility, emergency and distribution requirements.
+
 ### Platform distribution policies (not legislation)
 
 | Platform | Official policy source | Release work still needed |
