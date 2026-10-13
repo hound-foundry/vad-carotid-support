@@ -8091,8 +8091,50 @@
       "release": "blocked",
       "isoAlpha2": "CF",
       "reviewOwner": null,
-      "lastChecked": null,
-      "officialSources": [],
+  "lastChecked": "2026-10-13",
+  "officialSources": [
+    {
+      "title": "Personal-data protection law No. 24.001",
+      "url": "https://acdd.gouv.cf/index.php",
+      "authority": "Agence centrafricaine de développement du digital",
+      "sourceType": "privacy-law",
+      "checkedOn": "2026-10-13",
+      "status": "source-lead-only"
+    },
+    {
+      "title": "Ministry of Health and Population",
+      "url": "https://sante.gouv.cf/",
+      "authority": "Ministry of Health and Population, Central African Republic",
+      "sourceType": "health-regulator",
+      "checkedOn": "2026-10-13",
+      "status": "source-lead-only"
+    },
+    {
+      "title": "Ministry of Health contact and health line",
+      "url": "https://www.sante.gouv.cf/nous-contacter",
+      "authority": "Ministry of Health and Population, Central African Republic",
+      "sourceType": "health-service-guidance",
+      "checkedOn": "2026-10-13",
+      "status": "source-lead-only"
+    },
+    {
+      "title": "Official digital and cybersecurity law index",
+      "url": "https://acdd.gouv.cf/index.php",
+      "authority": "Agence centrafricaine de développement du digital",
+      "sourceType": "digital-services-regulation",
+      "checkedOn": "2026-10-13",
+      "status": "source-lead-only"
+    },
+    {
+      "title": "Emergency-service guidance (cross-check)",
+      "url": "https://www.gov.uk/foreign-travel-advice/central-african-republic/getting-help",
+      "authority": "UK Foreign, Commonwealth and Development Office (cross-check source)",
+      "sourceType": "emergency-guidance",
+      "checkedOn": "2026-10-13",
+      "status": "source-lead-only"
+    }
+  ],
+  "sourceDiscoveryCheckedOn": "2026-10-13",
       "reviewAreas": [
         {
           "area": "privacy-and-health-data",

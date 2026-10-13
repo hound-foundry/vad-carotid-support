@@ -601,3 +601,9 @@ Cabo Verde source discovery records the CNPD legislation index, the Ministry of 
 This is an official-source discovery pass, not legal advice, a completeness claim or an applicability determination. Cayman Islands (`KY`) remains blocked; all 14 review areas and the territory review remain `not-assessed`.
 
 Cayman Islands source discovery records the Ombudsman’s Data Protection Act guidance, the 2021 Revision in the government legislation database, the Health Services Authority, the Health Practice Commission, and emergency-service cross-check material. Qualified review must resolve territorial applicability, health-data processing, international transfers, medical-software and professional-practice boundaries, accessibility, consumer and distribution requirements, and the territory’s emergency-information publication before Cayman-specific access is enabled.
+
+## Central African Republic source-discovery snapshot — 13 October 2026
+
+This is an official-source discovery pass, not legal advice, a completeness claim or an applicability determination. Central African Republic (`CF`) remains blocked; all 14 review areas and the national review remain `not-assessed`.
+
+Central African Republic source discovery records the digital agency’s 2024 personal-data and cybersecurity law index, Ministry of Health and Population sources, and emergency cross-check guidance. Emergency numbers are reported as unreliable and coverage may be limited outside Bangui; no country-specific emergency instruction is enabled. French-language legal, clinical, accessibility, and translation review remains required.
