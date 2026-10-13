@@ -19249,8 +19249,50 @@
       "release": "blocked",
       "isoAlpha2": "IT",
       "reviewOwner": null,
-      "lastChecked": null,
-      "officialSources": [],
+      "lastChecked": "2026-10-13",
+      "officialSources": [
+        {
+          "title": "Garante Privacy cookie and tracking guidance",
+          "url": "https://www.garanteprivacy.it/temi/cookie",
+          "authority": "Garante per la protezione dei dati personali",
+          "sourceType": "regulator-guidance",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Italian cookie and tracking guidelines, 10 June 2021",
+          "url": "https://www.garanteprivacy.it/web/guest/home/docweb/-/docweb-display/docweb/9677876",
+          "authority": "Garante per la protezione dei dati personali",
+          "sourceType": "regulator-guidance",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Medical devices and national registration database",
+          "url": "https://www.salute.gov.it/new/en/tema/dispositivi-medici/registering-medical-devices-national-database-0/",
+          "authority": "Italian Ministry of Health",
+          "sourceType": "competent-authority-guidance",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Medical devices portal",
+          "url": "https://www.salute.gov.it/new/it/tema/dispositivi-medici/",
+          "authority": "Italian Ministry of Health",
+          "sourceType": "competent-authority-portal",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Data Protection Authority portal",
+          "url": "https://www.garanteprivacy.it/",
+          "authority": "Garante per la protezione dei dati personali",
+          "sourceType": "regulator-portal",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        }
+      ],
+      "sourceDiscoveryCheckedOn": "2026-10-13",
       "reviewAreas": [
         {
           "area": "privacy-and-health-data",

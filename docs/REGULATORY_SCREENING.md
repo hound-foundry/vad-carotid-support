@@ -42,6 +42,8 @@ The initial UK subnational checklist now names England, Wales, Scotland and Nort
 
 Ireland source discovery (13 October 2026) now records the Data Protection Act 2018, the Privacy and Electronic Communications Regulations 2011, the Data Protection Commission portal and official emergency guidance. These are source leads only. Ireland remains blocked until a qualified reviewer maps each review area, confirms any applicable health-data and medical-software obligations, and checks the relevant local and EU requirements. The emergency page identifies 112 and 999; the app must keep generic emergency wording until country-specific release review is complete.
 
+Italy source discovery (13 October 2026) now records the Italian data-protection authority's cookie and tracking guidance, its regulator portal, and Ministry of Health medical-device registration and portal pages. These are source leads only. Italy remains blocked until a qualified reviewer maps the review areas, confirms how the EU medical-device framework applies to the app's actual functions, and checks national and regional requirements.
+
 ### Platform distribution policies (not legislation)
 
 | Platform | Official policy source | Release work still needed |
