@@ -4446,8 +4446,50 @@
       "release": "blocked",
       "isoAlpha2": "BM",
       "reviewOwner": null,
-      "lastChecked": null,
-      "officialSources": [],
+      "lastChecked": "2026-10-13",
+      "officialSources": [
+        {
+          "title": "Personal Information Protection Act 2016",
+          "url": "https://www.gov.bm/sites/default/files/Personal-Information-Protection-Act-2016.pdf",
+          "authority": "Government of Bermuda",
+          "sourceType": "privacy-law",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Office of the Privacy Commissioner",
+          "url": "https://www.privacy.bm/",
+          "authority": "Office of the Privacy Commissioner for Bermuda",
+          "sourceType": "privacy-regulator",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Health regulatory bodies",
+          "url": "https://www.gov.bm/health-regulatory-bodies",
+          "authority": "Government of Bermuda Ministry of Health",
+          "sourceType": "health-regulator",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Bermuda Health Council health-technology oversight",
+          "url": "https://www.gov.bm/news/bermuda-health-council-amendment-act-2016",
+          "authority": "Government of Bermuda and Bermuda Health Council",
+          "sourceType": "medical-device-regulation",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Emergency numbers",
+          "url": "https://www.gov.bm/what-do-emergency",
+          "authority": "Government of Bermuda",
+          "sourceType": "emergency-guidance",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        }
+      ],
+      "sourceDiscoveryCheckedOn": "2026-10-13",
       "reviewAreas": [
         {
           "area": "privacy-and-health-data",

@@ -637,3 +637,9 @@ Costa Rica source discovery records PRODHAB’s Law 8968 materials and complianc
 This is an official-source discovery pass, not legal advice, a completeness claim or an applicability determination. Côte d’Ivoire (`CI`) remains blocked; all 14 review areas and the national review remain `not-assessed`.
 
 Côte d’Ivoire source discovery records Law 2013-450 and ARTCI privacy-compliance materials, Ministry of Health oversight, ANSSI security regulations, and the government emergency-services directory. The directory contains multiple service numbers and requires current local verification; French-language legal, clinical, accessibility, translation, health-device, and emergency-routing review remains required before Côte d’Ivoire-specific access is enabled.
+
+## Bermuda source-discovery snapshot — 13 October 2026
+
+This is an official-source discovery pass, not legal advice, a completeness claim or an applicability determination. Bermuda (`BM`) remains blocked; all 14 review areas and the territory review remain `not-assessed`.
+
+Bermuda source discovery records the Personal Information Protection Act 2016, Privacy Commissioner guidance, government health-regulatory bodies, Bermuda Health Council health-technology oversight, and government emergency guidance. Qualified review must resolve the Act’s current commencement and amendments, sensitive health-data processing, international transfers, health-technology classification, accessibility, and territory-specific distribution requirements before Bermuda-specific access is enabled.
