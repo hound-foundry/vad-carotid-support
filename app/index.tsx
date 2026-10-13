@@ -37,13 +37,18 @@ export default function HomeScreen() {
     </View>
 
     <View style={styles.quickStart}>
-      <Text accessibilityRole="header" aria-level={2} style={styles.quickTitle}>Short on time or energy?</Text>
+      <Text accessibilityRole="header" aria-level={2} style={styles.quickTitle}>What do you need right now?</Text>
       <Text style={styles.quickIntro}>Choose one small next step. You can come back to the rest later.</Text>
       <View style={styles.quickLinks}>
+        <QuickLink href="/guide/understanding-dissection" title="Understand the words" />
         <QuickLink href="/glossary" title="Look up a term" />
         <QuickLink href="/appointments" title="Choose an appointment question" />
+        <QuickLink href="/support-preferences" title="Tell people what helps" />
+        <QuickLink href="/personal-card" title="Vision or communication support" />
         <QuickLink href="/supporting-someone" title="Find carer guidance" />
+        <QuickLink href="/urgent-help" title="I need urgent help" />
         <QuickLink href="/saved-guides" title="Open saved guides" />
+        <QuickLink href="/milestone-card" title="Make a milestone card" />
       </View>
     </View>
 
@@ -62,6 +67,7 @@ export default function HomeScreen() {
       <ActionCard href="/appointments" label="BEFORE YOUR NEXT APPOINTMENT" title="Make room for your questions" detail="Choose prompts, add private notes, and decide whether to save or export." action="Build an appointment sheet" />
       <ActionCard href="/support-preferences" label="FOR THE PEOPLE AROUND YOU" title="Tell people what helps" detail="Choose support preferences and review a shareable sheet before exporting." action="Make a support sheet" />
       <ActionCard href="/resources" label="TRUSTED LINKS" title="Explore helpful resources" detail="Find patient, carer and professional reading from external publishers." action="Browse the directory" />
+      <ActionCard href="/personal-card" label="COMMUNICATION SUPPORT" title="Make a personal card" detail="Write down access needs, what helps and optional health information for people you choose." action="Create a personal card" />
     </View>
 
     <View style={styles.footer}>
@@ -72,14 +78,14 @@ export default function HomeScreen() {
   </AppPage>;
 }
 
-function ActionCard({ href, label, title, detail, action }: { href: "/appointments" | "/support-preferences" | "/resources"; label: string; title: string; detail: string; action: string }) {
-  return <Link href={href} asChild><Pressable accessibilityRole="link" style={styles.actionLink}><View style={styles.actionCard}>
+function ActionCard({ href, label, title, detail, action }: { href: "/appointments" | "/support-preferences" | "/resources" | "/personal-card"; label: string; title: string; detail: string; action: string }) {
+  return <Link href={href as any} asChild><Pressable accessibilityRole="link" style={styles.actionLink}><View style={styles.actionCard}>
     <Text style={styles.actionLabel}>{label}</Text><Text style={styles.actionTitle}>{title}</Text><Text style={styles.actionDetail}>{detail}</Text><View style={styles.actionBottom}><Text style={styles.actionText}>{action}</Text><Text style={styles.actionArrow}>→</Text></View>
   </View></Pressable></Link>;
 }
 
-function QuickLink({ href, title }: { href: "/glossary" | "/appointments" | "/supporting-someone" | "/saved-guides"; title: string }) {
-  return <Link href={href} asChild><Pressable accessibilityRole="link" style={({ pressed }) => [styles.quickLink, pressed && styles.quickPressed]}><Text style={styles.quickLinkText}>{title} <Text accessibilityElementsHidden>→</Text></Text></Pressable></Link>;
+function QuickLink({ href, title }: { href: "/glossary" | "/appointments" | "/supporting-someone" | "/saved-guides" | "/personal-card" | "/milestone-card" | "/urgent-help" | "/guide/understanding-dissection" | "/support-preferences"; title: string }) {
+  return <Link href={href as any} asChild><Pressable accessibilityRole="link" style={({ pressed }) => [styles.quickLink, pressed && styles.quickPressed]}><Text style={styles.quickLinkText}>{title} <Text accessibilityElementsHidden>→</Text></Text></Pressable></Link>;
 }
 
 const styles = StyleSheet.create({

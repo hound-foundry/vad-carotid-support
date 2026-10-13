@@ -5,10 +5,12 @@ import { Pressable, StyleSheet, Text, View } from "react-native";
 import { SafeAreaProvider, SafeAreaView } from "react-native-safe-area-context";
 import { palette } from "../src/components/AppPage";
 import { SiteHeader } from "../src/components/SiteHeader";
+import { AccessibilityProvider } from "../src/features/accessibility/AccessibilityProvider";
 
 export default function RootLayout() {
   return (
     <SafeAreaProvider>
+      <AccessibilityProvider>
       <StatusBar style="dark" />
       <View style={styles.root}>
         <Head>
@@ -30,6 +32,7 @@ export default function RootLayout() {
         <SiteHeader />
         <Stack screenOptions={{ headerShown: false, contentStyle: { backgroundColor: palette.paper } }} />
       </View>
+      </AccessibilityProvider>
     </SafeAreaProvider>
   );
 }

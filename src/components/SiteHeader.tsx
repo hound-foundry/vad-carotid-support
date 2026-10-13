@@ -8,12 +8,13 @@ const links = [
   { href: "/support-preferences" as const, label: "Support sheet", mobileLabel: "Support", area: "support" },
   { href: "/resources" as const, label: "Resources", mobileLabel: "Resources", area: "resources" },
   { href: "/saved-guides" as const, label: "Saved guides", mobileLabel: "Saved", area: "saved" },
+  { href: "/accessibility" as const, label: "Accessibility", mobileLabel: "Access", area: "accessibility" },
 ];
 
 export function SiteHeader() {
   const pathname = usePathname();
   const compact = useWindowDimensions().width < 760;
-  const activeArea = pathname === "/appointments" ? "appointments" : pathname === "/support-preferences" ? "support" : pathname === "/resources" ? "resources" : pathname === "/saved-guides" ? "saved" : pathname === "/" || pathname === "/about" || pathname === "/urgent-help" ? null : "guides";
+  const activeArea = pathname === "/appointments" ? "appointments" : pathname === "/support-preferences" ? "support" : pathname === "/resources" ? "resources" : pathname === "/saved-guides" ? "saved" : pathname === "/accessibility" ? "accessibility" : pathname === "/" || pathname === "/about" || pathname === "/urgent-help" ? null : "guides";
 
   return <View style={styles.shell}><View style={[styles.inner, compact ? styles.innerCompact : styles.innerWide]}>
     <Link href="/" asChild><Pressable accessibilityRole="link" accessibilityLabel="VAD and Carotid Support home" accessibilityState={{ selected: pathname === "/" }} style={styles.brandRow}>
@@ -21,7 +22,7 @@ export function SiteHeader() {
       <View><Text style={styles.brand}>VAD & Carotid Support</Text><Text style={styles.brandNote}>Information made with care</Text></View>
     </Pressable></Link>
     <View role="navigation" aria-label="Main navigation" style={[styles.nav, compact ? styles.navCompact : styles.navWide]}>
-      {links.map((item) => { const selected = activeArea === item.area; return <Link key={item.href} href={item.href} asChild><Pressable accessibilityRole="link" aria-current={selected ? "page" : undefined}>
+      {links.map((item) => { const selected = activeArea === item.area; return <Link key={item.href} href={item.href as any} asChild><Pressable accessibilityRole="link" aria-current={selected ? "page" : undefined}>
         <View style={[styles.navLink, compact && styles.navLinkCompact, selected && styles.navLinkSelected]}><Text style={[styles.navText, compact && styles.navTextCompact, selected && styles.navTextSelected]}>{compact ? item.mobileLabel : item.label}</Text></View>
       </Pressable></Link>; })}
     </View>
