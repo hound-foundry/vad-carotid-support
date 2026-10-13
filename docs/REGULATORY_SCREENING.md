@@ -589,3 +589,9 @@ Burkina Faso source discovery records the 2021 personal-data law, the Commission
 This is an official-source discovery pass, not legal advice, a completeness claim or an applicability determination. Burundi (`BI`) remains blocked; all 14 review areas and the national review remain `not-assessed`.
 
 Burundi source discovery records the 2026 personal-data protection law, Ministry of Public Health medical-device materials, the national medicines and food regulator, and Ministry of Interior emergency guidance. The new law and health materials require current French-language legal and clinical review, including effective dates, regulator roles, cross-border transfers, local-language accessibility, medical-software classification, emergency coverage, and distribution requirements before Burundi-specific access is enabled.
+
+## Cabo Verde source-discovery snapshot — 13 October 2026
+
+This is an official-source discovery pass, not legal advice, a completeness claim or an applicability determination. Cabo Verde (`CV`) remains blocked; all 14 review areas and the national review remain `not-assessed`.
+
+Cabo Verde source discovery records the CNPD legislation index, the Ministry of Health, the national civil-protection service, and government emergency-number material. The sources show emergency-number information that requires reconciliation and current local verification before publication; Portuguese-language legal, clinical, translation and accessibility review is also required before Cabo Verde-specific access or emergency details are enabled.

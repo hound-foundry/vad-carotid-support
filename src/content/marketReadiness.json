@@ -7028,8 +7028,50 @@
       "release": "blocked",
       "isoAlpha2": "CV",
       "reviewOwner": null,
-      "lastChecked": null,
-      "officialSources": [],
+  "lastChecked": "2026-10-13",
+  "officialSources": [
+    {
+      "title": "CNPD legislation index",
+      "url": "https://www.cnpd.cv/legislacao/",
+      "authority": "Comissão Nacional de Protecção de Dados, Cabo Verde",
+      "sourceType": "privacy-law",
+      "checkedOn": "2026-10-13",
+      "status": "source-lead-only"
+    },
+    {
+      "title": "General data-protection regime Law 41/VIII/2013",
+      "url": "https://www.cnpd.cv/legislacao/",
+      "authority": "Comissão Nacional de Protecção de Dados, Cabo Verde",
+      "sourceType": "privacy-regulation",
+      "checkedOn": "2026-10-13",
+      "status": "source-lead-only"
+    },
+    {
+      "title": "Ministry of Health",
+      "url": "https://minsaude.gov.cv/",
+      "authority": "Ministry of Health, Cabo Verde",
+      "sourceType": "health-regulator",
+      "checkedOn": "2026-10-13",
+      "status": "source-lead-only"
+    },
+    {
+      "title": "National civil protection service",
+      "url": "https://snpcb.cv/",
+      "authority": "Sistema Nacional de Protecção Civil e Bombeiros, Cabo Verde",
+      "sourceType": "emergency-management",
+      "checkedOn": "2026-10-13",
+      "status": "source-lead-only"
+    },
+    {
+      "title": "National emergency-number programme",
+      "url": "https://www.governo.cv/112-cabo-verde-e-o-numero-unico-de-emergencia/",
+      "authority": "Government of Cabo Verde",
+      "sourceType": "emergency-guidance",
+      "checkedOn": "2026-10-13",
+      "status": "source-lead-only"
+    }
+  ],
+  "sourceDiscoveryCheckedOn": "2026-10-13",
       "reviewAreas": [
         {
           "area": "privacy-and-health-data",
