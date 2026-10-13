@@ -75,6 +75,7 @@ export default function SupportPreferencesScreen() {
     <BackHome />
     <PageHeading eyebrow="For the people around you" title="How I prefer to be supported." summary="Choose a few statements that fit today. Review them, then decide whether to save them here or export a copy to share." />
     <Card title="A note about this sheet"><Text style={styles.body}>Everything is optional. These are example preferences, not instructions for your care. They can change at any time. This is not a medical or emergency plan.</Text></Card>
+    <View style={styles.selectionSummary} accessibilityLiveRegion="polite"><Text style={styles.selectionCount}>{sheet.selectedIds.length} {sheet.selectedIds.length === 1 ? "preference" : "preferences"} selected</Text>{sheet.selectedIds.length > 0 ? <Pressable accessibilityRole="button" onPress={() => { markEdited(); setSheet((current) => ({ ...current, selectedIds: [] })); }} style={({ pressed }) => [styles.clearButton, pressed && styles.pressed]}><Text style={styles.clearButtonText}>Clear selections</Text></Pressable> : null}</View>
     {groups.map((group) => <Card key={group} title={group}>{supportPreferences.filter((item) => item.group === group).map((item) => {
       const selected = sheet.selectedIds.includes(item.id);
       return <Pressable key={item.id} accessibilityRole="checkbox" accessibilityLabel={item.text} accessibilityState={{ checked: selected }} onPress={() => toggle(item.id)} style={styles.option}>
@@ -111,6 +112,10 @@ const styles = StyleSheet.create({
   previewGroup: { marginTop: 12 },
   previewGroupTitle: { color: palette.ink, fontSize: 13, lineHeight: 19, fontWeight: "700", marginTop: 12 },
   previewLine: { color: palette.text, fontSize: 14, lineHeight: 22, marginTop: 7 },
+  selectionSummary: { minHeight: 44, paddingHorizontal: 3, flexDirection: "row", alignItems: "center", justifyContent: "space-between" },
+  selectionCount: { color: palette.text, fontSize: 13, lineHeight: 20, fontWeight: "800" },
+  clearButton: { minHeight: 44, justifyContent: "center", paddingHorizontal: 4 },
+  clearButtonText: { color: palette.tealDark, fontSize: 13, lineHeight: 20, fontWeight: "700" },
   actions: { gap: 8, marginVertical: 8 },
   button: { minHeight: 46, paddingHorizontal: 15, borderRadius: 10, backgroundColor: palette.teal, alignItems: "center", justifyContent: "center" },
   secondaryButton: { backgroundColor: palette.white, borderWidth: 1, borderColor: palette.line },
