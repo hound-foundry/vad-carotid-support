@@ -107,6 +107,16 @@ assert.ok(canadaRecord.subnationalAreas.every((area) => area.status === "not-ass
 assert.ok(canadaRecord.officialSources.some((source) => source.url === "https://laws-lois.justice.gc.ca/eng/acts/P-8.6/" && source.status === "source-lead-only"));
 assert.ok(canadaRecord.officialSources.some((source) => source.url === "https://www.canada.ca/en/health-canada/services/drugs-health-products/medical-devices/application-information/guidance-documents/software-medical-device-guidance-document.html" && source.status === "source-lead-only"));
 assert.match(canadaRecord.sourceDiscoveryNote, /free\/open-source model alone is not an applicability exemption/);
+const australiaRecord = resources.countryRecords.find((country) => country.isoAlpha2 === "AU");
+assert.ok(australiaRecord && australiaRecord.officialSources.length === 14, "Australia discovery must retain its dated federal and state/territory source-lead bundle");
+assert.equal(australiaRecord.sourceDiscoveryCheckedOn, "2026-10-13", "Australia source discovery needs its own dated record");
+assert.equal(australiaRecord.legalReview.status, "not-assessed", "Australia source discovery must not be mistaken for legal clearance");
+assert.equal(australiaRecord.release, "blocked", "Australia access must remain blocked pending qualified review");
+assert.equal(australiaRecord.subnationalAreas.length, 8, "Australia screening queue must include six states, ACT and NT");
+assert.ok(australiaRecord.subnationalAreas.every((area) => area.status === "not-assessed" && area.checkedOn === "2026-10-13" && area.reviewer === null), "Australia state/territory queue must remain explicitly unassessed");
+assert.ok(australiaRecord.officialSources.some((source) => source.url === "https://www.legislation.gov.au/C2004A03712/latest" && source.status === "source-lead-only"));
+assert.ok(australiaRecord.officialSources.some((source) => source.url === "https://www.tga.gov.au/resources/guidance/understanding-how-we-regulate-software-based-medical-devices" && source.status === "source-lead-only"));
+assert.match(australiaRecord.sourceDiscoveryNote, /1 July 2026/);
 const euGroup = resources.regionalSourceGroups?.find((group) => group.id === "eu-member-states");
 assert.equal(euGroup?.status, "membership-scope-source-checked-only", "EU grouping must not imply law applicability");
 assert.equal(euGroup?.membershipSource, "https://european-union.europa.eu/principles-countries-history/eu-countries_en?page=1", "EU membership list source must be recorded");

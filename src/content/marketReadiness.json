@@ -1780,7 +1780,120 @@
       "isoAlpha2": "AU",
       "reviewOwner": null,
       "lastChecked": null,
-      "officialSources": [],
+      "officialSources": [
+        {
+          "title": "Privacy Act 1988, current official compilation",
+          "url": "https://www.legislation.gov.au/C2004A03712/latest",
+          "authority": "Federal Register of Legislation",
+          "sourceType": "federal-legislation",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "OAIC small-business Privacy Act coverage guidance",
+          "url": "https://www.oaic.gov.au/privacy/privacy-guidance-for-organisations-and-government-agencies/organisations/small-business",
+          "authority": "Office of the Australian Information Commissioner",
+          "sourceType": "official-regulatory-guidance",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "OAIC health-service-provider Privacy Act guidance",
+          "url": "https://www.oaic.gov.au/privacy/your-privacy-rights/health-information/what-is-a-health-service-provider",
+          "authority": "Office of the Australian Information Commissioner",
+          "sourceType": "official-regulatory-guidance",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "OAIC Notifiable Data Breaches response guide, 29 June 2026",
+          "url": "https://www.oaic.gov.au/privacy/notifiable-data-breaches/quick-reference-guide-for-responding-to-data-breaches",
+          "authority": "Office of the Australian Information Commissioner",
+          "sourceType": "official-regulatory-guidance",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "OAIC Australian Privacy Principles Guidelines",
+          "url": "https://www.oaic.gov.au/privacy/australian-privacy-principles/australian-privacy-principles-guidelines",
+          "authority": "Office of the Australian Information Commissioner",
+          "sourceType": "official-regulatory-guidance",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "OAIC state and territory privacy legislation map",
+          "url": "https://www.oaic.gov.au/privacy/privacy-legislation/state-and-territory-privacy-legislation",
+          "authority": "Office of the Australian Information Commissioner",
+          "sourceType": "official-regulatory-guidance",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "TGA software-based medical-device regulation guidance, 24 February 2026",
+          "url": "https://www.tga.gov.au/resources/guidance/understanding-how-we-regulate-software-based-medical-devices",
+          "authority": "Therapeutic Goods Administration",
+          "sourceType": "official-regulatory-guidance",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "TGA clinical decision-support software guidance, updated 29 January 2026",
+          "url": "https://www.tga.gov.au/resources/guidance/understanding-clinical-decision-support-system-software-regulation",
+          "authority": "Therapeutic Goods Administration",
+          "sourceType": "official-regulatory-guidance",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Therapeutic Goods Act 1989, latest Federal Register entry",
+          "url": "https://www.legislation.gov.au/C2004A03952/latest",
+          "authority": "Federal Register of Legislation",
+          "sourceType": "federal-legislation",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Therapeutic Goods (Medical Devices) Regulations 2002, current and future versions",
+          "url": "https://www.legislation.gov.au/Series/F2002B00237",
+          "authority": "Federal Register of Legislation",
+          "sourceType": "federal-regulation-series",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Competition and Consumer Act 2010, including the Australian Consumer Law",
+          "url": "https://www.legislation.gov.au/C2004A00109/latest",
+          "authority": "Federal Register of Legislation",
+          "sourceType": "federal-legislation",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "ACCC false or misleading claims guidance",
+          "url": "https://www.accc.gov.au/business/advertising-and-promotions/false-or-misleading-claims",
+          "authority": "Australian Competition and Consumer Commission",
+          "sourceType": "official-regulatory-guidance",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Disability Discrimination Act 1992, latest Federal Register entry",
+          "url": "https://www.legislation.gov.au/C2004A04426/latest",
+          "authority": "Federal Register of Legislation",
+          "sourceType": "federal-legislation",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Online Safety Act 2021, latest Federal Register entry",
+          "url": "https://www.legislation.gov.au/C2021A00076/latest",
+          "authority": "Federal Register of Legislation",
+          "sourceType": "federal-legislation",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        }
+      ],
       "reviewAreas": [
         {
           "area": "privacy-and-health-data",
@@ -1895,7 +2008,74 @@
           "reviewer": null
         }
       ],
-      "subnationalAreas": []
+      "subnationalAreas": [
+        {
+          "name": "Australian Capital Territory",
+          "status": "not-assessed",
+          "reason": "State/territory screening target only. No current privacy, health-records, accessibility, consumer, device, language, local emergency, municipality or jurisdictional applicability review performed.",
+          "source": "https://www.oaic.gov.au/privacy/privacy-legislation/state-and-territory-privacy-legislation",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "New South Wales",
+          "status": "not-assessed",
+          "reason": "State/territory screening target only. No current privacy, health-records, accessibility, consumer, device, language, local emergency, municipality or jurisdictional applicability review performed.",
+          "source": "https://www.oaic.gov.au/privacy/privacy-legislation/state-and-territory-privacy-legislation",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Northern Territory",
+          "status": "not-assessed",
+          "reason": "State/territory screening target only. No current privacy, health-records, accessibility, consumer, device, language, local emergency, municipality or jurisdictional applicability review performed.",
+          "source": "https://www.oaic.gov.au/privacy/privacy-legislation/state-and-territory-privacy-legislation",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Queensland",
+          "status": "not-assessed",
+          "reason": "State/territory screening target only. No current privacy, health-records, accessibility, consumer, device, language, local emergency, municipality or jurisdictional applicability review performed.",
+          "source": "https://www.oaic.gov.au/privacy/privacy-legislation/state-and-territory-privacy-legislation",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "South Australia",
+          "status": "not-assessed",
+          "reason": "State/territory screening target only. No current privacy, health-records, accessibility, consumer, device, language, local emergency, municipality or jurisdictional applicability review performed.",
+          "source": "https://www.oaic.gov.au/privacy/privacy-legislation/state-and-territory-privacy-legislation",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Tasmania",
+          "status": "not-assessed",
+          "reason": "State/territory screening target only. No current privacy, health-records, accessibility, consumer, device, language, local emergency, municipality or jurisdictional applicability review performed.",
+          "source": "https://www.oaic.gov.au/privacy/privacy-legislation/state-and-territory-privacy-legislation",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Victoria",
+          "status": "not-assessed",
+          "reason": "State/territory screening target only. No current privacy, health-records, accessibility, consumer, device, language, local emergency, municipality or jurisdictional applicability review performed.",
+          "source": "https://www.oaic.gov.au/privacy/privacy-legislation/state-and-territory-privacy-legislation",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Western Australia",
+          "status": "not-assessed",
+          "reason": "State/territory screening target only. No current privacy, health-records, accessibility, consumer, device, language, local emergency, municipality or jurisdictional applicability review performed.",
+          "source": "https://www.oaic.gov.au/privacy/privacy-legislation/state-and-territory-privacy-legislation",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        }
+      ],
+      "sourceDiscoveryCheckedOn": "2026-10-13",
+      "sourceDiscoveryNote": "Initial official-source discovery only, not legal advice, a jurisdiction-by-jurisdiction applicability decision, or permission to distribute in Australia. The queue covers six states plus the Australian Capital Territory and Northern Territory; separately inventoried external territories require their own scope review. OAIC guidance states the Commonwealth Privacy Act applies to private-sector health-service providers including small businesses, while state and territory laws add public-sector and some health-information obligations; in NSW, Victoria and ACT, private health service providers must comply with both federal and local privacy laws. OAIC guidance identifies WA Privacy and Information Sharing Act 2024 as commencing 1 July 2026, so current post-commencement text and operation need verification. TGA guidance dated February 2026 says intended purpose controls software-device regulation; examine the product claims and patient/caregiver functionality. Free/open-source status alone is not an exemption. Screen privacy, health information, breach response, transfers, medical-device/therapeutic-goods obligations, ACL claims, disability access, children and online safety, local languages, copyright, charity/tax, emergency information, distribution and current amendments with qualified Australian counsel. All legal and subnational reviews remain not-assessed; Australia release remains blocked."
     },
     {
       "name": "Austria",
