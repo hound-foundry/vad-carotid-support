@@ -12,6 +12,14 @@ export default function SupportPreferencesScreen() {
   const [showSelectedOnly, setShowSelectedOnly] = useState(false);
   const edited = useRef(false);
   const [message, setMessage] = useState("Loading saved preferences from this device…");
+  useEffect(() => {
+    if (Platform.OS !== "web" || typeof document === "undefined") return;
+    const style = document.createElement("style");
+    style.dataset.supportPrint = "true";
+    style.textContent = "@media print { body * { visibility: hidden !important; } #support-sheet-print, #support-sheet-print * { visibility: visible !important; } #support-sheet-print { position: absolute !important; inset: 0 auto auto 0 !important; width: 100% !important; padding: 24px !important; background: #fff !important; color: #111 !important; } #support-sheet-print * { color: #111 !important; } }";
+    document.head.appendChild(style);
+    return () => style.remove();
+  }, []);
 
   useEffect(() => {
     let active = true;
@@ -92,10 +100,10 @@ export default function SupportPreferencesScreen() {
       </Pressable>;
     })}</Card>; })}
     <Card title="Something else I’d like you to know (optional)"><Text style={styles.helper}>This note may include personal information. It stays in this browser profile or on this device unless you export it.</Text><TextInput accessibilityLabel="Optional note about how you prefer to be supported" multiline maxLength={MAX_NOTE_LENGTH} value={sheet.note} onChangeText={(note) => { markEdited(); setSheet((current) => ({ ...current, note })); }} placeholder="Add a short note in your own words" placeholderTextColor={palette.muted} style={styles.input} textAlignVertical="top" /><Text style={styles.counter}>{sheet.note.length}/{MAX_NOTE_LENGTH}</Text></Card>
-    <Card title="Review what you’ll share"><Text style={styles.previewTitle}>How I prefer to be supported</Text>{groups.map((group) => {
+    <Card title="Review what you’ll share"><View nativeID="support-sheet-print"><Text style={styles.previewTitle}>How I prefer to be supported</Text>{groups.map((group) => {
       const selected = supportPreferences.filter((item) => item.group === group && sheet.selectedIds.includes(item.id));
       return selected.length ? <View key={group} style={styles.previewGroup}><Text style={styles.previewGroupTitle}>{group}</Text>{selected.map((item) => <Text key={item.id} style={styles.previewLine}>• {item.text}</Text>)}</View> : null;
-    })}{sheet.selectedIds.length === 0 && !sheet.note.trim() ? <Text style={styles.previewLine}>Choose a few statements or add a note to build your sheet.</Text> : null}{sheet.note.trim() ? <><Text style={styles.previewGroupTitle}>Something else I’d like you to know</Text><Text style={styles.previewLine}>{sheet.note.trim()}</Text></> : null}<Text style={styles.helper}>Your preferences belong to you. You choose whether to share them.</Text></Card>
+    })}{sheet.selectedIds.length === 0 && !sheet.note.trim() ? <Text style={styles.previewLine}>Choose a few statements or add a note to build your sheet.</Text> : null}{sheet.note.trim() ? <><Text style={styles.previewGroupTitle}>Something else I’d like you to know</Text><Text style={styles.previewLine}>{sheet.note.trim()}</Text></> : null}<Text style={styles.helper}>Your preferences belong to you. You choose whether to share them.</Text></View></Card>
     <View style={styles.actions}><Button title={saved ? "Saved on this device" : "Save on this device"} onPress={() => void save()} /><Button title="Export for sharing" secondary onPress={() => void exportSheet()} />{Platform.OS === "web" ? <Button title="Print support sheet" secondary onPress={() => globalThis.print?.()} /> : null}<Button title="Delete saved preferences" secondary onPress={confirmRemove} /></View>
     <Text accessibilityLiveRegion="polite" style={styles.status}>{message}</Text>
     <Card title="Where the data lives"><Text style={styles.helper}>On the web, this app uses this browser profile’s local storage. It is not encrypted by this app and may be exposed to people or software with access to the profile or device. On iOS and Android, this app uses Expo SecureStore. Browser, device, operating-system and backup behavior varies; local storage alone does not guarantee privacy. Export makes a separate copy in the destination you choose; deleting here may not remove an exported or backed-up copy.</Text></Card>
