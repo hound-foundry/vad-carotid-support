@@ -36636,7 +36636,104 @@
       "isoAlpha2": "US",
       "reviewOwner": null,
       "lastChecked": null,
-      "officialSources": [],
+      "officialSources": [
+        {
+          "title": "FTC Mobile Health App Interactive Tool",
+          "url": "https://www.ftc.gov/business-guidance/resources/mobile-health-apps-interactive-tool",
+          "authority": "Federal Trade Commission",
+          "sourceType": "official-regulatory-guidance",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "FTC Health Breach Notification Rule, 16 CFR Part 318",
+          "url": "https://www.ftc.gov/legal-library/browse/rules/health-breach-notification-rule",
+          "authority": "Federal Trade Commission",
+          "sourceType": "regulation-and-guidance",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "FTC 2024 Health Breach Notification Rule amendment effective-date guidance",
+          "url": "https://www.ftc.gov/business-guidance/resources/health-breach-notification-rule-basics-business",
+          "authority": "Federal Trade Commission",
+          "sourceType": "official-regulatory-guidance",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "HIPAA covered entities and business associates",
+          "url": "https://www.hhs.gov/hipaa/for-professionals/covered-entities/index.html",
+          "authority": "U.S. Department of Health and Human Services, Office for Civil Rights",
+          "sourceType": "official-regulatory-guidance",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "HIPAA business associate guidance",
+          "url": "https://www.hhs.gov/hipaa/for-professionals/privacy/guidance/business-associates/index.html",
+          "authority": "U.S. Department of Health and Human Services, Office for Civil Rights",
+          "sourceType": "official-regulatory-guidance",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "HIPAA FAQ: app designated by the individual",
+          "url": "https://www.hhs.gov/hipaa/for-professionals/faq/does-hipaa-require-a-covered-entity-to-enter-into-a-business-associate-agreement.html",
+          "authority": "U.S. Department of Health and Human Services, Office for Civil Rights",
+          "sourceType": "official-regulatory-guidance",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "FDA Device Software Functions including Mobile Medical Applications",
+          "url": "https://www.fda.gov/medical-devices/digital-health-center-excellence/device-software-functions-including-mobile-medical-applications",
+          "authority": "U.S. Food and Drug Administration",
+          "sourceType": "official-regulatory-guidance",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "FDA Clinical Decision Support Software final guidance, January 2026",
+          "url": "https://www.fda.gov/regulatory-information/search-fda-guidance-documents/clinical-decision-support-software",
+          "authority": "U.S. Food and Drug Administration",
+          "sourceType": "official-regulatory-guidance",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "FTC Health Products Compliance Guidance",
+          "url": "https://www.ftc.gov/business-guidance/resources/health-products-compliance-guidance",
+          "authority": "Federal Trade Commission",
+          "sourceType": "official-regulatory-guidance",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Washington My Health My Data Act, Chapter 19.373 RCW",
+          "url": "https://app.leg.wa.gov/RCW/default.aspx?cite=19.373",
+          "authority": "Washington State Legislature",
+          "sourceType": "state-legislation",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Nevada consumer health data privacy, NRS 603A.400-603A.550",
+          "url": "https://www.leg.state.nv.us/nrs/NRS-603A.html",
+          "authority": "Nevada Legislature",
+          "sourceType": "state-legislation",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Census Bureau geography definitions: states, DC and territories",
+          "url": "https://www.census.gov/data/data-tools/survey-explorer/geo.html",
+          "authority": "U.S. Census Bureau",
+          "sourceType": "official-administrative-source",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        }
+      ],
       "reviewAreas": [
         {
           "area": "privacy-and-health-data",
@@ -36751,7 +36848,418 @@
           "reviewer": null
         }
       ],
-      "subnationalAreas": []
+      "subnationalAreas": [
+        {
+          "name": "Alabama",
+          "status": "not-assessed",
+          "reason": "Top-level state/DC screening queue only. No law-by-law, territorial-reach, applicability, county/city, tribal-jurisdiction or local-rule review performed.",
+          "source": "https://www.census.gov/data/data-tools/survey-explorer/geo.html",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Alaska",
+          "status": "not-assessed",
+          "reason": "Top-level state/DC screening queue only. No law-by-law, territorial-reach, applicability, county/city, tribal-jurisdiction or local-rule review performed.",
+          "source": "https://www.census.gov/data/data-tools/survey-explorer/geo.html",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Arizona",
+          "status": "not-assessed",
+          "reason": "Top-level state/DC screening queue only. No law-by-law, territorial-reach, applicability, county/city, tribal-jurisdiction or local-rule review performed.",
+          "source": "https://www.census.gov/data/data-tools/survey-explorer/geo.html",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Arkansas",
+          "status": "not-assessed",
+          "reason": "Top-level state/DC screening queue only. No law-by-law, territorial-reach, applicability, county/city, tribal-jurisdiction or local-rule review performed.",
+          "source": "https://www.census.gov/data/data-tools/survey-explorer/geo.html",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "California",
+          "status": "not-assessed",
+          "reason": "Top-level state/DC screening queue only. No law-by-law, territorial-reach, applicability, county/city, tribal-jurisdiction or local-rule review performed.",
+          "source": "https://www.census.gov/data/data-tools/survey-explorer/geo.html",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Colorado",
+          "status": "not-assessed",
+          "reason": "Top-level state/DC screening queue only. No law-by-law, territorial-reach, applicability, county/city, tribal-jurisdiction or local-rule review performed.",
+          "source": "https://www.census.gov/data/data-tools/survey-explorer/geo.html",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Connecticut",
+          "status": "not-assessed",
+          "reason": "Top-level state/DC screening queue only. No law-by-law, territorial-reach, applicability, county/city, tribal-jurisdiction or local-rule review performed.",
+          "source": "https://www.census.gov/data/data-tools/survey-explorer/geo.html",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Delaware",
+          "status": "not-assessed",
+          "reason": "Top-level state/DC screening queue only. No law-by-law, territorial-reach, applicability, county/city, tribal-jurisdiction or local-rule review performed.",
+          "source": "https://www.census.gov/data/data-tools/survey-explorer/geo.html",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Florida",
+          "status": "not-assessed",
+          "reason": "Top-level state/DC screening queue only. No law-by-law, territorial-reach, applicability, county/city, tribal-jurisdiction or local-rule review performed.",
+          "source": "https://www.census.gov/data/data-tools/survey-explorer/geo.html",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Georgia",
+          "status": "not-assessed",
+          "reason": "Top-level state/DC screening queue only. No law-by-law, territorial-reach, applicability, county/city, tribal-jurisdiction or local-rule review performed.",
+          "source": "https://www.census.gov/data/data-tools/survey-explorer/geo.html",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Hawaii",
+          "status": "not-assessed",
+          "reason": "Top-level state/DC screening queue only. No law-by-law, territorial-reach, applicability, county/city, tribal-jurisdiction or local-rule review performed.",
+          "source": "https://www.census.gov/data/data-tools/survey-explorer/geo.html",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Idaho",
+          "status": "not-assessed",
+          "reason": "Top-level state/DC screening queue only. No law-by-law, territorial-reach, applicability, county/city, tribal-jurisdiction or local-rule review performed.",
+          "source": "https://www.census.gov/data/data-tools/survey-explorer/geo.html",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Illinois",
+          "status": "not-assessed",
+          "reason": "Top-level state/DC screening queue only. No law-by-law, territorial-reach, applicability, county/city, tribal-jurisdiction or local-rule review performed.",
+          "source": "https://www.census.gov/data/data-tools/survey-explorer/geo.html",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Indiana",
+          "status": "not-assessed",
+          "reason": "Top-level state/DC screening queue only. No law-by-law, territorial-reach, applicability, county/city, tribal-jurisdiction or local-rule review performed.",
+          "source": "https://www.census.gov/data/data-tools/survey-explorer/geo.html",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Iowa",
+          "status": "not-assessed",
+          "reason": "Top-level state/DC screening queue only. No law-by-law, territorial-reach, applicability, county/city, tribal-jurisdiction or local-rule review performed.",
+          "source": "https://www.census.gov/data/data-tools/survey-explorer/geo.html",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Kansas",
+          "status": "not-assessed",
+          "reason": "Top-level state/DC screening queue only. No law-by-law, territorial-reach, applicability, county/city, tribal-jurisdiction or local-rule review performed.",
+          "source": "https://www.census.gov/data/data-tools/survey-explorer/geo.html",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Kentucky",
+          "status": "not-assessed",
+          "reason": "Top-level state/DC screening queue only. No law-by-law, territorial-reach, applicability, county/city, tribal-jurisdiction or local-rule review performed.",
+          "source": "https://www.census.gov/data/data-tools/survey-explorer/geo.html",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Louisiana",
+          "status": "not-assessed",
+          "reason": "Top-level state/DC screening queue only. No law-by-law, territorial-reach, applicability, county/city, tribal-jurisdiction or local-rule review performed.",
+          "source": "https://www.census.gov/data/data-tools/survey-explorer/geo.html",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Maine",
+          "status": "not-assessed",
+          "reason": "Top-level state/DC screening queue only. No law-by-law, territorial-reach, applicability, county/city, tribal-jurisdiction or local-rule review performed.",
+          "source": "https://www.census.gov/data/data-tools/survey-explorer/geo.html",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Maryland",
+          "status": "not-assessed",
+          "reason": "Top-level state/DC screening queue only. No law-by-law, territorial-reach, applicability, county/city, tribal-jurisdiction or local-rule review performed.",
+          "source": "https://www.census.gov/data/data-tools/survey-explorer/geo.html",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Massachusetts",
+          "status": "not-assessed",
+          "reason": "Top-level state/DC screening queue only. No law-by-law, territorial-reach, applicability, county/city, tribal-jurisdiction or local-rule review performed.",
+          "source": "https://www.census.gov/data/data-tools/survey-explorer/geo.html",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Michigan",
+          "status": "not-assessed",
+          "reason": "Top-level state/DC screening queue only. No law-by-law, territorial-reach, applicability, county/city, tribal-jurisdiction or local-rule review performed.",
+          "source": "https://www.census.gov/data/data-tools/survey-explorer/geo.html",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Minnesota",
+          "status": "not-assessed",
+          "reason": "Top-level state/DC screening queue only. No law-by-law, territorial-reach, applicability, county/city, tribal-jurisdiction or local-rule review performed.",
+          "source": "https://www.census.gov/data/data-tools/survey-explorer/geo.html",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Mississippi",
+          "status": "not-assessed",
+          "reason": "Top-level state/DC screening queue only. No law-by-law, territorial-reach, applicability, county/city, tribal-jurisdiction or local-rule review performed.",
+          "source": "https://www.census.gov/data/data-tools/survey-explorer/geo.html",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Missouri",
+          "status": "not-assessed",
+          "reason": "Top-level state/DC screening queue only. No law-by-law, territorial-reach, applicability, county/city, tribal-jurisdiction or local-rule review performed.",
+          "source": "https://www.census.gov/data/data-tools/survey-explorer/geo.html",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Montana",
+          "status": "not-assessed",
+          "reason": "Top-level state/DC screening queue only. No law-by-law, territorial-reach, applicability, county/city, tribal-jurisdiction or local-rule review performed.",
+          "source": "https://www.census.gov/data/data-tools/survey-explorer/geo.html",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Nebraska",
+          "status": "not-assessed",
+          "reason": "Top-level state/DC screening queue only. No law-by-law, territorial-reach, applicability, county/city, tribal-jurisdiction or local-rule review performed.",
+          "source": "https://www.census.gov/data/data-tools/survey-explorer/geo.html",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Nevada",
+          "status": "not-assessed",
+          "reason": "Top-level state/DC screening queue only. No law-by-law, territorial-reach, applicability, county/city, tribal-jurisdiction or local-rule review performed.",
+          "source": "https://www.census.gov/data/data-tools/survey-explorer/geo.html",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "New Hampshire",
+          "status": "not-assessed",
+          "reason": "Top-level state/DC screening queue only. No law-by-law, territorial-reach, applicability, county/city, tribal-jurisdiction or local-rule review performed.",
+          "source": "https://www.census.gov/data/data-tools/survey-explorer/geo.html",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "New Jersey",
+          "status": "not-assessed",
+          "reason": "Top-level state/DC screening queue only. No law-by-law, territorial-reach, applicability, county/city, tribal-jurisdiction or local-rule review performed.",
+          "source": "https://www.census.gov/data/data-tools/survey-explorer/geo.html",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "New Mexico",
+          "status": "not-assessed",
+          "reason": "Top-level state/DC screening queue only. No law-by-law, territorial-reach, applicability, county/city, tribal-jurisdiction or local-rule review performed.",
+          "source": "https://www.census.gov/data/data-tools/survey-explorer/geo.html",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "New York",
+          "status": "not-assessed",
+          "reason": "Top-level state/DC screening queue only. No law-by-law, territorial-reach, applicability, county/city, tribal-jurisdiction or local-rule review performed.",
+          "source": "https://www.census.gov/data/data-tools/survey-explorer/geo.html",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "North Carolina",
+          "status": "not-assessed",
+          "reason": "Top-level state/DC screening queue only. No law-by-law, territorial-reach, applicability, county/city, tribal-jurisdiction or local-rule review performed.",
+          "source": "https://www.census.gov/data/data-tools/survey-explorer/geo.html",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "North Dakota",
+          "status": "not-assessed",
+          "reason": "Top-level state/DC screening queue only. No law-by-law, territorial-reach, applicability, county/city, tribal-jurisdiction or local-rule review performed.",
+          "source": "https://www.census.gov/data/data-tools/survey-explorer/geo.html",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Ohio",
+          "status": "not-assessed",
+          "reason": "Top-level state/DC screening queue only. No law-by-law, territorial-reach, applicability, county/city, tribal-jurisdiction or local-rule review performed.",
+          "source": "https://www.census.gov/data/data-tools/survey-explorer/geo.html",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Oklahoma",
+          "status": "not-assessed",
+          "reason": "Top-level state/DC screening queue only. No law-by-law, territorial-reach, applicability, county/city, tribal-jurisdiction or local-rule review performed.",
+          "source": "https://www.census.gov/data/data-tools/survey-explorer/geo.html",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Oregon",
+          "status": "not-assessed",
+          "reason": "Top-level state/DC screening queue only. No law-by-law, territorial-reach, applicability, county/city, tribal-jurisdiction or local-rule review performed.",
+          "source": "https://www.census.gov/data/data-tools/survey-explorer/geo.html",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Pennsylvania",
+          "status": "not-assessed",
+          "reason": "Top-level state/DC screening queue only. No law-by-law, territorial-reach, applicability, county/city, tribal-jurisdiction or local-rule review performed.",
+          "source": "https://www.census.gov/data/data-tools/survey-explorer/geo.html",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Rhode Island",
+          "status": "not-assessed",
+          "reason": "Top-level state/DC screening queue only. No law-by-law, territorial-reach, applicability, county/city, tribal-jurisdiction or local-rule review performed.",
+          "source": "https://www.census.gov/data/data-tools/survey-explorer/geo.html",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "South Carolina",
+          "status": "not-assessed",
+          "reason": "Top-level state/DC screening queue only. No law-by-law, territorial-reach, applicability, county/city, tribal-jurisdiction or local-rule review performed.",
+          "source": "https://www.census.gov/data/data-tools/survey-explorer/geo.html",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "South Dakota",
+          "status": "not-assessed",
+          "reason": "Top-level state/DC screening queue only. No law-by-law, territorial-reach, applicability, county/city, tribal-jurisdiction or local-rule review performed.",
+          "source": "https://www.census.gov/data/data-tools/survey-explorer/geo.html",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Tennessee",
+          "status": "not-assessed",
+          "reason": "Top-level state/DC screening queue only. No law-by-law, territorial-reach, applicability, county/city, tribal-jurisdiction or local-rule review performed.",
+          "source": "https://www.census.gov/data/data-tools/survey-explorer/geo.html",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Texas",
+          "status": "not-assessed",
+          "reason": "Top-level state/DC screening queue only. No law-by-law, territorial-reach, applicability, county/city, tribal-jurisdiction or local-rule review performed.",
+          "source": "https://www.census.gov/data/data-tools/survey-explorer/geo.html",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Utah",
+          "status": "not-assessed",
+          "reason": "Top-level state/DC screening queue only. No law-by-law, territorial-reach, applicability, county/city, tribal-jurisdiction or local-rule review performed.",
+          "source": "https://www.census.gov/data/data-tools/survey-explorer/geo.html",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Vermont",
+          "status": "not-assessed",
+          "reason": "Top-level state/DC screening queue only. No law-by-law, territorial-reach, applicability, county/city, tribal-jurisdiction or local-rule review performed.",
+          "source": "https://www.census.gov/data/data-tools/survey-explorer/geo.html",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Virginia",
+          "status": "not-assessed",
+          "reason": "Top-level state/DC screening queue only. No law-by-law, territorial-reach, applicability, county/city, tribal-jurisdiction or local-rule review performed.",
+          "source": "https://www.census.gov/data/data-tools/survey-explorer/geo.html",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Washington",
+          "status": "not-assessed",
+          "reason": "Top-level state/DC screening queue only. No law-by-law, territorial-reach, applicability, county/city, tribal-jurisdiction or local-rule review performed.",
+          "source": "https://www.census.gov/data/data-tools/survey-explorer/geo.html",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "West Virginia",
+          "status": "not-assessed",
+          "reason": "Top-level state/DC screening queue only. No law-by-law, territorial-reach, applicability, county/city, tribal-jurisdiction or local-rule review performed.",
+          "source": "https://www.census.gov/data/data-tools/survey-explorer/geo.html",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Wisconsin",
+          "status": "not-assessed",
+          "reason": "Top-level state/DC screening queue only. No law-by-law, territorial-reach, applicability, county/city, tribal-jurisdiction or local-rule review performed.",
+          "source": "https://www.census.gov/data/data-tools/survey-explorer/geo.html",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Wyoming",
+          "status": "not-assessed",
+          "reason": "Top-level state/DC screening queue only. No law-by-law, territorial-reach, applicability, county/city, tribal-jurisdiction or local-rule review performed.",
+          "source": "https://www.census.gov/data/data-tools/survey-explorer/geo.html",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "District of Columbia",
+          "status": "not-assessed",
+          "reason": "Top-level state/DC screening queue only. No law-by-law, territorial-reach, applicability, county/city, tribal-jurisdiction or local-rule review performed.",
+          "source": "https://www.census.gov/data/data-tools/survey-explorer/geo.html",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        }
+      ],
+      "sourceDiscoveryCheckedOn": "2026-10-13",
+      "sourceDiscoveryNote": "Initial US source discovery only, not legal advice, a federal or state applicability screen, or permission to distribute. The 50 states and District of Columbia are queued as not-assessed review targets. The federal source leads show why role and product function matter: HIPAA depends on covered-entity/business-associate relationships; the FTC Act and Health Breach Notification Rule may be relevant outside HIPAA; FDA device status depends on intended purpose and software functions. Washington and Nevada are examples of state consumer-health-data laws, not an exhaustive state survey. Separately inventoried US territories, tribal jurisdictions, counties, municipalities and state/local rules still require scope mapping. Screen privacy, breach, consumer, accessibility, device, health-professional, charity/tax, emergency and distribution rules with qualified US counsel. All reviews remain not-assessed and US release remains blocked."
     },
     {
       "name": "United States Virgin Islands",

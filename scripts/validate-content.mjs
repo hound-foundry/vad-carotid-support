@@ -87,6 +87,16 @@ assert.equal(russiaRecord.legalReview.status, "not-assessed", "Russia source dis
 assert.equal(russiaRecord.release, "blocked", "Russia access must remain blocked pending qualified review");
 assert.equal(russiaRecord.subnationalAreas.length, 1, "Russia local-law review must remain visibly marked as aggregate and incomplete");
 assert.ok(russiaRecord.officialSources.some((source) => source.url === "https://www.gov.uk/government/publications/russia-sanctions-guidance/russia-sanctions-guidance" && source.status === "source-lead-only"));
+const unitedStates = resources.countryRecords.find((country) => country.isoAlpha2 === "US");
+assert.ok(unitedStates && unitedStates.officialSources.length === 12, "US source discovery must retain its dated federal and state-law source leads");
+assert.equal(unitedStates.sourceDiscoveryCheckedOn, "2026-10-13", "US source discovery needs its own dated record");
+assert.equal(unitedStates.legalReview.status, "not-assessed", "US source discovery must not be mistaken for legal clearance");
+assert.equal(unitedStates.release, "blocked", "US access must remain blocked pending qualified review");
+assert.equal(unitedStates.subnationalAreas.length, 51, "US screening queue must include all 50 states and the District of Columbia");
+assert.ok(unitedStates.subnationalAreas.every((area) => area.status === "not-assessed" && area.checkedOn === "2026-10-13" && area.reviewer === null), "US state/DC queue must remain explicitly unassessed");
+assert.ok(unitedStates.officialSources.some((source) => source.url === "https://www.ftc.gov/legal-library/browse/rules/health-breach-notification-rule" && source.status === "source-lead-only"));
+assert.ok(unitedStates.officialSources.some((source) => source.url === "https://app.leg.wa.gov/RCW/default.aspx?cite=19.373" && source.status === "source-lead-only"));
+assert.match(unitedStates.sourceDiscoveryNote, /not an exhaustive state survey/);
 const euGroup = resources.regionalSourceGroups?.find((group) => group.id === "eu-member-states");
 assert.equal(euGroup?.status, "membership-scope-source-checked-only", "EU grouping must not imply law applicability");
 assert.equal(euGroup?.membershipSource, "https://european-union.europa.eu/principles-countries-history/eu-countries_en?page=1", "EU membership list source must be recorded");
