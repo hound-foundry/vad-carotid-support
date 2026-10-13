@@ -48,6 +48,8 @@ The Netherlands source discovery (13 October 2026) now records Dutch health-data
 
 Poland source discovery (13 October 2026) now records the Office for Personal Data Protection, medical-device registration and regulatory guidance, and official emergency and first-aid guidance. These are source leads only. Poland remains blocked pending qualified review of Polish and EU data-protection, medical-software, accessibility, translation, emergency and distribution requirements.
 
+Portugal source discovery (13 October 2026) now records the National Data Protection Commission, INFARMED software and medical-device classification guidance, and official 112 emergency-service pages. These are source leads only. Portugal remains blocked pending qualified review of Portuguese and EU privacy, medical-software, accessibility, translation, emergency and distribution requirements.
+
 ### Platform distribution policies (not legislation)
 
 | Platform | Official policy source | Release work still needed |

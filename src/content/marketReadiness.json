@@ -30988,8 +30988,50 @@
       "release": "blocked",
       "isoAlpha2": "PT",
       "reviewOwner": null,
-      "lastChecked": null,
-      "officialSources": [],
+      "lastChecked": "2026-10-13",
+      "officialSources": [
+        {
+          "title": "National Data Protection Commission",
+          "url": "https://www.cnpd.pt/",
+          "authority": "Comissão Nacional de Proteção de Dados",
+          "sourceType": "regulator-portal",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Medical device software qualification guidance",
+          "url": "https://www.infarmed.pt/documents/15786/1558631/Software/a441b623-27b8-1300-89b4-63571546cada",
+          "authority": "INFARMED",
+          "sourceType": "competent-authority-guidance",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Medical-device classification and borderline guidance",
+          "url": "https://www.infarmed.pt/web/infarmed/entidades/dispositivos-medicos/classificacao-e-fronteiras",
+          "authority": "INFARMED",
+          "sourceType": "competent-authority-guidance",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Emergency contacts in Portugal",
+          "url": "https://www.gov.pt/guias/contactos-de-emergencia-em-portugal",
+          "authority": "Portuguese Republic public services portal",
+          "sourceType": "official-emergency-guidance",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "112 emergency service overview",
+          "url": "https://www.sg.mai.gov.pt/pt/Tecnologias/112pt/visaodoservico112/Pages/default.aspx",
+          "authority": "Portuguese Ministry of Internal Administration",
+          "sourceType": "official-emergency-guidance",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        }
+      ],
+      "sourceDiscoveryCheckedOn": "2026-10-13",
       "reviewAreas": [
         {
           "area": "privacy-and-health-data",
