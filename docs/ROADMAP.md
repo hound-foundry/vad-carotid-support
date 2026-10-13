@@ -44,6 +44,7 @@ The glossary and print controls are implemented, but their presence does not cou
 - [x] Record initial dated Hong Kong SAR official-source leads and an 18-district screening queue; current law verification, medical-device framework transition, local review and emergency-language checks remain outstanding.
 - [x] Record initial dated Macao SAR official-source leads and a seven-parish territorial queue; primary-language legal review, phased medical-device regime, applicability and release reviews remain outstanding.
 - [x] Add a Taiwan market-screening supplement for the intended Traditional Chinese rollout, with M49/ISO scope caveats, 20 dated official source leads and a 22-city/county queue; local legal review and release remain blocked.
+- [x] Record initial Russia privacy, health-information, medical-software and UK/EU sanctions source leads; the aggregate regional-law queue is incomplete, all applicability reviews remain open, and access is blocked.
 - [x] Record dated Lithuania official-source leads and a 10-county/60-municipality screening queue; all national, local and release reviews remain unassessed.
 - [x] Record initial dated Ukraine source leads and constitutional top-level screening queue; all national, local and release reviews remain unassessed.
 - [ ] Resolve the remaining dependency alerts or record a reviewed mitigation and explicit release decision; see [dependency security review](DEPENDENCY_SECURITY.md).

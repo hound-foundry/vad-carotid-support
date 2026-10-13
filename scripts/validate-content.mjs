@@ -81,6 +81,12 @@ assert.equal(taiwanRecord.officialSources.length, 20, "Taiwan source discovery m
 assert.ok(taiwanRecord.subnationalAreas.every((area) => area.status === "not-assessed" && area.checkedOn === "2026-10-13"), "Taiwan local-government targets must remain explicitly unassessed and dated");
 assert.ok(taiwanRecord.officialSources.some((source) => source.url === "https://unstats.un.org/unsd/methodology/m49/" && source.status === "source-lead-only"));
 assert.ok(taiwanRecord.officialSources.some((source) => source.url === "https://law.moj.gov.tw/LawClass/LawAll.aspx?Pcode=I0050021" && source.status === "source-lead-only"));
+const russiaRecord = resources.countryRecords.find((country) => country.isoAlpha2 === "RU");
+assert.ok(russiaRecord && russiaRecord.officialSources.length === 18, "Russia discovery must retain its dated source-lead bundle");
+assert.equal(russiaRecord.legalReview.status, "not-assessed", "Russia source discovery must not be mistaken for legal clearance");
+assert.equal(russiaRecord.release, "blocked", "Russia access must remain blocked pending qualified review");
+assert.equal(russiaRecord.subnationalAreas.length, 1, "Russia local-law review must remain visibly marked as aggregate and incomplete");
+assert.ok(russiaRecord.officialSources.some((source) => source.url === "https://www.gov.uk/government/publications/russia-sanctions-guidance/russia-sanctions-guidance" && source.status === "source-lead-only"));
 const euGroup = resources.regionalSourceGroups?.find((group) => group.id === "eu-member-states");
 assert.equal(euGroup?.status, "membership-scope-source-checked-only", "EU grouping must not imply law applicability");
 assert.equal(euGroup?.membershipSource, "https://european-union.europa.eu/principles-countries-history/eu-countries_en?page=1", "EU membership list source must be recorded");

@@ -28322,7 +28322,152 @@
       "isoAlpha2": "RU",
       "reviewOwner": null,
       "lastChecked": null,
-      "officialSources": [],
+      "officialSources": [
+        {
+          "title": "Federal Law No. 152-FZ on Personal Data (consolidated official ministry text; amendment history includes 2025 laws)",
+          "url": "https://mintrud.gov.ru/docs/laws/130",
+          "authority": "Ministry of Labour and Social Protection of the Russian Federation",
+          "sourceType": "legislation-consolidated",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Roskomnadzor personal-data regulator portal",
+          "url": "https://pd.rkn.gov.ru/",
+          "authority": "Federal Service for Supervision of Communications, Information Technology and Mass Media (Roskomnadzor)",
+          "sourceType": "regulator-portal",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Federal Law No. 149-FZ on Information, Information Technologies and Information Protection (official Roskomnadzor-hosted text; consolidation date must be checked)",
+          "url": "https://www.398-fz.rkn.gov.ru/docs/149-FZ.pdf",
+          "authority": "Roskomnadzor / official government law source",
+          "sourceType": "legislation-reference",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Federal Law No. 323-FZ on the Fundamentals of Health Protection (current Ministry of Health law page)",
+          "url": "https://minzdrav.gov.ru/documents/7025-federalnyy-zakon-ot-21-noyabrya-2011-g-323-fz-ob-osnovah-ohrany-zdorovya-grazhdan-v-rossiyskoy-federatsii",
+          "authority": "Ministry of Health of the Russian Federation",
+          "sourceType": "legislation",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Federal Law No. 323-FZ consolidated PDF (2025 official health ministry-hosted text)",
+          "url": "https://fcmk.minzdrav.gov.ru/wp-content/uploads/2025/09/ob-osnovah-ohrany-zdorovya-grazhdan-v-rossijskoj-federaczii.pdf",
+          "authority": "Ministry of Health of the Russian Federation",
+          "sourceType": "legislation-reference",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Roszdravnadzor medical-device registration and current rules index",
+          "url": "https://roszdravnadzor.gov.ru/medproducts/registration",
+          "authority": "Federal Service for Surveillance in Healthcare (Roszdravnadzor)",
+          "sourceType": "regulator-legislation-index",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Government Resolution No. 1684: medical-device state registration rules, in force from 1 March 2025",
+          "url": "https://roszdravnadzor.gov.ru/i/upload/images/2025/2/27/1740670889.74686-1-817046.pdf",
+          "authority": "Government of the Russian Federation / Roszdravnadzor",
+          "sourceType": "implementing-regulation",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Roszdravnadzor software-specific medical-device assessment recommendations (7 May 2024)",
+          "url": "https://roszdravnadzor.gov.ru/spec/medproducts/documents/84087",
+          "authority": "Roszdravnadzor institutions",
+          "sourceType": "regulator-guidance",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Federal Law No. 38-FZ on Advertising and medical-device registration materials",
+          "url": "https://roszdravnadzor.gov.ru/medproducts/registration",
+          "authority": "Roszdravnadzor / official regulator law index",
+          "sourceType": "legislation-index",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Russian Consumer Protection Act No. 2300-1 (Rospotrebnadzor legal portal)",
+          "url": "https://zpp.rospotrebnadzor.ru/npa/federal/obslug/192115",
+          "authority": "Federal Service for Supervision of Consumer Rights Protection and Human Welfare (Rospotrebnadzor)",
+          "sourceType": "legislation-reference",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Civil Code Part IV: copyright and related rights",
+          "url": "https://rospatent.gov.ru/ru/documents/grazhdanskiy-kodeks-rossiyskoy-federacii-chast-chetvertaya",
+          "authority": "Federal Service for Intellectual Property (Rospatent)",
+          "sourceType": "legislation",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Federal official legal-publication portal and regional acts",
+          "url": "https://pravo.gov.ru/",
+          "authority": "State System of Legal Information",
+          "sourceType": "official-law-publication-portal",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Rosstat regional register and current regional statistics publications",
+          "url": "https://rosstat.gov.ru/folder/210/document/13205",
+          "authority": "Federal State Statistics Service (Rosstat)",
+          "sourceType": "official-territorial-register",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Rosstat all-Russian municipal-area data",
+          "url": "https://16.rosstat.gov.ru/storage/mediabank/munst.htm",
+          "authority": "Federal State Statistics Service (Rosstat)",
+          "sourceType": "official-subnational-register",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "UK Russia sanctions: current statutory guidance, updated 20 May 2026",
+          "url": "https://www.gov.uk/government/publications/russia-sanctions-guidance/russia-sanctions-guidance",
+          "authority": "UK Government: FCDO, DBT, DfT, OFSI and OTSI",
+          "sourceType": "sanctions-guidance",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Russia (Sanctions) (EU Exit) Regulations 2019, as amended",
+          "url": "https://www.legislation.gov.uk/uksi/2019/855/contents",
+          "authority": "UK Parliament / legislation.gov.uk",
+          "sourceType": "sanctions-legislation",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "UK Sanctions List: Russia designations and current notices",
+          "url": "https://www.gov.uk/guidance/russia-list-of-designations-and-sanctions-notices",
+          "authority": "UK Government / FCDO",
+          "sourceType": "sanctions-list",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "European Union sanctions against Russia: official overview and primary-act navigation",
+          "url": "https://commission.europa.eu/topics/eu-solidarity-ukraine/eu-sanctions-against-russia-following-invasion-ukraine_en",
+          "authority": "European Commission",
+          "sourceType": "sanctions-guidance",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        }
+      ],
       "reviewAreas": [
         {
           "area": "privacy-and-health-data",
@@ -28437,7 +28582,18 @@
           "reviewer": null
         }
       ],
-      "subnationalAreas": []
+      "subnationalAreas": [
+        {
+          "name": "Russian constituent entities and municipal jurisdictions (current roster and level-by-level scope to be confirmed)",
+          "status": "not-assessed",
+          "reason": "Aggregate screening queue only. Enumerate current constituent entities from official records, verify the territorial scope relevant to the project, then review applicable regional and municipal laws; none have been screened.",
+          "source": "https://rosstat.gov.ru/folder/210/document/13205",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        }
+      ],
+      "sourceDiscoveryCheckedOn": "2026-10-13",
+      "sourceDiscoveryNote": "Initial Russia source discovery, not legal advice, an applicability screen, a sanctions clearance, or a distribution decision. The official consolidated personal-data law page lists 2025 amendments; confirm the currently effective text, sensitive-data basis, notice and operator-registration duties, localization, cross-border-transfer controls, security, breach response and enforcement with Russian counsel before any access decision. The health-law source includes medical-secrecy provisions. Roszdravnadzor identifies a software-specific assessment route and current state-registration rules; assess the final intended purpose, claims and functions locally. UK, EU and any other sanctions, export/service prohibitions, designated-person screening, app-store and payment availability require specialist review for the actual UK-based operator and delivery channels. The local-law queue uses Russian domestic statistical/regulatory source leads only: enumerate the current administrative units and screen applicable regional and municipal law; no territorial-status conclusion is expressed. All reviews are not-assessed and access remains blocked."
     },
     {
       "name": "Rwanda",
