@@ -15,6 +15,9 @@ export default function RootLayout() {
           <title>VAD &amp; Carotid Support</title>
           <meta name="description" content="Free, open-source information and appointment preparation for adults affected by vertebral or carotid artery dissection, families and carers." />
           <meta name="theme-color" content="#F3F7F6" />
+          <link rel="manifest" href="/manifest.json" />
+          <meta name="apple-mobile-web-app-capable" content="yes" />
+          <meta name="apple-mobile-web-app-title" content="VAD Support" />
         </Head>
         <SafeAreaView style={styles.urgentSafe} edges={["top"]}>
           <Link href="/urgent-help" asChild>

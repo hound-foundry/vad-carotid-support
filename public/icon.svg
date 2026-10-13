@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 192 192" role="img" aria-label="VAD and Carotid Support">
+  <rect width="192" height="192" rx="42" fill="#E4F0ED"/>
+  <circle cx="96" cy="96" r="48" fill="none" stroke="#26736E" stroke-width="12" transform="rotate(35 96 96)"/>
+  <circle cx="96" cy="96" r="7" fill="#195B58"/>
+</svg>
