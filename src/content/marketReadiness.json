@@ -14920,7 +14920,208 @@
       "isoAlpha2": "DE",
       "reviewOwner": null,
       "lastChecked": null,
-      "officialSources": [],
+      "officialSources": [
+        {
+          "title": "General Data Protection Regulation (EU) 2016/679",
+          "url": "https://eur-lex.europa.eu/eli/reg/2016/679/oj/eng/",
+          "authority": "European Union",
+          "sourceType": "eu-general-data-protection-regulation",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "ePrivacy Directive 2002/58/EC, consolidated source",
+          "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32002L0058",
+          "authority": "European Union",
+          "sourceType": "eu-electronic-privacy-directive",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Medical Device Regulation (EU) 2017/745",
+          "url": "https://eur-lex.europa.eu/eli/reg/2017/745/oj/eng",
+          "authority": "European Union",
+          "sourceType": "eu-medical-device-regulation",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Digital Services Act, Regulation (EU) 2022/2065",
+          "url": "https://eur-lex.europa.eu/eli/reg/2022/2065/oj/eng",
+          "authority": "European Union",
+          "sourceType": "eu-digital-services-regulation",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Federal Data Protection Act (Bundesdatenschutzgesetz, BDSG)",
+          "url": "https://www.gesetze-im-internet.de/bdsg_2018/BJNR209710017.html",
+          "authority": "Federal Ministry of Justice / Federal Office of Justice",
+          "sourceType": "federal-data-protection-legislation-current-version-check",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Federal Commissioner for Data Protection and Freedom of Information (BfDI)",
+          "url": "https://www.bfdi.bund.de/EN/Home/home_node.html",
+          "authority": "BfDI",
+          "sourceType": "federal-data-protection-authority-scope",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Data Protection Conference (DSK), federal and Länder authorities",
+          "url": "https://www.datenschutzkonferenz-online.de/",
+          "authority": "Independent data protection supervisory authorities of the Federation and Länder",
+          "sourceType": "federal-state-data-protection-authority-index",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "BfArM: legal status and classification of medical-device software and apps",
+          "url": "https://www.bfarm.de/DE/Medizinprodukte/Aufgaben/Feststellung-rechtlicher-Status-und-Klassifizierung/_node.html",
+          "authority": "Federal Institute for Drugs and Medical Devices (BfArM)",
+          "sourceType": "medical-software-status-and-classification-guidance",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Medical Devices Law Implementation Act (Medizinprodukterecht-Durchführungsgesetz, MPDG)",
+          "url": "https://www.gesetze-im-internet.de/mpdg/BJNR096010020.html",
+          "authority": "Federal Ministry of Justice / Federal Office of Justice",
+          "sourceType": "medical-device-implementation-legislation",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Digital Health Applications Ordinance (DiGAV)",
+          "url": "https://www.gesetze-im-internet.de/digav/",
+          "authority": "Federal Ministry of Justice / Federal Office of Justice",
+          "sourceType": "digital-health-reimbursement-pathway-trigger-review",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Medicinal Products Advertising Act (Heilmittelwerbegesetz, HWG)",
+          "url": "https://www.gesetze-im-internet.de/heilmwerbg/BJNR006049965.html",
+          "authority": "Federal Ministry of Justice / Federal Office of Justice",
+          "sourceType": "health-advertising-legislation-current-version-check",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Digital Services Act Implementation Act (Digitale-Dienste-Gesetz, DDG)",
+          "url": "https://www.gesetze-im-internet.de/ddg/BJNR0950B0024.html",
+          "authority": "Federal Ministry of Justice / Federal Office of Justice",
+          "sourceType": "digital-service-provider-information-obligations",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "German Civil Code (Bürgerliches Gesetzbuch, BGB)",
+          "url": "https://www.gesetze-im-internet.de/bgb/",
+          "authority": "Federal Ministry of Justice / Federal Office of Justice",
+          "sourceType": "consumer-and-civil-law",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Unfair Competition Act (Gesetz gegen den unlauteren Wettbewerb, UWG)",
+          "url": "https://www.gesetze-im-internet.de/uwg_2004/",
+          "authority": "Federal Ministry of Justice / Federal Office of Justice",
+          "sourceType": "consumer-marketing-and-claims-law",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Accessibility Strengthening Act (Barrierefreiheitsstärkungsgesetz, BFSG)",
+          "url": "https://www.gesetze-im-internet.de/bfsg/BJNR297010021.html",
+          "authority": "Federal Ministry of Justice / Federal Office of Justice",
+          "sourceType": "accessibility-law-scope-and-exemptions-review",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Act on Equal Opportunities for Persons with Disabilities (Behindertengleichstellungsgesetz, BGG)",
+          "url": "https://www.gesetze-im-internet.de/bgg/BJNR146800002.html",
+          "authority": "Federal Ministry of Justice / Federal Office of Justice",
+          "sourceType": "federal-public-sector-accessibility-law-scope",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "General Equal Treatment Act (Allgemeines Gleichbehandlungsgesetz, AGG)",
+          "url": "https://www.gesetze-im-internet.de/agg/BJNR189710006.html",
+          "authority": "Federal Ministry of Justice / Federal Office of Justice",
+          "sourceType": "anti-discrimination-legislation",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Youth Protection Act (Jugendschutzgesetz, JuSchG)",
+          "url": "https://www.gesetze-im-internet.de/juschg/BJNR273000002.html",
+          "authority": "Federal Ministry of Justice / Federal Office of Justice",
+          "sourceType": "child-and-youth-protection-legislation",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Copyright Act (Urheberrechtsgesetz, UrhG), current German text",
+          "url": "https://www.gesetze-im-internet.de/urhg/BJNR012730965.html",
+          "authority": "Federal Ministry of Justice / Federal Office of Justice",
+          "sourceType": "copyright-and-translation-legislation",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Fiscal Code (Abgabenordnung, AO), tax-privileged purposes",
+          "url": "https://www.gesetze-im-internet.de/ao_1977/BJNR006130976.html",
+          "authority": "Federal Ministry of Justice / Federal Office of Justice",
+          "sourceType": "nonprofit-and-charitable-tax-status",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Federal Office of Civil Protection and Disaster Assistance: emergency call guidance",
+          "url": "https://www.bbk.bund.de/DE/Warnung-Vorsorge/Tipps-Notsituationen/Notruf/notruf_node.html",
+          "authority": "Federal Office of Civil Protection and Disaster Assistance (BBK)",
+          "sourceType": "emergency-number-source-lead",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Official overview of Germany’s 16 federal Länder",
+          "url": "https://www.migration-gesundheit.bund.de/fileadmin/Dateien/pdfs_neu_2022/gesundheitswesen/willkommen-in-deutschland_english.pdf",
+          "authority": "Federal Ministry of Health / Federal Office for Migration and Refugees",
+          "sourceType": "official-subnational-territory-roster",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "German official language and federal structure",
+          "url": "https://www.bundesregierung.de/statisch/nato/Webs/Breg/nato/EN/Welcome-to-Germany/Welcome-to-Germany.html",
+          "authority": "Federal Government of Germany",
+          "sourceType": "official-language-and-country-context",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Apple App Review Guidelines",
+          "url": "https://developer.apple.com/app-store/review/guidelines/",
+          "authority": "Apple",
+          "sourceType": "platform-policy-not-legislation",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Google Play Health Content and Services policy",
+          "url": "https://support.google.com/googleplay/android-developer/answer/16679511?hl=en",
+          "authority": "Google Play",
+          "sourceType": "platform-policy-not-legislation",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        }
+      ],
       "reviewAreas": [
         {
           "area": "privacy-and-health-data",
@@ -15035,7 +15236,138 @@
           "reviewer": null
         }
       ],
-      "subnationalAreas": []
+      "subnationalAreas": [
+        {
+          "name": "Baden-Württemberg",
+          "status": "not-assessed",
+          "reason": "Federal-state screening target only. No state-specific data-protection authority and law, health/professional rules, consumer/accessibility requirements, emergency arrangements, municipal/district rules or territorial-applicability review performed.",
+          "source": "https://www.migration-gesundheit.bund.de/fileadmin/Dateien/pdfs_neu_2022/gesundheitswesen/willkommen-in-deutschland_english.pdf",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Bayern",
+          "status": "not-assessed",
+          "reason": "Federal-state screening target only. No state-specific data-protection authority and law, health/professional rules, consumer/accessibility requirements, emergency arrangements, municipal/district rules or territorial-applicability review performed.",
+          "source": "https://www.migration-gesundheit.bund.de/fileadmin/Dateien/pdfs_neu_2022/gesundheitswesen/willkommen-in-deutschland_english.pdf",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Berlin",
+          "status": "not-assessed",
+          "reason": "Federal-state screening target only. No state-specific data-protection authority and law, health/professional rules, consumer/accessibility requirements, emergency arrangements, municipal/district rules or territorial-applicability review performed.",
+          "source": "https://www.migration-gesundheit.bund.de/fileadmin/Dateien/pdfs_neu_2022/gesundheitswesen/willkommen-in-deutschland_english.pdf",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Brandenburg",
+          "status": "not-assessed",
+          "reason": "Federal-state screening target only. No state-specific data-protection authority and law, health/professional rules, consumer/accessibility requirements, emergency arrangements, municipal/district rules or territorial-applicability review performed.",
+          "source": "https://www.migration-gesundheit.bund.de/fileadmin/Dateien/pdfs_neu_2022/gesundheitswesen/willkommen-in-deutschland_english.pdf",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Bremen",
+          "status": "not-assessed",
+          "reason": "Federal-state screening target only. No state-specific data-protection authority and law, health/professional rules, consumer/accessibility requirements, emergency arrangements, municipal/district rules or territorial-applicability review performed.",
+          "source": "https://www.migration-gesundheit.bund.de/fileadmin/Dateien/pdfs_neu_2022/gesundheitswesen/willkommen-in-deutschland_english.pdf",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Hamburg",
+          "status": "not-assessed",
+          "reason": "Federal-state screening target only. No state-specific data-protection authority and law, health/professional rules, consumer/accessibility requirements, emergency arrangements, municipal/district rules or territorial-applicability review performed.",
+          "source": "https://www.migration-gesundheit.bund.de/fileadmin/Dateien/pdfs_neu_2022/gesundheitswesen/willkommen-in-deutschland_english.pdf",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Hessen",
+          "status": "not-assessed",
+          "reason": "Federal-state screening target only. No state-specific data-protection authority and law, health/professional rules, consumer/accessibility requirements, emergency arrangements, municipal/district rules or territorial-applicability review performed.",
+          "source": "https://www.migration-gesundheit.bund.de/fileadmin/Dateien/pdfs_neu_2022/gesundheitswesen/willkommen-in-deutschland_english.pdf",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Mecklenburg-Vorpommern",
+          "status": "not-assessed",
+          "reason": "Federal-state screening target only. No state-specific data-protection authority and law, health/professional rules, consumer/accessibility requirements, emergency arrangements, municipal/district rules or territorial-applicability review performed.",
+          "source": "https://www.migration-gesundheit.bund.de/fileadmin/Dateien/pdfs_neu_2022/gesundheitswesen/willkommen-in-deutschland_english.pdf",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Niedersachsen",
+          "status": "not-assessed",
+          "reason": "Federal-state screening target only. No state-specific data-protection authority and law, health/professional rules, consumer/accessibility requirements, emergency arrangements, municipal/district rules or territorial-applicability review performed.",
+          "source": "https://www.migration-gesundheit.bund.de/fileadmin/Dateien/pdfs_neu_2022/gesundheitswesen/willkommen-in-deutschland_english.pdf",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Nordrhein-Westfalen",
+          "status": "not-assessed",
+          "reason": "Federal-state screening target only. No state-specific data-protection authority and law, health/professional rules, consumer/accessibility requirements, emergency arrangements, municipal/district rules or territorial-applicability review performed.",
+          "source": "https://www.migration-gesundheit.bund.de/fileadmin/Dateien/pdfs_neu_2022/gesundheitswesen/willkommen-in-deutschland_english.pdf",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Rheinland-Pfalz",
+          "status": "not-assessed",
+          "reason": "Federal-state screening target only. No state-specific data-protection authority and law, health/professional rules, consumer/accessibility requirements, emergency arrangements, municipal/district rules or territorial-applicability review performed.",
+          "source": "https://www.migration-gesundheit.bund.de/fileadmin/Dateien/pdfs_neu_2022/gesundheitswesen/willkommen-in-deutschland_english.pdf",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Saarland",
+          "status": "not-assessed",
+          "reason": "Federal-state screening target only. No state-specific data-protection authority and law, health/professional rules, consumer/accessibility requirements, emergency arrangements, municipal/district rules or territorial-applicability review performed.",
+          "source": "https://www.migration-gesundheit.bund.de/fileadmin/Dateien/pdfs_neu_2022/gesundheitswesen/willkommen-in-deutschland_english.pdf",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Sachsen",
+          "status": "not-assessed",
+          "reason": "Federal-state screening target only. No state-specific data-protection authority and law, health/professional rules, consumer/accessibility requirements, emergency arrangements, municipal/district rules or territorial-applicability review performed.",
+          "source": "https://www.migration-gesundheit.bund.de/fileadmin/Dateien/pdfs_neu_2022/gesundheitswesen/willkommen-in-deutschland_english.pdf",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Sachsen-Anhalt",
+          "status": "not-assessed",
+          "reason": "Federal-state screening target only. No state-specific data-protection authority and law, health/professional rules, consumer/accessibility requirements, emergency arrangements, municipal/district rules or territorial-applicability review performed.",
+          "source": "https://www.migration-gesundheit.bund.de/fileadmin/Dateien/pdfs_neu_2022/gesundheitswesen/willkommen-in-deutschland_english.pdf",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Schleswig-Holstein",
+          "status": "not-assessed",
+          "reason": "Federal-state screening target only. No state-specific data-protection authority and law, health/professional rules, consumer/accessibility requirements, emergency arrangements, municipal/district rules or territorial-applicability review performed.",
+          "source": "https://www.migration-gesundheit.bund.de/fileadmin/Dateien/pdfs_neu_2022/gesundheitswesen/willkommen-in-deutschland_english.pdf",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Thüringen",
+          "status": "not-assessed",
+          "reason": "Federal-state screening target only. No state-specific data-protection authority and law, health/professional rules, consumer/accessibility requirements, emergency arrangements, municipal/district rules or territorial-applicability review performed.",
+          "source": "https://www.migration-gesundheit.bund.de/fileadmin/Dateien/pdfs_neu_2022/gesundheitswesen/willkommen-in-deutschland_english.pdf",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        }
+      ],
+      "sourceDiscoveryCheckedOn": "2026-10-13",
+      "sourceDiscoveryNote": "Official-source discovery only; not legal advice, not a completeness claim or a determination of applicability. Germany remains blocked; all 14 legal review areas, the national review and all 16 Länder targets remain not-assessed. EU GDPR, ePrivacy, MDR and DSA sources are recorded as common-law starting points, but the EU group entry and these German source leads do not prove applicability or replace review of German implementation, current amendments, authority practice or state law. The BDSG page shows recent 2026 amendment metadata that must be reconciled with the current official text. BfArM explains that standalone apps can be medical devices based on intended purpose and functionality; counsel must assess this app’s claims and functions. DiGA rules are a trigger review only if a reimbursement or listed-health-application route is pursued. The BFSG has scope limits and exemptions; counsel must determine whether the particular service, operator and offering are covered. Assess health advertising, consumer information, digital-service-provider duties, disability access, youth protections, copyright, device-only storage and cross-border flows. Germany has 16 Länder; state data-protection authorities and legislation, health/professional rules, municipal requirements, emergency implementation and any local duties remain unassessed. Verify current rules before German-language translation or Germany-specific emergency instructions. Operator identity, platform requirements, tax/nonprofit choices and funding remain open."
     },
     {
       "name": "Ghana",
