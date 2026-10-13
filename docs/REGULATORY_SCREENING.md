@@ -40,6 +40,8 @@ This is a source-discovery pass, not a legal screen or advice. The UK record rec
 
 The initial UK subnational checklist now names England, Wales, Scotland and Northern Ireland. These are screening targets, not findings that each has a separate applicable rule for every topic. All four remain unassessed. The operator, hosting/CDN, data controller, app-store distribution, local emergency wording and future funding model must be established before a qualified reviewer can complete the UK screen. No UK release clearance is recorded.
 
+Ireland source discovery (13 October 2026) now records the Data Protection Act 2018, the Privacy and Electronic Communications Regulations 2011, the Data Protection Commission portal and official emergency guidance. These are source leads only. Ireland remains blocked until a qualified reviewer maps each review area, confirms any applicable health-data and medical-software obligations, and checks the relevant local and EU requirements. The emergency page identifies 112 and 999; the app must keep generic emergency wording until country-specific release review is complete.
+
 ### Platform distribution policies (not legislation)
 
 | Platform | Official policy source | Release work still needed |
