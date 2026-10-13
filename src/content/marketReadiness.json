@@ -27525,7 +27525,216 @@
       "isoAlpha2": "NG",
       "reviewOwner": null,
       "lastChecked": null,
-      "officialSources": [],
+      "officialSources": [
+        {
+          "title": "Nigeria Data Protection Act, 2023",
+          "url": "https://ndpc.gov.ng/download/nigeria-data-protection-act-2023",
+          "authority": "Nigeria Data Protection Commission (NDPC)",
+          "sourceType": "national-data-protection-legislation",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "NDPC: NDP Act General Application and Implementation Directive (GAID) 2025 status and effective date",
+          "url": "https://ndpc.gov.ng/wp-content/uploads/2026/02/Print_NDPC-Annual-Report-2025-1.pdf",
+          "authority": "NDPC",
+          "sourceType": "data-protection-regulatory-directive-current-text-required",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "NDPC resources and guidance index",
+          "url": "https://ndpc.gov.ng/resources/",
+          "authority": "NDPC",
+          "sourceType": "data-protection-authority-guidance-index",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "NDPC FAQ: territorial scope and compliance topics under the NDP Act",
+          "url": "https://ndpc.gov.ng/faqs/",
+          "authority": "NDPC",
+          "sourceType": "data-protection-regulator-scope-guidance",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "NAFDAC Guidelines for Registration of Software as a Medical Device in Nigeria, effective 1 July 2024",
+          "url": "https://nafdac.gov.ng/wp-content/uploads/Files/Resources/Guidelines/DR_And_R_Guidelines/Guidelines-for-Registration-of-Software-as-a-Medical-Device-SaMD-in-Nigeria.pdf",
+          "authority": "National Agency for Food and Drug Administration and Control (NAFDAC)",
+          "sourceType": "software-as-medical-device-guidance",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "NAFDAC medical-device registration and regulations index",
+          "url": "https://nafdac.gov.ng/regulatory-resources/application-forms/",
+          "authority": "NAFDAC",
+          "sourceType": "medical-device-registration-index",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Draft NAFDAC Medical Devices, IVDs and Related Products Regulations 2025 — verify whether finalized or gazetted",
+          "url": "https://nafdac.gov.ng/wp-content/uploads/Files/Resources/Regulations/Draft_Regulations_2025/NAFDAC-Medical-Devices-including-In-vitro-Diagnostics-and-Related-Products-Regulations-2025.pdf",
+          "authority": "NAFDAC",
+          "sourceType": "draft-medical-device-regulations-legal-status-review-required",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "NAFDAC guidelines for advertisement of medical products (effective 2021; scheduled review 2026)",
+          "url": "https://www.nafdac.gov.ng/wp-content/uploads/Files/Resources/Guidelines/DR_And_R_Guidelines/Guidelines-For-Advertisement-Of-Medical-Products-Cosmetics-Veterinary-Products-And-Finished-Chemicals.pdf",
+          "authority": "NAFDAC",
+          "sourceType": "medical-product-advertising-guidance-current-review-required",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Draft Medical Devices, IVDs and Related Products Advertisement Regulations 2024 — draft only; status to verify",
+          "url": "https://nafdac.gov.ng/wp-content/uploads/Files/Resources/Regulations/Draft_Regulations_2024/Medical-Devices-and-Related-Products-Advertisement-Regulations-2024.pdf",
+          "authority": "NAFDAC",
+          "sourceType": "draft-medical-device-advertising-regulations",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Federal Competition and Consumer Protection Act 2018: FCCPC resources and legislation index",
+          "url": "https://fccpc.gov.ng/resources-library/",
+          "authority": "Federal Competition and Consumer Protection Commission (FCCPC)",
+          "sourceType": "consumer-protection-legislation-index",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Federal Ministry of Health and Social Welfare: patient rights and feedback FAQ",
+          "url": "https://health.gov.ng/faqs/",
+          "authority": "Federal Ministry of Health and Social Welfare",
+          "sourceType": "patient-rights-health-law-source-lead",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Constitution of the Federal Republic of Nigeria: federal structure, state and FCT roster",
+          "url": "https://sccr.gov.ng/?p=121",
+          "authority": "Senate Committee on Constitution Review",
+          "sourceType": "constitutional-subnational-jurisdiction-roster",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "National Bureau of Statistics: federal structure and local-government count",
+          "url": "https://www.nigerianstat.gov.ng/page/about-us",
+          "authority": "National Bureau of Statistics",
+          "sourceType": "local-government-scale-and-territorial-scope",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Discrimination Against Persons with Disabilities (Prohibition) Act 2018: Federal Ministry policy index",
+          "url": "https://www.fmhds.gov.ng/policies/",
+          "authority": "Federal Ministry of Humanitarian Affairs and Poverty Reduction",
+          "sourceType": "disability-rights-legislation-index",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Disability Act accessibility and inclusion implementation material",
+          "url": "https://ncpwd.gov.ng/pdfs/48document.pdf",
+          "authority": "National Commission for Persons with Disabilities",
+          "sourceType": "disability-accessibility-regulatory-guidance",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Disability Act 2018 text copy hosted by UN DESA — reconcile against Nigerian Gazette",
+          "url": "https://www.un.org/development/desa/disabilities/wp-content/uploads/sites/15/2019/11/Nigeria_Discrimination-Against-Persons-with-Disabilities-Prohibition-Act-2018.pdf",
+          "authority": "United Nations DESA mirror of Nigerian legislation",
+          "sourceType": "disability-legislation-text-mirror-primary-gazette-check-required",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Child’s Rights Act 2003 text",
+          "url": "https://mail.nhrc.gov.ng/files/childrightact.pdf",
+          "authority": "National Human Rights Commission (NHRC) library",
+          "sourceType": "child-protection-legislation-text-copy",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "NHRC child-rights information: state adoption remains a verification question",
+          "url": "https://www.nigeriarights.gov.ng/16-focus-area.html?start=0",
+          "authority": "NHRC",
+          "sourceType": "state-child-rights-adoption-signal-verify-current-status",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Copyright Act 2022 (Act No. 8 of 2023)",
+          "url": "https://www.copyright.gov.ng/CopyrightAct/CopyrightAct2023FinalPublication1.pdf",
+          "authority": "Nigerian Copyright Commission",
+          "sourceType": "copyright-and-translation-legislation",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Nigerian Communications Commission: Emergency Communications Centres and 112",
+          "url": "https://www.ncc.gov.ng/node/3132",
+          "authority": "Nigerian Communications Commission (NCC)",
+          "sourceType": "emergency-number-and-regional-service-coverage",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Corporate Affairs Commission: Companies and Allied Matters Act 2020",
+          "url": "https://pre.cac.gov.ng/assets/images/CAMA-NOTE%20FINAL-FULL-VERSION.pdf",
+          "authority": "Corporate Affairs Commission (CAC)",
+          "sourceType": "nonprofit-operator-and-incorporation-legislation",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "CAC Incorporated Trustees registration information",
+          "url": "https://www.cac.gov.ng/services/incorporated-trustees",
+          "authority": "CAC",
+          "sourceType": "nonprofit-incorporated-trustees-guidance",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "FIRS 2021 NGO tax-treatment circular — verify current tax authority and amendments",
+          "url": "https://old.firs.gov.ng/wp-content/uploads/2021/04/Circular-on-Taxation-of-NGOs.pdf",
+          "authority": "Federal Inland Revenue Service (legacy site; current administration to verify)",
+          "sourceType": "nonprofit-tax-guidance-current-status-review-required",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Nigeria services portal: country, language and government-service context",
+          "url": "https://services.gov.ng/?s=P",
+          "authority": "Federal Government of Nigeria",
+          "sourceType": "official-language-and-government-context",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Apple App Review Guidelines",
+          "url": "https://developer.apple.com/app-store/review/guidelines/",
+          "authority": "Apple",
+          "sourceType": "platform-policy-not-legislation",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Google Play Health Content and Services policy",
+          "url": "https://support.google.com/googleplay/android-developer/answer/16679511?hl=en",
+          "authority": "Google Play",
+          "sourceType": "platform-policy-not-legislation",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        }
+      ],
       "reviewAreas": [
         {
           "area": "privacy-and-health-data",
@@ -27640,7 +27849,306 @@
           "reviewer": null
         }
       ],
-      "subnationalAreas": []
+      "subnationalAreas": [
+        {
+          "name": "Abia",
+          "status": "not-assessed",
+          "reason": "State/FCT screening target only. No state-specific data-protection, health/professional, patient-rights, consumer, accessibility, child-rights adoption or emergency review performed; local-government and area-council rules are also unscoped and unassessed.",
+          "source": "https://sccr.gov.ng/?p=121",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Adamawa",
+          "status": "not-assessed",
+          "reason": "State/FCT screening target only. No state-specific data-protection, health/professional, patient-rights, consumer, accessibility, child-rights adoption or emergency review performed; local-government and area-council rules are also unscoped and unassessed.",
+          "source": "https://sccr.gov.ng/?p=121",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Akwa Ibom",
+          "status": "not-assessed",
+          "reason": "State/FCT screening target only. No state-specific data-protection, health/professional, patient-rights, consumer, accessibility, child-rights adoption or emergency review performed; local-government and area-council rules are also unscoped and unassessed.",
+          "source": "https://sccr.gov.ng/?p=121",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Anambra",
+          "status": "not-assessed",
+          "reason": "State/FCT screening target only. No state-specific data-protection, health/professional, patient-rights, consumer, accessibility, child-rights adoption or emergency review performed; local-government and area-council rules are also unscoped and unassessed.",
+          "source": "https://sccr.gov.ng/?p=121",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Bauchi",
+          "status": "not-assessed",
+          "reason": "State/FCT screening target only. No state-specific data-protection, health/professional, patient-rights, consumer, accessibility, child-rights adoption or emergency review performed; local-government and area-council rules are also unscoped and unassessed.",
+          "source": "https://sccr.gov.ng/?p=121",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Bayelsa",
+          "status": "not-assessed",
+          "reason": "State/FCT screening target only. No state-specific data-protection, health/professional, patient-rights, consumer, accessibility, child-rights adoption or emergency review performed; local-government and area-council rules are also unscoped and unassessed.",
+          "source": "https://sccr.gov.ng/?p=121",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Benue",
+          "status": "not-assessed",
+          "reason": "State/FCT screening target only. No state-specific data-protection, health/professional, patient-rights, consumer, accessibility, child-rights adoption or emergency review performed; local-government and area-council rules are also unscoped and unassessed.",
+          "source": "https://sccr.gov.ng/?p=121",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Borno",
+          "status": "not-assessed",
+          "reason": "State/FCT screening target only. No state-specific data-protection, health/professional, patient-rights, consumer, accessibility, child-rights adoption or emergency review performed; local-government and area-council rules are also unscoped and unassessed.",
+          "source": "https://sccr.gov.ng/?p=121",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Cross River",
+          "status": "not-assessed",
+          "reason": "State/FCT screening target only. No state-specific data-protection, health/professional, patient-rights, consumer, accessibility, child-rights adoption or emergency review performed; local-government and area-council rules are also unscoped and unassessed.",
+          "source": "https://sccr.gov.ng/?p=121",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Delta",
+          "status": "not-assessed",
+          "reason": "State/FCT screening target only. No state-specific data-protection, health/professional, patient-rights, consumer, accessibility, child-rights adoption or emergency review performed; local-government and area-council rules are also unscoped and unassessed.",
+          "source": "https://sccr.gov.ng/?p=121",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Ebonyi",
+          "status": "not-assessed",
+          "reason": "State/FCT screening target only. No state-specific data-protection, health/professional, patient-rights, consumer, accessibility, child-rights adoption or emergency review performed; local-government and area-council rules are also unscoped and unassessed.",
+          "source": "https://sccr.gov.ng/?p=121",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Edo",
+          "status": "not-assessed",
+          "reason": "State/FCT screening target only. No state-specific data-protection, health/professional, patient-rights, consumer, accessibility, child-rights adoption or emergency review performed; local-government and area-council rules are also unscoped and unassessed.",
+          "source": "https://sccr.gov.ng/?p=121",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Ekiti",
+          "status": "not-assessed",
+          "reason": "State/FCT screening target only. No state-specific data-protection, health/professional, patient-rights, consumer, accessibility, child-rights adoption or emergency review performed; local-government and area-council rules are also unscoped and unassessed.",
+          "source": "https://sccr.gov.ng/?p=121",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Enugu",
+          "status": "not-assessed",
+          "reason": "State/FCT screening target only. No state-specific data-protection, health/professional, patient-rights, consumer, accessibility, child-rights adoption or emergency review performed; local-government and area-council rules are also unscoped and unassessed.",
+          "source": "https://sccr.gov.ng/?p=121",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Gombe",
+          "status": "not-assessed",
+          "reason": "State/FCT screening target only. No state-specific data-protection, health/professional, patient-rights, consumer, accessibility, child-rights adoption or emergency review performed; local-government and area-council rules are also unscoped and unassessed.",
+          "source": "https://sccr.gov.ng/?p=121",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Imo",
+          "status": "not-assessed",
+          "reason": "State/FCT screening target only. No state-specific data-protection, health/professional, patient-rights, consumer, accessibility, child-rights adoption or emergency review performed; local-government and area-council rules are also unscoped and unassessed.",
+          "source": "https://sccr.gov.ng/?p=121",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Jigawa",
+          "status": "not-assessed",
+          "reason": "State/FCT screening target only. No state-specific data-protection, health/professional, patient-rights, consumer, accessibility, child-rights adoption or emergency review performed; local-government and area-council rules are also unscoped and unassessed.",
+          "source": "https://sccr.gov.ng/?p=121",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Kaduna",
+          "status": "not-assessed",
+          "reason": "State/FCT screening target only. No state-specific data-protection, health/professional, patient-rights, consumer, accessibility, child-rights adoption or emergency review performed; local-government and area-council rules are also unscoped and unassessed.",
+          "source": "https://sccr.gov.ng/?p=121",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Kano",
+          "status": "not-assessed",
+          "reason": "State/FCT screening target only. No state-specific data-protection, health/professional, patient-rights, consumer, accessibility, child-rights adoption or emergency review performed; local-government and area-council rules are also unscoped and unassessed.",
+          "source": "https://sccr.gov.ng/?p=121",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Katsina",
+          "status": "not-assessed",
+          "reason": "State/FCT screening target only. No state-specific data-protection, health/professional, patient-rights, consumer, accessibility, child-rights adoption or emergency review performed; local-government and area-council rules are also unscoped and unassessed.",
+          "source": "https://sccr.gov.ng/?p=121",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Kebbi",
+          "status": "not-assessed",
+          "reason": "State/FCT screening target only. No state-specific data-protection, health/professional, patient-rights, consumer, accessibility, child-rights adoption or emergency review performed; local-government and area-council rules are also unscoped and unassessed.",
+          "source": "https://sccr.gov.ng/?p=121",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Kogi",
+          "status": "not-assessed",
+          "reason": "State/FCT screening target only. No state-specific data-protection, health/professional, patient-rights, consumer, accessibility, child-rights adoption or emergency review performed; local-government and area-council rules are also unscoped and unassessed.",
+          "source": "https://sccr.gov.ng/?p=121",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Kwara",
+          "status": "not-assessed",
+          "reason": "State/FCT screening target only. No state-specific data-protection, health/professional, patient-rights, consumer, accessibility, child-rights adoption or emergency review performed; local-government and area-council rules are also unscoped and unassessed.",
+          "source": "https://sccr.gov.ng/?p=121",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Lagos",
+          "status": "not-assessed",
+          "reason": "State/FCT screening target only. No state-specific data-protection, health/professional, patient-rights, consumer, accessibility, child-rights adoption or emergency review performed; local-government and area-council rules are also unscoped and unassessed.",
+          "source": "https://sccr.gov.ng/?p=121",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Nasarawa",
+          "status": "not-assessed",
+          "reason": "State/FCT screening target only. No state-specific data-protection, health/professional, patient-rights, consumer, accessibility, child-rights adoption or emergency review performed; local-government and area-council rules are also unscoped and unassessed.",
+          "source": "https://sccr.gov.ng/?p=121",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Niger",
+          "status": "not-assessed",
+          "reason": "State/FCT screening target only. No state-specific data-protection, health/professional, patient-rights, consumer, accessibility, child-rights adoption or emergency review performed; local-government and area-council rules are also unscoped and unassessed.",
+          "source": "https://sccr.gov.ng/?p=121",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Ogun",
+          "status": "not-assessed",
+          "reason": "State/FCT screening target only. No state-specific data-protection, health/professional, patient-rights, consumer, accessibility, child-rights adoption or emergency review performed; local-government and area-council rules are also unscoped and unassessed.",
+          "source": "https://sccr.gov.ng/?p=121",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Ondo",
+          "status": "not-assessed",
+          "reason": "State/FCT screening target only. No state-specific data-protection, health/professional, patient-rights, consumer, accessibility, child-rights adoption or emergency review performed; local-government and area-council rules are also unscoped and unassessed.",
+          "source": "https://sccr.gov.ng/?p=121",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Osun",
+          "status": "not-assessed",
+          "reason": "State/FCT screening target only. No state-specific data-protection, health/professional, patient-rights, consumer, accessibility, child-rights adoption or emergency review performed; local-government and area-council rules are also unscoped and unassessed.",
+          "source": "https://sccr.gov.ng/?p=121",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Oyo",
+          "status": "not-assessed",
+          "reason": "State/FCT screening target only. No state-specific data-protection, health/professional, patient-rights, consumer, accessibility, child-rights adoption or emergency review performed; local-government and area-council rules are also unscoped and unassessed.",
+          "source": "https://sccr.gov.ng/?p=121",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Plateau",
+          "status": "not-assessed",
+          "reason": "State/FCT screening target only. No state-specific data-protection, health/professional, patient-rights, consumer, accessibility, child-rights adoption or emergency review performed; local-government and area-council rules are also unscoped and unassessed.",
+          "source": "https://sccr.gov.ng/?p=121",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Rivers",
+          "status": "not-assessed",
+          "reason": "State/FCT screening target only. No state-specific data-protection, health/professional, patient-rights, consumer, accessibility, child-rights adoption or emergency review performed; local-government and area-council rules are also unscoped and unassessed.",
+          "source": "https://sccr.gov.ng/?p=121",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Sokoto",
+          "status": "not-assessed",
+          "reason": "State/FCT screening target only. No state-specific data-protection, health/professional, patient-rights, consumer, accessibility, child-rights adoption or emergency review performed; local-government and area-council rules are also unscoped and unassessed.",
+          "source": "https://sccr.gov.ng/?p=121",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Taraba",
+          "status": "not-assessed",
+          "reason": "State/FCT screening target only. No state-specific data-protection, health/professional, patient-rights, consumer, accessibility, child-rights adoption or emergency review performed; local-government and area-council rules are also unscoped and unassessed.",
+          "source": "https://sccr.gov.ng/?p=121",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Yobe",
+          "status": "not-assessed",
+          "reason": "State/FCT screening target only. No state-specific data-protection, health/professional, patient-rights, consumer, accessibility, child-rights adoption or emergency review performed; local-government and area-council rules are also unscoped and unassessed.",
+          "source": "https://sccr.gov.ng/?p=121",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Zamfara",
+          "status": "not-assessed",
+          "reason": "State/FCT screening target only. No state-specific data-protection, health/professional, patient-rights, consumer, accessibility, child-rights adoption or emergency review performed; local-government and area-council rules are also unscoped and unassessed.",
+          "source": "https://sccr.gov.ng/?p=121",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        },
+        {
+          "name": "Federal Capital Territory (Abuja)",
+          "status": "not-assessed",
+          "reason": "State/FCT screening target only. No state-specific data-protection, health/professional, patient-rights, consumer, accessibility, child-rights adoption or emergency review performed; local-government and area-council rules are also unscoped and unassessed.",
+          "source": "https://sccr.gov.ng/?p=121",
+          "checkedOn": "2026-10-13",
+          "reviewer": null
+        }
+      ],
+      "sourceDiscoveryCheckedOn": "2026-10-13",
+      "sourceDiscoveryNote": "Official-source discovery only; not legal advice, not a completeness claim or a determination of applicability. Nigeria remains blocked; all 14 legal review areas, national review and all 36 states plus FCT targets remain not-assessed. The NDPC identifies the Nigeria Data Protection Act 2023 and GAID 2025; review their current final text and assess health data, operator/controller roles, notices, user rights, breach duties, registration thresholds, transfers, device storage and hosting against actual flows. NAFDAC has a specific SaMD registration guideline effective 1 July 2024. A 2025 medical-device regulations file and 2024 device-advertising regulations file are explicitly marked drafts and must not be treated as in force without confirmation of final gazetting and commencement; determine whether product function, intended purpose, public claims or distribution trigger product regulation. The NHRC source reports only 24 of 36 states had adopted the Child Rights Act at its last stated update; verify current adoption and state-specific child protections before any child-facing use. The National Commission for Persons with Disabilities references the federal disability legislation, but precise reach to a private information service and digital accessibility requirements need qualified review. NCC describes 112 emergency centres across all states/FCT and also notes that 112 is not yet the sole emergency line for response agencies; verify local service behavior and never rely on one number without local review. The official NBS reports 774 local-government areas/councils across Nigeria; the 37-entry queue does not assess them. English is listed on a federal portal but local language, literacy, accessibility and translation needs require community review. CAC and current revenue/tax rules, donations, foreign funding, platform policy, rights to all sources and current amendments remain open."
     },
     {
       "name": "Niue",
