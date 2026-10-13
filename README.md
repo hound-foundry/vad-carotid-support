@@ -16,7 +16,7 @@ The first language set is English, Russian, Ukrainian, Lithuanian, Latvian, Esto
 
 ## Project readiness
 
-This is an early development preview, not a finished or globally cleared app. The release register contains 248 UN M49 country-or-area records, all blocked and unassessed; it still needs ISO reconciliation and qualified country/subnational review. Clinical review, reviewed translations, privacy assessment, app-store declarations and local emergency contacts remain release gates. See the [product brief](docs/PRODUCT.md), [clinical content standards](docs/CLINICAL_CONTENT.md), [literature seed list](docs/RESEARCH.md) and [regulatory screening register](docs/REGULATORY_SCREENING.md).
+This is an early development preview, not a finished or globally cleared app. The release register contains 249 UN M49 country-or-area records, all blocked and unassessed; it still needs ISO reconciliation and qualified country/subnational review. Clinical review, reviewed translations, privacy assessment, app-store declarations, dependency security review and local emergency contacts remain release gates. See the [product brief](docs/PRODUCT.md), [clinical content standards](docs/CLINICAL_CONTENT.md), [literature seed list](docs/RESEARCH.md), [dependency security review](docs/DEPENDENCY_SECURITY.md) and [regulatory screening register](docs/REGULATORY_SCREENING.md).
 
 ## Run the starter app
 
