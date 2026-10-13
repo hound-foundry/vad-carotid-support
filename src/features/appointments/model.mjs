@@ -13,6 +13,7 @@ export const appointmentPrompts = [
   { id: "daily-life", group: "During the appointment", text: "Which day-to-day concerns, such as energy or concentration, would be useful to discuss?" },
   { id: "fatigue-pattern", group: "During the appointment", text: "How could I describe changes in energy, fatigue or concentration so we can discuss what support may fit?" },
   { id: "daily-activities", group: "During the appointment", text: "Which everyday activities have become harder, and could we talk about support or rehabilitation options?" },
+  { id: "work-and-routines", group: "During the appointment", text: "How could I discuss work, study or usual routines and any support I may need for my situation?" },
   { id: "support", group: "During the appointment", text: "What support is available for me and the people helping me?" },
   { id: "next-steps", group: "Before I leave", text: "Could we write down the next steps and who is responsible for each one?" },
   { id: "pending-results", group: "Before I leave", text: "Who will contact me about any pending results, and how can I follow up if I do not hear back?" },
@@ -24,8 +25,8 @@ export const guidePromptSuggestions = {
   "understanding-dissection": ["diagnosis", "tests", "next-steps"],
   "tests-and-terms": ["tests", "follow-up-imaging"],
   "without-stroke": ["follow-up-imaging", "fatigue-pattern", "daily-activities", "between-appointments"],
-  "with-stroke": ["access-needs", "daily-life", "fatigue-pattern", "daily-activities", "support"],
-  "recovery-and-quality-of-life": ["daily-life", "fatigue-pattern", "daily-activities", "support"],
+  "with-stroke": ["access-needs", "daily-life", "fatigue-pattern", "daily-activities", "work-and-routines", "support"],
+  "recovery-and-quality-of-life": ["daily-life", "fatigue-pattern", "daily-activities", "work-and-routines", "support"],
   "supporting-someone": ["appointment-support", "access-needs", "support", "next-steps"],
   "follow-up-questions": ["priority", "tests", "next-steps", "pending-results", "between-appointments"],
 };
