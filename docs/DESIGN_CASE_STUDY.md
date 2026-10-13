@@ -2,6 +2,8 @@
 
 Implementation and engineering checks: 13 October 2026. Scope: the English static website and shared Expo components. Clinical approval, participant usability review and assistive-technology review remain separate.
 
+The subsequent [patient-menu walkthrough and repairs](PATIENT_MENU_REPAIRS_2026-10-13.md) address enlarged-menu scrolling, lost sheet drafts, reading-mode consistency, session resume and inner-page reading load. It includes separate before/after evidence and the limits of these engineering checks.
+
 ## Problem and evidence
 
 The previous home repeated tasks across 19 content links. On a phone, the introduction occupied most of the initial screen. Cards exported only text, the hidden-date choice did not remove the date, printing included the form, clean card URLs failed in the preview server, and a restored card could report that nothing was saved. An invisible skip link overlapped the mobile Home control.

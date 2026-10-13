@@ -1,7 +1,9 @@
 import { Pressable, Text, TextInput, View } from "../src/components/Ui";
+import { Link } from "../src/components/AppLink";
 import { useState } from "react";
 import { Linking, StyleSheet } from "react-native";
-import { AppPage, BackHome, Card, DraftNotice, PageHeading, palette } from "../src/components/AppPage";
+import { AppPage, Card, DraftNotice, PageHeading, palette } from "../src/components/AppPage";
+import { Disclosure } from "../src/features/cards/CardUi";
 import { glossary } from "../src/content/glossary";
 import references from "../content/references.json";
 
@@ -9,8 +11,7 @@ export default function GlossaryScreen() {
   const [query, setQuery] = useState("");
   const search = query.trim().toLocaleLowerCase();
   const entries = glossary.filter((entry) => !search || `${entry.term} ${entry.definition}`.toLocaleLowerCase().includes(search));
-  return <AppPage><BackHome /><PageHeading eyebrow="Guide library" title="Words you may see in a report." summary="Short definitions for unfamiliar terms. You do not need to understand every word at once." /><DraftNotice />
-    <Card title="Using this glossary"><Text style={styles.body}>These are general definitions, not an interpretation of your scan or a description of your personal care. If a word in your report is unclear, ask the clinician who reviewed it to explain it in everyday language.</Text></Card>
+  return <AppPage><PageHeading compact eyebrow="Guide library" title="Look up a term" summary="Short definitions for unfamiliar words." /><DraftNotice compact />
     <Card title="Find a term"><TextInput accessibilityLabel="Search glossary terms" value={query} onChangeText={setQuery} maxLength={80} autoCorrect={false} placeholder="For example: artery, imaging, stroke" placeholderTextColor={palette.muted} style={styles.search} />{query.length > 0 ? <Pressable accessibilityRole="button" onPress={() => setQuery("")} style={styles.clear}><Text style={styles.clearText}>Clear search</Text></Pressable> : null}<Text accessibilityLiveRegion="polite" style={styles.count}>{entries.length} {entries.length === 1 ? "term" : "terms"} shown</Text></Card>
     {entries.map((entry) => {
       const source = references.sources.find((item) => item.id === entry.sourceId);
@@ -20,7 +21,8 @@ export default function GlossaryScreen() {
         {source ? <Pressable accessibilityRole="link" accessibilityLabel={`Open source: ${source.title}`} onPress={() => void Linking.openURL(source.url)} style={styles.sourceLink}><Text style={styles.sourceText}>Source: {source.title} ↗</Text></Pressable> : null}
       </Card>;
     })}
-    {entries.length === 0 ? <Card title="No matching term"><Text style={styles.body}>Try a shorter word or ask the clinician who reviewed your report to explain the term.</Text></Card> : null}
+    {entries.length === 0 ? <Card title="No matching term"><Text style={styles.body}>Try a shorter word or ask the clinician who reviewed your report to explain the term.</Text><Link href="/guide/tests-and-terms" asChild><Pressable accessibilityRole="link" style={styles.sourceLink}><Text style={styles.sourceText}>Read the tests and terms guide →</Text></Pressable></Link><Link href="/appointments" asChild><Pressable accessibilityRole="link" style={styles.sourceLink}><Text style={styles.sourceText}>Prepare a question for your appointment →</Text></Pressable></Link></Card> : null}
+    <Disclosure title="Using this glossary"><Text style={styles.body}>These are general definitions, not an interpretation of your scan or a description of your personal care. If a word in your report is unclear, ask the clinician who reviewed it to explain it in everyday language.</Text></Disclosure>
     <Card title="Still unsure?"><Text style={styles.body}>You can ask: “Could you explain this word and tell me what it means in my situation?” This app cannot interpret reports or scans.</Text></Card>
   </AppPage>;
 }

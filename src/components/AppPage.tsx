@@ -1,7 +1,7 @@
 import { Link } from "./AppLink";
 import { Pressable, ScrollView, Text, View, SafeAreaView } from "./Ui";
 
-import { useRef, type ReactNode } from "react";
+import { useId, useRef, useState, type ReactNode } from "react";
 import { Platform, StyleSheet, useWindowDimensions, type ScrollView as NativeScrollView } from "react-native";
 
 import { useAccessibility } from "../features/accessibility/AccessibilityProvider";
@@ -20,12 +20,18 @@ export function BackHome() {
   return <Link href="/" asChild><Pressable accessibilityRole="link" accessibilityLabel="Back to home" style={styles.backLink}><Text style={styles.backArrow}>←</Text><Text style={styles.back}>Home</Text></Pressable></Link>;
 }
 
-export function PageHeading({ eyebrow, title, summary }: { eyebrow: string; title: string; summary: string }) {
+export function PageHeading({ eyebrow, title, summary, compact = false }: { eyebrow: string; title: string; summary: string; compact?: boolean }) {
   const { settings } = useAccessibility();
-  return <View style={[styles.heading, settings.spacing === "roomy" && styles.headingRoomy]}><Text style={styles.eyebrow}>{eyebrow.toUpperCase()}</Text><Text accessibilityRole="header" style={styles.title}>{title}</Text><Text style={[styles.summary, settings.spacing === "roomy" && styles.summaryRoomy]}>{summary}</Text></View>;
+  return <View style={[styles.heading, settings.spacing === "roomy" && styles.headingRoomy, compact && styles.headingCompact]}>{!compact ? <Text style={styles.eyebrow}>{eyebrow.toUpperCase()}</Text> : null}<Text accessibilityRole="header" aria-level={1} style={[styles.title, compact && styles.titleCompact]}>{title}</Text>{summary ? <Text style={[styles.summary, settings.spacing === "roomy" && styles.summaryRoomy]}>{summary}</Text> : null}</View>;
 }
 
-export function DraftNotice() {
+export function DraftNotice({ compact = false }: { compact?: boolean }) {
+  const [expanded, setExpanded] = useState(false);
+  const id = `draft-review-${useId().replace(/:/g, "")}`;
+  if (compact) return <View style={styles.compactNotice}>
+    <Pressable accessibilityRole="button" accessibilityLabel="Draft information, review pending. Review details" accessibilityState={{ expanded }} aria-controls={id} onPress={() => setExpanded(!expanded)} style={styles.compactNoticeButton}><Text style={styles.compactNoticeTitle}>Draft information · review pending</Text><Text aria-hidden style={styles.compactNoticeArrow}>{expanded ? "−" : "+"}</Text></Pressable>
+    {expanded ? <View nativeID={id} style={styles.compactNoticeDetails}><Text style={styles.noticeBody}>Clinical and patient/carer reviews are not yet recorded. For personal care questions, ask your doctor.</Text><Link href="/about" asChild><Pressable accessibilityRole="link"><Text style={styles.back}>About the review process</Text></Pressable></Link></View> : null}
+  </View>;
   return <View style={styles.notice}><View style={styles.noticeCopy}><Text style={styles.noticeTitle}>Draft information · review pending</Text><Text style={styles.noticeBody}>Clinical and patient/carer reviews are not yet recorded. For personal care questions, ask your doctor.</Text><Link href="/about" asChild><Pressable accessibilityRole="link"><Text style={styles.back}>About the review process</Text></Pressable></Link></View></View>;
 }
 
@@ -65,8 +71,10 @@ const styles = StyleSheet.create({
   back: { color: palette.tealDark, fontSize: 14, fontWeight: "700" },
   heading: { paddingTop: 16, paddingBottom: 20 },
   headingRoomy: { paddingTop: 22, paddingBottom: 28 },
+  headingCompact: { paddingTop: 14, paddingBottom: 12 },
   eyebrow: { color: palette.tealDark, fontSize: 11, fontWeight: "800", letterSpacing: 1.65 },
   title: { marginTop: 11, color: palette.ink, fontFamily: "Georgia", fontSize: 32, lineHeight: 40, fontWeight: "600" },
+  titleCompact: { marginTop: 0 },
   summary: { marginTop: 10, color: palette.text, fontSize: 16, lineHeight: 25, maxWidth: 720 },
   summaryRoomy: { lineHeight: 29 },
   notice: { flexDirection: "row", alignItems: "flex-start", gap: 12, padding: 16, borderRadius: 14, backgroundColor: palette.alert, borderColor: "#E9CFC3", borderWidth: 1, marginBottom: 18 },
@@ -75,6 +83,11 @@ const styles = StyleSheet.create({
   noticeCopy: { flex: 1 },
   noticeTitle: { color: palette.alertInk, fontSize: 14, lineHeight: 20, fontWeight: "800" },
   noticeBody: { marginTop: 5, color: "#704D42", fontSize: 13, lineHeight: 20 },
+  compactNotice: { borderBottomWidth: 1, borderBottomColor: palette.line, marginBottom: 14 },
+  compactNoticeButton: { flexDirection: "row", alignItems: "center", gap: 10, paddingVertical: 6 },
+  compactNoticeTitle: { flex: 1, color: palette.text, fontSize: 16, fontWeight: "700" },
+  compactNoticeArrow: { color: palette.tealDark, fontSize: 20 },
+  compactNoticeDetails: { paddingBottom: 10 },
   card: { backgroundColor: palette.white, borderColor: palette.line, borderWidth: 1, borderRadius: 15, padding: 18, marginBottom: 13 },
   cardRoomy: { padding: 23, marginBottom: 18 },
   cardTitle: { color: palette.ink, fontSize: 17, lineHeight: 24, fontWeight: "700", marginBottom: 8 },

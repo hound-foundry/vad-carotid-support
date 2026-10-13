@@ -14,3 +14,5 @@ This record is intentionally blocked until the required human reviews are comple
 Current release status: **blocked-pending-human-review**.
 
 The 13 October [design case study](DESIGN_CASE_STUDY.md) supplies engineering evidence for the revised home/header, `/cards`, `/saved`, `/personal-card`, `/milestone-card` and display preferences. Keyboard, mobile layout, file generation and synthetic privacy observations do not promote any review track above. Include the two new directory routes in the next patient/carer and full assistive-technology review.
+
+The [patient-menu repairs](PATIENT_MENU_REPAIRS_2026-10-13.md) add draft/reading-session regressions and a synthetic walkthrough of all menu destinations. They resolve the observed technical failures without completing clinical, participant or assistive-technology review.

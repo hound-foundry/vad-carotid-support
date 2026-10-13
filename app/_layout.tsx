@@ -11,6 +11,7 @@ import { webStyles } from "../src/components/webStyles";
 import { SiteHeader } from "../src/components/SiteHeader";
 import { AccessibilityProvider, useAccessibility } from "../src/features/accessibility/AccessibilityProvider";
 import { CardDraftProvider } from "../src/features/cards/CardDraftProvider";
+import { ReadingSessionProvider } from "../src/features/reading-session/ReadingSessionProvider";
 import { themeFor } from "../src/components/theme";
 
 export default function RootLayout() {
@@ -19,6 +20,7 @@ export default function RootLayout() {
     <SafeAreaProvider>
       <AccessibilityProvider>
       <CardDraftProvider>
+      <ReadingSessionProvider>
       <View style={styles.root}>
         <Head>
           <title>VAD &amp; Carotid Support</title>
@@ -40,6 +42,7 @@ export default function RootLayout() {
         <SiteHeader />
         <AppStack />
       </View>
+      </ReadingSessionProvider>
       </CardDraftProvider>
       </AccessibilityProvider>
     </SafeAreaProvider>

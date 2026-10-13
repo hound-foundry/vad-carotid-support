@@ -1,0 +1,96 @@
+{
+  "date": "2026-10-13",
+  "scope": "Synthetic static-web checks; not clinical, patient-study or screen-reader approval",
+  "checks": [
+    {
+      "check": "Guide resume and library search",
+      "result": "pass",
+      "query": "fatigue",
+      "section": 2,
+      "oneSection": true
+    },
+    {
+      "check": "Appointment draft after Home and Saved hub",
+      "result": "pass",
+      "noteRetained": true,
+      "choiceRetained": true,
+      "genericHubStatus": true
+    },
+    {
+      "check": "Support draft after Home and Saved hub",
+      "result": "pass",
+      "noteRetained": true,
+      "choiceRetained": true
+    },
+    {
+      "check": "Support pager with optional controls closed",
+      "result": "pass"
+    },
+    {
+      "check": "Synthetic privacy observation for sheets and personal PDF",
+      "result": "pass",
+      "requestCount": 3,
+      "noMarkerInRequests": true,
+      "noMarkerInLogs": true
+    },
+    {
+      "check": "Global simplified on, local one-section off",
+      "result": "pass",
+      "allSectionsShown": true,
+      "checkboxMatches": true
+    },
+    {
+      "check": "200% text menu keyboard last link and Escape",
+      "result": "pass",
+      "viewport": "390x844"
+    },
+    {
+      "check": "320px large-text menu and display reflow",
+      "result": "pass",
+      "viewport": "320x568"
+    },
+    {
+      "check": "Glossary empty result fallback",
+      "result": "pass",
+      "keyboardLink": true
+    },
+    {
+      "check": "Final 320px menu sizing",
+      "result": "pass",
+      "measurements": {
+        "active": {
+          "bottom": 507,
+          "label": "About and privacy",
+          "top": 398
+        },
+        "menu": {
+          "bottom": 507,
+          "clientHeight": 126,
+          "scrollHeight": 805,
+          "scrollTop": 679,
+          "top": 381
+        }
+      }
+    },
+    {
+      "check": "Milestone image export with hidden date",
+      "result": "pass",
+      "hiddenDateAbsentFromPreview": true,
+      "practicalFieldsAbsent": true
+    },
+    {
+      "check": "Urgent help, skip link and deletion cancellation",
+      "result": "pass",
+      "deletionConfirmed": false
+    },
+    {
+      "check": "Read-aloud manual start and stop",
+      "result": "pass",
+      "audioQualityVerified": false
+    },
+    {
+      "check": "Large-text menu pointer scroll",
+      "result": "pass"
+    }
+  ]
+}

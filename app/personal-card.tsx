@@ -14,11 +14,14 @@ export default function PersonalCardScreen() {
   const field = (key: keyof PersonalCard, label: string, multiline = false, hint?: string) => <Field key={key} id={"personal-" + key} label={label} value={draft.card[key]} onChange={(v) => update(key, v)} multiline={multiline} limit={key === "medicines" || key === "allergies" ? 500 : 240} hint={hint} />;
   const hasExtra = ["description", "emergencyContact", "clinicianContact", "medicines", "allergies", "whatHelps", "avoid", "eventDate"].some((key) => draft.card[key as keyof PersonalCard]);
   const view = personalCardPresentation(draft.card);
-  return <AppPage><BackHome /><View ref={stageRef} nativeID="personal-stage"><PageHeading eyebrow={draft.mode === "preview" ? "Card · preview" : "Card · edit"} title={draft.mode === "preview" ? "Review your card" : "Medical and communication card"} summary={draft.mode === "preview" ? "Only the information below will be downloaded or printed." : "Every field is optional. Start with what would help someone understand you."} /></View>
+  return <AppPage><BackHome /><View ref={stageRef} nativeID="personal-stage"><PageHeading compact eyebrow={draft.mode === "preview" ? "Card · preview" : "Card · edit"} title={draft.mode === "preview" ? "Review your card" : "Medical and communication card"} summary={draft.mode === "preview" ? "Only the information below will be downloaded or printed." : "Choose what helps. Every field is optional."} /></View>
     {draft.mode === "edit" ? <>
-      {field("preferredName", "Preferred name (optional)")}
-      {field("communicationNeeds", "Communication and access needs (optional)", true)}
-      <Disclosure title="Choose communication statements">{statements.map((statement) => <Check key={statement} label={statement} checked={draft.card.communicationNeeds.split("\n").includes(statement)} onChange={() => { const lines = draft.card.communicationNeeds.split("\n").filter(Boolean); const next = (lines.includes(statement) ? lines.filter((line) => line !== statement) : [...lines, statement]).join("\n"); if (next.length > 240) { setHint("Remove some text before adding another statement."); return; } setHint(""); update("communicationNeeds", next); }} />)}{hint ? <Text accessibilityLiveRegion="polite" style={styles.note}>{hint}</Text> : null}</Disclosure>
+      <Text style={styles.label}>Communication statements (optional)</Text>
+      {statements.map((statement) => <Check key={statement} label={statement} checked={draft.card.communicationNeeds.split("\n").includes(statement)} onChange={() => { const lines = draft.card.communicationNeeds.split("\n").filter(Boolean); const next = (lines.includes(statement) ? lines.filter((line) => line !== statement) : [...lines, statement]).join("\n"); if (next.length > 240) { setHint("Remove some text before adding another statement."); return; } setHint(""); update("communicationNeeds", next); }} />)}{hint ? <Text accessibilityLiveRegion="polite" style={styles.note}>{hint}</Text> : null}
+      <Disclosure title="Name and your own words (optional)">
+        {field("preferredName", "Preferred name (optional)")}
+        {field("communicationNeeds", "Communication and access needs (optional)", true)}
+      </Disclosure>
       <Button title="Review card" disabled={!draft.loaded} onPress={draft.preview} />
       <Disclosure title={hasExtra ? "Additional details (contains entries)" : "Add optional details"}>
         {field("description", "How I describe my situation (optional)", true)}

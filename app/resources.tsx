@@ -1,7 +1,9 @@
 import { Pressable, Text, TextInput, View } from "../src/components/Ui";
 import { useState } from "react";
-import { Linking, StyleSheet } from "react-native";
-import { AppPage, BackHome, Card, PageHeading } from "../src/components/AppPage";
+import { StyleSheet } from "react-native";
+import { AppPage, Card, PageHeading } from "../src/components/AppPage";
+import { Link } from "../src/components/AppLink";
+import { Disclosure } from "../src/features/cards/CardUi";
 import { communityCandidates, publicResources } from "../src/content/resources";
 
 export default function ResourcesScreen() {
@@ -9,8 +11,25 @@ export default function ResourcesScreen() {
   const [query, setQuery] = useState("");
   const search = query.trim().toLocaleLowerCase();
   const resources = publicResources.filter((resource) => resource.verifiedForDirectory && (audience === "all" || resource.audience.includes(audience)) && (!search || [resource.title, resource.kind, resource.note, resource.audience.join(" ")].join(" ").toLocaleLowerCase().includes(search)));
-  return <AppPage><BackHome /><PageHeading eyebrow="Resource directory" title="Read beyond this project." summary="These are links to external publishers. This directory does not endorse a treatment, service or community, and external content may change." />
-    <Card title="Patient, carer and professional resources"><Text style={styles.filterLabel}>Show resources for</Text><View style={styles.filters}>{([ ["all", "Everyone"], ["patients", "Patients"], ["carers", "Carers"], ["professionals", "Professionals"] ] as const).map(([value, label]) => <Pressable key={value} accessibilityRole="button" accessibilityState={{ selected: audience === value }} onPress={() => setAudience(value)} style={({ pressed }) => [styles.filter, audience === value && styles.filterSelected, pressed && styles.pressed]}><Text style={[styles.filterText, audience === value && styles.filterTextSelected]}>{label}</Text></Pressable>)}</View><TextInput accessibilityLabel="Search verified resources" value={query} onChangeText={setQuery} maxLength={80} autoCorrect={false} placeholder="Search by topic, audience or resource type" placeholderTextColor="#596861" style={styles.search} />{query.length > 0 ? <Pressable accessibilityRole="button" onPress={() => setQuery("")} style={styles.clear}><Text style={styles.clearText}>Clear search</Text></Pressable> : null}<Text accessibilityLiveRegion="polite" style={styles.filterCount}>{resources.length} {resources.length === 1 ? "verified resource" : "verified resources"} shown</Text>{resources.length === 0 ? <Text style={styles.empty}>No verified links match these filters. Try another word or clear the search.</Text> : resources.map((resource) => <Pressable key={resource.id} accessibilityRole="link" accessibilityLabel={`Open external resource: ${resource.title}`} onPress={() => void Linking.openURL(resource.url)} style={styles.resource}><Text style={styles.title}>{resource.title}</Text><Text style={styles.meta}>{resource.kind} · Language: {resource.language === "en" ? "English" : resource.language} · Checked {resource.checkedOn} · For {resource.audience.join(", ")}</Text><Text style={styles.note}>{resource.note}</Text><Text style={styles.review}>Source appraisal: {resource.editorialStatus} · Clinical review: {resource.clinicalReviewStatus === "not-reviewed" ? "not recorded" : resource.clinicalReviewStatus}</Text><Text style={styles.rights}>Rights: {resource.rights}</Text><Text style={styles.external}>Opens an external service ↗</Text></Pressable>)}</Card>
+  return <AppPage><PageHeading compact eyebrow="Resource directory" title="Resources" summary="Links to other publishers. Checking a link is not a clinical review." />
+    <Card title="Find a resource">
+      <TextInput accessibilityLabel="Search resources" value={query} onChangeText={setQuery} maxLength={80} autoCorrect={false} placeholder="Search by topic or resource type" placeholderTextColor="#596861" style={styles.search} />
+      {query.length > 0 ? <Pressable accessibilityRole="button" onPress={() => setQuery("")} style={styles.clear}><Text style={styles.clearText}>Clear search</Text></Pressable> : null}
+      <Disclosure title={audience === "all" ? "Filter by audience (optional)" : `Filter by audience: ${audience}`}><Text style={styles.filterLabel}>Show resources for</Text><View style={styles.filters}>{([ ["all", "Everyone"], ["patients", "Patients"], ["carers", "Carers"], ["professionals", "Professionals"] ] as const).map(([value, label]) => <Pressable key={value} accessibilityRole="button" accessibilityState={{ selected: audience === value }} onPress={() => setAudience(value)} style={[styles.filter, audience === value && styles.filterSelected]}><Text style={[styles.filterText, audience === value && styles.filterTextSelected]}>{label}</Text></Pressable>)}</View></Disclosure>
+      <Text accessibilityLiveRegion="polite" style={styles.filterCount}>{resources.length} {resources.length === 1 ? "link" : "links"} shown</Text>
+      {resources.length === 0 ? <Text style={styles.empty}>No links match these filters. Try another word or clear the search.</Text> : resources.map((resource) => <View key={resource.id} style={styles.resource}>
+        <Link href={resource.url as any} target="_blank" rel="noopener noreferrer" asChild><Pressable accessibilityRole="link" accessibilityLabel={`Open external resource: ${resource.title}`}><Text style={styles.title}>{resource.title} ↗</Text></Pressable></Link>
+        <Text style={styles.meta}>{resource.kind.replace(/-/g, " ")} · {resource.language === "en" ? "English" : resource.language}</Text>
+        <Text style={styles.note}>{resource.note}</Text>
+        <Text style={styles.review}>Clinical review for this app: {resource.clinicalReviewStatus === "not-reviewed" ? "not recorded" : resource.clinicalReviewStatus.replace(/-/g, " ")}</Text>
+        <Disclosure title={`Source details: ${resource.title}`}>
+          <Text style={styles.meta}>Link checked {resource.checkedOn} · For {resource.audience.join(", ")}</Text>
+          <Text style={styles.note}>Source appraisal: {resource.editorialStatus === "candidate" ? "pending" : resource.editorialStatus.replace(/-/g, " ")}</Text>
+          <Text style={styles.rights}>Rights: {resource.rights}</Text>
+          <Text style={styles.note}>This directory does not endorse a treatment, service or community. External content may change. Links open an external service.</Text>
+        </Disclosure>
+      </View>)}
+    </Card>
     <Card title="Community links are being checked"><Text style={styles.body}>Three Facebook groups have been suggested for this directory. Their current names, purpose, language, access requirements and privacy context could not yet be independently verified, so the links are not listed here. Facebook is an external service; private groups may require membership and expose your Facebook identity to the group. No member posts or personal profiles are used.</Text><Text style={styles.note}>Candidate links are kept in the project’s editorial data and remain hidden until a dated verification is recorded.</Text></Card>
     <Text accessibilityLabel="Three community group candidates are pending verification" style={styles.meta}>Verification queue: {communityCandidates.length} group candidates · none currently listed</Text>
   </AppPage>;

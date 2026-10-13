@@ -1,0 +1,55 @@
+- link "Urgent help":
+  - /url: /urgent-help
+  - generic: Urgent help
+  - generic: ›
+- generic: VAD & Carotid Support
+- navigation "Main navigation":
+  - link "Home":
+    - /url: /
+    - generic: Home
+  - button "Menu":
+    - generic: Menu
+  - link "Text and display":
+    - /url: /accessibility
+    - generic: Text and display
+- link "Skip to main content":
+  - generic: Skip to main content
+- main:
+  - link "Back to home":
+    - /url: /
+    - generic: ←
+    - generic: Home
+  - generic: YOUR READING LIST
+  - heading "Saved guides." [level=1]
+  - generic: Keep a short list of guides on this device so you can find them again later.
+  - generic: Draft information · review pending
+  - generic: Clinical and patient/carer reviews are not yet recorded. For personal care questions, ask your doctor.
+  - link "About the review process":
+    - /url: /about
+    - generic: About the review process
+  - heading "Saved on this device" [level=2]
+  - link "Recovery, fatigue and quality of life Make room for changes in energy, confidence, mood and everyday life, even when they are hard to see. Draft · not approved for patient use":
+    - /url: /guide/recovery-and-quality-of-life
+    - generic: Recovery, fatigue and quality of life
+    - generic: Make room for changes in energy, confidence, mood and everyday life, even when they are hard to see.
+    - generic: Draft · not approved for patient use
+  - button "Export saved guide list":
+    - generic: Export saved guide list
+  - button "Delete all saved guides":
+    - generic: Delete all saved guides
+  - generic: 1 guide saved on this device.
+  - heading "Privacy and storage" [level=2]
+  - generic: Saving a guide may reveal an interest in this topic to anyone who can access this browser profile or device. On the web, this app uses browser local storage, which is not encrypted by the app and may be included in browser sync or backup. On iOS and Android, it uses Expo SecureStore; device and backup behavior can vary. Saving does not send the list to this project. Export creates a separate copy only after you choose Export; deleting here cannot remove exported or backed-up copies.
+  - generic: Development preview · general information only · not a medical service
+  - link "About and privacy":
+    - /url: /about
+    - generic: About and privacy
+  - link "Accessibility":
+    - /url: /accessibility
+    - generic: Accessibility
+  - link "Saved on this device":
+    - /url: /saved
+    - generic: Saved on this device
+  - link "Urgent help":
+    - /url: /urgent-help
+    - generic: Urgent help

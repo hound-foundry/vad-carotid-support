@@ -13,6 +13,8 @@ This is an implementation-facing inventory, not a privacy notice or legal opinio
 | Static page visits | Static host/browser | No app analytics or backend | Page load | Hosting logs may exist outside app control | Recheck hosting/CDN logs before launch |
 | External resources | User opens link | External publisher | User action | External service privacy policy applies | Link labels identify external destination |
 | Unsaved card drafts | Card editor | React memory in this app session | Typing/selection | None until user exports | Navigation preserves edits; reload loses them; clear-all clears memory |
+| Unsaved sheet drafts | Appointment/support tools | Separate in-memory sessions | Typing/selection | None until explicit export | Navigation preserves notes and choices; only Save persists; pending writes drain before clear all |
+| Guide reading state and library search | Guide/library controls | In-memory session only | Reading/search controls | None | Local/global pace agree; returning resumes the section/search; clear all resets them; reload loses them |
 | PDF fonts and export code | Bundled same-origin static assets | Browser memory/cache | PDF export | No fields are sent with the requests | Capture requests while generating a synthetic card |
 | Card PDFs, PNG and text | Shared filtered card presentation | Device-generated Blob/download or native share | Explicit preview action | Browser/device download, print or chosen share destination | Hidden dates omitted; content matches preview; filenames/metadata are neutral |
 | Card print document | Escaped shared presentation | Temporary same-origin iframe or native print adapter | Print card | Operating-system/browser print destination | No form instructions; frame removed after print flow |
