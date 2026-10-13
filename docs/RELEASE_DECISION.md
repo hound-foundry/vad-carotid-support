@@ -6,7 +6,7 @@ This record is intentionally blocked until the required human reviews are comple
 |---|---|---|---|---|---|
 | Clinical claims | `content/claimLedger.json` and clinical review packet | Qualified clinician | Not reviewed | All clinical claims remain draft | — |
 | Patient/carer usefulness | `docs/USABILITY_REVIEW.md` and feedback log | Patient/carer reviewer | Not reviewed | No lived-experience review recorded | — |
-| Accessibility | Assistive-technology test matrix | Accessibility tester | Not reviewed | Manual route checks incomplete | — |
+| Accessibility | `docs/ACCESSIBILITY_TEST_MATRIX.md` | Accessibility tester | Not reviewed | Manual route checks incomplete | — |
 | Privacy/security | `docs/DATA_FLOW.md` and automated tests | Technical/privacy reviewer | Not reviewed | Hosting and external-copy review incomplete | — |
 | Legal/market | `docs/REGULATORY_SCREENING.md` | Qualified legal reviewer | Blocked | Jurisdiction applicability unresolved | — |
 | Translation | Language review records | Language reviewer | Not started | No translated release approved | — |
