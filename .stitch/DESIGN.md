@@ -48,7 +48,7 @@ Reading is controlled by the person. There are no decorative transitions, automa
 
 ### Functional States
 
-- Alert paper `#F9E9E2` and alert ink `#713A2D`: persistent urgent-help row and existing notices.
+- Alert paper `#F9E9E2` and alert ink `#713A2D`: existing draft notices. Routine screens use a calm blue medical-help link rather than a warning strip.
 - Selection, save, restore, failure and draft status also have written labels; colour alone carries no meaning.
 - `themeFor` supplies light, blue-grey dark and both high-contrast variants. Exported `tokens.json` contains resolved variants and bounded contrast checks. Dark focus uses `#BDD9EE`; high contrast increases outline width to 4px. Filled controls retain dark backgrounds and white labels. Do not infer accessibility certification from these tokens.
 
@@ -56,7 +56,7 @@ Reading is controlled by the person. There are no decorative transitions, automa
 
 ### Hierarchy & Weights
 
-All text uses system sans-serif. Web text uses the shared system font stack; native text uses the platform default. Page titles retain 32px/600, navigation 16/700, card headings 17/700 and card-preview headings 26/700 before accessibility scaling. PDF output uses the existing embedded Noto Sans fonts. Native rendering still requires device verification.
+All text uses system sans-serif. Web text uses the shared system font stack; native text uses the platform default. Compact page titles use 24px/700, Home uses 28px/600, app navigation uses 18px, and card-preview headings retain their authored sizes before accessibility scaling. PDF output uses the existing embedded Noto Sans fonts. Native rendering still requires device verification.
 
 The `Ui.Text` wrapper enforces an 18px floor for all text, then multiplies by the selected 100–200% scale. This also keeps smaller authored notes and labels readable. These effective rules take precedence over smaller sizes in route StyleSheets.
 
@@ -78,7 +78,9 @@ Ordinary `AppPage.Card`: 15px corners, 1px border, 18px padding and 13px bottom 
 
 ### Navigation
 
-Four Home actions: Understand dissection, Prepare an appointment, Make a card, Help someone. Header: Home, Menu, Text and display. Menu expands inline and closes with Escape, returning focus. Keep Urgent help visible. Do not add a second navigation system, animated drawer or unrelated bottom tab bar as part of a tool import.
+The user requested Blushie's app structure on 13 October 2026. The shared shell now has a compact identity/utility header and one persistent bottom navigation: Home, Guides, Tools and Saved. Menu contains five secondary destinations; it expands inline and closes with Escape, returning focus. The medical-help destination remains `/urgent-help`, reached through “Feeling unwell?” and the footer's “Medical help”. Its emergency instructions and B.E. F.A.S.T. copy remain unchanged.
+
+Four Home actions remain: Understand dissection, Prepare an appointment, Make a card, Help someone. Normal phone layouts use two columns; below 360px they use rows. Enlarged text uses one column, shorter introductory copy and fewer decorative icons. The dock changes to two rows on narrow screens with enlarged text; labels remain visible. At the largest text setting, the compact header uses a labelled menu icon and an Aa display control. Bottom navigation occupies its own layout space rather than overlapping content, and is excluded from print output.
 
 ### Inputs & Forms
 
@@ -92,7 +94,7 @@ Use existing selectable prompts, one-section reading, retained session-only posi
 
 ### Grid & Structure
 
-The ordinary page has a 920px maximum width; wide pages use 1120px. Header max width is 980px. These are current measured differences, not one invented shared width. Page gutters are 24px, 16px below 390px, and 28px in roomy mode before the narrow override. Header gutters are 16px.
+The ordinary page and header have a 920px maximum width; existing wide pages use 1120px. Shared gutters are 24px, 16px below 390px, and 28px in roomy mode before the narrow override. The dock is centred within a 620px maximum width and grows with its labels.
 
 ### Whitespace Strategy
 
@@ -104,7 +106,7 @@ Left-aligned headings and reading blocks, a centred content container, flexible 
 
 ### Responsive Behavior & Touch
 
-Review at 390×844, 320×640, 1440×900 and 844×320. Test enlarged app text separately from actual browser zoom. Menu space uses the measured header and an 80px focus reserve; its current internal scrolling is an acknowledged usability limit. Native safe areas, keyboard clearance, VoiceOver and TalkBack need physical-device or simulator evidence.
+Review at 390×844, 320×640, desktop and 844×320. Test enlarged app text separately from actual browser zoom. Menu space accounts for the measured header and dock, retaining space for the page and focus. Native safe areas, keyboard clearance, VoiceOver and TalkBack need physical-device or simulator evidence.
 
 ## 6. Design System Notes for Stitch Generation
 

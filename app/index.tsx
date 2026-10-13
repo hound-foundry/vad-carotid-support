@@ -1,21 +1,34 @@
 import { Link } from "../src/components/AppLink";
 
-import { StyleSheet } from "react-native";
+import { StyleSheet, useWindowDimensions } from "react-native";
 import { AppPage, palette } from "../src/components/AppPage";
 import { Pressable, Text, View } from "../src/components/Ui";
+import { ActionLink } from "../src/components/ActionLink";
+import { useAccessibility } from "../src/features/accessibility/AccessibilityProvider";
 
 const actions = [
-  { href: "/learn", title: "Understand dissection", detail: "Guides and unfamiliar words." },
-  { href: "/appointments", title: "Prepare an appointment", detail: "Choose questions for your doctor." },
-  { href: "/cards", title: "Make a card", detail: "Medical information or a personal milestone." },
-  { href: "/supporting-someone", title: "Help someone", detail: "Practical ideas for family and carers." },
+  { href: "/learn", title: "Understand dissection", detail: "Guides and unfamiliar words.", icon: "guides" },
+  { href: "/appointments", title: "Prepare an appointment", detail: "Choose questions for your doctor.", icon: "appointment" },
+  { href: "/cards", title: "Make a card", detail: "Medical information or a personal milestone.", icon: "card" },
+  { href: "/supporting-someone", title: "Help someone", detail: "Practical ideas for family and carers.", icon: "support" },
 ] as const;
 export default function HomeScreen() {
+  const { settings } = useAccessibility();
+  const { width } = useWindowDimensions();
+  const singleColumn = width < 360 || (settings.textScale >= 1.5 && width < 700);
+  const rows = singleColumn ? actions.map((action) => [action]) : [actions.slice(0, 2), actions.slice(2)];
   return <AppPage>
-    <View style={styles.intro}><Text accessibilityRole="header" aria-level={1} style={styles.title}>Guides and tools</Text></View>
-    <View style={styles.actions}>{actions.map((action) => <Link key={action.href} href={action.href as any} asChild><Pressable accessibilityRole="link" style={styles.action}><Text style={styles.actionTitle}>{action.title}</Text><Text style={styles.detail}>{action.detail}</Text></Pressable></Link>)}</View>
-    <Link href={"/saved" as any} asChild><Pressable accessibilityRole="link" style={styles.saved}><Text style={styles.savedText}>Open saved guides, sheets and cards</Text></Pressable></Link>
-    <View style={styles.note}><Text accessibilityRole="header" aria-level={2} style={styles.noteTitle}>What this app can and cannot do</Text><Text style={styles.summary}>For adults affected by vertebral or carotid artery dissection, and the people supporting them.</Text><Text style={styles.noteBody}>Free information and tools to prepare questions and describe what helps. Guides are drafts awaiting clinical and patient/carer review. For your own care, ask your doctor.</Text></View>
+    <View style={styles.intro}><Text accessibilityRole="header" aria-level={1} style={styles.title}>Home</Text>{settings.textScale < 1.5 ? <Text style={styles.summary}>Vertebral and carotid artery support.</Text> : null}</View>
+    <View style={styles.actions}>{rows.map((row, index) => <View key={index} style={styles.row}>{row.map((action) => <ActionLink key={action.href} {...action} compact={width < 700} inline={width < 360 && settings.textScale < 1.5} showIcon={settings.textScale < 1.5} />)}</View>)}</View>
+    <View style={styles.note}>
+      <Text style={styles.noteBody}>Information and preparation, not medical care. Guides are drafts awaiting review.</Text>
+      <Link href="/about" asChild><Pressable accessibilityRole="link" style={styles.about}><Text style={styles.aboutText}>About this app and privacy</Text></Pressable></Link>
+    </View>
   </AppPage>;
 }
-const styles = StyleSheet.create({ intro: { paddingTop: 20, paddingBottom: 18 }, title: { color: palette.ink, fontSize: 28, fontWeight: "600" }, summary: { color: palette.text, fontSize: 18, marginTop: 6 }, actions: { gap: 10 }, action: { paddingVertical: 12, paddingHorizontal: 18, borderRadius: 22, backgroundColor: palette.mint, borderWidth: 1, borderColor: palette.line }, actionTitle: { color: palette.ink, fontSize: 20, fontWeight: "700" }, detail: { color: palette.text, fontSize: 16, marginTop: 2 }, saved: { marginVertical: 10, justifyContent: "center" }, savedText: { color: palette.tealDark, fontSize: 16, fontWeight: "700", textDecorationLine: "underline" }, note: { paddingTop: 12, borderTopWidth: 1, borderTopColor: palette.line }, noteTitle: { color: palette.ink, fontSize: 18, fontWeight: "700" }, noteBody: { color: palette.text, fontSize: 16, marginTop: 5 } });
+const styles = StyleSheet.create({
+  intro: { paddingTop: 24, paddingBottom: 20 }, title: { color: palette.ink, fontSize: 28, fontWeight: "600" }, summary: { color: palette.text, fontSize: 18, marginTop: 5 },
+  actions: { gap: 12 }, row: { flexDirection: "row", gap: 12 },
+  note: { paddingTop: 20 }, noteBody: { color: palette.muted, fontSize: 18, maxWidth: 680 },
+  about: { alignSelf: "flex-start", justifyContent: "center" }, aboutText: { color: palette.tealDark, fontSize: 18, fontWeight: "600" },
+});

@@ -14,10 +14,13 @@ export function AppPage({ children, wide = false, scrollRef }: { children: React
   const narrow = useWindowDimensions().width < 390;
   const internalMainRef = useRef<NativeScrollView>(null);
   const mainRef = scrollRef ?? internalMainRef;
-  return <SafeAreaView style={styles.safe} edges={["bottom"]}>{Platform.OS === "web" ? <Pressable testID="skip-link" accessibilityRole="link" accessibilityLabel="Skip to main content" nativeID="skip-to-content" style={styles.skipLink} onPress={() => (mainRef.current?.getScrollableNode() as HTMLElement | undefined)?.focus()}><Text style={styles.skipText}>Skip to main content</Text></Pressable> : null}<ScrollView ref={mainRef} nativeID="main-content" {...(Platform.OS === "web" ? { role: "main" as const, tabIndex: -1 as const } : {})} contentContainerStyle={[styles.page, settings.spacing === "roomy" && styles.pageRoomy, narrow && styles.pageNarrow, wide && styles.wide]}>{children}<SiteFooter /></ScrollView></SafeAreaView>;
+  return <SafeAreaView style={styles.safe} edges={[]}>{Platform.OS === "web" ? <Pressable testID="skip-link" accessibilityRole="link" accessibilityLabel="Skip to main content" nativeID="skip-to-content" style={styles.skipLink} onPress={() => (mainRef.current?.getScrollableNode() as HTMLElement | undefined)?.focus()}><Text style={styles.skipText}>Skip to main content</Text></Pressable> : null}<ScrollView ref={mainRef} nativeID="main-content" {...(Platform.OS === "web" ? { role: "main" as const, tabIndex: -1 as const } : {})} contentContainerStyle={[styles.page, settings.spacing === "roomy" && styles.pageRoomy, narrow && styles.pageNarrow, wide && styles.wide]}>{children}<SiteFooter /></ScrollView></SafeAreaView>;
 }
 
 export function BackHome() {
+  // The persistent dock supplies Home on a phone; avoid a duplicate row above
+  // each page. Desktop keeps the established breadcrumb for longer reading.
+  if (useWindowDimensions().width < 700) return null;
   return <Link href="/" asChild><Pressable accessibilityRole="link" accessibilityLabel="Back to home" style={styles.backLink}><Text style={styles.backArrow}>←</Text><Text style={styles.back}>Home</Text></Pressable></Link>;
 }
 
@@ -54,7 +57,7 @@ function SiteFooter() {
       <Link href="/about" asChild><Pressable accessibilityRole="link" style={styles.footerLink}><Text style={styles.footerLinkText}>About and privacy</Text></Pressable></Link>
       <Link href="/accessibility" asChild><Pressable accessibilityRole="link" style={styles.footerLink}><Text style={styles.footerLinkText}>Accessibility</Text></Pressable></Link>
       <Link href={"/saved" as any} asChild><Pressable accessibilityRole="link" style={styles.footerLink}><Text style={styles.footerLinkText}>Saved on this device</Text></Pressable></Link>
-      <Link href="/urgent-help" asChild><Pressable accessibilityRole="link" style={styles.footerLink}><Text style={styles.footerLinkText}>Urgent help</Text></Pressable></Link>
+      <Link href="/urgent-help" asChild><Pressable accessibilityRole="link" style={styles.footerLink}><Text style={styles.footerLinkText}>Medical help</Text></Pressable></Link>
     </View>
   </View>;
 }
@@ -74,7 +77,7 @@ const styles = StyleSheet.create({
   headingRoomy: { paddingTop: 22, paddingBottom: 28 },
   headingCompact: { paddingTop: 14, paddingBottom: 12 },
   eyebrow: { color: palette.tealDark, fontSize: 11, fontWeight: "800", letterSpacing: 1.65 },
-  title: { marginTop: 11, color: palette.ink, fontSize: 32, lineHeight: 40, fontWeight: "600" },
+  title: { marginTop: 11, color: palette.ink, fontSize: 24, lineHeight: 36, fontWeight: "700" },
   titleCompact: { marginTop: 0 },
   summary: { marginTop: 10, color: palette.text, fontSize: 16, lineHeight: 25, maxWidth: 720 },
   summaryRoomy: { lineHeight: 29 },

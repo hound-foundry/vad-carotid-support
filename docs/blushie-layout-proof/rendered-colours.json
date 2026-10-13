@@ -1,0 +1,86 @@
+[
+  {
+    "contrast": "standard",
+    "pairs": [
+      {
+        "background": "rgb(232, 239, 244)",
+        "foreground": "rgb(33, 76, 112)",
+        "label": "Feeling unwell?"
+      },
+      {
+        "background": "rgb(232, 239, 244)",
+        "foreground": "rgb(33, 76, 112)",
+        "label": "Home"
+      },
+      {
+        "background": "rgb(245, 246, 244)",
+        "foreground": "rgb(24, 50, 72)",
+        "label": "Home"
+      }
+    ],
+    "theme": "light"
+  },
+  {
+    "contrast": "standard",
+    "pairs": [
+      {
+        "background": "rgb(35, 59, 78)",
+        "foreground": "rgb(189, 217, 238)",
+        "label": "Feeling unwell?"
+      },
+      {
+        "background": "rgb(35, 59, 78)",
+        "foreground": "rgb(189, 217, 238)",
+        "label": "Home"
+      },
+      {
+        "background": "rgb(18, 29, 39)",
+        "foreground": "rgb(240, 244, 247)",
+        "label": "Home"
+      }
+    ],
+    "theme": "dark"
+  },
+  {
+    "contrast": "high",
+    "pairs": [
+      {
+        "background": "rgb(32, 55, 70)",
+        "foreground": "rgb(220, 239, 255)",
+        "label": "Feeling unwell?"
+      },
+      {
+        "background": "rgb(32, 55, 70)",
+        "foreground": "rgb(220, 239, 255)",
+        "label": "Home"
+      },
+      {
+        "background": "rgb(16, 24, 32)",
+        "foreground": "rgb(255, 255, 255)",
+        "label": "Home"
+      }
+    ],
+    "theme": "dark"
+  },
+  {
+    "contrast": "high",
+    "pairs": [
+      {
+        "background": "rgb(232, 239, 244)",
+        "foreground": "rgb(23, 59, 88)",
+        "label": "Feeling unwell?"
+      },
+      {
+        "background": "rgb(232, 239, 244)",
+        "foreground": "rgb(23, 59, 88)",
+        "label": "Home"
+      },
+      {
+        "background": "rgb(255, 255, 255)",
+        "foreground": "rgb(17, 17, 17)",
+        "label": "Home"
+      }
+    ],
+    "theme": "light"
+  }
+]

@@ -5,12 +5,13 @@
   "framework": "expo-react-native",
   "designDocument": ".stitch/DESIGN.md",
   "themeSource": "src/components/theme.mjs",
-  "styleSources": ["src/components/AppPage.tsx", "src/components/SiteHeader.tsx", "src/features/cards/CardUi.tsx"],
+  "styleSources": ["src/components/AppPage.tsx", "src/components/SiteHeader.tsx", "src/components/AppNavigation.tsx", "src/components/ActionLink.tsx", "src/features/cards/CardUi.tsx"],
   "protectedPaths": ["app.json", "src/brand.mjs", "src/components/theme.ts", "app/_layout.tsx", "app/guide/[slug].tsx", "src/components/Ui.tsx", "src/components/webStyles.ts", "src/features/local-data/keys.mjs", "src/features/cards/model.mjs", "src/features/cards/store.ts", "src/features/cards/export.ts", "src/features/cards/document.mjs", "src/features/cards/pdf.mjs", "src/features/appointments/model.mjs", "src/features/support-preferences/model.mjs", "src/features/saved-guides/model.mjs"],
   "privacy": {"localOnly": true, "explicitSave": true, "explicitExport": true, "separateCards": true, "savedKeyCount": 6},
   "routes": [
     {"path": "/", "label": "Home", "source": "app/index.tsx"},
     {"path": "/learn", "label": "Guides", "source": "app/learn.tsx"},
+    {"path": "/tools", "label": "Tools", "source": "app/tools.tsx"},
     {"path": "/appointments", "label": "Appointment sheet", "source": "app/appointments.tsx"},
     {"path": "/cards", "label": "Choose a card", "source": "app/cards.tsx"},
     {"path": "/personal-card", "label": "Medical and communication card", "source": "app/personal-card.tsx"},
@@ -18,7 +19,7 @@
     {"path": "/support-preferences", "label": "Support preferences", "source": "app/support-preferences.tsx"},
     {"path": "/supporting-someone", "label": "Help someone", "source": "app/supporting-someone.tsx"},
     {"path": "/accessibility", "label": "Text and display", "source": "app/accessibility.tsx"},
-    {"path": "/urgent-help", "label": "Urgent help", "source": "app/urgent-help.tsx"}
+    {"path": "/urgent-help", "label": "Medical help", "source": "app/urgent-help.tsx"}
   ],
   "viewports": [
     {"id": "phone", "label": "Phone", "width": 390, "height": 844},

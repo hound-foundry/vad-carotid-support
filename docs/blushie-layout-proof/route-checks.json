@@ -1,0 +1,4827 @@
+[
+  {
+    "heading": "Home",
+    "helpBottom": 110,
+    "helpTop": 56,
+    "links": [
+      {
+        "bottom": 626,
+        "current": "page",
+        "height": 66,
+        "label": "Home",
+        "width": 68
+      },
+      {
+        "bottom": 626,
+        "current": null,
+        "height": 66,
+        "label": "Guides",
+        "width": 68
+      },
+      {
+        "bottom": 626,
+        "current": null,
+        "height": 66,
+        "label": "Tools",
+        "width": 68
+      },
+      {
+        "bottom": 626,
+        "current": null,
+        "height": 66,
+        "label": "Saved",
+        "width": 68
+      }
+    ],
+    "mainBottom": 546,
+    "mainHeight": 427,
+    "navBottom": 640,
+    "navTop": 546,
+    "scrollWidth": 305,
+    "url": "/",
+    "viewport": {
+      "height": 640,
+      "width": 320
+    },
+    "width": 305,
+    "requested": "/",
+    "mode": "normal-320"
+  },
+  {
+    "heading": "Understand dissection",
+    "helpBottom": 110,
+    "helpTop": 56,
+    "links": [
+      {
+        "bottom": 626,
+        "current": null,
+        "height": 66,
+        "label": "Home",
+        "width": 68
+      },
+      {
+        "bottom": 626,
+        "current": "page",
+        "height": 66,
+        "label": "Guides",
+        "width": 68
+      },
+      {
+        "bottom": 626,
+        "current": null,
+        "height": 66,
+        "label": "Tools",
+        "width": 68
+      },
+      {
+        "bottom": 626,
+        "current": null,
+        "height": 66,
+        "label": "Saved",
+        "width": 68
+      }
+    ],
+    "mainBottom": 546,
+    "mainHeight": 427,
+    "navBottom": 640,
+    "navTop": 546,
+    "scrollWidth": 305,
+    "url": "/learn",
+    "viewport": {
+      "height": 640,
+      "width": 320
+    },
+    "width": 305,
+    "requested": "/learn",
+    "mode": "normal-320"
+  },
+  {
+    "heading": "Tools",
+    "helpBottom": 110,
+    "helpTop": 56,
+    "links": [
+      {
+        "bottom": 626,
+        "current": null,
+        "height": 66,
+        "label": "Home",
+        "width": 68
+      },
+      {
+        "bottom": 626,
+        "current": null,
+        "height": 66,
+        "label": "Guides",
+        "width": 68
+      },
+      {
+        "bottom": 626,
+        "current": "page",
+        "height": 66,
+        "label": "Tools",
+        "width": 68
+      },
+      {
+        "bottom": 626,
+        "current": null,
+        "height": 66,
+        "label": "Saved",
+        "width": 68
+      }
+    ],
+    "mainBottom": 546,
+    "mainHeight": 427,
+    "navBottom": 640,
+    "navTop": 546,
+    "scrollWidth": 305,
+    "url": "/tools",
+    "viewport": {
+      "height": 640,
+      "width": 320
+    },
+    "width": 305,
+    "requested": "/tools",
+    "mode": "normal-320"
+  },
+  {
+    "heading": "Prepare an appointment",
+    "helpBottom": 110,
+    "helpTop": 56,
+    "links": [
+      {
+        "bottom": 626,
+        "current": null,
+        "height": 66,
+        "label": "Home",
+        "width": 68
+      },
+      {
+        "bottom": 626,
+        "current": null,
+        "height": 66,
+        "label": "Guides",
+        "width": 68
+      },
+      {
+        "bottom": 626,
+        "current": "page",
+        "height": 66,
+        "label": "Tools",
+        "width": 68
+      },
+      {
+        "bottom": 626,
+        "current": null,
+        "height": 66,
+        "label": "Saved",
+        "width": 68
+      }
+    ],
+    "mainBottom": 546,
+    "mainHeight": 427,
+    "navBottom": 640,
+    "navTop": 546,
+    "scrollWidth": 305,
+    "url": "/appointments",
+    "viewport": {
+      "height": 640,
+      "width": 320
+    },
+    "width": 305,
+    "requested": "/appointments",
+    "mode": "normal-320"
+  },
+  {
+    "heading": "Choose a card",
+    "helpBottom": 110,
+    "helpTop": 56,
+    "links": [
+      {
+        "bottom": 626,
+        "current": null,
+        "height": 66,
+        "label": "Home",
+        "width": 68
+      },
+      {
+        "bottom": 626,
+        "current": null,
+        "height": 66,
+        "label": "Guides",
+        "width": 68
+      },
+      {
+        "bottom": 626,
+        "current": "page",
+        "height": 66,
+        "label": "Tools",
+        "width": 68
+      },
+      {
+        "bottom": 626,
+        "current": null,
+        "height": 66,
+        "label": "Saved",
+        "width": 68
+      }
+    ],
+    "mainBottom": 546,
+    "mainHeight": 427,
+    "navBottom": 640,
+    "navTop": 546,
+    "scrollWidth": 305,
+    "url": "/cards",
+    "viewport": {
+      "height": 640,
+      "width": 320
+    },
+    "width": 305,
+    "requested": "/cards",
+    "mode": "normal-320"
+  },
+  {
+    "heading": "Medical and communication card",
+    "helpBottom": 110,
+    "helpTop": 56,
+    "links": [
+      {
+        "bottom": 626,
+        "current": null,
+        "height": 66,
+        "label": "Home",
+        "width": 68
+      },
+      {
+        "bottom": 626,
+        "current": null,
+        "height": 66,
+        "label": "Guides",
+        "width": 68
+      },
+      {
+        "bottom": 626,
+        "current": "page",
+        "height": 66,
+        "label": "Tools",
+        "width": 68
+      },
+      {
+        "bottom": 626,
+        "current": null,
+        "height": 66,
+        "label": "Saved",
+        "width": 68
+      }
+    ],
+    "mainBottom": 546,
+    "mainHeight": 427,
+    "navBottom": 640,
+    "navTop": 546,
+    "scrollWidth": 305,
+    "url": "/personal-card",
+    "viewport": {
+      "height": 640,
+      "width": 320
+    },
+    "width": 305,
+    "requested": "/personal-card",
+    "mode": "normal-320"
+  },
+  {
+    "heading": "Anniversary or milestone card",
+    "helpBottom": 110,
+    "helpTop": 56,
+    "links": [
+      {
+        "bottom": 626,
+        "current": null,
+        "height": 66,
+        "label": "Home",
+        "width": 68
+      },
+      {
+        "bottom": 626,
+        "current": null,
+        "height": 66,
+        "label": "Guides",
+        "width": 68
+      },
+      {
+        "bottom": 626,
+        "current": "page",
+        "height": 66,
+        "label": "Tools",
+        "width": 68
+      },
+      {
+        "bottom": 626,
+        "current": null,
+        "height": 66,
+        "label": "Saved",
+        "width": 68
+      }
+    ],
+    "mainBottom": 546,
+    "mainHeight": 427,
+    "navBottom": 640,
+    "navTop": 546,
+    "scrollWidth": 305,
+    "url": "/milestone-card",
+    "viewport": {
+      "height": 640,
+      "width": 320
+    },
+    "width": 305,
+    "requested": "/milestone-card",
+    "mode": "normal-320"
+  },
+  {
+    "heading": "Saved on this device",
+    "helpBottom": 110,
+    "helpTop": 56,
+    "links": [
+      {
+        "bottom": 626,
+        "current": null,
+        "height": 66,
+        "label": "Home",
+        "width": 68
+      },
+      {
+        "bottom": 626,
+        "current": null,
+        "height": 66,
+        "label": "Guides",
+        "width": 68
+      },
+      {
+        "bottom": 626,
+        "current": null,
+        "height": 66,
+        "label": "Tools",
+        "width": 68
+      },
+      {
+        "bottom": 626,
+        "current": "page",
+        "height": 66,
+        "label": "Saved",
+        "width": 68
+      }
+    ],
+    "mainBottom": 546,
+    "mainHeight": 427,
+    "navBottom": 640,
+    "navTop": 546,
+    "scrollWidth": 305,
+    "url": "/saved",
+    "viewport": {
+      "height": 640,
+      "width": 320
+    },
+    "width": 305,
+    "requested": "/saved",
+    "mode": "normal-320"
+  },
+  {
+    "heading": "Saved guides.",
+    "helpBottom": 110,
+    "helpTop": 56,
+    "links": [
+      {
+        "bottom": 626,
+        "current": null,
+        "height": 66,
+        "label": "Home",
+        "width": 68
+      },
+      {
+        "bottom": 626,
+        "current": null,
+        "height": 66,
+        "label": "Guides",
+        "width": 68
+      },
+      {
+        "bottom": 626,
+        "current": null,
+        "height": 66,
+        "label": "Tools",
+        "width": 68
+      },
+      {
+        "bottom": 626,
+        "current": "page",
+        "height": 66,
+        "label": "Saved",
+        "width": 68
+      }
+    ],
+    "mainBottom": 546,
+    "mainHeight": 427,
+    "navBottom": 640,
+    "navTop": 546,
+    "scrollWidth": 305,
+    "url": "/saved-guides",
+    "viewport": {
+      "height": 640,
+      "width": 320
+    },
+    "width": 305,
+    "requested": "/saved-guides",
+    "mode": "normal-320"
+  },
+  {
+    "heading": "Support preferences",
+    "helpBottom": 110,
+    "helpTop": 56,
+    "links": [
+      {
+        "bottom": 626,
+        "current": null,
+        "height": 66,
+        "label": "Home",
+        "width": 68
+      },
+      {
+        "bottom": 626,
+        "current": null,
+        "height": 66,
+        "label": "Guides",
+        "width": 68
+      },
+      {
+        "bottom": 626,
+        "current": "page",
+        "height": 66,
+        "label": "Tools",
+        "width": 68
+      },
+      {
+        "bottom": 626,
+        "current": null,
+        "height": 66,
+        "label": "Saved",
+        "width": 68
+      }
+    ],
+    "mainBottom": 546,
+    "mainHeight": 427,
+    "navBottom": 640,
+    "navTop": 546,
+    "scrollWidth": 305,
+    "url": "/support-preferences",
+    "viewport": {
+      "height": 640,
+      "width": 320
+    },
+    "width": 305,
+    "requested": "/support-preferences",
+    "mode": "normal-320"
+  },
+  {
+    "heading": "Help someone",
+    "helpBottom": 110,
+    "helpTop": 56,
+    "links": [
+      {
+        "bottom": 626,
+        "current": null,
+        "height": 66,
+        "label": "Home",
+        "width": 68
+      },
+      {
+        "bottom": 626,
+        "current": "page",
+        "height": 66,
+        "label": "Guides",
+        "width": 68
+      },
+      {
+        "bottom": 626,
+        "current": null,
+        "height": 66,
+        "label": "Tools",
+        "width": 68
+      },
+      {
+        "bottom": 626,
+        "current": null,
+        "height": 66,
+        "label": "Saved",
+        "width": 68
+      }
+    ],
+    "mainBottom": 546,
+    "mainHeight": 427,
+    "navBottom": 640,
+    "navTop": 546,
+    "scrollWidth": 305,
+    "url": "/supporting-someone",
+    "viewport": {
+      "height": 640,
+      "width": 320
+    },
+    "width": 305,
+    "requested": "/supporting-someone",
+    "mode": "normal-320"
+  },
+  {
+    "heading": "Look up a term",
+    "helpBottom": 110,
+    "helpTop": 56,
+    "links": [
+      {
+        "bottom": 626,
+        "current": null,
+        "height": 66,
+        "label": "Home",
+        "width": 68
+      },
+      {
+        "bottom": 626,
+        "current": "page",
+        "height": 66,
+        "label": "Guides",
+        "width": 68
+      },
+      {
+        "bottom": 626,
+        "current": null,
+        "height": 66,
+        "label": "Tools",
+        "width": 68
+      },
+      {
+        "bottom": 626,
+        "current": null,
+        "height": 66,
+        "label": "Saved",
+        "width": 68
+      }
+    ],
+    "mainBottom": 546,
+    "mainHeight": 427,
+    "navBottom": 640,
+    "navTop": 546,
+    "scrollWidth": 305,
+    "url": "/glossary",
+    "viewport": {
+      "height": 640,
+      "width": 320
+    },
+    "width": 305,
+    "requested": "/glossary",
+    "mode": "normal-320"
+  },
+  {
+    "heading": "Resources",
+    "helpBottom": 110,
+    "helpTop": 56,
+    "links": [
+      {
+        "bottom": 626,
+        "current": null,
+        "height": 66,
+        "label": "Home",
+        "width": 68
+      },
+      {
+        "bottom": 626,
+        "current": "page",
+        "height": 66,
+        "label": "Guides",
+        "width": 68
+      },
+      {
+        "bottom": 626,
+        "current": null,
+        "height": 66,
+        "label": "Tools",
+        "width": 68
+      },
+      {
+        "bottom": 626,
+        "current": null,
+        "height": 66,
+        "label": "Saved",
+        "width": 68
+      }
+    ],
+    "mainBottom": 546,
+    "mainHeight": 427,
+    "navBottom": 640,
+    "navTop": 546,
+    "scrollWidth": 305,
+    "url": "/resources",
+    "viewport": {
+      "height": 640,
+      "width": 320
+    },
+    "width": 305,
+    "requested": "/resources",
+    "mode": "normal-320"
+  },
+  {
+    "heading": "About and privacy",
+    "helpBottom": 110,
+    "helpTop": 56,
+    "links": [
+      {
+        "bottom": 626,
+        "current": null,
+        "height": 66,
+        "label": "Home",
+        "width": 68
+      },
+      {
+        "bottom": 626,
+        "current": null,
+        "height": 66,
+        "label": "Guides",
+        "width": 68
+      },
+      {
+        "bottom": 626,
+        "current": null,
+        "height": 66,
+        "label": "Tools",
+        "width": 68
+      },
+      {
+        "bottom": 626,
+        "current": null,
+        "height": 66,
+        "label": "Saved",
+        "width": 68
+      }
+    ],
+    "mainBottom": 546,
+    "mainHeight": 427,
+    "navBottom": 640,
+    "navTop": 546,
+    "scrollWidth": 305,
+    "url": "/about",
+    "viewport": {
+      "height": 640,
+      "width": 320
+    },
+    "width": 305,
+    "requested": "/about",
+    "mode": "normal-320"
+  },
+  {
+    "heading": "Text and display",
+    "helpBottom": 110,
+    "helpTop": 56,
+    "links": [
+      {
+        "bottom": 626,
+        "current": null,
+        "height": 66,
+        "label": "Home",
+        "width": 68
+      },
+      {
+        "bottom": 626,
+        "current": null,
+        "height": 66,
+        "label": "Guides",
+        "width": 68
+      },
+      {
+        "bottom": 626,
+        "current": null,
+        "height": 66,
+        "label": "Tools",
+        "width": 68
+      },
+      {
+        "bottom": 626,
+        "current": null,
+        "height": 66,
+        "label": "Saved",
+        "width": 68
+      }
+    ],
+    "mainBottom": 546,
+    "mainHeight": 427,
+    "navBottom": 640,
+    "navTop": 546,
+    "scrollWidth": 305,
+    "url": "/accessibility",
+    "viewport": {
+      "height": 640,
+      "width": 320
+    },
+    "width": 305,
+    "requested": "/accessibility",
+    "mode": "normal-320"
+  },
+  {
+    "heading": "Medical help",
+    "helpBottom": 110,
+    "helpTop": 56,
+    "links": [
+      {
+        "bottom": 626,
+        "current": null,
+        "height": 66,
+        "label": "Home",
+        "width": 68
+      },
+      {
+        "bottom": 626,
+        "current": null,
+        "height": 66,
+        "label": "Guides",
+        "width": 68
+      },
+      {
+        "bottom": 626,
+        "current": null,
+        "height": 66,
+        "label": "Tools",
+        "width": 68
+      },
+      {
+        "bottom": 626,
+        "current": null,
+        "height": 66,
+        "label": "Saved",
+        "width": 68
+      }
+    ],
+    "mainBottom": 546,
+    "mainHeight": 427,
+    "navBottom": 640,
+    "navTop": 546,
+    "scrollWidth": 305,
+    "url": "/urgent-help",
+    "viewport": {
+      "height": 640,
+      "width": 320
+    },
+    "width": 305,
+    "requested": "/urgent-help",
+    "mode": "normal-320"
+  },
+  {
+    "heading": "Dissection and stroke",
+    "helpBottom": 110,
+    "helpTop": 56,
+    "links": [
+      {
+        "bottom": 626,
+        "current": null,
+        "height": 66,
+        "label": "Home",
+        "width": 68
+      },
+      {
+        "bottom": 626,
+        "current": "page",
+        "height": 66,
+        "label": "Guides",
+        "width": 68
+      },
+      {
+        "bottom": 626,
+        "current": null,
+        "height": 66,
+        "label": "Tools",
+        "width": 68
+      },
+      {
+        "bottom": 626,
+        "current": null,
+        "height": 66,
+        "label": "Saved",
+        "width": 68
+      }
+    ],
+    "mainBottom": 546,
+    "mainHeight": 427,
+    "navBottom": 640,
+    "navTop": 546,
+    "scrollWidth": 305,
+    "url": "/with-stroke",
+    "viewport": {
+      "height": 640,
+      "width": 320
+    },
+    "width": 305,
+    "requested": "/with-stroke",
+    "mode": "normal-320"
+  },
+  {
+    "heading": "Dissection without a diagnosed stroke",
+    "helpBottom": 110,
+    "helpTop": 56,
+    "links": [
+      {
+        "bottom": 626,
+        "current": null,
+        "height": 66,
+        "label": "Home",
+        "width": 68
+      },
+      {
+        "bottom": 626,
+        "current": "page",
+        "height": 66,
+        "label": "Guides",
+        "width": 68
+      },
+      {
+        "bottom": 626,
+        "current": null,
+        "height": 66,
+        "label": "Tools",
+        "width": 68
+      },
+      {
+        "bottom": 626,
+        "current": null,
+        "height": 66,
+        "label": "Saved",
+        "width": 68
+      }
+    ],
+    "mainBottom": 546,
+    "mainHeight": 427,
+    "navBottom": 640,
+    "navTop": 546,
+    "scrollWidth": 305,
+    "url": "/without-stroke",
+    "viewport": {
+      "height": 640,
+      "width": 320
+    },
+    "width": 305,
+    "requested": "/without-stroke",
+    "mode": "normal-320"
+  },
+  {
+    "heading": "Understanding cervical artery dissection",
+    "helpBottom": 110,
+    "helpTop": 56,
+    "links": [
+      {
+        "bottom": 626,
+        "current": null,
+        "height": 66,
+        "label": "Home",
+        "width": 68
+      },
+      {
+        "bottom": 626,
+        "current": "page",
+        "height": 66,
+        "label": "Guides",
+        "width": 68
+      },
+      {
+        "bottom": 626,
+        "current": null,
+        "height": 66,
+        "label": "Tools",
+        "width": 68
+      },
+      {
+        "bottom": 626,
+        "current": null,
+        "height": 66,
+        "label": "Saved",
+        "width": 68
+      }
+    ],
+    "mainBottom": 546,
+    "mainHeight": 427,
+    "navBottom": 640,
+    "navTop": 546,
+    "scrollWidth": 305,
+    "url": "/guide/understanding-dissection",
+    "viewport": {
+      "height": 640,
+      "width": 320
+    },
+    "width": 305,
+    "requested": "/guide/understanding-dissection",
+    "mode": "normal-320"
+  },
+  {
+    "heading": "Tests, scans and unfamiliar terms",
+    "helpBottom": 110,
+    "helpTop": 56,
+    "links": [
+      {
+        "bottom": 626,
+        "current": null,
+        "height": 66,
+        "label": "Home",
+        "width": 68
+      },
+      {
+        "bottom": 626,
+        "current": "page",
+        "height": 66,
+        "label": "Guides",
+        "width": 68
+      },
+      {
+        "bottom": 626,
+        "current": null,
+        "height": 66,
+        "label": "Tools",
+        "width": 68
+      },
+      {
+        "bottom": 626,
+        "current": null,
+        "height": 66,
+        "label": "Saved",
+        "width": 68
+      }
+    ],
+    "mainBottom": 546,
+    "mainHeight": 427,
+    "navBottom": 640,
+    "navTop": 546,
+    "scrollWidth": 305,
+    "url": "/guide/tests-and-terms",
+    "viewport": {
+      "height": 640,
+      "width": 320
+    },
+    "width": 305,
+    "requested": "/guide/tests-and-terms",
+    "mode": "normal-320"
+  },
+  {
+    "heading": "Dissection without a diagnosed stroke",
+    "helpBottom": 110,
+    "helpTop": 56,
+    "links": [
+      {
+        "bottom": 626,
+        "current": null,
+        "height": 66,
+        "label": "Home",
+        "width": 68
+      },
+      {
+        "bottom": 626,
+        "current": "page",
+        "height": 66,
+        "label": "Guides",
+        "width": 68
+      },
+      {
+        "bottom": 626,
+        "current": null,
+        "height": 66,
+        "label": "Tools",
+        "width": 68
+      },
+      {
+        "bottom": 626,
+        "current": null,
+        "height": 66,
+        "label": "Saved",
+        "width": 68
+      }
+    ],
+    "mainBottom": 546,
+    "mainHeight": 427,
+    "navBottom": 640,
+    "navTop": 546,
+    "scrollWidth": 305,
+    "url": "/guide/without-stroke",
+    "viewport": {
+      "height": 640,
+      "width": 320
+    },
+    "width": 305,
+    "requested": "/guide/without-stroke",
+    "mode": "normal-320"
+  },
+  {
+    "heading": "When dissection is accompanied by stroke",
+    "helpBottom": 110,
+    "helpTop": 56,
+    "links": [
+      {
+        "bottom": 626,
+        "current": null,
+        "height": 66,
+        "label": "Home",
+        "width": 68
+      },
+      {
+        "bottom": 626,
+        "current": "page",
+        "height": 66,
+        "label": "Guides",
+        "width": 68
+      },
+      {
+        "bottom": 626,
+        "current": null,
+        "height": 66,
+        "label": "Tools",
+        "width": 68
+      },
+      {
+        "bottom": 626,
+        "current": null,
+        "height": 66,
+        "label": "Saved",
+        "width": 68
+      }
+    ],
+    "mainBottom": 546,
+    "mainHeight": 427,
+    "navBottom": 640,
+    "navTop": 546,
+    "scrollWidth": 305,
+    "url": "/guide/with-stroke",
+    "viewport": {
+      "height": 640,
+      "width": 320
+    },
+    "width": 305,
+    "requested": "/guide/with-stroke",
+    "mode": "normal-320"
+  },
+  {
+    "heading": "Recovery, fatigue and quality of life",
+    "helpBottom": 110,
+    "helpTop": 56,
+    "links": [
+      {
+        "bottom": 626,
+        "current": null,
+        "height": 66,
+        "label": "Home",
+        "width": 68
+      },
+      {
+        "bottom": 626,
+        "current": "page",
+        "height": 66,
+        "label": "Guides",
+        "width": 68
+      },
+      {
+        "bottom": 626,
+        "current": null,
+        "height": 66,
+        "label": "Tools",
+        "width": 68
+      },
+      {
+        "bottom": 626,
+        "current": null,
+        "height": 66,
+        "label": "Saved",
+        "width": 68
+      }
+    ],
+    "mainBottom": 546,
+    "mainHeight": 427,
+    "navBottom": 640,
+    "navTop": 546,
+    "scrollWidth": 305,
+    "url": "/guide/recovery-and-quality-of-life",
+    "viewport": {
+      "height": 640,
+      "width": 320
+    },
+    "width": 305,
+    "requested": "/guide/recovery-and-quality-of-life",
+    "mode": "normal-320"
+  },
+  {
+    "heading": "Supporting someone after dissection or stroke",
+    "helpBottom": 110,
+    "helpTop": 56,
+    "links": [
+      {
+        "bottom": 626,
+        "current": null,
+        "height": 66,
+        "label": "Home",
+        "width": 68
+      },
+      {
+        "bottom": 626,
+        "current": "page",
+        "height": 66,
+        "label": "Guides",
+        "width": 68
+      },
+      {
+        "bottom": 626,
+        "current": null,
+        "height": 66,
+        "label": "Tools",
+        "width": 68
+      },
+      {
+        "bottom": 626,
+        "current": null,
+        "height": 66,
+        "label": "Saved",
+        "width": 68
+      }
+    ],
+    "mainBottom": 546,
+    "mainHeight": 427,
+    "navBottom": 640,
+    "navTop": 546,
+    "scrollWidth": 305,
+    "url": "/guide/supporting-someone",
+    "viewport": {
+      "height": 640,
+      "width": 320
+    },
+    "width": 305,
+    "requested": "/guide/supporting-someone",
+    "mode": "normal-320"
+  },
+  {
+    "heading": "Prepare for a follow-up appointment",
+    "helpBottom": 110,
+    "helpTop": 56,
+    "links": [
+      {
+        "bottom": 626,
+        "current": null,
+        "height": 66,
+        "label": "Home",
+        "width": 68
+      },
+      {
+        "bottom": 626,
+        "current": "page",
+        "height": 66,
+        "label": "Guides",
+        "width": 68
+      },
+      {
+        "bottom": 626,
+        "current": null,
+        "height": 66,
+        "label": "Tools",
+        "width": 68
+      },
+      {
+        "bottom": 626,
+        "current": null,
+        "height": 66,
+        "label": "Saved",
+        "width": 68
+      }
+    ],
+    "mainBottom": 546,
+    "mainHeight": 427,
+    "navBottom": 640,
+    "navTop": 546,
+    "scrollWidth": 305,
+    "url": "/guide/follow-up-questions",
+    "viewport": {
+      "height": 640,
+      "width": 320
+    },
+    "width": 305,
+    "requested": "/guide/follow-up-questions",
+    "mode": "normal-320"
+  },
+  {
+    "heading": "Home",
+    "helpBottom": 104,
+    "helpTop": 56,
+    "links": [
+      {
+        "bottom": 830,
+        "current": "page",
+        "height": 66,
+        "label": "Home",
+        "width": 85.5
+      },
+      {
+        "bottom": 830,
+        "current": null,
+        "height": 66,
+        "label": "Guides",
+        "width": 85.5
+      },
+      {
+        "bottom": 830,
+        "current": null,
+        "height": 66,
+        "label": "Tools",
+        "width": 85.5
+      },
+      {
+        "bottom": 830,
+        "current": null,
+        "height": 66,
+        "label": "Saved",
+        "width": 85.5
+      }
+    ],
+    "mainBottom": 750,
+    "mainHeight": 637,
+    "navBottom": 844,
+    "navTop": 750,
+    "scrollWidth": 375,
+    "url": "/",
+    "viewport": {
+      "height": 844,
+      "width": 390
+    },
+    "width": 375,
+    "requested": "/",
+    "mode": "normal-390"
+  },
+  {
+    "heading": "Understand dissection",
+    "helpBottom": 104,
+    "helpTop": 56,
+    "links": [
+      {
+        "bottom": 830,
+        "current": null,
+        "height": 66,
+        "label": "Home",
+        "width": 85.5
+      },
+      {
+        "bottom": 830,
+        "current": "page",
+        "height": 66,
+        "label": "Guides",
+        "width": 85.5
+      },
+      {
+        "bottom": 830,
+        "current": null,
+        "height": 66,
+        "label": "Tools",
+        "width": 85.5
+      },
+      {
+        "bottom": 830,
+        "current": null,
+        "height": 66,
+        "label": "Saved",
+        "width": 85.5
+      }
+    ],
+    "mainBottom": 750,
+    "mainHeight": 637,
+    "navBottom": 844,
+    "navTop": 750,
+    "scrollWidth": 375,
+    "url": "/learn",
+    "viewport": {
+      "height": 844,
+      "width": 390
+    },
+    "width": 375,
+    "requested": "/learn",
+    "mode": "normal-390"
+  },
+  {
+    "heading": "Tools",
+    "helpBottom": 104,
+    "helpTop": 56,
+    "links": [
+      {
+        "bottom": 830,
+        "current": null,
+        "height": 66,
+        "label": "Home",
+        "width": 85.5
+      },
+      {
+        "bottom": 830,
+        "current": null,
+        "height": 66,
+        "label": "Guides",
+        "width": 85.5
+      },
+      {
+        "bottom": 830,
+        "current": "page",
+        "height": 66,
+        "label": "Tools",
+        "width": 85.5
+      },
+      {
+        "bottom": 830,
+        "current": null,
+        "height": 66,
+        "label": "Saved",
+        "width": 85.5
+      }
+    ],
+    "mainBottom": 750,
+    "mainHeight": 637,
+    "navBottom": 844,
+    "navTop": 750,
+    "scrollWidth": 375,
+    "url": "/tools",
+    "viewport": {
+      "height": 844,
+      "width": 390
+    },
+    "width": 375,
+    "requested": "/tools",
+    "mode": "normal-390"
+  },
+  {
+    "heading": "Prepare an appointment",
+    "helpBottom": 104,
+    "helpTop": 56,
+    "links": [
+      {
+        "bottom": 830,
+        "current": null,
+        "height": 66,
+        "label": "Home",
+        "width": 85.5
+      },
+      {
+        "bottom": 830,
+        "current": null,
+        "height": 66,
+        "label": "Guides",
+        "width": 85.5
+      },
+      {
+        "bottom": 830,
+        "current": "page",
+        "height": 66,
+        "label": "Tools",
+        "width": 85.5
+      },
+      {
+        "bottom": 830,
+        "current": null,
+        "height": 66,
+        "label": "Saved",
+        "width": 85.5
+      }
+    ],
+    "mainBottom": 750,
+    "mainHeight": 637,
+    "navBottom": 844,
+    "navTop": 750,
+    "scrollWidth": 375,
+    "url": "/appointments",
+    "viewport": {
+      "height": 844,
+      "width": 390
+    },
+    "width": 375,
+    "requested": "/appointments",
+    "mode": "normal-390"
+  },
+  {
+    "heading": "Choose a card",
+    "helpBottom": 104,
+    "helpTop": 56,
+    "links": [
+      {
+        "bottom": 830,
+        "current": null,
+        "height": 66,
+        "label": "Home",
+        "width": 85.5
+      },
+      {
+        "bottom": 830,
+        "current": null,
+        "height": 66,
+        "label": "Guides",
+        "width": 85.5
+      },
+      {
+        "bottom": 830,
+        "current": "page",
+        "height": 66,
+        "label": "Tools",
+        "width": 85.5
+      },
+      {
+        "bottom": 830,
+        "current": null,
+        "height": 66,
+        "label": "Saved",
+        "width": 85.5
+      }
+    ],
+    "mainBottom": 750,
+    "mainHeight": 637,
+    "navBottom": 844,
+    "navTop": 750,
+    "scrollWidth": 375,
+    "url": "/cards",
+    "viewport": {
+      "height": 844,
+      "width": 390
+    },
+    "width": 375,
+    "requested": "/cards",
+    "mode": "normal-390"
+  },
+  {
+    "heading": "Medical and communication card",
+    "helpBottom": 104,
+    "helpTop": 56,
+    "links": [
+      {
+        "bottom": 830,
+        "current": null,
+        "height": 66,
+        "label": "Home",
+        "width": 85.5
+      },
+      {
+        "bottom": 830,
+        "current": null,
+        "height": 66,
+        "label": "Guides",
+        "width": 85.5
+      },
+      {
+        "bottom": 830,
+        "current": "page",
+        "height": 66,
+        "label": "Tools",
+        "width": 85.5
+      },
+      {
+        "bottom": 830,
+        "current": null,
+        "height": 66,
+        "label": "Saved",
+        "width": 85.5
+      }
+    ],
+    "mainBottom": 750,
+    "mainHeight": 637,
+    "navBottom": 844,
+    "navTop": 750,
+    "scrollWidth": 375,
+    "url": "/personal-card",
+    "viewport": {
+      "height": 844,
+      "width": 390
+    },
+    "width": 375,
+    "requested": "/personal-card",
+    "mode": "normal-390"
+  },
+  {
+    "heading": "Anniversary or milestone card",
+    "helpBottom": 104,
+    "helpTop": 56,
+    "links": [
+      {
+        "bottom": 830,
+        "current": null,
+        "height": 66,
+        "label": "Home",
+        "width": 85.5
+      },
+      {
+        "bottom": 830,
+        "current": null,
+        "height": 66,
+        "label": "Guides",
+        "width": 85.5
+      },
+      {
+        "bottom": 830,
+        "current": "page",
+        "height": 66,
+        "label": "Tools",
+        "width": 85.5
+      },
+      {
+        "bottom": 830,
+        "current": null,
+        "height": 66,
+        "label": "Saved",
+        "width": 85.5
+      }
+    ],
+    "mainBottom": 750,
+    "mainHeight": 637,
+    "navBottom": 844,
+    "navTop": 750,
+    "scrollWidth": 375,
+    "url": "/milestone-card",
+    "viewport": {
+      "height": 844,
+      "width": 390
+    },
+    "width": 375,
+    "requested": "/milestone-card",
+    "mode": "normal-390"
+  },
+  {
+    "heading": "Saved on this device",
+    "helpBottom": 104,
+    "helpTop": 56,
+    "links": [
+      {
+        "bottom": 830,
+        "current": null,
+        "height": 66,
+        "label": "Home",
+        "width": 85.5
+      },
+      {
+        "bottom": 830,
+        "current": null,
+        "height": 66,
+        "label": "Guides",
+        "width": 85.5
+      },
+      {
+        "bottom": 830,
+        "current": null,
+        "height": 66,
+        "label": "Tools",
+        "width": 85.5
+      },
+      {
+        "bottom": 830,
+        "current": "page",
+        "height": 66,
+        "label": "Saved",
+        "width": 85.5
+      }
+    ],
+    "mainBottom": 750,
+    "mainHeight": 637,
+    "navBottom": 844,
+    "navTop": 750,
+    "scrollWidth": 375,
+    "url": "/saved",
+    "viewport": {
+      "height": 844,
+      "width": 390
+    },
+    "width": 375,
+    "requested": "/saved",
+    "mode": "normal-390"
+  },
+  {
+    "heading": "Saved guides.",
+    "helpBottom": 104,
+    "helpTop": 56,
+    "links": [
+      {
+        "bottom": 830,
+        "current": null,
+        "height": 66,
+        "label": "Home",
+        "width": 85.5
+      },
+      {
+        "bottom": 830,
+        "current": null,
+        "height": 66,
+        "label": "Guides",
+        "width": 85.5
+      },
+      {
+        "bottom": 830,
+        "current": null,
+        "height": 66,
+        "label": "Tools",
+        "width": 85.5
+      },
+      {
+        "bottom": 830,
+        "current": "page",
+        "height": 66,
+        "label": "Saved",
+        "width": 85.5
+      }
+    ],
+    "mainBottom": 750,
+    "mainHeight": 637,
+    "navBottom": 844,
+    "navTop": 750,
+    "scrollWidth": 375,
+    "url": "/saved-guides",
+    "viewport": {
+      "height": 844,
+      "width": 390
+    },
+    "width": 375,
+    "requested": "/saved-guides",
+    "mode": "normal-390"
+  },
+  {
+    "heading": "Support preferences",
+    "helpBottom": 104,
+    "helpTop": 56,
+    "links": [
+      {
+        "bottom": 830,
+        "current": null,
+        "height": 66,
+        "label": "Home",
+        "width": 85.5
+      },
+      {
+        "bottom": 830,
+        "current": null,
+        "height": 66,
+        "label": "Guides",
+        "width": 85.5
+      },
+      {
+        "bottom": 830,
+        "current": "page",
+        "height": 66,
+        "label": "Tools",
+        "width": 85.5
+      },
+      {
+        "bottom": 830,
+        "current": null,
+        "height": 66,
+        "label": "Saved",
+        "width": 85.5
+      }
+    ],
+    "mainBottom": 750,
+    "mainHeight": 637,
+    "navBottom": 844,
+    "navTop": 750,
+    "scrollWidth": 375,
+    "url": "/support-preferences",
+    "viewport": {
+      "height": 844,
+      "width": 390
+    },
+    "width": 375,
+    "requested": "/support-preferences",
+    "mode": "normal-390"
+  },
+  {
+    "heading": "Help someone",
+    "helpBottom": 104,
+    "helpTop": 56,
+    "links": [
+      {
+        "bottom": 830,
+        "current": null,
+        "height": 66,
+        "label": "Home",
+        "width": 85.5
+      },
+      {
+        "bottom": 830,
+        "current": "page",
+        "height": 66,
+        "label": "Guides",
+        "width": 85.5
+      },
+      {
+        "bottom": 830,
+        "current": null,
+        "height": 66,
+        "label": "Tools",
+        "width": 85.5
+      },
+      {
+        "bottom": 830,
+        "current": null,
+        "height": 66,
+        "label": "Saved",
+        "width": 85.5
+      }
+    ],
+    "mainBottom": 750,
+    "mainHeight": 637,
+    "navBottom": 844,
+    "navTop": 750,
+    "scrollWidth": 375,
+    "url": "/supporting-someone",
+    "viewport": {
+      "height": 844,
+      "width": 390
+    },
+    "width": 375,
+    "requested": "/supporting-someone",
+    "mode": "normal-390"
+  },
+  {
+    "heading": "Look up a term",
+    "helpBottom": 104,
+    "helpTop": 56,
+    "links": [
+      {
+        "bottom": 830,
+        "current": null,
+        "height": 66,
+        "label": "Home",
+        "width": 85.5
+      },
+      {
+        "bottom": 830,
+        "current": "page",
+        "height": 66,
+        "label": "Guides",
+        "width": 85.5
+      },
+      {
+        "bottom": 830,
+        "current": null,
+        "height": 66,
+        "label": "Tools",
+        "width": 85.5
+      },
+      {
+        "bottom": 830,
+        "current": null,
+        "height": 66,
+        "label": "Saved",
+        "width": 85.5
+      }
+    ],
+    "mainBottom": 750,
+    "mainHeight": 637,
+    "navBottom": 844,
+    "navTop": 750,
+    "scrollWidth": 375,
+    "url": "/glossary",
+    "viewport": {
+      "height": 844,
+      "width": 390
+    },
+    "width": 375,
+    "requested": "/glossary",
+    "mode": "normal-390"
+  },
+  {
+    "heading": "Resources",
+    "helpBottom": 104,
+    "helpTop": 56,
+    "links": [
+      {
+        "bottom": 830,
+        "current": null,
+        "height": 66,
+        "label": "Home",
+        "width": 85.5
+      },
+      {
+        "bottom": 830,
+        "current": "page",
+        "height": 66,
+        "label": "Guides",
+        "width": 85.5
+      },
+      {
+        "bottom": 830,
+        "current": null,
+        "height": 66,
+        "label": "Tools",
+        "width": 85.5
+      },
+      {
+        "bottom": 830,
+        "current": null,
+        "height": 66,
+        "label": "Saved",
+        "width": 85.5
+      }
+    ],
+    "mainBottom": 750,
+    "mainHeight": 637,
+    "navBottom": 844,
+    "navTop": 750,
+    "scrollWidth": 375,
+    "url": "/resources",
+    "viewport": {
+      "height": 844,
+      "width": 390
+    },
+    "width": 375,
+    "requested": "/resources",
+    "mode": "normal-390"
+  },
+  {
+    "heading": "About and privacy",
+    "helpBottom": 104,
+    "helpTop": 56,
+    "links": [
+      {
+        "bottom": 830,
+        "current": null,
+        "height": 66,
+        "label": "Home",
+        "width": 85.5
+      },
+      {
+        "bottom": 830,
+        "current": null,
+        "height": 66,
+        "label": "Guides",
+        "width": 85.5
+      },
+      {
+        "bottom": 830,
+        "current": null,
+        "height": 66,
+        "label": "Tools",
+        "width": 85.5
+      },
+      {
+        "bottom": 830,
+        "current": null,
+        "height": 66,
+        "label": "Saved",
+        "width": 85.5
+      }
+    ],
+    "mainBottom": 750,
+    "mainHeight": 637,
+    "navBottom": 844,
+    "navTop": 750,
+    "scrollWidth": 375,
+    "url": "/about",
+    "viewport": {
+      "height": 844,
+      "width": 390
+    },
+    "width": 375,
+    "requested": "/about",
+    "mode": "normal-390"
+  },
+  {
+    "heading": "Text and display",
+    "helpBottom": 104,
+    "helpTop": 56,
+    "links": [
+      {
+        "bottom": 830,
+        "current": null,
+        "height": 66,
+        "label": "Home",
+        "width": 85.5
+      },
+      {
+        "bottom": 830,
+        "current": null,
+        "height": 66,
+        "label": "Guides",
+        "width": 85.5
+      },
+      {
+        "bottom": 830,
+        "current": null,
+        "height": 66,
+        "label": "Tools",
+        "width": 85.5
+      },
+      {
+        "bottom": 830,
+        "current": null,
+        "height": 66,
+        "label": "Saved",
+        "width": 85.5
+      }
+    ],
+    "mainBottom": 750,
+    "mainHeight": 637,
+    "navBottom": 844,
+    "navTop": 750,
+    "scrollWidth": 375,
+    "url": "/accessibility",
+    "viewport": {
+      "height": 844,
+      "width": 390
+    },
+    "width": 375,
+    "requested": "/accessibility",
+    "mode": "normal-390"
+  },
+  {
+    "heading": "Medical help",
+    "helpBottom": 104,
+    "helpTop": 56,
+    "links": [
+      {
+        "bottom": 830,
+        "current": null,
+        "height": 66,
+        "label": "Home",
+        "width": 85.5
+      },
+      {
+        "bottom": 830,
+        "current": null,
+        "height": 66,
+        "label": "Guides",
+        "width": 85.5
+      },
+      {
+        "bottom": 830,
+        "current": null,
+        "height": 66,
+        "label": "Tools",
+        "width": 85.5
+      },
+      {
+        "bottom": 830,
+        "current": null,
+        "height": 66,
+        "label": "Saved",
+        "width": 85.5
+      }
+    ],
+    "mainBottom": 750,
+    "mainHeight": 637,
+    "navBottom": 844,
+    "navTop": 750,
+    "scrollWidth": 375,
+    "url": "/urgent-help",
+    "viewport": {
+      "height": 844,
+      "width": 390
+    },
+    "width": 375,
+    "requested": "/urgent-help",
+    "mode": "normal-390"
+  },
+  {
+    "heading": "Dissection and stroke",
+    "helpBottom": 104,
+    "helpTop": 56,
+    "links": [
+      {
+        "bottom": 830,
+        "current": null,
+        "height": 66,
+        "label": "Home",
+        "width": 85.5
+      },
+      {
+        "bottom": 830,
+        "current": "page",
+        "height": 66,
+        "label": "Guides",
+        "width": 85.5
+      },
+      {
+        "bottom": 830,
+        "current": null,
+        "height": 66,
+        "label": "Tools",
+        "width": 85.5
+      },
+      {
+        "bottom": 830,
+        "current": null,
+        "height": 66,
+        "label": "Saved",
+        "width": 85.5
+      }
+    ],
+    "mainBottom": 750,
+    "mainHeight": 637,
+    "navBottom": 844,
+    "navTop": 750,
+    "scrollWidth": 375,
+    "url": "/with-stroke",
+    "viewport": {
+      "height": 844,
+      "width": 390
+    },
+    "width": 375,
+    "requested": "/with-stroke",
+    "mode": "normal-390"
+  },
+  {
+    "heading": "Dissection without a diagnosed stroke",
+    "helpBottom": 104,
+    "helpTop": 56,
+    "links": [
+      {
+        "bottom": 830,
+        "current": null,
+        "height": 66,
+        "label": "Home",
+        "width": 85.5
+      },
+      {
+        "bottom": 830,
+        "current": "page",
+        "height": 66,
+        "label": "Guides",
+        "width": 85.5
+      },
+      {
+        "bottom": 830,
+        "current": null,
+        "height": 66,
+        "label": "Tools",
+        "width": 85.5
+      },
+      {
+        "bottom": 830,
+        "current": null,
+        "height": 66,
+        "label": "Saved",
+        "width": 85.5
+      }
+    ],
+    "mainBottom": 750,
+    "mainHeight": 637,
+    "navBottom": 844,
+    "navTop": 750,
+    "scrollWidth": 375,
+    "url": "/without-stroke",
+    "viewport": {
+      "height": 844,
+      "width": 390
+    },
+    "width": 375,
+    "requested": "/without-stroke",
+    "mode": "normal-390"
+  },
+  {
+    "heading": "Understanding cervical artery dissection",
+    "helpBottom": 104,
+    "helpTop": 56,
+    "links": [
+      {
+        "bottom": 830,
+        "current": null,
+        "height": 66,
+        "label": "Home",
+        "width": 85.5
+      },
+      {
+        "bottom": 830,
+        "current": "page",
+        "height": 66,
+        "label": "Guides",
+        "width": 85.5
+      },
+      {
+        "bottom": 830,
+        "current": null,
+        "height": 66,
+        "label": "Tools",
+        "width": 85.5
+      },
+      {
+        "bottom": 830,
+        "current": null,
+        "height": 66,
+        "label": "Saved",
+        "width": 85.5
+      }
+    ],
+    "mainBottom": 750,
+    "mainHeight": 637,
+    "navBottom": 844,
+    "navTop": 750,
+    "scrollWidth": 375,
+    "url": "/guide/understanding-dissection",
+    "viewport": {
+      "height": 844,
+      "width": 390
+    },
+    "width": 375,
+    "requested": "/guide/understanding-dissection",
+    "mode": "normal-390"
+  },
+  {
+    "heading": "Tests, scans and unfamiliar terms",
+    "helpBottom": 104,
+    "helpTop": 56,
+    "links": [
+      {
+        "bottom": 830,
+        "current": null,
+        "height": 66,
+        "label": "Home",
+        "width": 85.5
+      },
+      {
+        "bottom": 830,
+        "current": "page",
+        "height": 66,
+        "label": "Guides",
+        "width": 85.5
+      },
+      {
+        "bottom": 830,
+        "current": null,
+        "height": 66,
+        "label": "Tools",
+        "width": 85.5
+      },
+      {
+        "bottom": 830,
+        "current": null,
+        "height": 66,
+        "label": "Saved",
+        "width": 85.5
+      }
+    ],
+    "mainBottom": 750,
+    "mainHeight": 637,
+    "navBottom": 844,
+    "navTop": 750,
+    "scrollWidth": 375,
+    "url": "/guide/tests-and-terms",
+    "viewport": {
+      "height": 844,
+      "width": 390
+    },
+    "width": 375,
+    "requested": "/guide/tests-and-terms",
+    "mode": "normal-390"
+  },
+  {
+    "heading": "Dissection without a diagnosed stroke",
+    "helpBottom": 104,
+    "helpTop": 56,
+    "links": [
+      {
+        "bottom": 830,
+        "current": null,
+        "height": 66,
+        "label": "Home",
+        "width": 85.5
+      },
+      {
+        "bottom": 830,
+        "current": "page",
+        "height": 66,
+        "label": "Guides",
+        "width": 85.5
+      },
+      {
+        "bottom": 830,
+        "current": null,
+        "height": 66,
+        "label": "Tools",
+        "width": 85.5
+      },
+      {
+        "bottom": 830,
+        "current": null,
+        "height": 66,
+        "label": "Saved",
+        "width": 85.5
+      }
+    ],
+    "mainBottom": 750,
+    "mainHeight": 637,
+    "navBottom": 844,
+    "navTop": 750,
+    "scrollWidth": 375,
+    "url": "/guide/without-stroke",
+    "viewport": {
+      "height": 844,
+      "width": 390
+    },
+    "width": 375,
+    "requested": "/guide/without-stroke",
+    "mode": "normal-390"
+  },
+  {
+    "heading": "When dissection is accompanied by stroke",
+    "helpBottom": 104,
+    "helpTop": 56,
+    "links": [
+      {
+        "bottom": 830,
+        "current": null,
+        "height": 66,
+        "label": "Home",
+        "width": 85.5
+      },
+      {
+        "bottom": 830,
+        "current": "page",
+        "height": 66,
+        "label": "Guides",
+        "width": 85.5
+      },
+      {
+        "bottom": 830,
+        "current": null,
+        "height": 66,
+        "label": "Tools",
+        "width": 85.5
+      },
+      {
+        "bottom": 830,
+        "current": null,
+        "height": 66,
+        "label": "Saved",
+        "width": 85.5
+      }
+    ],
+    "mainBottom": 750,
+    "mainHeight": 637,
+    "navBottom": 844,
+    "navTop": 750,
+    "scrollWidth": 375,
+    "url": "/guide/with-stroke",
+    "viewport": {
+      "height": 844,
+      "width": 390
+    },
+    "width": 375,
+    "requested": "/guide/with-stroke",
+    "mode": "normal-390"
+  },
+  {
+    "heading": "Recovery, fatigue and quality of life",
+    "helpBottom": 104,
+    "helpTop": 56,
+    "links": [
+      {
+        "bottom": 830,
+        "current": null,
+        "height": 66,
+        "label": "Home",
+        "width": 85.5
+      },
+      {
+        "bottom": 830,
+        "current": "page",
+        "height": 66,
+        "label": "Guides",
+        "width": 85.5
+      },
+      {
+        "bottom": 830,
+        "current": null,
+        "height": 66,
+        "label": "Tools",
+        "width": 85.5
+      },
+      {
+        "bottom": 830,
+        "current": null,
+        "height": 66,
+        "label": "Saved",
+        "width": 85.5
+      }
+    ],
+    "mainBottom": 750,
+    "mainHeight": 637,
+    "navBottom": 844,
+    "navTop": 750,
+    "scrollWidth": 375,
+    "url": "/guide/recovery-and-quality-of-life",
+    "viewport": {
+      "height": 844,
+      "width": 390
+    },
+    "width": 375,
+    "requested": "/guide/recovery-and-quality-of-life",
+    "mode": "normal-390"
+  },
+  {
+    "heading": "Supporting someone after dissection or stroke",
+    "helpBottom": 104,
+    "helpTop": 56,
+    "links": [
+      {
+        "bottom": 830,
+        "current": null,
+        "height": 66,
+        "label": "Home",
+        "width": 85.5
+      },
+      {
+        "bottom": 830,
+        "current": "page",
+        "height": 66,
+        "label": "Guides",
+        "width": 85.5
+      },
+      {
+        "bottom": 830,
+        "current": null,
+        "height": 66,
+        "label": "Tools",
+        "width": 85.5
+      },
+      {
+        "bottom": 830,
+        "current": null,
+        "height": 66,
+        "label": "Saved",
+        "width": 85.5
+      }
+    ],
+    "mainBottom": 750,
+    "mainHeight": 637,
+    "navBottom": 844,
+    "navTop": 750,
+    "scrollWidth": 375,
+    "url": "/guide/supporting-someone",
+    "viewport": {
+      "height": 844,
+      "width": 390
+    },
+    "width": 375,
+    "requested": "/guide/supporting-someone",
+    "mode": "normal-390"
+  },
+  {
+    "heading": "Prepare for a follow-up appointment",
+    "helpBottom": 104,
+    "helpTop": 56,
+    "links": [
+      {
+        "bottom": 830,
+        "current": null,
+        "height": 66,
+        "label": "Home",
+        "width": 85.5
+      },
+      {
+        "bottom": 830,
+        "current": "page",
+        "height": 66,
+        "label": "Guides",
+        "width": 85.5
+      },
+      {
+        "bottom": 830,
+        "current": null,
+        "height": 66,
+        "label": "Tools",
+        "width": 85.5
+      },
+      {
+        "bottom": 830,
+        "current": null,
+        "height": 66,
+        "label": "Saved",
+        "width": 85.5
+      }
+    ],
+    "mainBottom": 750,
+    "mainHeight": 637,
+    "navBottom": 844,
+    "navTop": 750,
+    "scrollWidth": 375,
+    "url": "/guide/follow-up-questions",
+    "viewport": {
+      "height": 844,
+      "width": 390
+    },
+    "width": 375,
+    "requested": "/guide/follow-up-questions",
+    "mode": "normal-390"
+  },
+  {
+    "heading": "Home",
+    "helpBottom": 104,
+    "helpTop": 56,
+    "links": [
+      {
+        "bottom": 306,
+        "current": "page",
+        "height": 48,
+        "label": "Home",
+        "width": 149
+      },
+      {
+        "bottom": 306,
+        "current": null,
+        "height": 48,
+        "label": "Guides",
+        "width": 149
+      },
+      {
+        "bottom": 306,
+        "current": null,
+        "height": 48,
+        "label": "Tools",
+        "width": 149
+      },
+      {
+        "bottom": 306,
+        "current": null,
+        "height": 48,
+        "label": "Saved",
+        "width": 149
+      }
+    ],
+    "mainBottom": 244,
+    "mainHeight": 131,
+    "navBottom": 320,
+    "navTop": 244,
+    "scrollWidth": 829,
+    "url": "/",
+    "viewport": {
+      "height": 320,
+      "width": 844
+    },
+    "width": 829,
+    "requested": "/",
+    "mode": "landscape"
+  },
+  {
+    "heading": "Understand dissection",
+    "helpBottom": 104,
+    "helpTop": 56,
+    "links": [
+      {
+        "bottom": 306,
+        "current": null,
+        "height": 48,
+        "label": "Home",
+        "width": 149
+      },
+      {
+        "bottom": 306,
+        "current": "page",
+        "height": 48,
+        "label": "Guides",
+        "width": 149
+      },
+      {
+        "bottom": 306,
+        "current": null,
+        "height": 48,
+        "label": "Tools",
+        "width": 149
+      },
+      {
+        "bottom": 306,
+        "current": null,
+        "height": 48,
+        "label": "Saved",
+        "width": 149
+      }
+    ],
+    "mainBottom": 244,
+    "mainHeight": 131,
+    "navBottom": 320,
+    "navTop": 244,
+    "scrollWidth": 829,
+    "url": "/learn",
+    "viewport": {
+      "height": 320,
+      "width": 844
+    },
+    "width": 829,
+    "requested": "/learn",
+    "mode": "landscape"
+  },
+  {
+    "heading": "Tools",
+    "helpBottom": 104,
+    "helpTop": 56,
+    "links": [
+      {
+        "bottom": 306,
+        "current": null,
+        "height": 48,
+        "label": "Home",
+        "width": 149
+      },
+      {
+        "bottom": 306,
+        "current": null,
+        "height": 48,
+        "label": "Guides",
+        "width": 149
+      },
+      {
+        "bottom": 306,
+        "current": "page",
+        "height": 48,
+        "label": "Tools",
+        "width": 149
+      },
+      {
+        "bottom": 306,
+        "current": null,
+        "height": 48,
+        "label": "Saved",
+        "width": 149
+      }
+    ],
+    "mainBottom": 244,
+    "mainHeight": 131,
+    "navBottom": 320,
+    "navTop": 244,
+    "scrollWidth": 829,
+    "url": "/tools",
+    "viewport": {
+      "height": 320,
+      "width": 844
+    },
+    "width": 829,
+    "requested": "/tools",
+    "mode": "landscape"
+  },
+  {
+    "heading": "Prepare an appointment",
+    "helpBottom": 104,
+    "helpTop": 56,
+    "links": [
+      {
+        "bottom": 306,
+        "current": null,
+        "height": 48,
+        "label": "Home",
+        "width": 149
+      },
+      {
+        "bottom": 306,
+        "current": null,
+        "height": 48,
+        "label": "Guides",
+        "width": 149
+      },
+      {
+        "bottom": 306,
+        "current": "page",
+        "height": 48,
+        "label": "Tools",
+        "width": 149
+      },
+      {
+        "bottom": 306,
+        "current": null,
+        "height": 48,
+        "label": "Saved",
+        "width": 149
+      }
+    ],
+    "mainBottom": 244,
+    "mainHeight": 131,
+    "navBottom": 320,
+    "navTop": 244,
+    "scrollWidth": 829,
+    "url": "/appointments",
+    "viewport": {
+      "height": 320,
+      "width": 844
+    },
+    "width": 829,
+    "requested": "/appointments",
+    "mode": "landscape"
+  },
+  {
+    "heading": "Choose a card",
+    "helpBottom": 104,
+    "helpTop": 56,
+    "links": [
+      {
+        "bottom": 306,
+        "current": null,
+        "height": 48,
+        "label": "Home",
+        "width": 149
+      },
+      {
+        "bottom": 306,
+        "current": null,
+        "height": 48,
+        "label": "Guides",
+        "width": 149
+      },
+      {
+        "bottom": 306,
+        "current": "page",
+        "height": 48,
+        "label": "Tools",
+        "width": 149
+      },
+      {
+        "bottom": 306,
+        "current": null,
+        "height": 48,
+        "label": "Saved",
+        "width": 149
+      }
+    ],
+    "mainBottom": 244,
+    "mainHeight": 131,
+    "navBottom": 320,
+    "navTop": 244,
+    "scrollWidth": 829,
+    "url": "/cards",
+    "viewport": {
+      "height": 320,
+      "width": 844
+    },
+    "width": 829,
+    "requested": "/cards",
+    "mode": "landscape"
+  },
+  {
+    "heading": "Medical and communication card",
+    "helpBottom": 104,
+    "helpTop": 56,
+    "links": [
+      {
+        "bottom": 306,
+        "current": null,
+        "height": 48,
+        "label": "Home",
+        "width": 149
+      },
+      {
+        "bottom": 306,
+        "current": null,
+        "height": 48,
+        "label": "Guides",
+        "width": 149
+      },
+      {
+        "bottom": 306,
+        "current": "page",
+        "height": 48,
+        "label": "Tools",
+        "width": 149
+      },
+      {
+        "bottom": 306,
+        "current": null,
+        "height": 48,
+        "label": "Saved",
+        "width": 149
+      }
+    ],
+    "mainBottom": 244,
+    "mainHeight": 131,
+    "navBottom": 320,
+    "navTop": 244,
+    "scrollWidth": 829,
+    "url": "/personal-card",
+    "viewport": {
+      "height": 320,
+      "width": 844
+    },
+    "width": 829,
+    "requested": "/personal-card",
+    "mode": "landscape"
+  },
+  {
+    "heading": "Anniversary or milestone card",
+    "helpBottom": 104,
+    "helpTop": 56,
+    "links": [
+      {
+        "bottom": 306,
+        "current": null,
+        "height": 48,
+        "label": "Home",
+        "width": 149
+      },
+      {
+        "bottom": 306,
+        "current": null,
+        "height": 48,
+        "label": "Guides",
+        "width": 149
+      },
+      {
+        "bottom": 306,
+        "current": "page",
+        "height": 48,
+        "label": "Tools",
+        "width": 149
+      },
+      {
+        "bottom": 306,
+        "current": null,
+        "height": 48,
+        "label": "Saved",
+        "width": 149
+      }
+    ],
+    "mainBottom": 244,
+    "mainHeight": 131,
+    "navBottom": 320,
+    "navTop": 244,
+    "scrollWidth": 829,
+    "url": "/milestone-card",
+    "viewport": {
+      "height": 320,
+      "width": 844
+    },
+    "width": 829,
+    "requested": "/milestone-card",
+    "mode": "landscape"
+  },
+  {
+    "heading": "Saved on this device",
+    "helpBottom": 104,
+    "helpTop": 56,
+    "links": [
+      {
+        "bottom": 306,
+        "current": null,
+        "height": 48,
+        "label": "Home",
+        "width": 149
+      },
+      {
+        "bottom": 306,
+        "current": null,
+        "height": 48,
+        "label": "Guides",
+        "width": 149
+      },
+      {
+        "bottom": 306,
+        "current": null,
+        "height": 48,
+        "label": "Tools",
+        "width": 149
+      },
+      {
+        "bottom": 306,
+        "current": "page",
+        "height": 48,
+        "label": "Saved",
+        "width": 149
+      }
+    ],
+    "mainBottom": 244,
+    "mainHeight": 131,
+    "navBottom": 320,
+    "navTop": 244,
+    "scrollWidth": 829,
+    "url": "/saved",
+    "viewport": {
+      "height": 320,
+      "width": 844
+    },
+    "width": 829,
+    "requested": "/saved",
+    "mode": "landscape"
+  },
+  {
+    "heading": "Saved guides.",
+    "helpBottom": 104,
+    "helpTop": 56,
+    "links": [
+      {
+        "bottom": 306,
+        "current": null,
+        "height": 48,
+        "label": "Home",
+        "width": 149
+      },
+      {
+        "bottom": 306,
+        "current": null,
+        "height": 48,
+        "label": "Guides",
+        "width": 149
+      },
+      {
+        "bottom": 306,
+        "current": null,
+        "height": 48,
+        "label": "Tools",
+        "width": 149
+      },
+      {
+        "bottom": 306,
+        "current": "page",
+        "height": 48,
+        "label": "Saved",
+        "width": 149
+      }
+    ],
+    "mainBottom": 244,
+    "mainHeight": 131,
+    "navBottom": 320,
+    "navTop": 244,
+    "scrollWidth": 829,
+    "url": "/saved-guides",
+    "viewport": {
+      "height": 320,
+      "width": 844
+    },
+    "width": 829,
+    "requested": "/saved-guides",
+    "mode": "landscape"
+  },
+  {
+    "heading": "Support preferences",
+    "helpBottom": 104,
+    "helpTop": 56,
+    "links": [
+      {
+        "bottom": 306,
+        "current": null,
+        "height": 48,
+        "label": "Home",
+        "width": 149
+      },
+      {
+        "bottom": 306,
+        "current": null,
+        "height": 48,
+        "label": "Guides",
+        "width": 149
+      },
+      {
+        "bottom": 306,
+        "current": "page",
+        "height": 48,
+        "label": "Tools",
+        "width": 149
+      },
+      {
+        "bottom": 306,
+        "current": null,
+        "height": 48,
+        "label": "Saved",
+        "width": 149
+      }
+    ],
+    "mainBottom": 244,
+    "mainHeight": 131,
+    "navBottom": 320,
+    "navTop": 244,
+    "scrollWidth": 829,
+    "url": "/support-preferences",
+    "viewport": {
+      "height": 320,
+      "width": 844
+    },
+    "width": 829,
+    "requested": "/support-preferences",
+    "mode": "landscape"
+  },
+  {
+    "heading": "Help someone",
+    "helpBottom": 104,
+    "helpTop": 56,
+    "links": [
+      {
+        "bottom": 306,
+        "current": null,
+        "height": 48,
+        "label": "Home",
+        "width": 149
+      },
+      {
+        "bottom": 306,
+        "current": "page",
+        "height": 48,
+        "label": "Guides",
+        "width": 149
+      },
+      {
+        "bottom": 306,
+        "current": null,
+        "height": 48,
+        "label": "Tools",
+        "width": 149
+      },
+      {
+        "bottom": 306,
+        "current": null,
+        "height": 48,
+        "label": "Saved",
+        "width": 149
+      }
+    ],
+    "mainBottom": 244,
+    "mainHeight": 131,
+    "navBottom": 320,
+    "navTop": 244,
+    "scrollWidth": 829,
+    "url": "/supporting-someone",
+    "viewport": {
+      "height": 320,
+      "width": 844
+    },
+    "width": 829,
+    "requested": "/supporting-someone",
+    "mode": "landscape"
+  },
+  {
+    "heading": "Look up a term",
+    "helpBottom": 104,
+    "helpTop": 56,
+    "links": [
+      {
+        "bottom": 306,
+        "current": null,
+        "height": 48,
+        "label": "Home",
+        "width": 149
+      },
+      {
+        "bottom": 306,
+        "current": "page",
+        "height": 48,
+        "label": "Guides",
+        "width": 149
+      },
+      {
+        "bottom": 306,
+        "current": null,
+        "height": 48,
+        "label": "Tools",
+        "width": 149
+      },
+      {
+        "bottom": 306,
+        "current": null,
+        "height": 48,
+        "label": "Saved",
+        "width": 149
+      }
+    ],
+    "mainBottom": 244,
+    "mainHeight": 131,
+    "navBottom": 320,
+    "navTop": 244,
+    "scrollWidth": 829,
+    "url": "/glossary",
+    "viewport": {
+      "height": 320,
+      "width": 844
+    },
+    "width": 829,
+    "requested": "/glossary",
+    "mode": "landscape"
+  },
+  {
+    "heading": "Resources",
+    "helpBottom": 104,
+    "helpTop": 56,
+    "links": [
+      {
+        "bottom": 306,
+        "current": null,
+        "height": 48,
+        "label": "Home",
+        "width": 149
+      },
+      {
+        "bottom": 306,
+        "current": "page",
+        "height": 48,
+        "label": "Guides",
+        "width": 149
+      },
+      {
+        "bottom": 306,
+        "current": null,
+        "height": 48,
+        "label": "Tools",
+        "width": 149
+      },
+      {
+        "bottom": 306,
+        "current": null,
+        "height": 48,
+        "label": "Saved",
+        "width": 149
+      }
+    ],
+    "mainBottom": 244,
+    "mainHeight": 131,
+    "navBottom": 320,
+    "navTop": 244,
+    "scrollWidth": 829,
+    "url": "/resources",
+    "viewport": {
+      "height": 320,
+      "width": 844
+    },
+    "width": 829,
+    "requested": "/resources",
+    "mode": "landscape"
+  },
+  {
+    "heading": "About and privacy",
+    "helpBottom": 104,
+    "helpTop": 56,
+    "links": [
+      {
+        "bottom": 306,
+        "current": null,
+        "height": 48,
+        "label": "Home",
+        "width": 149
+      },
+      {
+        "bottom": 306,
+        "current": null,
+        "height": 48,
+        "label": "Guides",
+        "width": 149
+      },
+      {
+        "bottom": 306,
+        "current": null,
+        "height": 48,
+        "label": "Tools",
+        "width": 149
+      },
+      {
+        "bottom": 306,
+        "current": null,
+        "height": 48,
+        "label": "Saved",
+        "width": 149
+      }
+    ],
+    "mainBottom": 244,
+    "mainHeight": 131,
+    "navBottom": 320,
+    "navTop": 244,
+    "scrollWidth": 829,
+    "url": "/about",
+    "viewport": {
+      "height": 320,
+      "width": 844
+    },
+    "width": 829,
+    "requested": "/about",
+    "mode": "landscape"
+  },
+  {
+    "heading": "Text and display",
+    "helpBottom": 104,
+    "helpTop": 56,
+    "links": [
+      {
+        "bottom": 306,
+        "current": null,
+        "height": 48,
+        "label": "Home",
+        "width": 149
+      },
+      {
+        "bottom": 306,
+        "current": null,
+        "height": 48,
+        "label": "Guides",
+        "width": 149
+      },
+      {
+        "bottom": 306,
+        "current": null,
+        "height": 48,
+        "label": "Tools",
+        "width": 149
+      },
+      {
+        "bottom": 306,
+        "current": null,
+        "height": 48,
+        "label": "Saved",
+        "width": 149
+      }
+    ],
+    "mainBottom": 244,
+    "mainHeight": 131,
+    "navBottom": 320,
+    "navTop": 244,
+    "scrollWidth": 829,
+    "url": "/accessibility",
+    "viewport": {
+      "height": 320,
+      "width": 844
+    },
+    "width": 829,
+    "requested": "/accessibility",
+    "mode": "landscape"
+  },
+  {
+    "heading": "Medical help",
+    "helpBottom": 104,
+    "helpTop": 56,
+    "links": [
+      {
+        "bottom": 306,
+        "current": null,
+        "height": 48,
+        "label": "Home",
+        "width": 149
+      },
+      {
+        "bottom": 306,
+        "current": null,
+        "height": 48,
+        "label": "Guides",
+        "width": 149
+      },
+      {
+        "bottom": 306,
+        "current": null,
+        "height": 48,
+        "label": "Tools",
+        "width": 149
+      },
+      {
+        "bottom": 306,
+        "current": null,
+        "height": 48,
+        "label": "Saved",
+        "width": 149
+      }
+    ],
+    "mainBottom": 244,
+    "mainHeight": 131,
+    "navBottom": 320,
+    "navTop": 244,
+    "scrollWidth": 829,
+    "url": "/urgent-help",
+    "viewport": {
+      "height": 320,
+      "width": 844
+    },
+    "width": 829,
+    "requested": "/urgent-help",
+    "mode": "landscape"
+  },
+  {
+    "heading": "Dissection and stroke",
+    "helpBottom": 104,
+    "helpTop": 56,
+    "links": [
+      {
+        "bottom": 306,
+        "current": null,
+        "height": 48,
+        "label": "Home",
+        "width": 149
+      },
+      {
+        "bottom": 306,
+        "current": "page",
+        "height": 48,
+        "label": "Guides",
+        "width": 149
+      },
+      {
+        "bottom": 306,
+        "current": null,
+        "height": 48,
+        "label": "Tools",
+        "width": 149
+      },
+      {
+        "bottom": 306,
+        "current": null,
+        "height": 48,
+        "label": "Saved",
+        "width": 149
+      }
+    ],
+    "mainBottom": 244,
+    "mainHeight": 131,
+    "navBottom": 320,
+    "navTop": 244,
+    "scrollWidth": 829,
+    "url": "/with-stroke",
+    "viewport": {
+      "height": 320,
+      "width": 844
+    },
+    "width": 829,
+    "requested": "/with-stroke",
+    "mode": "landscape"
+  },
+  {
+    "heading": "Dissection without a diagnosed stroke",
+    "helpBottom": 104,
+    "helpTop": 56,
+    "links": [
+      {
+        "bottom": 306,
+        "current": null,
+        "height": 48,
+        "label": "Home",
+        "width": 149
+      },
+      {
+        "bottom": 306,
+        "current": "page",
+        "height": 48,
+        "label": "Guides",
+        "width": 149
+      },
+      {
+        "bottom": 306,
+        "current": null,
+        "height": 48,
+        "label": "Tools",
+        "width": 149
+      },
+      {
+        "bottom": 306,
+        "current": null,
+        "height": 48,
+        "label": "Saved",
+        "width": 149
+      }
+    ],
+    "mainBottom": 244,
+    "mainHeight": 131,
+    "navBottom": 320,
+    "navTop": 244,
+    "scrollWidth": 829,
+    "url": "/without-stroke",
+    "viewport": {
+      "height": 320,
+      "width": 844
+    },
+    "width": 829,
+    "requested": "/without-stroke",
+    "mode": "landscape"
+  },
+  {
+    "heading": "Understanding cervical artery dissection",
+    "helpBottom": 104,
+    "helpTop": 56,
+    "links": [
+      {
+        "bottom": 306,
+        "current": null,
+        "height": 48,
+        "label": "Home",
+        "width": 149
+      },
+      {
+        "bottom": 306,
+        "current": "page",
+        "height": 48,
+        "label": "Guides",
+        "width": 149
+      },
+      {
+        "bottom": 306,
+        "current": null,
+        "height": 48,
+        "label": "Tools",
+        "width": 149
+      },
+      {
+        "bottom": 306,
+        "current": null,
+        "height": 48,
+        "label": "Saved",
+        "width": 149
+      }
+    ],
+    "mainBottom": 244,
+    "mainHeight": 131,
+    "navBottom": 320,
+    "navTop": 244,
+    "scrollWidth": 829,
+    "url": "/guide/understanding-dissection",
+    "viewport": {
+      "height": 320,
+      "width": 844
+    },
+    "width": 829,
+    "requested": "/guide/understanding-dissection",
+    "mode": "landscape"
+  },
+  {
+    "heading": "Tests, scans and unfamiliar terms",
+    "helpBottom": 104,
+    "helpTop": 56,
+    "links": [
+      {
+        "bottom": 306,
+        "current": null,
+        "height": 48,
+        "label": "Home",
+        "width": 149
+      },
+      {
+        "bottom": 306,
+        "current": "page",
+        "height": 48,
+        "label": "Guides",
+        "width": 149
+      },
+      {
+        "bottom": 306,
+        "current": null,
+        "height": 48,
+        "label": "Tools",
+        "width": 149
+      },
+      {
+        "bottom": 306,
+        "current": null,
+        "height": 48,
+        "label": "Saved",
+        "width": 149
+      }
+    ],
+    "mainBottom": 244,
+    "mainHeight": 131,
+    "navBottom": 320,
+    "navTop": 244,
+    "scrollWidth": 829,
+    "url": "/guide/tests-and-terms",
+    "viewport": {
+      "height": 320,
+      "width": 844
+    },
+    "width": 829,
+    "requested": "/guide/tests-and-terms",
+    "mode": "landscape"
+  },
+  {
+    "heading": "Dissection without a diagnosed stroke",
+    "helpBottom": 104,
+    "helpTop": 56,
+    "links": [
+      {
+        "bottom": 306,
+        "current": null,
+        "height": 48,
+        "label": "Home",
+        "width": 149
+      },
+      {
+        "bottom": 306,
+        "current": "page",
+        "height": 48,
+        "label": "Guides",
+        "width": 149
+      },
+      {
+        "bottom": 306,
+        "current": null,
+        "height": 48,
+        "label": "Tools",
+        "width": 149
+      },
+      {
+        "bottom": 306,
+        "current": null,
+        "height": 48,
+        "label": "Saved",
+        "width": 149
+      }
+    ],
+    "mainBottom": 244,
+    "mainHeight": 131,
+    "navBottom": 320,
+    "navTop": 244,
+    "scrollWidth": 829,
+    "url": "/guide/without-stroke",
+    "viewport": {
+      "height": 320,
+      "width": 844
+    },
+    "width": 829,
+    "requested": "/guide/without-stroke",
+    "mode": "landscape"
+  },
+  {
+    "heading": "When dissection is accompanied by stroke",
+    "helpBottom": 104,
+    "helpTop": 56,
+    "links": [
+      {
+        "bottom": 306,
+        "current": null,
+        "height": 48,
+        "label": "Home",
+        "width": 149
+      },
+      {
+        "bottom": 306,
+        "current": "page",
+        "height": 48,
+        "label": "Guides",
+        "width": 149
+      },
+      {
+        "bottom": 306,
+        "current": null,
+        "height": 48,
+        "label": "Tools",
+        "width": 149
+      },
+      {
+        "bottom": 306,
+        "current": null,
+        "height": 48,
+        "label": "Saved",
+        "width": 149
+      }
+    ],
+    "mainBottom": 244,
+    "mainHeight": 131,
+    "navBottom": 320,
+    "navTop": 244,
+    "scrollWidth": 829,
+    "url": "/guide/with-stroke",
+    "viewport": {
+      "height": 320,
+      "width": 844
+    },
+    "width": 829,
+    "requested": "/guide/with-stroke",
+    "mode": "landscape"
+  },
+  {
+    "heading": "Recovery, fatigue and quality of life",
+    "helpBottom": 104,
+    "helpTop": 56,
+    "links": [
+      {
+        "bottom": 306,
+        "current": null,
+        "height": 48,
+        "label": "Home",
+        "width": 149
+      },
+      {
+        "bottom": 306,
+        "current": "page",
+        "height": 48,
+        "label": "Guides",
+        "width": 149
+      },
+      {
+        "bottom": 306,
+        "current": null,
+        "height": 48,
+        "label": "Tools",
+        "width": 149
+      },
+      {
+        "bottom": 306,
+        "current": null,
+        "height": 48,
+        "label": "Saved",
+        "width": 149
+      }
+    ],
+    "mainBottom": 244,
+    "mainHeight": 131,
+    "navBottom": 320,
+    "navTop": 244,
+    "scrollWidth": 829,
+    "url": "/guide/recovery-and-quality-of-life",
+    "viewport": {
+      "height": 320,
+      "width": 844
+    },
+    "width": 829,
+    "requested": "/guide/recovery-and-quality-of-life",
+    "mode": "landscape"
+  },
+  {
+    "heading": "Supporting someone after dissection or stroke",
+    "helpBottom": 104,
+    "helpTop": 56,
+    "links": [
+      {
+        "bottom": 306,
+        "current": null,
+        "height": 48,
+        "label": "Home",
+        "width": 149
+      },
+      {
+        "bottom": 306,
+        "current": "page",
+        "height": 48,
+        "label": "Guides",
+        "width": 149
+      },
+      {
+        "bottom": 306,
+        "current": null,
+        "height": 48,
+        "label": "Tools",
+        "width": 149
+      },
+      {
+        "bottom": 306,
+        "current": null,
+        "height": 48,
+        "label": "Saved",
+        "width": 149
+      }
+    ],
+    "mainBottom": 244,
+    "mainHeight": 131,
+    "navBottom": 320,
+    "navTop": 244,
+    "scrollWidth": 829,
+    "url": "/guide/supporting-someone",
+    "viewport": {
+      "height": 320,
+      "width": 844
+    },
+    "width": 829,
+    "requested": "/guide/supporting-someone",
+    "mode": "landscape"
+  },
+  {
+    "heading": "Prepare for a follow-up appointment",
+    "helpBottom": 104,
+    "helpTop": 56,
+    "links": [
+      {
+        "bottom": 306,
+        "current": null,
+        "height": 48,
+        "label": "Home",
+        "width": 149
+      },
+      {
+        "bottom": 306,
+        "current": "page",
+        "height": 48,
+        "label": "Guides",
+        "width": 149
+      },
+      {
+        "bottom": 306,
+        "current": null,
+        "height": 48,
+        "label": "Tools",
+        "width": 149
+      },
+      {
+        "bottom": 306,
+        "current": null,
+        "height": 48,
+        "label": "Saved",
+        "width": 149
+      }
+    ],
+    "mainBottom": 244,
+    "mainHeight": 131,
+    "navBottom": 320,
+    "navTop": 244,
+    "scrollWidth": 829,
+    "url": "/guide/follow-up-questions",
+    "viewport": {
+      "height": 320,
+      "width": 844
+    },
+    "width": 829,
+    "requested": "/guide/follow-up-questions",
+    "mode": "landscape"
+  },
+  {
+    "heading": "Home",
+    "helpBottom": 116,
+    "helpTop": 62,
+    "links": [
+      {
+        "bottom": 758,
+        "current": "page",
+        "height": 68,
+        "label": "Home",
+        "width": 175
+      },
+      {
+        "bottom": 758,
+        "current": null,
+        "height": 68,
+        "label": "Guides",
+        "width": 175
+      },
+      {
+        "bottom": 830,
+        "current": null,
+        "height": 68,
+        "label": "Tools",
+        "width": 175
+      },
+      {
+        "bottom": 830,
+        "current": null,
+        "height": 68,
+        "label": "Saved",
+        "width": 175
+      }
+    ],
+    "mainBottom": 676,
+    "mainHeight": 551,
+    "navBottom": 844,
+    "navTop": 676,
+    "scrollWidth": 375,
+    "url": "/",
+    "viewport": {
+      "height": 844,
+      "width": 390
+    },
+    "width": 375,
+    "requested": "/",
+    "mode": "text-200-390",
+    "navigationFont": "36px"
+  },
+  {
+    "heading": "Understand dissection",
+    "helpBottom": 116,
+    "helpTop": 62,
+    "links": [
+      {
+        "bottom": 758,
+        "current": null,
+        "height": 68,
+        "label": "Home",
+        "width": 175
+      },
+      {
+        "bottom": 758,
+        "current": "page",
+        "height": 68,
+        "label": "Guides",
+        "width": 175
+      },
+      {
+        "bottom": 830,
+        "current": null,
+        "height": 68,
+        "label": "Tools",
+        "width": 175
+      },
+      {
+        "bottom": 830,
+        "current": null,
+        "height": 68,
+        "label": "Saved",
+        "width": 175
+      }
+    ],
+    "mainBottom": 676,
+    "mainHeight": 551,
+    "navBottom": 844,
+    "navTop": 676,
+    "scrollWidth": 375,
+    "url": "/learn",
+    "viewport": {
+      "height": 844,
+      "width": 390
+    },
+    "width": 375,
+    "requested": "/learn",
+    "mode": "text-200-390",
+    "navigationFont": "36px"
+  },
+  {
+    "heading": "Tools",
+    "helpBottom": 116,
+    "helpTop": 62,
+    "links": [
+      {
+        "bottom": 758,
+        "current": null,
+        "height": 68,
+        "label": "Home",
+        "width": 175
+      },
+      {
+        "bottom": 758,
+        "current": null,
+        "height": 68,
+        "label": "Guides",
+        "width": 175
+      },
+      {
+        "bottom": 830,
+        "current": "page",
+        "height": 68,
+        "label": "Tools",
+        "width": 175
+      },
+      {
+        "bottom": 830,
+        "current": null,
+        "height": 68,
+        "label": "Saved",
+        "width": 175
+      }
+    ],
+    "mainBottom": 676,
+    "mainHeight": 551,
+    "navBottom": 844,
+    "navTop": 676,
+    "scrollWidth": 375,
+    "url": "/tools",
+    "viewport": {
+      "height": 844,
+      "width": 390
+    },
+    "width": 375,
+    "requested": "/tools",
+    "mode": "text-200-390",
+    "navigationFont": "36px"
+  },
+  {
+    "heading": "Prepare an appointment",
+    "helpBottom": 116,
+    "helpTop": 62,
+    "links": [
+      {
+        "bottom": 758,
+        "current": null,
+        "height": 68,
+        "label": "Home",
+        "width": 175
+      },
+      {
+        "bottom": 758,
+        "current": null,
+        "height": 68,
+        "label": "Guides",
+        "width": 175
+      },
+      {
+        "bottom": 830,
+        "current": "page",
+        "height": 68,
+        "label": "Tools",
+        "width": 175
+      },
+      {
+        "bottom": 830,
+        "current": null,
+        "height": 68,
+        "label": "Saved",
+        "width": 175
+      }
+    ],
+    "mainBottom": 676,
+    "mainHeight": 551,
+    "navBottom": 844,
+    "navTop": 676,
+    "scrollWidth": 375,
+    "url": "/appointments",
+    "viewport": {
+      "height": 844,
+      "width": 390
+    },
+    "width": 375,
+    "requested": "/appointments",
+    "mode": "text-200-390",
+    "navigationFont": "36px"
+  },
+  {
+    "heading": "Choose a card",
+    "helpBottom": 116,
+    "helpTop": 62,
+    "links": [
+      {
+        "bottom": 758,
+        "current": null,
+        "height": 68,
+        "label": "Home",
+        "width": 175
+      },
+      {
+        "bottom": 758,
+        "current": null,
+        "height": 68,
+        "label": "Guides",
+        "width": 175
+      },
+      {
+        "bottom": 830,
+        "current": "page",
+        "height": 68,
+        "label": "Tools",
+        "width": 175
+      },
+      {
+        "bottom": 830,
+        "current": null,
+        "height": 68,
+        "label": "Saved",
+        "width": 175
+      }
+    ],
+    "mainBottom": 676,
+    "mainHeight": 551,
+    "navBottom": 844,
+    "navTop": 676,
+    "scrollWidth": 375,
+    "url": "/cards",
+    "viewport": {
+      "height": 844,
+      "width": 390
+    },
+    "width": 375,
+    "requested": "/cards",
+    "mode": "text-200-390",
+    "navigationFont": "36px"
+  },
+  {
+    "heading": "Medical and communication card",
+    "helpBottom": 116,
+    "helpTop": 62,
+    "links": [
+      {
+        "bottom": 758,
+        "current": null,
+        "height": 68,
+        "label": "Home",
+        "width": 175
+      },
+      {
+        "bottom": 758,
+        "current": null,
+        "height": 68,
+        "label": "Guides",
+        "width": 175
+      },
+      {
+        "bottom": 830,
+        "current": "page",
+        "height": 68,
+        "label": "Tools",
+        "width": 175
+      },
+      {
+        "bottom": 830,
+        "current": null,
+        "height": 68,
+        "label": "Saved",
+        "width": 175
+      }
+    ],
+    "mainBottom": 676,
+    "mainHeight": 551,
+    "navBottom": 844,
+    "navTop": 676,
+    "scrollWidth": 375,
+    "url": "/personal-card",
+    "viewport": {
+      "height": 844,
+      "width": 390
+    },
+    "width": 375,
+    "requested": "/personal-card",
+    "mode": "text-200-390",
+    "navigationFont": "36px"
+  },
+  {
+    "heading": "Anniversary or milestone card",
+    "helpBottom": 116,
+    "helpTop": 62,
+    "links": [
+      {
+        "bottom": 758,
+        "current": null,
+        "height": 68,
+        "label": "Home",
+        "width": 175
+      },
+      {
+        "bottom": 758,
+        "current": null,
+        "height": 68,
+        "label": "Guides",
+        "width": 175
+      },
+      {
+        "bottom": 830,
+        "current": "page",
+        "height": 68,
+        "label": "Tools",
+        "width": 175
+      },
+      {
+        "bottom": 830,
+        "current": null,
+        "height": 68,
+        "label": "Saved",
+        "width": 175
+      }
+    ],
+    "mainBottom": 676,
+    "mainHeight": 551,
+    "navBottom": 844,
+    "navTop": 676,
+    "scrollWidth": 375,
+    "url": "/milestone-card",
+    "viewport": {
+      "height": 844,
+      "width": 390
+    },
+    "width": 375,
+    "requested": "/milestone-card",
+    "mode": "text-200-390",
+    "navigationFont": "36px"
+  },
+  {
+    "heading": "Saved on this device",
+    "helpBottom": 116,
+    "helpTop": 62,
+    "links": [
+      {
+        "bottom": 758,
+        "current": null,
+        "height": 68,
+        "label": "Home",
+        "width": 175
+      },
+      {
+        "bottom": 758,
+        "current": null,
+        "height": 68,
+        "label": "Guides",
+        "width": 175
+      },
+      {
+        "bottom": 830,
+        "current": null,
+        "height": 68,
+        "label": "Tools",
+        "width": 175
+      },
+      {
+        "bottom": 830,
+        "current": "page",
+        "height": 68,
+        "label": "Saved",
+        "width": 175
+      }
+    ],
+    "mainBottom": 676,
+    "mainHeight": 551,
+    "navBottom": 844,
+    "navTop": 676,
+    "scrollWidth": 375,
+    "url": "/saved",
+    "viewport": {
+      "height": 844,
+      "width": 390
+    },
+    "width": 375,
+    "requested": "/saved",
+    "mode": "text-200-390",
+    "navigationFont": "36px"
+  },
+  {
+    "heading": "Saved guides.",
+    "helpBottom": 116,
+    "helpTop": 62,
+    "links": [
+      {
+        "bottom": 758,
+        "current": null,
+        "height": 68,
+        "label": "Home",
+        "width": 175
+      },
+      {
+        "bottom": 758,
+        "current": null,
+        "height": 68,
+        "label": "Guides",
+        "width": 175
+      },
+      {
+        "bottom": 830,
+        "current": null,
+        "height": 68,
+        "label": "Tools",
+        "width": 175
+      },
+      {
+        "bottom": 830,
+        "current": "page",
+        "height": 68,
+        "label": "Saved",
+        "width": 175
+      }
+    ],
+    "mainBottom": 676,
+    "mainHeight": 551,
+    "navBottom": 844,
+    "navTop": 676,
+    "scrollWidth": 375,
+    "url": "/saved-guides",
+    "viewport": {
+      "height": 844,
+      "width": 390
+    },
+    "width": 375,
+    "requested": "/saved-guides",
+    "mode": "text-200-390",
+    "navigationFont": "36px"
+  },
+  {
+    "heading": "Support preferences",
+    "helpBottom": 116,
+    "helpTop": 62,
+    "links": [
+      {
+        "bottom": 758,
+        "current": null,
+        "height": 68,
+        "label": "Home",
+        "width": 175
+      },
+      {
+        "bottom": 758,
+        "current": null,
+        "height": 68,
+        "label": "Guides",
+        "width": 175
+      },
+      {
+        "bottom": 830,
+        "current": "page",
+        "height": 68,
+        "label": "Tools",
+        "width": 175
+      },
+      {
+        "bottom": 830,
+        "current": null,
+        "height": 68,
+        "label": "Saved",
+        "width": 175
+      }
+    ],
+    "mainBottom": 676,
+    "mainHeight": 551,
+    "navBottom": 844,
+    "navTop": 676,
+    "scrollWidth": 375,
+    "url": "/support-preferences",
+    "viewport": {
+      "height": 844,
+      "width": 390
+    },
+    "width": 375,
+    "requested": "/support-preferences",
+    "mode": "text-200-390",
+    "navigationFont": "36px"
+  },
+  {
+    "heading": "Help someone",
+    "helpBottom": 116,
+    "helpTop": 62,
+    "links": [
+      {
+        "bottom": 758,
+        "current": null,
+        "height": 68,
+        "label": "Home",
+        "width": 175
+      },
+      {
+        "bottom": 758,
+        "current": "page",
+        "height": 68,
+        "label": "Guides",
+        "width": 175
+      },
+      {
+        "bottom": 830,
+        "current": null,
+        "height": 68,
+        "label": "Tools",
+        "width": 175
+      },
+      {
+        "bottom": 830,
+        "current": null,
+        "height": 68,
+        "label": "Saved",
+        "width": 175
+      }
+    ],
+    "mainBottom": 676,
+    "mainHeight": 551,
+    "navBottom": 844,
+    "navTop": 676,
+    "scrollWidth": 375,
+    "url": "/supporting-someone",
+    "viewport": {
+      "height": 844,
+      "width": 390
+    },
+    "width": 375,
+    "requested": "/supporting-someone",
+    "mode": "text-200-390",
+    "navigationFont": "36px"
+  },
+  {
+    "heading": "Look up a term",
+    "helpBottom": 116,
+    "helpTop": 62,
+    "links": [
+      {
+        "bottom": 758,
+        "current": null,
+        "height": 68,
+        "label": "Home",
+        "width": 175
+      },
+      {
+        "bottom": 758,
+        "current": "page",
+        "height": 68,
+        "label": "Guides",
+        "width": 175
+      },
+      {
+        "bottom": 830,
+        "current": null,
+        "height": 68,
+        "label": "Tools",
+        "width": 175
+      },
+      {
+        "bottom": 830,
+        "current": null,
+        "height": 68,
+        "label": "Saved",
+        "width": 175
+      }
+    ],
+    "mainBottom": 676,
+    "mainHeight": 551,
+    "navBottom": 844,
+    "navTop": 676,
+    "scrollWidth": 375,
+    "url": "/glossary",
+    "viewport": {
+      "height": 844,
+      "width": 390
+    },
+    "width": 375,
+    "requested": "/glossary",
+    "mode": "text-200-390",
+    "navigationFont": "36px"
+  },
+  {
+    "heading": "Resources",
+    "helpBottom": 116,
+    "helpTop": 62,
+    "links": [
+      {
+        "bottom": 758,
+        "current": null,
+        "height": 68,
+        "label": "Home",
+        "width": 175
+      },
+      {
+        "bottom": 758,
+        "current": "page",
+        "height": 68,
+        "label": "Guides",
+        "width": 175
+      },
+      {
+        "bottom": 830,
+        "current": null,
+        "height": 68,
+        "label": "Tools",
+        "width": 175
+      },
+      {
+        "bottom": 830,
+        "current": null,
+        "height": 68,
+        "label": "Saved",
+        "width": 175
+      }
+    ],
+    "mainBottom": 676,
+    "mainHeight": 551,
+    "navBottom": 844,
+    "navTop": 676,
+    "scrollWidth": 375,
+    "url": "/resources",
+    "viewport": {
+      "height": 844,
+      "width": 390
+    },
+    "width": 375,
+    "requested": "/resources",
+    "mode": "text-200-390",
+    "navigationFont": "36px"
+  },
+  {
+    "heading": "About and privacy",
+    "helpBottom": 116,
+    "helpTop": 62,
+    "links": [
+      {
+        "bottom": 758,
+        "current": null,
+        "height": 68,
+        "label": "Home",
+        "width": 175
+      },
+      {
+        "bottom": 758,
+        "current": null,
+        "height": 68,
+        "label": "Guides",
+        "width": 175
+      },
+      {
+        "bottom": 830,
+        "current": null,
+        "height": 68,
+        "label": "Tools",
+        "width": 175
+      },
+      {
+        "bottom": 830,
+        "current": null,
+        "height": 68,
+        "label": "Saved",
+        "width": 175
+      }
+    ],
+    "mainBottom": 676,
+    "mainHeight": 551,
+    "navBottom": 844,
+    "navTop": 676,
+    "scrollWidth": 375,
+    "url": "/about",
+    "viewport": {
+      "height": 844,
+      "width": 390
+    },
+    "width": 375,
+    "requested": "/about",
+    "mode": "text-200-390",
+    "navigationFont": "36px"
+  },
+  {
+    "heading": "Text and display",
+    "helpBottom": 116,
+    "helpTop": 62,
+    "links": [
+      {
+        "bottom": 758,
+        "current": null,
+        "height": 68,
+        "label": "Home",
+        "width": 175
+      },
+      {
+        "bottom": 758,
+        "current": null,
+        "height": 68,
+        "label": "Guides",
+        "width": 175
+      },
+      {
+        "bottom": 830,
+        "current": null,
+        "height": 68,
+        "label": "Tools",
+        "width": 175
+      },
+      {
+        "bottom": 830,
+        "current": null,
+        "height": 68,
+        "label": "Saved",
+        "width": 175
+      }
+    ],
+    "mainBottom": 676,
+    "mainHeight": 551,
+    "navBottom": 844,
+    "navTop": 676,
+    "scrollWidth": 375,
+    "url": "/accessibility",
+    "viewport": {
+      "height": 844,
+      "width": 390
+    },
+    "width": 375,
+    "requested": "/accessibility",
+    "mode": "text-200-390",
+    "navigationFont": "36px"
+  },
+  {
+    "heading": "Medical help",
+    "helpBottom": 116,
+    "helpTop": 62,
+    "links": [
+      {
+        "bottom": 758,
+        "current": null,
+        "height": 68,
+        "label": "Home",
+        "width": 175
+      },
+      {
+        "bottom": 758,
+        "current": null,
+        "height": 68,
+        "label": "Guides",
+        "width": 175
+      },
+      {
+        "bottom": 830,
+        "current": null,
+        "height": 68,
+        "label": "Tools",
+        "width": 175
+      },
+      {
+        "bottom": 830,
+        "current": null,
+        "height": 68,
+        "label": "Saved",
+        "width": 175
+      }
+    ],
+    "mainBottom": 676,
+    "mainHeight": 551,
+    "navBottom": 844,
+    "navTop": 676,
+    "scrollWidth": 375,
+    "url": "/urgent-help",
+    "viewport": {
+      "height": 844,
+      "width": 390
+    },
+    "width": 375,
+    "requested": "/urgent-help",
+    "mode": "text-200-390",
+    "navigationFont": "36px"
+  },
+  {
+    "heading": "Dissection and stroke",
+    "helpBottom": 116,
+    "helpTop": 62,
+    "links": [
+      {
+        "bottom": 758,
+        "current": null,
+        "height": 68,
+        "label": "Home",
+        "width": 175
+      },
+      {
+        "bottom": 758,
+        "current": "page",
+        "height": 68,
+        "label": "Guides",
+        "width": 175
+      },
+      {
+        "bottom": 830,
+        "current": null,
+        "height": 68,
+        "label": "Tools",
+        "width": 175
+      },
+      {
+        "bottom": 830,
+        "current": null,
+        "height": 68,
+        "label": "Saved",
+        "width": 175
+      }
+    ],
+    "mainBottom": 676,
+    "mainHeight": 551,
+    "navBottom": 844,
+    "navTop": 676,
+    "scrollWidth": 375,
+    "url": "/with-stroke",
+    "viewport": {
+      "height": 844,
+      "width": 390
+    },
+    "width": 375,
+    "requested": "/with-stroke",
+    "mode": "text-200-390",
+    "navigationFont": "36px"
+  },
+  {
+    "heading": "Dissection without a diagnosed stroke",
+    "helpBottom": 116,
+    "helpTop": 62,
+    "links": [
+      {
+        "bottom": 758,
+        "current": null,
+        "height": 68,
+        "label": "Home",
+        "width": 175
+      },
+      {
+        "bottom": 758,
+        "current": "page",
+        "height": 68,
+        "label": "Guides",
+        "width": 175
+      },
+      {
+        "bottom": 830,
+        "current": null,
+        "height": 68,
+        "label": "Tools",
+        "width": 175
+      },
+      {
+        "bottom": 830,
+        "current": null,
+        "height": 68,
+        "label": "Saved",
+        "width": 175
+      }
+    ],
+    "mainBottom": 676,
+    "mainHeight": 551,
+    "navBottom": 844,
+    "navTop": 676,
+    "scrollWidth": 375,
+    "url": "/without-stroke",
+    "viewport": {
+      "height": 844,
+      "width": 390
+    },
+    "width": 375,
+    "requested": "/without-stroke",
+    "mode": "text-200-390",
+    "navigationFont": "36px"
+  },
+  {
+    "heading": "Understanding cervical artery dissection",
+    "helpBottom": 116,
+    "helpTop": 62,
+    "links": [
+      {
+        "bottom": 758,
+        "current": null,
+        "height": 68,
+        "label": "Home",
+        "width": 175
+      },
+      {
+        "bottom": 758,
+        "current": "page",
+        "height": 68,
+        "label": "Guides",
+        "width": 175
+      },
+      {
+        "bottom": 830,
+        "current": null,
+        "height": 68,
+        "label": "Tools",
+        "width": 175
+      },
+      {
+        "bottom": 830,
+        "current": null,
+        "height": 68,
+        "label": "Saved",
+        "width": 175
+      }
+    ],
+    "mainBottom": 676,
+    "mainHeight": 551,
+    "navBottom": 844,
+    "navTop": 676,
+    "scrollWidth": 375,
+    "url": "/guide/understanding-dissection",
+    "viewport": {
+      "height": 844,
+      "width": 390
+    },
+    "width": 375,
+    "requested": "/guide/understanding-dissection",
+    "mode": "text-200-390",
+    "navigationFont": "36px"
+  },
+  {
+    "heading": "Tests, scans and unfamiliar terms",
+    "helpBottom": 116,
+    "helpTop": 62,
+    "links": [
+      {
+        "bottom": 758,
+        "current": null,
+        "height": 68,
+        "label": "Home",
+        "width": 175
+      },
+      {
+        "bottom": 758,
+        "current": "page",
+        "height": 68,
+        "label": "Guides",
+        "width": 175
+      },
+      {
+        "bottom": 830,
+        "current": null,
+        "height": 68,
+        "label": "Tools",
+        "width": 175
+      },
+      {
+        "bottom": 830,
+        "current": null,
+        "height": 68,
+        "label": "Saved",
+        "width": 175
+      }
+    ],
+    "mainBottom": 676,
+    "mainHeight": 551,
+    "navBottom": 844,
+    "navTop": 676,
+    "scrollWidth": 375,
+    "url": "/guide/tests-and-terms",
+    "viewport": {
+      "height": 844,
+      "width": 390
+    },
+    "width": 375,
+    "requested": "/guide/tests-and-terms",
+    "mode": "text-200-390",
+    "navigationFont": "36px"
+  },
+  {
+    "heading": "Dissection without a diagnosed stroke",
+    "helpBottom": 116,
+    "helpTop": 62,
+    "links": [
+      {
+        "bottom": 758,
+        "current": null,
+        "height": 68,
+        "label": "Home",
+        "width": 175
+      },
+      {
+        "bottom": 758,
+        "current": "page",
+        "height": 68,
+        "label": "Guides",
+        "width": 175
+      },
+      {
+        "bottom": 830,
+        "current": null,
+        "height": 68,
+        "label": "Tools",
+        "width": 175
+      },
+      {
+        "bottom": 830,
+        "current": null,
+        "height": 68,
+        "label": "Saved",
+        "width": 175
+      }
+    ],
+    "mainBottom": 676,
+    "mainHeight": 551,
+    "navBottom": 844,
+    "navTop": 676,
+    "scrollWidth": 375,
+    "url": "/guide/without-stroke",
+    "viewport": {
+      "height": 844,
+      "width": 390
+    },
+    "width": 375,
+    "requested": "/guide/without-stroke",
+    "mode": "text-200-390",
+    "navigationFont": "36px"
+  },
+  {
+    "heading": "When dissection is accompanied by stroke",
+    "helpBottom": 116,
+    "helpTop": 62,
+    "links": [
+      {
+        "bottom": 758,
+        "current": null,
+        "height": 68,
+        "label": "Home",
+        "width": 175
+      },
+      {
+        "bottom": 758,
+        "current": "page",
+        "height": 68,
+        "label": "Guides",
+        "width": 175
+      },
+      {
+        "bottom": 830,
+        "current": null,
+        "height": 68,
+        "label": "Tools",
+        "width": 175
+      },
+      {
+        "bottom": 830,
+        "current": null,
+        "height": 68,
+        "label": "Saved",
+        "width": 175
+      }
+    ],
+    "mainBottom": 676,
+    "mainHeight": 551,
+    "navBottom": 844,
+    "navTop": 676,
+    "scrollWidth": 375,
+    "url": "/guide/with-stroke",
+    "viewport": {
+      "height": 844,
+      "width": 390
+    },
+    "width": 375,
+    "requested": "/guide/with-stroke",
+    "mode": "text-200-390",
+    "navigationFont": "36px"
+  },
+  {
+    "heading": "Recovery, fatigue and quality of life",
+    "helpBottom": 116,
+    "helpTop": 62,
+    "links": [
+      {
+        "bottom": 758,
+        "current": null,
+        "height": 68,
+        "label": "Home",
+        "width": 175
+      },
+      {
+        "bottom": 758,
+        "current": "page",
+        "height": 68,
+        "label": "Guides",
+        "width": 175
+      },
+      {
+        "bottom": 830,
+        "current": null,
+        "height": 68,
+        "label": "Tools",
+        "width": 175
+      },
+      {
+        "bottom": 830,
+        "current": null,
+        "height": 68,
+        "label": "Saved",
+        "width": 175
+      }
+    ],
+    "mainBottom": 676,
+    "mainHeight": 551,
+    "navBottom": 844,
+    "navTop": 676,
+    "scrollWidth": 375,
+    "url": "/guide/recovery-and-quality-of-life",
+    "viewport": {
+      "height": 844,
+      "width": 390
+    },
+    "width": 375,
+    "requested": "/guide/recovery-and-quality-of-life",
+    "mode": "text-200-390",
+    "navigationFont": "36px"
+  },
+  {
+    "heading": "Supporting someone after dissection or stroke",
+    "helpBottom": 116,
+    "helpTop": 62,
+    "links": [
+      {
+        "bottom": 758,
+        "current": null,
+        "height": 68,
+        "label": "Home",
+        "width": 175
+      },
+      {
+        "bottom": 758,
+        "current": "page",
+        "height": 68,
+        "label": "Guides",
+        "width": 175
+      },
+      {
+        "bottom": 830,
+        "current": null,
+        "height": 68,
+        "label": "Tools",
+        "width": 175
+      },
+      {
+        "bottom": 830,
+        "current": null,
+        "height": 68,
+        "label": "Saved",
+        "width": 175
+      }
+    ],
+    "mainBottom": 676,
+    "mainHeight": 551,
+    "navBottom": 844,
+    "navTop": 676,
+    "scrollWidth": 375,
+    "url": "/guide/supporting-someone",
+    "viewport": {
+      "height": 844,
+      "width": 390
+    },
+    "width": 375,
+    "requested": "/guide/supporting-someone",
+    "mode": "text-200-390",
+    "navigationFont": "36px"
+  },
+  {
+    "heading": "Prepare for a follow-up appointment",
+    "helpBottom": 116,
+    "helpTop": 62,
+    "links": [
+      {
+        "bottom": 758,
+        "current": null,
+        "height": 68,
+        "label": "Home",
+        "width": 175
+      },
+      {
+        "bottom": 758,
+        "current": "page",
+        "height": 68,
+        "label": "Guides",
+        "width": 175
+      },
+      {
+        "bottom": 830,
+        "current": null,
+        "height": 68,
+        "label": "Tools",
+        "width": 175
+      },
+      {
+        "bottom": 830,
+        "current": null,
+        "height": 68,
+        "label": "Saved",
+        "width": 175
+      }
+    ],
+    "mainBottom": 676,
+    "mainHeight": 551,
+    "navBottom": 844,
+    "navTop": 676,
+    "scrollWidth": 375,
+    "url": "/guide/follow-up-questions",
+    "viewport": {
+      "height": 844,
+      "width": 390
+    },
+    "width": 375,
+    "requested": "/guide/follow-up-questions",
+    "mode": "text-200-390",
+    "navigationFont": "36px"
+  }
+]

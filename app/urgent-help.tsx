@@ -11,11 +11,15 @@ const sources = [
 export default function UrgentHelpScreen() {
   return <AppPage>
     <BackHome />
-    <PageHeading eyebrow="Urgent help" title="Urgent help" summary={urgentHelp.action} compact />
-    <View style={styles.action}>
-      <Text style={styles.actionText}>{urgentHelp.doNotWait}</Text>
-      <Text style={styles.actionText}>{urgentHelp.quickAction}</Text>
-    </View>
+    <PageHeading eyebrow="Medical help" title="Medical help" summary="" compact />
+    <Card title="Possible stroke or another emergency">
+      <Body>{urgentHelp.action}</Body>
+      <Body>{urgentHelp.doNotWait}</Body>
+      <Text style={styles.quickAction}>{urgentHelp.quickAction}</Text>
+    </Card>
+    <Card title="Feeling unwell or concerned?">
+      <Body>{urgentHelp.feelingUnwell}</Body>
+    </Card>
     <Card title="B.E. F.A.S.T. — stroke warning signs">
       <Body>{urgentHelp.signsIntro}</Body>
       {urgentHelp.signs.map((sign) => <View key={sign.letter} style={styles.sign}>
@@ -23,9 +27,6 @@ export default function UrgentHelpScreen() {
         <Body>{sign.text}</Body>
       </View>)}
       <Body>{urgentHelp.signsLimit}</Body>
-    </Card>
-    <Card title="Feeling unwell or concerned?">
-      <Body>{urgentHelp.feelingUnwell}</Body>
     </Card>
     <Card title="Information, not medical care">
       <Body>{urgentHelp.appLimit}</Body>
@@ -41,8 +42,7 @@ export default function UrgentHelpScreen() {
 }
 
 const styles = StyleSheet.create({
-  action: { padding: 18, marginBottom: 13, borderRadius: 15, backgroundColor: palette.alert },
-  actionText: { color: palette.alertInk, fontSize: 18, lineHeight: 27, fontWeight: "700", marginBottom: 7, maxWidth: 680 },
+  quickAction: { color: palette.ink, fontSize: 18, lineHeight: 27, fontWeight: "600", marginTop: 12, maxWidth: 680 },
   sign: { marginVertical: 10 },
   signTitle: { color: palette.ink, fontSize: 20, lineHeight: 30, fontWeight: "700" },
   sourceLink: { paddingVertical: 8 },

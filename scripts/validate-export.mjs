@@ -7,7 +7,7 @@ const root = fileURLToPath(new URL("../dist/", import.meta.url));
 const files = [
   "index.html", "about.html", "accessibility.html", "appointments.html", "glossary.html", "learn.html", "cards.html", "saved.html", "fonts/NotoSans-Regular.ttf", "fonts/NotoSans-Bold.ttf",
   "milestone-card.html", "personal-card.html", "resources.html", "saved-guides.html", "support-preferences.html",
-  "supporting-someone.html", "urgent-help.html", "with-stroke.html", "without-stroke.html", "+not-found.html",
+  "supporting-someone.html", "tools.html", "urgent-help.html", "with-stroke.html", "without-stroke.html", "+not-found.html",
   "_sitemap.html", "manifest.json", "icon.svg", "sw.js", "_headers",
   "guide/understanding-dissection.html", "guide/tests-and-terms.html", "guide/without-stroke.html",
   "guide/with-stroke.html", "guide/recovery-and-quality-of-life.html", "guide/follow-up-questions.html",
@@ -25,13 +25,14 @@ assert.ok(/(?:call|contact) local emergency services now/i.test(urgent), "urgent
 assert.ok(/B\.E\. F\.A\.S\.T\./.test(urgent), "urgent-help route must include the stroke-sign reminder");
 assert.ok(/Call even if the symptoms stop/.test(urgent), "urgent-help route must not reassure when signs stop");
 assert.ok(/information and preparation app, not a medical service/.test(urgent), "urgent-help route must state its product boundary");
-assert.match(home, /What this app can and cannot do/i, "home route must explain the product boundary");
+assert.ok(/Information and preparation, not medical care/i.test(home), "home route must explain the product boundary");
+assert.ok(/data-testid=\"app-navigation\"/.test(home), "home route must export persistent app navigation");
 assert.match(home, /@media print/, "export must include print styles");
 assert.match(home, /data-testid=\\?\"site-header\\?\"/, "print styles must hide site navigation");
 assert.match(personal, /not an official medical record or emergency plan/i, "personal card safety label must be exported");
 assert.match(milestone, /not medical advice or proof of diagnosis/i, "milestone card safety label must be exported");
 assert.match(notFound, /Page not found/, "unavailable-page shell must give a clear heading");
-assert.match(notFound, /Urgent help/, "urgent help must remain available from a missing page");
+assert.ok(/href=\"\/urgent-help\"/.test(notFound), "medical help must remain available from a missing page");
 assert.match(notFound, /href=\\?\"\//, "unavailable-page shell must provide a Home route");
 for (const directive of ["X-Content-Type-Options: nosniff", "Referrer-Policy: strict-origin-when-cross-origin", "Permissions-Policy: camera=(), microphone=(), geolocation=()"])
   assert.match(headers, new RegExp(directive.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")), `static headers lost directive: ${directive}`);
