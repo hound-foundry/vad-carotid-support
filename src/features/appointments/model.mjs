@@ -11,6 +11,8 @@ export const appointmentPrompts = [
   { id: "tests", group: "During the appointment", text: "Could you explain what my test results show, what remains uncertain, and whether anything is still pending?" },
   { id: "follow-up-imaging", group: "During the appointment", text: "Is any follow-up imaging planned for me? If so, what is its purpose?" },
   { id: "daily-life", group: "During the appointment", text: "Which day-to-day concerns, such as energy or concentration, would be useful to discuss?" },
+  { id: "fatigue-pattern", group: "During the appointment", text: "How could I describe changes in energy, fatigue or concentration so we can discuss what support may fit?" },
+  { id: "daily-activities", group: "During the appointment", text: "Which everyday activities have become harder, and could we talk about support or rehabilitation options?" },
   { id: "support", group: "During the appointment", text: "What support is available for me and the people helping me?" },
   { id: "next-steps", group: "Before I leave", text: "Could we write down the next steps and who is responsible for each one?" },
   { id: "pending-results", group: "Before I leave", text: "Who will contact me about any pending results, and how can I follow up if I do not hear back?" },
