@@ -649,3 +649,9 @@ Bermuda source discovery records the Personal Information Protection Act 2016, P
 This is an official-source discovery pass, not legal advice, a completeness claim or an applicability determination. American Samoa (`AS`) remains blocked; all 14 review areas and the territorial review remain `not-assessed`.
 
 American Samoa source discovery records the Department of Health, Department of Legal Affairs, the territorial Medical Services Disaster Plan, the government portal, and a federal EMS directory. Territory-specific privacy, health-data, medical-device, federal-territorial, accessibility, language, and emergency-routing requirements remain to be mapped by qualified reviewers; no American Samoa-specific emergency instruction is enabled.
+
+## Antigua and Barbuda source-discovery snapshot — 13 October 2026
+
+This is an official-source discovery pass, not legal advice, a completeness claim or an applicability determination. Antigua and Barbuda (`AG`) remains blocked; all 14 review areas and the national review remain `not-assessed`.
+
+Antigua and Barbuda source discovery records the Data Protection Act 2013 and official laws repository, Ministry of Health oversight, Emergency Medical Services, and police emergency guidance. Qualified review must resolve sensitive-data processing, medical-device and health-service regulation, accessibility, cross-border transfers, English-language content, and emergency-service coverage before Antigua and Barbuda-specific access is enabled.

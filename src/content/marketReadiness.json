@@ -1449,8 +1449,50 @@
       "release": "blocked",
       "isoAlpha2": "AG",
       "reviewOwner": null,
-      "lastChecked": null,
-      "officialSources": [],
+      "lastChecked": "2026-10-13",
+      "officialSources": [
+        {
+          "title": "Data Protection Act 2013",
+          "url": "https://laws.gov.ag/wp-content/uploads/2019/02/a2013-10.pdf",
+          "authority": "Ministry of Legal Affairs, Antigua and Barbuda",
+          "sourceType": "privacy-law",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Official laws repository",
+          "url": "https://laws.gov.ag/",
+          "authority": "Ministry of Legal Affairs, Antigua and Barbuda",
+          "sourceType": "legal-repository",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Ministry of Health, Wellness and Environment",
+          "url": "https://health.gov.ag/about-us-2/mission-vision-2/",
+          "authority": "Ministry of Health, Wellness and Environment, Antigua and Barbuda",
+          "sourceType": "health-regulator",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Antigua and Barbuda Emergency Medical Services",
+          "url": "https://health.gov.ag/departments/antigua-and-barbuda-emergency-medical-services/",
+          "authority": "Ministry of Health, Wellness and Environment, Antigua and Barbuda",
+          "sourceType": "emergency-health-guidance",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Police emergency service",
+          "url": "https://police.gov.ag/",
+          "authority": "Royal Police Force of Antigua and Barbuda",
+          "sourceType": "emergency-guidance",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        }
+      ],
+      "sourceDiscoveryCheckedOn": "2026-10-13",
       "reviewAreas": [
         {
           "area": "privacy-and-health-data",
