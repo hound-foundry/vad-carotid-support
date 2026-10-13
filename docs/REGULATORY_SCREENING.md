@@ -559,3 +559,9 @@ Cambodia source discovery records the Ministry of Post and Telecommunications dr
 This is an official-source discovery pass, not legal advice, a completeness claim or an applicability determination. Bahrain (`BH`) remains blocked; all 14 review areas and the national review remain `not-assessed`.
 
 Bahrain source discovery records the Personal Data Protection Law and executive decisions, the Ministry of Health medical-device certificate service, and government emergency guidance and hotline directories. These are source leads only. Qualified review must resolve health-data processing, device-storage and transfer obligations, medical-software classification, Arabic and English accessibility, emergency-information publication, consumer and distribution rules, and any applicable local requirements before Bahrain-specific access or emergency details are enabled.
+
+## Belarus source-discovery snapshot — 13 October 2026
+
+This is an official-source discovery pass, not legal advice, a completeness claim or an applicability determination. Belarus (`BY`) remains blocked; all 14 review areas and the national review remain `not-assessed`.
+
+Belarus source discovery records the personal-data protection law and National Personal Data Protection Center, the Ministry of Health, a cross-check for ambulance guidance, and a medical-device registration source lead. Some material is Russian-language or secondary and must be verified against current Belarusian legal publications. Qualified review must resolve health-data processing, cross-border transfers, local-language accessibility, medical-software classification, emergency-information publication, consumer and distribution rules, and any applicable subnational requirements before Belarus-specific access or emergency details are enabled.

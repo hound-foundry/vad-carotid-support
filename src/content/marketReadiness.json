@@ -3738,8 +3738,50 @@
       "release": "blocked",
       "isoAlpha2": "BY",
       "reviewOwner": null,
-      "lastChecked": null,
-      "officialSources": [],
+  "lastChecked": "2026-10-13",
+  "officialSources": [
+    {
+      "title": "Law on personal data protection No. 99-Z",
+      "url": "https://cis-legislation.com/document.fwx?rgn=132096",
+      "authority": "Republic of Belarus legal publication (source lead)",
+      "sourceType": "privacy-law",
+      "checkedOn": "2026-10-13",
+      "status": "source-lead-only"
+    },
+    {
+      "title": "National Personal Data Protection Center",
+      "url": "https://cpd.by/",
+      "authority": "National Personal Data Protection Center of the Republic of Belarus",
+      "sourceType": "privacy-regulator",
+      "checkedOn": "2026-10-13",
+      "status": "source-lead-only"
+    },
+    {
+      "title": "Ministry of Health of the Republic of Belarus",
+      "url": "https://minzdrav.gov.by/",
+      "authority": "Ministry of Health of the Republic of Belarus",
+      "sourceType": "health-regulator",
+      "checkedOn": "2026-10-13",
+      "status": "source-lead-only"
+    },
+    {
+      "title": "Emergency services contact guidance",
+      "url": "https://www.gov.uk/foreign-travel-advice/belarus/getting-help",
+      "authority": "UK Foreign, Commonwealth and Development Office (cross-check source)",
+      "sourceType": "emergency-guidance",
+      "checkedOn": "2026-10-13",
+      "status": "source-lead-only"
+    },
+    {
+      "title": "Medical device registration requirements (source lead)",
+      "url": "https://bymed.by/services",
+      "authority": "Belarus medical-device registration information (secondary source lead)",
+      "sourceType": "medical-device-regulation",
+      "checkedOn": "2026-10-13",
+      "status": "source-lead-only"
+    }
+  ],
+  "sourceDiscoveryCheckedOn": "2026-10-13",
       "reviewAreas": [
         {
           "area": "privacy-and-health-data",
