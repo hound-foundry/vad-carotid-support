@@ -648,8 +648,50 @@
       "release": "blocked",
       "isoAlpha2": "AS",
       "reviewOwner": null,
-      "lastChecked": null,
-      "officialSources": [],
+      "lastChecked": "2026-10-13",
+      "officialSources": [
+        {
+          "title": "American Samoa Department of Health",
+          "url": "https://doh.as/",
+          "authority": "American Samoa Government Department of Health",
+          "sourceType": "health-regulator",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Department of Legal Affairs",
+          "url": "https://legalaffairs.as.gov/",
+          "authority": "American Samoa Government Department of Legal Affairs",
+          "sourceType": "territorial-law",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Medical Services Disaster Plan",
+          "url": "https://www.americansamoa.gov/_files/ugd/4bfff9_bba88c7d53cc48a9af8f2473d4431bd8.pdf",
+          "authority": "American Samoa Government Department of Medical Services",
+          "sourceType": "emergency-health-regulation",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "American Samoa Government portal",
+          "url": "https://www.americansamoa.gov/",
+          "authority": "American Samoa Government",
+          "sourceType": "territorial-government",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        },
+        {
+          "title": "Emergency medical services contact",
+          "url": "https://www.govinfo.gov/content/pkg/GOVPUB-HS5-PURL-gpo121011/pdf/GOVPUB-HS5-PURL-gpo121011.pdf",
+          "authority": "U.S. Fire Administration (territorial EMS directory)",
+          "sourceType": "emergency-guidance",
+          "checkedOn": "2026-10-13",
+          "status": "source-lead-only"
+        }
+      ],
+      "sourceDiscoveryCheckedOn": "2026-10-13",
       "reviewAreas": [
         {
           "area": "privacy-and-health-data",

@@ -643,3 +643,9 @@ Côte d’Ivoire source discovery records Law 2013-450 and ARTCI privacy-complia
 This is an official-source discovery pass, not legal advice, a completeness claim or an applicability determination. Bermuda (`BM`) remains blocked; all 14 review areas and the territory review remain `not-assessed`.
 
 Bermuda source discovery records the Personal Information Protection Act 2016, Privacy Commissioner guidance, government health-regulatory bodies, Bermuda Health Council health-technology oversight, and government emergency guidance. Qualified review must resolve the Act’s current commencement and amendments, sensitive health-data processing, international transfers, health-technology classification, accessibility, and territory-specific distribution requirements before Bermuda-specific access is enabled.
+
+## American Samoa source-discovery snapshot — 13 October 2026
+
+This is an official-source discovery pass, not legal advice, a completeness claim or an applicability determination. American Samoa (`AS`) remains blocked; all 14 review areas and the territorial review remain `not-assessed`.
+
+American Samoa source discovery records the Department of Health, Department of Legal Affairs, the territorial Medical Services Disaster Plan, the government portal, and a federal EMS directory. Territory-specific privacy, health-data, medical-device, federal-territorial, accessibility, language, and emergency-routing requirements remain to be mapped by qualified reviewers; no American Samoa-specific emergency instruction is enabled.
