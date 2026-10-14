@@ -11,6 +11,7 @@ test("design workflow rejects a different framework, private URLs and weakened s
   assert.throws(()=>validateProfile({...profile,framework:"vite"}),/Expo/);
   assert.throws(()=>validateProfile({...profile,routes:[{path:"/personal-card?name=PRIVATE",label:"Card"}]}),/route/);
   assert.throws(()=>validateProfile({...profile,privacy:{...profile.privacy,explicitExport:false}}),/privacy/);
+  assert.throws(()=>validateProfile({...profile,privacy:{...profile.privacy,localResources:[]}}),/photo resource/);
   assert.throws(()=>projectPath(process.cwd(),"../private.txt"),/stay/);
 });
 test("palette drift is detected instead of silently generating a different design",async()=>{
@@ -21,6 +22,9 @@ test("palette drift is detected instead of silently generating a different desig
 test("source inspection excludes browser contents and preserves independent saved keys",async()=>{
   const kit=await inspectDesign();
   assert.equal(kit.profile.privacy.savedKeyCount,6);
+  assert.equal(kit.profile.privacy.localResources[0].storage,"indexeddb");
+  assert.equal(kit.tokens.cardTemplates.length,8);
+  assert.equal(kit.tokens.cardContrastChecks.length,96);
   assert.ok(kit.sourceHashes["src/features/cards/model.mjs"]);
   assert.equal(kit.tokens.effectiveRules.pressableMinHeight,48);
   assert.ok(!JSON.stringify(kit).includes("localStorage.getItem"));

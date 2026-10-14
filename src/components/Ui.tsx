@@ -3,7 +3,7 @@ import { Platform, Pressable as NativePressable, ScrollView as NativeScrollView,
 import { SafeAreaView as NativeSafeAreaView, type SafeAreaViewProps } from "react-native-safe-area-context";
 import { useAccessibility } from "../features/accessibility/AccessibilityProvider";
 import type { AccessibilitySettings } from "../features/accessibility/model.mjs";
-import { themeFor, themedColour, fontStack } from "./theme";
+import { themeFor, themedColour, defaultTextColour, fontStack } from "./theme";
 
 const TextNesting = createContext(false);
 function resolveStyle(style: any, settings: AccessibilitySettings, text = false, nested = false) {
@@ -12,7 +12,7 @@ function resolveStyle(style: any, settings: AccessibilitySettings, text = false,
   const flat = { ...(numeric.length ? StyleSheet.flatten(numeric.map((key) => (flattened as any)[key])) : {}), ...flattened } as Record<string, any>;
   for (const key of numeric) delete flat[key];
   for (const key of Object.keys(flat)) if (key.endsWith("Color") || key === "color") flat[key] = themedColour(flat[key], key, settings);
-  if (text) flat.fontFamily = Platform.OS === "web" ? fontStack : undefined;
+  if (text) { flat.fontFamily = Platform.OS === "web" ? fontStack : undefined; flat.color = defaultTextColour(flat.color, nested, settings); }
   if (text && (!nested || typeof flat.fontSize === "number")) {
     const base = typeof flat.fontSize === "number" ? flat.fontSize : 18;
     const size = Math.max(18, base) * settings.textScale;

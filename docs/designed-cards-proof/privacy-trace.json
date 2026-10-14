@@ -1,0 +1,103 @@
+{
+  "revisionBundle": "entry-371b18d2df89364db2e6a7d55bf7faa8.js",
+  "origin": "http://127.0.0.1:4183",
+  "requests": [
+    {
+      "url": "blob:http://127.0.0.1:4183/da1cfd94-7637-430d-b493-70bf417de933",
+      "method": "GET"
+    },
+    {
+      "url": "blob:http://127.0.0.1:4183/924d2c92-502f-4ce1-b3e7-c403260a8935",
+      "method": "GET"
+    },
+    {
+      "url": "blob:http://127.0.0.1:4183/12475dba-0b45-444c-9e01-1d41432f451f",
+      "method": "GET"
+    },
+    {
+      "url": "blob:http://127.0.0.1:4183/714f611e-0e66-43c8-a670-204fcc3cd7bf",
+      "method": "GET"
+    },
+    {
+      "url": "blob:http://127.0.0.1:4183/816a1354-e5a8-44a8-94e9-612c5e42c75b",
+      "method": "GET"
+    },
+    {
+      "url": "blob:http://127.0.0.1:4183/27f63185-c3d3-476f-8b83-23d8e701d24f",
+      "method": "GET"
+    },
+    {
+      "url": "blob:http://127.0.0.1:4183/eb1cecf7-3fbf-4554-b361-9b435be42f7e",
+      "method": "GET"
+    },
+    {
+      "url": "blob:http://127.0.0.1:4183/ad384ae5-301d-43d2-b68c-3d31ce892490",
+      "method": "GET"
+    },
+    {
+      "url": "blob:http://127.0.0.1:4183/104b4e30-57e1-44f6-a110-843671f9e095",
+      "method": "GET"
+    },
+    {
+      "url": "blob:http://127.0.0.1:4183/34bf7ff0-6953-4696-96a9-f1e54b82217b",
+      "method": "GET"
+    },
+    {
+      "url": "blob:http://127.0.0.1:4183/9a59f873-989e-4c0c-adfe-0d1f1f8648cc",
+      "method": "GET"
+    },
+    {
+      "url": "blob:http://127.0.0.1:4183/ea906f01-45f2-4358-ba5c-0dfa5ed2697a",
+      "method": "GET"
+    },
+    {
+      "url": "blob:http://127.0.0.1:4183/88d195f0-7a48-40f5-a7f2-aa474e344fb5",
+      "method": "GET"
+    },
+    {
+      "url": "blob:http://127.0.0.1:4183/0f00877a-ccd0-489f-8ad8-756566d928e9",
+      "method": "GET"
+    },
+    {
+      "url": "blob:http://127.0.0.1:4183/0a65c8cc-b5a2-4542-9694-629739412e8b",
+      "method": "GET"
+    },
+    {
+      "url": "blob:http://127.0.0.1:4183/bafdc4ce-daab-43d4-9f9c-99d1fb29c5eb",
+      "method": "GET"
+    },
+    {
+      "url": "blob:http://127.0.0.1:4183/d2398b62-bad8-4997-814f-93d64199d958",
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:4183/_expo/static/js/web/scene-pdf-260f1f6dea810b437d17231a6644e708.js",
+      "method": "GET"
+    }
+  ],
+  "markerChecks": [
+    {
+      "marker": "LEAK-NAME-14",
+      "found": false
+    },
+    {
+      "marker": "LEAK-CONTACT-14",
+      "found": false
+    },
+    {
+      "marker": "LEAK-MEDICINE-14",
+      "found": false
+    },
+    {
+      "marker": "SYNTHETIC-EXIF-PRIVATE-14",
+      "found": false
+    },
+    {
+      "marker": "synthetic-orientation.jpg",
+      "found": false
+    }
+  ],
+  "logs": 0,
+  "truncated": false,
+  "hasMore": false
+}

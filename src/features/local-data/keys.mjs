@@ -4,6 +4,9 @@ import { STORAGE_KEY as guides } from "../saved-guides/model.mjs";
 import { STORAGE_KEY as accessibility } from "../accessibility/model.mjs";
 import { PERSONAL_CARD_KEY, MILESTONE_CARD_KEY } from "../cards/model.mjs";
 export const LOCAL_DATA_KEYS = [appointments, support, guides, accessibility, PERSONAL_CARD_KEY, MILESTONE_CARD_KEY];
+export const LOCAL_DATA_RESOURCES = [{id:"card-photos",storage:"indexeddb",database:"dissection-companion-card-photos",store:"photos"}];
+const resourceClearers = new Map();
+export function registerLocalDataResource(id,clear){if(!LOCAL_DATA_RESOURCES.some(resource=>resource.id===id))throw new Error("Unknown local data resource");resourceClearers.set(id,clear);return ()=>{if(resourceClearers.get(id)===clear)resourceClearers.delete(id);};}
 const clearedListeners = new Set();
 const clearingListeners = new Set();
 const activeClears = new WeakMap();
@@ -26,7 +29,8 @@ export function clearProjectData(adapter) {
 async function performClear(adapter) {
   try {
     await Promise.all([...clearingListeners].map((listener) => listener("before")));
-    const results = await Promise.allSettled(LOCAL_DATA_KEYS.map((key) => adapter.removeItem(key)));
+    const operations=[...LOCAL_DATA_KEYS.map(key=>()=>adapter.removeItem(key)),...resourceClearers.values()];
+    const results = await Promise.allSettled(operations.map(operation=>Promise.resolve().then(operation)));
     const failure = results.find((result) => result.status === "rejected");
     if (failure?.status === "rejected") throw failure.reason;
     for (const listener of clearedListeners) await listener();

@@ -1,7 +1,7 @@
 import test from "node:test";
 import assert from "node:assert/strict";
 import { readFile } from "node:fs/promises";
-import { palette, themeFor, themedColour, contrastRatio, designContrastReport } from "../src/components/theme.mjs";
+import { palette, themeFor, themedColour, defaultTextColour, contrastRatio, designContrastReport } from "../src/components/theme.mjs";
 import { APP_NAME, APP_SUBTITLE } from "../src/brand.mjs";
 import { cardHtml } from "../src/features/cards/document.mjs";
 import { emptyPersonalCard, personalCardPresentation } from "../src/features/cards/model.mjs";
@@ -25,6 +25,18 @@ test("readability and focus pairs pass without rounding a failing contrast thres
   assert.ok(contrastRatio("#777777", "#FFFFFF") < 4.5);
   const checks = designContrastReport(); assert.equal(checks.length, 48);
   for (const check of checks) assert.ok(check.ratio >= check.minimum, `${check.theme}/${check.contrast} ${check.pair}: ${check.ratio}`);
+});
+
+test("unstyled root text stays readable in every theme without overriding nested or filled labels", () => {
+  for (const theme of ["light", "dark"]) for (const contrast of ["standard", "high"]) {
+    const settings={theme,contrast},t=themeFor(settings);
+    const foreground=defaultTextColour(undefined,false,settings);
+    assert.equal(foreground,t.text);
+    assert.ok(contrastRatio(foreground,t.paper)>=4.5);
+    assert.ok(contrastRatio(foreground,t.white)>=4.5);
+    assert.equal(defaultTextColour(undefined,true,settings),undefined);
+    assert.equal(defaultTextColour("#FFFFFF",false,settings),"#FFFFFF");
+  }
 });
 test("display identity and portable design exports agree without renaming the technical app", async () => {
   const config = JSON.parse(await readFile(new URL("../app.json", import.meta.url), "utf8")).expo;

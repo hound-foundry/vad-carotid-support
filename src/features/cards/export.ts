@@ -4,6 +4,9 @@ import { cardHtml, formatCardText, wrapText } from "./document.mjs";
 import { palette, fontStack } from "../../components/theme";
 import { cardDesign } from "./design.mjs";
 import { cardArtwork, ART_COLOURS } from "./artwork.mjs";
+import type { CardPhotoAsset } from "./CardDraftProvider";
+import { cardComposition,pagePng } from "./composition";
+import { scenePrintHtml } from "./scene-svg.mjs";
 
 export type CardFormat = "pdf" | "wallet-pdf" | "png" | "txt";
 export type ExportOutcome = "downloaded" | "shared" | "cancelled";
@@ -30,7 +33,7 @@ export async function createMilestonePng(view: CardPresentation): Promise<Blob> 
   for (const block of measured) { ctx.fillStyle = block.bold ? design.accent : design.ink; ctx.font = `${block.bold ? "700" : "400"} ${block.size}px ${fontStack}`; for (const text of block.lines) { ctx.fillText(text, inset, y); y += block.size * 1.6; } y += 28; }
   return new Promise((resolve, reject) => canvas.toBlob((blob) => blob ? resolve(blob) : reject(new Error("Image could not be created. Try again or use text.")), "image/png"));
 }
-export async function exportCard(view: CardPresentation, format: CardFormat): Promise<ExportOutcome> {
+export async function exportCard(view: CardPresentation, format: CardFormat, options: {photo?:CardPhotoAsset|null;side?:number} = {}): Promise<ExportOutcome> {
   const filename = view.kind === "personal" ? "personal-information-card" : "personal-milestone-card";
   if (Platform.OS !== "web") {
     if (format === "txt") { const result = await Share.share({ message: formatCardText(view), title: view.kind === "personal" ? "Personal information card" : "Personal milestone card" }); return result.action === Share.dismissedAction ? "cancelled" : "shared"; }
@@ -40,6 +43,11 @@ export async function exportCard(view: CardPresentation, format: CardFormat): Pr
     const file = await Print.printToFileAsync({ html: cardHtml(view) }); await Sharing.shareAsync(file.uri, { mimeType: "application/pdf", UTI: "com.adobe.pdf" }); return "shared";
   }
   if (format === "txt") download(formatCardText(view), "text/plain;charset=utf-8", filename + ".txt");
+  else if(view.templateId){
+    const composition=await cardComposition(view,options.photo);
+    if(format==="png"){const side=options.side??0;if(!Number.isInteger(side)||side<0||side>=composition.layout.pages.length)throw new Error("Image download is unavailable for that panel.");const page=composition.layout.pages[side];const blob=await pagePng(page,composition.metrics,composition.assets);download(blob,"image/png",filename+(view.kind==="personal"?(side===0?"-front":"-back-"+side):"")+".png");}
+    else{const {createDesignedPdf}=await import("./scene-pdf.mjs");const bytes=await createDesignedPdf(view,composition.bytes,{size:format==="wallet-pdf"?"wallet":"a4",photo:composition.photo,brain:composition.brain});download(bytes as BlobPart,"application/pdf",filename+(format==="wallet-pdf"?"-wallet":"")+".pdf");}
+  }
   else if (format === "png") { const blob = await createMilestonePng(view); download(blob, "image/png", filename + ".png"); }
   else {
     const [{ createCardPdf }, regular, bold] = await Promise.all([import("./pdf.mjs"), fetch("/fonts/NotoSans-Regular.ttf").then((r) => { if (!r.ok) throw new Error("PDF font unavailable. Use Print card or Download text."); return r.arrayBuffer(); }), fetch("/fonts/NotoSans-Bold.ttf").then((r) => { if (!r.ok) throw new Error("PDF font unavailable. Use Print card or Download text."); return r.arrayBuffer(); })]);
@@ -48,10 +56,12 @@ export async function exportCard(view: CardPresentation, format: CardFormat): Pr
   }
   return "downloaded";
 }
-export async function printCard(view: CardPresentation): Promise<void> {
+export async function printCard(view: CardPresentation, photo:CardPhotoAsset|null=null): Promise<void> {
   if (Platform.OS !== "web") { const Print = await import("expo-print"); await Print.printAsync({ html: cardHtml(view) }); return; }
   const frame = document.createElement("iframe"); frame.title = "Card print preview"; frame.style.cssText = "position:fixed;left:-10000px;top:0;width:800px;height:1000px;border:0";
-  await new Promise<void>((resolve, reject) => { frame.onload = () => resolve(); frame.onerror = () => reject(new Error("Print view could not open.")); frame.srcdoc = cardHtml(view); document.body.appendChild(frame); });
+  const composition=view.templateId?await cardComposition(view,photo):undefined;
+  const html=composition?scenePrintHtml(composition.layout,composition.metrics,composition.assets):cardHtml(view);
+  await new Promise<void>((resolve, reject) => { frame.onload = () => resolve(); frame.onerror = () => reject(new Error("Print view could not open.")); frame.srcdoc = html; document.body.appendChild(frame); });
   if (!frame.contentWindow) { frame.remove(); throw new Error("Print is unavailable. Try downloading a PDF."); }
   frame.contentWindow.addEventListener("afterprint", () => frame.remove(), { once: true }); frame.contentWindow.focus(); frame.contentWindow.print();
 }

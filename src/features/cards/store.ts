@@ -2,15 +2,18 @@ import { Platform, Share } from "react-native";
 import * as SecureStore from "expo-secure-store";
 import { coordinateCardClearing, createCardStore } from "./storage.mjs";
 import { MILESTONE_CARD_KEY, PERSONAL_CARD_KEY, formatMilestoneCardExport, formatPersonalCardExport, type MilestoneCard, type PersonalCard } from "./model.mjs";
+import { cardPhotoStore } from "./photos.mjs";
+import { registerLocalDataResource } from "../local-data/keys.mjs";
 
 const getItem = async (key: string) => Platform.OS === "web" ? globalThis.localStorage?.getItem(key) ?? null : SecureStore.getItemAsync(key);
 const setItem = async (key: string, value: string) => { if (Platform.OS === "web") { if (!globalThis.localStorage) throw new Error("Browser local storage is unavailable"); globalThis.localStorage.setItem(key, value); return; } await SecureStore.setItemAsync(key, value); };
 const removeItem = async (key: string) => { if (Platform.OS === "web") { if (!globalThis.localStorage) throw new Error("Browser local storage is unavailable"); globalThis.localStorage.removeItem(key); } else await SecureStore.deleteItemAsync(key); };
 
 const adapter = { getItem, setItem, removeItem };
-export const personalCardStore = createCardStore(adapter, "personal");
-export const milestoneCardStore = createCardStore(adapter, "milestone");
+export const personalCardStore = createCardStore(adapter, "personal",Platform.OS === "web"?cardPhotoStore:undefined);
+export const milestoneCardStore = createCardStore(adapter, "milestone",Platform.OS === "web"?cardPhotoStore:undefined);
 coordinateCardClearing([personalCardStore, milestoneCardStore]);
+if(Platform.OS === "web")registerLocalDataResource("card-photos",()=>cardPhotoStore.clear());
 export async function loadPersonalCard(): Promise<PersonalCard> { return await personalCardStore.load() as PersonalCard; }
 export async function savePersonalCard(card: PersonalCard) { await personalCardStore.save(card); }
 export async function deletePersonalCard() { await personalCardStore.remove(); }

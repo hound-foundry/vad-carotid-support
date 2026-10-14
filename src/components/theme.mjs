@@ -38,6 +38,12 @@ export function themedColour(value, property, settings) {
   return t[role];
 }
 
+// Root text must not fall back to the platform's black foreground in dark mode.
+// Nested text inherits its parent, including white labels in filled controls.
+export function defaultTextColour(value, nested, settings) {
+  return value == null && !nested ? themeFor(settings).text : value;
+}
+
 // Opaque token pairs only; actual routes and assistive technology need separate checks.
 export function contrastRatio(foreground, background) {
   const luminance = (hex) => {

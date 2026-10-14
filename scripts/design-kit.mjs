@@ -4,7 +4,9 @@ import { resolve, relative, sep } from "node:path";
 import { fileURLToPath, pathToFileURL } from "node:url";
 import { execFileSync } from "node:child_process";
 import ts from "typescript";
-import { LOCAL_DATA_KEYS } from "../src/features/local-data/keys.mjs";
+import { LOCAL_DATA_KEYS, LOCAL_DATA_RESOURCES } from "../src/features/local-data/keys.mjs";
+import { CARD_TEMPLATES, CARD_PALETTES } from "../src/features/cards/templates.mjs";
+import { contrastRatio } from "../src/components/theme.mjs";
 import { workbenchHtml, paletteSvg } from "./design-workbench.mjs";
 import { APP_NAME } from "../src/brand.mjs";
 
@@ -20,6 +22,7 @@ export function validateProfile(profile) {
   if (profile?.schemaVersion !== 1 || profile.id !== "vad-carotid-support" || profile.name !== APP_NAME || profile.framework !== "expo-react-native") throw new Error("Profile must describe this Expo app");
   for (const flag of ["localOnly", "explicitSave", "explicitExport", "separateCards"]) if (profile.privacy?.[flag] !== true) throw new Error("Missing privacy boundary: " + flag);
   if (profile.privacy.savedKeyCount !== LOCAL_DATA_KEYS.length || new Set(LOCAL_DATA_KEYS).size !== 6) throw new Error("Saved-data contract changed; review the profile");
+  if (JSON.stringify(profile.privacy.localResources) !== JSON.stringify(LOCAL_DATA_RESOURCES)) throw new Error("Local photo resource changed; review the profile");
   if (!Array.isArray(profile.routes) || profile.routes.length === 0 || !Array.isArray(profile.viewports) || profile.viewports.length === 0) throw new Error("Routes and viewports required");
   const paths = new Set();
   for (const route of profile.routes) {
@@ -76,6 +79,19 @@ export async function inspectDesign(root = projectRoot) {
   assertPaletteMatches(readDocumentColors(design, profile.name), palette);
   const contrastChecks = designContrastReport();
   for (const check of contrastChecks) if (check.ratio < check.minimum) throw new Error(`Contrast failed: ${check.theme}/${check.contrast} ${check.pair}`);
+  const cardContrastChecks = [];
+  if (CARD_TEMPLATES.length !== 8 || new Set(CARD_TEMPLATES.map(template => template.id)).size !== 8) throw new Error("Expected eight distinct card templates");
+  for (const template of CARD_TEMPLATES) {
+    if (template.colours.length !== 3) throw new Error("Each card needs three curated colour combinations");
+    for (const id of template.colours) {
+      const c = CARD_PALETTES[id];
+      for (const [pair, foreground, background] of [["body", c.ink, c.paper], ["detail", c.detail, c.paper], ["accent", c.accent, c.paper], ["band", c.onAccent, c.accent]]) {
+        const ratio = contrastRatio(foreground, background);
+        if (ratio < 4.5) throw new Error("Card contrast failed: " + template.id + "/" + id + " " + pair);
+        cardContrastChecks.push({template:template.id, colour:id, pair, foreground, background, ratio, minimum:4.5});
+      }
+    }
+  }
   const themes = {};
   for (const theme of ["light", "dark"]) for (const contrast of ["standard", "high"]) themes[theme + "-" + contrast] = themeFor({theme,contrast});
   const metrics = Object.fromEntries(profile.styleSources.map(name => [name, numericStyles(sources[name], name)]));
@@ -84,7 +100,7 @@ export async function inspectDesign(root = projectRoot) {
   const extracted = {pressableMinHeight:ui.match(/minHeight: Math\.max\((\d+),/)?.[1],inputMinHeight:ui.match(/minHeight: (\d+), borderColor/)?.[1],bodyFloor:textFloor,smallLabelFloor:textFloor};
   if (Object.values(extracted).some(value => !value)) throw new Error("UI wrapper changed; update design extraction before exporting");
   const effectiveRules = Object.fromEntries(Object.entries(extracted).map(([key,value])=>[key,Number(value)]));
-  return {profile, design, tokens:{schemaVersion:1,format:"vad-design-tokens/1",palette,themes,contrastChecks,authoredMetrics:metrics,effectiveRules},sourceHashes};
+  return {profile, design, tokens:{schemaVersion:1,format:"vad-design-tokens/1",palette,themes,contrastChecks,cardTemplates:CARD_TEMPLATES,cardPalettes:CARD_PALETTES,cardContrastChecks,authoredMetrics:metrics,effectiveRules},sourceHashes};
 }
 export async function buildDesignKit(root = projectRoot, destination = kitDirectory) {
   const kit = await inspectDesign(root);
@@ -95,7 +111,7 @@ export async function buildDesignKit(root = projectRoot, destination = kitDirect
   if (bundles.length !== 1) throw new Error("Expected one current exported entry bundle; rebuild the web preview");
   const bundleHashes = {};
   for (const name of bundles) bundleHashes[name] = createHash("sha256").update(await readFile(resolve(bundleDirectory,name))).digest("hex");
-  const manifest = {schemaVersion:1,app:kit.profile.id,revision,sourceHashes:kit.sourceHashes,bundleHashes,storageKeys:[...LOCAL_DATA_KEYS],scope:"Source-only design export; no browser storage, notes, card contents, accounts or remote service calls"};
+  const manifest = {schemaVersion:1,app:kit.profile.id,revision,sourceHashes:kit.sourceHashes,bundleHashes,storageKeys:[...LOCAL_DATA_KEYS],localResources:LOCAL_DATA_RESOURCES,scope:"Source-only design export; no browser storage, notes, card contents, photos, accounts or remote service calls"};
   await mkdir(destination, {recursive:true});
   for (const [name, contents] of Object.entries({"project.json":JSON.stringify(kit.profile,null,2)+"\n","tokens.json":JSON.stringify(kit.tokens,null,2)+"\n","manifest.json":JSON.stringify(manifest,null,2)+"\n","DESIGN.md":kit.design,"palette.svg":paletteSvg(kit.tokens.palette),"index.html":workbenchHtml(kit.profile,kit.tokens)})) await writeFile(resolve(destination,name),contents);
   return manifest;
