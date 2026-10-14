@@ -55,6 +55,17 @@ test("milestone scenes use the selected words directly without form labels or hi
         assert.ok(items.some(i => i.value.includes("not medical advice or proof of diagnosis")));
     }
 });
+test("the explicit plain option uses the new filtered scene while legacy records retain their previous layout",()=>{
+    const old=parseMilestoneCard(JSON.stringify({version:1,card:{title:"MY OWN WORDS",designId:"ink"}}));
+    assert.equal(old.templateId,"");assert.equal(old.designId,"ink");
+    for(const kind of ["personal","milestone"]){
+        const style=templateAppearance({templateId:"plain",illustrationId:"crest"},kind);
+        assert.equal(style.templateId,"plain");assert.equal(style.colourId,"blue");assert.equal(style.illustrationId,"auto");
+        const view=make({kind,id:"plain"}),layout=buildCardLayout(view,metrics);
+        assert.ok(layout.pages.every(p=>!p.items.some(i=>["art","photo"].includes(i.type))));
+        if(kind==="milestone")assert.doesNotMatch(formatCardText(view),/(?:^|\n)(Name|Message):/);
+    }
+});
 test("no-art and no-photo compositions remove their image slots and retain selected wording", () => {
     for (const t of CARD_TEMPLATES) {
         const p = buildCardLayout(make(t, { illustrationId: "none" }), metrics).pages[0];

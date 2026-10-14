@@ -20,7 +20,10 @@ export const CARD_TEMPLATES = [
 export const ILLUSTRATIONS = [
     { id: "none", name: "No artwork" }, { id: "ribbon-bold", name: "Ribbon" }, { id: "branch", name: "Leafy branch" }, { id: "crest", name: "Shield and leaf" }, { id: "brain-character", name: "Brain character" },
 ];
-export function cardTemplate(id, kind) { return CARD_TEMPLATES.find(t => t.id === id && (!kind || t.kind === kind)); }
+export function cardTemplate(id, kind) {
+    if(id==="plain")return {id:"plain",kind:kind||"personal",name:"Plain layout",description:"A simple text layout.",colours:["blue","plum","sage"],illustration:"none",illustrations:["none"],photo:false};
+    return CARD_TEMPLATES.find(t => t.id === id && (!kind || t.kind === kind));
+}
 export function templateAppearance(input, kind) {
     const template = cardTemplate(input?.templateId, kind);
     if (!template)

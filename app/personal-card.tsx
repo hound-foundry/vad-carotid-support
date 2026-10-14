@@ -31,7 +31,7 @@ export default function PersonalCardScreen() {
     const hasExtra = ["description", "emergencyContact", "clinicianContact", "medicines", "allergies", "whatHelps", "avoid", "eventDate"].some((key) => draft.card[key as keyof PersonalCard]);
     const view = personalCardPresentation(draft.card);
     return <AppPage><BackHome /><View ref={stageRef} nativeID="personal-stage"><PageHeading compact eyebrow="Card" title={draft.mode === "preview" ? "Review your card" : draft.mode === "templates" ? "Choose a practical card design" : "Medical and communication card"} summary={draft.mode === "preview" ? "Check the front, back and any continued details before downloading." : draft.mode === "templates" ? "Pick a layout, then write only what you want to include." : "Choose what helps. Every field is optional."}/></View>
-    {draft.mode === "templates" ? <CardTemplateGallery kind="personal" value={draft.card} onChange={draft.update} onContinue={draft.edit} loaded={draft.loaded}/> : null}
+    {draft.mode === "templates" ? <CardTemplateGallery kind="personal" value={draft.card} onChange={draft.update} onContinue={draft.edit} loaded={draft.loaded} canReturn={draft.loaded && draft.status !== "absent"}/> : null}
     {draft.mode === "edit" ? <>
       <Field id="personal-heading" label="Card heading (optional)" value={draft.card.heading} onChange={(heading) => update("heading", heading)} limit={80} hint="Write a short statement for the front, or leave it blank."/>
       {field("preferredName", "Preferred name (optional)")}

@@ -49,18 +49,18 @@ export function buildCardLayout(view, metrics, { photo } = {}) {
         const heading = view.title;
         // An overly long heading gets its own readable continuation panel, never a
         // clipped front or a reduced font. The front still carries its own label.
-        const font = metrics.resolveFont("display", heading);
+        const font = metrics.resolveFont(template.id==="plain"?"bold":"display", heading);
         const titleWidth = template.id === "portrait" && photo ? 480 : template.id === "statement" && template.illustrationId !== "none" ? 580 : 740;
         const titleLines = wrap(heading, titleWidth, s => metrics.width(s, 62, font));
         const titleLimit = template.id === "portrait" ? 2 : 3;
         const visibleLines = titleLines.slice(0, titleLimit), excessTitle = titleLines.slice(titleLimit);
         const frontName = wrap(name, (template.id === "portrait" && photo ? 498 : 740) - metrics.width("…", 38, "bold"), s => metrics.width(s, 38, "bold"))[0] || "";
         const shortName = frontName + (frontName !== name ? "…" : "");
-        if (template.id === "communication") {
+        if (template.id === "communication" || template.id === "plain") {
             rect(front, 0, 0, 856, 20, c.accent);
             rect(front, 0, 0, 14, 540, c.accent);
             text(front, "Personal information", 52, 40, 740, 28, "bold", c.accent);
-            text(front, visibleLines.join("\n"), 52, 120, 740, 62, "display", c.ink, "left", 1.05);
+            text(front, visibleLines.join("\n"), 52, 120, 740, 62, font, c.ink, "left", 1.05);
             text(front, shortName, 52, 355, 740, 38, "bold");
             if (template.illustrationId !== "none")
                 art(front, 710, 32, 96, 96);
@@ -195,7 +195,7 @@ export function buildCardLayout(view, metrics, { photo } = {}) {
             base = 420;
         }
         text(p, view.subtitle, 76, base, 928, 26, "bold", c.accent);
-        y = text(p, view.title, 76, base + 62, 928, 100, "display", c.ink, "left", 1.08) + 32;
+        y = text(p, view.title, 76, base + 62, 928, 100, template.id==="plain"?"bold":"display", c.ink, "left", 1.08) + 32;
         y = text(p, name, 76, y, 928, 42, "bold") + 18;
         y = text(p, date, 76, y, 928, 28, "bold", c.accent) + 26;
         y = text(p, message, 76, y, 928, 36) + 20;

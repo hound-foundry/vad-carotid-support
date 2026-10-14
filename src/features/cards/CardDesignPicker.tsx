@@ -26,12 +26,13 @@ const thumbnails: Record<string, number> = {
     botanical: require("../../../assets/card-collection/botanical.png"),
     "photo-story": require("../../../assets/card-collection/photo-story.png"),
 };
-export function CardTemplateGallery({ kind, value, onChange, onContinue, loaded }: {
+export function CardTemplateGallery({ kind, value, onChange, onContinue, loaded, canReturn=false }: {
     kind: "personal" | "milestone";
     value: DesignChoice;
     onChange: (value: Partial<DesignChoice>) => void;
     onContinue: () => void;
     loaded: boolean;
+    canReturn?: boolean;
 }) {
     const { width } = useLayoutDimensions();
     const { settings } = useAccessibility();
@@ -60,10 +61,10 @@ export function CardTemplateGallery({ kind, value, onChange, onContinue, loaded 
         </Pressable>
       )}</View>
       <Button title="Use a plain layout" secondary disabled={!loaded} onPress={() => {
-        onChange({ templateId:"", colourId:"", illustrationId:"none", designId:"clear", artworkId:"none" });
+        onChange({ templateId:"plain", colourId:"blue", illustrationId:"none", designId:"clear", artworkId:"none" });
         onContinue();
       }} />
-      {value.templateId ? <Button title="Back to my words" secondary onPress={onContinue}/> : null}
+      {canReturn ? <Button title="Back to my words" secondary disabled={!loaded} onPress={onContinue}/> : null}
     </View>;
 }
 export function CardDesignPicker({ value, onChange, onChooseDesign, onUndo, canUndo }: {
@@ -77,7 +78,7 @@ export function CardDesignPicker({ value, onChange, onChooseDesign, onUndo, canU
     return <View><Text style={styles.name}>{t ? "Design: " + t.name : "Plain or previous layout"}</Text><Button title="Change design" secondary onPress={onChooseDesign}/><Button title="Undo last appearance change" secondary disabled={!canUndo} onPress={onUndo}/><Disclosure title={t ? "Colours and artwork" : "Previous colours and artwork"}>
     {t ? <><ChoiceGroup label="Card colour combination" value={value.colourId || t.colours[0]} choices={t.colours.map(id => ({ id, name: CARD_PALETTES[id].name }))} onChange={colourId => onChange({ colourId })}/><ChoiceGroup label="Card artwork" value={value.illustrationId === "auto" ? t.illustration : value.illustrationId} choices={ILLUSTRATIONS.filter(i => t.illustrations.includes(i.id))} onChange={illustrationId => onChange({ illustrationId })}/></> : <><ChoiceGroup label="Previous card design" value={value.designId} choices={CARD_DESIGNS} onChange={designId => onChange({ designId })}/><ChoiceGroup label="Previous artwork" value={value.artworkId} choices={CARD_ARTWORK} onChange={artworkId => onChange({ artworkId })} render={id => id === "none" ? null : <CardArtwork id={id} size={48}/>}/></>}
     <Text style={styles.hint}>Changing the appearance does not save or download your card.</Text>
-    <Button title="Use a plain layout" secondary onPress={() => onChange({ templateId: "", colourId: "", illustrationId: "none", designId: "clear", artworkId: "none" })}/>
+    <Button title="Use a plain layout" secondary onPress={() => onChange({ templateId: "plain", colourId: "blue", illustrationId: "none", designId: "clear", artworkId: "none" })}/>
 
   </Disclosure></View>;
 }
