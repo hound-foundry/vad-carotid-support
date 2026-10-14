@@ -50,10 +50,19 @@ export const TextInput = forwardRef<NativeTextInput, TextInputProps>(function Te
   const { settings } = useAccessibility();
   const inputName = (props as any).name ?? props.nativeID ?? props.accessibilityLabel?.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "") ?? "text-input";
   const inputId = props.nativeID ?? inputName;
-  const resolvedStyle = { ...resolveStyle(props.style, settings, true), minHeight: 52, borderColor: themeFor(settings).controlLine };
+  const resolvedStyle: any = { ...resolveStyle(props.style, settings, true), minHeight: 52, borderColor: themeFor(settings).controlLine };
   if (Platform.OS === "web") {
     const nativeProps = props as any;
     const describedBy = nativeProps["aria-describedby"];
+    const { paddingHorizontal, paddingVertical, ...resolvedForWeb } = resolvedStyle;
+    const webStyle = {
+      ...resolvedForWeb,
+      lineHeight: typeof resolvedStyle.lineHeight === "number" ? `${resolvedStyle.lineHeight}px` : resolvedStyle.lineHeight,
+      paddingLeft: paddingHorizontal ?? resolvedStyle.paddingLeft,
+      paddingRight: paddingHorizontal ?? resolvedStyle.paddingRight,
+      paddingTop: paddingVertical ?? resolvedStyle.paddingTop,
+      paddingBottom: paddingVertical ?? resolvedStyle.paddingBottom,
+    } as any;
     const webProps = {
       id: inputId,
       name: inputName,
@@ -74,7 +83,7 @@ export const TextInput = forwardRef<NativeTextInput, TextInputProps>(function Te
       onBlur: props.onBlur,
       onKeyDown: props.onKeyPress,
       ref: ref as any,
-      style: resolvedStyle,
+      style: webStyle,
     };
     return createElement(props.multiline ? "textarea" : "input", webProps);
   }
