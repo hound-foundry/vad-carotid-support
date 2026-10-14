@@ -57,7 +57,8 @@ export function buildCardLayout(view, metrics, { photo } = {}) {
         // wording continues on the back instead of colliding with the footer.
         const titleLimit = 2;
         const visibleLines = titleLines.slice(0, titleLimit), excessTitle = titleLines.slice(titleLimit);
-        const frontName = wrap(name, (template.id === "portrait" && photo ? 498 : 740) - metrics.width("…", 38, "bold"), s => metrics.width(s, 38, "bold"))[0] || "";
+        const frontNameWidth = template.id === "portrait" && photo ? 498 : template.id === "statement" ? 540 : template.id === "engraved-slate" ? 550 : 740;
+        const frontName = wrap(name, frontNameWidth - metrics.width("…", 38, "bold"), s => metrics.width(s, 38, "bold"))[0] || "";
         const shortName = frontName + (frontName !== name ? "…" : "");
         if (template.id === "quiet-white") {
             rect(front, 24, 24, 808, 492, "none", 26, c.accent);

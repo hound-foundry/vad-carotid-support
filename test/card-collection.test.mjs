@@ -121,12 +121,14 @@ test("wallet fronts keep identity, instructions and safety copy in separate read
     for (const t of CARD_TEMPLATES.filter(t => t.kind === "personal")) {
         const view = make(t, {
             heading: "Please give me time and write things down when needed",
-            preferredName: "A synthetic example name",
+            preferredName: "A synthetic example name that is deliberately long",
         });
         const front = buildCardLayout(view, metrics).pages[0];
         const texts = front.items.filter(i => i.type === "text").map(i => ({ ...i, height: i.lines.length * i.size * i.leading }));
         for (const item of texts)
             assert.ok(item.y + item.height <= front.height + .1, `${t.id} text runs past wallet front`);
+        const name = texts.find(i => i.value.includes("synthetic example name"));
+        assert.ok(name && name.lines.length === 1, `${t.id} identity should remain one line on the front`);
         for (let i = 0; i < texts.length; i++)
             for (let j = i + 1; j < texts.length; j++)
                 assert.equal(overlap(texts[i], texts[j]), false, `${t.id} text overlaps: ${texts[i].value} / ${texts[j].value}`);
