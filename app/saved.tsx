@@ -2,7 +2,7 @@ import { Link } from "../src/components/AppLink";
 import { useCallback, useEffect, useState } from "react";
 import { useFocusEffect } from "expo-router";
 import { StyleSheet } from "react-native";
-import { AppPage, BackHome, PageHeading, palette } from "../src/components/AppPage";
+import { AppPage, BackHome, PageHeading, SavedItemRow } from "../src/components/AppPage";
 import { Pressable, Text, View } from "../src/components/Ui";
 import { loadAppointmentSheet } from "../src/features/appointments/store";
 import { loadSupportPreferences } from "../src/features/support-preferences/store";
@@ -28,6 +28,6 @@ export default function SavedScreen() {
     return "No saved items";
   };
   const rows = [["/saved-guides", "Saved guides", status[0]], ["/appointments", "Appointment sheet", sheetState("appointment-sheet", status[1])], ["/support-preferences", "Support preferences", sheetState("support-preferences", status[2])], ["/personal-card", "Medical and communication card", cardState(personal.status)], ["/milestone-card", "Anniversary or milestone card", cardState(milestone.status)]];
-  return <AppPage><PageHeading compact eyebrow="Saved" title="Saved on this device" summary="Open a guide, sheet or card. Unsaved sheets and cards remain here while this app is open." /><View style={styles.rows}>{rows.map(([href, label, state]) => <Link key={href} href={href as any} asChild><Pressable accessibilityRole="link" style={styles.row}><Text style={styles.label}>{label}</Text><Text style={styles.status}>{state}</Text></Pressable></Link>)}</View><Text style={styles.helper}>Names, notes and health details are shown only when you open their tool. Closing or reloading loses unsaved edits.</Text><Link href="/about" asChild><Pressable accessibilityRole="link" style={styles.clear}><Text style={styles.link}>Privacy and clear all saved data</Text></Pressable></Link></AppPage>;
+  return <AppPage><PageHeading compact eyebrow="Saved" title="Saved on this device" summary="Open a guide, sheet or card. Unsaved sheets and cards remain here while this app is open." /><View style={styles.rows}>{rows.map(([href, label, state]) => <SavedItemRow key={href} href={href} label={label} status={state} />)}</View><Text style={styles.helper}>Names, notes and health details are shown only when you open their tool. Closing or reloading loses unsaved edits.</Text><Link href="/about" asChild><Pressable accessibilityRole="link" style={styles.clear}><Text style={styles.link}>Privacy and clear all saved data</Text></Pressable></Link></AppPage>;
 }
-const styles = StyleSheet.create({ rows: { gap: 10 }, row: { padding: 18, borderRadius: 18, backgroundColor: palette.white, borderWidth: 1, borderColor: palette.line }, label: { color: palette.tealDark, fontSize: 18, fontWeight: "700" }, status: { color: palette.text, fontSize: 16, marginTop: 3 }, helper: { color: palette.text, fontSize: 16, marginVertical: 15 }, clear: { justifyContent: "center" }, link: { color: palette.tealDark, fontSize: 16, fontWeight: "700" } });
+const styles = StyleSheet.create({ rows: { gap: 10 }, helper: { color: "#33485C", fontSize: 17, lineHeight: 26, marginVertical: 15 }, clear: { justifyContent: "center" }, link: { color: "#214C70", fontSize: 18, fontWeight: "700" } });

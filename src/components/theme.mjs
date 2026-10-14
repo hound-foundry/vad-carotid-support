@@ -1,6 +1,8 @@
 // Retain established property names for authored route styles.
 // teal/tealDark are primary action/link; mint is the selected surface.
 export const palette = { ink: "#183248", text: "#33485C", muted: "#526574", teal: "#2B5F87", tealDark: "#214C70", mint: "#E8EFF4", paper: "#F5F6F4", white: "#FFFFFF", line: "#D3DFE7", alert: "#F9E9E2", alertInk: "#713A2D", gold: "#956020" };
+export const taskAccents = { learn: "#2B5F87", prepare: "#5B3D7F", cards: "#9F3049", support: "#376657" };
+export const radii = { small: 12, medium: 16, large: 20 };
 export const fontStack = "system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif";
 export const focusColours = { light: palette.tealDark, dark: "#BDD9EE" };
 export const controlLine = "#65798A";

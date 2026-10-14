@@ -7,8 +7,8 @@ import { useLayoutDimensions } from "./useLayoutDimensions";
 
 import { useAccessibility } from "../features/accessibility/AccessibilityProvider";
 
-import { palette } from "./theme";
-export { palette } from "./theme";
+import { palette, radii } from "./theme";
+export { palette, radii } from "./theme";
 
 export function AppPage({ children, wide = false, scrollRef }: { children: ReactNode; wide?: boolean; scrollRef?: RefObject<NativeScrollView | null> }) {
   const { settings } = useAccessibility();
@@ -67,7 +67,7 @@ const styles = StyleSheet.create({
   safe: { flex: 1, backgroundColor: palette.paper },
   skipLink: { position: "absolute", zIndex: 10, top: 4, left: -10000, minHeight: 48, paddingHorizontal: 12, justifyContent: "center", backgroundColor: palette.ink, borderRadius: 8 },
   skipText: { color: palette.white, fontSize: 14, fontWeight: "800" },
-  page: { width: "100%", maxWidth: 960, alignSelf: "center", paddingHorizontal: 28, paddingBottom: 64 },
+  page: { width: "100%", maxWidth: 1120, alignSelf: "center", paddingHorizontal: 28, paddingBottom: 64 },
   pageNarrow: { paddingHorizontal: 16 },
   pageRoomy: { paddingHorizontal: 28, paddingBottom: 72 },
   wide: { maxWidth: 1120 },
@@ -93,7 +93,7 @@ const styles = StyleSheet.create({
   compactNoticeTitle: { flex: 1, color: palette.text, fontSize: 16, fontWeight: "500" },
   compactNoticeArrow: { color: palette.tealDark, fontSize: 20 },
   compactNoticeDetails: { paddingBottom: 10 },
-  card: { backgroundColor: palette.white, borderColor: palette.line, borderWidth: 1, borderRadius: 18, padding: 22, marginBottom: 18, shadowColor: "#183248", shadowOpacity: 0.06, shadowRadius: 14, shadowOffset: { width: 0, height: 5 }, elevation: 2 },
+  card: { backgroundColor: palette.white, borderColor: palette.line, borderWidth: 1, borderRadius: radii.large, padding: 22, marginBottom: 18, shadowColor: "#183248", shadowOpacity: 0.06, shadowRadius: 14, shadowOffset: { width: 0, height: 5 }, elevation: 2 },
   cardRoomy: { padding: 24, marginBottom: 20 },
   cardTitle: { color: palette.ink, fontSize: 20, lineHeight: 30, fontWeight: "600", marginBottom: 12 },
   body: { color: palette.text, fontSize: 18, lineHeight: 27, marginTop: 7, maxWidth: 680 },
@@ -104,4 +104,28 @@ const styles = StyleSheet.create({
   footerLinks: { flexDirection: "row", flexWrap: "wrap", columnGap: 8, rowGap: 4, marginTop: 8 },
   footerLink: { minHeight: 44, justifyContent: "center", paddingRight: 14 },
   footerLinkText: { color: palette.tealDark, fontSize: 18, lineHeight: 27, fontWeight: "500" },
+  section: { marginBottom: 20 }, sectionPlain: { backgroundColor: "transparent", borderWidth: 0, paddingHorizontal: 0 }, sectionTitle: { color: palette.ink, fontSize: 22, lineHeight: 30, fontWeight: "700", marginBottom: 10 },
+  statusBadge: { alignSelf: "flex-start", minHeight: 30, justifyContent: "center", paddingHorizontal: 10, borderRadius: 999, backgroundColor: palette.mint, borderWidth: 1, borderColor: palette.line }, statusDraft: { backgroundColor: palette.alert, borderColor: "#E9CFC3" }, statusSaved: { backgroundColor: palette.mint, borderColor: palette.line }, statusText: { color: palette.tealDark, fontSize: 14, lineHeight: 20, fontWeight: "700" },
+  emptyState: { padding: 22, borderRadius: radii.large, borderWidth: 1, borderColor: palette.line, backgroundColor: palette.mint }, emptyTitle: { color: palette.ink, fontSize: 21, lineHeight: 29, fontWeight: "700" }, emptyBody: { marginTop: 6, color: palette.text, fontSize: 18, lineHeight: 27 }, emptyAction: { marginTop: 14 }, actionGroup: { gap: 10, marginTop: 8, marginBottom: 20 },
+  savedRow: { minHeight: 72, flexDirection: "row", alignItems: "center", gap: 14, padding: 16, borderRadius: radii.medium, borderWidth: 1, borderColor: palette.line, backgroundColor: palette.white }, savedRowPressed: { backgroundColor: palette.mint, borderColor: palette.tealDark }, savedRowCopy: { flex: 1, minWidth: 0 }, savedRowLabel: { color: palette.ink, fontSize: 19, lineHeight: 27, fontWeight: "700" }, savedRowDetail: { color: palette.muted, fontSize: 16, lineHeight: 24, marginTop: 3 }, savedRowEnd: { flexDirection: "row", alignItems: "center", gap: 8 }, savedRowArrow: { color: palette.tealDark, fontSize: 28, lineHeight: 30 },
 });
+
+export function Section({ children, title, tone = "surface" }: { children: ReactNode; title?: string; tone?: "surface" | "plain" }) {
+  return <View style={[styles.section, tone === "plain" && styles.sectionPlain]}>{title ? <Text accessibilityRole="header" aria-level={2} style={styles.sectionTitle}>{title}</Text> : null}{children}</View>;
+}
+
+export function StatusBadge({ children, tone = "neutral" }: { children: ReactNode; tone?: "neutral" | "draft" | "saved" }) {
+  return <View style={[styles.statusBadge, tone === "draft" && styles.statusDraft, tone === "saved" && styles.statusSaved]}><Text style={styles.statusText}>{children}</Text></View>;
+}
+
+export function EmptyState({ title, detail, action }: { title: string; detail: string; action?: ReactNode }) {
+  return <View style={styles.emptyState}><Text accessibilityRole="header" aria-level={2} style={styles.emptyTitle}>{title}</Text><Text style={styles.emptyBody}>{detail}</Text>{action ? <View style={styles.emptyAction}>{action}</View> : null}</View>;
+}
+
+export function ActionGroup({ children }: { children: ReactNode }) {
+  return <View style={styles.actionGroup}>{children}</View>;
+}
+
+export function SavedItemRow({ href, label, status, detail }: { href: string; label: string; status: string; detail?: string }) {
+  return <Link href={href as any} asChild><Pressable accessibilityRole="link" style={({ pressed }) => [styles.savedRow, pressed && styles.savedRowPressed]}><View style={styles.savedRowCopy}><Text style={styles.savedRowLabel}>{label}</Text>{detail ? <Text style={styles.savedRowDetail}>{detail}</Text> : null}</View><View style={styles.savedRowEnd}><StatusBadge tone={status.startsWith("Saved") ? "saved" : "neutral"}>{status}</StatusBadge><Text aria-hidden style={styles.savedRowArrow}>›</Text></View></Pressable></Link>;
+}

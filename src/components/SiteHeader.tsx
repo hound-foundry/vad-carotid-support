@@ -6,7 +6,7 @@ import { useLayoutDimensions } from "./useLayoutDimensions";
 import { Pressable, SafeAreaView, ScrollView, Text, View } from "./Ui";
 import { palette } from "./theme";
 import { useAccessibility } from "../features/accessibility/AccessibilityProvider";
-import { APP_NAME } from "../brand.mjs";
+import { APP_NAME, APP_SUBTITLE } from "../brand.mjs";
 import { AppIcon } from "./AppIcon";
 
 const links = [["/supporting-someone", "Help someone"], ["/support-preferences", "Support preferences"], ["/glossary", "Look up a term"], ["/resources", "Resources"], ["/about", "About and privacy"]] as const;
@@ -29,7 +29,7 @@ export function SiteHeader({ bottomNavigationHeight = 80 }: { bottomNavigationHe
   return <SafeAreaView testID="site-header" edges={["top"]} style={styles.shell}><View style={[styles.inner, settings.spacing === "roomy" && styles.innerRoomy, windowWidth < 390 && styles.innerNarrow]}>
     <View onLayout={(event) => setHeaderContentHeight(event.nativeEvent.layout.height)} style={singleRow && styles.headerRow}>
       <View style={[styles.identity, singleRow && styles.identityWide]}>
-        <Text accessibilityLabel={APP_NAME} style={styles.brand}>{compactBrand ? "Companion" : APP_NAME}</Text>
+        <View style={styles.brandStack}><Text accessibilityLabel={APP_NAME} style={styles.brand}>{compactBrand ? "Companion" : APP_NAME}</Text>{!compactBrand ? <Text numberOfLines={1} style={styles.subtitle}>{APP_SUBTITLE}</Text> : null}</View>
         {!singleRow ? menuButton : null}
       </View>
       <View role="navigation" aria-label="Help and display" style={styles.utilities}>
@@ -42,20 +42,22 @@ export function SiteHeader({ bottomNavigationHeight = 80 }: { bottomNavigationHe
   </View></SafeAreaView>;
 }
 const styles = StyleSheet.create({
-  shell: { backgroundColor: palette.white, borderBottomWidth: 1, borderBottomColor: palette.line },
-  inner: { width: "100%", maxWidth: 960, alignSelf: "center", paddingHorizontal: 28, paddingVertical: 11 },
+  shell: { backgroundColor: palette.paper, borderBottomWidth: 1, borderBottomColor: palette.line },
+  inner: { width: "100%", maxWidth: 1120, alignSelf: "center", paddingHorizontal: 28, paddingVertical: 12 },
   innerRoomy: { paddingHorizontal: 28 },
   innerNarrow: { paddingHorizontal: 16 },
   identity: { flexDirection: "row", alignItems: "center", gap: 8 },
+  brandStack: { flex: 1, minWidth: 0 },
   headerRow: { flexDirection: "row", alignItems: "center", gap: 24 },
   identityWide: { flex: 1, minWidth: 0 },
   brand: { flex: 1, minWidth: 0, color: palette.ink, fontSize: 19, fontWeight: "800", letterSpacing: -0.15 },
+  subtitle: { color: palette.muted, fontSize: 14, lineHeight: 20, marginTop: 1 },
   utilities: { flexDirection: "row", alignItems: "center", justifyContent: "space-between", gap: 8 },
   helpSlot: { flexShrink: 1 },
-  help: { paddingHorizontal: 14, justifyContent: "center", borderRadius: 12, backgroundColor: palette.mint, borderWidth: 1, borderColor: palette.line },
-  item: { flexShrink: 1, justifyContent: "center", paddingHorizontal: 12, borderRadius: 12 },
+  help: { minHeight: 48, paddingHorizontal: 14, justifyContent: "center", borderRadius: 14, backgroundColor: palette.alert, borderWidth: 1, borderColor: "#E9CFC3" },
+  item: { minHeight: 48, flexShrink: 1, justifyContent: "center", paddingHorizontal: 12, borderRadius: 14 },
   label: { color: palette.tealDark, fontSize: 18, fontWeight: "500" },
   current: { backgroundColor: palette.mint },
-  menu: { paddingTop: 8 }, menuContent: { gap: 4 },
-  menuItem: { paddingHorizontal: 12, justifyContent: "center", borderRadius: 12, borderBottomWidth: 1, borderBottomColor: palette.line },
+  menu: { paddingTop: 10 }, menuContent: { gap: 6, paddingBottom: 4 },
+  menuItem: { minHeight: 52, paddingHorizontal: 14, justifyContent: "center", borderRadius: 14, backgroundColor: palette.white, borderWidth: 1, borderColor: palette.line },
 });

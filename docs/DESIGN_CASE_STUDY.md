@@ -1,5 +1,11 @@
 # Fewer choices, useful cards, easier return
 
+## Whole-website redesign follow-up · 14 October 2026
+
+The calm editorial direction is now applied through the shared website shell. Home, Guides, Tools and Saved use the same 1120px frame, system typography, opaque rounded surfaces and responsive four-item dock. The task accents are blue for learning, plum for preparation, cranberry for cards and sage for support; the body remains navy/blue-grey so colour does not carry the medical meaning by itself. The cards chooser now displays the actual local compositions at a useful scale before a person enters either separate creator.
+
+This is a presentation and navigation change only. It preserves route names, saved-data keys, card models, exports and the existing draft/review boundaries. The static preview remains general information and appointment preparation; this pass does not establish clinical approval, WCAG conformance or real patient/carer usability.
+
 Implementation and engineering checks: 13 October 2026. Scope: the English static website and shared Expo components. Clinical approval, participant usability review and assistive-technology review remain separate.
 
 The subsequent [patient-menu walkthrough and repairs](PATIENT_MENU_REPAIRS_2026-10-13.md) address enlarged-menu scrolling, lost sheet drafts, reading-mode consistency, session resume and inner-page reading load. It includes separate before/after evidence and the limits of these engineering checks.

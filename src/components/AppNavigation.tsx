@@ -36,10 +36,10 @@ export function AppNavigation({ onHeightChange }: { onHeightChange: (height: num
 
 const styles = StyleSheet.create({
   safe: { backgroundColor: palette.white, borderTopWidth: 1, borderTopColor: palette.line, paddingHorizontal: 12, paddingTop: 8, paddingBottom: 8 },
-  dock: { width: "100%", maxWidth: 620, alignSelf: "center", gap: 4, backgroundColor: palette.white },
+  dock: { width: "100%", maxWidth: 720, alignSelf: "center", gap: 4, backgroundColor: palette.white },
   row: { flexDirection: "row", gap: 4 },
   item: { flex: 1, minWidth: 0, alignItems: "center", justifyContent: "center", paddingHorizontal: 2, paddingVertical: 7, gap: 3, borderRadius: 12, borderWidth: 1, borderColor: "transparent" },
-  label: { color: palette.tealDark, fontSize: 18, fontWeight: "500", textAlign: "center" },
+  label: { color: palette.tealDark, fontSize: 18, lineHeight: 25, fontWeight: "500", textAlign: "center" },
   selected: { backgroundColor: palette.mint },
   selectedHigh: { borderColor: palette.tealDark },
   selectedLabel: { fontWeight: "700", textDecorationLine: "underline" },
