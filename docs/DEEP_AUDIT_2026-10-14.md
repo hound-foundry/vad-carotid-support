@@ -17,6 +17,8 @@ This is an engineering and usability audit. It does not certify clinical accurac
 - `npm test` passed all 101 tests, including storage failure handling, output filtering, card separation, photo boundaries, review metadata, content, native configuration and privacy checks.
 - TypeScript, static export, 35-artifact route validation, design validation and the low-risk web-preview release gate passed.
 - The browser audit exercised only invented values. No user saved data was opened, cleared or changed.
+- Fresh route sweeps at 320px, 390px, 844×390px landscape and 1120px desktop found no horizontal overflow after the input and phone-header repairs.
+- All eight practical and eight milestone designs were selected through the live creator at 320px with 200% app text. Each remained within the viewport; accessibility settings were reset afterwards.
 
 ## Confirmed findings and repairs
 
