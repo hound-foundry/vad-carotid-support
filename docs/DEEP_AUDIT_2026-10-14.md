@@ -1,7 +1,7 @@
 # Deep assurance audit
 
 Audit date: 14 October 2026  
-Revision reviewed: `d3252da` plus the external-link, semantic-form, responsive-row and long-control repairs made during this audit
+Revision reviewed: `d3252da` plus the external-link, semantic-form, responsive-row, long-control and enlarged-heading repairs made during this audit
 Scope: exported English web preview, shared Expo UI, content/review gates, local data boundaries, card journeys and dependency report
 
 This is an engineering and usability audit. It does not certify clinical accuracy, legal clearance, WCAG conformance, or real patient/carer usefulness.
@@ -21,6 +21,11 @@ This is an engineering and usability audit. It does not certify clinical accurac
 - All eight practical and eight milestone designs were selected through the live creator at 320px with 200% app text. Each remained within the viewport; accessibility settings were reset afterwards.
 - A full 320px sweep with 200% app text found and repaired flex-row intrinsic-width failures in saved rows, guide rows and appointment question rows. The same sweep then reported no visible non-skip-link overflow across the main route matrix.
 - Long source disclosure controls were shortened visually to “Source details” while retaining the full resource title in the accessible label. The compact draft notice now uses “Draft · review pending” while preserving its full accessible name.
+- A fresh settings matrix covered the route set at default, dark theme, high contrast, 125%, 150%, 175% and 200% text, plus 200% at 390px, short landscape and desktop widths. Every run retained a heading, urgent-help access, labelled controls and equal document/client widths.
+- The full disability-oriented combination (200% text, roomier spacing, high contrast, dark theme, simplified reading and reduced motion) completed without visible overflow across the route set. Dark mode exposed `color-scheme: dark` and the expected dark page surface.
+- All 8 practical and all 8 milestone designs were selected again at 320px. A second pass selected all 16 at 200% text in dark mode; no design overflowed its viewport. Long synthetic Unicode card wording remained visible in the review step.
+- Visual inspection found page titles breaking inside words at 200% (for example “Annivers / ary” and “Informat / ion”). The shared and home headings now cap only their oversized display size while body text continues to honour the selected scale; whole-word wrapping was verified in dark and high-contrast screenshots.
+- Runtime checks selected an appointment question and entered a synthetic long note; the preview updated and stayed within 320px. Menu Escape closed the open menu and returned focus to the trigger.
 
 ## Confirmed findings and repairs
 
@@ -32,6 +37,7 @@ This is an engineering and usability audit. It does not certify clinical accurac
 | Medium · repaired | At 320–390px, the full header utility labels wrapped into cramped pills and the subtitle truncated mid-word. | Fresh 320px and 390px route sweeps showed the visual labels breaking while the underlying links remained reachable. | The phone shell now uses compact visual labels and an icon below 480px while keeping complete accessible names. All public routes were rechecked with no horizontal overflow. |
 | Medium · repaired | At 200% app text and 320px, flex rows for saved-item status, guide arrows and appointment question text exceeded their visual containers even though the document scroll width stayed at 320px. | Bounding-box scan at 320px/200% showed right edges beyond the viewport; the saved row and appointment option were visibly clipped candidates. | Added `minWidth: 0`, explicit container widths and non-shrinking checkbox/arrow affordances to the affected rows. Rebuilt and repeated the full 320px/200% matrix with no remaining visible overflow. |
 | Low · repaired | At 200% app text, long source-disclosure titles and the compact draft label created unnecessarily tall controls and increased reading effort. | 320px/200% visual scan showed source titles wrapping into very tall buttons. | Use concise visible labels with full accessible names; keep the full source title in the disclosure content and accessibility tree. |
+| Medium · repaired | At 200% app text, page headings broke inside words on narrow screens, increasing reading effort for people with dyslexia, aphasia or cognitive fatigue. | Visual screenshots at 320px/200% showed “Annivers / ary” and “Informat / ion”. | Cap only oversized page-title text in the shared and home heading components; body text still follows the selected scale and the repaired titles wrap on whole words. |
 | Low | In-memory guide/library filters are not reflected in the URL. | Search and audience filters reset on reload and are retained only by the reading-session provider. | This protects privacy and keeps URLs clean, but it reduces shareable return links. Decide deliberately per filter; do not put card, appointment or support values in URLs. |
 
 ## Unresolved release gates

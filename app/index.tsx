@@ -22,9 +22,10 @@ export default function HomeScreen() {
   const [saved, setSaved] = useState<SavedSummary | null>(null);
   useEffect(() => { let live = true; void loadSavedSummary().then((value) => { if (live) setSaved(value); }).catch(() => { if (live) setSaved(null); }); return () => { live = false; }; }, []);
   const singleColumn = width < 360 || (settings.textScale >= 1.5 && width < 700);
+  const titleScale = Math.min(32, 44 / settings.textScale);
   const rows = singleColumn ? actions.map((action) => [action]) : [actions.slice(0, 2), actions.slice(2)];
   return <AppPage>
-    <View style={styles.intro}><Text accessibilityRole="header" aria-level={1} style={styles.title}>Information and practical help</Text><Text style={styles.summary}>For adults affected by vertebral or carotid artery dissection, and the people supporting them.</Text></View>
+    <View style={styles.intro}><Text accessibilityRole="header" aria-level={1} style={[styles.title, { fontSize: titleScale }]}>Information and practical help</Text><Text style={styles.summary}>For adults affected by vertebral or carotid artery dissection, and the people supporting them.</Text></View>
     <View style={styles.actions}>{rows.map((row, index) => <View key={index} style={styles.row}>{row.map((action) => <ActionLink key={action.href} {...action} compact={false} inline={width < 360 && settings.textScale < 1.5} showIcon={settings.textScale < 1.5} />)}</View>)}</View>
     {saved?.hasAny ? <Section title="Continue where you left off"><Text style={styles.resumeIntro}>Saved items stay on this device. Private details appear only after you open the tool.</Text><View style={styles.resumeRows}>
       {saved.guides ? <SavedItemRow href="/saved-guides" label="Saved guides" status="Saved" detail="Open your reading list" /> : null}

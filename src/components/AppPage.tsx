@@ -27,7 +27,11 @@ export function BackHome() {
 
 export function PageHeading({ eyebrow, title, summary, compact = false }: { eyebrow: string; title: string; summary: string; compact?: boolean }) {
   const { settings } = useAccessibility();
-  return <View style={[styles.heading, settings.spacing === "roomy" && styles.headingRoomy, compact && styles.headingCompact]}>{!compact ? <Text style={styles.eyebrow}>{eyebrow}</Text> : null}<Text accessibilityRole="header" aria-level={1} style={[styles.title, compact && styles.titleCompact]}>{title}</Text>{summary ? <Text style={[styles.summary, settings.spacing === "roomy" && styles.summaryRoomy]}>{summary}</Text> : null}</View>;
+  // Let body text honour the full preference while keeping long headings on
+  // whole words at narrow widths. At 200% a 60px title can force words such
+  // as “communication” or “anniversary” into unreadable mid-word fragments.
+  const titleScale = Math.min(30, 44 / settings.textScale);
+  return <View style={[styles.heading, settings.spacing === "roomy" && styles.headingRoomy, compact && styles.headingCompact]}>{!compact ? <Text style={styles.eyebrow}>{eyebrow}</Text> : null}<Text accessibilityRole="header" aria-level={1} style={[styles.title, { fontSize: titleScale }, compact && styles.titleCompact]}>{title}</Text>{summary ? <Text style={[styles.summary, settings.spacing === "roomy" && styles.summaryRoomy]}>{summary}</Text> : null}</View>;
 }
 
 export function DraftNotice({ compact = false }: { compact?: boolean }) {
