@@ -1,7 +1,7 @@
 # Deep assurance audit
 
 Audit date: 14 October 2026  
-Revision reviewed: `af0a55b` plus the external-link, semantic-form, responsive-row, long-control, enlarged-heading and compact-brand repairs made during this audit
+Revision reviewed: current working revision after the live card-preview and continuation-panel repair, following the external-link, semantic-form, responsive-row, long-control, enlarged-heading and compact-brand repairs made during this audit
 Scope: exported English web preview, shared Expo UI, content/review gates, local data boundaries, card journeys and dependency report
 
 This is an engineering and usability audit. It does not certify clinical accuracy, legal clearance, WCAG conformance, or real patient/carer usefulness.
@@ -27,6 +27,7 @@ This is an engineering and usability audit. It does not certify clinical accurac
 - Visual inspection found page titles breaking inside words at 200% (for example “Annivers / ary” and “Informat / ion”). The shared and home headings now cap only their oversized display size while body text continues to honour the selected scale; whole-word wrapping was verified in dark and high-contrast screenshots.
 - The compact phone header previously shortened the visible brand to “Companion”, which weakened orientation for a person returning after an interruption. It now keeps the full “Dissection Companion” name at a smaller size, while the subtitle remains hidden only in the compact layout. At 200% text the name wraps between words and the menu, medical-help and display controls remain reachable.
 - Runtime checks selected an appointment question and entered a synthetic long note; the preview updated and stayed within 320px. Menu Escape closed the open menu and returned focus to the trigger.
+- The card creator now shows the actual generated front and back while the person chooses a design. Changing a practical template updates that preview without changing the words. If details need more wallet panels, only the front and back are shown by default; an explicit “Additional details” disclosure keeps the continuation panels available for inspection and export.
 
 ## Confirmed findings and repairs
 
@@ -41,12 +42,13 @@ This is an engineering and usability audit. It does not certify clinical accurac
 | Medium · repaired | At 200% app text, page headings broke inside words on narrow screens, increasing reading effort for people with dyslexia, aphasia or cognitive fatigue. | Visual screenshots at 320px/200% showed “Annivers / ary” and “Informat / ion”. | Cap only oversized page-title text in the shared and home heading components; body text still follows the selected scale and the repaired titles wrap on whole words. |
 | Low · repaired | The compact phone header showed only “Companion”, making the product identity harder to recognise after interruption or at a glance. | 320px preview screenshot and accessibility-tree inspection. | Keep the full brand name in compact mode with a smaller 17px treatment; rechecked at default and 200% text with no horizontal overflow. |
 | Low | In-memory guide/library filters are not reflected in the URL. | Search and audience filters reset on reload and are retained only by the reading-session provider. | This protects privacy and keeps URLs clean, but it reduces shareable return links. Decide deliberately per filter; do not put card, appointment or support values in URLs. |
+| Medium · repaired | The card design step showed only a thumbnail/current-design summary, and long wallet layouts presented continuation panels as a stack of extra cards. | Browser journey at `/personal-card` showed no generated front/back until the final review; long content produced several visible panels. | The design step now renders the same composition used by exports, with live front/back feedback. Continuation panels are grouped behind an explicit disclosure while remaining accessible and exportable. |
 
 ## Unresolved release gates
 
 - Clinical claim ledger, emergency wording and source limits still require qualified clinician review.
 - Patient/carer usefulness sessions have not been run with people; simulated agents and synthetic browser journeys are not substitutes.
-- NVDA, VoiceOver, TalkBack, manual browser zoom, physical printing and native iOS/Android behavior remain untested here.
+- NVDA, VoiceOver, TalkBack, manual browser zoom, physical printing and native iOS/Android behavior remain deferred and untested here.
 - Jurisdiction screening remains blocked. The preview uses generic emergency wording and no country-specific numbers, accounts, backend, analytics or paid features.
 - Browser localStorage, IndexedDB photos, downloads, printed cards, browser backups and hosting logs remain outside the app's complete control; the privacy notices state those limits.
 

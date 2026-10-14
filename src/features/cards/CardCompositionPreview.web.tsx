@@ -38,15 +38,24 @@ export function CardCompositionPreview({ view, photo = null }: {
       <Text style={styles.hint}>{view.footer}</Text>
       {photo ? <Text style={styles.hint}>{cardTemplate(view.templateId)?.photo ? "Your chosen photo is included in this design." : "Your photo is retained in the draft but is not included in this design."}</Text> : null}
     </Disclosure>;
+    const renderPanel = (panel: { uri: string; width: number; height: number; side: string }, n: number) => <View key={n} style={styles.panel}>
+      <Text accessibilityRole="header" aria-level={2} style={styles.side}>{panel.side}</Text>
+      <Image source={{ uri:panel.uri }} accessible={false} aria-hidden style={{width:"100%",aspectRatio:panel.width/panel.height}} />
+    </View>;
+    const primaryPanels = panels.slice(0, 2);
+    const continuationPanels = panels.slice(2);
     return <View testID="card-preview">
       <Text style={styles.hint}>The design is used for downloads. Your text and display settings apply to the text version.</Text>
       {automaticText?words:null}
       {error ? <Text accessibilityLiveRegion="polite" style={styles.hint}>{error}</Text>
         : !panels.length ? <Text accessibilityLiveRegion="polite">Preparing the card preview…</Text>
-        : panels.map((panel, n) => <View key={n} style={styles.panel}>
-          <Text accessibilityRole="header" aria-level={2} style={styles.side}>{panel.side}</Text>
-          <Image source={{ uri:panel.uri }} accessible={false} aria-hidden style={{width:"100%",aspectRatio:panel.width/panel.height}} />
-        </View>)}
+        : <>
+          {primaryPanels.map(renderPanel)}
+          {continuationPanels.length ? <Disclosure title={`Additional details · ${continuationPanels.length} more panel${continuationPanels.length === 1 ? "" : "s"}`}>
+            <Text style={styles.hint}>Long details continue here for larger-text documents. The front and back above are the main wallet card.</Text>
+            {continuationPanels.map(renderPanel)}
+          </Disclosure> : null}
+        </>}
       {!automaticText?words:null}
     </View>;
 }

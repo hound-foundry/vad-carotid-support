@@ -1,14 +1,14 @@
 # Card design and user control
 
-14 October 2026. Implementation extends the quieter Dissection Companion interface at `aac394f`. This is a technical/design review with synthetic examples, not patient feedback or clinical approval.
+14 October 2026. Implementation extends the quieter Dissection Companion interface. This is a technical/design review with synthetic examples, not patient feedback or clinical approval.
 
 ## What changed
 
-Both card tools now offer Clear blue, Ink heading, Quiet teal and Deep blue. Design choices start collapsed. No artwork is selected by default; optional original ribbon, leaf, shield/leaf and friendly-brain drawings are available in a second disclosure. Plain design and one-step Undo change only styling. They preserve words and dates and do not save or export automatically.
+Both card tools now offer distinct practical and milestone designs. Design choices start collapsed. No artwork is selected by default; optional original ribbon, leaf, shield/leaf and artery-and-ribbon drawings are available in a second disclosure. Plain design and one-step Undo change only styling. They preserve words and dates and do not save or export automatically.
 
 The practical card accepts a custom heading and retains selectable communication statements and optional details. The separate milestone card offers editable title ideas including Survivor and Warrior. Neither wording is compulsory. No reminder, elapsed-time calculation, official identifier, diagnostic inference or automatic social posting was added.
 
-One filtered presentation supplies preview, PDF, PNG, text and print. No date omits the entered date from the presentation and every output. Dark/high-contrast preview follows the person's display preferences; the adjacent caption explains this. Downloads use the chosen paper style. Print uses white paper and dark text. Standard PDF remains the larger-text option; personal cards additionally offer 85.6 × 54 mm wallet panels with overflow onto additional panels rather than shrinking text.
+The creator now shows a live front-and-back preview while the person chooses a design, colour or artwork. The main preview keeps one front and one back in view; longer wallet details remain available under an explicit “Additional details” disclosure and still paginate in exports. One filtered presentation supplies preview, PDF, PNG, text and print. No date omits the entered date from the presentation and every output. Dark/high-contrast preview follows the person's display preferences; the adjacent caption explains this. Downloads use the chosen paper style. Print uses white paper and dark text. Standard PDF remains the larger-text option; personal cards additionally offer 85.6 × 54 mm wallet panels with overflow onto additional panels rather than shrinking text.
 
 Existing separate v1 storage keys and explicit Save/Export/Delete remain. Old cards without design fields restore with Clear blue and no artwork. Only known style/artwork IDs survive serialization. Artwork is original, local and documented in [its licence/readme](../assets/card-art/README.md). Commercial reference screenshots and their logos were not copied or committed. No dependency was added.
 

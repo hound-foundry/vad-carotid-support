@@ -44,7 +44,7 @@ export default function MilestoneCardScreen() {
     </> : null}
     {draft.mode === "edit" && draft.step === 3 ? <>
       <Text style={styles.stepIntro}>Choose the feeling of the card. Your words stay unchanged.</Text>
-      <CardDesignPicker value={draft.card} onChange={draft.update} onChooseDesign={draft.chooseDesign} onUndo={draft.undoAppearance} canUndo={draft.canUndo}/>
+      <CardDesignPicker value={draft.card} onChange={draft.update} onChooseDesign={draft.chooseDesign} onUndo={draft.undoAppearance} canUndo={draft.canUndo} preview={<CardPreview view={view} photo={draft.photo}/>}/>
       <Button title="Back to optional extras" secondary onPress={() => draft.setStep(2)}/><Button title="Review card" disabled={!draft.loaded || draft.photoBusy} onPress={draft.preview}/>
     </> : null}
     {draft.mode === "preview" ? <><Text style={styles.stepIntro}>Step 4 of 4 · Check the design, words and date before downloading.</Text><CardPreview view={view} photo={draft.photo}/><Button title="Edit card" secondary onPress={() => draft.setStep(3)}/><CardExports view={view} photo={draft.photo} processing={draft.photoBusy}/></> : null}
