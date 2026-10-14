@@ -22,7 +22,7 @@ export default function ResourcesScreen() {
         <Text style={styles.meta}>{resource.kind.replace(/-/g, " ")} · {resource.language === "en" ? "English" : resource.language}</Text>
         <Text style={styles.note}>{resource.note}</Text>
         <Text style={styles.review}>Clinical review for this app: {resource.clinicalReviewStatus === "not-reviewed" ? "not recorded" : resource.clinicalReviewStatus.replace(/-/g, " ")}</Text>
-        <Disclosure title={`Source details: ${resource.title}`}>
+        <Disclosure title="Source details" accessibilityLabel={`Source details for ${resource.title}`}>
           <Text style={styles.meta}>Link checked {resource.checkedOn} · For {resource.audience.join(", ")}</Text>
           <Text style={styles.note}>Source appraisal: {resource.editorialStatus === "candidate" ? "pending" : resource.editorialStatus.replace(/-/g, " ")}</Text>
           <Text style={styles.rights}>Rights: {resource.rights}</Text>
