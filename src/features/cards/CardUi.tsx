@@ -11,7 +11,7 @@ import { CardArtwork } from "./CardArtwork";
 import { useAccessibility } from "../accessibility/AccessibilityProvider";
 import { themeFor } from "../../components/theme";
 import { CardCompositionPreview } from "./CardCompositionPreview";
-import type { CardPhotoAsset } from "./CardDraftProvider";
+import type { CardPhotoAsset, CardStep } from "./CardDraftProvider";
 import { cardComposition } from "./composition";
 import { sceneSvg } from "./scene-svg.mjs";
 
@@ -27,6 +27,13 @@ export function Check({ label, checked, onChange }: { label: string; checked: bo
 export function Disclosure({ title, children, initiallyOpen = false }: { title: string; children: ReactNode; initiallyOpen?: boolean }) {
   const [open, setOpen] = useState(initiallyOpen); const id = useId();
   return <View style={styles.disclosure}><Pressable accessibilityRole="button" aria-controls={id} accessibilityState={{ expanded: open }} onPress={() => setOpen(!open)} style={styles.disclosureButton}><Text style={styles.disclosureText}>{title} · {open ? "Hide" : "Show"}</Text></Pressable>{open ? <View nativeID={id} style={styles.disclosureContent}>{children}</View> : null}</View>;
+}
+export function CardSteps({ current, onStep }: { current: CardStep; onStep: (step: CardStep) => void }) {
+  const labels: Array<[CardStep, string]> = [[1, "Your words"], [2, "Optional extras"], [3, "Choose a design"], [4, "Review and finish"]];
+  return <Disclosure title={`Card steps · Step ${current} of 4`} initiallyOpen={false}>
+    <Text style={styles.hint}>You can return to an earlier step. Your words stay in place.</Text>
+    {labels.map(([step, label]) => <Button key={step} title={`${step}. ${label}${step === current ? " · current" : ""}`} secondary={step !== current} onPress={() => onStep(step)} />)}
+  </Disclosure>;
 }
 export function DateFields({ id, kind, value, onKind, onValue, hiddenMessage = "No date will appear on the card." }: { id: string; kind: string; value: string; onKind: (value: string) => void; onValue: (value: string) => void; hiddenMessage?: string }) {
   const choices = [["none", "No date"], ["exact", "Exact date"], ["month-year", "Month and year"], ["year", "Year only"], ["approximate", "Approximate date"]] as const;

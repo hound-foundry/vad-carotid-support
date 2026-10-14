@@ -23,8 +23,8 @@ test("source inspection excludes browser contents and preserves independent save
   const kit=await inspectDesign();
   assert.equal(kit.profile.privacy.savedKeyCount,6);
   assert.equal(kit.profile.privacy.localResources[0].storage,"indexeddb");
-  assert.equal(kit.tokens.cardTemplates.length,8);
-  assert.equal(kit.tokens.cardContrastChecks.length,96);
+  assert.equal(kit.tokens.cardTemplates.length,16);
+  assert.equal(kit.tokens.cardContrastChecks.length,192);
   assert.ok(kit.sourceHashes["src/features/cards/model.mjs"]);
   assert.equal(kit.tokens.effectiveRules.pressableMinHeight,48);
   assert.ok(!JSON.stringify(kit).includes("localStorage.getItem"));

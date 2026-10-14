@@ -14,9 +14,9 @@ import { cardArtwork } from "../src/features/cards/artwork.mjs";
 const bytes = { regular: await readFile(new URL("../public/fonts/NotoSans-Regular.ttf", import.meta.url)), bold: await readFile(new URL("../public/fonts/NotoSans-Bold.ttf", import.meta.url)), display: await readFile(new URL("../public/fonts/barlow/BarlowCondensed-Bold.ttf", import.meta.url)) };
 const metrics = createCardMetrics(bytes.regular, bytes.bold, bytes.display);
 const make = (t, patch = {}) => t.kind === "personal" ? personalCardPresentation({ ...emptyPersonalCard(), templateId: t.id, heading: "MY OWN WORDS", preferredName: "EXAMPLE", communicationNeeds: "Write important things down.", ...patch }) : milestoneCardPresentation({ ...emptyMilestoneCard(), templateId: t.id, title: "MY OWN WORDS", displayName: "EXAMPLE", message: "MY OWN MESSAGE", ...patch });
-test("eight templates have distinct compositions and three curated readable colour combinations", () => {
-    assert.equal(CARD_TEMPLATES.length, 8);
-    assert.equal(CARD_TEMPLATES.filter(t => t.kind === "personal").length, 3);
+test("sixteen templates have distinct compositions and three curated readable colour combinations", () => {
+    assert.equal(CARD_TEMPLATES.length, 16);
+    assert.equal(CARD_TEMPLATES.filter(t => t.kind === "personal").length, 8);
     const layouts = new Set();
     for (const t of CARD_TEMPLATES) {
         assert.equal(t.colours.length, 3);
@@ -28,7 +28,7 @@ test("eight templates have distinct compositions and three curated readable colo
         const scene = buildCardLayout(make(t), metrics);
         layouts.add(JSON.stringify(scene.pages[0].items.map(i => ({ type: i.type, x: i.x, y: i.y, width: i.width, height: i.height, font: i.font, size: i.size }))));
     }
-    assert.equal(layouts.size, 8);
+    assert.equal(layouts.size, 16);
 });
 test("v1 design metadata stays optional, bounded and separate between the two card kinds", () => {
     const old = parsePersonalCard(JSON.stringify({ version: 1, card: { preferredName: "EXAMPLE", designId: "ink", artworkId: "ribbon" } }));

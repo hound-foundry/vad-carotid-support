@@ -25,6 +25,14 @@ const thumbnails: Record<string, number> = {
     "brain-poster": require("../../../assets/card-collection/brain-poster.png"),
     botanical: require("../../../assets/card-collection/botanical.png"),
     "photo-story": require("../../../assets/card-collection/photo-story.png"),
+    "quiet-white": require("../../../assets/card-collection/quiet-white.png"),
+    "engraved-slate": require("../../../assets/card-collection/engraved-slate.png"),
+    "embossed-cream": require("../../../assets/card-collection/embossed-cream.png"),
+    "letterpress-blue": require("../../../assets/card-collection/letterpress-blue.png"),
+    "message-band": require("../../../assets/card-collection/message-band.png"),
+    "fox-story": require("../../../assets/card-collection/fox-story.png"),
+    "bird-ribbon": require("../../../assets/card-collection/bird-ribbon.png"),
+    "cat-badge": require("../../../assets/card-collection/cat-badge.png"),
 };
 export function CardTemplateGallery({ kind, value, onChange, onContinue, loaded, canReturn=false }: {
     kind: "personal" | "milestone";
@@ -41,7 +49,7 @@ export function CardTemplateGallery({ kind, value, onChange, onContinue, loaded,
     const thumbnailWidth=compact?100:Math.min(250,width-88);
     const thumbnailHeight=thumbnailWidth/(kind === "personal"?856/540:1080/1500);
     return <View>
-      <Text style={styles.hint}>These are examples. Choosing a design keeps your words and dates. Portraits shown here are illustrations.</Text>
+      <Text style={styles.hint}>Step 3 of 4 · These are examples. Choosing a design keeps your words and dates.</Text>
       <View style={styles.gallery}>{CARD_TEMPLATES.filter(t => t.kind === kind).map(t =>
         <Pressable key={t.id} accessibilityRole="button" accessibilityLabel={"Choose " + t.name}
           disabled={!loaded} accessibilityState={{ disabled: !loaded }}

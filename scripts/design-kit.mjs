@@ -80,7 +80,7 @@ export async function inspectDesign(root = projectRoot) {
   const contrastChecks = designContrastReport();
   for (const check of contrastChecks) if (check.ratio < check.minimum) throw new Error(`Contrast failed: ${check.theme}/${check.contrast} ${check.pair}`);
   const cardContrastChecks = [];
-  if (CARD_TEMPLATES.length !== 8 || new Set(CARD_TEMPLATES.map(template => template.id)).size !== 8) throw new Error("Expected eight distinct card templates");
+  if (CARD_TEMPLATES.length !== 16 || new Set(CARD_TEMPLATES.map(template => template.id)).size !== 16) throw new Error("Expected sixteen distinct card templates");
   for (const template of CARD_TEMPLATES) {
     if (template.colours.length !== 3) throw new Error("Each card needs three curated colour combinations");
     for (const id of template.colours) {

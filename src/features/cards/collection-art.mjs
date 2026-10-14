@@ -31,4 +31,20 @@ export const COLLECTION_ART = {
         { d: "M34 81L60 41", stroke: "ink", width: 2.5 },
         { d: "M14 64L5 59M20 77L10 74M86 64L95 59M80 77L90 74", stroke: "accent", width: 2 },
     ],
+    fox: [
+        { d: "M18 28L24 8L42 20C47 18 53 18 58 20L76 8L82 28C88 38 84 58 71 69C61 78 39 78 29 69C16 58 12 38 18 28Z", fill: "soft", stroke: "accent", width: 2 },
+        { d: "M34 43C37 39 41 39 44 43M56 43C59 39 63 39 66 43M45 54C48 57 52 57 55 54", stroke: "ink", width: 2 },
+        { d: "M28 65C19 77 12 86 7 92M72 65C81 77 88 86 93 92", stroke: "accent", width: 2 },
+        { d: "M24 78C39 84 61 84 76 78", stroke: "paper", width: 2 },
+    ],
+    bird: [
+        { d: "M15 50C28 21 55 12 82 23C70 29 61 38 57 51C47 45 37 43 26 47C35 54 41 62 43 73C30 68 20 60 15 50Z", fill: "soft", stroke: "accent", width: 2 },
+        { d: "M56 51C69 54 80 63 90 76M28 81C45 78 62 79 82 84", stroke: "accent", width: 2 },
+        { d: "M45 29C52 24 59 23 67 25", stroke: "paper", width: 2 },
+    ],
+    cat: [
+        { d: "M18 37L22 10L43 24C48 22 52 22 57 24L78 10L82 37C86 55 74 75 50 78C26 75 14 55 18 37Z", fill: "soft", stroke: "accent", width: 2 },
+        { d: "M33 46L42 48M58 48L67 46M45 58C48 61 52 61 55 58M28 55L12 51M28 61L11 64M72 55L88 51M72 61L89 64", stroke: "ink", width: 1.8 },
+        { d: "M38 27L43 33M62 27L57 33", stroke: "paper", width: 2 },
+    ],
 };

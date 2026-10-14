@@ -34,4 +34,4 @@ for (const template of CARD_TEMPLATES) {
     rows.push({ id: template.id, name: template.name, kind: template.kind, width: layout.pages[0].width, height: layout.pages[0].height, panels: layout.pages.length });
 }
 await writeFile(new URL("catalogue.json", output), JSON.stringify(rows, null, 2) + "\n");
-console.log("Built eight original card examples, gallery images, wallet backs and PDF fixtures locally.");
+console.log("Built sixteen original card examples, gallery images, wallet backs and PDF fixtures locally.");

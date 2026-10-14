@@ -56,7 +56,45 @@ export function buildCardLayout(view, metrics, { photo } = {}) {
         const visibleLines = titleLines.slice(0, titleLimit), excessTitle = titleLines.slice(titleLimit);
         const frontName = wrap(name, (template.id === "portrait" && photo ? 498 : 740) - metrics.width("…", 38, "bold"), s => metrics.width(s, 38, "bold"))[0] || "";
         const shortName = frontName + (frontName !== name ? "…" : "");
-        if (template.id === "communication" || template.id === "plain") {
+        if (template.id === "quiet-white") {
+            rect(front, 24, 24, 808, 492, "none", 26, c.accent);
+            rect(front, 24, 24, 808, 10, c.accent, 5);
+            text(front, "Personal information", 58, 60, 730, 26, "bold", c.accent);
+            text(front, visibleLines.join("\n"), 58, 138, 730, 58, "display", c.ink, "left", 1.08);
+            text(front, shortName, 58, 362, 730, 36, "bold");
+        }
+        else if (template.id === "engraved-slate") {
+            front.background = c.paper;
+            rect(front, 28, 28, 800, 484, "none", 18, c.accent);
+            rect(front, 42, 42, 772, 456, "none", 12, c.accent);
+            text(front, "PERSONAL INFORMATION", 62, 74, 730, 24, "bold", c.accent, "center");
+            text(front, visibleLines.join("\n"), 62, 150, 730, 58, "display", c.ink, "center", 1.06);
+            if (template.illustrationId !== "none") art(front, 670, 330, 100, 100);
+            text(front, shortName, 62, 390, 730, 34, "bold", c.ink, "center");
+        }
+        else if (template.id === "embossed-cream") {
+            rect(front, 0, 0, 856, 540, c.soft, 32);
+            rect(front, 22, 22, 812, 496, "none", 26, c.accent);
+            text(front, "Personal information", 62, 66, 730, 26, "bold", c.accent);
+            if (template.illustrationId !== "none") art(front, 690, 48, 100, 100);
+            text(front, visibleLines.join("\n"), 62, 150, 690, 58, "display", c.ink, "left", 1.08);
+            text(front, shortName, 62, 390, 730, 36, "bold");
+        }
+        else if (template.id === "letterpress-blue") {
+            front.background = c.accent;
+            rect(front, 26, 26, 804, 488, "none", 14, c.onAccent);
+            text(front, "PERSONAL INFORMATION", 60, 64, 730, 24, "bold", c.onAccent);
+            text(front, visibleLines.join("\n"), 60, 145, 736, 60, "display", c.onAccent, "left", 1.06);
+            text(front, shortName, 60, 390, 736, 36, "bold", c.onAccent);
+        }
+        else if (template.id === "message-band") {
+            rect(front, 0, 0, 856, 540, c.paper, 0);
+            rect(front, 0, 90, 856, 260, c.accent);
+            text(front, "PERSONAL INFORMATION", 56, 42, 744, 24, "bold", c.accent);
+            text(front, visibleLines.join("\n"), 56, 132, 744, 60, "display", c.onAccent, "left", 1.06);
+            text(front, shortName, 56, 390, 744, 36, "bold", c.ink);
+        }
+        else if (template.id === "communication" || template.id === "plain") {
             rect(front, 0, 0, 856, 20, c.accent);
             rect(front, 0, 0, 14, 540, c.accent);
             text(front, "Personal information", 52, 40, 740, 28, "bold", c.accent);
@@ -162,6 +200,19 @@ export function buildCardLayout(view, metrics, { photo } = {}) {
         y = text(p, name, 80, y, 920, 42, "bold", c.accent, "center") + 18;
         y = text(p, date, 80, y, 920, 28, "bold", c.accent, "center") + 26;
         y = text(p, message, 96, y, 888, 36, "regular", c.ink, "center") + 20;
+        finish(p, y);
+    }
+    else if (template.id === "fox-story" || template.id === "bird-ribbon" || template.id === "cat-badge") {
+        const variant = template.id === "fox-story" ? 0 : template.id === "bird-ribbon" ? 1 : 2;
+        rect(p, 42 + variant * 8, 42 + variant * 6, 996 - variant * 16, 1266 - variant * 12, "none", 28 - variant * 4, c.accent);
+        const artX = variant === 0 ? 356 : variant === 1 ? 390 : 330;
+        const artY = variant === 0 ? 120 : variant === 1 ? 148 : 104;
+        if (template.illustrationId !== "none") art(p, artX, artY, variant === 2 ? 420 : 360, variant === 2 ? 330 : 360);
+        text(p, view.subtitle, 120, variant === 2 ? 480 : 520, 840, 27, "bold", c.accent, "center");
+        y = text(p, view.title, 120, variant === 2 ? 560 : 600, 840, variant === 1 ? 94 : 100, "display", c.ink, "center", 1.1) + 44;
+        y = text(p, name, 140, y, 800, 42, "bold", c.accent, "center") + 18;
+        y = text(p, date, 140, y, 800, 28, "bold", c.accent, "center") + 42;
+        y = text(p, message, 170, y, 740, 36, "regular", c.ink, "center") + 24;
         finish(p, y);
     }
     else if (template.id === "botanical") {

@@ -12,6 +12,7 @@ export type CardPhotoAsset = {
 };
 const appearanceKeys = ["templateId", "colourId", "illustrationId", "designId", "artworkId", "photoRef", "photoZoom", "photoX", "photoY"] as const;
 type Mode = "templates" | "edit" | "preview";
+export type CardStep = 1 | 2 | 3 | 4;
 type Draft<T> = {
     card: T;
     photo: CardPhotoAsset | null;
@@ -20,6 +21,7 @@ type Draft<T> = {
     status: string;
     message: string;
     mode: Mode;
+    step: CardStep;
     loaded: boolean;
 };
 export type DraftController<T> = Draft<T> & {
@@ -28,6 +30,7 @@ export type DraftController<T> = Draft<T> & {
     preview: () => void;
     edit: () => void;
     chooseDesign: () => void;
+    setStep: (step: CardStep) => void;
     undoAppearance: () => void;
     beginPhoto: () => number;
     acceptPhoto: (photo: CardPhotoAsset, token: number) => void;
@@ -42,7 +45,7 @@ function useDraft<T extends CardAppearance & {
     designId: string;
     artworkId: string;
 }>(empty: () => T, store: any, kind: "personal" | "milestone"): DraftController<T> {
-    const initial = (): Draft<T> => ({ card: empty(), photo: null, photoBusy: false, saveBusy: false, status: "loading", message: "Checking for a saved card…", mode: "templates", loaded: false });
+    const initial = (): Draft<T> => ({ card: empty(), photo: null, photoBusy: false, saveBusy: false, status: "loading", message: "Checking for a saved card…", mode: "edit", step: 1, loaded: false });
     const [draft, setDraft] = useState(initial), edited = useRef(false), epoch = useRef(0), current = useRef(draft), previous = useRef<{
         patch: Partial<T>;
         photo: CardPhotoAsset | null;
@@ -66,11 +69,11 @@ function useDraft<T extends CardAppearance & {
                 if (!live || edited.current)
                     return;
                 const message = result.status === "restored" ? (photoFailed ? "Saved card restored. Its photo could not be read; replace or remove it before a visual export." : "Saved card restored from this device.") : result.status === "invalid" ? "The saved card could not be read. It has not been overwritten." : "Not saved. Choose a design to begin.";
-                setDraft({ card: result.card, photo, photoBusy: false, saveBusy: false, status: result.status, mode: result.status === "absent" ? "templates" : "edit", loaded: true, message });
+                setDraft({ card: result.card, photo, photoBusy: false, saveBusy: false, status: result.status, mode: "edit", step: 1, loaded: true, message });
             }
             catch {
                 if (live)
-                    setDraft(d => ({ ...d, loaded: true, status: "failed", mode: "edit", message: "Saved card could not be read. You can still make a card." }));
+                setDraft(d => ({ ...d, loaded: true, status: "failed", mode: "edit", step: 1, message: "Saved card could not be read. You can still make a card." }));
             }
         })();
         return () => { live = false; };
@@ -93,7 +96,7 @@ function useDraft<T extends CardAppearance & {
     return { ...draft, canUndo: !!previous.current,
         update: patch => { if (appearanceKeys.some(key => Object.hasOwn(patch, key) && patch[key] !== current.current.card[key]))
             remember(); edited.current = true; setDraft(d => ({ ...d, loaded: true, card: { ...d.card, ...patch, ...stamp() }, ...changes })); },
-        preview: () => setDraft(d => ({ ...d, mode: "preview" })), edit: () => setDraft(d => ({ ...d, mode: "edit" })), chooseDesign: () => setDraft(d => ({ ...d, mode: "templates" })),
+        preview: () => setDraft(d => ({ ...d, mode: "preview", step: 4 })), edit: () => setDraft(d => ({ ...d, mode: "edit" })), chooseDesign: () => setDraft(d => ({ ...d, mode: "templates", step: 3 })), setStep: step => setDraft(d => ({ ...d, mode: step === 4 ? "preview" : "edit", step })),
         undoAppearance: () => { const before = previous.current; if (!before)
             return; previous.current = undefined; edited.current = true; epoch.current++; setDraft(d => ({ ...d, photo: before.photo, photoBusy: false, card: { ...d.card, ...before.patch, ...stamp() }, ...changes })); },
         beginPhoto: () => { const token = ++epoch.current; setDraft(d => ({ ...d, photoBusy: true })); return token; },

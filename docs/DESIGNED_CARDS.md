@@ -1,6 +1,6 @@
 # Designed card collection
 
-Implemented and checked on 14 October 2026 in the existing Expo project. This is an engineering record for the English website, not clinical approval, patient feedback or accessibility certification. The eight full examples were rendered and inspected before their gallery was integrated.
+Implemented and checked on 14 October 2026 in the existing Expo project. This is an engineering record for the English website, not clinical approval, patient feedback or accessibility certification. Sixteen full examples were rendered and inspected before their gallery was integrated.
 
 ## Collection and controls
 
@@ -10,11 +10,12 @@ Implemented and checked on 14 October 2026 in the existing Expo project. This is
 | Photo and details: optional portrait, name and statement, plum band | Warrior badge: shield/leaf emblem, condensed lettering, navy/gold |
 | Statement card: cranberry statement front, optional ribbon | Artery & ribbon: original branching-vessel motif and awareness ribbon, blue/white by default |
 | White reverse and labelled continuation panels for each | Botanical keepsake: leafy framing and balanced typography |
-| Larger-text A4 and text alternatives | Photo story: optional image above its caption panel |
+| Quiet white, engraved slate, embossed cream, blue letterpress and message band | Photo story: optional image above its caption panel |
+|  | Fox and wildflower, bird and ribbon, and cat badge |
 
 Each template has three curated colour combinations. Selecting a template changes appearance only. Words, dates and retained photos survive switching. Starter wording is a separate action. Appearance Undo and a plain-layout option preserve the person's words. The phone gallery uses miniature compositions beside clear names; enlarged text stacks the layout. Preview and exports share the same measured scene. Milestone outputs use direct wording without form-like Name/Message headings.
 
-![Eight full card designs](designed-cards-proof/eight-template-comparison.jpg)
+![Sixteen full card designs](designed-cards-proof/eight-template-comparison.jpg)
 
 ![Practical fronts and backs](designed-cards-proof/practical-front-back.jpg)
 
@@ -37,7 +38,7 @@ Tests used disposable synthetic fixtures on `http://127.0.0.1:4183`. The user's 
 
 | Check | Evidence and result |
 |---|---|
-| Eight distinct arrangements and palette contrast | Unit tests compare structural compositions using identical words. 96 card colour pairs meet 4.5:1; the existing four-theme interface checks also pass. This does not certify the whole app. |
+| Sixteen distinct arrangements and palette contrast | Unit tests compare structural compositions using identical words. 192 card colour pairs meet 4.5:1; the existing four-theme interface checks also pass. This does not certify the whole app. |
 | Output inspection | [PDF raster comparison](designed-cards-proof/pdf-render-comparison.jpg), [no-photo/no-art compositions](designed-cards-proof/without-photo-or-art.jpg), full PNGs and front/back examples inspected. |
 | Practical creator | Blank optional fields, selected communication statements, edit/preview/return, explicit save, reload with photo, template change and Undo, keyboard crop buttons, invalid replacement, hidden event date, wallet PDF and text checked in browser. |
 | Long practical details | Browser wallet export produced 10 fixed-size panels. PDF and text contained matching synthetic medicine/allergy entries; hidden event date absent. Detail text stays fixed at 38 design units rather than shrinking. |
