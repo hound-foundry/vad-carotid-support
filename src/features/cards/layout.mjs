@@ -50,9 +50,12 @@ export function buildCardLayout(view, metrics, { photo } = {}) {
         // An overly long heading gets its own readable continuation panel, never a
         // clipped front or a reduced font. The front still carries its own label.
         const font = metrics.resolveFont(template.id==="plain"?"bold":"display", heading);
-        const titleWidth = template.id === "portrait" && photo ? 480 : template.id === "statement" && template.illustrationId !== "none" ? 580 : 740;
+        const titleWidth = template.id === "portrait" && photo ? 480 : template.id === "statement" && template.illustrationId !== "none" ? 580 : template.id === "engraved-slate" ? 600 : template.id === "embossed-cream" ? 620 : 740;
         const titleLines = wrap(heading, titleWidth, s => metrics.width(s, 62, font));
-        const titleLimit = template.id === "portrait" ? 2 : 3;
+        // Wallet fronts have a fixed physical height. Keep the message to two
+        // lines so the identity and safety label remain separated; any extra
+        // wording continues on the back instead of colliding with the footer.
+        const titleLimit = 2;
         const visibleLines = titleLines.slice(0, titleLimit), excessTitle = titleLines.slice(titleLimit);
         const frontName = wrap(name, (template.id === "portrait" && photo ? 498 : 740) - metrics.width("…", 38, "bold"), s => metrics.width(s, 38, "bold"))[0] || "";
         const shortName = frontName + (frontName !== name ? "…" : "");
@@ -61,45 +64,48 @@ export function buildCardLayout(view, metrics, { photo } = {}) {
             rect(front, 24, 24, 808, 10, c.accent, 5);
             text(front, "Personal information", 58, 60, 730, 26, "bold", c.accent);
             text(front, visibleLines.join("\n"), 58, 138, 730, 58, "display", c.ink, "left", 1.08);
-            text(front, shortName, 58, 362, 730, 36, "bold");
+            text(front, shortName, 58, 325, 730, 36, "bold");
         }
         else if (template.id === "engraved-slate") {
             front.background = c.paper;
             rect(front, 28, 28, 800, 484, "none", 18, c.accent);
             rect(front, 42, 42, 772, 456, "none", 12, c.accent);
             text(front, "PERSONAL INFORMATION", 62, 74, 730, 24, "bold", c.accent, "center");
-            text(front, visibleLines.join("\n"), 62, 150, 730, 58, "display", c.ink, "center", 1.06);
-            if (template.illustrationId !== "none") art(front, 670, 330, 100, 100);
-            text(front, shortName, 62, 390, 730, 34, "bold", c.ink, "center");
+            // Reserve a quiet right-hand mark and a separate lower information
+            // band. This prevents the crest, name and safety copy from sharing
+            // the same line when wording is longer than the example.
+            text(front, visibleLines.join("\n"), 62, 150, 600, 58, "display", c.ink, "center", 1.06);
+            if (template.illustrationId !== "none") art(front, 690, 145, 90, 90);
+            text(front, shortName, 62, 325, 550, 34, "bold", c.ink, "center");
         }
         else if (template.id === "embossed-cream") {
             rect(front, 0, 0, 856, 540, c.soft, 32);
             rect(front, 22, 22, 812, 496, "none", 26, c.accent);
             text(front, "Personal information", 62, 66, 730, 26, "bold", c.accent);
-            if (template.illustrationId !== "none") art(front, 690, 48, 100, 100);
-            text(front, visibleLines.join("\n"), 62, 150, 690, 58, "display", c.ink, "left", 1.08);
-            text(front, shortName, 62, 390, 730, 36, "bold");
+            if (template.illustrationId !== "none") art(front, 706, 52, 82, 82);
+            text(front, visibleLines.join("\n"), 62, 158, 620, 58, "display", c.ink, "left", 1.08);
+            text(front, shortName, 62, 325, 730, 36, "bold");
         }
         else if (template.id === "letterpress-blue") {
             front.background = c.accent;
             rect(front, 26, 26, 804, 488, "none", 14, c.onAccent);
             text(front, "PERSONAL INFORMATION", 60, 64, 730, 24, "bold", c.onAccent);
             text(front, visibleLines.join("\n"), 60, 145, 736, 60, "display", c.onAccent, "left", 1.06);
-            text(front, shortName, 60, 390, 736, 36, "bold", c.onAccent);
+            text(front, shortName, 60, 325, 736, 36, "bold", c.onAccent);
         }
         else if (template.id === "message-band") {
             rect(front, 0, 0, 856, 540, c.paper, 0);
-            rect(front, 0, 90, 856, 260, c.accent);
+            rect(front, 0, 90, 856, 210, c.accent);
             text(front, "PERSONAL INFORMATION", 56, 42, 744, 24, "bold", c.accent);
             text(front, visibleLines.join("\n"), 56, 132, 744, 60, "display", c.onAccent, "left", 1.06);
-            text(front, shortName, 56, 390, 744, 36, "bold", c.ink);
+            text(front, shortName, 56, 325, 744, 36, "bold", c.ink);
         }
         else if (template.id === "communication" || template.id === "plain") {
             rect(front, 0, 0, 856, 20, c.accent);
             rect(front, 0, 0, 14, 540, c.accent);
             text(front, "Personal information", 52, 40, 740, 28, "bold", c.accent);
             text(front, visibleLines.join("\n"), 52, 120, 740, 62, font, c.ink, "left", 1.05);
-            text(front, shortName, 52, 355, 740, 38, "bold");
+            text(front, shortName, 52, 325, 740, 38, "bold");
             if (template.illustrationId !== "none")
                 art(front, 710, 32, 96, 96);
         }
@@ -122,11 +128,11 @@ export function buildCardLayout(view, metrics, { photo } = {}) {
             if (template.illustrationId !== "none")
                 front.items.push({ type: "art", id: template.illustrationId, x: 630, y: 118, width: 180, height: 250, palette: { ...c, accent: c.onAccent, ink: c.onAccent, paper: c.accent } });
             text(front, visibleLines.join("\n"), 48, 124, titleWidth, 62, "display", c.onAccent, "left", 1.05);
-            text(front, shortName, 48, 355, 750, 38, "bold", c.onAccent);
+            text(front, shortName, 48, 325, 540, 38, "bold", c.onAccent);
         }
-        const frontInk = template.id === "statement" ? c.onAccent : c.ink;
-        text(front, "Details on the back" + (excessTitle.length ? " · wording continues" : ""), 48, 405, 760, 25, "bold", frontInk);
-        text(front, view.footer, 48, 455, 760, 28, "regular", frontInk, "left", 1.1);
+        const frontInk = ["statement", "letterpress-blue"].includes(template.id) ? c.onAccent : c.ink;
+        text(front, "Details on the back" + (excessTitle.length ? " · wording continues" : ""), 48, 390, 760, 25, "bold", frontInk);
+        text(front, view.footer, 48, 438, 760, 24, "regular", frontInk, "left", 1.16);
         const updated = field("updatedOn");
         let back, y, number = 0;
         const next = () => { number++; back = page(number === 1 ? "Back" : "Details continued " + number, 856, 540, "#FFFFFF"); rect(back, 0, 0, 856, 7, c.accent); text(back, number === 1 ? "Details" : "Details · continued", 40, 22, 776, 28, "bold", c.accent); y = 78; text(back, view.footer, 40, 423, 776, 26, "regular", "#183248", "left", 1.1); if (updated)
@@ -221,7 +227,9 @@ export function buildCardLayout(view, metrics, { photo } = {}) {
             art(p, 50, 74, 220, 265);
             p.items.push({ type: "art", id: template.illustrationId, x: 810, y: 970, width: 220, height: 265, palette: c, flip: true });
         }
-        text(p, view.subtitle, 150, 225, 780, 27, "bold", c.accent, "center");
+        // Keep the botanical sprig in a reserved corner above the title block;
+        // the subtitle no longer runs through the illustration's bounds.
+        text(p, view.subtitle, 150, 300, 780, 27, "bold", c.accent, "center");
         y = text(p, view.title, 120, 360, 840, 98, "bold", c.ink, "center", 1.16) + 56;
         y = text(p, name, 130, y, 820, 43, "bold", c.accent, "center") + 20;
         y = text(p, date, 130, y, 820, 28, "bold", c.accent, "center") + 58;

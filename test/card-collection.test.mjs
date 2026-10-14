@@ -116,6 +116,22 @@ test("long practical details paginate at a fixed readable size and keep safety t
     const backBody = layout.pages.slice(1).flatMap(p => p.items).filter(i => i.type === "text" && i.font === "regular" && i.value.startsWith("SYNTHETIC"));
     assert.ok(backBody.every(i => i.size === 38));
 });
+test("wallet fronts keep identity, instructions and safety copy in separate readable bands", () => {
+    const overlap = (a, b) => a.x < b.x + b.width && b.x < a.x + a.width && a.y < b.y + b.height && b.y < a.y + a.height;
+    for (const t of CARD_TEMPLATES.filter(t => t.kind === "personal")) {
+        const view = make(t, {
+            heading: "Please give me time and write things down when needed",
+            preferredName: "A synthetic example name",
+        });
+        const front = buildCardLayout(view, metrics).pages[0];
+        const texts = front.items.filter(i => i.type === "text").map(i => ({ ...i, height: i.lines.length * i.size * i.leading }));
+        for (const item of texts)
+            assert.ok(item.y + item.height <= front.height + .1, `${t.id} text runs past wallet front`);
+        for (let i = 0; i < texts.length; i++)
+            for (let j = i + 1; j < texts.length; j++)
+                assert.equal(overlap(texts[i], texts[j]), false, `${t.id} text overlaps: ${texts[i].value} / ${texts[j].value}`);
+    }
+});
 test("long milestone PNGs grow and PDF pagination preserves each measured message line", () => {
     const view = make(CARD_TEMPLATES.find(t => t.id === "photo-story"), { title: "A long heading ".repeat(16), message: "SYNTHETIC-MESSAGE ".repeat(29) }), p = buildCardLayout(view, metrics).pages[0];
     assert.ok(p.height > 1350);
