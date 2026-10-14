@@ -1,0 +1,77 @@
+{
+  "audit": "T1 repair retest",
+  "type": "supplemental evidence review",
+  "browser_interaction": false,
+  "baseline_report_changed": false,
+  "findings": [
+    {
+      "id": "T1-UB-01",
+      "topic": "saved-guide deletion recovery",
+      "judgment": "resolved_for_supplied_flow",
+      "evidence": [
+        {
+          "file": "docs/five-tester-audit/root/after-guides-delete-confirm.jpg",
+          "observation": "One saved Understanding cervical artery dissection guide is visible with explanatory deletion text and separate Cancel deletion and Confirm deletion actions."
+        },
+        {
+          "file": "docs/five-tester-audit/root/saved-guides-cancel-reload.txt",
+          "observation": "After cancellation and reload, one saved guide remains."
+        },
+        {
+          "file": "docs/five-tester-audit/root/saved-guides-delete-reload.txt",
+          "observation": "After confirmation and reload, the empty state says No guides are saved yet."
+        }
+      ],
+      "limits": [
+        "Evidence covers one primary-actuated guide and the supplied reload sequence only.",
+        "Multiple saved guides, other browser profiles or devices, and storage changes were not evidenced.",
+        "No undo after confirmed deletion was demonstrated; the evidence verifies a cancel choice before confirmation."
+      ]
+    },
+    {
+      "id": "T1-PREF-01",
+      "topic": "duplicate disclaimer in personal and milestone card PDFs",
+      "judgment": "resolved_for_supplied_parent_actuated_outputs",
+      "evidence": [
+        {
+          "file": "docs/five-tester-audit/root/medical-repaired.pdf",
+          "observation": "The one-page extracted text contains the personal-information-card disclaimer once, at the end of the page."
+        },
+        {
+          "file": "docs/five-tester-audit/root/medical-repaired-page1.png",
+          "observation": "The rendered page shows one footer disclaimer at the bottom and no duplicate body disclaimer."
+        },
+        {
+          "file": "docs/five-tester-audit/root/milestone-supported.pdf",
+          "observation": "The one-page extracted PDF text contains the milestone disclaimer once at the end, with no duplicate body disclaimer."
+        },
+        {
+          "file": "docs/five-tester-audit/root/milestone-supported-preview.txt",
+          "observation": "The supplied preview text shows the milestone disclaimer once in preview content."
+        }
+      ],
+      "limits": [
+        "Evidence covers the supplied parent-actuated repaired-build PDFs and preview text only.",
+        "No independent browser retest, new download, repeated generation, or other export format was tested."
+      ]
+    }
+  ],
+  "scores": null,
+  "scope_note": "This supplemental review makes no new interaction claim and does not change the locked baseline score or reports.",
+  "addenda": [
+    {
+      "date": "2026-10-13",
+      "scope": "Parent-actuated milestone repaired-build artifact review",
+      "finding_id": "T1-PREF-01",
+      "outcome": "The additional milestone PDF shows one footer disclaimer and no duplicate body disclaimer, resolving this finding for the supplied personal and milestone PDF outputs.",
+      "files": [
+        "docs/five-tester-audit/root/milestone-supported.pdf",
+        "docs/five-tester-audit/root/milestone-supported-preview.txt"
+      ],
+      "limits": [
+        "Artifact inspection only; no browser used.",
+        "No new download, repeated generation, or other export format tested."
+      ]
+    }
+  ]
+}

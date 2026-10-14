@@ -1,0 +1,114 @@
+- main:
+  - iframe [active] [id="I0_1791908735407"] [name="I0_1791908735407"]:
+    - main:
+      - link "Product name, Stitch (beta)":
+        - img "Product name, Stitch (beta)"
+      - button "Try now"
+      - main:
+        - heading "Design at the speed of AI" [level=1]
+        - paragraph: Transform ideas into UI designs for mobile and web applications
+        - textbox:
+          - paragraph: What native mobile app shall we design?
+        - button "Choose File"
+        - button:
+        - radiogroup:
+          - radio "App" [checked]:
+            - text: App
+          - radio "Web":
+            - text: Web
+        - button:
+        - button "Balanced":
+          - generic: Balanced
+        - button "Start Live Mode (Preview)":
+        - button "Generate designs" [disabled]:
+        - button "Mobile home screen for a vinyl record store with new arrivals, staff picks, and genre browsing in a retro 70s aesthetic":
+          - generic: Mobile home screen for a vinyl record store with new arrivals, staff picks, and genre browsing in a retro 70s aesthetic
+        - button "Quiz page in a language learning app with a progress bar at the top. The title challenges you to match a Spanish word with the correct answer, offering four possible options.":
+          - generic: Quiz page in a language learning app with a progress bar at the top. The title challenges you to match a Spanish word with the correct answer, offering four possible options.
+        - button "A mobile scavenger hunt app for exploring a new city, with clues, a map, and a photo challenge checklist":
+          - generic: A mobile scavenger hunt app for exploring a new city, with clues, a map, and a photo challenge checklist
+        - button "Play intro":
+          - text: Play intro
+        - heading "Get started with templates" [level=2]
+        - button "Previous template" [disabled]:
+        - button "Next template":
+        - link "Studio Portfolio Use template Web Template Studio Portfolio":
+          - /url: https://stitch.withgoogle.com/projects/7843834577505286568
+          - img "Studio Portfolio"
+          - generic: Use template
+          - generic: Web Template
+          - generic: Studio Portfolio
+        - link "Auralis Dashboard Use template Web Template Auralis Dashboard":
+          - /url: https://stitch.withgoogle.com/projects/3907361547178343444
+          - img "Auralis Dashboard"
+          - generic: Use template
+          - generic: Web Template
+          - generic: Auralis Dashboard
+        - link "Romer Analytics Use template Web Template Romer Analytics":
+          - /url: https://stitch.withgoogle.com/projects/3960381895381557263
+          - img "Romer Analytics"
+          - generic: Use template
+          - generic: Web Template
+          - generic: Romer Analytics
+        - link "Horizon SaaS Use template Web Template Horizon SaaS":
+          - /url: https://stitch.withgoogle.com/projects/8329075419221652720
+          - img "Horizon SaaS"
+          - generic: Use template
+          - generic: Web Template
+          - generic: Horizon SaaS
+        - link "Lumio Landing Page Use template Web Template Lumio Landing Page":
+          - /url: https://stitch.withgoogle.com/projects/13115250104160537282
+          - img "Lumio Landing Page"
+          - generic: Use template
+          - generic: Web Template
+          - generic: Lumio Landing Page
+        - link "H612 Landing Page Use template Web Template H612 Landing Page":
+          - /url: https://stitch.withgoogle.com/projects/13084246554538621772
+          - img "H612 Landing Page"
+          - generic: Use template
+          - generic: Web Template
+          - generic: H612 Landing Page
+        - link "Buro Wallet Use template Mobile Template Buro Wallet":
+          - /url: https://stitch.withgoogle.com/projects/16242038197062096808
+          - img "Buro Wallet"
+          - generic: Use template
+          - generic: Mobile Template
+          - generic: Buro Wallet
+        - heading "Easy edits" [level=3]
+        - paragraph: Iterate and tweak designs to build an interface that works best for you.
+        - heading "Export code" [level=3]
+        - paragraph: Export static HTML code that matches the design and Figma export.
+        - heading "Build with Gemini" [level=3]
+        - paragraph: Leverage some of the latest AI models from Google DeepMind to generate designs.
+        - heading "Own your design" [level=3]
+        - paragraph: Use your original generations as you see fit. Export designs to Figma to fiddle further or copy the code to use how you'd like.
+        - heading "Vibe design is here" [level=2]
+        - paragraph: Stitch makes UI creation incredibly simple. No matter your background or expertise, Stitch will help you bring your ideas to life.
+        - button "Start designing"
+        - paragraph
+        - heading "Questions?" [level=2]
+        - generic "What is Google Stitch?":
+          - generic: What is Google Stitch?
+        - generic: Google Stitch is an AI-native software design canvas developed by Google Labs. It bridges the gap between design and development by transforming natural language prompts, hand-drawn wireframes, or screenshots into fully editable user interfaces and production-ready front-end code.
+        - generic "Is Google Stitch free of charge?" [active]:
+          - generic: Is Google Stitch free of charge?
+        - generic: Yes, Stitch is currently provided free of charge. It operates on a daily credit limit. You can see your credits and find more information in the Stitch settings page. Credits reset at midnight UTC.
+        - generic "Where is Stitch available?":
+          - generic: Where is Stitch available?
+        - generic "Can I export my designs to Figma?":
+          - generic: Can I export my designs to Figma?
+        - generic "Does it generate working code?":
+          - generic: Does it generate working code?
+        - generic "Can I create interactive multi-screen flows?":
+          - generic: Can I create interactive multi-screen flows?
+        - generic "What is the new MCP (Model Context Protocol) integration?":
+          - generic: What is the new MCP (Model Context Protocol) integration?
+      - link:
+        - /url: https://labs.google.com
+      - navigation:
+        - link "Privacy Notice":
+          - /url: /privacy
+        - link "Terms & Privacy":
+          - /url: https://policies.google.com/
+        - link "Third Party Notices":
+          - /url: /third-party-licenses.txt

@@ -1,0 +1,32 @@
+Browser tab: 1, Title: "VAD & Carotid Support", URL: "http://localhost:51070/personal-card".
+The following is a diff from the previous accessibility tree with ~ and + representing changed and added elements, respectively. Removed elements are summarized by ID range.
+Removed element IDs: 16-38
++				54 container Description: Review your card Only the information below will be downloaded or printed., ID: personal-stage
++					55 container
++						56 heading Review your card, Value: 1
++							57 text Review your card
++						58 text Only the information below will be downloaded or printed.
++				59 text Personal information
++				60 heading Medical and communication card, Value: 2
++					61 text Medical and communication card
++				62 container
++					63 text Preferred name T3 Synthetic
++				64 container
++					65 text Communication and access needs T3 synthetic: please allow time to answer.
+Please give me time to answer.
++				66 container
++					67 text What helps me T3 synthetic: large clear print.
++				68 container
++					69 text Last updated 2026-10-13
++				70 text Personal information card — not an official medical record or emergency plan.
++				71 button Edit card
++					72 text Edit card
++				73 text Files and printouts contain the information shown above. Copies leave this app’s control.
++				74 button Download PDF
++					75 text Download PDF
++				76 button Print card
++					77 text Print card
++				78 button (collapsed) Text alternative · Show, Secondary Actions: Expand
++					79 container
++						80 text Text alternative  ·  Show
+The focused UI element is 54 container Description: Review your card Only the information below will be downloaded or printed., ID: personal-stage

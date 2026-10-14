@@ -1,0 +1,30 @@
+{
+  "date": "2026-10-14",
+  "origin": "http://localhost:4183",
+  "scope": "Post-crash explicit saves, reloads, PNG/text download requests, display changes, model separation and disposable deletions. Earlier PDF-click trace was interrupted.",
+  "network": {
+    "requests": 35,
+    "truncated": true,
+    "markerFound": false,
+    "urls": [
+      "http://localhost:4183/_expo/static/js/web/entry-b20663647b4a0100ffbbae93146c2ade.js",
+      "http://localhost:4183/manifest.json",
+      "http://localhost:4183/icon.svg",
+      "http://localhost:4183/assets/assets/card-art/ribbon.f11d29af6baefee034c3510a42562038.png",
+      "http://localhost:4183/assets/assets/card-art/leaf.385210021910d9987aee3a0e4d13fefd.png",
+      "http://localhost:4183/assets/assets/card-art/shield.2dbffcbf644b172615c3e1c1d96016c7.png",
+      "http://localhost:4183/assets/assets/card-art/brain.0bd2233948e22eac08b1346cd3ba0734.png",
+      "http://localhost:4183/milestone-card",
+      "http://localhost:4183/personal-card"
+    ],
+    "browserExtensionRequests": 2
+  },
+  "console": {
+    "entries": 5,
+    "markerFound": false,
+    "errorCount": 5,
+    "note": "Hydration errors observed here were reproduced without extensions and repaired; see startup-route-checks.json for the final build"
+  },
+  "finalUrl": "http://localhost:4183/personal-card",
+  "status": "Incomplete historical trace; use privacy-clean-browser.json for the bounded export check"
+}

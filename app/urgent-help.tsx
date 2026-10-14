@@ -1,22 +1,47 @@
-import { Link } from "expo-router";
-import { Pressable, StyleSheet, Text, View } from "react-native";
-import { SafeAreaView } from "react-native-safe-area-context";
+import { StyleSheet } from "react-native";
+import { ExternalLink } from "../src/components/ExternalLink";
+import { Text, View } from "../src/components/Ui";
+import { AppPage, BackHome, Body, Card, PageHeading, palette } from "../src/components/AppPage";
+import { urgentHelp } from "../src/content/urgentHelp";
+
+const sources = [
+  { label: "American Stroke Association: B.E. F.A.S.T. and stroke signs", url: "https://www.stroke.org/en/about-stroke/stroke-symptoms" },
+  { label: "NHS: symptoms of a stroke", url: "https://www.nhs.uk/conditions/stroke/symptoms/" },
+];
 
 export default function UrgentHelpScreen() {
-  return (
-    <SafeAreaView style={styles.safe}>
-      <View style={styles.page}>
-        <Link href="/" asChild><Pressable accessibilityRole="link"><Text style={styles.back}>‹  Home</Text></Pressable></Link>
-        <Text style={styles.label}>URGENT HELP</Text>
-        <Text style={styles.title}>Sudden stroke signs need emergency help.</Text>
-        <Text style={styles.body}>Call the emergency number where you are now. Do not wait for an appointment or rely on this app to assess symptoms.</Text>
-        <View style={styles.callout}>
-          <Text style={styles.calloutTitle}>This page is a draft</Text>
-          <Text style={styles.body}>Local emergency numbers, warning signs and approved wording need review for each country before this app is released there.</Text>
-        </View>
-        <Text style={styles.footer}>This project cannot diagnose symptoms or contact emergency services for you.</Text>
-      </View>
-    </SafeAreaView>
-  );
+  return <AppPage>
+    <BackHome />
+    <PageHeading eyebrow="Medical help" title="Medical help" summary="" compact />
+    <Card title="Possible stroke or another emergency">
+      <Body>{urgentHelp.action}</Body>
+      <Body>{urgentHelp.doNotWait}</Body>
+      <Text style={styles.quickAction}>{urgentHelp.quickAction}</Text>
+    </Card>
+    <Card title="Feeling unwell or concerned?">
+      <Body>{urgentHelp.feelingUnwell}</Body>
+    </Card>
+    <Card title="B.E. F.A.S.T. — stroke warning signs">
+      <Body>{urgentHelp.signsIntro}</Body>
+      {urgentHelp.signs.map((sign) => <View key={sign.letter} style={styles.sign}>
+        <Text accessibilityRole="header" aria-level={3} style={styles.signTitle}>{sign.letter} — {sign.label}</Text>
+        <Body>{sign.text}</Body>
+      </View>)}
+      <Body>{urgentHelp.signsLimit}</Body>
+    </Card>
+    <Card title="Information, not medical care">
+      <Body>{urgentHelp.appLimit}</Body>
+    </Card>
+    <Card title="Sources and review">
+      <Body>Wording updated 13 October 2026. Clinical review is pending.</Body>
+      {sources.map((source) => <ExternalLink key={source.url} url={source.url} label={source.label} />)}
+      <Body>These sources cover stroke generally. Emergency numbers on their websites apply to their own countries. Use the emergency number where you are.</Body>
+    </Card>
+  </AppPage>;
 }
-const styles=StyleSheet.create({safe:{flex:1,backgroundColor:"#F7F8F5"},page:{width:"100%",maxWidth:760,alignSelf:"center",padding:26},back:{color:"#537670",fontSize:14,paddingVertical:18},label:{marginTop:25,color:"#A24B34",fontSize:11,fontWeight:"700",letterSpacing:1.5},title:{marginTop:12,color:"#263D3A",fontSize:31,lineHeight:39,fontWeight:"600"},body:{marginTop:14,color:"#576762",fontSize:16,lineHeight:25},callout:{marginTop:29,padding:19,borderRadius:15,backgroundColor:"#FFF2E9",borderWidth:1,borderColor:"#E9C4A9"},calloutTitle:{color:"#743C2E",fontSize:16,fontWeight:"600"},footer:{marginTop:34,color:"#7B8781",fontSize:13,lineHeight:21}});
+
+const styles = StyleSheet.create({
+  quickAction: { color: palette.ink, fontSize: 18, lineHeight: 27, fontWeight: "600", marginTop: 12, maxWidth: 680 },
+  sign: { marginVertical: 10 },
+  signTitle: { color: palette.ink, fontSize: 20, lineHeight: 30, fontWeight: "700" },
+});

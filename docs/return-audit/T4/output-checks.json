@@ -1,0 +1,64 @@
+[
+  {
+    "name": "practical-card",
+    "pages": 1,
+    "sha256": "9f9d3fb42c6f4654d9f71d39bab95436f7515024e341ac4741900ffd71fa0299",
+    "pdfIncluded": {
+      "T4_CARD_ONLY": true,
+      "T4_MED_ONLY": true,
+      "Please write important things down.": true,
+      "2026-10-13": true
+    },
+    "pdfExcluded": {
+      "T4_HIDDEN_DATE_2042": true,
+      "T4_STORY_ONLY": true
+    },
+    "textIncluded": {
+      "T4_CARD_ONLY": true,
+      "T4_MED_ONLY": true,
+      "Please write important things down.": true,
+      "2026-10-13": true
+    },
+    "textExcluded": {
+      "T4_HIDDEN_DATE_2042": true,
+      "T4_STORY_ONLY": true
+    },
+    "safetyLabelPresent": true,
+    "labelsPerPage": [
+      1
+    ],
+    "formInstructionsAbsent": true,
+    "taggedPdf": false,
+    "nativePrint": "not tested"
+  },
+  {
+    "name": "milestone",
+    "pages": 1,
+    "sha256": "73957d7d35e4346352b44c9cb2413a7bf1421be4b1a825ffceec0ff6e49183e8",
+    "pdfIncluded": {
+      "T4_STORY_ONLY": true,
+      "A quiet moment to mark.": true
+    },
+    "pdfExcluded": {
+      "T4_STORY_HIDDEN_DATE_2042": true,
+      "T4_CARD_ONLY": true,
+      "T4_MED_ONLY": true
+    },
+    "textIncluded": {
+      "T4_STORY_ONLY": true,
+      "A quiet moment to mark.": true
+    },
+    "textExcluded": {
+      "T4_STORY_HIDDEN_DATE_2042": true,
+      "T4_CARD_ONLY": true,
+      "T4_MED_ONLY": true
+    },
+    "safetyLabelPresent": true,
+    "labelsPerPage": [
+      1
+    ],
+    "formInstructionsAbsent": true,
+    "taggedPdf": false,
+    "nativePrint": "not tested"
+  }
+]

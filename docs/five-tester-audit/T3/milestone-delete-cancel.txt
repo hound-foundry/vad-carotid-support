@@ -1,0 +1,8 @@
+Browser tab: 1, Title: "VAD & Carotid Support", URL: "http://localhost:51070/milestone-card".
+The following is a diff from the previous accessibility tree with ~ and + representing changed and added elements, respectively. Removed elements are summarized by ID range.
+Removed element IDs: 83-88
+~					81 button Start a blank draft
+~						82 text Start a blank draft
++					83 button Delete saved card
++						84 text Delete saved card
+The focused UI element is 83 button Delete saved card

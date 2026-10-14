@@ -1,0 +1,27 @@
+[
+  {
+    "file": "medical-card.pdf",
+    "pages": 1,
+    "safetyFooterOccurrencesPerPage": [
+      1
+    ],
+    "hiddenEventDateAbsent": true
+  },
+  {
+    "file": "medical-card-long.pdf",
+    "pages": 2,
+    "safetyFooterOccurrencesPerPage": [
+      1,
+      1
+    ],
+    "hiddenEventDateAbsent": true
+  },
+  {
+    "file": "milestone-card.pdf",
+    "pages": 1,
+    "safetyFooterOccurrencesPerPage": [
+      1
+    ],
+    "hiddenEventDateAbsent": true
+  }
+]

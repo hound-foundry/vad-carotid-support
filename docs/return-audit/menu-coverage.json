@@ -1,0 +1,104 @@
+[
+  {
+    "label": "Guides",
+    "url": "http://localhost:56680/learn",
+    "headings": [
+      "  - heading \"Understand dissection\" [level=1]",
+      "  - heading \"Find a guide\" [level=2]"
+    ],
+    "urgent": true,
+    "menuClosed": true,
+    "file": "C:/Work/VAD CAD app/docs/return-audit/T1/menu-0.txt"
+  },
+  {
+    "label": "Prepare an appointment",
+    "url": "http://localhost:56680/appointments",
+    "headings": [
+      "  - heading \"Prepare an appointment\" [level=1]",
+      "  - heading \"Before the appointment\" [level=2]",
+      "  - heading \"During the appointment\" [level=2]"
+    ],
+    "urgent": true,
+    "menuClosed": true,
+    "file": "C:/Work/VAD CAD app/docs/return-audit/T1/menu-1.txt"
+  },
+  {
+    "label": "Make a card",
+    "url": "http://localhost:56680/cards",
+    "headings": [
+      "  - heading \"Choose a card\" [level=1]"
+    ],
+    "urgent": true,
+    "menuClosed": true,
+    "file": "C:/Work/VAD CAD app/docs/return-audit/T1/menu-2.txt"
+  },
+  {
+    "label": "Help someone",
+    "url": "http://localhost:56680/supporting-someone",
+    "headings": [
+      "  - heading \"Help someone\" [level=1]",
+      "  - heading \"Respect the person’s privacy\" [level=2]"
+    ],
+    "urgent": true,
+    "menuClosed": true,
+    "file": "C:/Work/VAD CAD app/docs/return-audit/T1/menu-3.txt"
+  },
+  {
+    "label": "Support preferences",
+    "url": "http://localhost:56680/support-preferences",
+    "headings": [
+      "  - heading \"Support preferences\" [level=1]",
+      "  - heading \"Communication\" [level=2]",
+      "  - heading \"Practical help\" [level=2]"
+    ],
+    "urgent": true,
+    "menuClosed": true,
+    "file": "C:/Work/VAD CAD app/docs/return-audit/T1/menu-4.txt"
+  },
+  {
+    "label": "Look up a term",
+    "url": "http://localhost:56680/glossary",
+    "headings": [
+      "  - heading \"Look up a term\" [level=1]",
+      "  - heading \"Find a term\" [level=2]",
+      "  - heading \"CAD\" [level=2]"
+    ],
+    "urgent": true,
+    "menuClosed": true,
+    "file": "C:/Work/VAD CAD app/docs/return-audit/T1/menu-5.txt"
+  },
+  {
+    "label": "Resources",
+    "url": "http://localhost:56680/resources",
+    "headings": [
+      "  - heading \"Resources\" [level=1]",
+      "  - heading \"Find a resource\" [level=2]",
+      "  - heading \"Community links are being checked\" [level=2]"
+    ],
+    "urgent": true,
+    "menuClosed": true,
+    "file": "C:/Work/VAD CAD app/docs/return-audit/T1/menu-6.txt"
+  },
+  {
+    "label": "Saved on this device",
+    "url": "http://localhost:56680/saved",
+    "headings": [
+      "  - heading \"Saved on this device\" [level=1]"
+    ],
+    "urgent": true,
+    "menuClosed": true,
+    "file": "C:/Work/VAD CAD app/docs/return-audit/T1/menu-7.txt"
+  },
+  {
+    "label": "About and privacy",
+    "url": "http://localhost:56680/about",
+    "headings": [
+      "  - heading \"About and privacy\" [level=1]",
+      "  - heading \"What this project is\" [level=2]",
+      "  - heading \"Clinical and lived-experience review\" [level=2]"
+    ],
+    "urgent": true,
+    "menuClosed": true,
+    "file": "C:/Work/VAD CAD app/docs/return-audit/T1/menu-8.txt"
+  }
+]

@@ -1,0 +1,62 @@
+- link "Urgent help":
+  - /url: /urgent-help
+  - generic: Urgent help
+  - generic: ›
+- generic "VAD & Carotid Support"
+- navigation "Main navigation":
+  - link "Home":
+    - /url: /
+    - generic: Home
+  - button "Menu":
+    - generic: Menu
+  - link "Text and display":
+    - /url: /accessibility
+    - generic: Text and display
+- link "Skip to main content":
+  - generic: Skip to main content
+- main:
+  - link "Back to home":
+    - /url: /
+    - generic: ←
+    - generic: Home
+  - generic: CARD · PREVIEW
+  - heading "Review your card" [level=1]
+  - generic: Download a personal card to keep or share yourself.
+  - generic: Personal milestone
+  - heading "My milestone" [level=2]
+  - generic: Name
+  - generic: T4_STORY_ONLY · Sam (fictional)
+  - generic: Message
+  - generic: A quiet moment to mark.
+  - generic: Personal story/milestone — not medical advice or proof of diagnosis.
+  - button "Edit card":
+    - generic: Edit card
+  - generic: Files and printouts contain the information shown above. Copies leave this app’s control.
+  - button "Download image (PNG)":
+    - generic: Download image (PNG)
+  - button "Download PDF":
+    - generic: Download PDF
+  - button "Print card":
+    - generic: Print card
+  - button "Text alternative · Show":
+    - generic: Text alternative · Show
+  - generic: Unsaved changes. They stay here while the app is open.
+  - button "Save on this device":
+    - generic: Save on this device
+  - button "Start blank or delete saved card · Show":
+    - generic: Start blank or delete saved card · Show
+  - button "Privacy and leaving this page · Show":
+    - generic: Privacy and leaving this page · Show
+  - generic: Development preview · general information only · not a medical service
+  - link "About and privacy":
+    - /url: /about
+    - generic: About and privacy
+  - link "Accessibility":
+    - /url: /accessibility
+    - generic: Accessibility
+  - link "Saved on this device":
+    - /url: /saved
+    - generic: Saved on this device
+  - link "Urgent help":
+    - /url: /urgent-help
+    - generic: Urgent help

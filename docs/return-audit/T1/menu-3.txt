@@ -1,0 +1,51 @@
+- link "Urgent help":
+  - /url: /urgent-help
+  - generic: Urgent help
+  - generic: ›
+- generic "VAD & Carotid Support"
+- navigation "Main navigation":
+  - link "Home":
+    - /url: /
+    - generic: Home
+  - button "Menu":
+    - generic: Menu
+  - link "Text and display":
+    - /url: /accessibility
+    - generic: Text and display
+- link "Skip to main content":
+  - generic: Skip to main content
+- main:
+  - heading "Help someone" [level=1]
+  - generic: Ask what would help today. Choose one small step together.
+  - link "Ask what helps → Choose support statements together, when the person wants to.":
+    - /url: /support-preferences
+    - generic: Ask what helps →
+    - generic: Choose support statements together, when the person wants to.
+  - link "Prepare an appointment question → Keep your own questions separate and decide what to ask the care team.":
+    - /url: /appointments
+    - generic: Prepare an appointment question →
+    - generic: Keep your own questions separate and decide what to ask the care team.
+  - link "Make a communication card → Let the person choose what they want others to know.":
+    - /url: /personal-card
+    - generic: Make a communication card →
+    - generic: Let the person choose what they want others to know.
+  - button "Draft information, review pending. Review details":
+    - generic: Draft information · review pending
+    - generic: +
+  - button "Guides for carers · Show":
+    - generic: Guides for carers · Show
+  - heading "Respect the person’s privacy" [level=2]
+  - generic: Do not share another person’s health information unless they have chosen to share it. You can keep your own questions separately and ask the care team what support is available to carers.
+  - generic: Development preview · general information only · not a medical service
+  - link "About and privacy":
+    - /url: /about
+    - generic: About and privacy
+  - link "Accessibility":
+    - /url: /accessibility
+    - generic: Accessibility
+  - link "Saved on this device":
+    - /url: /saved
+    - generic: Saved on this device
+  - link "Urgent help":
+    - /url: /urgent-help
+    - generic: Urgent help

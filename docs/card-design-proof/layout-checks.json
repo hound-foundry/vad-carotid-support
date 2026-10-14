@@ -1,0 +1,89 @@
+{
+  "date": "2026-10-14",
+  "checks": [
+    {
+      "state": "personal preview, dark, 200% app text",
+      "heading": [
+        {
+          "size": "52px",
+          "text": "Review your card"
+        },
+        {
+          "size": "52px",
+          "text": "Please give me time"
+        }
+      ],
+      "height": 640,
+      "mainOverflow": false,
+      "minimumControlHeight": 79.14286041259766,
+      "pageOverflow": false,
+      "previewOverflow": false,
+      "width": 320
+    },
+    {
+      "state": "personal preview, dark high contrast, 200% app text",
+      "background": "rgb(16, 24, 32)",
+      "height": 640,
+      "pageOverflow": false,
+      "previewOverflow": false,
+      "width": 320
+    },
+    {
+      "state": "personal preview, light high contrast, 200% app text",
+      "background": "rgb(255, 255, 255)",
+      "height": 640,
+      "pageOverflow": false,
+      "previewOverflow": false,
+      "width": 320
+    },
+    {
+      "state": "personal preview, light, short landscape",
+      "height": 320,
+      "pageOverflow": false,
+      "width": 844
+    },
+    {
+      "state": "milestone design form, light, 100%",
+      "height": 640,
+      "mainOverflow": false,
+      "pageOverflow": true,
+      "radioHeights": [
+        173,
+        200,
+        200,
+        200
+      ],
+      "width": 320
+    },
+    {
+      "state": "milestone preview with ribbon, dark, 200% app text",
+      "height": 640,
+      "pageOverflow": false,
+      "previewOverflow": false,
+      "width": 320
+    },
+    {
+      "state": "milestone design picker, dark, 200% app text",
+      "height": 640,
+      "mainOverflow": false,
+      "pageOverflow": false,
+      "radioHeights": [
+        335,
+        389,
+        443,
+        335
+      ],
+      "width": 320
+    },
+    {
+      "state": "milestone design form, light, 100%, stable resize recheck",
+      "height": 640,
+      "pageOverflow": false,
+      "width": 320
+    }
+  ],
+  "notes": [
+    "One measurement immediately after changing viewport reported document overflow. Stable recheck returned 320px scroll width at a 320px viewport; no persistent overflow was reproduced.",
+    "App text scaling was tested; actual browser zoom and screen readers were not tested in this pass."
+  ]
+}

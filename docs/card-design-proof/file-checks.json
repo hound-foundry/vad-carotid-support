@@ -1,0 +1,41 @@
+{
+  "date": "2026-10-14",
+  "pdfs": [
+    {
+      "file": "clean-browser-personal.pdf",
+      "pages": 1,
+      "expectedTextPresent": true,
+      "hiddenDateAbsent": true,
+      "formInstructionsAbsent": true
+    },
+    {
+      "file": "clean-browser-wallet.pdf",
+      "pages": 1,
+      "expectedTextPresent": true,
+      "hiddenDateAbsent": true,
+      "formInstructionsAbsent": true
+    },
+    {
+      "file": "browser-milestone-no-date.pdf",
+      "pages": 1,
+      "expectedTextPresent": true,
+      "hiddenDateAbsent": true,
+      "formInstructionsAbsent": true
+    },
+    {
+      "file": "long-wallet.pdf",
+      "pages": 13,
+      "expectedTextPresent": true,
+      "hiddenDateAbsent": true,
+      "formInstructionsAbsent": true
+    },
+    {
+      "file": "long-portrait.pdf",
+      "pages": 2,
+      "expectedTextPresent": true,
+      "hiddenDateAbsent": true,
+      "formInstructionsAbsent": true
+    }
+  ],
+  "personalTextExport": "selected synthetic values present; separate story absent"
+}

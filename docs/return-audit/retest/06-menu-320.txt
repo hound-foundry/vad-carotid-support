@@ -1,0 +1,81 @@
+- link "Urgent help":
+  - /url: /urgent-help
+  - generic: Urgent help
+  - generic: ›
+- generic "VAD & Carotid Support": VAD & Carotid
+- navigation "Main navigation":
+  - link "Home":
+    - /url: /
+    - generic: Home
+  - button "Close menu" [expanded]:
+    - generic: Close menu
+  - link "Text and display":
+    - /url: /accessibility
+    - generic: Text & display
+- navigation "All pages":
+  - link "Guides":
+    - /url: /learn
+    - generic: Guides
+  - link "Prepare an appointment":
+    - /url: /appointments
+    - generic: Prepare an appointment
+  - link "Make a card":
+    - /url: /cards
+    - generic: Make a card
+  - link "Help someone":
+    - /url: /supporting-someone
+    - generic: Help someone
+  - link "Support preferences":
+    - /url: /support-preferences
+    - generic: Support preferences
+  - link "Look up a term":
+    - /url: /glossary
+    - generic: Look up a term
+  - link "Resources":
+    - /url: /resources
+    - generic: Resources
+  - link "Saved on this device":
+    - /url: /saved
+    - generic: Saved on this device
+  - link "About and privacy" [active]:
+    - /url: /about
+    - generic: About and privacy
+- link "Skip to main content":
+  - generic: Skip to main content
+- main:
+  - heading "Guides and tools" [level=1]
+  - link "Understand dissection Guides and unfamiliar words.":
+    - /url: /learn
+    - generic: Understand dissection
+    - generic: Guides and unfamiliar words.
+  - link "Prepare an appointment Choose questions for your doctor.":
+    - /url: /appointments
+    - generic: Prepare an appointment
+    - generic: Choose questions for your doctor.
+  - link "Make a card Medical information or a personal milestone.":
+    - /url: /cards
+    - generic: Make a card
+    - generic: Medical information or a personal milestone.
+  - link "Help someone Practical ideas for family and carers.":
+    - /url: /supporting-someone
+    - generic: Help someone
+    - generic: Practical ideas for family and carers.
+  - link "Open saved guides, sheets and cards":
+    - /url: /saved
+    - generic: Open saved guides, sheets and cards
+  - heading "What this app can and cannot do" [level=2]
+  - generic: For adults affected by vertebral or carotid artery dissection, and the people supporting them.
+  - generic: Free information and tools to prepare questions and describe what helps. Guides are drafts awaiting clinical and patient/carer review. For your own care, ask your doctor.
+  - generic: Development preview · general information only · not a medical service
+  - link "About and privacy":
+    - /url: /about
+    - generic: About and privacy
+  - link "Accessibility":
+    - /url: /accessibility
+    - generic: Accessibility
+  - link "Saved on this device":
+    - /url: /saved
+    - generic: Saved on this device
+  - link "Urgent help":
+    - /url: /urgent-help
+    - generic: Urgent help

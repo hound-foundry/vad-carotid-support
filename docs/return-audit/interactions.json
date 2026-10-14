@@ -1,0 +1,234 @@
+[
+  {
+    "owner": "T1",
+    "name": "01-home",
+    "action": "Fresh isolated home at390px, no fixtures. Returning tester priorities declared before capture.",
+    "url": "http://localhost:56680/",
+    "dom": "C:/Work/VAD CAD app/docs/return-audit/T1/01-home.txt",
+    "screenshot": "C:/Work/VAD CAD app/docs/return-audit/T1/01-home.jpg"
+  },
+  {
+    "owner": "T1",
+    "name": "02-guides",
+    "action": "Menu → Guides, actual link activation.",
+    "url": "http://localhost:56680/learn",
+    "dom": "C:/Work/VAD CAD app/docs/return-audit/T1/02-guides.txt",
+    "screenshot": "C:/Work/VAD CAD app/docs/return-audit/T1/02-guides.jpg"
+  },
+  {
+    "owner": "T1",
+    "name": "01-home",
+    "action": "Accepted replacement afterviewportsettled; previouscapture rejected for stale viewport.",
+    "url": "http://localhost:56680/",
+    "dom": "C:/Work/VAD CAD app/docs/return-audit/T1/01-home.txt",
+    "screenshot": "C:/Work/VAD CAD app/docs/return-audit/T1/01-home.jpg"
+  },
+  {
+    "owner": "T2",
+    "name": "01-appointment-entry",
+    "action": "FreshT2Home→appointmentdirect; independently chosen appointment task.",
+    "url": "http://localhost:56681/appointments",
+    "dom": "C:/Work/VAD CAD app/docs/return-audit/T2/01-appointment-entry.txt",
+    "screenshot": "C:/Work/VAD CAD app/docs/return-audit/T2/01-appointment-entry.jpg"
+  },
+  {
+    "owner": "T2",
+    "name": "02-resumed-draft",
+    "action": "Selectedonequestion+syntheticnote→Home→appointment; unsavedin-appdraftretained.",
+    "url": "http://localhost:56681/appointments",
+    "dom": "C:/Work/VAD CAD app/docs/return-audit/T2/02-resumed-draft.txt",
+    "screenshot": "C:/Work/VAD CAD app/docs/return-audit/T2/02-resumed-draft.jpg"
+  },
+  {
+    "owner": "T2",
+    "name": "03-saved-export",
+    "action": "ExplicitSave→reloadrestored→explicitExport; actualdownload appointment-sheet.txt. Locatorauto-scrolledtoexport, notpatientdiscoveryevidence.",
+    "url": "http://localhost:56681/appointments",
+    "dom": "C:/Work/VAD CAD app/docs/return-audit/T2/03-saved-export.txt",
+    "screenshot": "C:/Work/VAD CAD app/docs/return-audit/T2/03-saved-export.jpg"
+  },
+  {
+    "owner": "T2",
+    "name": "04-deleted",
+    "action": "Deleted disposablefixture afterEscape cancellation; priorgenericCancel selector rejected (automationintervention, notappfault).",
+    "url": "http://localhost:56681/appointments",
+    "dom": "C:/Work/VAD CAD app/docs/return-audit/T2/04-deleted.txt",
+    "screenshot": "C:/Work/VAD CAD app/docs/return-audit/T2/04-deleted.jpg"
+  },
+  {
+    "owner": "T2",
+    "name": "05-one-section",
+    "action": "Explicit optionalview one section; remaining fields/preview stillbelow.",
+    "url": "http://localhost:56681/appointments",
+    "dom": "C:/Work/VAD CAD app/docs/return-audit/T2/05-one-section.txt",
+    "screenshot": "C:/Work/VAD CAD app/docs/return-audit/T2/05-one-section.jpg"
+  },
+  {
+    "owner": "T4",
+    "name": "01-help-entry",
+    "action": "FreshT4Home→Helpsomeone, independently chosen practicalsupport task.",
+    "url": "http://localhost:56683/supporting-someone",
+    "dom": "C:/Work/VAD CAD app/docs/return-audit/T4/01-help-entry.txt",
+    "screenshot": "C:/Work/VAD CAD app/docs/return-audit/T4/01-help-entry.jpg"
+  },
+  {
+    "owner": "T4",
+    "name": "02-support-saved",
+    "action": "Preference+syntheticnote→Home→Menu→supportretained unsaved;explicitSave/reloadrestored; explicitexportactualdownload.",
+    "url": "http://localhost:56683/support-preferences",
+    "dom": "C:/Work/VAD CAD app/docs/return-audit/T4/02-support-saved.txt",
+    "screenshot": "C:/Work/VAD CAD app/docs/return-audit/T4/02-support-saved.jpg"
+  },
+  {
+    "owner": "T4",
+    "name": "03-card-blank",
+    "action": "Cards→medicalcommunicationcard;blankdefaultsandoptionalentryvisible.",
+    "url": "http://localhost:56683/personal-card",
+    "dom": "C:/Work/VAD CAD app/docs/return-audit/T4/03-card-blank.txt",
+    "screenshot": "C:/Work/VAD CAD app/docs/return-audit/T4/03-card-blank.jpg"
+  },
+  {
+    "owner": "T4",
+    "name": "04-card-preview",
+    "action": "Syntheticname/medicine/statement;entereddate→Nodate→Reviewcard. Actualfilteredpreview shown.",
+    "url": "http://localhost:56683/personal-card",
+    "dom": "C:/Work/VAD CAD app/docs/return-audit/T4/04-card-preview.txt",
+    "screenshot": "C:/Work/VAD CAD app/docs/return-audit/T4/04-card-preview.jpg"
+  },
+  {
+    "owner": "T4",
+    "name": "05-saved-list",
+    "action": "Savepracticalcard→Edit→Home→Saved; generic saved labels without names/medicines.",
+    "url": "http://localhost:56683/saved",
+    "dom": "C:/Work/VAD CAD app/docs/return-audit/T4/05-saved-list.txt",
+    "screenshot": "C:/Work/VAD CAD app/docs/return-audit/T4/05-saved-list.jpg"
+  },
+  {
+    "owner": "T4",
+    "name": "06-milestone-blank",
+    "action": "Practicalcardreloadedcorrectly, thenCards→milestoneblank, separateoptionalfields andneutraldefaulttitle.",
+    "url": "http://localhost:56683/milestone-card",
+    "dom": "C:/Work/VAD CAD app/docs/return-audit/T4/06-milestone-blank.txt",
+    "screenshot": "C:/Work/VAD CAD app/docs/return-audit/T4/06-milestone-blank.jpg"
+  },
+  {
+    "owner": "T4",
+    "name": "07-milestone-preview",
+    "action": "Neutralmilestone+fictionalname; dateentered→Nodate; previewnotcrosspopulatedwithmedicalfields.",
+    "url": "http://localhost:56683/milestone-card",
+    "dom": "C:/Work/VAD CAD app/docs/return-audit/T4/07-milestone-preview.txt",
+    "screenshot": "C:/Work/VAD CAD app/docs/return-audit/T4/07-milestone-preview.jpg"
+  },
+  {
+    "owner": "T4",
+    "name": "09-card-escape",
+    "action": "PressedEscapeonCanceldeletion; cardconfirmationstayedopen andCancelkeptfocus. Namedinconsistencywithsheetconfirmation, notblockedkeyboardaction.",
+    "url": "http://localhost:56683/milestone-card",
+    "dom": "C:/Work/VAD CAD app/docs/return-audit/T4/09-card-escape.txt",
+    "screenshot": "C:/Work/VAD CAD app/docs/return-audit/T4/09-card-escape.jpg"
+  },
+  {
+    "owner": "T4",
+    "name": "08-separate-saved",
+    "action": "MilestoneCancelbuttonthenConfirmdelete/reload; Savedpracticalcardremains, milestoneabsent.",
+    "url": "http://localhost:56683/saved",
+    "dom": "C:/Work/VAD CAD app/docs/return-audit/T4/08-separate-saved.txt",
+    "screenshot": "C:/Work/VAD CAD app/docs/return-audit/T4/08-separate-saved.jpg"
+  },
+  {
+    "owner": "T3",
+    "name": "01-display-settings",
+    "action": "KeyboardEnterfromheaderopensdisplaysettings;actual390px.",
+    "url": "http://localhost:56682/accessibility",
+    "dom": "C:/Work/VAD CAD app/docs/return-audit/T3/01-display-settings.txt",
+    "screenshot": "C:/Work/VAD CAD app/docs/return-audit/T3/01-display-settings.jpg"
+  },
+  {
+    "owner": "T3",
+    "name": "02-home-double",
+    "action": "KeyboardsetHighcontrastand200%apptext→Home; meaningfulfullaccessiblelabels retained.",
+    "url": "http://localhost:56682/",
+    "dom": "C:/Work/VAD CAD app/docs/return-audit/T3/02-home-double.txt",
+    "screenshot": "C:/Work/VAD CAD app/docs/return-audit/T3/02-home-double.jpg"
+  },
+  {
+    "owner": "T3",
+    "name": "03-menu-320-double",
+    "action": "SequentialTabthroughText/displayandnineMenuitemsat320px/200%apptext;Aboutandprivacyfocused.",
+    "url": "http://localhost:56682/",
+    "dom": "C:/Work/VAD CAD app/docs/return-audit/T3/03-menu-320-double.txt",
+    "screenshot": "C:/Work/VAD CAD app/docs/return-audit/T3/03-menu-320-double.jpg"
+  },
+  {
+    "owner": "T3",
+    "name": "04-landscape-double",
+    "action": "844×320/200%apptext, menu reached withkeyboard; focus moved forward beyondlastmenuitem.",
+    "url": "http://localhost:56682/",
+    "dom": "C:/Work/VAD CAD app/docs/return-audit/T3/04-landscape-double.txt",
+    "screenshot": "C:/Work/VAD CAD app/docs/return-audit/T3/04-landscape-double.jpg"
+  },
+  {
+    "owner": "T3",
+    "name": "05-unavailable",
+    "action": "Directunknownroute atshortlandscape; accessible404shell withHomeandurgent.",
+    "url": "http://localhost:56682/return-audit-unavailable",
+    "dom": "C:/Work/VAD CAD app/docs/return-audit/T3/05-unavailable.txt",
+    "screenshot": "C:/Work/VAD CAD app/docs/return-audit/T3/05-unavailable.jpg"
+  },
+  {
+    "owner": "T5",
+    "name": "01-recovery",
+    "action": "ReturningT5taskchoseninadvance:Home→Understanddissection→Recovery; noclinicalapproval.",
+    "url": "http://localhost:56684/guide/recovery-and-quality-of-life",
+    "dom": "C:/Work/VAD CAD app/docs/return-audit/T5/01-recovery.txt",
+    "screenshot": "C:/Work/VAD CAD app/docs/return-audit/T5/01-recovery.jpg"
+  },
+  {
+    "owner": "T5",
+    "name": "02-dark-resume",
+    "action": "Section2→Text/displayDark+Roomierspacing→Back; Section2retained afterinterruption.",
+    "url": "http://localhost:56684/guide/recovery-and-quality-of-life",
+    "dom": "C:/Work/VAD CAD app/docs/return-audit/T5/02-dark-resume.txt",
+    "screenshot": "C:/Work/VAD CAD app/docs/return-audit/T5/02-dark-resume.jpg"
+  },
+  {
+    "owner": "T5",
+    "name": "03-review-details",
+    "action": "ReadallfivecurrentsectionsviaNext; savedguideexplicitly; expandedreviewlimits, pendingstatusesvisible.",
+    "url": "http://localhost:56684/guide/recovery-and-quality-of-life",
+    "dom": "C:/Work/VAD CAD app/docs/return-audit/T5/03-review-details.txt",
+    "screenshot": "C:/Work/VAD CAD app/docs/return-audit/T5/03-review-details.jpg"
+  },
+  {
+    "owner": "T1",
+    "name": "03-basics",
+    "action": "ReturningT1beginnersguide; fullpage/source/nextstepobserved. Seven guideDOMsamplescaptured separately; noindependenthumanread test.",
+    "url": "http://localhost:56680/guide/understanding-dissection",
+    "dom": "C:/Work/VAD CAD app/docs/return-audit/T1/03-basics.txt",
+    "screenshot": "C:/Work/VAD CAD app/docs/return-audit/T1/03-basics.jpg"
+  },
+  {
+    "owner": "T1",
+    "name": "04-glossary-empty",
+    "action": "Arterysearchmatches; MRAcommonabbrsearchreturnszeroterms in current8-termglossary.",
+    "url": "http://localhost:56680/glossary",
+    "dom": "C:/Work/VAD CAD app/docs/return-audit/T1/04-glossary-empty.txt",
+    "screenshot": "C:/Work/VAD CAD app/docs/return-audit/T1/04-glossary-empty.jpg"
+  },
+  {
+    "owner": "T1",
+    "name": "05-urgent",
+    "action": "PersistentheaderUrgentHelpfromglossary;neutraldestination observed, wording remainsdraft.",
+    "url": "http://localhost:56680/urgent-help",
+    "dom": "C:/Work/VAD CAD app/docs/return-audit/T1/05-urgent.txt",
+    "screenshot": "C:/Work/VAD CAD app/docs/return-audit/T1/05-urgent.jpg"
+  },
+  {
+    "owner": "T4",
+    "name": "10-clear-all",
+    "action": "GlobalclearonisolatedT4withonesavedpracticalcard; Escapecancelpreservedafterreload; Confirmremovedafterreload. Othercategoriesalreadyabsent, notclaimalltypefixtures.",
+    "url": "http://localhost:56683/saved",
+    "dom": "C:/Work/VAD CAD app/docs/return-audit/T4/10-clear-all.txt",
+    "screenshot": "C:/Work/VAD CAD app/docs/return-audit/T4/10-clear-all.jpg"
+  }
+]

@@ -1,0 +1,73 @@
+Browser tab: 1, Title: "VAD & Carotid Support", URL: "http://localhost:51070/milestone-card".
+1 AXWebArea VAD & Carotid Support, URL: localhost:51070/milestone-card
+	2 container
+		3 link Description: Urgent help, Value: localhost:51070/urgent-help
+		4 container
+			5 text VAD & Carotid Support
+			6 container Main navigation
+				7 link Description: Home, Value: localhost:51070/
+				8 button (collapsed) Menu, Secondary Actions: Expand
+					9 text Menu
+				10 link Description: Text and display, Value: localhost:51070/accessibility
+		11 container
+			12 link Description: Skip to main content, ID: skip-to-content
+				13 text Skip to main content
+			14 container
+				15 link Description: Back to home, Value: localhost:51070/
+				16 container
+					17 text CARD · EDIT
+					18 heading Anniversary or milestone card, Value: 1
+						19 text Anniversary or milestone card
+					20 text Mark a moment in your own words. Dates and “survivor” wording are optional.
+				21 text Display name (optional)
+				22 text field (settable) Description: Display name (optional), Value: T3 Milestone, ID: milestone-name
+				23 text Card title
+				24 text field (settable) Description: Card title, Value: A synthetic milestone, ID: milestone-title
+				25 text Personal message (optional)
+				26 text entry area (settable) Description: Personal message (optional), Value: T3 synthetic: a moment to remember., ID: milestone-message
+				27 button Review card
+					28 text Review card
+				29 button (expanded) Add an optional date · Hide, Secondary Actions: Collapse
+					30 container
+						31 text Add an optional date  ·  Hide
+				51 container
+					52 Date precision
+						53 radio button Description: No date, Value: 1, ID: milestone-date-0
+							54 container
+								55 text ●  No date
+						56 radio button Description: Exact date, Value: 0, ID: milestone-date-1
+							57 container
+								58 text ○  Exact date
+						59 radio button Description: Month and year, Value: 0, ID: milestone-date-2
+							60 container
+								61 text ○  Month and year
+						62 radio button Description: Year only, Value: 0, ID: milestone-date-3
+							63 container
+								64 text ○  Year only
+						65 radio button Description: Approximate date, Value: 0, ID: milestone-date-4
+							66 container
+								67 text ○  Approximate date
+					68 text No date will appear on the card.
+				32 button (expanded) Optional wording · Hide, Secondary Actions: Collapse
+					33 container
+						34 text Optional wording  ·  Hide
+				69 checkbox Description: Use the word “survivor”, Value: 0
+					70 text Use the word “survivor”
+				35 text Personal story/milestone — not medical advice or proof of diagnosis.
+				36 text Unsaved changes. They stay here while the app is open.
+				37 button Save on this device
+					38 text Save on this device
+				39 button (collapsed) Start blank or delete saved card · Show, Secondary Actions: Expand
+					40 container
+						41 text Start blank or delete saved card  ·  Show
+				42 button (collapsed) Privacy and leaving this page · Show, Secondary Actions: Expand
+					43 container
+						44 text Privacy and leaving this page  ·  Show
+				45 text Development preview · general information only · not a medical service
+				46 container
+					47 link Description: About and privacy, Value: localhost:51070/about
+					48 link Description: Accessibility, Value: localhost:51070/accessibility
+					49 link Description: Saved on this device, Value: localhost:51070/saved
+					50 link Description: Urgent help, Value: localhost:51070/urgent-help
+
+The focused UI element is 32 button (expanded) Optional wording · Hide, Secondary Actions: Collapse

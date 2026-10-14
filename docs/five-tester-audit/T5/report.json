@@ -1,0 +1,564 @@
+{
+  "tester": "T5",
+  "date": "2026-10-13",
+  "baselineRevision": "72688788cb926af39b9813c38ac830301a0eaeda",
+  "perspective": "Longer-term patient scenario: fluctuating fatigue/light sensitivity; seeks efficient recovery information, sources and optional milestone tools; prefers comfortable display settings, concise summaries and neutral milestone wording; dislikes bright/busy screens, compulsory survivor wording, repeated introductions and unclear output contents. Simulated UX/engineering inspection only.",
+  "browser": {
+    "name": "Brave Browser",
+    "type": "extension",
+    "id": "1",
+    "fallbackAuthorizedBy": "root",
+    "iabAvailable": false,
+    "hiddenTabCapability": false,
+    "ownedTabIds": [
+      "471604286",
+      "471604287",
+      "471604288"
+    ],
+    "tabCleanup": "471604288 was closed. Closing owned app tabs 471604286 and 471604287 timed out on CUA bridge; root was asked to close them using restored control."
+  },
+  "viewport": {
+    "defaultScreenshotSize": "about 1098x505",
+    "explicitOverride": false,
+    "settingsChanged": false
+  },
+  "scores": {
+    "navigation": 1,
+    "readingAccess": 1,
+    "practicalUsefulness": 2,
+    "dataOutputTrust": 1,
+    "recoveryFromInterruption": 2,
+    "total": 7,
+    "criticalCapApplied": false,
+    "rationale": {
+      "navigation": "All nine menu destinations and browser history paths worked; the unavailable route had no in-app recovery link.",
+      "readingAccess": "One-section mode and guide search worked; read-aloud exposed no visible state change and audio was not independently verified.",
+      "practicalUsefulness": "The fatigue guide and appointment question/note workflow were useful in the observed scope; cards and support-sheet interactions remain untested.",
+      "dataOutputTrust": "Local save/reload and storage disclosures were clear, but output contents and request/log boundaries were not verified.",
+      "recoveryFromInterruption": "Guide search and an unsaved appointment sheet survived in-app navigation; a saved sheet restored after reload."
+    }
+  },
+  "verdict": "7/10 in observed scope; substantial coverage remains not-tested due CUA bridge interruption. No critical fault confirmed.",
+  "strengths": [
+    "Home exposes the main tasks; all nine menu destinations opened.",
+    "Guides have short reading estimates, sections, sources and an explicit review status.",
+    "Fatigue search found one relevant guide; one-section mode exposed Previous/Next controls.",
+    "Appointment question and note remained optional; in-app leave/return and saved reload preserved the synthetic draft.",
+    "Local storage and export-copy disclosures were visible on saved-data/tool screens.",
+    "Captured default desktop palette was soft sage/cream with uncluttered cards."
+  ],
+  "frustrations": [
+    "Read guide aloud left the same button label and exposed no visible stop/pause state; audible output was not verified.",
+    "Unavailable route returned a bare dark Page not found screen without an app return link.",
+    "Appointment export produced a generic opened message but no observable download or inspectable artifact.",
+    "Browser bridge timeouts prevented the remaining planned journeys."
+  ],
+  "firstImprovement": "Show a clear read-aloud start/stop state and identify the file type and contents before export.",
+  "findings": [
+    {
+      "id": "T5-01",
+      "category": "usability-barrier",
+      "severity": "low",
+      "route": "/not-a-real-page",
+      "browser": "Brave Browser extension, default viewport about 1098x505",
+      "steps": [
+        "Navigate directly to /not-a-real-page",
+        "Inspect the loaded page"
+      ],
+      "expected": "A not-found message with an in-app route back to Home or another app page.",
+      "actual": "Only the text Page not found appeared on a dark blank screen; browser Back was the only observed workaround.",
+      "evidence": [
+        "15-unavailable.png"
+      ]
+    },
+    {
+      "id": "T5-02",
+      "category": "usability-barrier",
+      "severity": "low",
+      "route": "/guide/understanding-dissection",
+      "browser": "Brave Browser extension, default viewport about 1098x505",
+      "steps": [
+        "Open the guide",
+        "Click Read guide aloud",
+        "Reinspect the page controls"
+      ],
+      "expected": "A visible active state and a stop/pause control.",
+      "actual": "The button remained Read guide aloud; no Stop/Pause/Resume control appeared. Audio itself was not verified.",
+      "evidence": [
+        "16-g1-start.png",
+        "report.md DOM observation"
+      ]
+    },
+    {
+      "id": "T5-03",
+      "category": "untested",
+      "severity": "low",
+      "route": "/appointments",
+      "browser": "Brave Browser extension, default viewport about 1098x505",
+      "steps": [
+        "Save a synthetic appointment sheet",
+        "Start the documented download-event listener",
+        "Click Export sheet",
+        "Wait 5999ms and inspect the browser dialog"
+      ],
+      "expected": "An inspectable file or clearly identified destination flow.",
+      "actual": "The page displayed a generic export-opened message; the download wait timed out and getJsDialog returned null. No export fault is asserted because the host destination was not inspectable.",
+      "evidence": [
+        "40-appointment-export-options.png"
+      ]
+    }
+  ],
+  "coverage": [
+    {
+      "task": "Unhinted Home exploration",
+      "route": "/",
+      "status": "pass",
+      "evidence": [
+        "01-home.png",
+        "02-learn-start.png"
+      ]
+    },
+    {
+      "task": "Menu: Guides",
+      "route": "/learn",
+      "status": "pass",
+      "evidence": [
+        "02-learn-start.png",
+        "03-menu.png"
+      ]
+    },
+    {
+      "task": "Menu: Prepare an appointment",
+      "route": "/appointments",
+      "status": "pass",
+      "evidence": [
+        "04-appointments.png",
+        "37-appointment-start.png"
+      ]
+    },
+    {
+      "task": "Menu: Make a card route",
+      "route": "/cards",
+      "status": "pass",
+      "evidence": [
+        "05-cards-entry.png"
+      ],
+      "reason": "Route opened; card workflow not tested."
+    },
+    {
+      "task": "Menu: Help someone",
+      "route": "/supporting-someone",
+      "status": "pass",
+      "evidence": [
+        "06-supporting.png"
+      ]
+    },
+    {
+      "task": "Menu: Support preferences route",
+      "route": "/support-preferences",
+      "status": "pass",
+      "evidence": [
+        "07-support-preferences.png"
+      ],
+      "reason": "Route opened; sheet interactions not tested."
+    },
+    {
+      "task": "Menu: Look up a term",
+      "route": "/glossary",
+      "status": "pass",
+      "evidence": [
+        "08-glossary.png"
+      ]
+    },
+    {
+      "task": "Menu: Resources",
+      "route": "/resources",
+      "status": "pass",
+      "evidence": [
+        "09-resources.png"
+      ]
+    },
+    {
+      "task": "Menu: Saved on this device",
+      "route": "/saved",
+      "status": "pass",
+      "evidence": [
+        "10-saved.png"
+      ]
+    },
+    {
+      "task": "Menu: About and privacy",
+      "route": "/about",
+      "status": "pass",
+      "evidence": [
+        "11-about.png"
+      ]
+    },
+    {
+      "task": "Header/footer/Home/urgent help",
+      "route": "/ and /urgent-help",
+      "status": "pass",
+      "evidence": [
+        "01-home.png",
+        "12-urgent-help.png"
+      ],
+      "reason": "Footer links were present in inspected DOM snapshots."
+    },
+    {
+      "task": "Direct route, reload, Back and Forward",
+      "route": "/",
+      "status": "pass",
+      "evidence": [
+        "report.md navigation observation"
+      ]
+    },
+    {
+      "task": "Legacy route coverage fixture",
+      "route": "/with-stroke",
+      "status": "pass",
+      "evidence": [
+        "13-legacy-with-stroke.png"
+      ],
+      "reason": "Technical coverage input, not menu discovery."
+    },
+    {
+      "task": "Legacy route coverage fixture",
+      "route": "/without-stroke",
+      "status": "pass",
+      "evidence": [
+        "14-legacy-without-stroke.png"
+      ],
+      "reason": "Technical coverage input, not menu discovery."
+    },
+    {
+      "task": "Unavailable page content",
+      "route": "/not-a-real-page",
+      "status": "pass",
+      "evidence": [
+        "15-unavailable.png"
+      ]
+    },
+    {
+      "task": "Unavailable page recovery link",
+      "route": "/not-a-real-page",
+      "status": "fail",
+      "evidence": [
+        "15-unavailable.png"
+      ],
+      "reason": "No app shell or in-app return link; browser Back is the only observed workaround."
+    },
+    {
+      "task": "Guide: Understanding cervical artery dissection beginning/end/sources/review",
+      "route": "/guide/understanding-dissection",
+      "status": "pass",
+      "evidence": [
+        "16-g1-start.png",
+        "18-g1-end.png"
+      ]
+    },
+    {
+      "task": "Guide: Tests, scans and unfamiliar terms beginning/end/sources/review",
+      "route": "/guide/tests-and-terms",
+      "status": "pass",
+      "evidence": [
+        "21-g2-start.png",
+        "22-g2-end.png"
+      ]
+    },
+    {
+      "task": "Guide: Dissection without a diagnosed stroke beginning/end/sources/review",
+      "route": "/guide/without-stroke",
+      "status": "pass",
+      "evidence": [
+        "23-g3-start.png",
+        "24-g3-end.png"
+      ]
+    },
+    {
+      "task": "Guide: When dissection is accompanied by stroke beginning/end/sources/review",
+      "route": "/guide/with-stroke",
+      "status": "pass",
+      "evidence": [
+        "25-g4-start.png",
+        "26-g4-end.png"
+      ]
+    },
+    {
+      "task": "Guide: Recovery, fatigue and quality of life beginning/end/sources/review",
+      "route": "/guide/recovery-and-quality-of-life",
+      "status": "pass",
+      "evidence": [
+        "27-g5-start.png",
+        "28-g5-end.png"
+      ]
+    },
+    {
+      "task": "Guide: Supporting someone after dissection or stroke beginning/end/sources/review",
+      "route": "/guide/supporting-someone",
+      "status": "pass",
+      "evidence": [
+        "29-g6-start.png",
+        "30-g6-end.png"
+      ]
+    },
+    {
+      "task": "Guide: Prepare for a follow-up appointment beginning/end/sources/review",
+      "route": "/guide/follow-up-questions",
+      "status": "pass",
+      "evidence": [
+        "31-g7-start.png",
+        "32-g7-end.png"
+      ]
+    },
+    {
+      "task": "Guide review disclosure",
+      "route": "all seven guide pages",
+      "status": "pass",
+      "evidence": [
+        "16-g1-start.png",
+        "18-g1-end.png"
+      ],
+      "reason": "Expanded on g1; all guides showed clinical and patient/carer review not recorded."
+    },
+    {
+      "task": "Guide search and in-app leave/return",
+      "route": "/learn",
+      "status": "pass",
+      "evidence": [
+        "report.md search observation"
+      ],
+      "reason": "fatigue query found one guide and remained on return from Glossary."
+    },
+    {
+      "task": "Glossary match and empty search",
+      "route": "/glossary",
+      "status": "pass",
+      "evidence": [
+        "08-glossary.png"
+      ],
+      "reason": "stenosis returned 1 term; zzq-no-match returned 0."
+    },
+    {
+      "task": "Saved guide behavior",
+      "route": "/saved-guides",
+      "status": "pass",
+      "evidence": [
+        "36-saved-guide-hub.png"
+      ]
+    },
+    {
+      "task": "One-section reading mode",
+      "route": "/guide/understanding-dissection",
+      "status": "pass",
+      "evidence": [
+        "17-g1-one-section.png"
+      ]
+    },
+    {
+      "task": "Global simplified reading mode",
+      "route": "/accessibility",
+      "status": "not-tested",
+      "reason": "Display page was not opened before repeated browser-bridge timeouts."
+    },
+    {
+      "task": "Manual read-aloud start/stop",
+      "route": "/guide/understanding-dissection",
+      "status": "fail",
+      "evidence": [
+        "16-g1-start.png"
+      ],
+      "reason": "No visible state change or stop control; audible output not tested."
+    },
+    {
+      "task": "Appointment sheet select/remove, optional note and preview",
+      "route": "/appointments",
+      "status": "pass",
+      "evidence": [
+        "38-appointment-draft.png"
+      ]
+    },
+    {
+      "task": "Appointment sheet leave/return",
+      "route": "/appointments",
+      "status": "pass",
+      "evidence": [
+        "report.md appointment observation"
+      ],
+      "reason": "Unsaved selection and note survived in-app navigation."
+    },
+    {
+      "task": "Appointment sheet save/reload",
+      "route": "/appointments",
+      "status": "pass",
+      "evidence": [
+        "report.md appointment observation"
+      ],
+      "reason": "Saved selection and note restored after reload."
+    },
+    {
+      "task": "Appointment sheet export artifact",
+      "route": "/appointments",
+      "status": "not-tested",
+      "evidence": [
+        "40-appointment-export-options.png"
+      ],
+      "reason": "No download event in 5999ms; no JS dialog; output/destination unavailable."
+    },
+    {
+      "task": "Appointment delete cancel/final delete/clear",
+      "route": "/appointments",
+      "status": "not-tested",
+      "reason": "Confirm dialog was dismissed; post-dismissal observations timed out, so retained state/final delete/clear were not verified."
+    },
+    {
+      "task": "Support preferences sheet interactions",
+      "route": "/support-preferences",
+      "status": "not-tested",
+      "evidence": [
+        "07-support-preferences.png"
+      ],
+      "reason": "Only route entry was inspected before the bridge interruption."
+    },
+    {
+      "task": "Cards blank/defaults, optional fields, edit/preview/save/reload/hidden dates/separate contents",
+      "route": "/cards",
+      "status": "not-tested",
+      "evidence": [
+        "05-cards-entry.png"
+      ],
+      "reason": "Only route entry was opened."
+    },
+    {
+      "task": "Card PDF/TXT/milestone PNG/print layout",
+      "route": "/cards",
+      "status": "not-tested",
+      "reason": "No card artifact was generated; no physical print job was submitted."
+    },
+    {
+      "task": "Display text/spacing/contrast/dark/reduced-motion",
+      "route": "/accessibility",
+      "status": "not-tested",
+      "reason": "Display controls were not reached; no preferences changed."
+    },
+    {
+      "task": "Saved-hub generic labels for populated sheets/cards",
+      "route": "/saved",
+      "status": "not-tested",
+      "evidence": [
+        "10-saved.png",
+        "36-saved-guide-hub.png"
+      ],
+      "reason": "Empty hub showed generic groups; saved guide list showed title; populated sheet/card labels not checked."
+    },
+    {
+      "task": "Export boundary disclosure",
+      "route": "/appointments",
+      "status": "pass",
+      "evidence": [
+        "37-appointment-start.png"
+      ],
+      "reason": "Page disclosed export creates a separate copy; actual artifact was not inspected."
+    },
+    {
+      "task": "Synthetic marker visible URL",
+      "route": "/appointments",
+      "status": "pass",
+      "reason": "Visible URL after save/reload was /appointments without marker."
+    },
+    {
+      "task": "Synthetic marker in network requests",
+      "route": "/appointments",
+      "status": "not-tested",
+      "reason": "Documented Network.enable command timed out after 3 seconds."
+    },
+    {
+      "task": "Synthetic marker in console logs",
+      "route": "/appointments",
+      "status": "not-tested",
+      "reason": "No successful developer log inspection before CUA reset."
+    },
+    {
+      "task": "Default desktop view",
+      "route": "all observed routes",
+      "status": "pass",
+      "reason": "Default screenshot about 1098x505; no explicit override."
+    },
+    {
+      "task": "390px, 320px, short landscape, doubled app text",
+      "route": "all patient-facing pages",
+      "status": "not-tested",
+      "reason": "Responsive checks were blocked by CUA bridge resets."
+    },
+    {
+      "task": "Keyboard focus and activation",
+      "route": "all patient-facing pages",
+      "status": "not-tested",
+      "reason": "No keyboard navigation/focus-order sequence was exercised."
+    },
+    {
+      "task": "Pointer scrolling to guide ends",
+      "route": "guide pages",
+      "status": "pass",
+      "evidence": [
+        "18-g1-end.png",
+        "22-g2-end.png",
+        "24-g3-end.png",
+        "26-g4-end.png",
+        "28-g5-end.png",
+        "30-g6-end.png",
+        "32-g7-end.png"
+      ]
+    },
+    {
+      "task": "Browser zoom, screen reader, native device, audio capture",
+      "route": "separate platform checks",
+      "status": "not-tested",
+      "reason": "No corresponding browser zoom, screen reader, native-device, or audio-capture capability was exercised."
+    }
+  ],
+  "limits": [
+    "Simulated UX/engineering inspection; not patient feedback, clinical review, or accessibility certification.",
+    "IAB unavailable; root authorized visible Brave Browser extension tab at only localhost:51072. Hidden visibility option was unavailable.",
+    "CDP Network.enable timed out after 3 seconds. Later controls/snapshots timed out and reset CUA; final fresh-tab attempt also timed out.",
+    "No previous audit, other tester folder, source, dependencies, or Git diff was read.",
+    "No clinical content validity claim, external source-page content, external login, physical print job, or transmission of marker data outside the assigned local origin.",
+    "No viewport/display preferences changed; no explicit viewport reset required."
+  ],
+  "evidence": [
+    "01-home.png",
+    "02-learn-start.png",
+    "03-menu.png",
+    "04-appointments.png",
+    "05-cards-entry.png",
+    "06-supporting.png",
+    "07-support-preferences.png",
+    "08-glossary.png",
+    "09-resources.png",
+    "10-saved.png",
+    "11-about.png",
+    "12-urgent-help.png",
+    "13-legacy-with-stroke.png",
+    "14-legacy-without-stroke.png",
+    "15-unavailable.png",
+    "16-g1-start.png",
+    "17-g1-one-section.png",
+    "18-g1-end.png",
+    "21-g2-start.png",
+    "22-g2-end.png",
+    "23-g3-start.png",
+    "24-g3-end.png",
+    "25-g4-start.png",
+    "26-g4-end.png",
+    "27-g5-start.png",
+    "28-g5-end.png",
+    "29-g6-start.png",
+    "30-g6-end.png",
+    "31-g7-start.png",
+    "32-g7-end.png",
+    "36-saved-guide-hub.png",
+    "37-appointment-start.png",
+    "38-appointment-draft.png",
+    "40-appointment-export-options.png"
+  ],
+  "locked": true
+}

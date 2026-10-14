@@ -1,0 +1,54 @@
+- link "Urgent help":
+  - /url: /urgent-help
+  - generic: Urgent help
+  - generic: ›
+- generic "VAD & Carotid Support"
+- navigation "Main navigation":
+  - link "Home":
+    - /url: /
+    - generic: Home
+  - button "Menu":
+    - generic: Menu
+  - link "Text and display":
+    - /url: /accessibility
+    - generic: Text and display
+- link "Skip to main content":
+  - generic: Skip to main content
+- main:
+  - heading "Look up a term" [level=1]
+  - generic: Short definitions for unfamiliar words.
+  - button "Draft information, review pending. Review details":
+    - generic: Draft information · review pending
+    - generic: +
+  - heading "Find a term" [level=2]
+  - textbox "Search glossary terms" [active]:
+    - /placeholder: "For example: artery, imaging, stroke"
+    - text: MRA
+  - button "Clear search":
+    - generic: Clear search
+  - generic: 0 terms shown
+  - heading "No matching term" [level=2]
+  - generic: Try a shorter word or ask the clinician who reviewed your report to explain the term.
+  - link "Read the tests and terms guide →":
+    - /url: /guide/tests-and-terms
+    - generic: Read the tests and terms guide →
+  - link "Prepare a question for your appointment →":
+    - /url: /appointments
+    - generic: Prepare a question for your appointment →
+  - button "Using this glossary · Show":
+    - generic: Using this glossary · Show
+  - heading "Still unsure?" [level=2]
+  - generic: "You can ask: “Could you explain this word and tell me what it means in my situation?” This app cannot interpret reports or scans."
+  - generic: Development preview · general information only · not a medical service
+  - link "About and privacy":
+    - /url: /about
+    - generic: About and privacy
+  - link "Accessibility":
+    - /url: /accessibility
+    - generic: Accessibility
+  - link "Saved on this device":
+    - /url: /saved
+    - generic: Saved on this device
+  - link "Urgent help":
+    - /url: /urgent-help
+    - generic: Urgent help

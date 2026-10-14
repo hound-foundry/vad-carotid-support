@@ -1,0 +1,27 @@
+Browser tab: 1, Title: "VAD & Carotid Support", URL: "http://localhost:51070/personal-card".
+The following is a diff from the previous accessibility tree with ~ and + representing changed and added elements, respectively. Removed elements are summarized by ID range.
+Removed element IDs: 62-73, 76-80
+~				54 container Description: Medical and communication card Choose what helps. Every field is optional., ID: personal-stage
+~						56 heading Medical and communication card, Value: 1
+~							57 text Medical and communication card
+~						58 text Choose what helps. Every field is optional.
+~				59 text Communication statements (optional)
+~				60 checkbox Description: Please give me time to answer., Value: 1
+~					61 text ✓
++					62 text Please give me time to answer.
++				63 checkbox Description: Please write important things down., Value: 0
++					64 text Please write important things down.
++				65 checkbox Description: Please use short, clear sentences., Value: 0
++					66 text Please use short, clear sentences.
++				67 checkbox Description: Please ask before helping me., Value: 0
++					68 text Please ask before helping me.
++				69 button (collapsed) Name and your own words (optional) · Show, Secondary Actions: Expand
++					70 container
++						71 text Name and your own words (optional)  ·  Show
++				72 button Review card
++					73 text Review card
+~				74 button (collapsed) Additional details (contains entries) · Show, Secondary Actions: Expand
+~					75 container
++						76 text Additional details (contains entries)  ·  Show
++				77 text Personal information card — not an official medical record or emergency plan.
+The focused UI element is 54 container Description: Medical and communication card Choose what helps. Every field is optional., ID: personal-stage

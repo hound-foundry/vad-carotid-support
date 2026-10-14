@@ -1,0 +1,51 @@
+{
+  "date": "2026-10-13",
+  "origin": "http://localhost:4182",
+  "syntheticOnly": true,
+  "appointment": {
+    "draftRetained": true,
+    "previewKeyboardFocus": true,
+    "saveReload": true,
+    "textDownload": true,
+    "escapeCancelsDelete": true,
+    "deleteClears": true
+  },
+  "personalCard": {
+    "blankDefaults": true,
+    "optionalStatements": true,
+    "editPreview": true,
+    "saveReload": true,
+    "hiddenDateOmitted": true,
+    "pdfDownload": true,
+    "textDownload": true,
+    "escapeCancelsDelete": true,
+    "deleteReload": true
+  },
+  "milestoneCard": {
+    "blankDefaults": true,
+    "unsavedNavigationReturn": true,
+    "neutralWording": true,
+    "hiddenDateOmitted": true,
+    "separateContents": true,
+    "saveReload": true,
+    "pngDownload": true,
+    "pdfDownload": true,
+    "textDownload": true,
+    "escapeCancelsDelete": true,
+    "deleteReload": true
+  },
+  "guide": {
+    "oneSectionReading": true,
+    "resumesSectionTwo": true,
+    "savedHubGenericLabels": true
+  },
+  "clearAll": {
+    "confirmedOnSyntheticOrigin": true
+  },
+  "limits": [
+    "Actual browser zoom not supported by this automation surface; app text enlargement tested separately",
+    "NVDA, VoiceOver and TalkBack not tested",
+    "Print request opened a browser dialog that blocked DOM automation; closed only the disposable test tab; system print/cancel result not verified",
+    "Initial long network trace was truncated; later short scoped traces and current-tab console checks are separate evidence"
+  ]
+}

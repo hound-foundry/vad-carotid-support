@@ -1,0 +1,8 @@
+{
+  "beforeSection": [
+    "  - generic: \"Section 2 of 3: During the appointment\""
+  ],
+  "afterSection": [],
+  "viewOptionsAfterReturn": true,
+  "scope": "Toggled one-section, nextsection2, Home, returnappointmentin-app; contentdraft separate"
+}

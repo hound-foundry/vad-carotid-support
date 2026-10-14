@@ -1,0 +1,914 @@
+{
+  "scope": "Practicalcardentry→PDF/text→milestoneentry/PNG/PDF/text→reload/delete/saved",
+  "capturedRequests": [
+    {
+      "documentURL": "http://localhost:56683/personal-card",
+      "frameId": "CC802F967B8839670773BD27A23A5FEF",
+      "hasUserGesture": true,
+      "initiator": {
+        "stack": {
+          "callFrames": [
+            {
+              "columnNumber": 782,
+              "functionName": "",
+              "lineNumber": 512,
+              "scriptId": "9",
+              "url": "http://localhost:56683/_expo/static/js/web/entry-6bd9c06febb88561070b8ef3849ee298.js"
+            },
+            {
+              "columnNumber": 237,
+              "functionName": "e.fetchThenEvalAsync",
+              "lineNumber": 512,
+              "scriptId": "9",
+              "url": "http://localhost:56683/_expo/static/js/web/entry-6bd9c06febb88561070b8ef3849ee298.js"
+            },
+            {
+              "columnNumber": 191,
+              "functionName": "e.loadBundleAsync",
+              "lineNumber": 508,
+              "scriptId": "9",
+              "url": "http://localhost:56683/_expo/static/js/web/entry-6bd9c06febb88561070b8ef3849ee298.js"
+            },
+            {
+              "columnNumber": 219,
+              "functionName": "",
+              "lineNumber": 507,
+              "scriptId": "9",
+              "url": "http://localhost:56683/_expo/static/js/web/entry-6bd9c06febb88561070b8ef3849ee298.js"
+            },
+            {
+              "columnNumber": 187,
+              "functionName": "n",
+              "lineNumber": 904,
+              "scriptId": "9",
+              "url": "http://localhost:56683/_expo/static/js/web/entry-6bd9c06febb88561070b8ef3849ee298.js"
+            },
+            {
+              "columnNumber": 273,
+              "functionName": "t",
+              "lineNumber": 904,
+              "scriptId": "9",
+              "url": "http://localhost:56683/_expo/static/js/web/entry-6bd9c06febb88561070b8ef3849ee298.js"
+            },
+            {
+              "columnNumber": 386,
+              "functionName": "o",
+              "lineNumber": 904,
+              "scriptId": "9",
+              "url": "http://localhost:56683/_expo/static/js/web/entry-6bd9c06febb88561070b8ef3849ee298.js"
+            },
+            {
+              "columnNumber": 420,
+              "functionName": "e.exportCard",
+              "lineNumber": 901,
+              "scriptId": "9",
+              "url": "http://localhost:56683/_expo/static/js/web/entry-6bd9c06febb88561070b8ef3849ee298.js"
+            },
+            {
+              "columnNumber": 3863,
+              "functionName": "y",
+              "lineNumber": 900,
+              "scriptId": "9",
+              "url": "http://localhost:56683/_expo/static/js/web/entry-6bd9c06febb88561070b8ef3849ee298.js"
+            },
+            {
+              "columnNumber": 4682,
+              "functionName": "onPress",
+              "lineNumber": 900,
+              "scriptId": "9",
+              "url": "http://localhost:56683/_expo/static/js/web/entry-6bd9c06febb88561070b8ef3849ee298.js"
+            },
+            {
+              "columnNumber": 3906,
+              "functionName": "onClick",
+              "lineNumber": 311,
+              "scriptId": "9",
+              "url": "http://localhost:56683/_expo/static/js/web/entry-6bd9c06febb88561070b8ef3849ee298.js"
+            },
+            {
+              "columnNumber": 132437,
+              "functionName": "mf",
+              "lineNumber": 165,
+              "scriptId": "9",
+              "url": "http://localhost:56683/_expo/static/js/web/entry-6bd9c06febb88561070b8ef3849ee298.js"
+            },
+            {
+              "columnNumber": 137396,
+              "functionName": "",
+              "lineNumber": 165,
+              "scriptId": "9",
+              "url": "http://localhost:56683/_expo/static/js/web/entry-6bd9c06febb88561070b8ef3849ee298.js"
+            },
+            {
+              "columnNumber": 21471,
+              "functionName": "qn",
+              "lineNumber": 165,
+              "scriptId": "9",
+              "url": "http://localhost:56683/_expo/static/js/web/entry-6bd9c06febb88561070b8ef3849ee298.js"
+            },
+            {
+              "columnNumber": 133662,
+              "functionName": "kf",
+              "lineNumber": 165,
+              "scriptId": "9",
+              "url": "http://localhost:56683/_expo/static/js/web/entry-6bd9c06febb88561070b8ef3849ee298.js"
+            },
+            {
+              "columnNumber": 166684,
+              "functionName": "Xd",
+              "lineNumber": 165,
+              "scriptId": "9",
+              "url": "http://localhost:56683/_expo/static/js/web/entry-6bd9c06febb88561070b8ef3849ee298.js"
+            },
+            {
+              "columnNumber": 166506,
+              "functionName": "Kd",
+              "lineNumber": 165,
+              "scriptId": "9",
+              "url": "http://localhost:56683/_expo/static/js/web/entry-6bd9c06febb88561070b8ef3849ee298.js"
+            }
+          ]
+        },
+        "type": "script"
+      },
+      "loaderId": "F4B5C42A933F78BEC1ED07BCA110CD06",
+      "redirectHasExtraInfo": false,
+      "renderBlockingBehavior": "NonBlocking",
+      "request": {
+        "headers": {
+          "Referer": "http://localhost:56683/personal-card",
+          "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+          "sec-ch-ua": "\"Google Chrome\";v=\"155\", \"Chromium\";v=\"155\", \"Not(A:Brand\";v=\"24\"",
+          "sec-ch-ua-mobile": "?0",
+          "sec-ch-ua-platform": "\"Windows\""
+        },
+        "initialPriority": "Low",
+        "isSameSite": true,
+        "method": "GET",
+        "mixedContentType": "none",
+        "referrerPolicy": "strict-origin-when-cross-origin",
+        "url": "http://localhost:56683/_expo/static/js/web/pdf-3711fe07967d06b4d99d4fcff4e55715.js"
+      },
+      "requestId": "20848.11",
+      "timestamp": 30360.544911,
+      "type": "Script",
+      "wallTime": 1791903315.588278
+    },
+    {
+      "documentURL": "http://localhost:56683/personal-card",
+      "frameId": "CC802F967B8839670773BD27A23A5FEF",
+      "hasUserGesture": true,
+      "initiator": {
+        "stack": {
+          "callFrames": [
+            {
+              "columnNumber": 435,
+              "functionName": "e.exportCard",
+              "lineNumber": 901,
+              "scriptId": "9",
+              "url": "http://localhost:56683/_expo/static/js/web/entry-6bd9c06febb88561070b8ef3849ee298.js"
+            },
+            {
+              "columnNumber": 3863,
+              "functionName": "y",
+              "lineNumber": 900,
+              "scriptId": "9",
+              "url": "http://localhost:56683/_expo/static/js/web/entry-6bd9c06febb88561070b8ef3849ee298.js"
+            },
+            {
+              "columnNumber": 4682,
+              "functionName": "onPress",
+              "lineNumber": 900,
+              "scriptId": "9",
+              "url": "http://localhost:56683/_expo/static/js/web/entry-6bd9c06febb88561070b8ef3849ee298.js"
+            },
+            {
+              "columnNumber": 3906,
+              "functionName": "onClick",
+              "lineNumber": 311,
+              "scriptId": "9",
+              "url": "http://localhost:56683/_expo/static/js/web/entry-6bd9c06febb88561070b8ef3849ee298.js"
+            },
+            {
+              "columnNumber": 132437,
+              "functionName": "mf",
+              "lineNumber": 165,
+              "scriptId": "9",
+              "url": "http://localhost:56683/_expo/static/js/web/entry-6bd9c06febb88561070b8ef3849ee298.js"
+            },
+            {
+              "columnNumber": 137396,
+              "functionName": "",
+              "lineNumber": 165,
+              "scriptId": "9",
+              "url": "http://localhost:56683/_expo/static/js/web/entry-6bd9c06febb88561070b8ef3849ee298.js"
+            },
+            {
+              "columnNumber": 21471,
+              "functionName": "qn",
+              "lineNumber": 165,
+              "scriptId": "9",
+              "url": "http://localhost:56683/_expo/static/js/web/entry-6bd9c06febb88561070b8ef3849ee298.js"
+            },
+            {
+              "columnNumber": 133662,
+              "functionName": "kf",
+              "lineNumber": 165,
+              "scriptId": "9",
+              "url": "http://localhost:56683/_expo/static/js/web/entry-6bd9c06febb88561070b8ef3849ee298.js"
+            },
+            {
+              "columnNumber": 166684,
+              "functionName": "Xd",
+              "lineNumber": 165,
+              "scriptId": "9",
+              "url": "http://localhost:56683/_expo/static/js/web/entry-6bd9c06febb88561070b8ef3849ee298.js"
+            },
+            {
+              "columnNumber": 166506,
+              "functionName": "Kd",
+              "lineNumber": 165,
+              "scriptId": "9",
+              "url": "http://localhost:56683/_expo/static/js/web/entry-6bd9c06febb88561070b8ef3849ee298.js"
+            }
+          ]
+        },
+        "type": "script"
+      },
+      "loaderId": "F4B5C42A933F78BEC1ED07BCA110CD06",
+      "redirectHasExtraInfo": false,
+      "request": {
+        "headers": {
+          "Referer": "http://localhost:56683/personal-card",
+          "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+          "sec-ch-ua": "\"Google Chrome\";v=\"155\", \"Chromium\";v=\"155\", \"Not(A:Brand\";v=\"24\"",
+          "sec-ch-ua-mobile": "?0",
+          "sec-ch-ua-platform": "\"Windows\""
+        },
+        "initialPriority": "High",
+        "isSameSite": true,
+        "method": "GET",
+        "mixedContentType": "none",
+        "referrerPolicy": "strict-origin-when-cross-origin",
+        "url": "http://localhost:56683/fonts/NotoSans-Regular.ttf"
+      },
+      "requestId": "20848.12",
+      "timestamp": 30360.545575,
+      "type": "Fetch",
+      "wallTime": 1791903315.588605
+    },
+    {
+      "documentURL": "http://localhost:56683/personal-card",
+      "frameId": "CC802F967B8839670773BD27A23A5FEF",
+      "hasUserGesture": true,
+      "initiator": {
+        "stack": {
+          "callFrames": [
+            {
+              "columnNumber": 589,
+              "functionName": "e.exportCard",
+              "lineNumber": 901,
+              "scriptId": "9",
+              "url": "http://localhost:56683/_expo/static/js/web/entry-6bd9c06febb88561070b8ef3849ee298.js"
+            },
+            {
+              "columnNumber": 3863,
+              "functionName": "y",
+              "lineNumber": 900,
+              "scriptId": "9",
+              "url": "http://localhost:56683/_expo/static/js/web/entry-6bd9c06febb88561070b8ef3849ee298.js"
+            },
+            {
+              "columnNumber": 4682,
+              "functionName": "onPress",
+              "lineNumber": 900,
+              "scriptId": "9",
+              "url": "http://localhost:56683/_expo/static/js/web/entry-6bd9c06febb88561070b8ef3849ee298.js"
+            },
+            {
+              "columnNumber": 3906,
+              "functionName": "onClick",
+              "lineNumber": 311,
+              "scriptId": "9",
+              "url": "http://localhost:56683/_expo/static/js/web/entry-6bd9c06febb88561070b8ef3849ee298.js"
+            },
+            {
+              "columnNumber": 132437,
+              "functionName": "mf",
+              "lineNumber": 165,
+              "scriptId": "9",
+              "url": "http://localhost:56683/_expo/static/js/web/entry-6bd9c06febb88561070b8ef3849ee298.js"
+            },
+            {
+              "columnNumber": 137396,
+              "functionName": "",
+              "lineNumber": 165,
+              "scriptId": "9",
+              "url": "http://localhost:56683/_expo/static/js/web/entry-6bd9c06febb88561070b8ef3849ee298.js"
+            },
+            {
+              "columnNumber": 21471,
+              "functionName": "qn",
+              "lineNumber": 165,
+              "scriptId": "9",
+              "url": "http://localhost:56683/_expo/static/js/web/entry-6bd9c06febb88561070b8ef3849ee298.js"
+            },
+            {
+              "columnNumber": 133662,
+              "functionName": "kf",
+              "lineNumber": 165,
+              "scriptId": "9",
+              "url": "http://localhost:56683/_expo/static/js/web/entry-6bd9c06febb88561070b8ef3849ee298.js"
+            },
+            {
+              "columnNumber": 166684,
+              "functionName": "Xd",
+              "lineNumber": 165,
+              "scriptId": "9",
+              "url": "http://localhost:56683/_expo/static/js/web/entry-6bd9c06febb88561070b8ef3849ee298.js"
+            },
+            {
+              "columnNumber": 166506,
+              "functionName": "Kd",
+              "lineNumber": 165,
+              "scriptId": "9",
+              "url": "http://localhost:56683/_expo/static/js/web/entry-6bd9c06febb88561070b8ef3849ee298.js"
+            }
+          ]
+        },
+        "type": "script"
+      },
+      "loaderId": "F4B5C42A933F78BEC1ED07BCA110CD06",
+      "redirectHasExtraInfo": false,
+      "request": {
+        "headers": {
+          "Referer": "http://localhost:56683/personal-card",
+          "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+          "sec-ch-ua": "\"Google Chrome\";v=\"155\", \"Chromium\";v=\"155\", \"Not(A:Brand\";v=\"24\"",
+          "sec-ch-ua-mobile": "?0",
+          "sec-ch-ua-platform": "\"Windows\""
+        },
+        "initialPriority": "High",
+        "isSameSite": true,
+        "method": "GET",
+        "mixedContentType": "none",
+        "referrerPolicy": "strict-origin-when-cross-origin",
+        "url": "http://localhost:56683/fonts/NotoSans-Bold.ttf"
+      },
+      "requestId": "20848.13",
+      "timestamp": 30360.545682,
+      "type": "Fetch",
+      "wallTime": 1791903315.588701
+    },
+    {
+      "documentURL": "http://localhost:56683/personal-card",
+      "frameId": "CC802F967B8839670773BD27A23A5FEF",
+      "hasUserGesture": false,
+      "initiator": {
+        "type": "other"
+      },
+      "loaderId": "FF0B7709406E28488019C871162E1904",
+      "redirectHasExtraInfo": false,
+      "request": {
+        "headers": {
+          "Upgrade-Insecure-Requests": "1",
+          "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+          "sec-ch-ua": "\"Google Chrome\";v=\"155\", \"Chromium\";v=\"155\", \"Not(A:Brand\";v=\"24\"",
+          "sec-ch-ua-mobile": "?0",
+          "sec-ch-ua-platform": "\"Windows\""
+        },
+        "initialPriority": "VeryHigh",
+        "isSameSite": true,
+        "method": "GET",
+        "mixedContentType": "none",
+        "referrerPolicy": "strict-origin-when-cross-origin",
+        "url": "http://localhost:56683/personal-card"
+      },
+      "requestId": "FF0B7709406E28488019C871162E1904",
+      "timestamp": 30418.113035,
+      "type": "Document",
+      "wallTime": 1791903373.156043
+    },
+    {
+      "documentURL": "http://localhost:56683/personal-card",
+      "frameId": "CC802F967B8839670773BD27A23A5FEF",
+      "hasUserGesture": false,
+      "initiator": {
+        "columnNumber": 15119,
+        "lineNumber": 495,
+        "type": "parser",
+        "url": "http://localhost:56683/personal-card"
+      },
+      "loaderId": "FF0B7709406E28488019C871162E1904",
+      "redirectHasExtraInfo": false,
+      "renderBlockingBehavior": "NonBlocking",
+      "request": {
+        "headers": {
+          "Referer": "http://localhost:56683/personal-card",
+          "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+          "sec-ch-ua": "\"Google Chrome\";v=\"155\", \"Chromium\";v=\"155\", \"Not(A:Brand\";v=\"24\"",
+          "sec-ch-ua-mobile": "?0",
+          "sec-ch-ua-platform": "\"Windows\""
+        },
+        "initialPriority": "Low",
+        "isSameSite": true,
+        "method": "GET",
+        "mixedContentType": "none",
+        "referrerPolicy": "strict-origin-when-cross-origin",
+        "url": "http://localhost:56683/_expo/static/js/web/entry-6bd9c06febb88561070b8ef3849ee298.js"
+      },
+      "requestId": "20848.16",
+      "timestamp": 30418.135945,
+      "type": "Script",
+      "wallTime": 1791903373.178964
+    },
+    {
+      "documentURL": "http://localhost:56683/milestone-card",
+      "frameId": "CC802F967B8839670773BD27A23A5FEF",
+      "hasUserGesture": true,
+      "initiator": {
+        "stack": {
+          "callFrames": [
+            {
+              "columnNumber": 782,
+              "functionName": "",
+              "lineNumber": 512,
+              "scriptId": "9",
+              "url": "http://localhost:56683/_expo/static/js/web/entry-6bd9c06febb88561070b8ef3849ee298.js"
+            },
+            {
+              "columnNumber": 237,
+              "functionName": "e.fetchThenEvalAsync",
+              "lineNumber": 512,
+              "scriptId": "9",
+              "url": "http://localhost:56683/_expo/static/js/web/entry-6bd9c06febb88561070b8ef3849ee298.js"
+            },
+            {
+              "columnNumber": 191,
+              "functionName": "e.loadBundleAsync",
+              "lineNumber": 508,
+              "scriptId": "9",
+              "url": "http://localhost:56683/_expo/static/js/web/entry-6bd9c06febb88561070b8ef3849ee298.js"
+            },
+            {
+              "columnNumber": 219,
+              "functionName": "",
+              "lineNumber": 507,
+              "scriptId": "9",
+              "url": "http://localhost:56683/_expo/static/js/web/entry-6bd9c06febb88561070b8ef3849ee298.js"
+            },
+            {
+              "columnNumber": 187,
+              "functionName": "n",
+              "lineNumber": 904,
+              "scriptId": "9",
+              "url": "http://localhost:56683/_expo/static/js/web/entry-6bd9c06febb88561070b8ef3849ee298.js"
+            },
+            {
+              "columnNumber": 273,
+              "functionName": "t",
+              "lineNumber": 904,
+              "scriptId": "9",
+              "url": "http://localhost:56683/_expo/static/js/web/entry-6bd9c06febb88561070b8ef3849ee298.js"
+            },
+            {
+              "columnNumber": 386,
+              "functionName": "o",
+              "lineNumber": 904,
+              "scriptId": "9",
+              "url": "http://localhost:56683/_expo/static/js/web/entry-6bd9c06febb88561070b8ef3849ee298.js"
+            },
+            {
+              "columnNumber": 420,
+              "functionName": "e.exportCard",
+              "lineNumber": 901,
+              "scriptId": "9",
+              "url": "http://localhost:56683/_expo/static/js/web/entry-6bd9c06febb88561070b8ef3849ee298.js"
+            },
+            {
+              "columnNumber": 3863,
+              "functionName": "y",
+              "lineNumber": 900,
+              "scriptId": "9",
+              "url": "http://localhost:56683/_expo/static/js/web/entry-6bd9c06febb88561070b8ef3849ee298.js"
+            },
+            {
+              "columnNumber": 4682,
+              "functionName": "onPress",
+              "lineNumber": 900,
+              "scriptId": "9",
+              "url": "http://localhost:56683/_expo/static/js/web/entry-6bd9c06febb88561070b8ef3849ee298.js"
+            },
+            {
+              "columnNumber": 3906,
+              "functionName": "onClick",
+              "lineNumber": 311,
+              "scriptId": "9",
+              "url": "http://localhost:56683/_expo/static/js/web/entry-6bd9c06febb88561070b8ef3849ee298.js"
+            },
+            {
+              "columnNumber": 132437,
+              "functionName": "mf",
+              "lineNumber": 165,
+              "scriptId": "9",
+              "url": "http://localhost:56683/_expo/static/js/web/entry-6bd9c06febb88561070b8ef3849ee298.js"
+            },
+            {
+              "columnNumber": 137396,
+              "functionName": "",
+              "lineNumber": 165,
+              "scriptId": "9",
+              "url": "http://localhost:56683/_expo/static/js/web/entry-6bd9c06febb88561070b8ef3849ee298.js"
+            },
+            {
+              "columnNumber": 21471,
+              "functionName": "qn",
+              "lineNumber": 165,
+              "scriptId": "9",
+              "url": "http://localhost:56683/_expo/static/js/web/entry-6bd9c06febb88561070b8ef3849ee298.js"
+            },
+            {
+              "columnNumber": 133662,
+              "functionName": "kf",
+              "lineNumber": 165,
+              "scriptId": "9",
+              "url": "http://localhost:56683/_expo/static/js/web/entry-6bd9c06febb88561070b8ef3849ee298.js"
+            },
+            {
+              "columnNumber": 166684,
+              "functionName": "Xd",
+              "lineNumber": 165,
+              "scriptId": "9",
+              "url": "http://localhost:56683/_expo/static/js/web/entry-6bd9c06febb88561070b8ef3849ee298.js"
+            },
+            {
+              "columnNumber": 166506,
+              "functionName": "Kd",
+              "lineNumber": 165,
+              "scriptId": "9",
+              "url": "http://localhost:56683/_expo/static/js/web/entry-6bd9c06febb88561070b8ef3849ee298.js"
+            }
+          ]
+        },
+        "type": "script"
+      },
+      "loaderId": "FF0B7709406E28488019C871162E1904",
+      "redirectHasExtraInfo": false,
+      "renderBlockingBehavior": "NonBlocking",
+      "request": {
+        "headers": {
+          "Referer": "http://localhost:56683/milestone-card",
+          "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+          "sec-ch-ua": "\"Google Chrome\";v=\"155\", \"Chromium\";v=\"155\", \"Not(A:Brand\";v=\"24\"",
+          "sec-ch-ua-mobile": "?0",
+          "sec-ch-ua-platform": "\"Windows\""
+        },
+        "initialPriority": "Low",
+        "isSameSite": true,
+        "method": "GET",
+        "mixedContentType": "none",
+        "referrerPolicy": "strict-origin-when-cross-origin",
+        "url": "http://localhost:56683/_expo/static/js/web/pdf-3711fe07967d06b4d99d4fcff4e55715.js"
+      },
+      "requestId": "20848.19",
+      "timestamp": 30475.250214,
+      "type": "Script",
+      "wallTime": 1791903430.293291
+    },
+    {
+      "documentURL": "http://localhost:56683/milestone-card",
+      "frameId": "CC802F967B8839670773BD27A23A5FEF",
+      "hasUserGesture": true,
+      "initiator": {
+        "stack": {
+          "callFrames": [
+            {
+              "columnNumber": 435,
+              "functionName": "e.exportCard",
+              "lineNumber": 901,
+              "scriptId": "9",
+              "url": "http://localhost:56683/_expo/static/js/web/entry-6bd9c06febb88561070b8ef3849ee298.js"
+            },
+            {
+              "columnNumber": 3863,
+              "functionName": "y",
+              "lineNumber": 900,
+              "scriptId": "9",
+              "url": "http://localhost:56683/_expo/static/js/web/entry-6bd9c06febb88561070b8ef3849ee298.js"
+            },
+            {
+              "columnNumber": 4682,
+              "functionName": "onPress",
+              "lineNumber": 900,
+              "scriptId": "9",
+              "url": "http://localhost:56683/_expo/static/js/web/entry-6bd9c06febb88561070b8ef3849ee298.js"
+            },
+            {
+              "columnNumber": 3906,
+              "functionName": "onClick",
+              "lineNumber": 311,
+              "scriptId": "9",
+              "url": "http://localhost:56683/_expo/static/js/web/entry-6bd9c06febb88561070b8ef3849ee298.js"
+            },
+            {
+              "columnNumber": 132437,
+              "functionName": "mf",
+              "lineNumber": 165,
+              "scriptId": "9",
+              "url": "http://localhost:56683/_expo/static/js/web/entry-6bd9c06febb88561070b8ef3849ee298.js"
+            },
+            {
+              "columnNumber": 137396,
+              "functionName": "",
+              "lineNumber": 165,
+              "scriptId": "9",
+              "url": "http://localhost:56683/_expo/static/js/web/entry-6bd9c06febb88561070b8ef3849ee298.js"
+            },
+            {
+              "columnNumber": 21471,
+              "functionName": "qn",
+              "lineNumber": 165,
+              "scriptId": "9",
+              "url": "http://localhost:56683/_expo/static/js/web/entry-6bd9c06febb88561070b8ef3849ee298.js"
+            },
+            {
+              "columnNumber": 133662,
+              "functionName": "kf",
+              "lineNumber": 165,
+              "scriptId": "9",
+              "url": "http://localhost:56683/_expo/static/js/web/entry-6bd9c06febb88561070b8ef3849ee298.js"
+            },
+            {
+              "columnNumber": 166684,
+              "functionName": "Xd",
+              "lineNumber": 165,
+              "scriptId": "9",
+              "url": "http://localhost:56683/_expo/static/js/web/entry-6bd9c06febb88561070b8ef3849ee298.js"
+            },
+            {
+              "columnNumber": 166506,
+              "functionName": "Kd",
+              "lineNumber": 165,
+              "scriptId": "9",
+              "url": "http://localhost:56683/_expo/static/js/web/entry-6bd9c06febb88561070b8ef3849ee298.js"
+            }
+          ]
+        },
+        "type": "script"
+      },
+      "loaderId": "FF0B7709406E28488019C871162E1904",
+      "redirectHasExtraInfo": false,
+      "request": {
+        "headers": {
+          "Referer": "http://localhost:56683/milestone-card",
+          "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+          "sec-ch-ua": "\"Google Chrome\";v=\"155\", \"Chromium\";v=\"155\", \"Not(A:Brand\";v=\"24\"",
+          "sec-ch-ua-mobile": "?0",
+          "sec-ch-ua-platform": "\"Windows\""
+        },
+        "initialPriority": "High",
+        "isSameSite": true,
+        "method": "GET",
+        "mixedContentType": "none",
+        "referrerPolicy": "strict-origin-when-cross-origin",
+        "url": "http://localhost:56683/fonts/NotoSans-Regular.ttf"
+      },
+      "requestId": "20848.20",
+      "timestamp": 30475.250466,
+      "type": "Fetch",
+      "wallTime": 1791903430.293493
+    },
+    {
+      "documentURL": "http://localhost:56683/milestone-card",
+      "frameId": "CC802F967B8839670773BD27A23A5FEF",
+      "hasUserGesture": true,
+      "initiator": {
+        "stack": {
+          "callFrames": [
+            {
+              "columnNumber": 589,
+              "functionName": "e.exportCard",
+              "lineNumber": 901,
+              "scriptId": "9",
+              "url": "http://localhost:56683/_expo/static/js/web/entry-6bd9c06febb88561070b8ef3849ee298.js"
+            },
+            {
+              "columnNumber": 3863,
+              "functionName": "y",
+              "lineNumber": 900,
+              "scriptId": "9",
+              "url": "http://localhost:56683/_expo/static/js/web/entry-6bd9c06febb88561070b8ef3849ee298.js"
+            },
+            {
+              "columnNumber": 4682,
+              "functionName": "onPress",
+              "lineNumber": 900,
+              "scriptId": "9",
+              "url": "http://localhost:56683/_expo/static/js/web/entry-6bd9c06febb88561070b8ef3849ee298.js"
+            },
+            {
+              "columnNumber": 3906,
+              "functionName": "onClick",
+              "lineNumber": 311,
+              "scriptId": "9",
+              "url": "http://localhost:56683/_expo/static/js/web/entry-6bd9c06febb88561070b8ef3849ee298.js"
+            },
+            {
+              "columnNumber": 132437,
+              "functionName": "mf",
+              "lineNumber": 165,
+              "scriptId": "9",
+              "url": "http://localhost:56683/_expo/static/js/web/entry-6bd9c06febb88561070b8ef3849ee298.js"
+            },
+            {
+              "columnNumber": 137396,
+              "functionName": "",
+              "lineNumber": 165,
+              "scriptId": "9",
+              "url": "http://localhost:56683/_expo/static/js/web/entry-6bd9c06febb88561070b8ef3849ee298.js"
+            },
+            {
+              "columnNumber": 21471,
+              "functionName": "qn",
+              "lineNumber": 165,
+              "scriptId": "9",
+              "url": "http://localhost:56683/_expo/static/js/web/entry-6bd9c06febb88561070b8ef3849ee298.js"
+            },
+            {
+              "columnNumber": 133662,
+              "functionName": "kf",
+              "lineNumber": 165,
+              "scriptId": "9",
+              "url": "http://localhost:56683/_expo/static/js/web/entry-6bd9c06febb88561070b8ef3849ee298.js"
+            },
+            {
+              "columnNumber": 166684,
+              "functionName": "Xd",
+              "lineNumber": 165,
+              "scriptId": "9",
+              "url": "http://localhost:56683/_expo/static/js/web/entry-6bd9c06febb88561070b8ef3849ee298.js"
+            },
+            {
+              "columnNumber": 166506,
+              "functionName": "Kd",
+              "lineNumber": 165,
+              "scriptId": "9",
+              "url": "http://localhost:56683/_expo/static/js/web/entry-6bd9c06febb88561070b8ef3849ee298.js"
+            }
+          ]
+        },
+        "type": "script"
+      },
+      "loaderId": "FF0B7709406E28488019C871162E1904",
+      "redirectHasExtraInfo": false,
+      "request": {
+        "headers": {
+          "Referer": "http://localhost:56683/milestone-card",
+          "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+          "sec-ch-ua": "\"Google Chrome\";v=\"155\", \"Chromium\";v=\"155\", \"Not(A:Brand\";v=\"24\"",
+          "sec-ch-ua-mobile": "?0",
+          "sec-ch-ua-platform": "\"Windows\""
+        },
+        "initialPriority": "High",
+        "isSameSite": true,
+        "method": "GET",
+        "mixedContentType": "none",
+        "referrerPolicy": "strict-origin-when-cross-origin",
+        "url": "http://localhost:56683/fonts/NotoSans-Bold.ttf"
+      },
+      "requestId": "20848.21",
+      "timestamp": 30475.250545,
+      "type": "Fetch",
+      "wallTime": 1791903430.293571
+    },
+    {
+      "documentURL": "http://localhost:56683/milestone-card",
+      "frameId": "CC802F967B8839670773BD27A23A5FEF",
+      "hasUserGesture": false,
+      "initiator": {
+        "type": "other"
+      },
+      "loaderId": "E35B396440468A533197AF35F846300A",
+      "redirectHasExtraInfo": false,
+      "request": {
+        "headers": {
+          "Upgrade-Insecure-Requests": "1",
+          "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+          "sec-ch-ua": "\"Google Chrome\";v=\"155\", \"Chromium\";v=\"155\", \"Not(A:Brand\";v=\"24\"",
+          "sec-ch-ua-mobile": "?0",
+          "sec-ch-ua-platform": "\"Windows\""
+        },
+        "initialPriority": "VeryHigh",
+        "isSameSite": true,
+        "method": "GET",
+        "mixedContentType": "none",
+        "referrerPolicy": "strict-origin-when-cross-origin",
+        "url": "http://localhost:56683/milestone-card"
+      },
+      "requestId": "E35B396440468A533197AF35F846300A",
+      "timestamp": 30476.346773,
+      "type": "Document",
+      "wallTime": 1791903431.389784
+    },
+    {
+      "documentURL": "http://localhost:56683/milestone-card",
+      "frameId": "CC802F967B8839670773BD27A23A5FEF",
+      "hasUserGesture": false,
+      "initiator": {
+        "columnNumber": 14897,
+        "lineNumber": 495,
+        "type": "parser",
+        "url": "http://localhost:56683/milestone-card"
+      },
+      "loaderId": "E35B396440468A533197AF35F846300A",
+      "redirectHasExtraInfo": false,
+      "renderBlockingBehavior": "NonBlocking",
+      "request": {
+        "headers": {
+          "Referer": "http://localhost:56683/milestone-card",
+          "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+          "sec-ch-ua": "\"Google Chrome\";v=\"155\", \"Chromium\";v=\"155\", \"Not(A:Brand\";v=\"24\"",
+          "sec-ch-ua-mobile": "?0",
+          "sec-ch-ua-platform": "\"Windows\""
+        },
+        "initialPriority": "Low",
+        "isSameSite": true,
+        "method": "GET",
+        "mixedContentType": "none",
+        "referrerPolicy": "strict-origin-when-cross-origin",
+        "url": "http://localhost:56683/_expo/static/js/web/entry-6bd9c06febb88561070b8ef3849ee298.js"
+      },
+      "requestId": "20848.23",
+      "timestamp": 30476.366796,
+      "type": "Script",
+      "wallTime": 1791903431.409812
+    },
+    {
+      "documentURL": "http://localhost:56683/milestone-card",
+      "frameId": "CC802F967B8839670773BD27A23A5FEF",
+      "hasUserGesture": false,
+      "initiator": {
+        "type": "other"
+      },
+      "loaderId": "52EC10D469C116D4F66D895A0E922D5A",
+      "redirectHasExtraInfo": false,
+      "request": {
+        "headers": {
+          "Upgrade-Insecure-Requests": "1",
+          "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+          "sec-ch-ua": "\"Google Chrome\";v=\"155\", \"Chromium\";v=\"155\", \"Not(A:Brand\";v=\"24\"",
+          "sec-ch-ua-mobile": "?0",
+          "sec-ch-ua-platform": "\"Windows\""
+        },
+        "initialPriority": "VeryHigh",
+        "isSameSite": true,
+        "method": "GET",
+        "mixedContentType": "none",
+        "referrerPolicy": "strict-origin-when-cross-origin",
+        "url": "http://localhost:56683/milestone-card"
+      },
+      "requestId": "52EC10D469C116D4F66D895A0E922D5A",
+      "timestamp": 30552.613433,
+      "type": "Document",
+      "wallTime": 1791903507.65644
+    },
+    {
+      "documentURL": "http://localhost:56683/milestone-card",
+      "frameId": "CC802F967B8839670773BD27A23A5FEF",
+      "hasUserGesture": false,
+      "initiator": {
+        "columnNumber": 14897,
+        "lineNumber": 495,
+        "type": "parser",
+        "url": "http://localhost:56683/milestone-card"
+      },
+      "loaderId": "52EC10D469C116D4F66D895A0E922D5A",
+      "redirectHasExtraInfo": false,
+      "renderBlockingBehavior": "NonBlocking",
+      "request": {
+        "headers": {
+          "Referer": "http://localhost:56683/milestone-card",
+          "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+          "sec-ch-ua": "\"Google Chrome\";v=\"155\", \"Chromium\";v=\"155\", \"Not(A:Brand\";v=\"24\"",
+          "sec-ch-ua-mobile": "?0",
+          "sec-ch-ua-platform": "\"Windows\""
+        },
+        "initialPriority": "Low",
+        "isSameSite": true,
+        "method": "GET",
+        "mixedContentType": "none",
+        "referrerPolicy": "strict-origin-when-cross-origin",
+        "url": "http://localhost:56683/_expo/static/js/web/entry-6bd9c06febb88561070b8ef3849ee298.js"
+      },
+      "requestId": "20848.27",
+      "timestamp": 30552.639117,
+      "type": "Script",
+      "wallTime": 1791903507.68217
+    }
+  ],
+  "hasMore": false,
+  "truncated": false,
+  "markerInRequests": false,
+  "markerLogs": [],
+  "currentUrl": "http://localhost:56683/saved"
+}

@@ -1,0 +1,90 @@
+- link "Urgent help":
+  - /url: /urgent-help
+  - generic: Urgent help
+  - generic: ›
+- generic: VAD & Carotid Support
+- navigation "Main navigation":
+  - link "Home":
+    - /url: /
+    - generic: Home
+  - button "Menu":
+    - generic: Menu
+  - link "Text and display":
+    - /url: /accessibility
+    - generic: Text and display
+- link "Skip to main content":
+  - generic: Skip to main content
+- main:
+  - link "Back to home":
+    - /url: /
+    - generic: ←
+    - generic: Home
+  - generic: GUIDE LIBRARY
+  - heading "Words you may see in a report." [level=1]
+  - generic: Short definitions for unfamiliar terms. You do not need to understand every word at once.
+  - generic: Draft information · review pending
+  - generic: Clinical and patient/carer reviews are not yet recorded. For personal care questions, ask your doctor.
+  - link "About the review process":
+    - /url: /about
+    - generic: About the review process
+  - heading "Using this glossary" [level=2]
+  - generic: These are general definitions, not an interpretation of your scan or a description of your personal care. If a word in your report is unclear, ask the clinician who reviewed it to explain it in everyday language.
+  - heading "Find a term" [level=2]
+  - textbox "Search glossary terms":
+    - /placeholder: "For example: artery, imaging, stroke"
+  - generic: 8 terms shown
+  - heading "CAD" [level=2]
+  - generic: In this app, CAD means carotid artery dissection.
+  - generic: The abbreviation can mean other things elsewhere. Check how it is used in your own report.
+  - 'link "Open source: Treatment and Outcomes of Cervical Artery Dissection in Adults: A Scientific Statement From the American Heart Association"':
+    - generic: "Source: Treatment and Outcomes of Cervical Artery Dissection in Adults: A Scientific Statement From the American Heart Association ↗"
+  - heading "Dissection" [level=2]
+  - generic: A problem involving the wall of an artery. A cervical artery dissection affects an artery in the neck, such as a carotid or vertebral artery.
+  - generic: This general definition cannot explain the location, cause, seriousness or care plan in an individual case.
+  - 'link "Open source: Treatment and Outcomes of Cervical Artery Dissection in Adults: A Scientific Statement From the American Heart Association"':
+    - generic: "Source: Treatment and Outcomes of Cervical Artery Dissection in Adults: A Scientific Statement From the American Heart Association ↗"
+  - heading "Extracranial / intracranial" [level=2]
+  - generic: Extracranial means outside the skull; intracranial means inside the skull.
+  - generic: These words describe location. They do not explain what a finding means for a person.
+  - 'link "Open source: Anatomy, Head and Neck, Skull"':
+    - generic: "Source: Anatomy, Head and Neck, Skull ↗"
+  - heading "Infarct" [level=2]
+  - generic: An area of tissue injury associated with loss of its blood supply.
+  - generic: The word alone does not tell you the location, size, timing, cause or effects of a finding.
+  - 'link "Open source: NICE guideline glossary: infarct"':
+    - generic: "Source: NICE guideline glossary: infarct ↗"
+  - heading "Occlusion" [level=2]
+  - generic: A blockage or closure of a vessel.
+  - generic: Ask the clinician who reviewed the test what vessel and area the report describes and what it means in your case.
+  - 'link "Open source: Carotid Artery Stenosis: Diagnosis and Treatment"':
+    - generic: "Source: Carotid Artery Stenosis: Diagnosis and Treatment ↗"
+  - heading "Pseudoaneurysm" [level=2]
+  - generic: A pocket of blood outside the usual layers of an artery wall, connected to the artery through a defect in the wall.
+  - generic: A definition cannot establish the location or significance of a finding in an individual report.
+  - 'link "Open source: Pseudoaneurysm"':
+    - generic: "Source: Pseudoaneurysm ↗"
+  - heading "Stenosis" [level=2]
+  - generic: Narrowing.
+  - generic: The word alone does not say how much a vessel is narrowed or what that means for you.
+  - 'link "Open source: Definition: stenosis"':
+    - generic: "Source: Definition: stenosis ↗"
+  - heading "VAD" [level=2]
+  - generic: Vertebral artery dissection.
+  - generic: A clinician can explain which artery and part of the artery are involved in an individual case.
+  - 'link "Open source: Treatment and Outcomes of Cervical Artery Dissection in Adults: A Scientific Statement From the American Heart Association"':
+    - generic: "Source: Treatment and Outcomes of Cervical Artery Dissection in Adults: A Scientific Statement From the American Heart Association ↗"
+  - heading "Still unsure?" [level=2]
+  - generic: "You can ask: “Could you explain this word and tell me what it means in my situation?” This app cannot interpret reports or scans."
+  - generic: Development preview · general information only · not a medical service
+  - link "About and privacy":
+    - /url: /about
+    - generic: About and privacy
+  - link "Accessibility":
+    - /url: /accessibility
+    - generic: Accessibility
+  - link "Saved on this device":
+    - /url: /saved
+    - generic: Saved on this device
+  - link "Urgent help":
+    - /url: /urgent-help
+    - generic: Urgent help

@@ -1,6 +1,7 @@
 {
   "expo": {
-    "name": "VAD & Carotid Support",
+    "name": "Dissection Companion",
+    "description": "Vertebral & carotid artery support",
     "slug": "vad-carotid-support",
     "scheme": "vadcarotidsupport",
     "version": "0.1.0",
@@ -9,7 +10,9 @@
     "newArchEnabled": true,
     "plugins": [
       "expo-router",
-      "expo-status-bar"
+      "expo-status-bar",
+      "expo-secure-store",
+      "expo-sharing"
     ],
     "experiments": {
       "typedRoutes": true
@@ -19,7 +22,7 @@
     },
     "android": {
       "adaptiveIcon": {
-        "backgroundColor": "#edf5f3"
+        "backgroundColor": "#F5F6F4"
       }
     },
     "web": {

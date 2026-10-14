@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 1,
+  "projectId": "12616131620803892891",
+  "title": "VAD & Carotid Support — design reference",
+  "url": "https://stitch.withgoogle.com/projects/12616131620803892891",
+  "checkedOn": "2026-10-13",
+  "access": "Created in the existing account; sharing was not changed",
+  "integration": "Browser UI; no callable Stitch MCP tools in this session",
+  "screens": [
+    {"title": "Existing Home — phone", "kind": "reference-image", "width": 390, "height": 844, "localFile": "docs/design-tools/proof/home-phone.jpg", "canvasName": "clipboard.jpeg", "screenId": null},
+    {"title": "Existing Home — desktop", "kind": "reference-image", "width": 1440, "height": 900, "localFile": "docs/design-tools/proof/home-desktop.jpg", "canvasName": "clipboard.jpeg", "screenId": null}
+  ],
+  "designSystem": {
+    "name": "VAD & Carotid Support",
+    "sourceGuide": ".stitch/DESIGN.md",
+    "guideTransfer": "Full source guide submitted as the project design-context request; standalone markdown file upload was not verified",
+    "assetId": null,
+    "observedPrimary": "#26736E",
+    "observedSecondary": "#195B58",
+    "limits": "Native canvas asset and base colours observed after reload. Stitch generates additional tone ramps/specimens. Exact token, theme, typography and component equivalence is not established; nothing was applied to app source. GUI did not expose asset IDs."
+  },
+  "verified": {"projectReload": true, "referenceImageCount": 2, "designSystemCanvasAsset": true, "nativeEditableScreens": false, "appCodeChanged": false, "repositoryConnected": false}
+}

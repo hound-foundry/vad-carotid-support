@@ -1,0 +1,61 @@
+{
+  "reportsLockedBeforeApplicationChanges": true,
+  "recordedAtUtc": "2026-10-13T12:50:58.4401169Z",
+  "reports": [
+    {
+      "tester": "T1",
+      "agent": "/root/tester_t1",
+      "model": "gpt-6-luna",
+      "inheritedConversation": false,
+      "baselineRevision": "72688788cb926af39b9813c38ac830301a0eaeda",
+      "origin": "http://localhost:51068/",
+      "score": 9,
+      "reportMdSha256": "6DA04597679E0AF832CBDB08F0649F14F9E6B28A9C014895480A7A1AFA4160AF",
+      "reportJsonSha256": "DDEB3B8A8DC4E54F8B7BE55164D2271EAA18A3B5E7BAEEA28C81FC640A0EFF27"
+    },
+    {
+      "tester": "T2",
+      "agent": "/root/tester_t2",
+      "model": "gpt-6-luna",
+      "inheritedConversation": false,
+      "baselineRevision": "72688788cb926af39b9813c38ac830301a0eaeda",
+      "origin": "http://localhost:51069",
+      "score": 8,
+      "reportMdSha256": "8355B08ED82B16407FB9F928FA0EEBBA50FB92CD15FE23D801FB7C5AB956A5D1",
+      "reportJsonSha256": "1723CEA2B313E95F040E30CFC89705551A79F5CB7555208BB07276F942BD8715"
+    },
+    {
+      "tester": "T3",
+      "agent": "/root/tester_t3",
+      "model": "gpt-6-luna",
+      "inheritedConversation": false,
+      "baselineRevision": "72688788cb926af39b9813c38ac830301a0eaeda",
+      "origin": "http://localhost:51070",
+      "score": 8,
+      "reportMdSha256": "B351127D33DDB9E1A51CD798D966E9C842176979AAD9672071F95BA6317F95F4",
+      "reportJsonSha256": "9FAC855363BD4847A36DD2D5E0993EB47F1851339DD00A525D89F1592EDF30F1"
+    },
+    {
+      "tester": "T4",
+      "agent": "/root/tester_t4",
+      "model": "gpt-6-luna",
+      "inheritedConversation": false,
+      "baselineRevision": "72688788cb926af39b9813c38ac830301a0eaeda",
+      "origin": "http://localhost:51071",
+      "score": 7,
+      "reportMdSha256": "C2440EC3E457969249CA8B16B9364836212433A2D83250E05B3AA4A95D3F49E5",
+      "reportJsonSha256": "125DF4B6614D282CBAE02BDEF7208A1ADE909585FB157A8072F09BAACB73C40C"
+    },
+    {
+      "tester": "T5",
+      "agent": "/root/tester_t5",
+      "model": "gpt-6-luna",
+      "inheritedConversation": false,
+      "baselineRevision": "72688788cb926af39b9813c38ac830301a0eaeda",
+      "origin": null,
+      "score": 7,
+      "reportMdSha256": "02CADA162E26D04F07C08B4F768B9B5A7A4CDF923BDC6E49AF23CF9E82312AAC",
+      "reportJsonSha256": "F395C87C46227B92007A15E2BF30A20981CCFE5A9D31B434F57BE9AD12A0AF20"
+    }
+  ]
+}

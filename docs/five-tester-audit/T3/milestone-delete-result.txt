@@ -1,0 +1,14 @@
+error=
+dialog=undefined
+Browser tab: 1, Title: "VAD & Carotid Support", URL: "http://localhost:51070/milestone-card".
+The following is a diff from the previous accessibility tree with ~ and + representing changed and added elements, respectively. Removed elements are summarized by ID range.
+Removed element IDs: 83-84
+~					81 container
+~						82 heading Delete saved card?, Value: 2
++							83 text Delete saved card?
++						84 text This removes the saved card from this device. Downloaded and printed copies are unchanged.
++						85 button Cancel deletion
++							86 text Cancel deletion
++						87 button Confirm delete saved card
++							88 text Confirm delete saved card
+The focused UI element is 85 button Cancel deletion

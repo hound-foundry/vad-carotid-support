@@ -1,0 +1,56 @@
+Browser tab: 1, Title: "VAD & Carotid Support", URL: "http://localhost:51070/personal-card".
+1 AXWebArea VAD & Carotid Support, URL: localhost:51070/personal-card
+	2 container
+		3 link Description: Urgent help, Value: localhost:51070/urgent-help
+		4 container
+			5 text VAD & Carotid Support
+			6 container Main navigation
+				7 link Description: Home, Value: localhost:51070/
+				8 button (collapsed) Menu, Secondary Actions: Expand
+					9 text Menu
+				10 link Description: Text and display, Value: localhost:51070/accessibility
+		11 container
+			12 link Description: Skip to main content, ID: skip-to-content
+				13 text Skip to main content
+			14 container
+				15 link Description: Back to home, Value: localhost:51070/
+				16 container
+					17 heading Medical and communication card, Value: 1
+						18 text Medical and communication card
+					19 text Choose what helps. Every field is optional.
+				20 text Communication statements (optional)
+				21 checkbox Description: Please give me time to answer., Value: 1
+					22 text ✓
+					23 text Please give me time to answer.
+				24 checkbox Description: Please write important things down., Value: 0
+					25 text Please write important things down.
+				26 checkbox Description: Please use short, clear sentences., Value: 0
+					27 text Please use short, clear sentences.
+				28 checkbox Description: Please ask before helping me., Value: 0
+					29 text Please ask before helping me.
+				30 button (collapsed) Name and your own words (optional) · Show, Secondary Actions: Expand
+					31 container
+						32 text Name and your own words (optional)  ·  Show
+				33 button Review card
+					34 text Review card
+				35 button (collapsed) Additional details (contains entries) · Show, Secondary Actions: Expand
+					36 container
+						37 text Additional details (contains entries)  ·  Show
+				38 text Personal information card — not an official medical record or emergency plan.
+				39 text Saved card restored from this device.
+				40 button Save on this device
+					41 text Save on this device
+				42 button (collapsed) Start blank or delete saved card · Show, Secondary Actions: Expand
+					43 container
+						44 text Start blank or delete saved card  ·  Show
+				45 button (collapsed) Privacy and leaving this page · Show, Secondary Actions: Expand
+					46 container
+						47 text Privacy and leaving this page  ·  Show
+				48 text Development preview · general information only · not a medical service
+				49 container
+					50 link Description: About and privacy, Value: localhost:51070/about
+					51 link Description: Accessibility, Value: localhost:51070/accessibility
+					52 link Description: Saved on this device, Value: localhost:51070/saved
+					53 link Description: Urgent help, Value: localhost:51070/urgent-help
+
+The focused UI element is 1 AXWebArea VAD & Carotid Support, URL: localhost:51070/personal-card

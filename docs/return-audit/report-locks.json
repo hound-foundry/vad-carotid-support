@@ -1,0 +1,47 @@
+{
+  "revision": "8c4087e9fa2764ae3b5cd791c0d5a66834372936",
+  "date": "2026-10-13",
+  "basis": "Independent assessments of primary-actuated current evidence; T1 T3 T5 returning, T2 T4 fresh",
+  "records": [
+    {
+      "file": "docs/return-audit/T1/report.md",
+      "sha256": "1cfd365a34b15ada17931a0e69f431b5313a56d4737614d8f38b7b24c9377c1b"
+    },
+    {
+      "file": "docs/return-audit/T1/findings.json",
+      "sha256": "87c2b6799da4f581723374f2bb0600957e4e5fbc5fc698ab2480830368e32aa2"
+    },
+    {
+      "file": "docs/return-audit/T2/report.md",
+      "sha256": "a85495d3fdea9b96bfab50a6b5ce8f1388acd51a072a50fe2fc0d6f53980e486"
+    },
+    {
+      "file": "docs/return-audit/T2/findings.json",
+      "sha256": "11917ba899d1d5cd04c68b8d078d21e557b22f649f76b94e4903df71cfcc41d3"
+    },
+    {
+      "file": "docs/return-audit/T3/report.md",
+      "sha256": "07fc2d3787574b6b7e065c4765d1a498482f847fb8319a892c58a7b24a9357be"
+    },
+    {
+      "file": "docs/return-audit/T3/findings.json",
+      "sha256": "aae3c3f25153c36c80c834fb17041d58558bc9fa48a6dccd3f84b74ebde167eb"
+    },
+    {
+      "file": "docs/return-audit/T4/report.md",
+      "sha256": "d509c1a39ef946ceaa150cd7b01794bbc1f3707bde5b01e165010019e3940052"
+    },
+    {
+      "file": "docs/return-audit/T4/findings.json",
+      "sha256": "256a3825ab1cdef60f4736dd292e5d753c71eaecd81b57e5ce1cf82fbcc475e8"
+    },
+    {
+      "file": "docs/return-audit/T5/report.md",
+      "sha256": "88b16f5932bc0a39e77dfb46f8265df02ac527c765fa1a5031ba74285fbb1345"
+    },
+    {
+      "file": "docs/return-audit/T5/findings.json",
+      "sha256": "d3f865ffd7281d9e30c0b1ccbf45b78c46f85d571fcc638066a5e5922843ca53"
+    }
+  ]
+}

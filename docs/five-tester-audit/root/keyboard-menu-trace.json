@@ -1,0 +1,47 @@
+{
+  "viewport": "320x568",
+  "appText": "200%",
+  "steps": [
+    {
+      "step": 1,
+      "focus": "Text & display"
+    },
+    {
+      "step": 2,
+      "focus": "Guides"
+    },
+    {
+      "step": 3,
+      "focus": "Prepare an appointment"
+    },
+    {
+      "step": 4,
+      "focus": "Make a card"
+    },
+    {
+      "step": 5,
+      "focus": "Help someone"
+    },
+    {
+      "step": 6,
+      "focus": "Support preferences"
+    },
+    {
+      "step": 7,
+      "focus": "Look up a term"
+    },
+    {
+      "step": 8,
+      "focus": "Resources"
+    },
+    {
+      "step": 9,
+      "focus": "Saved on this device"
+    },
+    {
+      "step": 10,
+      "focus": "About and privacy"
+    }
+  ],
+  "escapeFocus": "Menu"
+}

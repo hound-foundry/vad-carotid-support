@@ -1,6 +1,120 @@
-import { Link } from "expo-router";
-import { Pressable, StyleSheet, Text, View } from "react-native";
-import { SafeAreaView } from "react-native-safe-area-context";
-export default function AppointmentsScreen(){return <Page title="Make space for your questions." body="A private appointment question sheet is planned here. The aim is to help you bring the questions that matter to you to your own care team."/>}
-function Page({title,body}:{title:string;body:string}){return <SafeAreaView style={s.safe}><View style={s.page}><Link href="/" asChild><Pressable accessibilityRole="link"><Text style={s.back}>‹  Home</Text></Pressable></Link><Text style={s.label}>IN DEVELOPMENT</Text><Text style={s.title}>{title}</Text><Text style={s.body}>{body}</Text><Text style={s.note}>No individual medical advice is provided in this app. Ask your treating team about your own care.</Text></View></SafeAreaView>}
-const s=StyleSheet.create({safe:{flex:1,backgroundColor:"#F7F8F5"},page:{width:"100%",maxWidth:760,alignSelf:"center",padding:26},back:{color:"#537670",fontSize:14,paddingVertical:18},label:{marginTop:25,color:"#676D91",fontSize:11,fontWeight:"700",letterSpacing:1.5},title:{marginTop:12,color:"#263D3A",fontSize:30,lineHeight:38,fontWeight:"600"},body:{marginTop:14,color:"#576762",fontSize:16,lineHeight:25},note:{marginTop:26,color:"#7B8781",fontSize:13,lineHeight:21}});
+import { Pressable, Text, TextInput, View } from "../src/components/Ui";
+import { useEffect, useRef, useState } from "react";
+import { Platform, StyleSheet, type ScrollView as NativeScrollView } from "react-native";
+import { useLocalSearchParams } from "expo-router";
+import { AppPage, Card, PageHeading } from "../src/components/AppPage";
+import { appointmentPrompts, emptyAppointmentSheet, formatAppointmentExport, guidePromptSuggestions, MAX_NOTE_LENGTH, type AppointmentSheet } from "../src/features/appointments/model.mjs";
+import { exportAppointmentSheet, loadAppointmentSheet, saveAppointmentSheet, deleteAppointmentSheet } from "../src/features/appointments/store";
+import { useSheetDraft } from "../src/features/sheets/useSheetDraft";
+import { ConfirmDelete } from "../src/components/ConfirmDelete";
+import { PageAnchor, usePageAnchor } from "../src/components/PageAnchor";
+import { useAccessibility } from "../src/features/accessibility/AccessibilityProvider";
+import { useSheetView } from "../src/features/reading-session/ReadingSessionProvider";
+
+export default function AppointmentsScreen() {
+  const { guide } = useLocalSearchParams<{ guide?: string }>();
+  const draft = useSheetDraft<AppointmentSheet>({
+    id: "appointment-sheet",
+    empty: emptyAppointmentSheet,
+    isEmpty: (value) => value.selectedIds.length === 0 && value.note.length === 0,
+    load: loadAppointmentSheet,
+    save: saveAppointmentSheet,
+    remove: deleteAppointmentSheet,
+    suggestion: () => {
+      const ids = typeof guide === "string" ? guidePromptSuggestions[guide as keyof typeof guidePromptSuggestions] ?? [] : [];
+      return ids.length ? { selectedIds: [...ids], note: "" } : undefined;
+    },
+  });
+  const sheet = draft.value;
+  const [message, setMessage] = useState("");
+  const promptGroups = [...new Set(appointmentPrompts.map((prompt) => prompt.group))];
+  const { settings } = useAccessibility();
+  const { oneAtATime: oneGroupAtATime, selectedOnly: showSelectedOnly, optionsOpen: showViewOptions, pageIndex: groupIndex,
+    setOneAtATime: setOneGroupAtATime, setSelectedOnly: setShowSelectedOnly, setOptionsOpen: setShowViewOptions, setPageIndex: setGroupIndex,
+  } = useSheetView("appointment-sheet", promptGroups.length, settings.simplifiedReading);
+  const scrollRef = useRef<NativeScrollView>(null);
+  const choices = usePageAnchor(scrollRef); const preview = usePageAnchor(scrollRef);
+  useEffect(() => {
+    if (Platform.OS !== "web" || typeof document === "undefined") return;
+    const style = document.createElement("style");
+    style.dataset.appointmentPrint = "true";
+    style.textContent = "@media print { body * { visibility: hidden !important; } #appointment-sheet-print, #appointment-sheet-print * { visibility: visible !important; } #appointment-sheet-print { position: absolute !important; inset: 0 auto auto 0 !important; width: 100% !important; padding: 24px !important; background: #fff !important; color: #111 !important; } #appointment-sheet-print * { color: #111 !important; } }";
+    document.head.appendChild(style);
+    return () => style.remove();
+  }, []);
+  const toggle = (id: string) => { setMessage(""); draft.edit((current) => ({ ...current, selectedIds: current.selectedIds.includes(id) ? current.selectedIds.filter((selected) => selected !== id) : [...current.selectedIds, id] })); };
+  const toggleGroup = (group: string) => {
+    const groupIds = appointmentPrompts.filter((prompt) => prompt.group === group).map((prompt) => prompt.id);
+    const allSelected = groupIds.every((id) => sheet.selectedIds.includes(id));
+    setMessage("");
+    draft.edit((current) => ({ ...current, selectedIds: allSelected ? current.selectedIds.filter((id) => !groupIds.includes(id)) : [...new Set([...current.selectedIds, ...groupIds])] }));
+  };
+  const save = async () => { const ok = await draft.save(); setMessage(ok ? "" : "Could not save on this device. You can still review or export this sheet."); };
+  const remove = async () => {
+    const ok = await draft.remove();
+    setMessage(ok ? "Saved sheet deleted from this app’s device storage." : "Could not delete the saved sheet from device storage.");
+    return ok;
+  };
+  const exportSheet = async () => { try { await exportAppointmentSheet(sheet); setMessage("Export opened after your request. The destination app or file is outside this project’s control."); } catch { setMessage("Export did not complete."); } };
+  const copySheet = async () => { try { if (!globalThis.navigator?.clipboard) { setMessage("Copying is unavailable in this browser. Use Export sheet instead."); return; } await globalThis.navigator.clipboard.writeText(formatAppointmentExport(sheet)); setMessage("Question sheet copied after your request. The destination app is outside this project’s control."); } catch { setMessage("Copying did not complete. Use Export sheet instead."); } };
+  const printSheet = () => { if (Platform.OS === "web") globalThis.print?.(); };
+
+  const visibleGroups = oneGroupAtATime ? promptGroups.slice(groupIndex, groupIndex + 1) : promptGroups;
+  return <AppPage scrollRef={scrollRef}><PageHeading compact eyebrow="Appointment preparation" title="Prepare an appointment" summary="Choose what matters most today. Start with one question, add a reminder, then review before saving or exporting." />
+    <Pressable accessibilityRole="button" accessibilityState={{ expanded: showViewOptions }} onPress={() => setShowViewOptions((visible) => !visible)} style={styles.viewOptions}><Text style={styles.viewOptionsText}>{showViewOptions ? "Hide viewing options" : "Optional viewing options"}</Text></Pressable>
+    {showViewOptions ? <Card title="Choose your pace">
+      <Text style={styles.helper}>You do not need to choose everything. One question is a useful start, and you can change your choices at any time.</Text>
+      <Pressable accessibilityRole="checkbox" accessibilityLabel="Show one appointment section at a time" accessibilityState={{ checked: oneGroupAtATime }} onPress={() => setOneGroupAtATime((current) => !current)} style={styles.paceOption}>
+        <View style={[styles.checkbox, oneGroupAtATime && styles.checked]}>{oneGroupAtATime ? <Text style={styles.check}>✓</Text> : null}</View>
+        <Text style={styles.optionText}>Show one section at a time</Text>
+      </Pressable>
+      <Pressable accessibilityRole="checkbox" accessibilityLabel="Show selected questions only" accessibilityState={{ checked: showSelectedOnly }} onPress={() => setShowSelectedOnly((current) => !current)} style={styles.paceOption}>
+        <View style={[styles.checkbox, showSelectedOnly && styles.checked]}>{showSelectedOnly ? <Text style={styles.check}>✓</Text> : null}</View>
+        <Text style={styles.optionText}>Show selected questions only</Text>
+      </Pressable>
+      <Text style={styles.helper}>Your selected questions stay on this screen as you move between sections. You can change this view at any time.</Text>
+    </Card> : null}
+    {oneGroupAtATime ? <View style={styles.stepper}>
+      <Text accessibilityLiveRegion="polite" style={styles.stepProgress}>Section {groupIndex + 1} of {promptGroups.length}: {promptGroups[groupIndex]}</Text>
+      <View style={styles.stepButtons}>
+        <Button title="Previous" secondary onPress={() => setGroupIndex((index) => Math.max(0, index - 1))} disabled={groupIndex === 0} />
+        <Button title={groupIndex === promptGroups.length - 1 ? "End of sections" : "Next section"} secondary onPress={() => setGroupIndex((index) => Math.min(promptGroups.length - 1, index + 1))} disabled={groupIndex === promptGroups.length - 1} />
+      </View>
+    </View> : null}
+    <PageAnchor anchor={choices} label="Appointment choices"><View style={styles.selectionSummary} accessibilityLiveRegion="polite">
+      <Text style={styles.selectionCount}>{sheet.selectedIds.length} {sheet.selectedIds.length === 1 ? "question" : "questions"} selected</Text>
+      {sheet.selectedIds.length > 0 ? <Pressable accessibilityRole="button" onPress={() => { setMessage(""); draft.edit((current) => ({ ...current, selectedIds: [] })); }} style={({ pressed }) => [styles.clearSelection, pressed && styles.pressed]}><Text style={styles.clearSelectionText}>Clear selections</Text></Pressable> : null}
+    </View>{sheet.selectedIds.length > 0 || sheet.note.trim() ? <Button title="Review your sheet" onPress={preview.jump} /> : null}</PageAnchor>
+    {visibleGroups.map((group) => { const allGroupPrompts = appointmentPrompts.filter((prompt) => prompt.group === group); const groupPrompts = showSelectedOnly ? allGroupPrompts.filter((prompt) => sheet.selectedIds.includes(prompt.id)) : allGroupPrompts; const groupSelected = allGroupPrompts.filter((prompt) => sheet.selectedIds.includes(prompt.id)).length; const allSelected = groupSelected === allGroupPrompts.length; if (showSelectedOnly && groupPrompts.length === 0) return null; return <Card key={group} title={group}><Pressable accessibilityRole="button" accessibilityLabel={`${allSelected ? "Clear" : "Select all"} questions in ${group}`} onPress={() => toggleGroup(group)} style={({ pressed }) => [styles.groupAction, pressed && styles.pressed]}><Text style={styles.groupActionText}>{allSelected ? "Clear section" : "Select all in section"}</Text><Text style={styles.groupCount}>{groupSelected}/{allGroupPrompts.length}</Text></Pressable>{groupPrompts.map((prompt) => { const selected = sheet.selectedIds.includes(prompt.id); return <Pressable key={prompt.id} accessibilityRole="checkbox" accessibilityLabel={prompt.text} accessibilityState={{ checked: selected }} onPress={() => toggle(prompt.id)} style={styles.option}><View style={[styles.checkbox, selected && styles.checked]}>{selected ? <Text style={styles.check}>✓</Text> : null}</View><Text style={styles.optionText}>{prompt.text}</Text></Pressable>; })}</Card>; })}
+    <Card title="My own notes (optional)"><Text style={styles.helper}>Keep notes brief and avoid names, dates of birth, contact details or copies of records. Notes stay in this browser profile or on this device unless you export them.</Text><TextInput accessibilityLabel="Optional appointment notes" multiline maxLength={MAX_NOTE_LENGTH} value={sheet.note} onChangeText={(note) => { setMessage(""); draft.edit((current) => ({ ...current, note })); }} placeholder="Write a question or reminder for yourself" placeholderTextColor="#596861" style={styles.input} textAlignVertical="top" /><Text style={styles.counter}>{sheet.note.length}/{MAX_NOTE_LENGTH}</Text></Card>
+    <Card title="If you need to leave safely"><Text style={styles.helper}>Someone who can access this browser or device may see saved questions and notes. Close the page, use a private device when appropriate, and remember that exports, printouts, browser history and backups are outside this app’s control.</Text></Card>
+    <PageAnchor anchor={preview} label="Appointment sheet preview"><Card title="Preview"><View nativeID="appointment-sheet-print"><Text style={styles.previewTitle}>Appointment question sheet</Text>{promptGroups.map((group) => { const selected = appointmentPrompts.filter((prompt) => prompt.group === group && sheet.selectedIds.includes(prompt.id)); return selected.length ? <View key={group}><Text style={styles.previewSubhead}>{group}</Text>{selected.map((prompt) => <Text key={prompt.id} style={styles.previewLine}>□ {prompt.text}</Text>)}</View> : null; })}{sheet.selectedIds.length === 0 ? <Text style={styles.previewLine}>Choose the questions that matter most to you.</Text> : null}{sheet.note.trim() ? <><Text style={styles.previewSubhead}>My own notes</Text><Text style={styles.previewLine}>{sheet.note.trim()}</Text></> : null}<Text style={styles.helper}>For discussion with your own care team. This is not medical advice.</Text></View></Card>
+    <Button title="Back to choices" secondary onPress={choices.jump} />
+    <View style={styles.actions}><Button title={draft.status === "saved" || draft.status === "restored" ? "Saved on this device" : draft.status === "saving" ? "Saving…" : "Save on this device"} onPress={() => void save()} /><Button title="Export sheet" secondary onPress={() => void exportSheet()} />{Platform.OS === "web" ? <><Button title="Copy sheet text" secondary onPress={() => void copySheet()} /><Button title="Print question sheet" secondary onPress={printSheet} /></> : null}<ConfirmDelete label="Delete saved sheet" question="Delete this saved sheet?" detail="This clears the sheet and deletes its saved copy from this device. Downloaded and printed copies are unchanged." onConfirm={remove} disabled={["loading", "saving", "deleting"].includes(draft.status)} /></View>
+    <Text accessibilityLiveRegion="polite" style={styles.status}>{draftStatusMessage(draft.status)} {message}</Text>
+    <Card title="Where the data lives"><Text style={styles.helper}>On the web, this app uses this browser profile’s local storage. It is not encrypted by this app and may be exposed to people or software with access to the profile or device. On iOS and Android, this app uses Expo SecureStore. Browser, device, operating-system and backup behavior varies; local storage alone does not guarantee privacy. Export sends a copy to the destination you choose. Deleting here may not remove an exported or backed-up copy.</Text></Card>
+  </PageAnchor></AppPage>;
+}
+
+function Button({ title, onPress, secondary = false, disabled = false }: { title: string; onPress: () => void; secondary?: boolean; disabled?: boolean }) {
+  return <Pressable accessibilityRole="button" accessibilityState={{ disabled }} disabled={disabled} onPress={onPress} style={({ pressed }) => [styles.button, secondary && styles.secondaryButton, disabled && styles.disabledButton, pressed && !disabled && styles.pressed]}><Text style={[styles.buttonText, secondary && styles.secondaryText, disabled && styles.disabledText]}>{title}</Text></Pressable>;
+}
+
+function draftStatusMessage(status: string) {
+  const messages: Record<string, string> = {
+    loading: "Loading saved questions from this device…",
+    blank: "Nothing is saved unless you choose Save on this device.",
+    saved: "Saved on this device. It is not sent to the project.",
+    restored: "Your saved questions and notes were restored from this device.",
+    unsaved: "You have unsaved changes. Choose Save to keep them on this device.",
+    saving: "Saving on this device…",
+    "load-failed": "Device storage could not be read. Your current edits remain in this session.",
+    "save-failed": "Could not save on this device. Your current edits remain in this session.",
+    cleared: "Saved data was cleared. This sheet is blank.",
+    deleting: "Deleting the saved sheet…",
+    "delete-failed": "Could not delete the saved sheet from device storage.",
+  };
+  return messages[status] ?? "";
+}
+
+const styles = StyleSheet.create({ viewOptions: { minHeight: 44, justifyContent: "center", alignSelf: "flex-start", paddingHorizontal: 4 }, viewOptionsText: { color: "#3C6963", fontSize: 13, lineHeight: 20, fontWeight: "700" }, paceOption: { width: "100%", minWidth: 0, minHeight: 44, flexDirection: "row", alignItems: "center", gap: 10 }, stepper: { marginTop: 10, paddingTop: 11, borderTopWidth: 1, borderTopColor: "#EDF0EC" }, stepProgress: { color: "#435A5A", fontSize: 13, lineHeight: 20, fontWeight: "700" }, stepButtons: { flexDirection: "row", flexWrap: "wrap", gap: 10, marginTop: 8 }, selectionSummary: { minHeight: 44, marginBottom: 8, paddingHorizontal: 3, flexDirection: "row", flexWrap: "wrap", gap: 8, alignItems: "center", justifyContent: "space-between" }, selectionCount: { color: "#52635C", fontSize: 13, lineHeight: 20, fontWeight: "700" }, clearSelection: { minHeight: 44, justifyContent: "center", paddingHorizontal: 4 }, clearSelectionText: { color: "#3C6963", fontSize: 13, lineHeight: 20, fontWeight: "700" }, groupAction: { minHeight: 44, paddingHorizontal: 4, flexDirection: "row", flexWrap: "wrap", gap: 8, alignItems: "center", justifyContent: "space-between" }, groupActionText: { color: "#3C6963", fontSize: 13, lineHeight: 20, fontWeight: "700" }, groupCount: { color: "#617474", fontSize: 12, lineHeight: 18 }, option: { width: "100%", minWidth: 0, minHeight: 56, flexDirection: "row", alignItems: "center", gap: 12, paddingVertical: 9, borderTopWidth: 1, borderTopColor: "#EDF0EC" }, checkbox: { width: 24, height: 24, flexShrink: 0, borderRadius: 6, borderWidth: 1.5, borderColor: "#899A93", alignItems: "center", justifyContent: "center" }, checked: { backgroundColor: "#3F7773", borderColor: "#3F7773" }, check: { color: "#FFFFFF", fontWeight: "700" }, optionText: { flex: 1, minWidth: 0, color: "#394C47", fontSize: 14, lineHeight: 21 }, helper: { color: "#596861", fontSize: 12, lineHeight: 19 }, input: { minHeight: 115, marginTop: 11, padding: 12, backgroundColor: "#FBFCFA", color: "#293D3A", borderColor: "#DCE4DE", borderWidth: 1, borderRadius: 10, fontSize: 15, lineHeight: 22 }, counter: { alignSelf: "flex-end", color: "#596861", fontSize: 11, marginTop: 5 }, previewTitle: { color: "#293D3A", fontSize: 15, fontWeight: "700" }, previewLine: { color: "#576762", fontSize: 14, lineHeight: 22, marginTop: 9 }, previewSubhead: { color: "#293D3A", fontSize: 14, fontWeight: "700", marginTop: 15 }, actions: { gap: 8, marginVertical: 8 }, button: { minHeight: 46, minWidth: 96, paddingHorizontal: 15, borderRadius: 10, backgroundColor: "#3F7773", alignItems: "center", justifyContent: "center" }, secondaryButton: { backgroundColor: "#FFFFFF", borderWidth: 1, borderColor: "#CAD8D1" }, buttonText: { color: "#FFFFFF", fontSize: 14, lineHeight: 20, fontWeight: "700" }, secondaryText: { color: "#3C6963" }, disabledButton: { borderColor: "#DCE7E4", opacity: 0.55 }, disabledText: { color: "#617474" }, status: { color: "#52635C", marginVertical: 8, fontSize: 13, lineHeight: 20 }, pressed: { opacity: 0.72 } });

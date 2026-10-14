@@ -1,0 +1,146 @@
+[
+  {
+    "name": "01-appointment-review",
+    "action": "GlobalSimplifiedreading→selectedonequestion; ReviewyourSheetkeyboardEnter jumps/focusespreview withoutSaveorExport.",
+    "url": "http://localhost:51360/appointments",
+    "geometry": {
+      "activeLabel": "Appointment sheet preview",
+      "activeText": "PreviewAppointment question sheetBefore the appointment□ What is the one thing I most want help understanding or discuss",
+      "documentWidth": 390,
+      "height": 844,
+      "mainTop": 0,
+      "width": 390,
+      "windowScrollY": 0
+    },
+    "dom": "retest/01-appointment-review.txt",
+    "screenshot": "retest/01-appointment-review.jpg"
+  },
+  {
+    "name": "02-appointment-resume",
+    "action": "Section2+selectedOnly+optionsopen→Home→return; allviewchoicesandselectedquestion preserved.",
+    "url": "http://localhost:51360/appointments",
+    "geometry": {
+      "activeLabel": null,
+      "activeText": "Urgent help›VAD & Carotid SupportHomeMenuText and displaySkip to main contentGuides and toolsUnderstand dissectionGuides",
+      "documentWidth": 390,
+      "height": 844,
+      "mainTop": 0,
+      "width": 390,
+      "windowScrollY": 0
+    },
+    "dom": "retest/02-appointment-resume.txt",
+    "screenshot": "retest/02-appointment-resume.jpg"
+  },
+  {
+    "name": "03-support-review",
+    "action": "SupportusesglobalSimplifiedfirst; selectpreference→keyboardReview; previewfocusedwithoutautoSave/export.",
+    "url": "http://localhost:51360/support-preferences",
+    "geometry": {
+      "activeLabel": "Support sheet preview",
+      "activeText": "Review what you’ll shareHow I prefer to be supportedCommunication• Please give me time to think and respond.Your prefere",
+      "documentWidth": 390,
+      "height": 844,
+      "mainTop": 0,
+      "width": 390,
+      "windowScrollY": 0
+    },
+    "dom": "retest/03-support-review.txt",
+    "screenshot": "retest/03-support-review.jpg"
+  },
+  {
+    "name": "04-card-escape",
+    "action": "MilestoneSave→Deleteconfirmation→Escape; confirmationdismissed; focusreturnsDeleteSavedCard; storyretained.",
+    "url": "http://localhost:51360/milestone-card",
+    "geometry": {
+      "activeLabel": null,
+      "activeText": "Delete saved card",
+      "documentWidth": 390,
+      "height": 844,
+      "mainTop": 0,
+      "width": 390,
+      "windowScrollY": 0
+    },
+    "dom": "retest/04-card-escape.txt",
+    "screenshot": "retest/04-card-escape.jpg"
+  },
+  {
+    "name": "05-landscape-menu",
+    "action": "844×320/200%apptext;menu→keyboardlastitem→Skip, reservedroomkeepsUrgentHelpfullyinview.",
+    "url": "http://localhost:51360/",
+    "geometry": {
+      "activeLabel": "Skip to main content",
+      "activeText": "Skip to main content",
+      "documentWidth": 844,
+      "height": 320,
+      "mainTop": 0,
+      "width": 844,
+      "windowScrollY": 0
+    },
+    "dom": "retest/05-landscape-menu.txt",
+    "screenshot": "retest/05-landscape-menu.jpg"
+  },
+  {
+    "name": "06-menu-320",
+    "action": "320px/200%apptext;sequentialTabreachesallnine menuitems; currentlastAboutlabel fullyinview. Prioritemsnaturallyoffscrollregion.",
+    "url": "http://localhost:51360/",
+    "geometry": {
+      "activeLabel": null,
+      "activeText": "About and privacy",
+      "documentWidth": 320,
+      "height": 640,
+      "mainTop": 0,
+      "width": 320,
+      "windowScrollY": 0
+    },
+    "dom": "retest/06-menu-320.txt",
+    "screenshot": "retest/06-menu-320.jpg"
+  },
+  {
+    "name": "07-appointment-320",
+    "action": "320px/200%apptext; savedquestion+syntheticnote preview reachable; fieldswrap; localonlysavedstate remains.",
+    "url": "http://localhost:51360/appointments",
+    "geometry": {
+      "activeLabel": "Appointment sheet preview",
+      "activeText": "PreviewAppointment question sheetBefore the appointment□ What is the one thing I most want help understanding or discuss",
+      "documentWidth": 320,
+      "height": 640,
+      "mainTop": 0,
+      "width": 320,
+      "windowScrollY": 0
+    },
+    "dom": "retest/07-appointment-320.txt",
+    "screenshot": "retest/07-appointment-320.jpg"
+  },
+  {
+    "name": "08-back-to-choices",
+    "action": "Activate Back to choices with Enter; inspect choices-group focus without saving or exporting.",
+    "url": "http://localhost:51360/appointments",
+    "geometry": {
+      "activeLabel": "Appointment choices",
+      "activeText": "1 question selectedClear selectionsReview your sheet",
+      "documentWidth": 320,
+      "height": 640,
+      "mainTop": 0,
+      "width": 320,
+      "windowScrollY": 0
+    },
+    "dom": "retest/08-back-to-choices.txt",
+    "screenshot": "retest/08-back-to-choices.jpg"
+  },
+  {
+    "name": "09-support-back",
+    "action": "After the earlier full reload correctly discarded the unsaved support fixture, select one synthetic preference, Review with Enter, then Back to choices with Enter; inspect focus without saving/exporting.",
+    "url": "http://localhost:51360/support-preferences",
+    "geometry": {
+      "activeLabel": "Support choices",
+      "activeText": "1 preference selectedClear selectionsReview your sheet",
+      "documentWidth": 390,
+      "height": 844,
+      "mainTop": 0,
+      "width": 390,
+      "windowScrollY": 0
+    },
+    "dom": "retest/09-support-back.txt",
+    "screenshot": "retest/09-support-back.jpg"
+  }
+]

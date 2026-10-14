@@ -1,0 +1,90 @@
+Browser tab: 1, Title: "VAD & Carotid Support", URL: "http://localhost:51070/guide/understanding-dissection".
+1 AXWebArea VAD & Carotid Support, URL: localhost:51070/guide/understanding-dissection
+	2 container
+		3 link Description: Urgent help, Value: localhost:51070/urgent-help
+		4 container
+			5 text VAD & Carotid Support
+			6 container Main navigation
+				7 link Description: Home, Value: localhost:51070/
+				8 button (collapsed) Menu, Secondary Actions: Expand
+					9 text Menu
+				10 link Description: Text and display, Value: localhost:51070/accessibility
+		11 container
+			12 link Description: Skip to main content, ID: skip-to-content
+				13 text Skip to main content
+			14 container
+				15 link Description: ← Back to guides, Value: localhost:51070/learn
+				16 heading Understanding cervical artery dissection, Value: 1
+					17 text Understanding cervical artery dissection
+				18 text A plain-language starting point for carotid and vertebral artery dissection. About 2 min read.
+				19 button (collapsed) Description: Draft information, review pending. Review details, Secondary Actions: Expand
+					20 text Draft information · review pending
+				21 button Read section aloud
+					22 text Read section aloud
+				23 checkbox Description: Read one section at a time, Value: 1
+					24 text ✓
+					25 text Read one section at a time
+				26 container
+					27 text Section  1  of  4 :  What the words mean
+					28 button (disabled) Previous section
+						29 text Previous
+					30 button Next section
+						31 text Next
+				32 heading What the words mean, Value: 2
+					33 text What the words mean
+				34 text A cervical artery dissection is a problem in the wall of an artery in the neck. The carotid arteries and vertebral arteries carry blood toward the brain. A dissection can affect either type of artery; the location and effects vary from person to person.
+				35 text VAD means vertebral artery dissection. In this app, CAD means carotid artery dissection. The carotid and vertebral arteries in the neck carry blood toward the brain. A clinician can explain which artery is involved in an individual case.
+				36 heading More reading options, Value: 2
+					37 text More reading options
+				38 button (collapsed) About reading pace and text size, Secondary Actions: Expand
+					39 text About reading pace and text size
+				40 heading More ways to use this guide, Value: 2
+					41 text More ways to use this guide
+				42 container
+					43 text Saving stores this guide’s topic on this device. Someone with access to the device or browser profile may see it; it is not sent to this project.
+					44 checkbox Remove from saved guides, Value: 1
+						45 text Remove from saved guides
+					46 text This guide is saved on this device.
+				47 container
+					48 button Print this guide
+						49 text Print this guide
+					50 button Copy guide link
+						51 text Copy guide link
+				52 text If this guide raises a question, add it to a private appointment sheet. You choose what to include; nothing is sent to this project.
+				53 link Description: Start with questions from this guide →, Value: localhost:51070/appointments?guide=understanding-dissection
+				54 heading Sources and review for this draft, Value: 2
+					55 text Sources and review for this draft
+				56 container
+					57 text Clinical review:  not recorded  · Patient/carer review:  not recorded  · Translation review:  English original  · Review date:  not recorded
+				58 link Open source: Treatment and Outcomes of Cervical Artery Dissection in Adults: A Scientific Statement From the American Heart Association
+					59 container
+						60 text Treatment and Outcomes of Cervical Artery Dissection in Adults: A Scientific Statement From the American Heart Association  (2024)
+					61 container
+						62 text Source record checked  2026-10-12 .  A scientific statement is not a personalised treatment plan. Verify exact passages before publishing individual claims.
+				63 link Open source: ESO guideline for the management of extracranial and intracranial artery dissection
+					64 container
+						65 text ESO guideline for the management of extracranial and intracranial artery dissection  (2021)
+					66 container
+						67 text Source record checked  2026-10-12 .  Do not generalise recommendations across anatomical groups or haemorrhagic and ischaemic presentations.
+				68 link Open source: Vascular Disease Patient Information Page: Cervical artery dissection (CeAD)
+					69 container
+						70 text Vascular Disease Patient Information Page: Cervical artery dissection (CeAD)  (2021)
+					71 container
+						72 text Source record checked  2026-10-12 .  An older educational source; check clinical details against current guidance. Link rather than reproduce.
+				73 link Open source: Cervical Artery Dissection
+					74 container
+						75 text Cervical Artery Dissection  (2022)
+					76 container
+						77 text Source record checked  2026-10-12 .  Displayed review date is 2022; verify details against newer guidance. Institutional affiliation does not make every statement current.
+				78 heading Continue with a related guide, Value: 2
+					79 text Continue with a related guide
+				80 link Value: localhost:51070/guide/tests-and-terms, Description: Tests, scans and unfamiliar terms Understand what to ask about a scan or report without trying to interpret it on your own. For patients, carers, interested readers · About 3 min Draft · not approved for patient use
+				81 link Value: localhost:51070/guide/follow-up-questions, Description: Prepare for a follow-up appointment Choose what matters most, make room for questions and leave with a clear next step to discuss. For patients, carers · About 2 min Draft · not approved for patient use
+				82 text Development preview · general information only · not a medical service
+				83 container
+					84 link Description: About and privacy, Value: localhost:51070/about
+					85 link Description: Accessibility, Value: localhost:51070/accessibility
+					86 link Description: Saved on this device, Value: localhost:51070/saved
+					87 link Description: Urgent help, Value: localhost:51070/urgent-help
+
+The focused UI element is 1 AXWebArea VAD & Carotid Support, URL: localhost:51070/guide/understanding-dissection

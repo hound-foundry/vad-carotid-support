@@ -1,0 +1,98 @@
+[
+  {
+    "background": "rgb(232, 239, 244)",
+    "foreground": "rgb(33, 76, 112)",
+    "label": "Feeling unwell?",
+    "theme": "light",
+    "contrast": "standard",
+    "ratio": 7.753381612494315
+  },
+  {
+    "background": "rgb(232, 239, 244)",
+    "foreground": "rgb(33, 76, 112)",
+    "label": "Home",
+    "theme": "light",
+    "contrast": "standard",
+    "ratio": 7.753381612494315
+  },
+  {
+    "background": "rgb(245, 246, 244)",
+    "foreground": "rgb(24, 50, 72)",
+    "label": "Home",
+    "theme": "light",
+    "contrast": "standard",
+    "ratio": 12.193418718549278
+  },
+  {
+    "background": "rgb(35, 59, 78)",
+    "foreground": "rgb(189, 217, 238)",
+    "label": "Feeling unwell?",
+    "theme": "dark",
+    "contrast": "standard",
+    "ratio": 7.926407796257332
+  },
+  {
+    "background": "rgb(35, 59, 78)",
+    "foreground": "rgb(189, 217, 238)",
+    "label": "Home",
+    "theme": "dark",
+    "contrast": "standard",
+    "ratio": 7.926407796257332
+  },
+  {
+    "background": "rgb(18, 29, 39)",
+    "foreground": "rgb(240, 244, 247)",
+    "label": "Home",
+    "theme": "dark",
+    "contrast": "standard",
+    "ratio": 15.428167763410672
+  },
+  {
+    "background": "rgb(32, 55, 70)",
+    "foreground": "rgb(220, 239, 255)",
+    "label": "Feeling unwell?",
+    "theme": "dark",
+    "contrast": "high",
+    "ratio": 10.513126015093965
+  },
+  {
+    "background": "rgb(32, 55, 70)",
+    "foreground": "rgb(220, 239, 255)",
+    "label": "Home",
+    "theme": "dark",
+    "contrast": "high",
+    "ratio": 10.513126015093965
+  },
+  {
+    "background": "rgb(16, 24, 32)",
+    "foreground": "rgb(255, 255, 255)",
+    "label": "Home",
+    "theme": "dark",
+    "contrast": "high",
+    "ratio": 17.894540394665484
+  },
+  {
+    "background": "rgb(232, 239, 244)",
+    "foreground": "rgb(23, 59, 88)",
+    "label": "Feeling unwell?",
+    "theme": "light",
+    "contrast": "high",
+    "ratio": 10.030370467328051
+  },
+  {
+    "background": "rgb(232, 239, 244)",
+    "foreground": "rgb(23, 59, 88)",
+    "label": "Home",
+    "theme": "light",
+    "contrast": "high",
+    "ratio": 10.030370467328051
+  },
+  {
+    "background": "rgb(255, 255, 255)",
+    "foreground": "rgb(17, 17, 17)",
+    "label": "Home",
+    "theme": "light",
+    "contrast": "high",
+    "ratio": 18.883060964594996
+  }
+]

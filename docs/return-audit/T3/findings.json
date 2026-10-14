@@ -1,0 +1,43 @@
+{
+  "mode": "returning",
+  "tester": "T3",
+  "locked": true,
+  "assessment_basis": "Independent review of current-round evidence actuated by coordinator and other testers; no direct T3 browser run. Shared evidence is not five independent runs.",
+  "revision": "8c4087e9fa2764ae3b5cd791c0d5a66834372936",
+  "bundle": {
+    "name": "entry-6bd9c06febb88561070b8ef3849ee298.js",
+    "sha256": "f992acd985b2018f0dd2e23aa0a938496e6134ea54df43e677a8471eaa89c67e"
+  },
+  "origin": "http://localhost:56682",
+  "fixtures": "Synthetic/disposable only",
+  "journeys": [
+    {"id": 1, "task": "Home; keyboard-open display settings; high contrast and 200% app text; return Home", "status": "observed", "evidence": ["T3/01-display-settings.jpg", "T3/01-display-settings.txt", "T3/02-home-double.jpg", "T3/02-home-double.txt"], "note": "Coordinator-actuated evidence; 200% is in-app text setting, not browser zoom."},
+    {"id": 2, "task": "Expanded menu; keyboard traversal; all nine destinations", "status": "observed", "evidence": ["T3/keyboard-menu.json", "menu-coverage.json", "interactions.json", "T1/menu-0.txt", "T1/menu-1.txt", "T1/menu-2.txt", "T1/menu-3.txt", "T1/menu-4.txt", "T1/menu-5.txt", "T1/menu-6.txt", "T1/menu-7.txt", "T1/menu-8.txt"], "note": "Route presence/headings/menu-closed and keyboard link bounds are recorded across shared sessions; not nine independent T3 activations. Space/Enter/Escape menu activation not separately established."},
+    {"id": 3, "task": "320px and 844x320 with 200% app text", "status": "observed_with_barrier", "evidence": ["T3/03-menu-320-double.jpg", "T3/03-menu-320-double.txt", "T3/04-landscape-double.jpg", "T3/04-landscape-double.txt", "T3/keyboard-menu.json"], "note": "Menu inner scroll clips preceding content near final focus; urgent row partly cropped in focus-scrolled landscape capture."},
+    {"id": 4, "task": "Skip link, urgent help, back/forward/reload, unknown route recovery", "status": "observed", "evidence": ["T1/01-home.txt", "T1/05-urgent.txt", "T3/05-unavailable.jpg", "T3/05-unavailable.txt", "T3/recovery-navigation.json"], "note": "Recovery log records back/forward/reload. One visible-label selector correction was an automation intervention, not app fault."},
+    {"id": 5, "task": "Guide, glossary match/empty/clear, reading settings and return", "status": "observed_through_shared_records", "evidence": ["guide-coverage.json", "T1/guide-0.txt", "T1/guide-1.txt", "T1/guide-2.txt", "T1/guide-3.txt", "T1/guide-4.txt", "T1/guide-5.txt", "T1/guide-6.txt", "T1/glossary-result.txt", "T1/glossary-cleared.txt", "T5/reading-resume.json", "T5/02-dark-resume.txt", "T5/03-review-details.txt"], "note": "Seven guide DOM samples, not seven patient comprehension tests; one returning guide task advanced through five sections and resumed section 2 in-app."},
+    {"id": 6, "task": "Appointment/support select, note, preview, leave/return, save, reload, export, cancel/delete", "status": "observed_across_shared_records", "evidence": ["T2/01-appointment-entry.txt", "T2/02-resumed-draft.txt", "T2/03-saved-export.txt", "T2/appointment-sheet.txt", "T2/delete-check.json", "T4/02-support-saved.txt", "T4/support-sheet.txt", "T4/support-deletion.json"], "note": "Appointment saved/restored/exported/deleted; support saved/restored/exported and deletion/reset evidence exists. T3 did not separately actuate each control."},
+    {"id": 7, "task": "Medical card blank/optional, statement, preview/edit/return/save/reload/hidden date/outputs", "status": "observed_across_shared_records", "evidence": ["T4/03-card-blank.txt", "T4/04-card-preview.jpg", "T4/04-card-preview.txt", "T4/card-restored.txt", "T4/practical-card.pdf", "T4/practical-card.txt", "T4/practical-card-page1.png", "T4/output-checks.json"], "note": "Output checks confirm included opted-in data and omission of hidden date/milestone-only content."},
+    {"id": 8, "task": "Milestone card blank/optional, preview/edit/return/save/reload/hidden date/outputs/delete/separate content", "status": "observed_across_shared_records", "evidence": ["T4/06-milestone-blank.txt", "T4/07-milestone-preview.jpg", "T4/07-milestone-preview.txt", "T4/milestone-restored.txt", "T4/milestone.pdf", "T4/milestone.txt", "T4/milestone-page1.png", "T4/card-deletion.json", "T4/09-card-escape.txt", "T4/08-separate-saved.txt", "T4/output-checks.json"], "note": "Delete confirmed and separate card preserved; Escape leaves dialog open with Cancel focused. PDFs reported untagged."},
+    {"id": 9, "task": "Browser zoom, NVDA, native app, audible speech, OS print preview/cancellation", "status": "not_tested", "evidence": [], "note": "No browser zoom/NVDA/native/audible speech/OS print cancellation claim; no physical print job."}
+  ],
+  "scores": {
+    "navigation": {"score": 2, "max": 2, "deduction": "None; nine destination routes and 404 recovery represented, with limitations on independent key activation."},
+    "reading_access": {"score": 1, "max": 2, "deduction": "1 point for menu content clipped by inner scrolling at 320 and partly cropped urgent row in landscape capture; browser zoom and assistive tech untested."},
+    "practical_usefulness": {"score": 2, "max": 2, "deduction": "None; sheet/card journeys and exports represented across shared records."},
+    "data_output_trust": {"score": 1, "max": 2, "deduction": "1 point because generated PDFs are reported untagged; assistive reading and native print not tested."},
+    "interruption_recovery": {"score": 1, "max": 2, "deduction": "1 point for inconsistent Escape behavior and no full-browser-reload guide position evidence."},
+    "total": 7,
+    "critical_failure_cap_applies": false
+  },
+  "confirmed_faults": [],
+  "usability_barriers": [
+    "At 320px/200% app text the expanded menu has an inner scroll region that clips preceding items near the final focus position.",
+    "At 844x320/200% app text the urgent-help row is partly cropped in the supplied keyboard-focus-scrolled capture.",
+    "Escape leaves card deletion confirmation open while sheet cancellation was recorded using Escape; the card dialog retains a focused Cancel control."
+  ],
+  "preferences": ["Strong contrast", "Visible focus", "Large text", "Generously sized labelled controls", "Compact branding"],
+  "uncertainties": ["No direct T3 browser actuation in this round.", "Shared evidence comes from distinct sessions; route coverage is not a set of five independent runs.", "Seven guide DOM samples do not demonstrate patient comprehension.", "Space/Enter/Escape activation of every menu/control, true browser zoom, screen-reader use, audible audio, native app behavior, and OS print cancellation were not established."],
+  "first_suggestion": "Keep the urgent-help row and the currently focused menu item fully visible at short landscape sizes, then align Escape behavior across confirmation dialogs.",
+  "screenshots_inspected": ["T3/01-display-settings.jpg", "T3/02-home-double.jpg", "T3/03-menu-320-double.jpg", "T3/04-landscape-double.jpg", "T3/05-unavailable.jpg", "T4/04-card-preview.jpg", "T4/07-milestone-preview.jpg"]
+}

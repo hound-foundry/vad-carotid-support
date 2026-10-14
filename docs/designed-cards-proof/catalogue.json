@@ -1,0 +1,130 @@
+[
+  {
+    "id": "communication",
+    "name": "Communication first",
+    "kind": "personal",
+    "width": 856,
+    "height": 540,
+    "panels": 2
+  },
+  {
+    "id": "portrait",
+    "name": "Photo and details",
+    "kind": "personal",
+    "width": 856,
+    "height": 540,
+    "panels": 2
+  },
+  {
+    "id": "statement",
+    "name": "Statement card",
+    "kind": "personal",
+    "width": 856,
+    "height": 540,
+    "panels": 2
+  },
+  {
+    "id": "quiet-white",
+    "name": "Quiet white",
+    "kind": "personal",
+    "width": 856,
+    "height": 540,
+    "panels": 2
+  },
+  {
+    "id": "engraved-slate",
+    "name": "Engraved slate",
+    "kind": "personal",
+    "width": 856,
+    "height": 540,
+    "panels": 2
+  },
+  {
+    "id": "embossed-cream",
+    "name": "Embossed cream",
+    "kind": "personal",
+    "width": 856,
+    "height": 540,
+    "panels": 2
+  },
+  {
+    "id": "letterpress-blue",
+    "name": "Blue letterpress",
+    "kind": "personal",
+    "width": 856,
+    "height": 540,
+    "panels": 2
+  },
+  {
+    "id": "message-band",
+    "name": "Message band",
+    "kind": "personal",
+    "width": 856,
+    "height": 540,
+    "panels": 2
+  },
+  {
+    "id": "ribbon-poster",
+    "name": "Survivor ribbon",
+    "kind": "milestone",
+    "width": 1080,
+    "height": 1350,
+    "panels": 1
+  },
+  {
+    "id": "warrior",
+    "name": "Warrior badge",
+    "kind": "milestone",
+    "width": 1080,
+    "height": 1350,
+    "panels": 1
+  },
+  {
+    "id": "brain-poster",
+    "name": "Artery & ribbon",
+    "kind": "milestone",
+    "width": 1080,
+    "height": 1350,
+    "panels": 1
+  },
+  {
+    "id": "botanical",
+    "name": "Botanical keepsake",
+    "kind": "milestone",
+    "width": 1080,
+    "height": 1350,
+    "panels": 1
+  },
+  {
+    "id": "photo-story",
+    "name": "Photo story",
+    "kind": "milestone",
+    "width": 1080,
+    "height": 1393.8,
+    "panels": 1
+  },
+  {
+    "id": "fox-story",
+    "name": "Fox and wildflower",
+    "kind": "milestone",
+    "width": 1080,
+    "height": 1350,
+    "panels": 1
+  },
+  {
+    "id": "bird-ribbon",
+    "name": "Bird and ribbon",
+    "kind": "milestone",
+    "width": 1080,
+    "height": 1350,
+    "panels": 1
+  },
+  {
+    "id": "cat-badge",
+    "name": "Cat badge",
+    "kind": "milestone",
+    "width": 1080,
+    "height": 1350,
+    "panels": 1
+  }
+]

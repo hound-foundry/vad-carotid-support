@@ -14,8 +14,12 @@ A clinical claim is not release-ready until the source has been checked, an appr
 
 Patient and carer accounts are voluntary, informed, revocable contributions. Obtain explicit permission for the exact content, named attribution choice, translations, storage and distribution. A person’s permission does not license a book, article or another person’s story.
 
+Use the separate [patient and carer content review guide](USABILITY_REVIEW.md) for usability feedback. A usability review can identify unclear or unhelpful wording, but it cannot approve a clinical claim or replace qualified clinical review.
+
 ## Useful literature starting points
 
 See the structured [reference catalogue](../content/references.json). Starting sources include the 2024 American Heart Association scientific statement, the 2021 European Stroke Organisation guideline, the 2024 patient quality-of-life study, the 2026 exploratory mental-health follow-up, research on antithrombotic treatment, the 2021 sports expert review and NICE adult stroke rehabilitation recommendations.
+
+The [clinical review packet](CLINICAL_REVIEW_PACKET.md) maps the current draft pages to their review questions. It is preparation only; no reviewer or approval is implied.
 
 The evidence base is uneven. Research into diagnosis and acute management does not necessarily answer common questions about life after discharge, people with no stroke, fatigue, anxiety, family support, work, travel or returning to activities. These gaps should be visible, not filled by confident-sounding guesses.

@@ -1,0 +1,152 @@
+[
+  {
+    "bounds": {
+      "bottom": 302,
+      "height": 54,
+      "left": 16,
+      "right": 277.34375,
+      "top": 248,
+      "width": 261.34375,
+      "x": 16,
+      "y": 248
+    },
+    "height": 640,
+    "href": "/accessibility",
+    "label": "Text & display"
+  },
+  {
+    "bounds": {
+      "bottom": 365,
+      "height": 55,
+      "left": 16,
+      "right": 289,
+      "top": 310,
+      "width": 273,
+      "x": 16,
+      "y": 310
+    },
+    "height": 640,
+    "href": "/learn",
+    "label": "Guides"
+  },
+  {
+    "bounds": {
+      "bottom": 478,
+      "height": 109,
+      "left": 16,
+      "right": 289,
+      "top": 369,
+      "width": 273,
+      "x": 16,
+      "y": 369
+    },
+    "height": 640,
+    "href": "/appointments",
+    "label": "Prepare an appointment"
+  },
+  {
+    "bounds": {
+      "bottom": 537,
+      "height": 55,
+      "left": 16,
+      "right": 289,
+      "top": 482,
+      "width": 273,
+      "x": 16,
+      "y": 482
+    },
+    "height": 640,
+    "href": "/cards",
+    "label": "Make a card"
+  },
+  {
+    "bounds": {
+      "bottom": 568,
+      "height": 55,
+      "left": 16,
+      "right": 289,
+      "top": 513,
+      "width": 273,
+      "x": 16,
+      "y": 513
+    },
+    "height": 640,
+    "href": "/supporting-someone",
+    "label": "Help someone"
+  },
+  {
+    "bounds": {
+      "bottom": 489,
+      "height": 109,
+      "left": 16,
+      "right": 289,
+      "top": 380,
+      "width": 273,
+      "x": 16,
+      "y": 380
+    },
+    "height": 640,
+    "href": "/support-preferences",
+    "label": "Support preferences"
+  },
+  {
+    "bounds": {
+      "bottom": 568,
+      "height": 109,
+      "left": 16,
+      "right": 289,
+      "top": 459,
+      "width": 273,
+      "x": 16,
+      "y": 459
+    },
+    "height": 640,
+    "href": "/glossary",
+    "label": "Look up a term"
+  },
+  {
+    "bounds": {
+      "bottom": 462,
+      "height": 55,
+      "left": 16,
+      "right": 289,
+      "top": 407,
+      "width": 273,
+      "x": 16,
+      "y": 407
+    },
+    "height": 640,
+    "href": "/resources",
+    "label": "Resources"
+  },
+  {
+    "bounds": {
+      "bottom": 568,
+      "height": 109,
+      "left": 16,
+      "right": 289,
+      "top": 459,
+      "width": 273,
+      "x": 16,
+      "y": 459
+    },
+    "height": 640,
+    "href": "/saved",
+    "label": "Saved on this device"
+  },
+  {
+    "bounds": {
+      "bottom": 568,
+      "height": 109,
+      "left": 16,
+      "right": 289,
+      "top": 459,
+      "width": 273,
+      "x": 16,
+      "y": 459
+    },
+    "height": 640,
+    "href": "/about",
+    "label": "About and privacy"
+  }
+]

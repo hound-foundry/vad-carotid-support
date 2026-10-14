@@ -1,0 +1,117 @@
+- banner:
+  - heading "VAD & Carotid Support" [level=1]
+  - paragraph: Local design workbench · existing Expo app
+  - paragraph: This is a development tool. Use invented examples here. This separate origin has its own browser storage; your usual preview is unchanged.
+- main:
+  - region "Check the real interface":
+    - heading "Check the real interface" [level=2]
+    - text: Page
+    - combobox "Page":
+      - option "Home" [selected]
+      - option "Guides"
+      - option "Appointment sheet"
+      - option "Choose a card"
+      - option "Medical and communication card"
+      - option "Milestone card"
+      - option "Support preferences"
+      - option "Help someone"
+      - option "Text and display"
+      - option "Urgent help"
+    - text: Review size
+    - combobox "Review size":
+      - option "Phone · 390 × 844" [selected]
+      - option "Narrow phone · 320 × 640"
+      - option "Desktop · 1440 × 900"
+      - option "Short landscape · 844 × 320"
+    - button "Show page"
+    - status: Home · 390 × 844 · real exported app
+    - iframe [id="app"]:
+      - link "Urgent help":
+        - /url: /urgent-help
+        - generic: Urgent help
+        - generic: ›
+      - generic "VAD & Carotid Support"
+      - navigation "Main navigation":
+        - link "Home":
+          - /url: /
+          - generic: Home
+        - button "Menu":
+          - generic: Menu
+        - link "Text and display":
+          - /url: /accessibility
+          - generic: Text and display
+      - link "Skip to main content":
+        - generic: Skip to main content
+      - main:
+        - heading "Guides and tools" [level=1]
+        - link "Understand dissection Guides and unfamiliar words.":
+          - /url: /learn
+          - generic: Understand dissection
+          - generic: Guides and unfamiliar words.
+        - link "Prepare an appointment Choose questions for your doctor.":
+          - /url: /appointments
+          - generic: Prepare an appointment
+          - generic: Choose questions for your doctor.
+        - link "Make a card Medical information or a personal milestone.":
+          - /url: /cards
+          - generic: Make a card
+          - generic: Medical information or a personal milestone.
+        - link "Help someone Practical ideas for family and carers.":
+          - /url: /supporting-someone
+          - generic: Help someone
+          - generic: Practical ideas for family and carers.
+        - link "Open saved guides, sheets and cards":
+          - /url: /saved
+          - generic: Open saved guides, sheets and cards
+        - heading "What this app can and cannot do" [level=2]
+        - generic: For adults affected by vertebral or carotid artery dissection, and the people supporting them.
+        - generic: Free information and tools to prepare questions and describe what helps. Guides are drafts awaiting clinical and patient/carer review. For your own care, ask your doctor.
+        - generic: Development preview · general information only · not a medical service
+        - link "About and privacy":
+          - /url: /about
+          - generic: About and privacy
+        - link "Accessibility":
+          - /url: /accessibility
+          - generic: Accessibility
+        - link "Saved on this device":
+          - /url: /saved
+          - generic: Saved on this device
+        - link "Urgent help":
+          - /url: /urgent-help
+          - generic: Urgent help
+    - paragraph: Use Text and display inside the app for enlarged text and reading preferences. Resizing is not browser zoom or native-device testing. Changing page here starts a new page load; use the app's navigation to check in-app return. Desktop artboards may require horizontal scrolling in this workbench.
+  - region "Current source colours":
+    - heading "Current source colours" [level=2]
+    - text: Token theme
+    - combobox "Token theme":
+      - option "light · standard" [selected]
+      - option "light · high"
+      - option "dark · standard"
+      - option "dark · high"
+    - paragraph: This selector changes the swatches only. App themes use the app's own settings.
+    - generic: "ink · #183B3B"
+    - generic: "text · #435A5A"
+    - generic: "muted · #4C6360"
+    - generic: "teal · #26736E"
+    - generic: "tealDark · #195B58"
+    - generic: "mint · #E4F0ED"
+    - generic: "paper · #F3F7F6"
+    - generic: "white · #FFFFFF"
+    - generic: "line · #DCE7E4"
+    - generic: "alert · #F9E9E2"
+    - generic: "alertInk · #713A2D"
+    - generic: "gold · #956020"
+    - generic: "controlLine · #657C73"
+  - region "Portable design files":
+    - heading "Portable design files" [level=2]
+    - link "Design guide":
+      - /url: /_design/DESIGN.md
+    - link "Source tokens":
+      - /url: /_design/tokens.json
+    - link "Editable SVG palette":
+      - /url: /_design/palette.svg
+    - link "App profile":
+      - /url: /_design/project.json
+    - link "Source fingerprint":
+      - /url: /_design/manifest.json
+    - paragraph: The files contain project configuration and design values, not browser notes or cards. The SVG is a palette, not a recreated application screen. Importing these into a service is a separate explicit action.

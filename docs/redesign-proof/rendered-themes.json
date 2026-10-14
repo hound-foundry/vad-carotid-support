@@ -1,0 +1,86 @@
+[
+  {
+    "theme": "light",
+    "contrast": "standard",
+    "checkbox": [
+      {
+        "background": "rgb(43, 95, 135)",
+        "foreground": "rgb(255, 255, 255)"
+      }
+    ],
+    "focus": {
+      "background": "rgb(245, 246, 244)",
+      "foreground": "rgb(33, 76, 112)",
+      "outline": "rgb(33, 76, 112)",
+      "outlineWidth": "3px"
+    },
+    "heading": {
+      "font": "system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+      "fontSize": "28px",
+      "foreground": "rgb(24, 50, 72)"
+    }
+  },
+  {
+    "theme": "light",
+    "contrast": "high",
+    "checkbox": [
+      {
+        "background": "rgb(43, 95, 135)",
+        "foreground": "rgb(255, 255, 255)"
+      }
+    ],
+    "focus": {
+      "background": "rgb(255, 255, 255)",
+      "foreground": "rgb(23, 59, 88)",
+      "outline": "rgb(33, 76, 112)",
+      "outlineWidth": "4px"
+    },
+    "heading": {
+      "font": "system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+      "fontSize": "28px",
+      "foreground": "rgb(17, 17, 17)"
+    }
+  },
+  {
+    "theme": "dark",
+    "contrast": "standard",
+    "checkbox": [
+      {
+        "background": "rgb(43, 95, 135)",
+        "foreground": "rgb(255, 255, 255)"
+      }
+    ],
+    "focus": {
+      "background": "rgb(18, 29, 39)",
+      "foreground": "rgb(189, 217, 238)",
+      "outline": "rgb(189, 217, 238)",
+      "outlineWidth": "3px"
+    },
+    "heading": {
+      "font": "system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+      "fontSize": "28px",
+      "foreground": "rgb(240, 244, 247)"
+    }
+  },
+  {
+    "theme": "dark",
+    "contrast": "high",
+    "checkbox": [
+      {
+        "background": "rgb(43, 95, 135)",
+        "foreground": "rgb(255, 255, 255)"
+      }
+    ],
+    "focus": {
+      "background": "rgb(16, 24, 32)",
+      "foreground": "rgb(220, 239, 255)",
+      "outline": "rgb(189, 217, 238)",
+      "outlineWidth": "4px"
+    },
+    "heading": {
+      "font": "system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+      "fontSize": "28px",
+      "foreground": "rgb(255, 255, 255)"
+    }
+  }
+]

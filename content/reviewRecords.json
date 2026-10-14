@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 1,
+  "release": "english-static-preview",
+  "releaseStatus": "blocked-pending-human-review",
+  "revision": "4df1dc5",
+  "lastChecked": "2026-10-13",
+  "tracks": {
+    "clinical": { "status": "not-reviewed", "ownerRole": "qualified clinician", "evidence": "content/claimLedger.json", "stopShip": true, "reviewer": null, "reviewedOn": null, "nextReviewOn": null },
+    "patientCarer": { "status": "not-reviewed", "ownerRole": "patient/carer reviewer", "evidence": "docs/USABILITY_REVIEW.md and docs/USABILITY_FEEDBACK_LOG.md", "stopShip": true, "reviewer": null, "reviewedOn": null, "nextReviewOn": null },
+    "accessibility": { "status": "not-reviewed", "ownerRole": "accessibility tester", "evidence": "docs/ACCESSIBILITY_TEST_MATRIX.md", "stopShip": true, "reviewer": null, "reviewedOn": null, "nextReviewOn": null },
+    "privacySecurity": { "status": "not-reviewed", "ownerRole": "technical/privacy reviewer", "evidence": "docs/DATA_FLOW.md and automated tests", "stopShip": true, "reviewer": null, "reviewedOn": null, "nextReviewOn": null },
+    "legalMarket": { "status": "blocked", "ownerRole": "qualified legal reviewer", "evidence": "docs/REGULATORY_SCREENING.md", "stopShip": true, "reviewer": null, "reviewedOn": null, "nextReviewOn": null },
+    "translation": { "status": "not-started", "ownerRole": "qualified language reviewer", "evidence": "docs/DEEP_REVIEW.md", "stopShip": true, "reviewer": null, "reviewedOn": null, "nextReviewOn": null }
+  }
+}

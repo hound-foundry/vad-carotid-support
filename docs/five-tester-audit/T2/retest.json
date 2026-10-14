@@ -1,0 +1,118 @@
+{
+  "tester": "T2",
+  "addendum": "repaired-build retest evidence",
+  "independentT2Retest": false,
+  "parentActuated": true,
+  "browserUsedByT2": false,
+  "baselineReportsModified": false,
+  "baselineScoreChanged": false,
+  "baselineScore": 8,
+  "criticalCapApplied": false,
+  "sourceOrClinicalContentReviewed": false,
+  "observations": [
+    {
+      "id": "support-unsaved-in-app-return",
+      "build": "repaired",
+      "status": "observed",
+      "actionScope": "Coordinator reports using only in-app links for the unsaved support-preferences leave-and-return flow.",
+      "evidence": "../root/support-unsaved-return.txt",
+      "result": "The returned state contains one selected preference and the ROOT_SUPPORT_1381 disposable note, plus the message that there are unsaved changes.",
+      "limit": "Exact intermediate links/routes are not preserved in the supplied snapshot. Do not infer a more exact route sequence."
+    },
+    {
+      "id": "support-delete-prompt",
+      "build": "repaired",
+      "status": "observed",
+      "evidence": "../root/after-support-delete-confirm.jpg",
+      "result": "Inline confirmation asks whether to delete saved preferences and offers Cancel deletion and Confirm deletion. It says downloaded and printed copies are unchanged.",
+      "limit": "The screenshot proves the prompt is present, not the result of confirming deletion."
+    },
+    {
+      "id": "support-delete-cancel-and-reload",
+      "build": "repaired",
+      "status": "observed",
+      "evidence": "../root/support-cancel-reload.txt",
+      "result": "After cancellation and reload, the synthetic note and one selected preference remain saved.",
+      "limit": "No supplied evidence establishes support-preferences confirmation/deletion outcome."
+    },
+    {
+      "id": "appointment-delete-cancel-escape",
+      "build": "repaired",
+      "status": "observed",
+      "evidence": "../root/appointment-cancel-escape.txt",
+      "result": "After Escape cancelled the delete prompt, the synthetic reminder and selected question remain."
+    },
+    {
+      "id": "appointment-delete-cancel-reload",
+      "build": "repaired",
+      "status": "observed",
+      "evidence": "../root/appointment-cancel-reload.txt",
+      "result": "After reload, the synthetic reminder and selected question are restored as saved."
+    },
+    {
+      "id": "appointment-delete-confirm-reload",
+      "build": "repaired",
+      "status": "observed",
+      "evidence": "../root/appointment-delete-reload.txt",
+      "result": "After confirming deletion and reloading, there are zero selected questions, no note, and the page says nothing is saved unless Save on this device is chosen."
+    },
+    {
+      "id": "repaired-guide-in-app-return",
+      "build": "repaired",
+      "status": "observed",
+      "sequence": [
+        "../root/repaired-guide-section2.txt",
+        "Activate Back to guides",
+        "Activate Tests, scans and unfamiliar terms",
+        "Activate Back to guides",
+        "Activate Understanding cervical artery dissection",
+        "../root/repaired-guide-inapp-return.txt"
+      ],
+      "result": "Final state is Section 2 of 4: Why experiences differ.",
+      "limit": "Evidence does not establish direct URL navigation, reload, browser Back, or other exit behavior."
+    },
+    {
+      "id": "baseline-guide-in-app-return",
+      "build": "baseline",
+      "status": "observed",
+      "evidence": "../root/baseline-section-return.txt",
+      "result": "Snapshot shows Section 2 of 4 after an in-app return sequence.",
+      "limit": "T2's original interruption route mechanism remains unknown, so the original T2-01 sequence does not confirm an in-app reset fault."
+    },
+    {
+      "id": "unavailable-route-recovery",
+      "build": "repaired",
+      "status": "observed",
+      "evidence": "../root/after-unavailable-recovery.jpg",
+      "result": "The Page not found screen explains the link is unavailable, directs users to Home or Menu, and shows a Home link.",
+      "limit": "Screenshot does not independently establish the requested URL or a complete navigation/reload sequence."
+    },
+    {
+      "id": "support-delete-confirm-and-reload",
+      "build": "repaired",
+      "status": "observed",
+      "parentActuated": true,
+      "parentReportedSequence": [
+        "Save One question at a time and synthetic note ROOT_SUPPORT_CONFIRM_1381",
+        "Open Delete",
+        "Activate Confirm",
+        "Reload"
+      ],
+      "evidence": "../root/support-confirm-delete-reload.txt",
+      "result": "The post-reload snapshot shows zero preferences selected, a blank note field, an empty review summary, and Nothing is saved unless you choose Save on this device.",
+      "limit": "This is parent-actuated supplied evidence, not an independent T2 retest; it does not alter baseline findings or score."
+    }
+  ],
+  "notTested": [
+    {
+      "task": "Reproduce T2's original guide interruption using its original exact navigation mechanism",
+      "reason": "That mechanism was not preserved; baseline and repaired in-app-link sequences show Section 2 retained, but do not reconstruct T2's original route."
+    }
+  ],
+  "limits": [
+    "All observations in this addendum are parent-actuated evidence supplied as named snapshots; they are not T2's independent UI retest.",
+    "No browser was opened or operated for this addendum.",
+    "No source or clinical content was reviewed.",
+    "The locked baseline report and its score remain unchanged."
+  ]
+}

@@ -1,0 +1,22 @@
+Browser tab: 1, Title: "VAD & Carotid Support", URL: "http://localhost:51070/".
+The following is a diff from the previous accessibility tree with ~ and + representing changed and added elements, respectively. Removed elements are summarized by ID range.
+Removed element IDs: 4-10
++		32 container
++			33 text VAD & Carotid Support
++			34 container Main navigation
++				35 link Description: Home, Value: localhost:51070/
++				36 button (expanded) Close menu, Secondary Actions: Collapse
++					37 text Close menu
++				38 link Description: Text and display, Value: localhost:51070/accessibility
++			39 container Description: All pages, ID: site-menu
++				40 container
++					41 link Description: Guides, Value: localhost:51070/learn
++					42 link Description: Prepare an appointment, Value: localhost:51070/appointments
++					43 link Description: Make a card, Value: localhost:51070/cards
++					44 link Description: Help someone, Value: localhost:51070/supporting-someone
++					45 link Description: Support preferences, Value: localhost:51070/support-preferences
++					46 link Description: Look up a term, Value: localhost:51070/glossary
++					47 link Description: Resources, Value: localhost:51070/resources
++					48 link Description: Saved on this device, Value: localhost:51070/saved
++					49 link Description: About and privacy, Value: localhost:51070/about
+The focused UI element is 36 button (expanded) Close menu, Secondary Actions: Collapse

@@ -1,0 +1,7 @@
+{
+  "homeLink": true,
+  "back": true,
+  "forward": true,
+  "reload": true,
+  "wrongSelectorIntervention": "Return to home did not match actual Back to home; corrected with visiblelabel"
+}

@@ -1,0 +1,61 @@
+- link "Urgent help":
+  - /url: /urgent-help
+  - generic: Urgent help
+  - generic: ›
+- generic: VAD & Carotid Support
+- navigation "Main navigation":
+  - link "Home":
+    - /url: /
+    - generic: Home
+  - button "Menu":
+    - generic: Menu
+  - link "Text and display":
+    - /url: /accessibility
+    - generic: Text and display
+- link "Skip to main content":
+  - generic: Skip to main content
+- main:
+  - link "Back to home":
+    - /url: /
+    - generic: ←
+    - generic: Home
+  - generic: SAVED
+  - heading "Saved on this device" [level=1]
+  - generic: Open a guide, sheet or card. Unsaved card drafts remain available while this app is open.
+  - link "Saved guides No saved items":
+    - /url: /saved-guides
+    - generic: Saved guides
+    - generic: No saved items
+  - link "Appointment sheet No saved items":
+    - /url: /appointments
+    - generic: Appointment sheet
+    - generic: No saved items
+  - link "Support preferences No saved items":
+    - /url: /support-preferences
+    - generic: Support preferences
+    - generic: No saved items
+  - link "Medical and communication card Unsaved draft · app memory only":
+    - /url: /personal-card
+    - generic: Medical and communication card
+    - generic: Unsaved draft · app memory only
+  - link "Anniversary or milestone card No saved card":
+    - /url: /milestone-card
+    - generic: Anniversary or milestone card
+    - generic: No saved card
+  - generic: Names, notes and health details are shown only when you open their tool.
+  - link "Privacy and clear all saved data":
+    - /url: /about
+    - generic: Privacy and clear all saved data
+  - generic: Development preview · general information only · not a medical service
+  - link "About and privacy":
+    - /url: /about
+    - generic: About and privacy
+  - link "Accessibility":
+    - /url: /accessibility
+    - generic: Accessibility
+  - link "Saved on this device":
+    - /url: /saved
+    - generic: Saved on this device
+  - link "Urgent help":
+    - /url: /urgent-help
+    - generic: Urgent help

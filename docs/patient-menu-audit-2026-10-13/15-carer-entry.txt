@@ -1,0 +1,89 @@
+- link "Urgent help":
+  - /url: /urgent-help
+  - generic: Urgent help
+  - generic: ›
+- generic: VAD & Carotid Support
+- navigation "Main navigation":
+  - link "Home":
+    - /url: /
+    - generic: Home
+  - button "Menu":
+    - generic: Menu
+  - link "Text and display":
+    - /url: /accessibility
+    - generic: Text and display
+- link "Skip to main content":
+  - generic: Skip to main content
+- main:
+  - link "Back to home":
+    - /url: /
+    - generic: ←
+    - generic: Home
+  - generic: FOR FAMILY, FRIENDS AND CARERS
+  - heading "Help someone" [level=1]
+  - generic: Support the person’s choices, help with practical steps when invited, and ask what would make care conversations easier.
+  - generic: Draft information · review pending
+  - generic: Clinical and patient/carer reviews are not yet recorded. For personal care questions, ask your doctor.
+  - link "About the review process":
+    - /url: /about
+    - generic: About the review process
+  - heading "Guides for carers" [level=2]
+  - link "Understanding cervical artery dissection A plain-language starting point for carotid and vertebral artery dissection. For patients, carers, interested readers · About 2 min Draft · not approved for patient use":
+    - /url: /guide/understanding-dissection
+    - generic: Understanding cervical artery dissection
+    - generic: A plain-language starting point for carotid and vertebral artery dissection.
+    - generic: For patients, carers, interested readers · About 2 min
+    - generic: Draft · not approved for patient use
+  - link "Tests, scans and unfamiliar terms Understand what to ask about a scan or report without trying to interpret it on your own. For patients, carers, interested readers · About 3 min Draft · not approved for patient use":
+    - /url: /guide/tests-and-terms
+    - generic: Tests, scans and unfamiliar terms
+    - generic: Understand what to ask about a scan or report without trying to interpret it on your own.
+    - generic: For patients, carers, interested readers · About 3 min
+    - generic: Draft · not approved for patient use
+  - link "When dissection is accompanied by stroke Conversation prompts about rehabilitation, communication, daily life and support for patients and carers. For patients, carers · About 2 min Draft · not approved for patient use":
+    - /url: /guide/with-stroke
+    - generic: When dissection is accompanied by stroke
+    - generic: Conversation prompts about rehabilitation, communication, daily life and support for patients and carers.
+    - generic: For patients, carers · About 2 min
+    - generic: Draft · not approved for patient use
+  - link "Recovery, fatigue and quality of life Make room for changes in energy, confidence, mood and everyday life, even when they are hard to see. For patients, carers · About 2 min Draft · not approved for patient use":
+    - /url: /guide/recovery-and-quality-of-life
+    - generic: Recovery, fatigue and quality of life
+    - generic: Make room for changes in energy, confidence, mood and everyday life, even when they are hard to see.
+    - generic: For patients, carers · About 2 min
+    - generic: Draft · not approved for patient use
+  - link "Supporting someone after dissection or stroke Practical ways to listen, make care conversations easier and look after your own needs too. For carers, patients · About 2 min Draft · not approved for patient use":
+    - /url: /guide/supporting-someone
+    - generic: Supporting someone after dissection or stroke
+    - generic: Practical ways to listen, make care conversations easier and look after your own needs too.
+    - generic: For carers, patients · About 2 min
+    - generic: Draft · not approved for patient use
+  - link "Prepare for a follow-up appointment Choose what matters most, make room for questions and leave with a clear next step to discuss. For patients, carers · About 2 min Draft · not approved for patient use":
+    - /url: /guide/follow-up-questions
+    - generic: Prepare for a follow-up appointment
+    - generic: Choose what matters most, make room for questions and leave with a clear next step to discuss.
+    - generic: For patients, carers · About 2 min
+    - generic: Draft · not approved for patient use
+  - link "Make a support preferences sheet → Choose statements to review and share only when the person wants to.":
+    - /url: /support-preferences
+    - generic: Make a support preferences sheet →
+    - generic: Choose statements to review and share only when the person wants to.
+  - link "Prepare your own appointment questions → Keep your questions separate and decide what to ask the care team.":
+    - /url: /appointments
+    - generic: Prepare your own appointment questions →
+    - generic: Keep your questions separate and decide what to ask the care team.
+  - heading "Respect the person’s privacy" [level=2]
+  - generic: Do not share another person’s health information unless they have chosen to share it. You can keep your own questions separately and ask the care team what support is available to carers.
+  - generic: Development preview · general information only · not a medical service
+  - link "About and privacy":
+    - /url: /about
+    - generic: About and privacy
+  - link "Accessibility":
+    - /url: /accessibility
+    - generic: Accessibility
+  - link "Saved on this device":
+    - /url: /saved
+    - generic: Saved on this device
+  - link "Urgent help":
+    - /url: /urgent-help
+    - generic: Urgent help

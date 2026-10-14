@@ -1,0 +1,12 @@
+Browser tab: 1, Title: "VAD & Carotid Support", URL: "http://localhost:51070/personal-card".
+The following is a diff from the previous accessibility tree with ~ and + representing changed and added elements, respectively. Removed elements are summarized by ID range.
+Removed element IDs: 22, 61-66
+~				21 checkbox Description: Please give me time to answer., Value: 0
+~				35 button (collapsed) Add optional details · Show, Secondary Actions: Expand
+~						37 text Add optional details  ·  Show
+~				39 text Saved card deleted from this device. Downloaded and printed copies are unchanged.
+~					59 button Start a blank draft
+~						60 text Start a blank draft
++					61 button Delete saved card
++						62 text Delete saved card
+The focused UI element is 61 button Delete saved card

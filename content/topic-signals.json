@@ -1,0 +1,16 @@
+{
+  "schemaVersion": 1,
+  "purpose": "Editorial discovery only. These themes were abstracted from user-supplied community excerpts; they are not clinical evidence, verified prevalence, or permission to reproduce member contributions.",
+  "sourceHandling": "No names, profile links, quotations, identifiable stories, screenshots, or post links are retained here. Do not use this file to infer an individual diagnosis or need.",
+  "topics": [
+    "understanding the diagnosis and discharge information",
+    "headache or neck discomfort as a topic people may want to discuss with their clinician",
+    "fatigue, rest, sleep, and energy changes",
+    "pulsatile tinnitus or other hearing questions to raise with a care team",
+    "vision changes and communication about them with clinicians",
+    "questions about recurrence, family history, or genetics",
+    "follow-up plans and interpreting unfamiliar scan terminology",
+    "support for stroke effects, carers, and changes that other people may not see"
+  ],
+  "releaseLimit": "Any future clinical explanation of symptoms, recurrence, family history, or genetics needs specific sources and clinician review. This topic list must never be shown as advice or a symptom checklist."
+}

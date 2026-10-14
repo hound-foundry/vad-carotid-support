@@ -1,0 +1,53 @@
+Support preferences
+Choose statements that fit today. Review before saving or sharing.
+This is not a medical or emergency plan.
+Hide viewing options
+Choose your pace
+✓
+Show one section at a time
+You can change this view at any time.
+Show selected preferences only
+Section 1 of 3: Communication
+Previous
+Next section
+2 preferences selected
+Clear selections
+Communication
+Select all in section
+2/6
+Please give me time to think and respond.
+✓
+One question at a time helps me.
+✓
+Please write down key points.
+Ask me before speaking or deciding for me.
+Please use plain language and explain unfamiliar words.
+Please check what kind of support would help today; it can change.
+A note about this sheet
+Everything is optional. These are example preferences, not instructions for your care. They can change at any time. This is not a medical or emergency plan.
+Something else I’d like you to know (optional)
+This note may include personal information. It stays in this browser profile or on this device unless you export it.
+47/300
+If you need to leave safely
+Someone who can access this browser or device may see saved support preferences and notes. Close the page, use a private device when appropriate, and remember that exports, printouts, browser history and backups are outside this app’s control.
+Review what you’ll share
+How I prefer to be supported
+Communication
+• One question at a time helps me.
+• Please write down key points.
+Something else I’d like you to know
+T2 fixture: pause before adding another detail.
+Your preferences belong to you. You choose whether to share them.
+Save on this device
+Export for sharing
+Copy sheet text
+Print support sheet
+Delete saved preferences
+You have unsaved changes. Choose Save to keep them on this device. 
+Where the data lives
+On the web, this app uses this browser profile’s local storage. It is not encrypted by this app and may be exposed to people or software with access to the profile or device. On iOS and Android, this app uses Expo SecureStore. Browser, device, operating-system and backup behavior varies; local storage alone does not guarantee privacy. Export makes a separate copy in the destination you choose; deleting here may not remove an exported or backed-up copy.
+Development preview · general information only · not a medical service
+About and privacy
+Accessibility
+Saved on this device
+Urgent help

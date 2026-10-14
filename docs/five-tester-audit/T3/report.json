@@ -1,0 +1,770 @@
+{
+  "tester": "T3",
+  "baselineRevision": "72688788cb926af39b9813c38ac830301a0eaeda",
+  "origin": "http://localhost:51070",
+  "perspective": "Simulated low-vision and limited-hand-movement evaluation; not patient testimony or accessibility certification.",
+  "scores": {
+    "navigation": 2,
+    "readingAccess": 1,
+    "practicalUsefulness": 2,
+    "dataOutputTrust": 2,
+    "recoveryFromInterruption": 1,
+    "total": 8,
+    "criticalCapApplied": false
+  },
+  "verdict": "Useful, well-labelled draft prototype with an observed narrow-screen large-text reading barrier and an avoidable immediate appointment-sheet deletion risk. Not clinically or accessibly certified.",
+  "strengths": [
+    "All nine menu destinations and keyboard navigation paths were exercised.",
+    "All seven guides were inspected end-to-end through source/review records.",
+    "The saved hub uses generic labels and actual synthetic exports were inspected.",
+    "Card edit/reload and explicit deletion cancel/confirm flows worked."
+  ],
+  "frustrations": [
+    "Home heading splits a word mid-word at 200% app text on 390 px and 320 px widths.",
+    "Appointment sheet deletion removed saved data immediately without a cancel/undo step.",
+    "Card print-preview cancellation was not verifiable; Escape did not dismiss it.",
+    "Actual browser zoom, screen-reader behavior, and audible read-aloud output were not available."
+  ],
+  "firstImprovement": "Preserve whole-word wrapping in the Home heading at 200% app text on narrow screens, then add a cancelable confirmation for appointment-sheet deletion.",
+  "findings": [
+    {
+      "id": "F-01",
+      "category": "usability-barrier",
+      "severity": "moderate",
+      "route": "/",
+      "steps": [
+        "Open Text and display.",
+        "Select 200% app text.",
+        "Return Home and set viewport to 390×844 or 320×600."
+      ],
+      "expected": "Heading words wrap at spaces and remain readable.",
+      "actual": "“Information” breaks inside the word at both narrow widths; the remainder remains vertically scrollable.",
+      "evidence": [
+        "28-home-200.png",
+        "29-home-200-390.png",
+        "30-home-200-320.png",
+        "31-home-200-landscape.png"
+      ]
+    },
+    {
+      "id": "F-02",
+      "category": "usability-barrier",
+      "severity": "moderate",
+      "route": "/appointments",
+      "steps": [
+        "Save a disposable synthetic appointment sheet.",
+        "Activate Delete saved sheet."
+      ],
+      "expected": "A safe confirm/cancel or undo step before removal.",
+      "actual": "Saved data was removed immediately and a deleted status appeared; no cancel UI was observed.",
+      "evidence": [
+        "03-appointment-selected.png",
+        "05-sheet-deleted.png"
+      ]
+    },
+    {
+      "id": "F-03",
+      "category": "untested",
+      "severity": "not-assessed",
+      "route": "/personal-card and /milestone-card",
+      "steps": [
+        "Open card print preview.",
+        "Try Escape/cancel."
+      ],
+      "expected": "A supported route back without printing.",
+      "actual": "Preview content appeared, but no Print/Cancel control was exposed in the accessibility snapshot and Escape did not dismiss it; OS dialog behavior was not verified.",
+      "evidence": [
+        "20-card-print-attempt.png",
+        "23-milestone-print.png",
+        "personal-card.pdf-page1.png",
+        "milestone-card.pdf-page1.png"
+      ]
+    }
+  ],
+  "coverage": [
+    {
+      "task": "Initial Home exploration",
+      "status": "pass",
+      "evidence": [
+        "01-home.png",
+        "observations.txt",
+        "home-final-default.png"
+      ],
+      "reason": "Started on Home without UI hints; identified main card links, urgent help and the draft/general-information notice."
+    },
+    {
+      "task": "Navigation route: Home /",
+      "status": "pass",
+      "evidence": [
+        "01-home.png",
+        "home-final-default.png",
+        "home-final-default.txt"
+      ],
+      "reason": "Home opens and returns correctly; main links are labelled."
+    },
+    {
+      "task": "Navigation route: /learn — Understand dissection",
+      "status": "pass",
+      "evidence": [
+        "menu-1.png",
+        "menu-1-guides.txt"
+      ],
+      "reason": "Reached from menu and guide index."
+    },
+    {
+      "task": "Navigation route: /appointments — Prepare an appointment",
+      "status": "pass",
+      "evidence": [
+        "menu-2.png",
+        "menu-2-prepare-an-appointment.txt",
+        "02-appointment-empty.png"
+      ],
+      "reason": "Menu route opens and sheet is usable."
+    },
+    {
+      "task": "Navigation route: /cards — Make a card",
+      "status": "pass",
+      "evidence": [
+        "menu-3.png",
+        "menu-3-make-a-card.txt"
+      ],
+      "reason": "Menu route opens card chooser."
+    },
+    {
+      "task": "Navigation route: /supporting-someone — Help someone",
+      "status": "pass",
+      "evidence": [
+        "menu-4.png",
+        "menu-4-help-someone.txt"
+      ],
+      "reason": "Menu route opens supporting guide."
+    },
+    {
+      "task": "Navigation route: /support-preferences",
+      "status": "pass",
+      "evidence": [
+        "menu-5.png",
+        "menu-5-support-preferences.txt",
+        "15-support-preview.png"
+      ],
+      "reason": "Menu route opens support preferences sheet."
+    },
+    {
+      "task": "Navigation route: /glossary — Look up a term",
+      "status": "pass",
+      "evidence": [
+        "menu-6.png",
+        "menu-6-look-up-a-term.txt",
+        "glossary-search.txt"
+      ],
+      "reason": "Menu route opens glossary search."
+    },
+    {
+      "task": "Navigation route: /resources",
+      "status": "pass",
+      "evidence": [
+        "menu-7.png",
+        "menu-7-resources.txt"
+      ],
+      "reason": "Menu route opens the resources page."
+    },
+    {
+      "task": "Navigation route: /saved",
+      "status": "pass",
+      "evidence": [
+        "26-saved-menu.png",
+        "saved-menu.txt",
+        "saved-after-clear.png"
+      ],
+      "reason": "Generic saved hub labels work; clear-all state also verified."
+    },
+    {
+      "task": "Navigation route: /about",
+      "status": "pass",
+      "evidence": [
+        "27-about-menu.png",
+        "about-menu.txt",
+        "clear-all-result.png"
+      ],
+      "reason": "About/privacy route opens and clear-all action is available."
+    },
+    {
+      "task": "Navigation: header, footer, Home and urgent help links",
+      "status": "pass",
+      "evidence": [
+        "observations.txt",
+        "route-urgent-help.png",
+        "home-final-default.txt"
+      ],
+      "reason": "Header and footer links and Home/urgent help targets are exposed with names; Home and urgent page opened."
+    },
+    {
+      "task": "Navigation: direct routes and reload",
+      "status": "pass",
+      "evidence": [
+        "route-about.png",
+        "route-saved-guides.png",
+        "legacy-with-stroke-reload.png",
+        "legacy-without-stroke-reload.png",
+        "unavailable-reload.png"
+      ],
+      "reason": "Direct route fixtures and reload retained their expected pages."
+    },
+    {
+      "task": "Navigation: Back and Forward",
+      "status": "pass",
+      "evidence": [
+        "history-back.txt",
+        "history-forward.txt"
+      ],
+      "reason": "Browser history moved between the two legacy route fixtures."
+    },
+    {
+      "task": "Navigation: legacy /with-stroke",
+      "status": "pass",
+      "evidence": [
+        "route-legacy-with-stroke.png",
+        "legacy-with-stroke-reload.png",
+        "32-with-stroke-200.png"
+      ],
+      "reason": "Fixture route resolves to the with-stroke guide, including reload."
+    },
+    {
+      "task": "Navigation: legacy /without-stroke",
+      "status": "pass",
+      "evidence": [
+        "route-legacy-without-stroke.png",
+        "legacy-without-stroke-reload.png",
+        "33-without-stroke-200.png"
+      ],
+      "reason": "Fixture route resolves to the without-stroke guide, including reload."
+    },
+    {
+      "task": "Navigation: unavailable route",
+      "status": "pass",
+      "evidence": [
+        "route-unavailable.png",
+        "unavailable-reload.png",
+        "route-unavailable.txt"
+      ],
+      "reason": "Unavailable route presents a Page not found state after reload."
+    },
+    {
+      "task": "Patient-facing route: /urgent-help",
+      "status": "pass",
+      "evidence": [
+        "route-urgent-help.png",
+        "route-urgent-help.txt"
+      ],
+      "reason": "Generic emergency wording is shown; no unverified local number was supplied."
+    },
+    {
+      "task": "Patient-facing route: /saved-guides",
+      "status": "pass",
+      "evidence": [
+        "route-saved-guides.png",
+        "route-saved-guides.txt",
+        "saved-hub.txt"
+      ],
+      "reason": "Saved guide topic appears after save/reload; no person name is used as the saved label."
+    },
+    {
+      "task": "Patient-facing route: /personal-card",
+      "status": "pass",
+      "evidence": [
+        "personal-card-blank.txt",
+        "personal-card-preview.txt",
+        "personal-card-reload.txt"
+      ],
+      "reason": "Blank, preview, saved and reloaded states were exercised with synthetic data."
+    },
+    {
+      "task": "Patient-facing route: /milestone-card",
+      "status": "pass",
+      "evidence": [
+        "milestone-blank.txt",
+        "milestone-preview.txt",
+        "milestone-reload.txt"
+      ],
+      "reason": "Blank, preview, saved and reloaded states were exercised with synthetic data."
+    },
+    {
+      "task": "Learning: understanding-dissection guide from beginning through sources/review",
+      "status": "pass",
+      "evidence": [
+        "guide-understanding-dissection.txt",
+        "guide-understanding-dissection-top.png",
+        "guide-understanding-dissection-end.png"
+      ],
+      "reason": "Full DOM snapshot inspected from opening section through each source note and review fields; end capture shows source records and related guide. Review fields say clinical and patient/carer review not recorded."
+    },
+    {
+      "task": "Learning: tests-and-terms guide from beginning through sources/review",
+      "status": "pass",
+      "evidence": [
+        "guide-tests-and-terms.txt",
+        "guide-tests-and-terms-top.png",
+        "guide-tests-and-terms-end.png"
+      ],
+      "reason": "Full DOM snapshot inspected through source notes and review fields; end capture shows source records and related guide."
+    },
+    {
+      "task": "Learning: without-stroke guide from beginning through sources/review",
+      "status": "pass",
+      "evidence": [
+        "guide-without-stroke.txt",
+        "guide-without-stroke-top.png",
+        "guide-without-stroke-end.png"
+      ],
+      "reason": "Full DOM snapshot inspected through source note and review fields; end capture shows source/related-guide content."
+    },
+    {
+      "task": "Learning: with-stroke guide from beginning through sources/review",
+      "status": "pass",
+      "evidence": [
+        "guide-with-stroke.txt",
+        "guide-with-stroke-top.png",
+        "guide-with-stroke-end.png"
+      ],
+      "reason": "Full DOM snapshot inspected through all source notes and review fields; end capture shows source/related-guide content."
+    },
+    {
+      "task": "Learning: recovery-and-quality-of-life guide from beginning through sources/review",
+      "status": "pass",
+      "evidence": [
+        "guide-recovery-and-quality-of-life.txt",
+        "guide-recovery-and-quality-of-life-top.png",
+        "guide-recovery-and-quality-of-life-end.png"
+      ],
+      "reason": "Full DOM snapshot inspected through all source notes and review fields; end capture shows the non-clinical limits noted for a fatigue metaphor source."
+    },
+    {
+      "task": "Learning: supporting-someone guide from beginning through sources/review",
+      "status": "pass",
+      "evidence": [
+        "guide-supporting-someone.txt",
+        "guide-supporting-someone-top.png",
+        "guide-supporting-someone-end.png"
+      ],
+      "reason": "Full DOM snapshot inspected through all source notes and review fields; end capture shows source/related-guide content."
+    },
+    {
+      "task": "Learning: follow-up-questions guide from beginning through sources/review",
+      "status": "pass",
+      "evidence": [
+        "guide-follow-up-questions.txt",
+        "guide-follow-up-questions-top.png",
+        "guide-follow-up-questions-end.png"
+      ],
+      "reason": "Full DOM snapshot inspected through all source notes and review fields; end capture shows source/related-guide content."
+    },
+    {
+      "task": "Learning: glossary matching search",
+      "status": "pass",
+      "evidence": [
+        "glossary-search.txt"
+      ],
+      "reason": "Matching synthetic term search returned a matching definition."
+    },
+    {
+      "task": "Learning: glossary empty search",
+      "status": "pass",
+      "evidence": [
+        "13-glossary-empty.png",
+        "glossary-search.txt"
+      ],
+      "reason": "Invented no-match term presented an empty result state."
+    },
+    {
+      "task": "Learning: saved guide behavior",
+      "status": "pass",
+      "evidence": [
+        "06-saved-hub.png",
+        "saved-hub.txt",
+        "route-saved-guides.png",
+        "saved-after-clear.txt"
+      ],
+      "reason": "Saved guide topic appeared in saved list and persisted after reload; later cleared as part of origin cleanup."
+    },
+    {
+      "task": "Learning: one-section mode",
+      "status": "pass",
+      "evidence": [
+        "guide-simplified-mode.txt",
+        "35-guide-simplified.png"
+      ],
+      "reason": "Section counter/Next controls changed the visible section while navigating."
+    },
+    {
+      "task": "Learning: global simplified reading setting",
+      "status": "pass",
+      "evidence": [
+        "accessibility.txt",
+        "08-display-200-all.png",
+        "guide-simplified-mode.txt"
+      ],
+      "reason": "Setting toggled and persisted into guide view; no claim that text content itself was simplified."
+    },
+    {
+      "task": "Learning: read-aloud manual start/stop",
+      "status": "not-tested",
+      "evidence": [
+        "guide-understanding-dissection.txt"
+      ],
+      "reason": "Control state changed from Read section aloud to Stop reading aloud and back, but audible output could not be verified in this simulation; no screen reader/audio observation was available."
+    },
+    {
+      "task": "Learning: leave and resume reading/search",
+      "status": "not-tested",
+      "evidence": [
+        "saved-hub.txt",
+        "glossary-search.txt"
+      ],
+      "reason": "Saved topic survives reload and search states were used, but restoration of an in-progress reading position or search query after leaving was not specifically verified."
+    },
+    {
+      "task": "Sheets: appointment sheet selection/removal, note, preview, leave-return, save/reload and export",
+      "status": "not-tested",
+      "evidence": [
+        "02-appointment-empty.png",
+        "appointment-empty.txt",
+        "03-appointment-selected.png",
+        "appointment-export.txt",
+        "05-sheet-deleted.png"
+      ],
+      "reason": "Selection, synthetic note, preview and actual TXT export were verified. Save/leave-return/reload was exercised during the session, but no contemporaneous save/reload observation artifact remains in the locked evidence folder, so persistence is not claimed. The later synthetic sheet was deleted."
+    },
+    {
+      "task": "Sheets: appointment saved-sheet deletion confirmation/cancel",
+      "status": "fail",
+      "evidence": [
+        "03-appointment-selected.png",
+        "05-sheet-deleted.png"
+      ],
+      "reason": "Delete saved sheet removed it immediately with a deleted status; no confirmation or cancel/undo UI appeared. This is a usability barrier, not a critical fault."
+    },
+    {
+      "task": "Sheets: support preferences selection/removal, note, preview, leave-return, save/reload and export",
+      "status": "pass",
+      "evidence": [
+        "15-support-preview.png",
+        "support-selected-only.txt",
+        "support-reloaded.txt",
+        "support-export.txt"
+      ],
+      "reason": "Selection/clear, synthetic note, preview, save/reload and actual TXT export were verified."
+    },
+    {
+      "task": "Sheets: support preferences delete cancellation",
+      "status": "not-tested",
+      "evidence": [
+        "support-delete-result.txt",
+        "25-support-deleted.png"
+      ],
+      "reason": "Confirmed deletion was exercised and accepted; the later cancel attempt did not reliably surface a dialog, so cancellation is not claimed."
+    },
+    {
+      "task": "Sheets: optional controls collapse without trapping section navigation",
+      "status": "pass",
+      "evidence": [
+        "appointment-options.txt",
+        "appointment-one-section.txt",
+        "appointment-next-section.txt",
+        "appointment-options-hidden.txt",
+        "support-options-selected.txt"
+      ],
+      "reason": "Both sheets expose Previous/Next after optional options close; next-section action changes section."
+    },
+    {
+      "task": "Sheets: appointment print layout",
+      "status": "not-tested",
+      "evidence": [
+        "appointment-empty.txt"
+      ],
+      "reason": "Print-button interaction timed out before a print view/state change. No OS print dialog or physical print was initiated."
+    },
+    {
+      "task": "Cards: personal card fields/statements/hidden date/preview-edit-return/save-reload and separate content",
+      "status": "pass",
+      "evidence": [
+        "personal-card-blank.txt",
+        "personal-card-expanded.txt",
+        "personal-card-selected-preview.txt",
+        "personal-card-edit-return.txt",
+        "personal-card-reload.txt",
+        "personal-card.txt"
+      ],
+      "reason": "Synthetic name/text/statement persisted through preview/edit/save/reload; optional date was No date and hidden. Real TXT and PDF content matched the card."
+    },
+    {
+      "task": "Cards: personal card actual PDF and print layout/cancel",
+      "status": "not-tested",
+      "evidence": [
+        "personal-card.pdf",
+        "personal-card.pdf-page1.png",
+        "20-card-print-attempt.png",
+        "personal-card-text-alternative.txt"
+      ],
+      "reason": "Actual PDF/TXT inspected. In-app print preview content opened, but no accessible Print/Cancel control was exposed in the snapshot and Escape did not close it; no physical print submitted, cancellation not verified."
+    },
+    {
+      "task": "Cards: personal card delete cancellation and confirmation",
+      "status": "pass",
+      "evidence": [
+        "personal-delete-prompt.txt",
+        "personal-delete-cancel.txt",
+        "personal-delete-confirmed.txt"
+      ],
+      "reason": "Custom confirmation panel exposed Cancel and Confirm; both cancel and confirmed deletion states were exercised."
+    },
+    {
+      "task": "Cards: milestone card fields/statements/hidden date/preview-edit-return/save-reload and separate content",
+      "status": "pass",
+      "evidence": [
+        "milestone-blank.txt",
+        "milestone-preview.txt",
+        "milestone-edit-return.txt",
+        "milestone-reload.txt",
+        "milestone-card.txt"
+      ],
+      "reason": "Synthetic milestone content and survivor wording persisted through edit/save/reload; optional date was No date. Real TXT and PDF content matched this distinct card."
+    },
+    {
+      "task": "Cards: milestone PNG and actual PDF",
+      "status": "pass",
+      "evidence": [
+        "milestone-card.png",
+        "milestone-card.pdf",
+        "milestone-card.pdf-page1.png",
+        "milestone-card.txt"
+      ],
+      "reason": "Downloaded PNG was inspected visually and PDF/TXT contents were extracted and checked."
+    },
+    {
+      "task": "Cards: milestone print layout/cancel",
+      "status": "not-tested",
+      "evidence": [
+        "23-milestone-print.png",
+        "milestone-print.txt"
+      ],
+      "reason": "Print preview content opened; no in-view Cancel/Print controls were exposed in AX and Escape did not close it. No print job submitted; cancellation not verified."
+    },
+    {
+      "task": "Cards: milestone delete cancellation and confirmation",
+      "status": "pass",
+      "evidence": [
+        "milestone-delete-confirmation.txt",
+        "milestone-delete-cancel.txt",
+        "milestone-delete-confirmed.txt"
+      ],
+      "reason": "Custom confirmation exposed Cancel and Confirm and both outcomes were verified."
+    },
+    {
+      "task": "Display: text scale and reset",
+      "status": "pass",
+      "evidence": [
+        "07-display-defaults.png",
+        "08-display-200-all.png",
+        "accessibility.txt",
+        "accessibility-after-clear.txt"
+      ],
+      "reason": "App text scale reached 200%; origin clear restored 100% default."
+    },
+    {
+      "task": "Display: roomier spacing",
+      "status": "pass",
+      "evidence": [
+        "08-display-200-all.png",
+        "accessibility.txt"
+      ],
+      "reason": "Setting toggled and selected state was observed."
+    },
+    {
+      "task": "Display: high contrast",
+      "status": "pass",
+      "evidence": [
+        "08-display-200-all.png",
+        "accessibility.txt"
+      ],
+      "reason": "Setting toggled and selected state was observed; no WCAG contrast ratio measured."
+    },
+    {
+      "task": "Display: dark theme",
+      "status": "pass",
+      "evidence": [
+        "08-display-200-all.png",
+        "accessibility.txt"
+      ],
+      "reason": "Setting toggled and selected state was observed."
+    },
+    {
+      "task": "Display: reduced motion",
+      "status": "pass",
+      "evidence": [
+        "07-display-defaults.png",
+        "08-display-200-all.png",
+        "accessibility-after-clear.txt"
+      ],
+      "reason": "Reduced motion was selected by default and remained selected after clear-all."
+    },
+    {
+      "task": "Display: simplified reading",
+      "status": "pass",
+      "evidence": [
+        "accessibility.txt",
+        "guide-simplified-mode.txt",
+        "accessibility-after-clear.txt"
+      ],
+      "reason": "Setting toggled and visible state was recorded; clear-all returned it to default off."
+    },
+    {
+      "task": "Privacy: saved-hub generic labels",
+      "status": "pass",
+      "evidence": [
+        "26-saved-menu.png",
+        "saved-menu.txt",
+        "saved-after-clear.txt"
+      ],
+      "reason": "Hub labels showed tool/card categories and generic saved status; sensitive values were only visible inside the tool."
+    },
+    {
+      "task": "Privacy: explicit export boundaries",
+      "status": "pass",
+      "evidence": [
+        "appointment-export.txt",
+        "support-export.txt",
+        "personal-card.txt",
+        "milestone-card.txt",
+        "personal-card-reload.txt"
+      ],
+      "reason": "Real TXT/PDF/PNG contents were inspected and contained only chosen synthetic values, selected content, disclaimers and generated date; app labels distinguish local save from user-directed export."
+    },
+    {
+      "task": "Privacy: synthetic marker in URL/request/console logs",
+      "status": "pass",
+      "evidence": [
+        "privacy-marker-observations.json"
+      ],
+      "reason": "Unique synthetic marker was saved locally. Current URL had no marker; CDP Network request/response observation after save returned zero events; console log collection returned zero entries. No request body was available because there was no event."
+    },
+    {
+      "task": "Privacy: clear all saved data on assigned origin",
+      "status": "pass",
+      "evidence": [
+        "clear-all-result.txt",
+        "clear-all-result.png",
+        "saved-after-clear.txt",
+        "accessibility-after-clear.txt"
+      ],
+      "reason": "Clear-all status appeared; saved hub showed no items/cards and accessibility returned to 100% with other optional settings off/default. Scoped to localhost:51070 only."
+    },
+    {
+      "task": "Layout/input: desktop",
+      "status": "pass",
+      "evidence": [
+        "01-home.png",
+        "home-final-default.png"
+      ],
+      "reason": "Default desktop viewport rendered and remained vertically scrollable."
+    },
+    {
+      "task": "Layout/input: 390px width",
+      "status": "fail",
+      "evidence": [
+        "29-home-200-390.png"
+      ],
+      "reason": "At 200% app text the long Home heading splits a word across lines; navigation and content remain vertically reachable. Finding F-01."
+    },
+    {
+      "task": "Layout/input: 320px width",
+      "status": "fail",
+      "evidence": [
+        "30-home-200-320.png"
+      ],
+      "reason": "At 200% app text, the Home heading splits “Information” mid-word; content remains vertically reachable. Finding F-01."
+    },
+    {
+      "task": "Layout/input: short landscape",
+      "status": "pass",
+      "evidence": [
+        "31-home-200-landscape.png"
+      ],
+      "reason": "At 568×320 and 200% app text, content below the header is reachable by scroll; only the top portion fits initially."
+    },
+    {
+      "task": "Layout/input: doubled app text",
+      "status": "fail",
+      "evidence": [
+        "28-home-200.png",
+        "29-home-200-390.png",
+        "30-home-200-320.png",
+        "31-home-200-landscape.png"
+      ],
+      "reason": "200% setting works, but mid-word heading wrapping at small widths is a confirmed usability barrier."
+    },
+    {
+      "task": "Keyboard: sequential Tab and Shift+Tab",
+      "status": "pass",
+      "evidence": [
+        "observations.txt",
+        "keyboard-shift-tab.txt"
+      ],
+      "reason": "Actual sequential forward order (12 stops returning to Urgent help) and a reverse Shift+Tab transition were exercised."
+    },
+    {
+      "task": "Keyboard: expanded menu, Space/Enter/Escape",
+      "status": "pass",
+      "evidence": [
+        "menu-expanded.txt",
+        "menu-space-close.txt",
+        "menu-enter-open.txt"
+      ],
+      "reason": "Menu expanded with Enter, collapsed with Space and Escape; focus returned through sequential keyboard navigation."
+    },
+    {
+      "task": "Keyboard: visible focus and pointer scrolling",
+      "status": "pass",
+      "evidence": [
+        "observations.txt",
+        "07-display-defaults.png",
+        "home-final-default.png"
+      ],
+      "reason": "Visible focus appeared on navigation/settings while tabbing; vertical scrolling was usable in desktop and responsive pages."
+    },
+    {
+      "task": "Actual browser zoom",
+      "status": "not-tested",
+      "evidence": [
+        "accessibility.txt",
+        "28-home-200.png"
+      ],
+      "reason": "Only the app’s own 200% text setting was supported and tested; actual browser zoom was not exposed through this CUA environment."
+    },
+    {
+      "task": "Screen reader",
+      "status": "not-tested",
+      "evidence": [
+        "guide-understanding-dissection.txt"
+      ],
+      "reason": "No native screen-reader/NVDA session was available; AX snapshots are not screen-reader validation."
+    },
+    {
+      "task": "Native devices",
+      "status": "not-tested",
+      "evidence": [
+        "accessibility.txt"
+      ],
+      "reason": "This was a web run in the assigned browser origin; Expo SecureStore/native-device behavior was not exercised."
+    }
+  ],
+  "limits": [
+    "Simulation only; not patient study, clinical review, lived-experience testimony or accessibility certification.",
+    "Native screen reader/NVDA, actual browser zoom, native-device storage and physical printing not tested.",
+    "Read-aloud audible playback unverified; only control state changed.",
+    "Appointment save/reload was exercised but a contemporaneous observation artifact is absent, so persistence is not claimed.",
+    "Network observation covered the synthetic save: no CDP request/response events and no console log entries were captured; no request body was available.",
+    "Source publisher pages and clinical accuracy were not evaluated."
+  ],
+  "evidenceDirectory": "C:/Work/VAD CAD app/docs/five-tester-audit/T3",
+  "locked": true
+}

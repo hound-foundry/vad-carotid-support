@@ -1,0 +1,64 @@
+- link "Urgent help":
+  - /url: /urgent-help
+  - generic: Urgent help
+  - generic: ›
+- generic "VAD & Carotid Support"
+- navigation "Main navigation":
+  - link "Home":
+    - /url: /
+    - generic: Home
+  - button "Menu":
+    - generic: Menu
+  - link "Text and display":
+    - /url: /accessibility
+    - generic: Text and display
+- link "Skip to main content":
+  - generic: Skip to main content
+- main:
+  - link "Back to home":
+    - /url: /
+    - generic: ←
+    - generic: Home
+  - heading "Medical and communication card" [level=1]
+  - generic: Choose what helps. Every field is optional.
+  - generic: Communication statements (optional)
+  - checkbox "Please give me time to answer.":
+    - generic: Please give me time to answer.
+  - checkbox "Please write important things down.":
+    - generic: Please write important things down.
+  - checkbox "Please use short, clear sentences." [checked]:
+    - generic: ✓
+    - generic: Please use short, clear sentences.
+  - checkbox "Please ask before helping me.":
+    - generic: Please ask before helping me.
+  - button "Name and your own words (optional) · Show":
+    - generic: Name and your own words (optional) · Show
+  - button "Review card":
+    - generic: Review card
+  - button "Add optional details · Show":
+    - generic: Add optional details · Show
+  - generic: Personal information card — not an official medical record or emergency plan.
+  - generic: Saved on this device.
+  - button "Save on this device":
+    - generic: Save on this device
+  - button "Start blank or delete saved card · Hide" [expanded]:
+    - generic: Start blank or delete saved card · Hide
+  - button "Start a blank draft":
+    - generic: Start a blank draft
+  - button "Delete saved card" [active]:
+    - generic: Delete saved card
+  - button "Privacy and leaving this page · Show":
+    - generic: Privacy and leaving this page · Show
+  - generic: Development preview · general information only · not a medical service
+  - link "About and privacy":
+    - /url: /about
+    - generic: About and privacy
+  - link "Accessibility":
+    - /url: /accessibility
+    - generic: Accessibility
+  - link "Saved on this device":
+    - /url: /saved
+    - generic: Saved on this device
+  - link "Urgent help":
+    - /url: /urgent-help
+    - generic: Urgent help

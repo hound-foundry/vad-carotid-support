@@ -1,0 +1,73 @@
+{
+  "tester": "T4",
+  "recordType": "evidence-only-retrospective-retest",
+  "baselineReportLocked": true,
+  "baselineRevision": "72688788cb926af39b9813c38ac830301a0eaeda",
+  "browserLease": false,
+  "browserInteractionPerformed": false,
+  "evidenceRoot": "docs/five-tester-audit/root",
+  "artifactsInspected": [
+    "medical-preview.txt",
+    "medical-repaired.pdf",
+    "medical-repaired-page1.png",
+    "medical-repaired-extracted.txt",
+    "after-home-320-double.jpg",
+    "after-home-landscape-double.jpg",
+    "after-support-delete-confirm.jpg"
+  ],
+  "results": [
+    {
+      "relatedFinding": "T4-02",
+      "status": "resolved-in-supplied-repaired-artifact",
+      "result": "Actual medical-repaired.pdf is one A4 page and includes the full shortfixture card. The prior date-only second page is absent.",
+      "checks": {
+        "allInventedFixtureFieldsPresent": true,
+        "hiddenDateMarkerHIDDEN_DATE_2030Absent": true,
+        "lastUpdatedLabelAndDatePresent": true,
+        "safetyFooterPresent": true,
+        "formFillingOrReturnInstructionsFound": false,
+        "pageCount": 1,
+        "pageSize": "A4"
+      },
+      "evidence": [
+        "docs/five-tester-audit/root/medical-preview.txt",
+        "docs/five-tester-audit/root/medical-repaired.pdf",
+        "docs/five-tester-audit/root/medical-repaired-page1.png",
+        "docs/five-tester-audit/root/medical-repaired-extracted.txt"
+      ],
+      "notes": "Preview and PDF label 2026-10-13 as Last updated. Preview reports Unsaved changes and offers Save on this device, consistent with changing the date after an earlier save."
+    },
+    {
+      "relatedFinding": "T4-03",
+      "status": "improved-but-date-still-present",
+      "result": "No event date is selected and the hidden date is absent, but the separately labeled Last updated date remains in preview/PDF. This is correctly labeled in the supplied artifact; date-confusion remains a user-interpretation question, not a demonstrated output defect.",
+      "evidence": [
+        "docs/five-tester-audit/root/medical-preview.txt",
+        "docs/five-tester-audit/root/medical-repaired-extracted.txt"
+      ]
+    },
+    {
+      "relatedFinding": "T4-01",
+      "status": "specific-claim-disproved-by-supplied-screenshot",
+      "result": "At doubled app text in the 320px screenshot, the Home heading Guides and tools is visible within the captured viewport. The header wraps and pushes most of the first tool below view, supporting extra scrolling but not the baseline claim that the title begins below the first view. Landscape screenshot shows title and start of first tool.",
+      "evidence": [
+        "docs/five-tester-audit/root/after-home-320-double.jpg",
+        "docs/five-tester-audit/root/after-home-landscape-double.jpg"
+      ],
+      "limits": "Screenshots do not establish clipping or horizontal overflow."
+    },
+    {
+      "relatedFinding": "T4-U1",
+      "status": "confirmation-choice-visible-outcome-unverified",
+      "result": "The supplied screenshot shows an in-app delete confirmation with Cancel deletion and Confirm deletion choices. Neither resulting state is shown, so deletion and cancellation outcomes remain unverified.",
+      "evidence": [
+        "docs/five-tester-audit/root/after-support-delete-confirm.jpg"
+      ]
+    }
+  ],
+  "limits": [
+    "Evidence was actuated by another tester and supplied for retrospective inspection; this is not an independent browser replay.",
+    "No delete-confirmation choice was clicked or its storage outcome verified.",
+    "T4 baseline report files remain unchanged; this addendum records the supplied repaired-build evidence only."
+  ]
+}

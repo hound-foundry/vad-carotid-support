@@ -1,6 +1,21 @@
-import { Link } from "expo-router";
-import { Pressable, StyleSheet, Text, View } from "react-native";
-import { SafeAreaView } from "react-native-safe-area-context";
-export default function SupportingSomeone(){return <Page title="Being there can start with listening." body="This pathway is being prepared for family, friends and carers. A shareable “How to support me” sheet is planned, with the person in control of what they choose to share."/>}
-function Page({title,body}:{title:string;body:string}){return <SafeAreaView style={s.safe}><View style={s.page}><Link href="/" asChild><Pressable accessibilityRole="link"><Text style={s.back}>‹  Home</Text></Pressable></Link><Text style={s.label}>IN DEVELOPMENT</Text><Text style={s.title}>{title}</Text><Text style={s.body}>{body}</Text><Text style={s.note}>Do not share another person’s health information unless they have chosen to share it.</Text></View></SafeAreaView>}
-const s=StyleSheet.create({safe:{flex:1,backgroundColor:"#F7F8F5"},page:{width:"100%",maxWidth:760,alignSelf:"center",padding:26},back:{color:"#537670",fontSize:14,paddingVertical:18},label:{marginTop:25,color:"#9A684E",fontSize:11,fontWeight:"700",letterSpacing:1.5},title:{marginTop:12,color:"#263D3A",fontSize:30,lineHeight:38,fontWeight:"600"},body:{marginTop:14,color:"#576762",fontSize:16,lineHeight:25},note:{marginTop:26,color:"#7B8781",fontSize:13,lineHeight:21}});
+import { Link } from "../src/components/AppLink";
+import { Pressable, Text } from "../src/components/Ui";
+
+import { StyleSheet } from "react-native";
+import { AppPage, Card, DraftNotice, PageHeading, palette } from "../src/components/AppPage";
+import { GuideList } from "../src/components/GuideList";
+import { Disclosure } from "../src/features/cards/CardUi";
+
+export default function SupportingSomeone() {
+  return <AppPage>
+    <PageHeading compact eyebrow="For family, friends and carers" title="Help someone" summary="Ask what would help today. Choose one small step together." />
+    <Link href="/support-preferences" asChild><Pressable accessibilityRole="link" style={styles.action}><Text style={styles.actionTitle}>Ask what helps →</Text><Text style={styles.actionBody}>Choose support statements together, when the person wants to.</Text></Pressable></Link>
+    <Link href="/appointments" asChild><Pressable accessibilityRole="link" style={styles.action}><Text style={styles.actionTitle}>Prepare an appointment question →</Text><Text style={styles.actionBody}>Keep your own questions separate and decide what to ask the care team.</Text></Pressable></Link>
+    <Link href="/personal-card" asChild><Pressable accessibilityRole="link" style={styles.action}><Text style={styles.actionTitle}>Make a communication card →</Text><Text style={styles.actionBody}>Let the person choose what they want others to know.</Text></Pressable></Link>
+    <DraftNotice compact />
+    <Disclosure title="Guides for carers"><GuideList compact audience="carer" slugs={["understanding-dissection", "tests-and-terms", "with-stroke", "recovery-and-quality-of-life", "supporting-someone", "follow-up-questions"]} /></Disclosure>
+    <Card title="Respect the person’s privacy"><Text style={styles.body}>Do not share another person’s health information unless they have chosen to share it. You can keep your own questions separately and ask the care team what support is available to carers.</Text></Card>
+  </AppPage>;
+}
+
+const styles = StyleSheet.create({ action: { marginBottom: 12, padding: 17, borderRadius: 15, borderWidth: 1, borderColor: palette.line, backgroundColor: palette.white }, actionTitle: { color: palette.tealDark, fontSize: 18, fontWeight: "700" }, actionBody: { color: palette.text, fontSize: 16, marginTop: 4 }, body: { color: palette.text, fontSize: 18 } });

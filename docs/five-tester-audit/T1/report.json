@@ -1,0 +1,493 @@
+{
+  "tester": "T1",
+  "baselineRevision": "72688788cb926af39b9813c38ac830301a0eaeda",
+  "origin": "http://localhost:51068/",
+  "perspective": "Simulated newly diagnosed adult without stroke, phone user without identified access impairment; wants plain explanations, visible sources and one useful appointment question; prefers calm wording and dislikes jargon and repeated notices. Not patient testimony.",
+  "scores": {
+    "navigation": 2,
+    "readingAccess": 2,
+    "practicalUsefulness": 2,
+    "dataOutputTrust": 2,
+    "recoveryFromInterruption": 1,
+    "total": 9,
+    "criticalCapApplied": false,
+    "explanation": {
+      "navigation": "All nine menu destinations, header/footer, Home, urgent help, direct/reload, Back/Forward, legacy routes and an unavailable route exercised.",
+      "readingAccess": "Text settings, section reading, keyboard focus/activation, pointer scroll and responsive viewports worked; audible playback/assistive technology not verified.",
+      "practicalUsefulness": "No-stroke guide includes a useful follow-up question; sheet selection, notes, preview and export work.",
+      "dataOutputTrust": "Local storage/export boundaries are explicit; synthetic outputs matched preview; saved hub is generic.",
+      "recoveryFromInterruption": "All-saved-guide deletion had no confirmation/undo; other tested saved sheets/cards restored after reload and card deletion was cancelable."
+    }
+  },
+  "verdict": "9/10. Useful and navigable in the simulated path, with one low-severity recovery barrier; no critical or confirmed clinical fault.",
+  "strengths": [
+    "Calm, non-predictive no-stroke guide says ongoing questions and effects still matter.",
+    "A useful appointment question is offered: what follow-up is needed and what is its purpose?",
+    "Glossary gives short definitions, caveats and a way to prepare a clinician question.",
+    "Sources and review status are visible; the app states reviews are not recorded rather than implying approval.",
+    "Saved hub uses generic labels, and storage/export boundaries are explicit.",
+    "Appointment notes, support preferences, and card outputs preserve the synthetic content tested."
+  ],
+  "frustrations": [
+    "Delete all saved guides removes the entire list immediately, without confirmation or undo.",
+    "Both downloaded PDFs repeat the disclaimer in the card content and page footer.",
+    "At 320px and 200% app text, the appointment heading occupies several short lines and navigation wraps, although no horizontal overflow occurs.",
+    "All seven guides visibly remain draft/review pending, with clinical/patient review and dates not recorded; this is transparent but may limit confidence for a newly diagnosed reader."
+  ],
+  "findings": [
+    {
+      "id": "T1-UB-01",
+      "category": "usability-barrier",
+      "severity": "low",
+      "route": "/saved-guides",
+      "steps": [
+        "Save two guides on this device.",
+        "Open Saved guides.",
+        "Activate Delete all saved guides."
+      ],
+      "expected": "A cancel opportunity or undo for removing the full list.",
+      "actual": "Both saved entries disappeared immediately; the empty-list prompt appeared with no confirmation or undo.",
+      "evidence": [
+        "32-saved-guides.jpg",
+        "54-saved-hub-final.jpg"
+      ],
+      "note": "The guides can be re-found and saved again, so this is not a critical lost-data fault."
+    },
+    {
+      "id": "T1-PREF-01",
+      "category": "preference",
+      "severity": "low",
+      "route": "/personal-card and /milestone-card",
+      "steps": [
+        "Create each synthetic card.",
+        "Download each PDF.",
+        "Inspect rendered pages."
+      ],
+      "expected": "Show the safety statement legibly without repeating it on the same card.",
+      "actual": "Each PDF includes the same disclaimer beneath its content and again in the footer.",
+      "evidence": [
+        "output-medical-card.pdf",
+        "output-milestone.pdf",
+        "pdf-render-1.png",
+        "pdf-render-2.png"
+      ],
+      "note": "Minor duplication; it does not obscure content."
+    }
+  ],
+  "coverage": [
+    {
+      "task": "Home and header",
+      "route": "/",
+      "status": "pass",
+      "evidence": [
+        "01-home.jpg",
+        "46-keyboard-focus.jpg"
+      ],
+      "reason": "Home cards, menu, Text and display, urgent-help banner, keyboard focus and Enter activation observed."
+    },
+    {
+      "task": "Footer and pointer scrolling",
+      "route": "/",
+      "status": "pass",
+      "evidence": [
+        "47-pointer-scroll.jpg"
+      ],
+      "reason": "Pointer wheel moved the page to footer links and limitations."
+    },
+    {
+      "task": "Menu destination",
+      "route": "/learn",
+      "status": "pass",
+      "evidence": [
+        "15-menu-open.jpg",
+        "route-learn.jpg"
+      ],
+      "reason": "Menu opens with nine destinations; Guides loaded."
+    },
+    {
+      "task": "Menu destination",
+      "route": "/appointments",
+      "status": "pass",
+      "evidence": [
+        "04-appointment-notes.jpg",
+        "43-appointment-selected.jpg"
+      ],
+      "reason": "Appointment sheet loaded and selection/preview worked."
+    },
+    {
+      "task": "Menu destination",
+      "route": "/cards",
+      "status": "pass",
+      "evidence": [
+        "11-milestone-blank.jpg"
+      ],
+      "reason": "Card chooser displayed both card types."
+    },
+    {
+      "task": "Menu destination",
+      "route": "/supporting-someone",
+      "status": "pass",
+      "evidence": [
+        "route-supporting-someone.jpg"
+      ],
+      "reason": "Help someone page and support-preference link loaded."
+    },
+    {
+      "task": "Menu destination",
+      "route": "/support-preferences",
+      "status": "pass",
+      "evidence": [
+        "06-support-preferences.jpg",
+        "07-support-preview.jpg",
+        "49-support-preferences.jpg"
+      ],
+      "reason": "Selections, note, save/reload and export verified."
+    },
+    {
+      "task": "Menu destination",
+      "route": "/glossary",
+      "status": "pass",
+      "evidence": [
+        "14-glossary-result.jpg",
+        "52-glossary-match.jpg",
+        "53-glossary-no-match.jpg"
+      ],
+      "reason": "Matching and empty searches show useful guidance."
+    },
+    {
+      "task": "Menu destination",
+      "route": "/resources",
+      "status": "pass",
+      "evidence": [
+        "route-resources.jpg"
+      ],
+      "reason": "Five external resources and review caveats displayed; links were not opened."
+    },
+    {
+      "task": "Menu destination",
+      "route": "/saved",
+      "status": "pass",
+      "evidence": [
+        "45-saved-hub.jpg",
+        "54-saved-hub-final.jpg"
+      ],
+      "reason": "Hub uses generic labels; final hub has no saved fixtures."
+    },
+    {
+      "task": "Menu destination",
+      "route": "/about",
+      "status": "pass",
+      "evidence": [
+        "route-about.jpg"
+      ],
+      "reason": "About and privacy page loaded directly and after reload."
+    },
+    {
+      "task": "Urgent help/header link",
+      "route": "/urgent-help",
+      "status": "pass",
+      "evidence": [
+        "route-urgent-help.jpg"
+      ],
+      "reason": "Urgent instruction is clear and directs users to local emergency services."
+    },
+    {
+      "task": "Help someone route",
+      "route": "/supporting-someone",
+      "status": "pass",
+      "evidence": [
+        "route-supporting-someone.jpg"
+      ],
+      "reason": "Calm page and link to choose support statements observed."
+    },
+    {
+      "task": "About and privacy route",
+      "route": "/about",
+      "status": "pass",
+      "evidence": [
+        "route-about.jpg"
+      ],
+      "reason": "Direct route, reload, Back and Forward navigation verified."
+    },
+    {
+      "task": "Saved-guide list and deletion",
+      "route": "/saved-guides",
+      "status": "fail",
+      "evidence": [
+        "32-saved-guides.jpg",
+        "54-saved-hub-final.jpg"
+      ],
+      "reason": "Saved guide list and export/delete controls visible; Delete all immediately cleared two entries without confirmation/undo (T1-UB-01)."
+    },
+    {
+      "task": "Medical card",
+      "route": "/personal-card",
+      "status": "pass",
+      "evidence": [
+        "08-medical-card-blank.jpg",
+        "09-medical-card-review.jpg",
+        "33-medical-card-review-final.jpg",
+        "36-medical-card-after-reload.jpg",
+        "38-medical-statement-after-save-reload.jpg",
+        "39-medical-card-deleted.jpg"
+      ],
+      "reason": "Blank defaults, optional fields/statements, hidden date, review/edit, save/reload and cancel/confirm deletion checked."
+    },
+    {
+      "task": "Milestone card",
+      "route": "/milestone-card",
+      "status": "pass",
+      "evidence": [
+        "11-milestone-blank.jpg",
+        "12-milestone-review.jpg",
+        "40-milestone-review.jpg",
+        "41-milestone-after-reload.jpg",
+        "42-milestone-delete-confirm.jpg"
+      ],
+      "reason": "Blank defaults, optional date/wording, review/edit, save/reload and cancel/confirm deletion checked."
+    },
+    {
+      "task": "Appointment sheet",
+      "route": "/appointments",
+      "status": "pass",
+      "evidence": [
+        "04-appointment-notes.jpg",
+        "05-appointment-preview.jpg",
+        "43-appointment-selected.jpg",
+        "44-appointment-single-section.jpg",
+        "output-appointment-sheet.txt"
+      ],
+      "reason": "Select/remove, synthetic note, preview, save/reload, export, clear selections and optional view/section navigation checked. An initial same-session delete cancel/confirm check succeeded; a repeat click timed out, but final hub was empty."
+    },
+    {
+      "task": "Support-preference sheet",
+      "route": "/support-preferences",
+      "status": "pass",
+      "evidence": [
+        "06-support-preferences.jpg",
+        "07-support-preview.jpg",
+        "49-support-preferences.jpg",
+        "output-support-preferences.txt"
+      ],
+      "reason": "Select/remove, synthetic note, preview, save/reload, export and delete checked."
+    },
+    {
+      "task": "Guide — Understanding cervical artery dissection",
+      "route": "/guide/understanding-dissection",
+      "status": "pass",
+      "evidence": [
+        "guide-01.jpg"
+      ],
+      "reason": "Guide read end-to-end; four source links; clinical and patient/carer reviews and review date not recorded."
+    },
+    {
+      "task": "Guide — Tests, scans and unfamiliar terms",
+      "route": "/guide/tests-and-terms",
+      "status": "pass",
+      "evidence": [
+        "guide-02.jpg",
+        "03-guide-section-tts.jpg"
+      ],
+      "reason": "Guide read end-to-end; eight source links; review status disclosed; one-section mode and return state checked."
+    },
+    {
+      "task": "Guide — Dissection without a diagnosed stroke",
+      "route": "/guide/without-stroke",
+      "status": "pass",
+      "evidence": [
+        "02-guide-no-stroke.jpg",
+        "guide-03.jpg",
+        "31-guide-review-details.jpg",
+        "51-read-aloud-started.jpg"
+      ],
+      "reason": "Guide read end-to-end; three source links; follow-up question, review disclosure, section navigation, saved/reload/return and read-aloud controls checked."
+    },
+    {
+      "task": "Guide — When dissection is accompanied by stroke",
+      "route": "/guide/with-stroke",
+      "status": "pass",
+      "evidence": [
+        "guide-04.jpg"
+      ],
+      "reason": "Guide read end-to-end; five source links; review status disclosed."
+    },
+    {
+      "task": "Guide — Recovery, fatigue and quality of life",
+      "route": "/guide/recovery-and-quality-of-life",
+      "status": "pass",
+      "evidence": [
+        "guide-05.jpg"
+      ],
+      "reason": "Guide read end-to-end; four source links; review status disclosed."
+    },
+    {
+      "task": "Guide — Supporting someone after dissection or stroke",
+      "route": "/guide/supporting-someone",
+      "status": "pass",
+      "evidence": [
+        "guide-06.jpg"
+      ],
+      "reason": "Guide read end-to-end; five source links; review status disclosed."
+    },
+    {
+      "task": "Guide — Prepare for a follow-up appointment",
+      "route": "/guide/follow-up-questions",
+      "status": "pass",
+      "evidence": [
+        "guide-07.jpg",
+        "31-guide-review-details.jpg"
+      ],
+      "reason": "Guide read end-to-end; five source links; review status disclosed."
+    },
+    {
+      "task": "Glossary search / return",
+      "route": "/glossary",
+      "status": "pass",
+      "evidence": [
+        "52-glossary-match.jpg",
+        "53-glossary-no-match.jpg"
+      ],
+      "reason": "stenosis returns Narrowing with a caveat; no-match gives guide/appointment links; search survives linked navigation and Back."
+    },
+    {
+      "task": "Sources and review details",
+      "route": "/guide/*",
+      "status": "pass",
+      "evidence": [
+        "31-guide-review-details.jpg",
+        "guide-01.jpg",
+        "guide-02.jpg",
+        "guide-03.jpg",
+        "guide-04.jpg",
+        "guide-05.jpg",
+        "guide-06.jpg",
+        "guide-07.jpg"
+      ],
+      "reason": "Source links and draft/review state were inspected for all guides; clinical/patient review and dates were not recorded. Publishers were not opened."
+    },
+    {
+      "task": "Legacy stroke route",
+      "route": "/without-stroke",
+      "status": "pass",
+      "evidence": [
+        "route-without-stroke.jpg"
+      ],
+      "reason": "Direct legacy route resolves to the no-stroke guide."
+    },
+    {
+      "task": "Legacy stroke route",
+      "route": "/with-stroke",
+      "status": "pass",
+      "evidence": [
+        "route-with-stroke.jpg"
+      ],
+      "reason": "Direct legacy route resolves to “Dissection and stroke” page."
+    },
+    {
+      "task": "Unavailable route",
+      "route": "/not-a-real-page-t1",
+      "status": "pass",
+      "evidence": [
+        "route-not-a-real-page-t1.jpg"
+      ],
+      "reason": "Displays “Page not found”."
+    },
+    {
+      "task": "Display preferences",
+      "route": "/accessibility",
+      "status": "pass",
+      "evidence": [
+        "20-accessibility-default.jpg",
+        "21-accessibility-options.jpg",
+        "48-global-simplified-guide.jpg"
+      ],
+      "reason": "Text scale, spacing, contrast, dark theme, reduced motion and simplified reading tested; settings reset."
+    },
+    {
+      "task": "Privacy marker observation",
+      "route": "/appointments",
+      "status": "pass",
+      "evidence": [
+        "43-appointment-selected.jpg"
+      ],
+      "reason": "Synthetic marker absent from URL, observed request events and console logs; no request events were emitted after typing."
+    },
+    {
+      "task": "Actual card outputs",
+      "route": "/personal-card + /milestone-card",
+      "status": "pass",
+      "evidence": [
+        "output-medical-card.pdf",
+        "output-medical-card.txt",
+        "output-milestone.pdf",
+        "output-milestone.png",
+        "pdf-render-1.png",
+        "pdf-render-2.png",
+        "10-medical-card-print.jpg",
+        "13-milestone-print.jpg"
+      ],
+      "reason": "PDF/TXT/PDF/PNG downloaded; expected synthetic values and one-page PDF layouts inspected. Both PDFs duplicate the disclaimer."
+    },
+    {
+      "task": "Audible speech output",
+      "route": "/guide/without-stroke",
+      "status": "not-tested",
+      "evidence": [
+        "51-read-aloud-started.jpg"
+      ],
+      "reason": "The start/stop control states worked, but this browser session could not confirm audible output."
+    },
+    {
+      "task": "Screen reader / assistive technology",
+      "route": "all",
+      "status": "not-tested",
+      "evidence": [],
+      "reason": "No screen reader or assistive technology was available through the assigned browser workflow."
+    },
+    {
+      "task": "Actual browser zoom / native devices",
+      "route": "all",
+      "status": "not-tested",
+      "evidence": [
+        "22-mobile-390.jpg",
+        "23-mobile-320-appointments.jpg",
+        "24-landscape-appointments.jpg",
+        "50-mobile-320-double-text.jpg"
+      ],
+      "reason": "Responsive viewport and app text scaling were exercised; actual browser zoom and native phone behavior were not."
+    },
+    {
+      "task": "Print job",
+      "route": "/personal-card + /milestone-card",
+      "status": "not-tested",
+      "evidence": [
+        "10-medical-card-print.jpg",
+        "13-milestone-print.jpg"
+      ],
+      "reason": "Print layouts/previews were inspected; no physical or OS print job was submitted."
+    }
+  ],
+  "limits": [
+    "Simulated UX review only; not patient research, clinical review or accessibility certification.",
+    "External sources were not opened; review/link labels were inspected only.",
+    "Read-aloud control changed to stop and back, but audible output was not confirmed.",
+    "Screen readers, actual browser zoom, native phones and real audio output were not tested.",
+    "A repeat appointment-sheet delete click timed out; an earlier same-session cancel/confirm check succeeded, and final Saved hub showed no appointment item.",
+    "Browser blocked opening a file: URL; actual PDFs were instead inspected by extracting text and rendering with the already-bundled Python PDF runtime.",
+    "A referenced AGENTS.md Tessl rule target at C:\\Work\\.tessl\\RULES.md was unavailable.",
+    "CUA documentation was refreshed and parent process support clarified screenshot/download APIs; no UX hints were shared. No app or dependency changes were made."
+  ],
+  "environment": {
+    "browser": "Codex In-app Browser (hidden IAB)",
+    "defaultViewport": "1280x720 approximate; explicit override reset",
+    "responsiveViewports": [
+      "390x844",
+      "320x640",
+      "844x390",
+      "320x640 at 200% app text"
+    ],
+    "finalState": "Test tab closed; display preferences and viewport reset; saved fixtures removed from device storage."
+  },
+  "evidenceFolder": "C:/Work/VAD CAD app/docs/five-tester-audit/T1",
+  "locked": true
+}

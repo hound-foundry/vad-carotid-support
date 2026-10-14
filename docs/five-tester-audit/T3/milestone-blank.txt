@@ -1,0 +1,57 @@
+- link "Urgent help":
+  - /url: /urgent-help
+  - generic: Urgent help
+  - generic: ›
+- generic: VAD & Carotid Support
+- navigation "Main navigation":
+  - link "Home":
+    - /url: /
+    - generic: Home
+  - button "Menu":
+    - generic: Menu
+  - link "Text and display":
+    - /url: /accessibility
+    - generic: Text and display
+- link "Skip to main content":
+  - generic: Skip to main content
+- main:
+  - link "Back to home":
+    - /url: /
+    - generic: ←
+    - generic: Home
+  - generic: CARD · EDIT
+  - heading "Anniversary or milestone card" [level=1]
+  - generic: Mark a moment in your own words. Dates and “survivor” wording are optional.
+  - generic: Display name (optional)
+  - textbox "Display name (optional)"
+  - generic: Card title
+  - textbox "Card title": My milestone
+  - generic: Personal message (optional)
+  - textbox "Personal message (optional)"
+  - button "Review card":
+    - generic: Review card
+  - button "Add an optional date · Show":
+    - generic: Add an optional date · Show
+  - button "Optional wording · Show":
+    - generic: Optional wording · Show
+  - generic: Personal story/milestone — not medical advice or proof of diagnosis.
+  - generic: Not saved. You can preview without saving.
+  - button "Save on this device":
+    - generic: Save on this device
+  - button "Start blank or delete saved card · Show":
+    - generic: Start blank or delete saved card · Show
+  - button "Privacy and leaving this page · Show":
+    - generic: Privacy and leaving this page · Show
+  - generic: Development preview · general information only · not a medical service
+  - link "About and privacy":
+    - /url: /about
+    - generic: About and privacy
+  - link "Accessibility":
+    - /url: /accessibility
+    - generic: Accessibility
+  - link "Saved on this device":
+    - /url: /saved
+    - generic: Saved on this device
+  - link "Urgent help":
+    - /url: /urgent-help
+    - generic: Urgent help

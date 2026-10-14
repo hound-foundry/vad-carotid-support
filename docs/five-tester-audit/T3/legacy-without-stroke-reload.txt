@@ -1,0 +1,3 @@
+Browser tab: 1, Title: "VAD & Carotid Support", URL: "http://localhost:51070/without-stroke".
+There has been no change in the accessibility tree.
+The focused UI element is 1 AXWebArea VAD & Carotid Support, URL: localhost:51070/without-stroke

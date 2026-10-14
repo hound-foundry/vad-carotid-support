@@ -1,0 +1,89 @@
+- link "Urgent help":
+  - /url: /urgent-help
+  - generic: Urgent help
+  - generic: ›
+- generic: VAD & Carotid Support
+- navigation "Main navigation":
+  - link "Home":
+    - /url: /
+    - generic: Home
+  - button "Menu":
+    - generic: Menu
+  - link "Text and display":
+    - /url: /accessibility
+    - generic: Text and display
+- link "Skip to main content":
+  - generic: Skip to main content
+- main:
+  - link "Back to home":
+    - /url: /
+    - generic: ←
+    - generic: Home
+  - generic: RESOURCE DIRECTORY
+  - heading "Read beyond this project." [level=1]
+  - generic: These are links to external publishers. This directory does not endorse a treatment, service or community, and external content may change.
+  - heading "Patient, carer and professional resources" [level=2]
+  - generic: Show resources for
+  - button "Everyone" [pressed]:
+    - generic: Everyone
+  - button "Patients":
+    - generic: Patients
+  - button "Carers":
+    - generic: Carers
+  - button "Professionals":
+    - generic: Professionals
+  - textbox "Search verified resources":
+    - /placeholder: Search by topic, audience or resource type
+  - generic: 5 verified resources shown
+  - 'link "Open external resource: Vascular Disease Patient Information Page: Cervical artery dissection (CeAD)"':
+    - generic: "Vascular Disease Patient Information Page: Cervical artery dissection (CeAD)"
+    - generic: "patient-information · Language: English · Checked 2026-10-12 · For patients, carers"
+    - generic: Older patient-information article. Read its date and discuss care questions with your own team.
+    - generic: "Source appraisal: candidate · Clinical review: not recorded"
+    - generic: "Rights: Link and original bibliographic annotation only; source content is not relicensed."
+    - generic: Opens an external service ↗
+  - 'link "Open external resource: Cervical Artery Dissection"':
+    - generic: Cervical Artery Dissection
+    - generic: "patient-information · Language: English · Checked 2026-10-12 · For patients, carers, interested readers"
+    - generic: The source catalogue records a 2022 review date; check for newer guidance.
+    - generic: "Source appraisal: candidate · Clinical review: not recorded"
+    - generic: "Rights: Link and original bibliographic annotation only; source content is not relicensed."
+    - generic: Opens an external service ↗
+  - 'link "Open external resource: Carotid and Vertebral Artery Dissection: A Guide for Survivors and Their Loved Ones"':
+    - generic: "Carotid and Vertebral Artery Dissection: A Guide for Survivors and Their Loved Ones"
+    - generic: "book · Language: English · Checked 2026-10-12 · For patients, carers"
+    - generic: 2017 book by Jodi A. Dodds and Amanda P. Anderson. Only bibliographic information has been checked; the project does not reproduce its text.
+    - generic: "Source appraisal: candidate · Clinical review: not recorded"
+    - generic: "Rights: Link and original bibliographic annotation only; source content is not relicensed."
+    - generic: Opens an external service ↗
+  - 'link "Open external resource: Stroke Symptoms and Warning Signs"':
+    - generic: Stroke Symptoms and Warning Signs
+    - generic: "patient-information · Language: English · Checked 2026-10-12 · For patients, carers, interested readers"
+    - generic: US-published resource. Emergency instructions and services are country-specific.
+    - generic: "Source appraisal: candidate · Clinical review: not recorded"
+    - generic: "Rights: Link and original bibliographic annotation only; source content is not relicensed."
+    - generic: Opens an external service ↗
+  - 'link "Open external resource: Stroke rehabilitation in adults: recommendations"':
+    - generic: "Stroke rehabilitation in adults: recommendations"
+    - generic: "clinical-guideline · Language: English · Checked 2026-10-12 · For patients, carers, professionals"
+    - generic: UK guideline; service recommendations may not apply in other countries.
+    - generic: "Source appraisal: candidate · Clinical review: not recorded"
+    - generic: "Rights: Link and original bibliographic annotation only; source content is not relicensed."
+    - generic: Opens an external service ↗
+  - heading "Community links are being checked" [level=2]
+  - generic: Three Facebook groups have been suggested for this directory. Their current names, purpose, language, access requirements and privacy context could not yet be independently verified, so the links are not listed here. Facebook is an external service; private groups may require membership and expose your Facebook identity to the group. No member posts or personal profiles are used.
+  - generic: Candidate links are kept in the project’s editorial data and remain hidden until a dated verification is recorded.
+  - generic "Three community group candidates are pending verification": "Verification queue: 3 group candidates · none currently listed"
+  - generic: Development preview · general information only · not a medical service
+  - link "About and privacy":
+    - /url: /about
+    - generic: About and privacy
+  - link "Accessibility":
+    - /url: /accessibility
+    - generic: Accessibility
+  - link "Saved on this device":
+    - /url: /saved
+    - generic: Saved on this device
+  - link "Urgent help":
+    - /url: /urgent-help
+    - generic: Urgent help

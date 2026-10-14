@@ -9,12 +9,24 @@
     "android": "expo start --android",
     "ios": "expo start --ios",
     "typecheck": "tsc --noEmit",
-    "build:web": "expo export --platform web"
+    "test": "node --test test/*.test.mjs && node scripts/validate-content.mjs && node scripts/validate-review.mjs && node scripts/validate-native-config.mjs",
+    "build:web": "expo export --platform web",
+    "preview:web": "node scripts/preview-web.mjs",
+    "design:check": "node scripts/design-kit.mjs --check",
+    "design:kit": "node scripts/design-kit.mjs",
+    "design:preview": "node scripts/preview-design-kit.mjs",
+    "release:web": "npm test && node scripts/assert-market-ready.mjs && expo export --platform web && node scripts/validate-export.mjs"
   },
   "dependencies": {
+    "@pdf-lib/fontkit": "1.1.1",
+    "decode-uri-component": "file:vendor/decode-uri-component",
     "expo": "~57.0.27",
+    "expo-print": "~57.0.2",
     "expo-router": "~57.0.25",
+    "expo-secure-store": "~57.0.4",
+    "expo-sharing": "~57.0.23",
     "expo-status-bar": "~57.0.1",
+    "pdf-lib": "1.17.1",
     "react": "19.2.3",
     "react-dom": "19.2.3",
     "react-native": "0.86.3",
@@ -25,5 +37,11 @@
   "devDependencies": {
     "@types/react": "~19.2.2",
     "typescript": "~6.0.3"
+  },
+  "overrides": {
+    "decode-uri-component": "$decode-uri-component",
+    "xcode": {
+      "uuid": "11.1.1"
+    }
   }
 }

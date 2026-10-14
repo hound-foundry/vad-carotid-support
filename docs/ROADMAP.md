@@ -7,26 +7,67 @@ Items are proposals, not promised dates. Safety review is a release gate.
 - [x] Open-source project purpose and licence records.
 - [x] Starter literature catalogue with explicit candidate/review status.
 - [x] Expo and TypeScript skeleton for web, iOS and Android.
+- [x] Short source-linked English guide drafts for understanding, tests, follow-up, stroke/no-stroke paths, recovery and carers; clinical and patient/carer review remains pending.
+- [x] Appointment question sheet with grouped prompts and optional local-only export.
+- [x] Appointment prompts ordered around before, during and leaving the appointment, including participation needs and a clear route for pending results.
+- [x] Optional one-section-at-a-time appointment view for people who prefer a smaller set of prompts on screen.
+- [x] Source-linked plain-language glossary for common terms used in the guide drafts; every definition includes a limit and remains marked as unapproved.
+- [x] Browser print action for the user-reviewed appointment-sheet preview.
+- [x] Patient/carer usability review prompts and safe feedback-handling guidance.
+- [x] Prepare a clinical review packet mapping each draft to its review questions; reviewer and approval remain outstanding.
+- [x] Add separate local-only personal information and milestone/story cards with explicit preview, export, print and delete actions.
+- [x] Add persistent local accessibility controls, a shared accessibility footer and safe-exit privacy guidance on private tools.
+- [x] Add an installable static web shell with a network-first offline fallback; card and appointment data remain outside service-worker requests.
+- [x] Add stable installable-web metadata, static-host privacy headers and generated-export checks.
 - [ ] Patient and carer review of navigation and language.
+- [ ] Clinician review of glossary definitions and appointment prompts before any patient-facing release.
 - [ ] Clinically reviewed emergency wording and country-specific resources.
 - [ ] Initial UK operator, privacy and device-purpose assessment.
 
 ## First useful release
 
-- [ ] A short start-here route for people with no stroke, with stroke, family/carers and general learning.
-- [ ] Sourced plain-language guide to VAD/CAD and investigations.
-- [ ] Appointment question sheet with optional local-only export.
-- [ ] “How to support me” sheet with selection and sharing preview.
-- [ ] Private notes and saved links, with delete/export and no account.
-- [ ] Curated links with evidence type, date, language, review and rights status.
+- [x] Home start points for people with no diagnosed stroke, stroke, family/carers and general learning.
+- [x] Short-on-time home links to a glossary term, a single appointment question and carer guidance.
+- [ ] Patient and carer review of guide usefulness, language and support-sheet preferences.
+- [x] “How I prefer to be supported” sheet with selection, optional note and sharing preview.
+- [x] Private notes with delete/export and no account.
+- [x] Save guide links locally with explicit export/delete controls and a device privacy notice.
+- [x] Listed resource cards show evidence type, check date, language, editorial/clinical review status and rights basis; community candidates remain hidden pending verification.
 - [ ] English-reviewed content; add translated interface and short guides after language and clinical review.
+
+The glossary and print controls are implemented, but their presence does not count as clinical or usability approval. Review tasks stay open until appropriately qualified people have completed and documented them.
 
 ## Before distribution
 
+- [x] Record an initial dated Estonia official-source bundle; national and subnational applicability review remains open.
+- [x] Record an initial dated Latvia official-source bundle, including translation warnings; national and subnational applicability review remains open.
+- [x] Record dated France official-source leads and an 18-region screening queue; departments, communes and overseas collectivities remain outstanding, and no review is cleared.
+- [x] Record dated Spain official-source leads and a 17-community/2-city screening queue; provinces, municipalities, language and emergency reviews remain outstanding.
+- [x] Record initial dated Japan official-source leads and a 47-prefecture screening queue; municipalities, ordinance-designated cities, Japanese-text legal review and local emergency checks remain outstanding.
+- [x] Record initial dated mainland China official-source leads and a 31-provincial-level screening queue; local-level rules, hosting, app filing, cross-border data, access and specialist legal review remain outstanding.
+- [x] Record initial dated Hong Kong SAR official-source leads and an 18-district screening queue; current law verification, medical-device framework transition, local review and emergency-language checks remain outstanding.
+- [x] Record initial dated Macao SAR official-source leads and a seven-parish territorial queue; primary-language legal review, phased medical-device regime, applicability and release reviews remain outstanding.
+- [x] Add a Taiwan market-screening supplement for the intended Traditional Chinese rollout, with M49/ISO scope caveats, 20 dated official source leads and a 22-city/county queue; local legal review and release remain blocked.
+- [x] Record initial Russia privacy, health-information, medical-software and UK/EU sanctions source leads; the aggregate regional-law queue is incomplete, all applicability reviews remain open, and access is blocked.
+- [x] Record initial US federal health-app source leads and a 50-state/DC screening queue; territories and tribal/local law remain open, all applicability reviews remain unassessed, and US access is blocked.
+- [x] Record initial Canadian federal privacy, device, consumer and accessibility source leads with all 10 provinces and three territories in an unassessed screening queue; local review and Canadian release remain blocked.
+- [x] Record initial Australian federal privacy, device, consumer and accessibility source leads with six states, ACT and NT in an unassessed screening queue; external-territory review and Australian release remain blocked.
+- [x] Record initial Brazil LGPD/ANPD, internet, consumer, accessibility and ANVISA source leads with all 26 states and Federal District queued; municipal review and Brazil release remain blocked.
+- [x] Record dated India central privacy, phased DPDP commencement/Rules, medical-software, consumer, disability, child, copyright, emergency and funding source leads with all 28 states and 8 union territories/NCT queued; municipal/local review and India release remain blocked.
+- [x] Record dated Mexico federal privacy, COFEPRIS/SaMD, health, consumer, disability, child, copyright, emergency and territory source leads with all 32 federal entities queued; municipal/alcaldía review and Mexico release remain blocked.
+- [x] Record dated Argentina data-protection and transfer, ANMAT SaMD (including 2026 criteria update), patient-rights, consumer, accessibility, child, copyright, emergency and nonprofit source leads with 23 provinces and CABA queued; municipal review and Argentina release remain blocked.
+- [x] Record dated Lithuania official-source leads and a 10-county/60-municipality screening queue; all national, local and release reviews remain unassessed.
+- [x] Record initial dated Ukraine source leads and constitutional top-level screening queue; all national, local and release reviews remain unassessed.
+- [ ] Resolve the remaining dependency alerts or record a reviewed mitigation and explicit release decision; see [dependency security review](DEPENDENCY_SECURITY.md).
+- [x] Configure weekly Dependabot update PRs for npm packages and GitHub Actions; each update still requires review and CI.
 - [ ] Review intended purpose and medical-software status by target market.
 - [ ] Finish country-by-country privacy, consumer, accessibility, content and store screening for each launch market.
 - [ ] Confirm operator identity and public contact route.
 - [ ] Check accessibility with assistive technology and people with relevant lived experience.
+- [ ] Review support-preference choices and note guidance with patients and carers.
 - [ ] Complete content, translation, privacy, security and local emergency review.
 - [ ] Verify Apple and Google declarations, privacy details, store screenshots and package identifiers.
 - [ ] Produce evidence-backed release notes; keep missing review visible.
+- [x] Record dated South Africa POPIA (including the March 2026 regulations notice), SAHPRA medical-device classification, consumer, accessibility, child, copyright, emergency, nonprofit/tax and platform source leads with all nine provinces queued; municipal review and South Africa release remain blocked.
+- [x] Record Germany source leads for GDPR/ePrivacy, BDSG, BfArM/MDR/MPDG, consumer and advertising, digital services, accessibility, children, copyright, emergency and nonprofit/tax; queue all 16 Länder for unassessed screening; Germany release remains blocked.
+- [x] Record dated Nigeria NDPA/GAID, NAFDAC SaMD, consumer, patient-rights, disability, child-rights, copyright, emergency, nonprofit/tax and platform source leads with all 36 states and FCT queued; local-government review and Nigeria release remain blocked.

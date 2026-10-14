@@ -1,0 +1,40 @@
+- link "Urgent help" [active]:
+  - /url: /urgent-help
+  - generic: Urgent help
+  - generic: ›
+- generic "VAD & Carotid Support"
+- navigation "Main navigation":
+  - link "Home":
+    - /url: /
+    - generic: Home
+  - button "Menu":
+    - generic: Menu
+  - link "Text and display":
+    - /url: /accessibility
+    - generic: Text and display
+- link "Skip to main content":
+  - generic: Skip to main content
+- main:
+  - link "Back to home":
+    - /url: /
+    - generic: ←
+    - generic: Home
+  - generic: URGENT HELP
+  - heading "Contact local emergency services now." [level=1]
+  - generic: If you think someone may be having a stroke or another medical emergency, contact the emergency services where you are now.
+  - heading "Do not wait for this app" [level=2]
+  - generic: This app cannot assess symptoms, tell you whether it is a stroke or contact emergency services. Do not wait for an appointment or use these pages to decide whether urgent help is needed.
+  - generic: This page provides no local phone number because country-specific emergency information has not been verified for release.
+  - generic: Development preview · general information only · not a medical service
+  - link "About and privacy":
+    - /url: /about
+    - generic: About and privacy
+  - link "Accessibility":
+    - /url: /accessibility
+    - generic: Accessibility
+  - link "Saved on this device":
+    - /url: /saved
+    - generic: Saved on this device
+  - link "Urgent help":
+    - /url: /urgent-help
+    - generic: Urgent help

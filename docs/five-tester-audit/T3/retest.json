@@ -1,0 +1,146 @@
+{
+  "tester": "T3",
+  "targetOrigin": "http://localhost:52070/",
+  "repairedEntryAsset": "entry-43829916d0b8ade49d91424899eebfb3.js",
+  "status": "browser-unavailable",
+  "browser": {
+    "selectedBrowser": "Codex in-app browser",
+    "selectedBrowserId": "2",
+    "freshTabAttempted": true,
+    "freshTabCreated": false,
+    "error": "Browser is not available: 2",
+    "troubleshootingReadOnce": true,
+    "retryPerformed": false,
+    "alternateDriverUsed": false,
+    "viewportChanged": false,
+    "newTabToClose": false,
+    "previousViewportWasReset": true
+  },
+  "parentSuppliedEvidence": [
+    {
+      "path": "../root/after-home-320-double.jpg",
+      "source": "parent-supplied; not a T3 capture",
+      "observation": "The visible Home heading reads 'Guides and tools' and wraps at a space. Brand and navigation wrap onto multiple lines and appear visible. No apparent clipping in this image.",
+      "scope": "One supplied image only; does not verify repaired app behavior, other viewports, keyboard, or routes."
+    }
+  ],
+  "coverage": [
+    {
+      "task": "200% app text at 320x568, 390x844, and 844x360; Home heading wrap and clipping",
+      "status": "not-tested",
+      "evidence": [
+        "../root/after-home-320-double.jpg"
+      ],
+      "reason": "Fresh tab creation failed before navigation. Parent image was inspected separately and is not counted as a T3 retest pass."
+    },
+    {
+      "task": "All nine menu destinations; urgent-help; Menu Escape, focus, skip link",
+      "status": "not-tested",
+      "evidence": [],
+      "reason": "Selected browser unavailable after one documented fresh-tab attempt."
+    },
+    {
+      "task": "Themes and display options",
+      "status": "not-tested",
+      "evidence": [],
+      "reason": "Selected browser unavailable after one documented fresh-tab attempt."
+    },
+    {
+      "task": "Appointment in-page Delete Cancel, Escape, Confirm, and reload",
+      "status": "not-tested",
+      "evidence": [],
+      "reason": "Selected browser unavailable; no fixture was entered on the repaired origin."
+    },
+    {
+      "task": "Saved-guide deletion cancellation",
+      "status": "not-tested",
+      "evidence": [],
+      "reason": "Selected browser unavailable; no guide was saved on the repaired origin."
+    },
+    {
+      "task": "Unknown-route 404 with Home recovery link",
+      "status": "not-tested",
+      "evidence": [],
+      "reason": "Selected browser unavailable after one documented fresh-tab attempt."
+    },
+    {
+      "task": "Actual browser zoom, NVDA/screen reader, and real printing",
+      "status": "not-tested",
+      "evidence": [],
+      "reason": "These were explicitly outside the supported retest scope."
+    }
+  ],
+  "freshCaptures": [],
+  "sourceEdits": false,
+  "baselineReportsChanged": false,
+  "browserLeaseReleased": true,
+  "locked": true,
+  "supplementalParentEvidenceReview": [
+    {
+      "artifact": "../root/after-home-320-double.jpg",
+      "observation": "At the shown 320px view, Guides and tools wraps at a space; visible header and first card are legible.",
+      "scope": "Parent-supplied static image, not a T3 capture or interaction."
+    },
+    {
+      "artifact": "../root/after-home-390-double.jpg",
+      "observation": "Large-text Home heading wraps at spaces and is not visibly clipped; Menu has a visible focus outline.",
+      "scope": "Parent-supplied capture only."
+    },
+    {
+      "artifact": "../root/after-home-landscape-double.jpg",
+      "observation": "Landscape large-text Home heading appears intact on one line; header and top content are visible.",
+      "scope": "Parent-supplied capture only."
+    },
+    {
+      "artifact": "../root/after-menu-320-double.jpg",
+      "observation": "Expanded menu shows Close menu, first entries, and an internal scroll bar.",
+      "scope": "Only visible subset appears in screenshot."
+    },
+    {
+      "artifact": "../root/after-home-dark-contrast.jpg",
+      "observation": "Dark/high-contrast appearance shows light text and outlined cards.",
+      "scope": "No numeric contrast ratio or setting persistence verified."
+    },
+    {
+      "artifact": "../root/after-home-390-default.jpg",
+      "observation": "Default 390px Home heading is intact; cards and links continue vertically.",
+      "scope": "Parent-supplied static image only."
+    },
+    {
+      "artifact": "../root/keyboard-skip-focus.json",
+      "observation": "Focused role is main; focus text begins at Guides and tools.",
+      "scope": "Not screen-reader/NVDA certification."
+    },
+    {
+      "artifact": "../root/repaired-menu-journeys.json",
+      "observation": "Lists nine menu destination visits, each with an urgent-help link present.",
+      "scope": "Recorded URLs use localhost:52073, not the assigned localhost:52070; parity not independently checked."
+    },
+    {
+      "artifact": "../root/after-appointment-delete-cancel.jpg",
+      "observation": "In-page delete panel exposes Cancel deletion and Confirm deletion.",
+      "scope": "Screenshot does not itself prove activation."
+    },
+    {
+      "artifact": "../root/appointment-cancel-escape.txt",
+      "observation": "After Escape, saved state is present and the collapsed delete control is shown.",
+      "scope": "Parent-supplied observation."
+    },
+    {
+      "artifact": "../root/appointment-cancel-reload.txt",
+      "observation": "After reload, saved selected question and synthetic note are restored.",
+      "scope": "Parent-supplied observation."
+    },
+    {
+      "artifact": "../root/appointment-delete-reload.txt",
+      "observation": "After confirmed deletion and reload, no selections/notes remain and the page says Nothing is saved.",
+      "scope": "Parent-supplied observation."
+    },
+    {
+      "artifact": "../root/after-unavailable-recovery.jpg",
+      "observation": "Page not found view includes a Home recovery link and footer navigation.",
+      "scope": "Parent-supplied static image only."
+    }
+  ],
+  "ownRetestStatus": "blocked-browser-unavailable; supplemental parent evidence reviewed separately"
+}

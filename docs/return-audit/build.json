@@ -1,0 +1,18 @@
+{
+  "revision": "8c4087e9fa2764ae3b5cd791c0d5a66834372936",
+  "date": "2026-10-13",
+  "directory": "C:\\Work\\VAD CAD app\\.git\\return-audit-8c4087e\\dist",
+  "origins": {
+    "T1": "http://localhost:56680",
+    "T2": "http://localhost:56681",
+    "T3": "http://localhost:56682",
+    "T4": "http://localhost:56683",
+    "T5": "http://localhost:56684"
+  },
+  "bundles": [
+    {
+      "name": "entry-6bd9c06febb88561070b8ef3849ee298.js",
+      "sha256": "f992acd985b2018f0dd2e23aa0a938496e6134ea54df43e677a8471eaa89c67e"
+    }
+  ]
+}

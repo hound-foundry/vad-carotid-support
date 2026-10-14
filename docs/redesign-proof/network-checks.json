@@ -1,0 +1,81 @@
+{
+  "scope": "Short observations around saved-card reload and milestone input/save/export; initial long observation was truncated and discarded",
+  "requests": [
+    {
+      "url": "http://localhost:4182/personal-card",
+      "method": "GET",
+      "markerLeak": false
+    },
+    {
+      "url": "http://localhost:4182/_expo/static/js/web/entry-cb1b0886775802588b10d4bee489eaee.js",
+      "method": "GET",
+      "referrer": "http://localhost:4182/personal-card",
+      "markerLeak": false
+    },
+    {
+      "url": "http://localhost:4182/personal-card",
+      "method": "GET",
+      "markerLeak": false
+    },
+    {
+      "url": "http://localhost:4182/_expo/static/js/web/entry-cb1b0886775802588b10d4bee489eaee.js",
+      "method": "GET",
+      "referrer": "http://localhost:4182/personal-card",
+      "markerLeak": false
+    },
+    {
+      "url": "http://localhost:4182/personal-card",
+      "method": "GET",
+      "markerLeak": false
+    },
+    {
+      "url": "http://localhost:4182/_expo/static/js/web/entry-cb1b0886775802588b10d4bee489eaee.js",
+      "method": "GET",
+      "referrer": "http://localhost:4182/personal-card",
+      "markerLeak": false
+    },
+    {
+      "url": "http://localhost:4182/milestone-card",
+      "method": "GET",
+      "markerLeak": false
+    },
+    {
+      "url": "http://localhost:4182/_expo/static/js/web/entry-cb1b0886775802588b10d4bee489eaee.js",
+      "method": "GET",
+      "referrer": "http://localhost:4182/milestone-card",
+      "markerLeak": false
+    },
+    {
+      "url": "http://localhost:4182/milestone-card",
+      "method": "GET",
+      "markerLeak": false
+    },
+    {
+      "url": "http://localhost:4182/_expo/static/js/web/entry-cb1b0886775802588b10d4bee489eaee.js",
+      "method": "GET",
+      "referrer": "http://localhost:4182/milestone-card",
+      "markerLeak": false
+    },
+    {
+      "url": "http://localhost:4182/_expo/static/js/web/pdf-db1dd9f53e2a6e2a8b18e68470cea6b4.js",
+      "method": "GET",
+      "referrer": "http://localhost:4182/milestone-card",
+      "markerLeak": false
+    },
+    {
+      "url": "http://localhost:4182/fonts/NotoSans-Regular.ttf",
+      "method": "GET",
+      "referrer": "http://localhost:4182/milestone-card",
+      "markerLeak": false
+    },
+    {
+      "url": "http://localhost:4182/fonts/NotoSans-Bold.ttf",
+      "method": "GET",
+      "referrer": "http://localhost:4182/milestone-card",
+      "markerLeak": false
+    }
+  ],
+  "truncated": false,
+  "hasMore": false,
+  "leaks": []
+}

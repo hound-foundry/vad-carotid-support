@@ -1,0 +1,15 @@
+{
+  "date": "2026-10-13",
+  "origin": "http://localhost:51070",
+  "marker": "T3-PRIVACY-MARKER-9282",
+  "route": "appointments",
+  "saveStatus": "Saved on this device. It is not sent to the project.",
+  "checks": {
+    "URL": "marker absent in current document URL",
+    "requests": "Network.enable + requestWillBeSent/responseReceived observed after UI save; zero events; marker absent",
+    "console": "zero console log entries; marker absent"
+  },
+  "limits": [
+    "Browser resource Performance API unavailable in read-only evaluator; no request body was available because the observed save produced no CDP network events."
+  ]
+}

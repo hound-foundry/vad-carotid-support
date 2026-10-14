@@ -1,0 +1,94 @@
+- link "Urgent help":
+  - /url: /urgent-help
+  - generic: Urgent help
+  - generic: ›
+- generic: VAD & Carotid Support
+- navigation "Main navigation":
+  - link "Home":
+    - /url: /
+    - generic: Home
+  - button "Menu":
+    - generic: Menu
+  - link "Text and display":
+    - /url: /accessibility
+    - generic: Text and display
+- link "Skip to main content":
+  - generic: Skip to main content
+- main:
+  - link "← Back to guides":
+    - /url: /learn
+    - generic: ← Back to guides
+  - heading "Understanding cervical artery dissection" [level=1]
+  - generic: A plain-language starting point for carotid and vertebral artery dissection. About 2 min read.
+  - button "Draft information, review pending. Review details":
+    - generic: Draft information · review pending
+    - generic: +
+  - button "Read section aloud":
+    - generic: Read section aloud
+  - checkbox "Read one section at a time" [checked]:
+    - generic: ✓
+    - generic: Read one section at a time
+  - generic: "Section 2 of 4: Why experiences differ"
+  - button "Previous section":
+    - generic: Previous
+  - button "Next section":
+    - generic: Next
+  - heading "Why experiences differ" [level=2]
+  - generic: A dissection may be found during assessment for local symptoms, may be associated with a stroke, or may be discovered in another way. Imaging findings and symptoms do not tell the whole story about an individual’s outlook. Only the treating team can interpret a person’s tests and care plan.
+  - heading "More reading options" [level=2]
+  - button "About reading pace and text size":
+    - generic: About reading pace and text size
+    - generic: +
+  - heading "More ways to use this guide" [level=2]
+  - generic: Saving stores this guide’s topic on this device. Someone with access to the device or browser profile may see it; it is not sent to this project.
+  - button "Save this guide on this device":
+    - generic: Save this guide on this device
+  - generic: This guide is not saved.
+  - button "Print this guide":
+    - generic: Print this guide
+  - button "Copy guide link":
+    - generic: Copy guide link
+  - generic: If this guide raises a question, add it to a private appointment sheet. You choose what to include; nothing is sent to this project.
+  - link "Start with questions from this guide →":
+    - /url: /appointments?guide=understanding-dissection
+    - generic: Start with questions from this guide →
+  - heading "Sources and review for this draft" [level=2]
+  - generic: "Clinical review: not recorded · Patient/carer review: not recorded · Translation review: English original · Review date: not recorded"
+  - 'link "Open source: Treatment and Outcomes of Cervical Artery Dissection in Adults: A Scientific Statement From the American Heart Association"':
+    - generic: "Treatment and Outcomes of Cervical Artery Dissection in Adults: A Scientific Statement From the American Heart Association (2024)"
+    - generic: Source record checked 2026-10-12. A scientific statement is not a personalised treatment plan. Verify exact passages before publishing individual claims.
+  - 'link "Open source: ESO guideline for the management of extracranial and intracranial artery dissection"':
+    - generic: ESO guideline for the management of extracranial and intracranial artery dissection (2021)
+    - generic: Source record checked 2026-10-12. Do not generalise recommendations across anatomical groups or haemorrhagic and ischaemic presentations.
+  - 'link "Open source: Vascular Disease Patient Information Page: Cervical artery dissection (CeAD)"':
+    - generic: "Vascular Disease Patient Information Page: Cervical artery dissection (CeAD) (2021)"
+    - generic: Source record checked 2026-10-12. An older educational source; check clinical details against current guidance. Link rather than reproduce.
+  - 'link "Open source: Cervical Artery Dissection"':
+    - generic: Cervical Artery Dissection (2022)
+    - generic: Source record checked 2026-10-12. Displayed review date is 2022; verify details against newer guidance. Institutional affiliation does not make every statement current.
+  - heading "Continue with a related guide" [level=2]
+  - link "Tests, scans and unfamiliar terms Understand what to ask about a scan or report without trying to interpret it on your own. For patients, carers, interested readers · About 3 min Draft · not approved for patient use":
+    - /url: /guide/tests-and-terms
+    - generic: Tests, scans and unfamiliar terms
+    - generic: Understand what to ask about a scan or report without trying to interpret it on your own.
+    - generic: For patients, carers, interested readers · About 3 min
+    - generic: Draft · not approved for patient use
+  - link "Prepare for a follow-up appointment Choose what matters most, make room for questions and leave with a clear next step to discuss. For patients, carers · About 2 min Draft · not approved for patient use":
+    - /url: /guide/follow-up-questions
+    - generic: Prepare for a follow-up appointment
+    - generic: Choose what matters most, make room for questions and leave with a clear next step to discuss.
+    - generic: For patients, carers · About 2 min
+    - generic: Draft · not approved for patient use
+  - generic: Development preview · general information only · not a medical service
+  - link "About and privacy":
+    - /url: /about
+    - generic: About and privacy
+  - link "Accessibility":
+    - /url: /accessibility
+    - generic: Accessibility
+  - link "Saved on this device":
+    - /url: /saved
+    - generic: Saved on this device
+  - link "Urgent help":
+    - /url: /urgent-help
+    - generic: Urgent help

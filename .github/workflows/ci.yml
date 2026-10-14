@@ -17,5 +17,11 @@ jobs:
         run: npm ci
       - name: Check TypeScript
         run: npm run typecheck
+      - name: Check the source-based design profile
+        run: npm run design:check
+      - name: Validate content and local sheet data
+        run: npm test
       - name: Export the static website
         run: npm run build:web
+      - name: Validate exported routes and card safety labels
+        run: node scripts/validate-export.mjs

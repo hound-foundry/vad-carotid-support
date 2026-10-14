@@ -1,4 +1,6 @@
-# VAD & Carotid Support
+# Dissection Companion
+
+Vertebral & carotid artery support.
 
 A free, independent, open-source project to make life after vertebral or carotid artery dissection easier to understand—for patients, families, carers and anyone trying to help.
 
@@ -8,26 +10,33 @@ The project begins with lived experience and a simple aim: make trustworthy info
 
 ## What we are building
 
-One accessible product for the web, iOS and Android, with a calm, human feel. Planned features include clear, sourced explanations; support for dissection with and without stroke; appointment questions; a private space for notes and saved resources; and a shareable “How to support me” sheet people choose what to share.
+The shared Expo project is web-first and remains structured for later iOS and Android builds. The home has four actions: understand dissection, prepare an appointment, make a card and help someone. The preview includes seven sourced English guide drafts, a glossary, appointment and support sheets, separate practical and milestone cards, local saved items, text/display preferences, read-aloud guide controls, external resources and urgent help on every route. Cards have a short form, separate preview, explicit save, designed PDF/PNG downloads where offered, card-only print and a text alternative. See the [design case study](docs/DESIGN_CASE_STUDY.md), [website design](docs/WEBSITE_DESIGN.md) and [app parity](docs/APP_PARITY.md). Each guide and glossary definition is clearly marked as unapproved pending clinical and patient/carer review.
 
-The app will point people back to their own care team. It will not diagnose, score symptoms, choose medicines, promise recovery or tell a person when to return to an activity. Country and language settings will be separate. External articles will remain on their publishers’ sites.
+The app will point people back to their own care team. It will not diagnose, score symptoms, choose medicines, promise recovery or tell a person when to return to an activity. Country and language settings will be separate. External articles will remain on their publishers’ sites. Users can delete each local sheet or clear all saved sheets and guide links from the About page; exported copies and device backups are outside the app’s control.
 
 The first language set is English, Russian, Ukrainian, Lithuanian, Latvian, Estonian, Spanish, French, Japanese, Simplified Chinese and Traditional Chinese. Only the interface and the project’s short guides are in scope for translation. Clinical translations require review before release.
 
 ## Project readiness
 
-This is a starter repository, not a finished app. Clinical and legal review, local emergency contacts, reviewed translations, privacy assessment, app-store declarations and country-by-country release decisions are open work. See the [product brief](docs/PRODUCT.md), [clinical content standards](docs/CLINICAL_CONTENT.md), [literature seed list](docs/RESEARCH.md) and [regulatory screening register](docs/REGULATORY_SCREENING.md).
+The English static web preview is intended for broad access as an education and appointment-preparation resource. It is not a clinical service or a claim of legal clearance in every country. The register contains 249 country-or-area records as a watchlist for country-specific features; those records do not prevent this low-risk web preview from being published. Clinical review, reviewed translations, privacy assessment, app-store declarations, dependency security review and local emergency contacts remain gates for the relevant content or distribution change. See the [product brief](docs/PRODUCT.md), [clinical content standards](docs/CLINICAL_CONTENT.md), [literature seed list](docs/RESEARCH.md), [dependency security review](docs/DEPENDENCY_SECURITY.md) and [regulatory screening register](docs/REGULATORY_SCREENING.md).
 
 ## Run the starter app
 
 Requires Node.js 24 and npm. From the project directory:
 
     npm ci
-    npm run web
+    npm test
+    npm run typecheck
+    npm run build:web
+    npm run preview:web
 
-Then open the local Expo address in a browser. To run the native development server, use npm start. iOS device builds and store submissions may require Apple accounts and build credentials; none are included here.
+`npm run build:web` creates a local static preview. `npm run release:web` checks the low-risk web scope and builds the static release. It does not represent country-by-country legal clearance. Country-specific emergency numbers, medical claims, translations, hosted data, paid features and native app-store releases require their own review before activation.
+
+Open http://localhost:4173/ for the exported preview; clean card URLs also work on reload. For live Expo web development use `npm run web`, and for the native development server use `npm start`. iOS device builds and store submissions may require Apple accounts and build credentials; none are included here.
 
 To help find code with the separate Atlas Kit, point its --project option at this checkout. Atlas Kit is an external local development tool and is not bundled with this project. Its existing static architecture checks target Godot projects; this app uses TypeScript checks and a web build in CI.
+
+For source-preserving design work, see the [free design workflow](docs/FREE_DESIGN_WORKFLOW.md). `npm run design:check` validates the app profile and current palette; after a web export, `npm run design:kit` produces local portable design files and `npm run design:preview` opens a development workbench at http://localhost:4180/_design/. It embeds the real Expo website across phone and desktop review sizes without changing patient routes or reading browser notes/cards.
 
 ## Contributing
 

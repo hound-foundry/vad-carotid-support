@@ -1,0 +1,20 @@
+{
+  "date": "2026-10-14",
+  "fixtureOrigin": "http://localhost:4183",
+  "data": "Disposable synthetic fixtures only; main and phone preview data were not changed",
+  "checks": [
+    {"task": "Personal blank defaults", "result": "Blank name/heading/needs, Clear blue, No artwork"},
+    {"task": "Personal keyboard design, plain reset and undo", "result": "ArrowRight selected Ink heading; plain reset and Undo preserved name, custom heading and selected communication statement"},
+    {"task": "Personal save and reload", "result": "Restored words and Ink heading; truthful restored message"},
+    {"task": "Personal interruption via display settings", "result": "Returned to the existing preview with words retained"},
+    {"task": "Milestone defaults and separate contents", "result": "Neutral title, blank details, no practical-card values"},
+    {"task": "Milestone title and artwork", "result": "Survivor changes only title; Ribbon is optional; message retained"},
+    {"task": "Milestone hidden date", "result": "Entered synthetic year, chose No date; year absent from preview and downloaded PDF"},
+    {"task": "Milestone explicit save and unsaved design", "result": "Saved Ink/Ribbon restored after reload; later unsaved Quiet teal variation discarded"},
+    {"task": "Saved hub", "result": "Generic labels for both cards; no names, dates or messages in summaries"},
+    {"task": "Delete cancellation", "result": "Cancellation retained each synthetic card"},
+    {"task": "Independent deletion", "result": "Milestone deletion left practical card intact; both deletion confirmations followed by reload restored blank defaults"},
+    {"task": "Exports", "result": "Actual personal PNG, PDF, wallet PDF and text files retrieved; four milestone PNG variations retrieved and visually inspected"},
+    {"task": "Print", "result": "Selected-only HTML and white-paper styles checked; system dialog cancellation and physical output not tested"}
+  ]
+}

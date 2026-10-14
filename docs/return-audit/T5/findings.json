@@ -1,0 +1,202 @@
+{
+  "tester": "T5",
+  "mode": "returning-user assessment of parent-actuated evidence",
+  "date": "2026-10-13",
+  "build": {
+    "revision": "8c4087e9fa2764ae3b5cd791c0d5a66834372936",
+    "origin": "http://localhost:56684"
+  },
+  "direct_browser_interaction_by_T5": false,
+  "prior_audits_or_other_tester_reports_read": false,
+  "critical_confirmed_barrier": false,
+  "critical_score_cap": 4,
+  "critical_cap_triggered": false,
+  "flows": [
+    {
+      "step": 1,
+      "journey": "Home → Guides → Recovery, fatigue and quality of life",
+      "status": "pass",
+      "finding": "Four primary Home tools and saved-content access lead to a Guides index with a specific recovery/fatigue entry. Persistent navigation includes Home, Menu, Text and display, and Urgent help.",
+      "evidence": [
+        "docs/return-audit/T1/01-home.txt",
+        "docs/return-audit/T1/02-guides.txt",
+        "docs/return-audit/T5/01-recovery.txt",
+        "docs/return-audit/menu-coverage.json"
+      ]
+    },
+    {
+      "step": 2,
+      "journey": "Set dark/roomier reading, return to guide",
+      "status": "pass",
+      "finding": "Parent-actuated flow selected dark theme and roomier spacing in Text and display, returned in-app, and resumed section 2 of 5. Screenshot is dark with one-section controls. The initial recovery screenshot is light; a light-sensitive returning user must change display settings before dark mode is active. Full browser reload retention of reading position was not tested.",
+      "evidence": [
+        "docs/return-audit/T5/02-dark-resume.txt",
+        "docs/return-audit/T5/02-dark-resume.jpg",
+        "docs/return-audit/T5/reading-resume.json"
+      ]
+    },
+    {
+      "step": 3,
+      "journey": "Read sections 3–5 and expand review details",
+      "status": "pass with content-density preference",
+      "finding": "Sections include practical fatigue prompts, carefully bounded study context, and optional family/carer support. Review panel states clinical and patient/carer review are not recorded; source entries include checked dates and limitations. Supplemental content makes the short guide longer to scan.",
+      "evidence": [
+        "docs/return-audit/T5/03-review-details.txt",
+        "docs/return-audit/T5/03-review-details.jpg",
+        "docs/return-audit/T5/recovery-section-3.txt",
+        "docs/return-audit/T5/recovery-section-4.txt",
+        "docs/return-audit/T5/recovery-section-5.txt"
+      ]
+    },
+    {
+      "step": 4,
+      "journey": "Appointment sheet and interruption/resumption",
+      "status": "friction",
+      "finding": "Optional fatigue/energy questions and notes are available. Unsaved note/selection survives in-app Home return and saved state reloads and exports. The one-section current position was not present after navigating Home and returning; viewing options remained.",
+      "evidence": [
+        "docs/return-audit/T2/02-resumed-draft.txt",
+        "docs/return-audit/T2/03-saved-export.txt",
+        "docs/return-audit/T2/appointment-sheet.txt",
+        "docs/return-audit/T2/view-interruption.json",
+        "docs/return-audit/T2/view-return.txt"
+      ]
+    },
+    {
+      "step": 5,
+      "journey": "Optional milestone preview, export, restore, deletion",
+      "status": "pass",
+      "finding": "Neutral default title; name/date/message optional; no compulsory survivor prompt. Preview says files/printouts contain displayed content. Actual one-page PNG/PDF/TXT contain matching neutral milestone content and disclaimer. Hidden date and medical-only fields are excluded; deleting milestone leaves practical card.",
+      "evidence": [
+        "docs/return-audit/T4/06-milestone-blank.txt",
+        "docs/return-audit/T4/07-milestone-preview.txt",
+        "docs/return-audit/T4/milestone-restored.txt",
+        "docs/return-audit/T4/milestone.png",
+        "docs/return-audit/T4/milestone-page1.png",
+        "docs/return-audit/T4/milestone.pdf",
+        "docs/return-audit/T4/milestone.txt",
+        "docs/return-audit/T4/output-checks.json",
+        "docs/return-audit/T4/08-separate-saved.txt"
+      ]
+    },
+    {
+      "step": 6,
+      "journey": "Glossary term lookup",
+      "status": "friction",
+      "finding": "Artery query returns four terms including CAD, dissection, pseudoaneurysm, and VAD. MRA returns zero matches; related guide and appointment-question routes are offered.",
+      "evidence": [
+        "docs/return-audit/T1/04-glossary-empty.txt",
+        "docs/return-audit/T1/glossary-result.txt"
+      ]
+    },
+    {
+      "step": 7,
+      "journey": "Urgent help",
+      "status": "pass within generic scope",
+      "finding": "Directs people to local emergency services, warns not to wait for the app, and explains that local emergency numbers are not verified for release. Not localized.",
+      "evidence": [
+        "docs/return-audit/T1/05-urgent.txt"
+      ]
+    },
+    {
+      "step": 8,
+      "journey": "320px/200% app text keyboard menu and unavailable route",
+      "status": "pass with scroll friction",
+      "finding": "Menu items wrap and remain keyboard reachable at enlarged app text; short-landscape capture reaches skip link. Nested menu/page scrolling is visually crowded. Unavailable page offers Home and Menu. App font scaling is not browser zoom.",
+      "evidence": [
+        "docs/return-audit/T3/02-home-double.txt",
+        "docs/return-audit/T3/03-menu-320-double.jpg",
+        "docs/return-audit/T3/03-menu-320-double.txt",
+        "docs/return-audit/T3/04-landscape-double.jpg",
+        "docs/return-audit/T3/04-landscape-double.txt",
+        "docs/return-audit/T3/05-unavailable.txt",
+        "docs/return-audit/T3/keyboard-menu.json"
+      ]
+    },
+    {
+      "step": 9,
+      "journey": "Clear all with one saved practical card",
+      "status": "pass within the single-category fixture scope",
+      "finding": "On isolated T4 origin, personal-card was the only populated category. Cancel preserved it after reload; confirm removed it, and a previously downloaded PDF remained. Other categories were absent before the test, so this does not establish all-category clear behavior.",
+      "evidence": [
+        "docs/return-audit/clear-all.json",
+        "docs/return-audit/T4/10-clear-all.txt",
+        "docs/return-audit/T4/10-clear-all.jpg"
+      ]
+    }
+  ],
+  "faults_or_barriers": [
+    {
+      "type": "reproduced interruption friction",
+      "detail": "Appointment one-section position is absent after in-app Home/return, although the draft and viewing options remain. Not task-blocking.",
+      "evidence": [
+        "docs/return-audit/T2/view-interruption.json",
+        "docs/return-audit/T2/view-return.txt"
+      ]
+    },
+    {
+      "type": "content coverage gap",
+      "detail": "MRA has no glossary match; fallback guide and appointment-question links are available.",
+      "evidence": [
+        "docs/return-audit/T1/04-glossary-empty.txt"
+      ]
+    }
+  ],
+  "preferences_and_strengths": [
+    "Dark and roomier display options were selected; the returning guide was visible in dark mode.",
+    "Recovery guide directly covers variable fatigue/energy and offers optional practical prompts.",
+    "Milestone wording and date are optional; no compulsory survivor wording is shown.",
+    "Preview and actual outputs align, with explicit separation of medical and milestone fields.",
+    "Source/review status and source limits are stated, including absent clinical and patient/carer review.",
+    "The initial recovery view is light; a light-sensitive returning user has to change display settings before dark mode is active."
+  ],
+  "not_tested": [
+    "true browser zoom",
+    "NVDA or another screen reader",
+    "native iOS/Android behavior",
+    "audible speech",
+    "OS print dialog or print cancel",
+    "malformed browser storage",
+    "full browser reload reading-position retention",
+    "human comprehension or task completion time",
+    "clinical accuracy or approval",
+    "prevention of migraine, light sensitivity, PTSD, or other harm"
+  ],
+  "interventions": "All app journeys were actuated by the parent tester. T5 only inspected supplied DOM, JSON, screenshot, and export evidence. T3 records an automation selector mismatch corrected by selecting the visible Back to home label; that was setup handling, not app fault.",
+  "scores": {
+    "navigation": {
+      "score": 2,
+      "max": 2,
+      "deduction": "No deduction in the observed web routes: Home, guides, menu, urgent, and unavailable-route recovery are exposed.",
+      "confidence": "high for captured web paths."
+    },
+    "reading_access": {
+      "score": 1,
+      "max": 2,
+      "deduction": "Dark/roomier and one-section reading fit; dense supplemental material and nested scrolling at 320px/200% add effort.",
+      "confidence": "medium; true zoom and screen reader are untested."
+    },
+    "practical_usefulness": {
+      "score": 1,
+      "max": 2,
+      "deduction": "Recovery questions and optional tools are relevant, but MRA has no glossary result.",
+      "confidence": "medium; selected journeys only."
+    },
+    "data_output_trust": {
+      "score": 2,
+      "max": 2,
+      "deduction": "No deduction for reviewed content filtering: preview aligns with actual exports and hidden/cross-card fields are excluded.",
+      "confidence": "medium; local storage and native print are not evidenced."
+    },
+    "interruption_recovery": {
+      "score": 1,
+      "max": 2,
+      "deduction": "Recovery guide resumes section 2 after display settings; appointment reading section position resets after Home return.",
+      "confidence": "medium; captured app flows only."
+    },
+    "total": 7,
+    "max": 10
+  },
+  "expo_design_fit": "The observed interaction patterns can inform Expo-native design: clear navigation, optional section reading, persisted display preferences, generic saved-item labels, preview-before-export, and separate card types. This is a UX pattern assessment, not verification of a native implementation. Native navigation, dynamic type, focus announcements, offline persistence, sharing, and print/export need device testing.",
+  "general_limit": "Seven guide DOM samples establish rendered content and review-state visibility, not human understanding. This evidence packet does not support a matched comparison with a prior experience, a clinical claim, or an accessibility certification.",
+  "clear_all_scope": "One saved practical card only; other categories already absent. No all-category browser deletion claim."
+}

@@ -1,0 +1,141 @@
+{
+  "tester": "T5",
+  "record_type": "parent-actuated repaired-build evidence review",
+  "baseline_locked": true,
+  "baseline_sha": "72688788cb926af39b9813c38ac830301a0eaeda",
+  "retest_browser_interaction_by_T5": false,
+  "review_origin_in_supplied_evidence": "http://localhost:52073",
+  "date": "2026-10-13",
+  "findings": [
+    {
+      "id": "T5-01",
+      "baseline_finding": "Unavailable page did not provide an app return route.",
+      "retest_outcome": "repaired evidence supports resolved",
+      "status": "pass",
+      "tested_scope": "supplied screenshot only",
+      "evidence": [
+        "after-unavailable-recovery.jpg"
+      ],
+      "limits": [
+        "Screenshot shows Home link and shared Home/Menu navigation, but does not show a fresh T5 activation of the recovery link."
+      ]
+    },
+    {
+      "id": "T5-02",
+      "baseline_finding": "Read-aloud control had no visible start/stop feedback.",
+      "retest_outcome": "repaired evidence supports improved start/stop feedback",
+      "status": "pass",
+      "tested_scope": "visible start/stop control feedback only",
+      "evidence": [
+        "repaired-speech-start.txt",
+        "repaired-speech-stop.txt",
+        "after-speech-feedback.jpg"
+      ],
+      "not_tested": [
+        "audible speech playback: no audible verification; screenshot/text do not prove speech was heard or intelligible."
+      ]
+    }
+  ],
+  "supplemental_reviews": [
+    {
+      "area": "medical card preview, save/reload and exports",
+      "outcome": "supported by supplied evidence",
+      "evidence": [
+        "medical-preview.txt",
+        "medical-save-reload.txt",
+        "medical-repaired.txt",
+        "medical-repaired.pdf",
+        "medical-repaired-extracted.txt",
+        "medical-repaired-page1.png"
+      ],
+      "notes": [
+        "Synthetic values agree across preview, reload, TXT, PDF extraction and rendered page.",
+        "No hidden HIDDEN_*DATE values or milestone-only fields observed in reviewed medical export."
+      ]
+    },
+    {
+      "area": "milestone card blank/default, preview, save/reload and exports",
+      "outcome": "supported with explicit unsupported-character limitation",
+      "evidence": [
+        "milestone-blank.txt",
+        "milestone-preview.txt",
+        "milestone-save-reload.txt",
+        "milestone-repaired.png",
+        "milestone-repaired.txt",
+        "milestone-supported.pdf",
+        "milestone-supported-preview.txt",
+        "milestone-pdf-unsupported.txt"
+      ],
+      "notes": [
+        "Date/name/message are optional; neutral wording is shown and no forced survivor wording is visible.",
+        "PNG/TXT contain only milestone content; no hidden date or medical-card fields observed.",
+        "Supported-character PDF extracts Latin/Polish and Ukrainian; Chinese character is omitted in the supported variant.",
+        "Chinese PDF limitation is explicitly surfaced in supplied state as 'PDF cannot display some characters. Use Print card or Download text instead.'"
+      ]
+    },
+    {
+      "area": "saved hub and privacy capture",
+      "outcome": "partial evidence",
+      "evidence": [
+        "saved-hub-populated.txt",
+        "privacy-card-save.json"
+      ],
+      "notes": [
+        "Saved hub presents generic tool labels and separates the empty appointment sheet.",
+        "Capture reports no request events or logs; local storage was not exposed for inspection."
+      ]
+    },
+    {
+      "area": "repaired menu journeys and responsive captures",
+      "outcome": "supplied state evidence reviewed",
+      "evidence": [
+        "repaired-menu-journeys.json",
+        "after-home-390-double.jpg",
+        "after-home-320-double.jpg",
+        "after-home-landscape-double.jpg",
+        "after-saved-generic-labels.jpg"
+      ],
+      "notes": [
+        "Nine menu destinations are captured with shared Home, skip, urgent-help and footer navigation.",
+        "Narrow/landscape enlarged-text screenshots show vertical content flow; these are parent captures, not fresh T5 checks."
+      ]
+    },
+    {
+      "area": "clear-all and display controls",
+      "outcome": "supported within supplied UI evidence; direct storage inspection unavailable",
+      "status": "pass",
+      "evidence": [
+        "display-prefs-reload.txt",
+        "after-home-dark-contrast.jpg",
+        "before-clear-populated.txt",
+        "after-clear-all-confirm.jpg",
+        "clear-all-cancel-reload.txt",
+        "clear-all-confirm-reload.txt",
+        "after-clear-all-empty.jpg",
+        "clear-all-display-defaults.txt",
+        "after-home-390-default.jpg",
+        "keyboard-skip-focus.json"
+      ],
+      "notes": [
+        "Roomier spacing, high contrast, dark theme, reduced motion and simplified reading are shown retained after reload.",
+        "Cancel preserves five populated saved categories through reload.",
+        "Confirm shows all five categories empty after reload.",
+        "After clear, text is 100%; roomier, high contrast, dark and simplified reading are off, while reduced motion remains checked. Runtime/device default versus saved state cannot be determined without local storage inspection.",
+        "Clear-all confirmation explicitly scopes removal and states downloaded files, printouts and backups are unchanged.",
+        "Keyboard capture reports focus on main content; full keyboard-only sequence is not captured.",
+        "Raw key deletion proof is unit-test evidence; evaluator did not expose browser local storage.",
+        "No true zoom or native screen-reader verification."
+      ]
+    }
+  ],
+  "not_tested": [
+    "fresh browser download event handling by T5",
+    "native/physical print and cancel",
+    "NVDA or other screen reader",
+    "audible speech playback",
+    "true browser zoom",
+    "direct local storage inspection"
+  ],
+  "setup_context": "Parent reported IAB restoration unavailable, authorized a Brave new-tab fallback, then directed this evidence-only review with no browser lease. Setup interruption is not an app finding.",
+  "baseline_report_modified": false
+}

@@ -1,0 +1,96 @@
+- link "Urgent help":
+  - /url: /urgent-help
+  - generic: Urgent help
+  - generic: ›
+- generic: VAD & Carotid Support
+- navigation "Main navigation":
+  - link "Home":
+    - /url: /
+    - generic: Home
+  - button "Menu":
+    - generic: Menu
+  - link "Text and display":
+    - /url: /accessibility
+    - generic: Text and display
+- link "Skip to main content":
+  - generic: Skip to main content
+- main:
+  - link "← Back to guides":
+    - /url: /learn
+    - generic: ← Back to guides
+  - heading "Dissection without a diagnosed stroke" [level=1]
+  - generic: A pathway for people whose dissection was not accompanied by a diagnosed stroke. About 1 min read.
+  - button "Draft information, review pending. Review details":
+    - generic: Draft information · review pending
+    - generic: +
+  - button "Read guide aloud":
+    - generic: Read guide aloud
+  - checkbox "Read one section at a time":
+    - generic: Read one section at a time
+  - heading "Your experience still matters" [level=2]
+  - generic: People’s symptoms, test findings, care and recovery differ. Not having a diagnosed stroke does not mean questions or ongoing effects are unimportant. This page is a prompt for discussion, not a prediction about what will happen.
+  - heading "Follow-up conversation" [level=2]
+  - generic: •
+  - generic: What follow-up do I need, and what is its purpose?
+  - generic: •
+  - generic: Which changes should prompt urgent help, and which questions can wait for follow-up?
+  - generic: •
+  - generic: Are there symptoms or practical concerns I should mention at the next visit?
+  - generic: •
+  - generic: Who is my point of contact after discharge?
+  - heading "Research limits" [level=2]
+  - generic: A published quality-of-life study can describe a particular group at a particular time. It cannot establish how any one person will feel or recover. The linked study is older and requires interpretation alongside newer evidence.
+  - heading "More reading options" [level=2]
+  - button "About reading pace and text size":
+    - generic: About reading pace and text size
+    - generic: +
+  - heading "More ways to use this guide" [level=2]
+  - generic: Saving stores this guide’s topic on this device. Someone with access to the device or browser profile may see it; it is not sent to this project.
+  - button "Save this guide on this device":
+    - generic: Save this guide on this device
+  - generic: This guide is not saved.
+  - button "Print this guide":
+    - generic: Print this guide
+  - button "Copy guide link":
+    - generic: Copy guide link
+  - generic: If this guide raises a question, add it to a private appointment sheet. You choose what to include; nothing is sent to this project.
+  - link "Start with questions from this guide →":
+    - /url: /appointments?guide=without-stroke
+    - generic: Start with questions from this guide →
+  - heading "Sources and review for this draft" [level=2]
+  - generic: "Clinical review: not recorded · Patient/carer review: not recorded · Translation review: English original · Review date: not recorded"
+  - 'link "Open source: Treatment and Outcomes of Cervical Artery Dissection in Adults: A Scientific Statement From the American Heart Association"':
+    - generic: "Treatment and Outcomes of Cervical Artery Dissection in Adults: A Scientific Statement From the American Heart Association (2024)"
+    - generic: Source record checked 2026-10-12. A scientific statement is not a personalised treatment plan. Verify exact passages before publishing individual claims.
+  - 'link "Open source: ESO guideline for the management of extracranial and intracranial artery dissection"':
+    - generic: ESO guideline for the management of extracranial and intracranial artery dissection (2021)
+    - generic: Source record checked 2026-10-12. Do not generalise recommendations across anatomical groups or haemorrhagic and ischaemic presentations.
+  - 'link "Open source: Quality of life in survivors after cervical artery dissection"':
+    - generic: Quality of life in survivors after cervical artery dissection (2009)
+    - generic: Source record checked 2026-10-12. Older observational cohort; does not establish current population prevalence or show that this app improves outcomes.
+  - heading "Continue with a related guide" [level=2]
+  - link "Recovery, fatigue and quality of life Make room for changes in energy, confidence, mood and everyday life, even when they are hard to see. For patients, carers · About 2 min Draft · not approved for patient use":
+    - /url: /guide/recovery-and-quality-of-life
+    - generic: Recovery, fatigue and quality of life
+    - generic: Make room for changes in energy, confidence, mood and everyday life, even when they are hard to see.
+    - generic: For patients, carers · About 2 min
+    - generic: Draft · not approved for patient use
+  - link "Prepare for a follow-up appointment Choose what matters most, make room for questions and leave with a clear next step to discuss. For patients, carers · About 2 min Draft · not approved for patient use":
+    - /url: /guide/follow-up-questions
+    - generic: Prepare for a follow-up appointment
+    - generic: Choose what matters most, make room for questions and leave with a clear next step to discuss.
+    - generic: For patients, carers · About 2 min
+    - generic: Draft · not approved for patient use
+  - generic: Development preview · general information only · not a medical service
+  - link "About and privacy":
+    - /url: /about
+    - generic: About and privacy
+  - link "Accessibility":
+    - /url: /accessibility
+    - generic: Accessibility
+  - link "Saved on this device":
+    - /url: /saved
+    - generic: Saved on this device
+  - link "Urgent help":
+    - /url: /urgent-help
+    - generic: Urgent help

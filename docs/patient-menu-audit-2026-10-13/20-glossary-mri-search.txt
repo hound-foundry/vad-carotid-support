@@ -1,0 +1,55 @@
+- link "Urgent help":
+  - /url: /urgent-help
+  - generic: Urgent help
+  - generic: ›
+- generic: VAD & Carotid Support
+- navigation "Main navigation":
+  - link "Home":
+    - /url: /
+    - generic: Home
+  - button "Menu":
+    - generic: Menu
+  - link "Text and display":
+    - /url: /accessibility
+    - generic: Text and display
+- link "Skip to main content":
+  - generic: Skip to main content
+- main:
+  - link "Back to home":
+    - /url: /
+    - generic: ←
+    - generic: Home
+  - generic: GUIDE LIBRARY
+  - heading "Words you may see in a report." [level=1]
+  - generic: Short definitions for unfamiliar terms. You do not need to understand every word at once.
+  - generic: Draft information · review pending
+  - generic: Clinical and patient/carer reviews are not yet recorded. For personal care questions, ask your doctor.
+  - link "About the review process":
+    - /url: /about
+    - generic: About the review process
+  - heading "Using this glossary" [level=2]
+  - generic: These are general definitions, not an interpretation of your scan or a description of your personal care. If a word in your report is unclear, ask the clinician who reviewed it to explain it in everyday language.
+  - heading "Find a term" [level=2]
+  - textbox "Search glossary terms" [active]:
+    - /placeholder: "For example: artery, imaging, stroke"
+    - text: MRI
+  - button "Clear search":
+    - generic: Clear search
+  - generic: 0 terms shown
+  - heading "No matching term" [level=2]
+  - generic: Try a shorter word or ask the clinician who reviewed your report to explain the term.
+  - heading "Still unsure?" [level=2]
+  - generic: "You can ask: “Could you explain this word and tell me what it means in my situation?” This app cannot interpret reports or scans."
+  - generic: Development preview · general information only · not a medical service
+  - link "About and privacy":
+    - /url: /about
+    - generic: About and privacy
+  - link "Accessibility":
+    - /url: /accessibility
+    - generic: Accessibility
+  - link "Saved on this device":
+    - /url: /saved
+    - generic: Saved on this device
+  - link "Urgent help":
+    - /url: /urgent-help
+    - generic: Urgent help

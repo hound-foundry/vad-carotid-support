@@ -1,0 +1,123 @@
+- main:
+  - iframe [active] [id="I0_1791910188508"] [name="I0_1791910188508"]:
+    - main:
+      - button:
+      - button "VAD & Carotid Support — design reference"
+      - button:
+      - button "Export":
+        - paragraph: Export
+      - button "Share":
+        - paragraph: Share
+      - button:
+      - button:
+      - button:
+      - button:
+      - button "Choose File"
+      - button:
+      - button:
+      - button:
+      - button "Undo" [disabled]:
+        - generic: undo
+      - button "Redo" [disabled]:
+        - generic: redo
+      - button "35%":
+        - generic: 35%
+      - button "Helpful Links":
+      - button "Choose File"
+      - application:
+        - generic: image
+        - generic: clipboard.jpeg
+        - generic: image
+        - generic: clipboard.jpeg
+        - generic: palette
+        - generic: VAD & Carotid Support
+        - generic: Primary
+        - generic "Click to copy": "#26736E"
+        - 'generic "T0 #000000 — Click to copy"'
+        - 'generic "T10 #00201e — Click to copy"'
+        - 'generic "T20 #003734 — Click to copy"'
+        - 'generic "T30 #00504c — Click to copy"'
+        - 'generic "T40 #186964 — Click to copy"'
+        - 'generic "T50 #38827d — Click to copy"'
+        - 'generic "T60 #549d97 — Click to copy"'
+        - 'generic "T70 #6fb8b2 — Click to copy"'
+        - 'generic "T80 #8bd3cd — Click to copy"'
+        - 'generic "T90 #a7f0e9 — Click to copy"'
+        - 'generic "T95 #b5fef7 — Click to copy"'
+        - 'generic "T100 #ffffff — Click to copy"'
+        - generic: Secondary
+        - generic "Click to copy": "#195B58"
+        - 'generic "T0 #000000 — Click to copy"'
+        - 'generic "T10 #00201f — Click to copy"'
+        - 'generic "T20 #003735 — Click to copy"'
+        - 'generic "T30 #05504d — Click to copy"'
+        - 'generic "T40 #296865 — Click to copy"'
+        - 'generic "T50 #44817d — Click to copy"'
+        - 'generic "T60 #5f9b97 — Click to copy"'
+        - 'generic "T70 #79b6b2 — Click to copy"'
+        - 'generic "T80 #94d2cd — Click to copy"'
+        - 'generic "T90 #b0eee9 — Click to copy"'
+        - 'generic "T95 #befcf8 — Click to copy"'
+        - 'generic "T100 #ffffff — Click to copy"'
+        - generic: Tertiary
+        - generic "Click to copy": "#E4F0ED"
+        - 'generic "T0 #000000 — Click to copy"'
+        - 'generic "T10 #131e1c — Click to copy"'
+        - 'generic "T20 #283331 — Click to copy"'
+        - 'generic "T30 #3e4947 — Click to copy"'
+        - 'generic "T40 #55615f — Click to copy"'
+        - 'generic "T50 #6e7977 — Click to copy"'
+        - 'generic "T60 #879391 — Click to copy"'
+        - 'generic "T70 #a2aeab — Click to copy"'
+        - 'generic "T80 #bdc9c6 — Click to copy"'
+        - 'generic "T90 #d9e5e2 — Click to copy"'
+        - 'generic "T95 #e7f3f0 — Click to copy"'
+        - 'generic "T100 #ffffff — Click to copy"'
+        - generic: Neutral
+        - generic "Click to copy": "#183B3B"
+        - 'generic "T0 #000000 — Click to copy"'
+        - 'generic "T10 #002020 — Click to copy"'
+        - 'generic "T20 #123636 — Click to copy"'
+        - 'generic "T30 #2a4c4c — Click to copy"'
+        - 'generic "T40 #426464 — Click to copy"'
+        - 'generic "T50 #5b7d7d — Click to copy"'
+        - 'generic "T60 #749797 — Click to copy"'
+        - 'generic "T70 #8eb2b1 — Click to copy"'
+        - 'generic "T80 #a9cdcd — Click to copy"'
+        - 'generic "T90 #c5eae9 — Click to copy"'
+        - 'generic "T95 #d3f8f7 — Click to copy"'
+        - 'generic "T100 #ffffff — Click to copy"'
+        - generic: Headline
+        - generic: Newsreader
+        - generic: Aa
+        - button "Primary"
+        - button "Secondary"
+        - button "Inverted"
+        - button "Outlined"
+        - generic: search
+        - generic: Search
+        - generic: Body
+        - generic: Inter
+        - generic: Aa
+        - generic: home
+        - generic: search
+        - generic: person
+        - generic: Label
+        - generic: Inter
+        - generic: Aa
+        - generic: edit
+        - generic: edit
+        - text: Label
+        - generic: auto_fix_high
+        - generic: category
+        - generic: sell
+        - generic: delete
+        - button "Review appointment sheet layout at 390px and 320px 1":
+          - generic: Review appointment sheet layout at 390px and 320px
+          - generic: "1"
+        - button "Explore two-choice cards page with form and preview state 2":
+          - generic: Explore two-choice cards page with form and preview state
+          - generic: "2"
+        - button "Check roomy spacing and high-contrast token variations 3":
+          - generic: Check roomy spacing and high-contrast token variations
+          - generic: "3"
