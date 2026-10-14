@@ -32,7 +32,7 @@ export function SiteHeader({ bottomNavigationHeight = 80 }: { bottomNavigationHe
   return <SafeAreaView testID="site-header" edges={["top"]} style={styles.shell}><View style={[styles.inner, settings.spacing === "roomy" && styles.innerRoomy, windowWidth < 390 && styles.innerNarrow]}>
     <View onLayout={(event) => setHeaderContentHeight(event.nativeEvent.layout.height)} style={singleRow && styles.headerRow}>
       <View style={[styles.identity, singleRow && styles.identityWide]}>
-        <View style={styles.brandStack}><Text accessibilityLabel={APP_NAME} style={styles.brand}>{compactBrand ? "Companion" : APP_NAME}</Text>{!compactBrand ? <Text numberOfLines={1} style={styles.subtitle}>{APP_SUBTITLE}</Text> : null}</View>
+        <View style={styles.brandStack}><Text accessibilityLabel={APP_NAME} style={[styles.brand, compactBrand && styles.brandCompact]}>{APP_NAME}</Text>{!compactBrand ? <Text numberOfLines={1} style={styles.subtitle}>{APP_SUBTITLE}</Text> : null}</View>
         {!singleRow ? menuButton : null}
       </View>
       <View role="navigation" aria-label="Help and display" style={styles.utilities}>
@@ -54,6 +54,7 @@ const styles = StyleSheet.create({
   headerRow: { flexDirection: "row", alignItems: "center", gap: 24 },
   identityWide: { flex: 1, minWidth: 0 },
   brand: { flex: 1, minWidth: 0, color: palette.ink, fontSize: 19, fontWeight: "800", letterSpacing: -0.15 },
+  brandCompact: { fontSize: 17, lineHeight: 23, letterSpacing: -0.2 },
   subtitle: { color: palette.muted, fontSize: 14, lineHeight: 20, marginTop: 1 },
   utilities: { flexDirection: "row", alignItems: "center", justifyContent: "space-between", gap: 8 },
   helpSlot: { flexShrink: 1 },
