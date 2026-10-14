@@ -6,7 +6,8 @@ button:focus-visible,a:focus-visible,input:focus-visible,textarea:focus-visible,
 [data-vad-theme="dark"] :focus-visible{outline-color:${focusColours.dark}}
 [data-vad-contrast="high"] :focus-visible{outline-width:4px}
 #skip-to-content:focus-visible{left:16px!important;top:4px!important}
-main:focus{outline:none}
+main:focus{outline:3px solid ${focusColours.light};outline-offset:4px}
+[data-vad-theme="dark"] main:focus{outline-color:${focusColours.dark}}
 button,a,input,textarea{max-width:100%;overflow-wrap:anywhere}
 *{animation:none!important;transition:none!important;scroll-behavior:auto!important}
 @media (hover:hover){[data-testid="task-action"]:hover{border-color:${focusColours.light}}[data-vad-theme="dark"] [data-testid="task-action"]:hover{border-color:${focusColours.dark}}}
