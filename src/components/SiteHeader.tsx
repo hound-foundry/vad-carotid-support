@@ -14,7 +14,10 @@ export function SiteHeader({ bottomNavigationHeight = 80 }: { bottomNavigationHe
   const pathname = usePathname(); const [open, setOpen] = useState(false); const [headerContentHeight, setHeaderContentHeight] = useState(0); const menuRef = useRef<NativeView>(null);
   const { height: windowHeight, width: windowWidth } = useLayoutDimensions();
   const { settings } = useAccessibility();
-  const compactBrand = settings.textScale >= 1.75 && (windowWidth < 480 || windowHeight < 420);
+  // Phones have too little horizontal room for the full utility labels. Keep
+  // their complete accessible names, but use the compact visual labels so
+  // pills do not wrap or truncate at 320–390px.
+  const compactBrand = windowWidth < 480 || (settings.textScale >= 1.75 && windowHeight < 420);
   const singleRow = windowWidth >= 880 && windowHeight >= 420 && settings.textScale < 1.5;
   // Reserve the measured dock and a usable part of the page. The menu scrolls
   // within its own bounds instead of moving medical help or navigation away.
