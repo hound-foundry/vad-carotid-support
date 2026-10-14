@@ -5,6 +5,7 @@ import { Text, View } from "../src/components/Ui";
 import { useCardDrafts } from "../src/features/cards/CardDraftProvider";
 import { Button, CardExports, CardPreview, Check, DateFields, Disclosure, Field, PrivacyNote, SavedControls } from "../src/features/cards/CardUi";
 import { personalCardPresentation, type PersonalCard } from "../src/features/cards/model.mjs";
+import { CardDesignPicker } from "../src/features/cards/CardDesignPicker";
 
 const statements = ["Please give me time to answer.", "Please write important things down.", "Please use short, clear sentences.", "Please ask before helping me."];
 export default function PersonalCardScreen() {
@@ -20,8 +21,10 @@ export default function PersonalCardScreen() {
       {statements.map((statement) => <Check key={statement} label={statement} checked={draft.card.communicationNeeds.split("\n").includes(statement)} onChange={() => { const lines = draft.card.communicationNeeds.split("\n").filter(Boolean); const next = (lines.includes(statement) ? lines.filter((line) => line !== statement) : [...lines, statement]).join("\n"); if (next.length > 240) { setHint("Remove some text before adding another statement."); return; } setHint(""); update("communicationNeeds", next); }} />)}{hint ? <Text accessibilityLiveRegion="polite" style={styles.note}>{hint}</Text> : null}
       <Disclosure title="Name and your own words (optional)">
         {field("preferredName", "Preferred name (optional)")}
+        <Field id="personal-heading" label="Card heading (optional)" value={draft.card.heading} onChange={(heading) => update("heading", heading)} limit={80} hint="Write your own heading, or leave it blank for Medical and communication card." />
         {field("communicationNeeds", "Communication and access needs (optional)", true)}
       </Disclosure>
+      <CardDesignPicker value={draft.card} onChange={draft.update} />
       <Button title="Review card" disabled={!draft.loaded} onPress={draft.preview} />
       <Disclosure title={hasExtra ? "Additional details (contains entries)" : "Add optional details"}>
         {field("description", "How I describe my situation (optional)", true)}

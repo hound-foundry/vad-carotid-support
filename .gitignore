@@ -4,6 +4,7 @@ dist/
 web-build/
 coverage/
 output/
+tmp/
 .env
 .env.*
 !.env.example

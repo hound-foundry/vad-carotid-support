@@ -1,4 +1,5 @@
-import { StyleSheet, useWindowDimensions } from "react-native";
+import { StyleSheet } from "react-native";
+import { useLayoutDimensions } from "./useLayoutDimensions";
 import { useId } from "react";
 import { Link } from "./AppLink";
 import { Pressable, Text, View } from "./Ui";
@@ -7,7 +8,7 @@ import { palette } from "./theme";
 import { useAccessibility } from "../features/accessibility/AccessibilityProvider";
 
 export function ActionLink({ href, title, detail, icon, compact = false, inline = false, showIcon = true }: { href: string; title: string; detail: string; icon: AppIconName; compact?: boolean; inline?: boolean; showIcon?: boolean }) {
-  const { width } = useWindowDimensions();
+  const { width } = useLayoutDimensions();
   const narrow = width < 360;
   const { settings } = useAccessibility();
   const detailId = `action-detail-${useId().replace(/:/g, "")}`;

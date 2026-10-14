@@ -1,7 +1,8 @@
 import { Link } from "./AppLink";
 import { useEffect, useRef, useState } from "react";
 import { usePathname } from "expo-router";
-import { Platform, StyleSheet, useWindowDimensions, type View as NativeView } from "react-native";
+import { Platform, StyleSheet, type View as NativeView } from "react-native";
+import { useLayoutDimensions } from "./useLayoutDimensions";
 import { Pressable, SafeAreaView, ScrollView, Text, View } from "./Ui";
 import { palette } from "./theme";
 import { useAccessibility } from "../features/accessibility/AccessibilityProvider";
@@ -11,7 +12,7 @@ import { AppIcon } from "./AppIcon";
 const links = [["/supporting-someone", "Help someone"], ["/support-preferences", "Support preferences"], ["/glossary", "Look up a term"], ["/resources", "Resources"], ["/about", "About and privacy"]] as const;
 export function SiteHeader({ bottomNavigationHeight = 80 }: { bottomNavigationHeight?: number }) {
   const pathname = usePathname(); const [open, setOpen] = useState(false); const [headerContentHeight, setHeaderContentHeight] = useState(0); const menuRef = useRef<NativeView>(null);
-  const { height: windowHeight, width: windowWidth } = useWindowDimensions();
+  const { height: windowHeight, width: windowWidth } = useLayoutDimensions();
   const { settings } = useAccessibility();
   const compactBrand = settings.textScale >= 1.75 && (windowWidth < 480 || windowHeight < 420);
   const singleRow = windowWidth >= 880 && windowHeight >= 420 && settings.textScale < 1.5;

@@ -1,0 +1,20 @@
+{
+  "date": "2026-10-14",
+  "baseRevision": "aac394f",
+  "webEntry": "entry-aeddea88f9b80a6396afd401061443ae.js",
+  "unitTests": {
+    "passed": 80,
+    "failed": 0
+  },
+  "typecheck": "pass",
+  "contentReviewNativeValidation": "pass; human release gates remain pending",
+  "designValidation": "pass",
+  "staticWebExport": "pass",
+  "exportedArtifactChecks": 33,
+  "routeLayoutChecks": 46,
+  "startupConsoleErrors": 0,
+  "screenReaders": "not tested",
+  "nativeDevices": "not tested",
+  "systemPrint": "not tested",
+  "actualBrowserZoom": "not tested"
+}

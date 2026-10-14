@@ -1,6 +1,7 @@
 import { Link } from "../src/components/AppLink";
 
-import { StyleSheet, useWindowDimensions } from "react-native";
+import { StyleSheet } from "react-native";
+import { useLayoutDimensions } from "../src/components/useLayoutDimensions";
 import { AppPage, palette } from "../src/components/AppPage";
 import { Pressable, Text, View } from "../src/components/Ui";
 import { ActionLink } from "../src/components/ActionLink";
@@ -14,7 +15,7 @@ const actions = [
 ] as const;
 export default function HomeScreen() {
   const { settings } = useAccessibility();
-  const { width } = useWindowDimensions();
+  const { width } = useLayoutDimensions();
   const singleColumn = width < 360 || (settings.textScale >= 1.5 && width < 700);
   const rows = singleColumn ? actions.map((action) => [action]) : [actions.slice(0, 2), actions.slice(2)];
   return <AppPage>

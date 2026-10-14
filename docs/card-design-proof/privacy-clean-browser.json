@@ -1,0 +1,22 @@
+{
+  "date": "2026-10-14",
+  "origin": "http://localhost:4183",
+  "scope": "Fresh clean-browser personal-card input, preview, explicit save, PNG, PDF, wallet PDF and text download; no reload in this trace.",
+  "network": {
+    "requests": 5,
+    "truncated": false,
+    "hasMore": false,
+    "markerFound": false,
+    "urls": [
+      "http://localhost:4183/_expo/static/js/web/pdf-8ff2a9c4e4f2d5ddf2322e18f566855f.js",
+      "http://localhost:4183/fonts/NotoSans-Regular.ttf",
+      "http://localhost:4183/fonts/NotoSans-Bold.ttf"
+    ]
+  },
+  "console": {
+    "entries": 0,
+    "markerFound": false,
+    "errorCount": 0
+  },
+  "urlContainsMarker": false
+}

@@ -1,5 +1,6 @@
 import { usePathname } from "expo-router";
-import { StyleSheet, useWindowDimensions } from "react-native";
+import { StyleSheet } from "react-native";
+import { useLayoutDimensions } from "./useLayoutDimensions";
 import { Link } from "./AppLink";
 import { Pressable, SafeAreaView, Text, View } from "./Ui";
 import { AppIcon, type AppIconName } from "./AppIcon";
@@ -16,7 +17,7 @@ const destinations: { href: string; label: string; icon: AppIconName; routes: st
 export function AppNavigation({ onHeightChange }: { onHeightChange: (height: number) => void }) {
   const pathname = usePathname();
   const { settings } = useAccessibility();
-  const { width, height } = useWindowDimensions();
+  const { width, height } = useLayoutDimensions();
   const twoRows = width < 520 && settings.textScale >= 1.5;
   const showIcons = height >= 420 && settings.textScale < 1.5;
   const rows = twoRows ? [destinations.slice(0, 2), destinations.slice(2)] : [destinations];

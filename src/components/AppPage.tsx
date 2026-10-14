@@ -2,7 +2,8 @@ import { Link } from "./AppLink";
 import { Pressable, ScrollView, Text, View, SafeAreaView } from "./Ui";
 
 import { useId, useRef, useState, type ReactNode, type RefObject } from "react";
-import { Platform, StyleSheet, useWindowDimensions, type ScrollView as NativeScrollView } from "react-native";
+import { Platform, StyleSheet, type ScrollView as NativeScrollView } from "react-native";
+import { useLayoutDimensions } from "./useLayoutDimensions";
 
 import { useAccessibility } from "../features/accessibility/AccessibilityProvider";
 
@@ -11,7 +12,7 @@ export { palette } from "./theme";
 
 export function AppPage({ children, wide = false, scrollRef }: { children: ReactNode; wide?: boolean; scrollRef?: RefObject<NativeScrollView | null> }) {
   const { settings } = useAccessibility();
-  const narrow = useWindowDimensions().width < 390;
+  const narrow = useLayoutDimensions().width < 390;
   const internalMainRef = useRef<NativeScrollView>(null);
   const mainRef = scrollRef ?? internalMainRef;
   return <SafeAreaView style={styles.safe} edges={[]}>{Platform.OS === "web" ? <Pressable testID="skip-link" accessibilityRole="link" accessibilityLabel="Skip to main content" nativeID="skip-to-content" style={styles.skipLink} onPress={() => (mainRef.current?.getScrollableNode() as HTMLElement | undefined)?.focus()}><Text style={styles.skipText}>Skip to main content</Text></Pressable> : null}<ScrollView ref={mainRef} nativeID="main-content" {...(Platform.OS === "web" ? { role: "main" as const, tabIndex: -1 as const } : {})} contentContainerStyle={[styles.page, settings.spacing === "roomy" && styles.pageRoomy, narrow && styles.pageNarrow, wide && styles.wide]}>{children}<SiteFooter /></ScrollView></SafeAreaView>;
@@ -20,7 +21,7 @@ export function AppPage({ children, wide = false, scrollRef }: { children: React
 export function BackHome() {
   // The persistent dock supplies Home on a phone; avoid a duplicate row above
   // each page. Desktop keeps the established breadcrumb for longer reading.
-  if (useWindowDimensions().width < 700) return null;
+  if (useLayoutDimensions().width < 700) return null;
   return <Link href="/" asChild><Pressable accessibilityRole="link" accessibilityLabel="Back to home" style={styles.backLink}><Text style={styles.backArrow}>←</Text><Text style={styles.back}>Home</Text></Pressable></Link>;
 }
 

@@ -1,0 +1,421 @@
+{
+  "date": "2026-10-14",
+  "checks": [
+    {
+      "path": "/",
+      "height": 844,
+      "helpVisible": true,
+      "mainCount": 1,
+      "navLinks": 4,
+      "overflow": false,
+      "width": 390
+    },
+    {
+      "path": "/learn",
+      "height": 844,
+      "helpVisible": true,
+      "mainCount": 1,
+      "navLinks": 4,
+      "overflow": false,
+      "width": 390
+    },
+    {
+      "path": "/tools",
+      "height": 844,
+      "helpVisible": true,
+      "mainCount": 1,
+      "navLinks": 4,
+      "overflow": false,
+      "width": 390
+    },
+    {
+      "path": "/cards",
+      "height": 844,
+      "helpVisible": true,
+      "mainCount": 1,
+      "navLinks": 4,
+      "overflow": false,
+      "width": 390
+    },
+    {
+      "path": "/appointments",
+      "height": 844,
+      "helpVisible": true,
+      "mainCount": 1,
+      "navLinks": 4,
+      "overflow": false,
+      "width": 390
+    },
+    {
+      "path": "/personal-card",
+      "height": 844,
+      "helpVisible": true,
+      "mainCount": 1,
+      "navLinks": 4,
+      "overflow": false,
+      "width": 390
+    },
+    {
+      "path": "/milestone-card",
+      "height": 844,
+      "helpVisible": true,
+      "mainCount": 1,
+      "navLinks": 4,
+      "overflow": false,
+      "width": 390
+    },
+    {
+      "path": "/support-preferences",
+      "height": 844,
+      "helpVisible": true,
+      "mainCount": 1,
+      "navLinks": 4,
+      "overflow": false,
+      "width": 390
+    },
+    {
+      "path": "/supporting-someone",
+      "height": 844,
+      "helpVisible": true,
+      "mainCount": 1,
+      "navLinks": 4,
+      "overflow": false,
+      "width": 390
+    },
+    {
+      "path": "/accessibility",
+      "height": 844,
+      "helpVisible": true,
+      "mainCount": 1,
+      "navLinks": 4,
+      "overflow": false,
+      "width": 390
+    },
+    {
+      "path": "/urgent-help",
+      "height": 844,
+      "helpVisible": true,
+      "mainCount": 1,
+      "navLinks": 4,
+      "overflow": false,
+      "width": 390
+    },
+    {
+      "path": "/saved",
+      "height": 844,
+      "helpVisible": true,
+      "mainCount": 1,
+      "navLinks": 4,
+      "overflow": false,
+      "width": 390
+    },
+    {
+      "path": "/about",
+      "height": 844,
+      "helpVisible": true,
+      "mainCount": 1,
+      "navLinks": 4,
+      "overflow": false,
+      "width": 390
+    },
+    {
+      "path": "/glossary",
+      "height": 844,
+      "helpVisible": true,
+      "mainCount": 1,
+      "navLinks": 4,
+      "overflow": false,
+      "width": 390
+    },
+    {
+      "path": "/resources",
+      "height": 844,
+      "helpVisible": true,
+      "mainCount": 1,
+      "navLinks": 4,
+      "overflow": false,
+      "width": 390
+    },
+    {
+      "path": "/saved-guides",
+      "height": 844,
+      "helpVisible": true,
+      "mainCount": 1,
+      "navLinks": 4,
+      "overflow": false,
+      "width": 390
+    },
+    {
+      "path": "/with-stroke",
+      "height": 844,
+      "helpVisible": true,
+      "mainCount": 1,
+      "navLinks": 4,
+      "overflow": false,
+      "width": 390
+    },
+    {
+      "path": "/without-stroke",
+      "height": 844,
+      "helpVisible": true,
+      "mainCount": 1,
+      "navLinks": 4,
+      "overflow": false,
+      "width": 390
+    },
+    {
+      "path": "/guide/understanding-dissection",
+      "height": 844,
+      "helpVisible": true,
+      "mainCount": 1,
+      "navLinks": 4,
+      "overflow": false,
+      "width": 390
+    },
+    {
+      "path": "/guide/tests-and-terms",
+      "height": 844,
+      "helpVisible": true,
+      "mainCount": 1,
+      "navLinks": 4,
+      "overflow": false,
+      "width": 390
+    },
+    {
+      "path": "/guide/with-stroke",
+      "height": 844,
+      "helpVisible": true,
+      "mainCount": 1,
+      "navLinks": 4,
+      "overflow": false,
+      "width": 390
+    },
+    {
+      "path": "/guide/without-stroke",
+      "height": 844,
+      "helpVisible": true,
+      "mainCount": 1,
+      "navLinks": 4,
+      "overflow": false,
+      "width": 390
+    },
+    {
+      "path": "/guide/follow-up-questions",
+      "height": 844,
+      "helpVisible": true,
+      "mainCount": 1,
+      "navLinks": 4,
+      "overflow": false,
+      "width": 390
+    },
+    {
+      "path": "/guide/recovery-and-quality-of-life",
+      "height": 844,
+      "helpVisible": true,
+      "mainCount": 1,
+      "navLinks": 4,
+      "overflow": false,
+      "width": 390
+    },
+    {
+      "path": "/guide/supporting-someone",
+      "height": 844,
+      "helpVisible": true,
+      "mainCount": 1,
+      "navLinks": 4,
+      "overflow": false,
+      "width": 390
+    },
+    {
+      "path": "/",
+      "height": 640,
+      "helpVisible": true,
+      "mainCount": 1,
+      "navLinks": 4,
+      "overflow": false,
+      "width": 320
+    },
+    {
+      "path": "/learn",
+      "height": 640,
+      "helpVisible": true,
+      "mainCount": 1,
+      "navLinks": 4,
+      "overflow": false,
+      "width": 320
+    },
+    {
+      "path": "/tools",
+      "height": 640,
+      "helpVisible": true,
+      "mainCount": 1,
+      "navLinks": 4,
+      "overflow": false,
+      "width": 320
+    },
+    {
+      "path": "/cards",
+      "height": 640,
+      "helpVisible": true,
+      "mainCount": 1,
+      "navLinks": 4,
+      "overflow": false,
+      "width": 320
+    },
+    {
+      "path": "/personal-card",
+      "height": 640,
+      "helpVisible": true,
+      "mainCount": 1,
+      "navLinks": 4,
+      "overflow": false,
+      "width": 320
+    },
+    {
+      "path": "/milestone-card",
+      "height": 640,
+      "helpVisible": true,
+      "mainCount": 1,
+      "navLinks": 4,
+      "overflow": false,
+      "width": 320
+    },
+    {
+      "path": "/urgent-help",
+      "height": 640,
+      "helpVisible": true,
+      "mainCount": 1,
+      "navLinks": 4,
+      "overflow": false,
+      "width": 320
+    },
+    {
+      "path": "/",
+      "height": 320,
+      "helpVisible": true,
+      "mainCount": 1,
+      "navLinks": 4,
+      "overflow": false,
+      "width": 844
+    },
+    {
+      "path": "/learn",
+      "height": 320,
+      "helpVisible": true,
+      "mainCount": 1,
+      "navLinks": 4,
+      "overflow": false,
+      "width": 844
+    },
+    {
+      "path": "/tools",
+      "height": 320,
+      "helpVisible": true,
+      "mainCount": 1,
+      "navLinks": 4,
+      "overflow": false,
+      "width": 844
+    },
+    {
+      "path": "/cards",
+      "height": 320,
+      "helpVisible": true,
+      "mainCount": 1,
+      "navLinks": 4,
+      "overflow": false,
+      "width": 844
+    },
+    {
+      "path": "/personal-card",
+      "height": 320,
+      "helpVisible": true,
+      "mainCount": 1,
+      "navLinks": 4,
+      "overflow": false,
+      "width": 844
+    },
+    {
+      "path": "/milestone-card",
+      "height": 320,
+      "helpVisible": true,
+      "mainCount": 1,
+      "navLinks": 4,
+      "overflow": false,
+      "width": 844
+    },
+    {
+      "path": "/urgent-help",
+      "height": 320,
+      "helpVisible": true,
+      "mainCount": 1,
+      "navLinks": 4,
+      "overflow": false,
+      "width": 844
+    },
+    {
+      "path": "/",
+      "height": 900,
+      "helpVisible": true,
+      "mainCount": 1,
+      "navLinks": 4,
+      "overflow": false,
+      "width": 1440
+    },
+    {
+      "path": "/learn",
+      "height": 900,
+      "helpVisible": true,
+      "mainCount": 1,
+      "navLinks": 4,
+      "overflow": false,
+      "width": 1440
+    },
+    {
+      "path": "/tools",
+      "height": 900,
+      "helpVisible": true,
+      "mainCount": 1,
+      "navLinks": 4,
+      "overflow": false,
+      "width": 1440
+    },
+    {
+      "path": "/cards",
+      "height": 900,
+      "helpVisible": true,
+      "mainCount": 1,
+      "navLinks": 4,
+      "overflow": false,
+      "width": 1440
+    },
+    {
+      "path": "/personal-card",
+      "height": 900,
+      "helpVisible": true,
+      "mainCount": 1,
+      "navLinks": 4,
+      "overflow": false,
+      "width": 1440
+    },
+    {
+      "path": "/milestone-card",
+      "height": 900,
+      "helpVisible": true,
+      "mainCount": 1,
+      "navLinks": 4,
+      "overflow": false,
+      "width": 1440
+    },
+    {
+      "path": "/urgent-help",
+      "height": 900,
+      "helpVisible": true,
+      "mainCount": 1,
+      "navLinks": 4,
+      "overflow": false,
+      "width": 1440
+    }
+  ],
+  "consoleErrors": [],
+  "menuEscapeReturnsFocus": true
+}
