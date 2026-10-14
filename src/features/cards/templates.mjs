@@ -13,12 +13,12 @@ export const CARD_TEMPLATES = [
     { id: "statement", kind: "personal", name: "Statement card", description: "A bold front, with practical information on the back.", colours: ["cranberry", "blue", "plum"], illustration: "ribbon-bold", illustrations: ["ribbon-bold", "none", "branch"], photo: false },
     { id: "ribbon-poster", kind: "milestone", name: "Survivor ribbon", description: "Strong lettering and a prominent ribbon. Use your own wording.", colours: ["plum", "blue", "cranberry"], illustration: "ribbon-bold", illustrations: ["ribbon-bold", "none", "branch"], photo: false },
     { id: "warrior", kind: "milestone", name: "Warrior badge", description: "A shield and leaf, with bold lettering.", colours: ["gold", "blue", "plum"], illustration: "crest", illustrations: ["crest", "none", "ribbon-bold"], photo: false },
-    { id: "brain-poster", kind: "milestone", name: "Friendly brain", description: "An illustrated character, with room for your message.", colours: ["coral", "blue", "sage"], illustration: "brain-character", illustrations: ["brain-character", "none", "branch"], photo: false },
+    { id: "brain-poster", kind: "milestone", name: "Artery & ribbon", description: "A branching-vessel motif and ribbon, with your own words.", colours: ["blue", "coral", "sage"], illustration: "brain-character", illustrations: ["brain-character", "none", "branch"], photo: false },
     { id: "botanical", kind: "milestone", name: "Botanical keepsake", description: "Leafy framing for a moment in your own words.", colours: ["sage", "blue", "plum"], illustration: "branch", illustrations: ["branch", "none", "ribbon-bold"], photo: false },
     { id: "photo-story", kind: "milestone", name: "Photo story", description: "An optional photo above a readable caption panel.", colours: ["blue", "plum", "sage"], illustration: "none", illustrations: ["none", "branch"], photo: true },
 ];
 export const ILLUSTRATIONS = [
-    { id: "none", name: "No artwork" }, { id: "ribbon-bold", name: "Ribbon" }, { id: "branch", name: "Leafy branch" }, { id: "crest", name: "Shield and leaf" }, { id: "brain-character", name: "Brain character" },
+    { id: "none", name: "No artwork" }, { id: "ribbon-bold", name: "Ribbon" }, { id: "branch", name: "Leafy branch" }, { id: "crest", name: "Shield and leaf" }, { id: "brain-character", name: "Artery & ribbon" },
 ];
 export function cardTemplate(id, kind) {
     if(id==="plain")return {id:"plain",kind:kind||"personal",name:"Plain layout",description:"A simple text layout.",colours:["blue","plum","sage"],illustration:"none",illustrations:["none"],photo:false};

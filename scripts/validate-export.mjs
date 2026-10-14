@@ -5,7 +5,7 @@ import { join } from "node:path";
 
 const root = fileURLToPath(new URL("../dist/", import.meta.url));
 const files = [
-  "index.html", "about.html", "accessibility.html", "appointments.html", "glossary.html", "learn.html", "cards.html", "saved.html", "fonts/NotoSans-Regular.ttf", "fonts/NotoSans-Bold.ttf", "fonts/barlow/BarlowCondensed-Bold.ttf", "fonts/barlow/OFL.txt", "card-art/friendly-brain.png",
+  "index.html", "about.html", "accessibility.html", "appointments.html", "glossary.html", "learn.html", "cards.html", "saved.html", "fonts/NotoSans-Regular.ttf", "fonts/NotoSans-Bold.ttf", "fonts/barlow/BarlowCondensed-Bold.ttf", "fonts/barlow/OFL.txt",
   "milestone-card.html", "personal-card.html", "resources.html", "saved-guides.html", "support-preferences.html",
   "supporting-someone.html", "tools.html", "urgent-help.html", "with-stroke.html", "without-stroke.html", "+not-found.html",
   "_sitemap.html", "manifest.json", "icon.svg", "sw.js", "_headers",

@@ -8,7 +8,7 @@ Implemented and checked on 14 October 2026 in the existing Expo project. This is
 |---|---|
 | Communication first: a large statement and restrained blue band | Survivor ribbon: oversized lettering and a prominent original ribbon |
 | Photo and details: optional portrait, name and statement, plum band | Warrior badge: shield/leaf emblem, condensed lettering, navy/gold |
-| Statement card: cranberry statement front, optional ribbon | Friendly brain: substantial original illustration, coral/sage/warm paper |
+| Statement card: cranberry statement front, optional ribbon | Artery & ribbon: original branching-vessel motif and awareness ribbon, blue/white by default |
 | White reverse and labelled continuation panels for each | Botanical keepsake: leafy framing and balanced typography |
 | Larger-text A4 and text alternatives | Photo story: optional image above its caption panel |
 
@@ -18,14 +18,14 @@ Each template has three curated colour combinations. Selecting a template change
 
 ![Practical fronts and backs](designed-cards-proof/practical-front-back.jpg)
 
-![Actual phone preview](designed-cards-proof/phone-brain-preview.png)
+![Actual phone preview](designed-cards-proof/phone-artery-ribbon-preview.png)
 
 ## Implementation boundaries
 
 - `templates.mjs` allowlists templates, palettes and compatible illustrations. Previous v1 keys, version and appearance remain valid until the person chooses a new design.
 - `layout.mjs` measures text, photo crops and continuation panels. `scene-svg.mjs` supplies preview, PNG and white-paper print; `scene-pdf.mjs` uses the same coordinates, fonts and pagination. Wallet panels are 85.6 × 54 mm. Milestone PNGs start at 1080 × 1350 and grow for long text.
 - Barlow Condensed Bold is locally bundled with its SIL Open Font License. Noto Sans is used for details and display-font fallback. Latin/Cyrillic examples were checked. Unsupported glyphs give a text alternative; universal script/emoji support is not claimed.
-- Public artwork is original, with the AI-assisted brain's provenance and prompt in [the asset notes](../public/card-art/README.md). Commercial examples were not copied. Photo examples are synthetic illustrations.
+- Public artwork is original, with provenance in [the asset notes](../public/card-art/README.md). Commercial examples were not copied. Photo examples are synthetic illustrations. The retired brain identifiers now resolve to Artery & ribbon in both the collection and older cards, preserving saved wording and colours. No brain raster is bundled or fetched.
 - Personal photos are optional. JPEG/PNG/WebP input is decoded and re-encoded locally. Source orientation is applied, source metadata/filename are discarded, the longest edge is capped at 1280px, and the stored format is JPEG. Newly chosen photos remain in memory until explicit Save.
 - Saved Blobs use IndexedDB, with opaque IDs in the original card JSON and separate personal/milestone owners. Save uses compensating rollback across the two storage mechanisms. Save/deletion/clear failures do not report success; incomplete rollback is reported explicitly. Quotas, eviction and backups remain browser/device limitations.
 - Clear-all drains pending writes, clears all six original keys and the additional photo resource, and resets active card memory. Late photo processing cannot restore a cleared draft. A failed global clear marks the saved state uncertain while preserving the draft.
@@ -48,9 +48,11 @@ Tests used disposable synthetic fixtures on `http://127.0.0.1:4183`. The user's 
 | Reflow/display | 390px, 320px, 1440px desktop and 844 × 320 landscape inspected. Doubled app text, spacing, four themes and reduced-motion preference checked. No horizontal document overflow in observed states. At doubled text in short landscape the active reading area remains scrollable (108px height). Readable words precede artwork with large text/high contrast. A black-on-dark unstyled-text fault was reproduced and fixed in the shared text wrapper; [actual rendered foreground/background pairs](designed-cards-proof/rendered-text-themes.json) were verified in all four themes. |
 | Keyboard | Enter operated buttons, radio navigation/crop controls tested, and Menu Escape restored focus with a visible outline. This is targeted keyboard coverage, not a full assistive-technology assessment. |
 | Privacy trace | [Untruncated synthetic trace](designed-cards-proof/privacy-trace.json): no name/contact/medicine/EXIF/filename markers in captured requests, URL or logs. Blob URLs were local rendering references; the only HTTP request in that warm-cache trace was a same-origin code chunk. An earlier cold-cache trace loaded only public same-origin fonts/art/code. |
-| Build checks | 99 unit tests, source/content/review/native-config validators, TypeScript, design validation, static web export and 36 exported route/asset checks passed. Existing clinical and market release blocks remain in place. |
+| Build checks | 100 unit tests, source/content/review/native-config validators, TypeScript, design validation, static web export and 35 exported route/asset checks passed after retiring the raster asset. Existing clinical and market release blocks remain in place. |
 
 ## Named limitations
+
+Replacement check, 14 October 2026: Artery & ribbon was selected, edited, explicitly saved and restored on the disposable origin. Actual PNG/PDF downloads and PDF rasterisation showed the same vector motif. The 390px phone preview, desktop preview and 320px dark display with doubled app text were inspected; the latter had no horizontal document overflow. Historical brain screenshots were retired. Saved legacy identifiers are covered by the compatibility test; saved words, dates and selected colours are retained.
 
 NVDA, VoiceOver, TalkBack, actual browser 200% zoom, native photo/export implementation, physical wallet printing/duplex alignment and real patient/carer usability remain untested. App text enlargement is not browser zoom. Print invocation and white-paper layout/pagination were checked; operating-system print completion/cancellation was not automated. The browser file-picker interface did not support cancelling a selection, so cancellation remains a manual check; code only begins processing after a file is returned. Real IndexedDB save/reload and delete/clear UI journeys passed, but direct database inventory was unavailable in the browser tooling. Storage-failure injection used isolated adapters, not a real exhausted browser quota.
 

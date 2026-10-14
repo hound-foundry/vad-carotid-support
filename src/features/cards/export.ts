@@ -46,7 +46,7 @@ export async function exportCard(view: CardPresentation, format: CardFormat, opt
   else if(view.templateId){
     const composition=await cardComposition(view,options.photo);
     if(format==="png"){const side=options.side??0;if(!Number.isInteger(side)||side<0||side>=composition.layout.pages.length)throw new Error("Image download is unavailable for that panel.");const page=composition.layout.pages[side];const blob=await pagePng(page,composition.metrics,composition.assets);download(blob,"image/png",filename+(view.kind==="personal"?(side===0?"-front":"-back-"+side):"")+".png");}
-    else{const {createDesignedPdf}=await import("./scene-pdf.mjs");const bytes=await createDesignedPdf(view,composition.bytes,{size:format==="wallet-pdf"?"wallet":"a4",photo:composition.photo,brain:composition.brain});download(bytes as BlobPart,"application/pdf",filename+(format==="wallet-pdf"?"-wallet":"")+".pdf");}
+    else{const {createDesignedPdf}=await import("./scene-pdf.mjs");const bytes=await createDesignedPdf(view,composition.bytes,{size:format==="wallet-pdf"?"wallet":"a4",photo:composition.photo});download(bytes as BlobPart,"application/pdf",filename+(format==="wallet-pdf"?"-wallet":"")+".pdf");}
   }
   else if (format === "png") { const blob = await createMilestonePng(view); download(blob, "image/png", filename + ".png"); }
   else {

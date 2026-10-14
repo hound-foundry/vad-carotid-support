@@ -25,17 +25,12 @@ export function sceneSvg(page, metrics, assets = {}) {
             }
         }
         else if (item.type === "art") {
-            if (item.id === "brain-character" && assets.brain) {
-                parts.push(`<image href="${assets.brain}" x="${item.x}" y="${item.y}" width="${item.width}" height="${item.height}" preserveAspectRatio="xMidYMid meet"/>`);
-            }
-            else {
-                const paths = COLLECTION_ART[item.id] || [];
-                const scale = Math.min(item.width, item.height) / 100, x = item.x + (item.width - 100 * scale) / 2, y = item.y + (item.height - 100 * scale) / 2;
-                parts.push(`<g transform="translate(${x} ${y}) scale(${scale})${item.flip ? " translate(100 100) rotate(180)" : ""}">`);
-                for (const path of paths)
-                    parts.push(`<path d="${path.d}" fill="${path.fill ? item.palette[path.fill] : "none"}"${path.stroke ? ` stroke="${item.palette[path.stroke]}" stroke-width="${path.width}" stroke-linecap="round" stroke-linejoin="round"` : ""}/>`);
-                parts.push("</g>");
-            }
+            const paths = COLLECTION_ART[item.id] || [];
+            const scale = Math.min(item.width, item.height) / 100, x = item.x + (item.width - 100 * scale) / 2, y = item.y + (item.height - 100 * scale) / 2;
+            parts.push(`<g transform="translate(${x} ${y}) scale(${scale})${item.flip ? " translate(100 100) rotate(180)" : ""}">`);
+            for (const path of paths)
+                parts.push(`<path d="${path.d}" fill="${path.fill ? item.palette[path.fill] : "none"}"${path.stroke ? ` stroke="${item.palette[path.stroke]}" stroke-width="${path.width}" stroke-linecap="round" stroke-linejoin="round"` : ""}/>`);
+            parts.push("</g>");
         }
         else if (item.type === "photo" && assets.photo) {
             const r = item.crop;

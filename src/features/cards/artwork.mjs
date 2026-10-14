@@ -1,5 +1,6 @@
 // Original project artwork. These paths are decorative, not anatomical diagrams,
 // medical-alert symbols, certification marks or claims about the cardholder.
+import { ARTERY_RIBBON_PATHS } from "./collection-art.mjs";
 export const ART_COLOURS = { ink: "#183248", accent: "#2B5F87", soft: "#E8EFF4", white: "#FFFFFF" };
 /** @typedef {{d: string, fill?: "ink" | "accent" | "soft" | "white", stroke?: "ink" | "accent" | "soft" | "white", width?: number}} ArtworkPath */
 /** @type {ArtworkPath} */
@@ -21,10 +22,9 @@ export const CARD_ARTWORK = [
     { d: "M42 61C38 40 49 32 66 33C67 49 57 62 42 61Z", fill: "accent" },
     { d: "M39 73L56 44", stroke: "ink", width: 3 },
   ] },
-  { id: "brain", name: "Friendly brain", description: "A simple cartoon brain, with a smile.", paths: [disk,
-    { d: "M50 24C43 13 26 15 23 28C12 26 5 39 13 48C5 59 12 73 24 73C25 85 42 89 50 79C58 89 75 85 76 73C88 73 95 59 87 48C95 39 88 26 77 28C74 15 57 13 50 24Z", fill: "white", stroke: "accent", width: 3 },
-    { d: "M50 25L50 39M29 30C38 31 40 36 37 42M70 30C61 31 59 36 62 42M19 52C27 48 33 52 33 58M81 52C73 48 67 52 67 58M31 71C36 66 41 68 43 75M69 71C64 66 59 68 57 75", stroke: "accent", width: 2.5 },
-    { d: "M39 53L39 55M61 53L61 55M42 63C47 68 53 68 58 63", stroke: "ink", width: 3 },
+  // Keep the saved ID while replacing the old drawing everywhere.
+  { id: "brain", name: "Artery & ribbon", description: "An original branching-vessel and awareness-ribbon motif.", paths: [disk,
+    ...ARTERY_RIBBON_PATHS.map(path => ({ ...path, ...(path.fill === "paper" ? { fill: "white" } : {}), ...(path.stroke === "paper" ? { stroke: "white" } : {}) })),
   ] },
 ];
 export function normalizeArtwork(id) { return CARD_ARTWORK.some((art) => art.id === id) ? id : "none"; }

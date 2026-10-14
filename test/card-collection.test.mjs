@@ -9,6 +9,8 @@ import { buildCardLayout, photoCropRect } from "../src/features/cards/layout.mjs
 import { sceneSvg, whitePaperScene, scenePrintHtml } from "../src/features/cards/scene-svg.mjs";
 import { createDesignedPdf, paginateScene } from "../src/features/cards/scene-pdf.mjs";
 import { contrastRatio } from "../src/components/theme.mjs";
+import { COLLECTION_ART, ARTERY_RIBBON_PATHS } from "../src/features/cards/collection-art.mjs";
+import { cardArtwork } from "../src/features/cards/artwork.mjs";
 const bytes = { regular: await readFile(new URL("../public/fonts/NotoSans-Regular.ttf", import.meta.url)), bold: await readFile(new URL("../public/fonts/NotoSans-Bold.ttf", import.meta.url)), display: await readFile(new URL("../public/fonts/barlow/BarlowCondensed-Bold.ttf", import.meta.url)) };
 const metrics = createCardMetrics(bytes.regular, bytes.bold, bytes.display);
 const make = (t, patch = {}) => t.kind === "personal" ? personalCardPresentation({ ...emptyPersonalCard(), templateId: t.id, heading: "MY OWN WORDS", preferredName: "EXAMPLE", communicationNeeds: "Write important things down.", ...patch }) : milestoneCardPresentation({ ...emptyMilestoneCard(), templateId: t.id, title: "MY OWN WORDS", displayName: "EXAMPLE", message: "MY OWN MESSAGE", ...patch });
@@ -39,7 +41,7 @@ test("v1 design metadata stays optional, bounded and separate between the two ca
     assert.equal(bad.photoZoom, 3);
     assert.equal(bad.photoX, 0);
     assert.equal(bad.photoY, .5);
-    assert.equal(templateAppearance({ templateId: "brain-poster", colourId: "cranberry", illustrationId: "crest" }, "milestone").colourId, "coral");
+    assert.equal(templateAppearance({ templateId: "brain-poster", colourId: "cranberry", illustrationId: "crest" }, "milestone").colourId, "blue");
     assert.equal(parseMilestoneCard(serializeMilestoneCard({ templateId: "communication", preferredName: "PRIVATE" })).templateId, "");
 });
 test("milestone scenes use the selected words directly without form labels or hidden dates", () => {
@@ -54,6 +56,23 @@ test("milestone scenes use the selected words directly without form labels or hi
         assert.ok(!items.some(i => ["Name", "Message", "HIDDEN-1999"].includes(i.value)));
         assert.ok(items.some(i => i.value.includes("not medical advice or proof of diagnosis")));
     }
+});
+test("retired brain choices restore words and colours but draw the artery-and-ribbon motif", () => {
+    const saved = parseMilestoneCard(JSON.stringify({ version: 1, card: { templateId: "brain-poster", illustrationId: "brain-character", colourId: "coral", title: "MY OWN TITLE", message: "MY OWN MESSAGE", dateKind: "year", date: "2020" } }));
+    assert.equal(saved.title, "MY OWN TITLE");
+    assert.equal(saved.message, "MY OWN MESSAGE");
+    assert.equal(saved.date, "2020");
+    assert.equal(saved.colourId, "coral");
+    assert.deepEqual(COLLECTION_ART[saved.illustrationId], ARTERY_RIBBON_PATHS);
+    assert.equal(cardArtwork("brain").name, "Artery & ribbon");
+    const legacy = parseMilestoneCard(serializeMilestoneCard({ ...emptyMilestoneCard(), artworkId: "brain", message: "MY LEGACY WORDS" }));
+    assert.equal(legacy.artworkId, "brain");
+    assert.equal(legacy.message, "MY LEGACY WORDS");
+    const scene = buildCardLayout(milestoneCardPresentation(saved), metrics);
+    // A stale caller cannot revive the retired raster in previews or PNGs.
+    const svg = sceneSvg(scene.pages[0], metrics, { brain: "data:image/png;base64,RETIRED" });
+    assert.doesNotMatch(svg, /<image|RETIRED/);
+    for (const path of ARTERY_RIBBON_PATHS) assert.ok(svg.includes(path.d));
 });
 test("the explicit plain option uses the new filtered scene while legacy records retain their previous layout",()=>{
     const old=parseMilestoneCard(JSON.stringify({version:1,card:{title:"MY OWN WORDS",designId:"ink"}}));

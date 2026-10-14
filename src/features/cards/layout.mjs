@@ -147,13 +147,14 @@ export function buildCardLayout(view, metrics, { photo } = {}) {
         text(p, view.footer, 80, p.height - 107, 920, 22, "regular", ink, "center");
     }
     else if (template.id === "brain-poster") {
+        // Saved identifier retained for the artery-and-ribbon composition.
         rect(p, 0, 0, 1080, 26, c.accent);
         text(p, view.subtitle, 80, 48, 920, 26, "bold", c.accent, "center");
         y = text(p, view.title, 80, 100, 920, 94, "bold", c.ink, "center", 1.15);
         const hasArt = template.illustrationId !== "none";
         if (hasArt) {
-            ellipse(p, 245, y + 55, 590, 550, c.soft);
-            art(p, 220, y + 24, 640, 590);
+            ellipse(p, 270, y + 60, 540, 540, c.soft);
+            art(p, 245, y + 30, 590, 590);
             y += 670;
         }
         else

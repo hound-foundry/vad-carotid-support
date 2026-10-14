@@ -4,7 +4,6 @@ import { buildCardLayout } from "./layout.mjs";
 import { sceneSvg } from "./scene-svg.mjs";
 import { resolveTemplate } from "./templates.mjs";
 let resources: Promise<any> | undefined;
-let brainResource: Promise<{bytes:Uint8Array;dataUrl:string}> | undefined;
 const fetchBytes = async (path: string) => { const response = await fetch(path); if (!response.ok)
     throw new Error("Card artwork or font unavailable. Try again or use text."); return new Uint8Array(await response.arrayBuffer()); };
 const dataUrl = (blob: Blob): Promise<string> => new Promise((resolve, reject) => { const reader = new FileReader(); reader.onload = () => resolve(String(reader.result)); reader.onerror = () => reject(new Error("The photo could not be read. Replace or remove it.")); reader.readAsDataURL(blob); });
@@ -13,13 +12,8 @@ export function loadCardResources() {
         resources = Promise.all([fetchBytes("/fonts/NotoSans-Regular.ttf"), fetchBytes("/fonts/NotoSans-Bold.ttf"), fetchBytes("/fonts/barlow/BarlowCondensed-Bold.ttf")]).then(async ([regular, bold, display]) => { const { createCardMetrics } = await import("./metrics.mjs"); return { bytes: { regular, bold, display }, metrics: createCardMetrics(regular, bold, display) }; }).catch(error => { resources = undefined; throw error; });
     return resources;
 }
-function loadBrainResource() {
-    if(!brainResource) brainResource=fetchBytes("/card-art/friendly-brain.png").then(async bytes=>({bytes,dataUrl:await dataUrl(new Blob([bytes as BlobPart],{type:"image/png"}))})).catch(error=>{brainResource=undefined;throw error;});
-    return brainResource;
-}
 export async function cardComposition(view: CardPresentation, photo: CardPhotoAsset | null = null) {
     const r = await loadCardResources(), template = resolveTemplate(view);
-    const brain=template?.illustrationId==="brain-character"?await loadBrainResource():undefined;
     const usesPhoto = !!template?.photo && !!view.photoRef;
     if (usesPhoto && (!photo || photo.id !== view.photoRef))
         throw new Error("The photo is unavailable. Replace or remove it before a visual export.");
@@ -27,7 +21,7 @@ export async function cardComposition(view: CardPresentation, photo: CardPhotoAs
     const layout = buildCardLayout(view, r.metrics, { photo: image });
     if (!layout)
         throw new Error("Choose a designed template before creating this output.");
-    return { layout, metrics: r.metrics, bytes: r.bytes, brain: brain?.bytes, assets: { brain: brain?.dataUrl, photo: image }, photo: image };
+    return { layout, metrics: r.metrics, bytes: r.bytes, assets: { photo: image }, photo: image };
 }
 export async function pagePng(page: any, metrics: any, assets: any): Promise<Blob> {
     const url = URL.createObjectURL(new Blob([sceneSvg(page, metrics, assets)], { type: "image/svg+xml;charset=utf-8" }));
