@@ -1,4 +1,4 @@
-import { createContext, forwardRef, useContext } from "react";
+import { createContext, createElement, forwardRef, useContext } from "react";
 import { Platform, Pressable as NativePressable, ScrollView as NativeScrollView, StyleSheet, Text as NativeText, TextInput as NativeTextInput, View as NativeView, type PressableProps, type ScrollViewProps, type TextInputProps, type TextProps, type ViewProps } from "react-native";
 import { SafeAreaView as NativeSafeAreaView, type SafeAreaViewProps } from "react-native-safe-area-context";
 import { useAccessibility } from "../features/accessibility/AccessibilityProvider";
@@ -48,7 +48,37 @@ export const Pressable = forwardRef<NativeView, PressableProps & { onKeyDown?: (
 });
 export const TextInput = forwardRef<NativeTextInput, TextInputProps>(function TextInput(props, ref) {
   const { settings } = useAccessibility();
-  return <NativeTextInput {...props} ref={ref} placeholderTextColor={themeFor(settings).muted} style={{ ...resolveStyle(props.style, settings, true), minHeight: 52, borderColor: themeFor(settings).controlLine }} />;
+  const inputName = (props as any).name ?? props.nativeID ?? props.accessibilityLabel?.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "") ?? "text-input";
+  const inputId = props.nativeID ?? inputName;
+  const resolvedStyle = { ...resolveStyle(props.style, settings, true), minHeight: 52, borderColor: themeFor(settings).controlLine };
+  if (Platform.OS === "web") {
+    const nativeProps = props as any;
+    const describedBy = nativeProps["aria-describedby"];
+    const webProps = {
+      id: inputId,
+      name: inputName,
+      autoComplete: nativeProps.autoComplete ?? "off",
+      "aria-label": props.accessibilityLabel,
+      "aria-describedby": describedBy,
+      value: props.value,
+      defaultValue: props.defaultValue,
+      placeholder: props.placeholder,
+      maxLength: props.maxLength,
+      disabled: props.editable === false || nativeProps.disabled,
+      readOnly: props.editable === false,
+      spellCheck: props.autoCorrect !== false,
+      type: props.secureTextEntry ? "password" : props.returnKeyType === "search" ? "search" : "text",
+      rows: props.multiline ? 4 : undefined,
+      onChange: (event: any) => props.onChangeText?.(event.currentTarget.value),
+      onFocus: props.onFocus,
+      onBlur: props.onBlur,
+      onKeyDown: props.onKeyPress,
+      ref: ref as any,
+      style: resolvedStyle,
+    };
+    return createElement(props.multiline ? "textarea" : "input", webProps);
+  }
+  return <NativeTextInput {...props} nativeID={inputId} ref={ref} placeholderTextColor={themeFor(settings).muted} style={resolvedStyle} />;
 });
 export const ScrollView = forwardRef<NativeScrollView, ScrollViewProps>(function ScrollView(props, ref) {
   const { settings } = useAccessibility(); return <NativeScrollView {...props} ref={ref} style={resolveStyle(props.style, settings)} contentContainerStyle={resolveStyle(props.contentContainerStyle, settings)} />;

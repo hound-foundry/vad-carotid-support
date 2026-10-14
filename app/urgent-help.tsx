@@ -1,5 +1,6 @@
-import { Linking, StyleSheet } from "react-native";
-import { Pressable, Text, View } from "../src/components/Ui";
+import { StyleSheet } from "react-native";
+import { ExternalLink } from "../src/components/ExternalLink";
+import { Text, View } from "../src/components/Ui";
 import { AppPage, BackHome, Body, Card, PageHeading, palette } from "../src/components/AppPage";
 import { urgentHelp } from "../src/content/urgentHelp";
 
@@ -33,9 +34,7 @@ export default function UrgentHelpScreen() {
     </Card>
     <Card title="Sources and review">
       <Body>Wording updated 13 October 2026. Clinical review is pending.</Body>
-      {sources.map((source) => <Pressable key={source.url} accessibilityRole="link" accessibilityLabel={`${source.label} (external website)`} onPress={() => void Linking.openURL(source.url)} style={styles.sourceLink}>
-        <Text style={styles.linkText}>{source.label} ↗</Text>
-      </Pressable>)}
+      {sources.map((source) => <ExternalLink key={source.url} url={source.url} label={source.label} />)}
       <Body>These sources cover stroke generally. Emergency numbers on their websites apply to their own countries. Use the emergency number where you are.</Body>
     </Card>
   </AppPage>;
@@ -45,6 +44,4 @@ const styles = StyleSheet.create({
   quickAction: { color: palette.ink, fontSize: 18, lineHeight: 27, fontWeight: "600", marginTop: 12, maxWidth: 680 },
   sign: { marginVertical: 10 },
   signTitle: { color: palette.ink, fontSize: 20, lineHeight: 30, fontWeight: "700" },
-  sourceLink: { paddingVertical: 8 },
-  linkText: { color: palette.tealDark, fontSize: 18, lineHeight: 27, fontWeight: "700" },
 });

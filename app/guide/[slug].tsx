@@ -3,11 +3,12 @@ import { APP_NAME } from "../../src/brand.mjs";
 import { Pressable, Text, View } from "../../src/components/Ui";
 import { useLocalSearchParams } from "expo-router";
 import { useEffect, useState } from "react";
-import { Linking, Platform, Share, StyleSheet } from "react-native";
+import { Platform, Share, StyleSheet } from "react-native";
 import references from "../../content/references.json";
 import { AppPage, Card, DraftNotice, PageHeading } from "../../src/components/AppPage";
 import { getGuide, guides } from "../../src/content/guides";
 import { GuideList } from "../../src/components/GuideList";
+import { ExternalLink } from "../../src/components/ExternalLink";
 import { SaveGuideButton } from "../../src/features/saved-guides/SaveGuideButton";
 import { useAccessibility } from "../../src/features/accessibility/AccessibilityProvider";
 import { useReadingSession } from "../../src/features/reading-session/ReadingSessionProvider";
@@ -68,7 +69,7 @@ export default function GuideScreen() {
     {visibleSections.map((section) => { const sectionSources = references.sources.filter((source) => section.sourceIds?.includes(source.id)); return <Card key={section.heading} title={section.heading}>
       {section.paragraphs?.map((paragraph, index) => <Text key={index} style={[styles.body, settings.spacing === "roomy" && styles.roomyBody]}>{paragraph}</Text>)}
       {section.bullets?.map((bullet, index) => <View key={index} style={[styles.bulletRow, settings.spacing === "roomy" && styles.roomyBulletRow]}><Text accessibilityElementsHidden style={styles.bullet}>•</Text><Text style={[styles.bulletText, settings.spacing === "roomy" && styles.roomyBulletText]}>{bullet}</Text></View>)}
-      {sectionSources.map((source) => <Pressable key={source.id} accessibilityRole="link" accessibilityLabel={`Open source for ${section.heading}: ${source.title}`} onPress={() => void Linking.openURL(source.url)} style={styles.inlineSource}><Text style={styles.inlineSourceText}>Read source: {source.title}</Text></Pressable>)}
+      {sectionSources.map((source) => <ExternalLink key={source.id} url={source.url} label={`Open source for ${section.heading}: ${source.title}`}><View style={styles.inlineSource}><Text style={styles.inlineSourceText}>Read source: {source.title}</Text></View></ExternalLink>)}
     </Card>; })}
 
     <Card title="More reading options">
@@ -105,7 +106,7 @@ export default function GuideScreen() {
 
     <Card title="Sources and review for this draft">
       <Text style={styles.meta}>Clinical review: {guide.clinicalReview.status === "not-reviewed" ? "not recorded" : "approved"} · Patient/carer review: {guide.usabilityReview.status === "not-reviewed" ? "not recorded" : "approved"} · Translation review: {guide.translationReview.status === "not-applicable" ? "English original" : guide.translationReview.status === "not-reviewed" ? "not recorded" : "approved"} · Review date: {guide.reviewedOn ?? "not recorded"}</Text>
-      {sources.map((source) => <Pressable key={source.id} accessibilityRole="link" accessibilityLabel={`Open source: ${source.title}`} onPress={() => void Linking.openURL(source.url)} style={styles.source}><Text style={styles.sourceTitle}>{source.title}{source.year ? ` (${source.year})` : ""}</Text><Text style={styles.sourceLimit}>Source record checked {source.checked_on}. {source.limits}</Text></Pressable>)}
+      {sources.map((source) => <ExternalLink key={source.id} url={source.url} label={`Open source: ${source.title}`}><View style={styles.source}><Text style={styles.sourceTitle}>{source.title}{source.year ? ` (${source.year})` : ""}</Text><Text style={styles.sourceLimit}>Source record checked {source.checked_on}. {source.limits}</Text></View></ExternalLink>)}
     </Card>
     <Card title="Continue with a related guide"><GuideList slugs={relatedSlugs} /></Card>
   </AppPage>;

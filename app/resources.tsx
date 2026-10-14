@@ -2,7 +2,7 @@ import { Pressable, Text, TextInput, View } from "../src/components/Ui";
 import { useState } from "react";
 import { StyleSheet } from "react-native";
 import { AppPage, Card, PageHeading } from "../src/components/AppPage";
-import { Link } from "../src/components/AppLink";
+import { ExternalLink } from "../src/components/ExternalLink";
 import { Disclosure } from "../src/features/cards/CardUi";
 import { communityCandidates, publicResources } from "../src/content/resources";
 
@@ -18,7 +18,7 @@ export default function ResourcesScreen() {
       <Disclosure title={audience === "all" ? "Filter by audience (optional)" : `Filter by audience: ${audience}`}><Text style={styles.filterLabel}>Show resources for</Text><View style={styles.filters}>{([ ["all", "Everyone"], ["patients", "Patients"], ["carers", "Carers"], ["professionals", "Professionals"] ] as const).map(([value, label]) => <Pressable key={value} accessibilityRole="button" accessibilityState={{ selected: audience === value }} onPress={() => setAudience(value)} style={[styles.filter, audience === value && styles.filterSelected]}><Text style={[styles.filterText, audience === value && styles.filterTextSelected]}>{label}</Text></Pressable>)}</View></Disclosure>
       <Text accessibilityLiveRegion="polite" style={styles.filterCount}>{resources.length} {resources.length === 1 ? "link" : "links"} shown</Text>
       {resources.length === 0 ? <Text style={styles.empty}>No links match these filters. Try another word or clear the search.</Text> : resources.map((resource) => <View key={resource.id} style={styles.resource}>
-        <Link href={resource.url as any} target="_blank" rel="noopener noreferrer" asChild><Pressable accessibilityRole="link" accessibilityLabel={`Open external resource: ${resource.title}`}><Text style={styles.title}>{resource.title} ↗</Text></Pressable></Link>
+        <ExternalLink url={resource.url} label={`Open external resource: ${resource.title}`}>{`${resource.title} ↗`}</ExternalLink>
         <Text style={styles.meta}>{resource.kind.replace(/-/g, " ")} · {resource.language === "en" ? "English" : resource.language}</Text>
         <Text style={styles.note}>{resource.note}</Text>
         <Text style={styles.review}>Clinical review for this app: {resource.clinicalReviewStatus === "not-reviewed" ? "not recorded" : resource.clinicalReviewStatus.replace(/-/g, " ")}</Text>

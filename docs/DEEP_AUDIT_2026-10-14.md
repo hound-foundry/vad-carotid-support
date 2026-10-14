@@ -1,7 +1,7 @@
 # Deep assurance audit
 
 Audit date: 14 October 2026  
-Revision reviewed: `772cd96` plus the shared focus-ring correction made during this audit  
+Revision reviewed: `d3252da` plus the external-link and semantic-form repairs made during this audit
 Scope: exported English web preview, shared Expo UI, content/review gates, local data boundaries, card journeys and dependency report
 
 This is an engineering and usability audit. It does not certify clinical accuracy, legal clearance, WCAG conformance, or real patient/carer usefulness.
@@ -18,13 +18,13 @@ This is an engineering and usability audit. It does not certify clinical accurac
 - TypeScript, static export, 35-artifact route validation, design validation and the low-risk web-preview release gate passed.
 - The browser audit exercised only invented values. No user saved data was opened, cleared or changed.
 
-## Confirmed findings
+## Confirmed findings and repairs
 
 | Severity | Finding | Evidence | Disposition |
 |---|---|---|---|
 | High / release maintenance | `npm audit --omit=dev` reports 18 affected package nodes, grouped around unresolved `braces` and `node-forge` advisories in Expo/Metro build and signing tooling. | Audit run on 14 October 2026; existing dependency note identifies the same upstream groups. | Keep the dependency gate visible, avoid `npm audit fix --force`, update only through tested Expo releases, and recheck before distribution. This is primarily a build-chain risk; it is not evidence that local card fields are sent to those packages. |
-| Medium | External source and repository destinations are implemented as React Native `Pressable` elements with `accessibilityRole="link"` and `Linking.openURL`, rather than ordinary web anchors. | `app/about.tsx`, `app/urgent-help.tsx`, `app/glossary.tsx`, `app/guide/[slug].tsx`. | Keyboard activation works through the shared handler, but Ctrl/Cmd-click, middle-click, link preview and browser-native context-menu behavior are weaker. Convert these to a shared cross-platform external-link primitive before calling the web shell complete. |
-| Medium | Text inputs do not consistently expose meaningful HTML `name`/`autocomplete` metadata on the web. | Appointment, support, glossary, guide search and card fields use shared React Native `TextInput` labels but no stable web names. | Add explicit non-sensitive names and `autocomplete="off"` where appropriate, then repeat autofill and screen-reader checks. Do not add values to URLs. |
+| Medium · repaired | External source and repository destinations were implemented as React Native `Pressable` elements with `accessibilityRole="link"` and `Linking.openURL`, rather than ordinary web anchors. | `app/about.tsx`, `app/urgent-help.tsx`, `app/glossary.tsx`, `app/guide/[slug].tsx`, `app/resources.tsx`. | `ExternalLink` now renders a real web anchor with `target="_blank"` and `rel="noopener noreferrer"`, while retaining native Linking behavior. The rebuilt preview verified those attributes on resource links. |
+| Medium · repaired | Text inputs did not consistently expose meaningful HTML `name`/`autocomplete` metadata on the web. | Appointment, support, glossary, guide search and card fields use the shared React Native `TextInput`. | The web branch now renders semantic input/textarea elements with stable names, labels and autocomplete `off`; autofill and screen-reader verification remain follow-up checks. |
 | Low | In-memory guide/library filters are not reflected in the URL. | Search and audience filters reset on reload and are retained only by the reading-session provider. | This protects privacy and keeps URLs clean, but it reduces shareable return links. Decide deliberately per filter; do not put card, appointment or support values in URLs. |
 
 ## Unresolved release gates
@@ -33,7 +33,7 @@ This is an engineering and usability audit. It does not certify clinical accurac
 - Patient/carer usefulness sessions have not been run with people; simulated agents and synthetic browser journeys are not substitutes.
 - NVDA, VoiceOver, TalkBack, manual browser zoom, physical printing and native iOS/Android behavior remain untested here.
 - Jurisdiction screening remains blocked. The preview uses generic emergency wording and no country-specific numbers, accounts, backend, analytics or paid features.
-- Browser localStorage, IndexedDB photos, downloads, printed cards, browser backups and hosting logs remain outside the app’s complete control; the privacy notices state those limits.
+- Browser localStorage, IndexedDB photos, downloads, printed cards, browser backups and hosting logs remain outside the app's complete control; the privacy notices state those limits.
 
 ## Stop-ship assessment
 
@@ -41,7 +41,6 @@ The current revision is suitable for continued development and a narrow English 
 
 ## Next audit actions
 
-1. Replace external `Pressable` links with a tested cross-platform anchor primitive.
-2. Add and validate web input names/autocomplete behavior.
-3. Re-run the route matrix at 320px, 390px, 200% browser zoom and a short landscape viewport.
-4. Run assisted-technology sessions and clinical, lived-experience, legal and translation reviews before changing the release status.
+1. Re-run external-link and input metadata checks in a production-hosted build.
+2. Re-run the route matrix at 320px, 390px, 200% browser zoom and a short landscape viewport.
+3. Run assisted-technology sessions and clinical, lived-experience, legal and translation reviews before changing the release status.

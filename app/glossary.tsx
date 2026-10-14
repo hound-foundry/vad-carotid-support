@@ -1,7 +1,8 @@
 import { Pressable, Text, TextInput, View } from "../src/components/Ui";
 import { Link } from "../src/components/AppLink";
+import { ExternalLink } from "../src/components/ExternalLink";
 import { useState } from "react";
-import { Linking, StyleSheet } from "react-native";
+import { StyleSheet } from "react-native";
 import { AppPage, Card, DraftNotice, PageHeading, palette } from "../src/components/AppPage";
 import { Disclosure } from "../src/features/cards/CardUi";
 import { glossary } from "../src/content/glossary";
@@ -18,7 +19,7 @@ export default function GlossaryScreen() {
       return <Card key={entry.term} title={entry.term}>
         <Text style={styles.body}>{entry.definition}</Text>
         <Text style={styles.limit}>{entry.limit}</Text>
-        {source ? <Pressable accessibilityRole="link" accessibilityLabel={`Open source: ${source.title}`} onPress={() => void Linking.openURL(source.url)} style={styles.sourceLink}><Text style={styles.sourceText}>Source: {source.title} ↗</Text></Pressable> : null}
+        {source ? <ExternalLink url={source.url} label={`Open source: ${source.title}`}>{`Source: ${source.title} ↗`}</ExternalLink> : null}
       </Card>;
     })}
     {entries.length === 0 ? <Card title="No matching term"><Text style={styles.body}>Try a shorter word or ask the clinician who reviewed your report to explain the term.</Text><Link href="/guide/tests-and-terms" asChild><Pressable accessibilityRole="link" style={styles.sourceLink}><Text style={styles.sourceText}>Read the tests and terms guide →</Text></Pressable></Link><Link href="/appointments" asChild><Pressable accessibilityRole="link" style={styles.sourceLink}><Text style={styles.sourceText}>Prepare a question for your appointment →</Text></Pressable></Link></Card> : null}
