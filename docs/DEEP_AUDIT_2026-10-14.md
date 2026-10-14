@@ -1,7 +1,7 @@
 # Deep assurance audit
 
 Audit date: 14 October 2026  
-Revision reviewed: `d3252da` plus the external-link, semantic-form, responsive-row, long-control and enlarged-heading repairs made during this audit
+Revision reviewed: `af0a55b` plus the external-link, semantic-form, responsive-row, long-control, enlarged-heading and compact-brand repairs made during this audit
 Scope: exported English web preview, shared Expo UI, content/review gates, local data boundaries, card journeys and dependency report
 
 This is an engineering and usability audit. It does not certify clinical accuracy, legal clearance, WCAG conformance, or real patient/carer usefulness.
