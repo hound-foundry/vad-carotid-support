@@ -30,10 +30,10 @@ export function Disclosure({ title, children, initiallyOpen = false }: { title: 
 }
 export function CardSteps({ current, onStep }: { current: CardStep; onStep: (step: CardStep) => void }) {
   const labels: Array<[CardStep, string]> = [[1, "Your words"], [2, "Optional extras"], [3, "Choose a design"], [4, "Review and finish"]];
-  return <Disclosure title={`Card steps · Step ${current} of 4`} initiallyOpen={false}>
+  return <View style={styles.stepRail}><View style={styles.stepRailTop}><View style={styles.stepRailCopy}><Text style={styles.stepRailKicker}>CARD CREATOR</Text><Text style={styles.stepRailTitle}>{labels[current - 1][1]}</Text></View><Text style={styles.stepRailCount}>Step {current} of 4</Text></View><View style={styles.progressTrack}>{labels.map(([step]) => <View key={step} style={[styles.progressDot, step <= current && styles.progressDotActive]} />)}</View><Disclosure title={`Card steps · Step ${current} of 4`} initiallyOpen={false}>
     <Text style={styles.hint}>You can return to an earlier step. Your words stay in place.</Text>
     {labels.map(([step, label]) => <Button key={step} title={`${step}. ${label}${step === current ? " · current" : ""}`} secondary={step !== current} onPress={() => onStep(step)} />)}
-  </Disclosure>;
+  </Disclosure></View>;
 }
 export function DateFields({ id, kind, value, onKind, onValue, hiddenMessage = "No date will appear on the card." }: { id: string; kind: string; value: string; onKind: (value: string) => void; onValue: (value: string) => void; hiddenMessage?: string }) {
   const choices = [["none", "No date"], ["exact", "Exact date"], ["month-year", "Month and year"], ["year", "Year only"], ["approximate", "Approximate date"]] as const;
@@ -76,14 +76,15 @@ export function PrivacyNote() { return <Disclosure title="Privacy and leaving th
 const styles = StyleSheet.create({
   field: { marginBottom: 20 }, label: { color: palette.ink, fontSize: 18, fontWeight: "600" }, hint: { color: palette.text, fontSize: 18, marginVertical: 6 },
   input: { marginTop: 8, borderWidth: 1, borderColor: "#657C73", borderRadius: 12, padding: 12, backgroundColor: palette.white, color: palette.ink, fontSize: 18 }, multiline: { minHeight: 110 },
-  button: { marginVertical: 6, paddingHorizontal: 18, paddingVertical: 12, backgroundColor: palette.teal, borderRadius: 12, alignItems: "center", justifyContent: "center" },
-  secondary: { backgroundColor: palette.white, borderWidth: 1, borderColor: "#657C73" }, buttonText: { color: "#FFFFFF", fontSize: 18, fontWeight: "600", textAlign: "center" }, secondaryText: { color: palette.tealDark },
+  button: { marginVertical: 7, paddingHorizontal: 20, paddingVertical: 13, backgroundColor: palette.teal, borderRadius: 14, alignItems: "center", justifyContent: "center", shadowColor: "#183248", shadowOpacity: 0.1, shadowRadius: 8, shadowOffset: { width: 0, height: 3 }, elevation: 2 },
+  secondary: { backgroundColor: palette.white, borderWidth: 1, borderColor: "#657C73", shadowOpacity: 0 }, buttonText: { color: "#FFFFFF", fontSize: 18, fontWeight: "700", textAlign: "center", letterSpacing: 0.1 }, secondaryText: { color: palette.tealDark },
   checkRow: { flexDirection: "row", alignItems: "center", gap: 12, paddingVertical: 8 }, box: { width: 26, height: 26, borderWidth: 1.5, borderColor: "#657C73", borderRadius: 6, justifyContent: "center", alignItems: "center" },
   boxChecked: { backgroundColor: palette.teal }, tick: { color: "#FFFFFF", fontSize: 18 }, checkText: { flex: 1, color: palette.text, fontSize: 18 },
-  disclosure: { marginVertical: 8, borderTopWidth: 1, borderTopColor: palette.line }, disclosureButton: { justifyContent: "center", paddingVertical: 10 }, disclosureText: { color: palette.tealDark, fontSize: 18, fontWeight: "500" }, disclosureContent: { paddingTop: 4, paddingBottom: 16 },
+  disclosure: { marginVertical: 8, borderTopWidth: 1, borderTopColor: palette.line }, disclosureButton: { justifyContent: "center", paddingVertical: 11 }, disclosureText: { color: palette.tealDark, fontSize: 18, fontWeight: "600" }, disclosureContent: { paddingTop: 4, paddingBottom: 16 },
   dateOptions: { gap: 8, marginBottom: 12 }, dateChoice: { padding: 12, borderWidth: 1, borderColor: "#657C73", borderRadius: 12 }, dateChosen: { backgroundColor: palette.mint, borderColor: palette.tealDark }, dateLabel: { color: palette.tealDark, fontSize: 18 },
-  preview: { padding: 24, borderWidth: 1, borderColor: palette.line, borderTopWidth: 3, borderTopColor: palette.tealDark, borderRadius: 16, backgroundColor: palette.white, marginBottom: 16 }, milestone: { backgroundColor: palette.mint },
+  preview: { padding: 24, borderWidth: 1, borderColor: palette.line, borderTopWidth: 4, borderTopColor: palette.tealDark, borderRadius: 18, backgroundColor: palette.white, marginBottom: 16, shadowColor: "#183248", shadowOpacity: 0.06, shadowRadius: 14, shadowOffset: { width: 0, height: 5 }, elevation: 2 }, milestone: { backgroundColor: palette.mint },
   previewHeading: { padding: 16, marginHorizontal: -8, marginTop: -8, marginBottom: 4, borderRadius: 10, flexDirection: "row", flexWrap: "wrap", alignItems: "center", gap: 16 }, previewHeadingCopy: { flex: 1, minWidth: 120 },
   kind: { color: palette.tealDark, fontSize: 18, fontWeight: "500" }, previewTitle: { color: palette.ink, fontSize: 26, fontWeight: "600", marginTop: 8 }, previewField: { marginTop: 20 }, previewValue: { color: palette.text, fontSize: 18, marginTop: 4 },
   previewFooter: { color: palette.text, fontSize: 18, marginTop: 24, paddingTop: 16, borderTopWidth: 1, borderTopColor: palette.line }, saved: { marginTop: 12 }, status: { color: palette.text, fontSize: 18, marginVertical: 12 }, exports: { marginTop: 8 },
+  stepRail: { marginBottom: 18, padding: 18, borderRadius: 18, backgroundColor: palette.mint, borderWidth: 1, borderColor: palette.line }, stepRailTop: { flexDirection: "row", alignItems: "flex-start", justifyContent: "space-between", gap: 12 }, stepRailCopy: { flex: 1 }, stepRailKicker: { color: palette.tealDark, fontSize: 13, letterSpacing: 1.4, fontWeight: "800" }, stepRailTitle: { color: palette.ink, fontSize: 20, fontWeight: "700", marginTop: 4 }, stepRailCount: { color: palette.tealDark, fontSize: 16, fontWeight: "700" }, progressTrack: { flexDirection: "row", gap: 6, marginTop: 15 }, progressDot: { flex: 1, height: 5, borderRadius: 5, backgroundColor: palette.white, borderWidth: 1, borderColor: palette.line }, progressDotActive: { backgroundColor: palette.teal, borderColor: palette.teal },
 });
