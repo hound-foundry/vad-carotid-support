@@ -11,7 +11,7 @@ const tools = [
 
 export default function ToolsScreen() {
   return <AppPage><BackHome /><PageHeading eyebrow="Tools" title="Tools" summary="Prepare questions, make a card or describe what helps." compact />
-    <View style={styles.list}>{tools.map((tool) => <View key={tool.href} style={styles.row}><ActionLink {...tool} /></View>)}</View>
+    <View style={styles.list}>{tools.map((tool) => <View key={tool.href} style={styles.row}><ActionLink {...tool} inline /></View>)}</View>
   </AppPage>;
 }
 const styles = StyleSheet.create({ list: { gap: 12, marginTop: 4 }, row: { flexDirection: "row" } });

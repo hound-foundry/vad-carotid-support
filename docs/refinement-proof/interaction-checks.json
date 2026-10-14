@@ -1,0 +1,51 @@
+[
+  {
+    "check": "menu keyboard and Escape at 200% app text",
+    "opened": true,
+    "closed": true,
+    "focus": "Menu",
+    "outline": "solid"
+  },
+  {
+    "check": "menu Escape at standard text",
+    "closed": true,
+    "focus": "Menu",
+    "outline": "solid"
+  },
+  {
+    "check": "practical card preview",
+    "focus": null,
+    "hasSyntheticName": true,
+    "personalLabel": true,
+    "selectedStatement": true
+  },
+  {
+    "check": "milestone starts independently",
+    "displayNameBlank": true,
+    "neutralTitle": true
+  },
+  {
+    "check": "milestone hidden date and separate preview",
+    "hiddenYearOmitted": true,
+    "milestoneLabel": false,
+    "personalStatementAbsent": false,
+    "status": "Superseded: document-wide selector matched the retained, hidden practical route; corrected below."
+  },
+  {
+    "check": "practical draft retained after visiting guides and other tools",
+    "sameName": true,
+    "sameStatement": true
+  },
+  {
+    "check": "explicit practical PDF download",
+    "downloaded": true,
+    "pdfSignature": "%PDF-",
+    "bytes": 12816
+  },
+  {
+    "check": "milestone visible preview scoped to the displayed route",
+    "hiddenYearOmitted": true,
+    "personalStatementAbsent": true,
+    "milestoneLabel": true
+  }
+]

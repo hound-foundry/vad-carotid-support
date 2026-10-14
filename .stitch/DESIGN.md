@@ -17,7 +17,7 @@ colors:
 
 # Design System: Dissection Companion
 
-Updated for the approved blue redesign, 13 October 2026. Display name/subtitle come from `src/brand.mjs`; colours come from `src/components/theme.mjs`, re-exported through the existing `theme.ts` import path. The `Ui` wrappers and existing components define the actual interface. `npm run design:check` detects palette/brand drift and checks 48 opaque contrast pairs; fingerprints identify source and build inputs. The earlier teal cloud trial in `.stitch/metadata.json` is historical and has not been updated to this design. Clinical content approval remains separate.
+Refined on 14 October 2026 after the user reviewed the phone preview. Display name/subtitle come from `src/brand.mjs`; colours come from `src/components/theme.mjs`, re-exported through the existing `theme.ts` import path. The `Ui` wrappers and existing components define the actual interface. `npm run design:check` detects palette/brand drift and checks 48 opaque contrast pairs; fingerprints identify source and build inputs. The earlier teal cloud trial in `.stitch/metadata.json` is historical and has not been updated to this design. Clinical content approval remains separate.
 
 ## 1. Visual Theme & Atmosphere
 
@@ -29,8 +29,8 @@ Reading is controlled by the person. There are no decorative transitions, automa
 
 ### Primary Foundation
 
-- Paper `#F5F6F4`: page and header background.
-- White `#FFFFFF`: cards and secondary controls.
+- Paper `#F5F6F4`: page background.
+- White `#FFFFFF`: cards, header, navigation and secondary controls.
 - Selected surface `#E8EFF4`: navigation and calm secondary surfaces; the legacy property name is `mint`.
 - Line `#D3DFE7`: ordinary borders and separators.
 
@@ -56,7 +56,7 @@ Reading is controlled by the person. There are no decorative transitions, automa
 
 ### Hierarchy & Weights
 
-All text uses system sans-serif. Web text uses the shared system font stack; native text uses the platform default. Compact page titles use 24px/700, Home uses 28px/600, app navigation uses 18px, and card-preview headings retain their authored sizes before accessibility scaling. PDF output uses the existing embedded Noto Sans fonts. Native rendering still requires device verification.
+All text uses system sans-serif. Web text uses the shared system font stack; native text uses the platform default. Page titles use 26px/600, Home uses 28px/600, panel titles use 20px/600 and card-preview titles use 26px/600. Utility/navigation labels use 18px/500, with 700 and an underline on the selected tab. Eyebrows use ordinary casing and no added letter spacing. PDF output uses the existing embedded Noto Sans fonts. Native rendering still requires device verification.
 
 The `Ui.Text` wrapper enforces an 18px floor for all text, then multiplies by the selected 100–200% scale. This also keeps smaller authored notes and labels readable. These effective rules take precedence over smaller sizes in route StyleSheets.
 
@@ -70,15 +70,15 @@ Shared body blocks and primary guide paragraphs/bullets have a 680px maximum rea
 
 ### Buttons
 
-Use existing `Ui.Pressable` and feature controls. The wrapper enforces a 48px minimum height; card buttons have 14px corners, 16px horizontal and 10px vertical padding. Blue/white primary and outlined secondary states share written labels. Web focus is a visible 3px outline with a 3px offset. Actual pressed/disabled/loading states remain owned by the components.
+Use existing `Ui.Pressable` and feature controls. The wrapper enforces a 48px minimum height; card buttons have 12px corners, 18px horizontal and 12px vertical padding, with 18px/600 labels. Blue/white primary and outlined secondary states share written labels. Web focus is a visible 3px outline with a 3px offset. Actual pressed/disabled/loading states remain owned by the components.
 
 ### Cards & Personal Information
 
-Ordinary `AppPage.Card`: 15px corners, 1px border, 18px padding and 13px bottom gap; roomy mode uses 23px padding and an 18px gap. Designed card previews use 24px corners and padding with a 2px border. Use flat borders and surface differences rather than dramatic shadows. Preserve the personal-information label, update date and selected-fields-only export behavior.
+Ordinary `AppPage.Card`: 16px corners, 1px border, 20px padding and 16px bottom gap; roomy mode uses 24px padding and a 20px gap. Task panels share 16px corners, restrained blue icon tiles, 20px/600 titles and a small directional chevron. Tools and card choices use horizontal rows; narrow rows omit the leading icon to give descriptions more room. Enlarged text removes decorative icons and stacks the content. Card previews use 16px corners, 24px padding, a 1px border and a 3px blue top edge. Use flat borders and surface differences rather than shadows. Preserve the personal-information label, update date and selected-fields-only export behavior. Exported documents keep their existing separate print layout.
 
 ### Navigation
 
-The user requested Blushie's app structure on 13 October 2026. The shared shell now has a compact identity/utility header and one persistent bottom navigation: Home, Guides, Tools and Saved. Menu contains five secondary destinations; it expands inline and closes with Escape, returning focus. The medical-help destination remains `/urgent-help`, reached through “Feeling unwell?” and the footer's “Medical help”. Its emergency instructions and B.E. F.A.S.T. copy remain unchanged.
+The user requested Blushie's app structure on 13 October 2026. The shared shell has a compact identity/utility header and one persistent bottom navigation: Home, Guides, Tools and Saved. At widths of at least 880px, standard text and sufficient height, the header becomes a single row. Phone and enlarged-text headers keep two rows. The white navigation bar has a single top separator; its selected tab has a soft rounded fill, bold label and underline, with an additional border in high contrast. Menu contains five secondary destinations; it expands inline and closes with Escape, returning focus. The medical-help destination remains `/urgent-help`, reached through “Feeling unwell?” and the footer's “Medical help”. Its emergency instructions and B.E. F.A.S.T. copy remain unchanged.
 
 Four Home actions remain: Understand dissection, Prepare an appointment, Make a card, Help someone. Normal phone layouts use two columns; below 360px they use rows. Enlarged text uses one column, shorter introductory copy and fewer decorative icons. The dock changes to two rows on narrow screens with enlarged text; labels remain visible. At the largest text setting, the compact header uses a labelled menu icon and an Aa display control. Bottom navigation occupies its own layout space rather than overlapping content, and is excluded from print output.
 
@@ -98,7 +98,7 @@ The ordinary page and header have a 920px maximum width; existing wide pages use
 
 ### Whitespace Strategy
 
-The existing values are mostly based on 4/8px rhythm but include established 13, 15, 18 and 23px values. Reuse them; extraction must not silently replace them with a new scale. Page bottom padding is 56px, or 72px in roomy mode.
+Shared panels use 12–16px gaps, 16px corners and 20–24px padding. Smaller utility surfaces use 10–12px corners. Route-specific values remain where changing them would affect an established task. Extraction records the actual values rather than silently normalizing them. Page bottom padding is 56px, or 72px in roomy mode.
 
 ### Alignment & Visual Balance
 

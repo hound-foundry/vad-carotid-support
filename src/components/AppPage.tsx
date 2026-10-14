@@ -26,7 +26,7 @@ export function BackHome() {
 
 export function PageHeading({ eyebrow, title, summary, compact = false }: { eyebrow: string; title: string; summary: string; compact?: boolean }) {
   const { settings } = useAccessibility();
-  return <View style={[styles.heading, settings.spacing === "roomy" && styles.headingRoomy, compact && styles.headingCompact]}>{!compact ? <Text style={styles.eyebrow}>{eyebrow.toUpperCase()}</Text> : null}<Text accessibilityRole="header" aria-level={1} style={[styles.title, compact && styles.titleCompact]}>{title}</Text>{summary ? <Text style={[styles.summary, settings.spacing === "roomy" && styles.summaryRoomy]}>{summary}</Text> : null}</View>;
+  return <View style={[styles.heading, settings.spacing === "roomy" && styles.headingRoomy, compact && styles.headingCompact]}>{!compact ? <Text style={styles.eyebrow}>{eyebrow}</Text> : null}<Text accessibilityRole="header" aria-level={1} style={[styles.title, compact && styles.titleCompact]}>{title}</Text>{summary ? <Text style={[styles.summary, settings.spacing === "roomy" && styles.summaryRoomy]}>{summary}</Text> : null}</View>;
 }
 
 export function DraftNotice({ compact = false }: { compact?: boolean }) {
@@ -72,12 +72,12 @@ const styles = StyleSheet.create({
   wide: { maxWidth: 1120 },
   backLink: { minHeight: 44, alignSelf: "flex-start", flexDirection: "row", alignItems: "center", gap: 9 },
   backArrow: { color: palette.teal, fontSize: 17 },
-  back: { color: palette.tealDark, fontSize: 14, fontWeight: "700" },
-  heading: { paddingTop: 16, paddingBottom: 20 },
+  back: { color: palette.tealDark, fontSize: 14, fontWeight: "500" },
+  heading: { paddingTop: 24, paddingBottom: 24 },
   headingRoomy: { paddingTop: 22, paddingBottom: 28 },
-  headingCompact: { paddingTop: 14, paddingBottom: 12 },
-  eyebrow: { color: palette.tealDark, fontSize: 11, fontWeight: "800", letterSpacing: 1.65 },
-  title: { marginTop: 11, color: palette.ink, fontSize: 24, lineHeight: 36, fontWeight: "700" },
+  headingCompact: { paddingTop: 24, paddingBottom: 20 },
+  eyebrow: { color: palette.muted, fontSize: 18, fontWeight: "500" },
+  title: { marginTop: 8, color: palette.ink, fontSize: 26, lineHeight: 36, fontWeight: "600" },
   titleCompact: { marginTop: 0 },
   summary: { marginTop: 10, color: palette.text, fontSize: 16, lineHeight: 25, maxWidth: 720 },
   summaryRoomy: { lineHeight: 29 },
@@ -89,18 +89,18 @@ const styles = StyleSheet.create({
   noticeBody: { marginTop: 5, color: "#704D42", fontSize: 13, lineHeight: 20 },
   compactNotice: { borderBottomWidth: 1, borderBottomColor: palette.line, marginBottom: 14 },
   compactNoticeButton: { flexDirection: "row", alignItems: "center", gap: 10, paddingVertical: 6 },
-  compactNoticeTitle: { flex: 1, color: palette.text, fontSize: 16, fontWeight: "700" },
+  compactNoticeTitle: { flex: 1, color: palette.text, fontSize: 16, fontWeight: "500" },
   compactNoticeArrow: { color: palette.tealDark, fontSize: 20 },
   compactNoticeDetails: { paddingBottom: 10 },
-  card: { backgroundColor: palette.white, borderColor: palette.line, borderWidth: 1, borderRadius: 15, padding: 18, marginBottom: 13 },
-  cardRoomy: { padding: 23, marginBottom: 18 },
-  cardTitle: { color: palette.ink, fontSize: 17, lineHeight: 24, fontWeight: "700", marginBottom: 8 },
+  card: { backgroundColor: palette.white, borderColor: palette.line, borderWidth: 1, borderRadius: 16, padding: 20, marginBottom: 16 },
+  cardRoomy: { padding: 24, marginBottom: 20 },
+  cardTitle: { color: palette.ink, fontSize: 20, lineHeight: 30, fontWeight: "600", marginBottom: 12 },
   body: { color: palette.text, fontSize: 18, lineHeight: 27, marginTop: 7, maxWidth: 680 },
   bodyRoomy: { lineHeight: 29, marginTop: 11 },
   footer: { marginTop: 28, paddingBottom: 4 },
   footerRule: { height: 1, backgroundColor: palette.line },
   footerText: { marginTop: 13, color: palette.muted, fontSize: 12, lineHeight: 19 },
-  footerLinks: { flexDirection: "row", flexWrap: "wrap", gap: 5, marginTop: 5 },
+  footerLinks: { flexDirection: "row", flexWrap: "wrap", columnGap: 8, rowGap: 4, marginTop: 8 },
   footerLink: { minHeight: 44, justifyContent: "center", paddingRight: 14 },
-  footerLinkText: { color: palette.tealDark, fontSize: 13, lineHeight: 19, fontWeight: "700" },
+  footerLinkText: { color: palette.tealDark, fontSize: 18, lineHeight: 27, fontWeight: "500" },
 });

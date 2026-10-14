@@ -1,0 +1,482 @@
+[
+  {
+    "area": "site-header",
+    "background": "rgb(255, 255, 255)",
+    "fontSize": "18px",
+    "fontWeight": "700",
+    "foreground": "rgb(24, 50, 72)",
+    "label": "Dissection Companion",
+    "theme": "light",
+    "ratio": 13.218730783189363
+  },
+  {
+    "area": "site-header",
+    "background": "rgb(255, 255, 255)",
+    "fontSize": "18px",
+    "fontWeight": "500",
+    "foreground": "rgb(33, 76, 112)",
+    "label": "Menu",
+    "theme": "light",
+    "ratio": 9.003549042464796
+  },
+  {
+    "area": "site-header",
+    "background": "rgb(232, 239, 244)",
+    "fontSize": "18px",
+    "fontWeight": "500",
+    "foreground": "rgb(33, 76, 112)",
+    "label": "Feeling unwell?",
+    "theme": "light",
+    "ratio": 7.753381612494315
+  },
+  {
+    "area": "site-header",
+    "background": "rgb(255, 255, 255)",
+    "fontSize": "18px",
+    "fontWeight": "500",
+    "foreground": "rgb(33, 76, 112)",
+    "label": "Text & display",
+    "theme": "light",
+    "ratio": 9.003549042464796
+  },
+  {
+    "area": "task-action",
+    "background": "rgb(255, 255, 255)",
+    "fontSize": "20px",
+    "fontWeight": "600",
+    "foreground": "rgb(24, 50, 72)",
+    "label": "Understand dissection",
+    "theme": "light",
+    "ratio": 13.218730783189363
+  },
+  {
+    "area": "task-action",
+    "background": "rgb(255, 255, 255)",
+    "fontSize": "20px",
+    "fontWeight": "600",
+    "foreground": "rgb(24, 50, 72)",
+    "label": "Prepare an appointment",
+    "theme": "light",
+    "ratio": 13.218730783189363
+  },
+  {
+    "area": "task-action",
+    "background": "rgb(255, 255, 255)",
+    "fontSize": "20px",
+    "fontWeight": "600",
+    "foreground": "rgb(24, 50, 72)",
+    "label": "Make a card",
+    "theme": "light",
+    "ratio": 13.218730783189363
+  },
+  {
+    "area": "task-action",
+    "background": "rgb(255, 255, 255)",
+    "fontSize": "20px",
+    "fontWeight": "600",
+    "foreground": "rgb(24, 50, 72)",
+    "label": "Help someone",
+    "theme": "light",
+    "ratio": 13.218730783189363
+  },
+  {
+    "area": "app-navigation",
+    "background": "rgb(232, 239, 244)",
+    "fontSize": "18px",
+    "fontWeight": "700",
+    "foreground": "rgb(33, 76, 112)",
+    "label": "Home",
+    "theme": "light",
+    "ratio": 7.753381612494315
+  },
+  {
+    "area": "app-navigation",
+    "background": "rgb(255, 255, 255)",
+    "fontSize": "18px",
+    "fontWeight": "500",
+    "foreground": "rgb(33, 76, 112)",
+    "label": "Guides",
+    "theme": "light",
+    "ratio": 9.003549042464796
+  },
+  {
+    "area": "app-navigation",
+    "background": "rgb(255, 255, 255)",
+    "fontSize": "18px",
+    "fontWeight": "500",
+    "foreground": "rgb(33, 76, 112)",
+    "label": "Tools",
+    "theme": "light",
+    "ratio": 9.003549042464796
+  },
+  {
+    "area": "app-navigation",
+    "background": "rgb(255, 255, 255)",
+    "fontSize": "18px",
+    "fontWeight": "500",
+    "foreground": "rgb(33, 76, 112)",
+    "label": "Saved",
+    "theme": "light",
+    "ratio": 9.003549042464796
+  },
+  {
+    "area": "site-header",
+    "background": "rgb(23, 38, 51)",
+    "fontSize": "18px",
+    "fontWeight": "700",
+    "foreground": "rgb(240, 244, 247)",
+    "label": "Dissection Companion",
+    "theme": "dark",
+    "ratio": 13.946883614307248
+  },
+  {
+    "area": "site-header",
+    "background": "rgb(23, 38, 51)",
+    "fontSize": "18px",
+    "fontWeight": "500",
+    "foreground": "rgb(189, 217, 238)",
+    "label": "Menu",
+    "theme": "dark",
+    "ratio": 10.520545147173825
+  },
+  {
+    "area": "site-header",
+    "background": "rgb(35, 59, 78)",
+    "fontSize": "18px",
+    "fontWeight": "500",
+    "foreground": "rgb(189, 217, 238)",
+    "label": "Feeling unwell?",
+    "theme": "dark",
+    "ratio": 7.926407796257332
+  },
+  {
+    "area": "site-header",
+    "background": "rgb(23, 38, 51)",
+    "fontSize": "18px",
+    "fontWeight": "500",
+    "foreground": "rgb(189, 217, 238)",
+    "label": "Text & display",
+    "theme": "dark",
+    "ratio": 10.520545147173825
+  },
+  {
+    "area": "task-action",
+    "background": "rgb(23, 38, 51)",
+    "fontSize": "20px",
+    "fontWeight": "600",
+    "foreground": "rgb(240, 244, 247)",
+    "label": "Understand dissection",
+    "theme": "dark",
+    "ratio": 13.946883614307248
+  },
+  {
+    "area": "task-action",
+    "background": "rgb(23, 38, 51)",
+    "fontSize": "20px",
+    "fontWeight": "600",
+    "foreground": "rgb(240, 244, 247)",
+    "label": "Prepare an appointment",
+    "theme": "dark",
+    "ratio": 13.946883614307248
+  },
+  {
+    "area": "task-action",
+    "background": "rgb(23, 38, 51)",
+    "fontSize": "20px",
+    "fontWeight": "600",
+    "foreground": "rgb(240, 244, 247)",
+    "label": "Make a card",
+    "theme": "dark",
+    "ratio": 13.946883614307248
+  },
+  {
+    "area": "task-action",
+    "background": "rgb(23, 38, 51)",
+    "fontSize": "20px",
+    "fontWeight": "600",
+    "foreground": "rgb(240, 244, 247)",
+    "label": "Help someone",
+    "theme": "dark",
+    "ratio": 13.946883614307248
+  },
+  {
+    "area": "app-navigation",
+    "background": "rgb(35, 59, 78)",
+    "fontSize": "18px",
+    "fontWeight": "700",
+    "foreground": "rgb(189, 217, 238)",
+    "label": "Home",
+    "theme": "dark",
+    "ratio": 7.926407796257332
+  },
+  {
+    "area": "app-navigation",
+    "background": "rgb(23, 38, 51)",
+    "fontSize": "18px",
+    "fontWeight": "500",
+    "foreground": "rgb(189, 217, 238)",
+    "label": "Guides",
+    "theme": "dark",
+    "ratio": 10.520545147173825
+  },
+  {
+    "area": "app-navigation",
+    "background": "rgb(23, 38, 51)",
+    "fontSize": "18px",
+    "fontWeight": "500",
+    "foreground": "rgb(189, 217, 238)",
+    "label": "Tools",
+    "theme": "dark",
+    "ratio": 10.520545147173825
+  },
+  {
+    "area": "app-navigation",
+    "background": "rgb(23, 38, 51)",
+    "fontSize": "18px",
+    "fontWeight": "500",
+    "foreground": "rgb(189, 217, 238)",
+    "label": "Saved",
+    "theme": "dark",
+    "ratio": 10.520545147173825
+  },
+  {
+    "area": "site-header",
+    "background": "rgb(16, 24, 32)",
+    "fontSize": "18px",
+    "fontWeight": "700",
+    "foreground": "rgb(255, 255, 255)",
+    "label": "Dissection Companion",
+    "theme": "dark-high",
+    "ratio": 17.894540394665484
+  },
+  {
+    "area": "site-header",
+    "background": "rgb(16, 24, 32)",
+    "fontSize": "18px",
+    "fontWeight": "500",
+    "foreground": "rgb(220, 239, 255)",
+    "label": "Menu",
+    "theme": "dark-high",
+    "ratio": 15.196494939891341
+  },
+  {
+    "area": "site-header",
+    "background": "rgb(32, 55, 70)",
+    "fontSize": "18px",
+    "fontWeight": "500",
+    "foreground": "rgb(220, 239, 255)",
+    "label": "Feeling unwell?",
+    "theme": "dark-high",
+    "ratio": 10.513126015093965
+  },
+  {
+    "area": "site-header",
+    "background": "rgb(16, 24, 32)",
+    "fontSize": "18px",
+    "fontWeight": "500",
+    "foreground": "rgb(220, 239, 255)",
+    "label": "Text & display",
+    "theme": "dark-high",
+    "ratio": 15.196494939891341
+  },
+  {
+    "area": "task-action",
+    "background": "rgb(16, 24, 32)",
+    "fontSize": "20px",
+    "fontWeight": "600",
+    "foreground": "rgb(255, 255, 255)",
+    "label": "Understand dissection",
+    "theme": "dark-high",
+    "ratio": 17.894540394665484
+  },
+  {
+    "area": "task-action",
+    "background": "rgb(16, 24, 32)",
+    "fontSize": "20px",
+    "fontWeight": "600",
+    "foreground": "rgb(255, 255, 255)",
+    "label": "Prepare an appointment",
+    "theme": "dark-high",
+    "ratio": 17.894540394665484
+  },
+  {
+    "area": "task-action",
+    "background": "rgb(16, 24, 32)",
+    "fontSize": "20px",
+    "fontWeight": "600",
+    "foreground": "rgb(255, 255, 255)",
+    "label": "Make a card",
+    "theme": "dark-high",
+    "ratio": 17.894540394665484
+  },
+  {
+    "area": "task-action",
+    "background": "rgb(16, 24, 32)",
+    "fontSize": "20px",
+    "fontWeight": "600",
+    "foreground": "rgb(255, 255, 255)",
+    "label": "Help someone",
+    "theme": "dark-high",
+    "ratio": 17.894540394665484
+  },
+  {
+    "area": "app-navigation",
+    "background": "rgb(32, 55, 70)",
+    "fontSize": "18px",
+    "fontWeight": "700",
+    "foreground": "rgb(220, 239, 255)",
+    "label": "Home",
+    "theme": "dark-high",
+    "ratio": 10.513126015093965
+  },
+  {
+    "area": "app-navigation",
+    "background": "rgb(16, 24, 32)",
+    "fontSize": "18px",
+    "fontWeight": "500",
+    "foreground": "rgb(220, 239, 255)",
+    "label": "Guides",
+    "theme": "dark-high",
+    "ratio": 15.196494939891341
+  },
+  {
+    "area": "app-navigation",
+    "background": "rgb(16, 24, 32)",
+    "fontSize": "18px",
+    "fontWeight": "500",
+    "foreground": "rgb(220, 239, 255)",
+    "label": "Tools",
+    "theme": "dark-high",
+    "ratio": 15.196494939891341
+  },
+  {
+    "area": "app-navigation",
+    "background": "rgb(16, 24, 32)",
+    "fontSize": "18px",
+    "fontWeight": "500",
+    "foreground": "rgb(220, 239, 255)",
+    "label": "Saved",
+    "theme": "dark-high",
+    "ratio": 15.196494939891341
+  },
+  {
+    "area": "site-header",
+    "background": "rgb(255, 255, 255)",
+    "fontSize": "18px",
+    "fontWeight": "700",
+    "foreground": "rgb(17, 17, 17)",
+    "label": "Dissection Companion",
+    "theme": "light-high",
+    "ratio": 18.883060964594996
+  },
+  {
+    "area": "site-header",
+    "background": "rgb(255, 255, 255)",
+    "fontSize": "18px",
+    "fontWeight": "500",
+    "foreground": "rgb(23, 59, 88)",
+    "label": "Menu",
+    "theme": "light-high",
+    "ratio": 11.647683156875553
+  },
+  {
+    "area": "site-header",
+    "background": "rgb(232, 239, 244)",
+    "fontSize": "18px",
+    "fontWeight": "500",
+    "foreground": "rgb(23, 59, 88)",
+    "label": "Feeling unwell?",
+    "theme": "light-high",
+    "ratio": 10.030370467328051
+  },
+  {
+    "area": "site-header",
+    "background": "rgb(255, 255, 255)",
+    "fontSize": "18px",
+    "fontWeight": "500",
+    "foreground": "rgb(23, 59, 88)",
+    "label": "Text & display",
+    "theme": "light-high",
+    "ratio": 11.647683156875553
+  },
+  {
+    "area": "task-action",
+    "background": "rgb(255, 255, 255)",
+    "fontSize": "20px",
+    "fontWeight": "600",
+    "foreground": "rgb(17, 17, 17)",
+    "label": "Understand dissection",
+    "theme": "light-high",
+    "ratio": 18.883060964594996
+  },
+  {
+    "area": "task-action",
+    "background": "rgb(255, 255, 255)",
+    "fontSize": "20px",
+    "fontWeight": "600",
+    "foreground": "rgb(17, 17, 17)",
+    "label": "Prepare an appointment",
+    "theme": "light-high",
+    "ratio": 18.883060964594996
+  },
+  {
+    "area": "task-action",
+    "background": "rgb(255, 255, 255)",
+    "fontSize": "20px",
+    "fontWeight": "600",
+    "foreground": "rgb(17, 17, 17)",
+    "label": "Make a card",
+    "theme": "light-high",
+    "ratio": 18.883060964594996
+  },
+  {
+    "area": "task-action",
+    "background": "rgb(255, 255, 255)",
+    "fontSize": "20px",
+    "fontWeight": "600",
+    "foreground": "rgb(17, 17, 17)",
+    "label": "Help someone",
+    "theme": "light-high",
+    "ratio": 18.883060964594996
+  },
+  {
+    "area": "app-navigation",
+    "background": "rgb(232, 239, 244)",
+    "fontSize": "18px",
+    "fontWeight": "700",
+    "foreground": "rgb(23, 59, 88)",
+    "label": "Home",
+    "theme": "light-high",
+    "ratio": 10.030370467328051
+  },
+  {
+    "area": "app-navigation",
+    "background": "rgb(255, 255, 255)",
+    "fontSize": "18px",
+    "fontWeight": "500",
+    "foreground": "rgb(23, 59, 88)",
+    "label": "Guides",
+    "theme": "light-high",
+    "ratio": 11.647683156875553
+  },
+  {
+    "area": "app-navigation",
+    "background": "rgb(255, 255, 255)",
+    "fontSize": "18px",
+    "fontWeight": "500",
+    "foreground": "rgb(23, 59, 88)",
+    "label": "Tools",
+    "theme": "light-high",
+    "ratio": 11.647683156875553
+  },
+  {
+    "area": "app-navigation",
+    "background": "rgb(255, 255, 255)",
+    "fontSize": "18px",
+    "fontWeight": "500",
+    "foreground": "rgb(23, 59, 88)",
+    "label": "Saved",
+    "theme": "light-high",
+    "ratio": 11.647683156875553
+  }
+]

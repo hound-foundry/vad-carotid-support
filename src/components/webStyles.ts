@@ -9,6 +9,7 @@ button:focus-visible,a:focus-visible,input:focus-visible,textarea:focus-visible,
 main:focus{outline:none}
 button,a,input,textarea{max-width:100%;overflow-wrap:anywhere}
 *{animation:none!important;transition:none!important;scroll-behavior:auto!important}
+@media (hover:hover){[data-testid="task-action"]:hover{border-color:${focusColours.light}}[data-vad-theme="dark"] [data-testid="task-action"]:hover{border-color:${focusColours.dark}}}
 @media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
 @media print{html,body,#root{height:auto!important;overflow:visible!important;background:#FFFFFF!important;color:#111111!important}[data-testid="urgent-banner"],[data-testid="site-header"],[data-testid="app-navigation"],[data-testid="skip-link"],[data-testid="site-footer"],button,input,textarea,[role="button"]{display:none!important}a{color:#111111!important;text-decoration:none!important}*{box-shadow:none!important;overflow:visible!important}}
 `;

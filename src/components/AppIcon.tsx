@@ -3,7 +3,7 @@ import { Text } from "./Ui";
 import { useAccessibility } from "../features/accessibility/AccessibilityProvider";
 import { themeFor } from "./theme";
 
-export type AppIconName = "home" | "guides" | "tools" | "saved" | "appointment" | "card" | "support" | "menu" | "close";
+export type AppIconName = "home" | "guides" | "tools" | "saved" | "appointment" | "card" | "support" | "menu" | "close" | "chevron" | "milestone";
 const paths: Record<AppIconName, string[]> = {
   home: ["M3 10.5 12 3l9 7.5", "M5 9v12h5v-7h4v7h5V9"],
   guides: ["M12 5v16", "M12 6C9 3 5 3 2 4v16c3-1 7-1 10 1 3-2 7-2 10-1V4c-3-1-7-1-10 2Z"],
@@ -13,12 +13,13 @@ const paths: Record<AppIconName, string[]> = {
   card: ["M3 5h18v14H3V5Z", "M7 9h3v3H7V9ZM14 9h4M14 12h4M7 16h11"],
   support: ["M8 11a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z", "M2 20v-2a6 6 0 0 1 12 0v2", "M17 5a3 3 0 0 1 0 6M18 14a5 5 0 0 1 4 4v2"],
   menu: ["M4 6h16M4 12h16M4 18h16"], close: ["M5 5l14 14M19 5 5 19"],
+  chevron: ["m9 5 7 7-7 7"], milestone: ["M5 21V3h14l-4 6 4 6H5"],
 };
 
 export function AppIcon({ name, size = 24 }: { name: AppIconName; size?: number }) {
   const { settings } = useAccessibility();
   const colour = themeFor(settings).tealDark;
   const scaled = size * Math.min(settings.textScale, 1.5);
-  if (Platform.OS !== "web") return <Text accessible={false} aria-hidden style={{ color: colour, fontSize: size }}>{name === "menu" ? "≡" : name === "close" ? "×" : name === "home" ? "⌂" : name === "saved" ? "▱" : name === "support" ? "+" : "▤"}</Text>;
-  return <svg width={scaled} height={scaled} viewBox="0 0 24 24" fill="none" stroke={colour} strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" focusable="false">{paths[name].map((path) => <path key={path} d={path} />)}</svg>;
+  if (Platform.OS !== "web") return <Text accessible={false} aria-hidden style={{ color: colour, fontSize: size }}>{name === "menu" ? "≡" : name === "close" ? "×" : name === "chevron" ? "›" : name === "home" ? "⌂" : name === "saved" ? "▱" : name === "support" ? "+" : "▤"}</Text>;
+  return <svg width={scaled} height={scaled} style={{ flexShrink: 0 }} viewBox="0 0 24 24" fill="none" stroke={colour} strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" focusable="false">{paths[name].map((path) => <path key={path} d={path} />)}</svg>;
 }

@@ -30,5 +30,5 @@ const styles = StyleSheet.create({
   intro: { paddingTop: 24, paddingBottom: 20 }, title: { color: palette.ink, fontSize: 28, fontWeight: "600" }, summary: { color: palette.text, fontSize: 18, marginTop: 5 },
   actions: { gap: 12 }, row: { flexDirection: "row", gap: 12 },
   note: { paddingTop: 20 }, noteBody: { color: palette.muted, fontSize: 18, maxWidth: 680 },
-  about: { alignSelf: "flex-start", justifyContent: "center" }, aboutText: { color: palette.tealDark, fontSize: 18, fontWeight: "600" },
+  about: { alignSelf: "flex-start", justifyContent: "center" }, aboutText: { color: palette.tealDark, fontSize: 18, fontWeight: "500" },
 });
